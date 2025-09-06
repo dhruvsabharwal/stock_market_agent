@@ -1,0 +1,103 @@
+,Value
+ticker,CPRX
+longName,"Catalyst Pharmaceuticals, Inc."
+ROCE,26.702502829350806
+ROCE (3yr avg),26.917817629984892
+NFAT,134.96198710031564
+NFAT (3yr avg),100.06069053479261
+NPM,30.015660638312596
+DPR,0.0
+Retention Ratio,100.0
+Dep,77.54510733570395
+SSGR,2925.8426229918487
+Av NPM (over 3 years),30.015660638312596
+Au NFA/T (over 3 years),100.06069053479261
+Av Dep%NFA (over 3 years),77.54510733570395
+Au Retention ratio (over 3 years),100.0
+d/e,0.008219015625926508
+Interest coverage,inf
+tax %,24.21773488761369
+cPAT,357860000.0
+CFO,239808000.0
+cCFO,559827000.0
+cCFO/cPAT,1.564374336332644
+p/a,34.8615442211889
+p/e,12.412121
+EY,6.538383196578996
+Earnings Growth 5yr cagr,53.7087166644058
+Sales Growth 5yr cagr,51.70804170473866
+PEG,0.2311006810599488
+no. shares (cr),12.2391
+Current Price,20.48
+market cap,2506567680.0
+d/e_market,0.0012718587355279392
+p/s,4.4880433
+NFA + CWIP,3584000.0
+Capex,37655000.0
+Capex_from_cashflow_statement,556000.0
+FCF,202153000.0
+FCF%,123.34750959490874
+FCF_capex_from_cashflow,239252000.0
+FCF%_capex_from_cashflow,145.98417221412052
+DV,0.0
+Mcap (cr),250.656768
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8429785495062717
+Market Cap,2506567680
+Net Income,163889000.0
+Total Revenue,491734000.0
+Total Assets,851411000.0
+Total Liabilities,123779000.0
+Total Stockholders Equity,387881000.0
+Total Debt,3188000.0
+Cash and Cash Equivalents,1030000.0
+Current Assets,623609000.0
+Current Liabilities,120678000.0
+Working Capital,502931000.0
+Operating Cash Flow,239808000.0
+Capital Expenditure,556000.0
+Dividends Paid,0
+Depreciation & Amortization,37774000.0
+Interest Expense,0
+Income Tax Expense,52374000.0
+Shares Outstanding,122391000
+Net Fixed Assets,3584000.0
+Construction in Progress,0
+Net Debt,2158000.0
+3-5yr Average ROA (%),21.987072860213672
+3-5yr Average ROE (%),26.75305627162539
+ROE,20.74961281530491
+ROA,16.886906676251915
+insidersPercentHeld,0.06219
+institutionsPercentHeld,0.85491997
+institutionsFloatPercentHeld,0.91161
+institutionsCount,501.0
+current,20.48
+high,40.0
+low,31.0
+mean,34.28571
+median,34.0
+Normalized EBIT,127924666.66666667
+Normalized Net Income,106126000.0
+Research Asset,105815800.0
+R&D Amortization,28504600.0
+Adjusted EBIT (R&D),179267400.0
+Adjusted Book Equity (R&D),493696800.0
+Adjusted D/E (R&D),0.006457404625673085
+Adjusted Invested Capital (R&D),495854800.0
+Adjusted ROC (R&D),27.39771730112969
+Adjusted ROE (R&D),33.19628565548734

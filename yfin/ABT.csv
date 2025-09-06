@@ -1,0 +1,103 @@
+,Value
+ticker,ABT
+longName,Abbott Laboratories
+ROCE,11.258307685445383
+ROCE (3yr avg),12.86395653643154
+NFAT,4.031328079953873
+NFAT (3yr avg),4.334068107572374
+NPM,20.699414863917323
+DPR,46.162031187392664
+Retention Ratio,53.83796881260734
+Dep,33.520153328496214
+SSGR,14.779328016733773
+Av NPM (over 3 years),20.699414863917323
+Au NFA/T (over 3 years),4.334068107572374
+Av Dep%NFA (over 3 years),33.520153328496214
+Au Retention ratio (over 3 years),53.837968812607336
+d/e,0.3891148356345362
+Interest coverage,12.209302325581396
+tax %,-91.10223869955797
+cPAT,33129000000.0
+CFO,8558000000.0
+cCFO,35933000000.0
+cCFO/cPAT,1.084638836065079
+p/a,18.3052421667987
+p/e,16.48306
+EY,5.861507960147767
+Earnings Growth 5yr cagr,24.521727609193512
+Sales Growth 5yr cagr,-0.8782655004365925
+PEG,0.672181840639168
+no. shares (cr),174.0460032
+Current Price,131.37
+market cap,228644234403.84
+d/e_market,0.06569594916384092
+p/s,5.303863
+NFA + CWIP,13146000000.0
+Capex,4146000000.0
+Capex_from_cashflow_statement,2207000000.0
+FCF,4412000000.0
+FCF%,32.92045963289061
+FCF_capex_from_cashflow,6351000000.0
+FCF%_capex_from_cashflow,47.38844948515147
+DV,1.677715604769947
+Mcap (cr),22864.4225024
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.5155410142556672
+Market Cap,228644225024
+Net Income,13402000000.0
+Total Revenue,41950000000.0
+Total Assets,81414000000.0
+Total Liabilities,33513000000.0
+Total Stockholders Equity,38603000000.0
+Total Debt,15021000000.0
+Cash and Cash Equivalents,0
+Current Assets,23656000000.0
+Current Liabilities,14157000000.0
+Working Capital,9499000000.0
+Operating Cash Flow,8558000000.0
+Capital Expenditure,2207000000.0
+Dividends Paid,3836000000.0
+Depreciation & Amortization,3218000000.0
+Interest Expense,559000000.0
+Income Tax Expense,-6389000000.0
+Shares Outstanding,1740460032
+Net Fixed Assets,10658000000.0
+Construction in Progress,2488000000.0
+Net Debt,0
+3-5yr Average ROA (%),8.509311008080315
+3-5yr Average ROE (%),17.165717715167933
+ROE,15.202752062054218
+ROA,7.752011486468182
+insidersPercentHeld,0.00543
+institutionsPercentHeld,0.80828005
+institutionsFloatPercentHeld,0.8127
+institutionsCount,3937.0
+current,131.37
+high,159.0
+low,122.0
+mean,142.4848
+median,143.12
+Normalized EBIT,7912333333.333333
+Normalized Net Income,8686000000.0
+Research Asset,7866400000.0
+R&D Amortization,2243000000.0
+Adjusted EBIT (R&D),8173000000.0
+Adjusted Book Equity (R&D),46469400000.0
+Adjusted D/E (R&D),0.32324497411199626
+Adjusted Invested Capital (R&D),61490400000.0
+Adjusted ROC (R&D),25.40036488446143
+Adjusted ROE (R&D),28.840484275673884

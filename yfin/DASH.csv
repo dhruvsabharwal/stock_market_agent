@@ -1,0 +1,103 @@
+,Value
+ticker,DASH
+longName,"DoorDash, Inc."
+ROCE,-0.4520042821458309
+ROCE (3yr avg),-7.487723434872965
+NFAT,9.263066954643628
+NFAT (3yr avg),8.102953399083178
+NPM,-8.683375341433187
+DPR,0.0
+Retention Ratio,100.0
+Dep,45.01756612009618
+SSGR,-115.37855185847728
+Av NPM (over 3 years),-8.683375341433187
+Au NFA/T (over 3 years),8.102953399083178
+Av Dep%NFA (over 3 years),45.01756612009618
+Au Retention ratio (over 3 years),100.0
+d/e,0.07875404055245372
+Interest coverage,
+tax %,25.0
+cPAT,-2268000000.0
+CFO,2132000000.0
+cCFO,4864000000.0
+cCFO/cPAT,-2.144620811287478
+p/a,1.134791032383061
+p/e,135.8956
+EY,0.1235982847260351
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,29.931624560304027
+PEG,
+no. shares (cr),40.2360992
+Current Price,247.33
+market cap,99515944151.36
+d/e_market,0.005386071594565432
+p/s,8.882567
+NFA + CWIP,1228000000.0
+Capex,601000000.0
+Capex_from_cashflow_statement,330000000.0
+FCF,1531000000.0
+FCF%,1244.7154471544716
+FCF_capex_from_cashflow,1802000000.0
+FCF%_capex_from_cashflow,1465.040650406504
+DV,0.0
+Mcap (cr),10565.8138624
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.7181050656660413
+Market Cap,105658138624
+Net Income,123000000.0
+Total Revenue,10722000000.0
+Total Assets,12845000000.0
+Total Liabilities,5035000000.0
+Total Stockholders Equity,6806000000.0
+Total Debt,536000000.0
+Cash and Cash Equivalents,253000000.0
+Current Assets,7386000000.0
+Current Liabilities,4438000000.0
+Working Capital,2948000000.0
+Operating Cash Flow,2132000000.0
+Capital Expenditure,330000000.0
+Dividends Paid,0
+Depreciation & Amortization,561000000.0
+Interest Expense,
+Income Tax Expense,39000000.0
+Shares Outstanding,402360992
+Net Fixed Assets,1167000000.0
+Construction in Progress,61000000.0
+Net Debt,283000000.0
+3-5yr Average ROA (%),-10.928943477493766
+3-5yr Average ROE (%),-16.066712227824386
+ROE,-8.230088495575222
+ROA,-5.4101221640488655
+insidersPercentHeld,0.0057800002
+institutionsPercentHeld,0.95225
+institutionsFloatPercentHeld,0.95779
+institutionsCount,1461.0
+current,247.33
+high,360.0
+low,190.0
+mean,290.90833
+median,300.0
+Normalized EBIT,-549000000.0
+Normalized Net Income,-600000000.0
+Research Asset,2639800000.0
+R&D Amortization,686000000.0
+Adjusted EBIT (R&D),444000000.0
+Adjusted Book Equity (R&D),9445800000.0
+Adjusted D/E (R&D),0.056744796629189694
+Adjusted Invested Capital (R&D),9728800000.0
+Adjusted ROC (R&D),3.4228270701422576
+Adjusted ROE (R&D),1.302166042050435

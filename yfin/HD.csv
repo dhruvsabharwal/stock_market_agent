@@ -1,0 +1,95 @@
+,Value
+ticker,HD
+longName,"The Home Depot, Inc."
+ROCE,32.208188798956385
+ROCE (3yr avg),39.164974297917674
+NFAT,4.601453874112964
+NFAT (3yr avg),4.70813526532553
+NPM,10.022599366127489
+DPR,53.73397900742274
+Retention Ratio,46.26602099257726
+Dep,9.97782602118202
+SSGR,11.854069931033774
+Av NPM (over 3 years),10.022599366127489
+Au NFA/T (over 3 years),4.70813526532553
+Av Dep%NFA (over 3 years),9.97782602118202
+Au Retention ratio (over 3 years),46.26602099257726
+d/e,59.66475095785441
+Interest coverage,9.274450667815596
+tax %,23.70400906935999
+cPAT,63487000000.0
+CFO,19810000000.0
+cCFO,72168000000.0
+cCFO/cPAT,1.1367366547482163
+p/a,19.346661439958186
+p/e,27.717688
+EY,3.6506605686236204
+Earnings Growth 5yr cagr,-1.3655805358424145
+Sales Growth 5yr cagr,1.8099397797589178
+PEG,-20.297366045058048
+no. shares (cr),99.5387008
+Current Price,407.45
+market cap,405570436409.6
+d/e_market,0.15358614535969559
+p/s,2.4571984
+NFA + CWIP,36815000000.0
+Capex,5346000000.0
+Capex_from_cashflow_statement,3485000000.0
+FCF,14464000000.0
+FCF%,97.69012562474673
+FCF_capex_from_cashflow,16325000000.0
+FCF%_capex_from_cashflow,110.2593543158179
+DV,2.2015904509820547
+Mcap (cr),40557.0453504
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.7301362948006057
+Market Cap,405570453504
+Net Income,14806000000.0
+Total Revenue,159514000000.0
+Total Assets,96119000000.0
+Total Liabilities,89479000000.0
+Total Stockholders Equity,1044000000.0
+Total Debt,62290000000.0
+Cash and Cash Equivalents,1670000000.0
+Current Assets,31683000000.0
+Current Liabilities,28661000000.0
+Working Capital,3022000000.0
+Operating Cash Flow,19810000000.0
+Capital Expenditure,3485000000.0
+Dividends Paid,8929000000.0
+Depreciation & Amortization,3761000000.0
+Interest Expense,2321000000.0
+Income Tax Expense,4600000000.0
+Shares Outstanding,995387008
+Net Fixed Assets,35294000000.0
+Construction in Progress,1521000000.0
+Net Debt,60620000000.0
+3-5yr Average ROA (%),21.43142265457316
+3-5yr Average ROE (%),-12183.843254945534
+ROE,1162.1642363775902
+ROA,19.79800621016506
+insidersPercentHeld,0.00072999997
+institutionsPercentHeld,0.7345
+institutionsFloatPercentHeld,0.73503995
+institutionsCount,4897.0
+current,407.45
+high,481.0
+low,335.0
+mean,437.8125
+median,450.0
+Normalized EBIT,22562666666.666668
+Normalized Net Income,15684666666.666666

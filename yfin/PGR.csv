@@ -1,0 +1,95 @@
+,Value
+ticker,PGR
+longName,The Progressive Corporation
+ROCE,
+ROCE (3yr avg),4.408022804036206
+NFAT,90.1771394374626
+NFAT (3yr avg),66.89690767151019
+NPM,6.332654954222729
+DPR,17.096380702969856
+Retention Ratio,82.90361929703013
+Dep,30.647504755088296
+SSGR,320.5612708655008
+Av NPM (over 3 years),6.332654954222729
+Au NFA/T (over 3 years),66.89690767151019
+Av Dep%NFA (over 3 years),30.647504755088296
+Au Retention ratio (over 3 years),82.90361929703015
+d/e,0.33994180598707896
+Interest coverage,0.0
+tax %,20.84383459348455
+cPAT,16455900000.0
+CFO,15119000000.0
+cCFO,40372700000.0
+cCFO/cPAT,2.4533875388158655
+p/a,9.561285812540167
+p/e,13.873168
+EY,5.875876108371776
+Earnings Growth 5yr cagr,36.43271665122758
+Sales Growth 5yr cagr,16.4786104621782
+PEG,0.3807887326330509
+no. shares (cr),58.64
+Current Price,246.11
+market cap,144318904000.0
+d/e_market,0.047762280678073886
+p/s,1.7519534
+NFA + CWIP,790000000.0
+Capex,193000000.0
+Capex_from_cashflow_statement,285000000.0
+FCF,14926000000.0
+FCF%,176.01415094339623
+FCF_capex_from_cashflow,14834000000.0
+FCF%_capex_from_cashflow,174.92924528301887
+DV,0.4725645643761264
+Mcap (cr),14431.8906368
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9872346054633243
+Market Cap,144318906368
+Net Income,8480000000.0
+Total Revenue,75343000000.0
+Total Assets,105745000000.0
+Total Liabilities,80154000000.0
+Total Stockholders Equity,20277000000.0
+Total Debt,6893000000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,15119000000.0
+Capital Expenditure,285000000.0
+Dividends Paid,682000000.0
+Depreciation & Amortization,284000000.0
+Interest Expense,279000000.0
+Income Tax Expense,2233000000.0
+Shares Outstanding,586400000
+Net Fixed Assets,790000000.0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),2.87012207371862
+3-5yr Average ROE (%),12.907206959194188
+ROE,21.582614465826143
+ROA,4.755232827310607
+insidersPercentHeld,0.0026699998
+institutionsPercentHeld,0.88013
+institutionsFloatPercentHeld,0.88249
+institutionsCount,2539.0
+current,246.11
+high,344.0
+low,189.0
+mean,282.6316
+median,279.0
+Normalized EBIT,5776666666.666667
+Normalized Net Income,4368333333.333333

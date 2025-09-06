@@ -1,0 +1,94 @@
+,Value
+ticker,NUVAMA.NS
+ROCE,9.593379758455493
+ROCE (3yr avg),15.33415401213873
+NFAT,9.710461641103146
+NFAT (3yr avg),8.733453824062913
+NPM,35.04124928811685
+DPR,-1
+Retention Ratio,101.0
+Dep,48.55526749366601
+SSGR,260.5361764275324
+Av NPM (over 3 years),35.04124928811685
+Au NFA/T (over 3 years),8.733453824062913
+Av Dep%NFA (over 3 years),48.55526749366601
+Au Retention ratio (over 3 years),-1
+d/e,2.7079181464850017
+Interest coverage,0.14785391016594482
+tax %,25.278009557763788
+cPAT,19165810000.0
+CFO,-3711000000.0
+cCFO,-38944620000.0
+cCFO/cPAT,-2.0319840382431007
+p/a,4.837265361948527
+p/e,24.167595
+EY,4.067732572917152
+Earnings Growth 5yr cagr,78.34213671654781
+Sales Growth 5yr cagr,27.170973959801014
+PEG,0.3084878203851083
+no. shares (cr),3.60314
+Current Price,6728.5
+market cap,242437274900.0
+d/e_market,0.32333435538051414
+p/s,7.0290833
+NFA + CWIP,2214300000.0
+Capex,992230000.0
+Capex_from_cashflow_statement,331000000.0
+FCF,-4703230000.0
+FCF%,-47.69187868217447
+FCF_capex_from_cashflow,-4042000000.0
+FCF%_capex_from_cashflow,-40.986848109352344
+DV,2.1198472892090736
+Mcap (cr),24253.079552
+d/e decreasing trend 5 yrs,True
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,False
+cCFO > PAT,False
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,1.2673753705200754
+Market Cap,242530795520
+Net Income,9861700000.0
+Total Revenue,21395400000.0
+Total Assets,283876300000.0
+Total Liabilities,248945200000.0
+Total Stockholders Equity,28947810000.0
+Total Debt,78388300000.0
+Cash and Cash Equivalents,
+Current Assets,270752400000.0
+Current Liabilities,60778700000.0
+Working Capital,209973700000.0
+Operating Cash Flow,-3711000000.0
+Capital Expenditure,331000000.0
+Dividends Paid,5139300000.0
+Depreciation & Amortization,970300000.0
+Interest Expense,8219600000.0
+Income Tax Expense,3332400000.0
+Shares Outstanding,36031400
+Net Fixed Assets,2214300000.0
+Construction in Progress,0
+Net Debt,
+3-5yr Average ROA (%),3.407062363537495
+3-5yr Average ROE (%),22.90452258458755
+ROE,30.890593634596264
+ROA,4.043788235351043
+insidersPercentHeld,0.60793
+institutionsPercentHeld,0.18935
+institutionsFloatPercentHeld,0.48294997
+institutionsCount,56.0
+current,6728.5
+high,10000.0
+low,7350.0
+mean,8639.625
+median,8525.0
+Normalized EBIT,14525376666.666666
+Normalized Net Income,6388603333.333333

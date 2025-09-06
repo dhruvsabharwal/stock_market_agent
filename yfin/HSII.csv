@@ -1,0 +1,103 @@
+,Value
+ticker,HSII
+longName,"Heidrick & Struggles International, Inc."
+ROCE,10.397581467290049
+ROCE (3yr avg),13.756487785752848
+NFAT,8.681695445455182
+NFAT (3yr avg),9.592628695330335
+NPM,4.44785193551804
+DPR,62.26289609141236
+Retention Ratio,37.73710390858764
+Dep,13.927944566317374
+SSGR,2.173191632196356
+Av NPM (over 3 years),4.44785193551804
+Au NFA/T (over 3 years),9.592628695330335
+Av Dep%NFA (over 3 years),13.927944566317374
+Au Retention ratio (over 3 years),37.737103908587635
+d/e,0.2180614262413526
+Interest coverage,inf
+tax %,71.52551220148767
+cPAT,215196000.0
+CFO,150431000.0
+cCFO,514328000.0
+cCFO/cPAT,2.390044424617558
+p/a,0.7645470225325882
+p/e,31.7875
+EY,0.8275745268456899
+Earnings Growth 5yr cagr,-51.28734075224122
+Sales Growth 5yr cagr,3.424745675873875
+PEG,-0.6197923217263104
+no. shares (cr),2.07363
+Current Price,50.86
+market cap,1054648218.0
+d/e_market,0.09558163402690166
+p/s,0.9126602
+NFA + CWIP,135203000.0
+Capex,32245000.0
+Capex_from_cashflow_statement,26315000.0
+FCF,118186000.0
+FCF%,1354.10174152154
+FCF_capex_from_cashflow,124116000.0
+FCF%_capex_from_cashflow,1422.043996333639
+DV,1.2253374897372653
+Mcap (cr),105.4648256
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.7856492345327758
+Market Cap,1054648256
+Net Income,8728000.0
+Total Revenue,1115676000.0
+Total Assets,1194188000.0
+Total Liabilities,741371000.0
+Total Stockholders Equity,462278000.0
+Total Debt,100805000.0
+Cash and Cash Equivalents,39935000.0
+Current Assets,772977000.0
+Current Liabilities,483013000.0
+Working Capital,289964000.0
+Operating Cash Flow,150431000.0
+Capital Expenditure,26315000.0
+Dividends Paid,12923000.0
+Depreciation & Amortization,18857000.0
+Interest Expense,0
+Income Tax Expense,21924000.0
+Shares Outstanding,20736300
+Net Fixed Assets,135203000.0
+Construction in Progress,0
+Net Debt,60870000.0
+3-5yr Average ROA (%),5.830570425281406
+3-5yr Average ROE (%),16.87853006131647
+ROE,12.46614825574735
+ROA,4.696126278412708
+insidersPercentHeld,0.01988
+institutionsPercentHeld,0.97740996
+institutionsFloatPercentHeld,0.99724
+institutionsCount,310.0
+current,50.86
+high,56.0
+low,48.0
+mean,53.33333
+median,56.0
+Normalized EBIT,89604666.66666667
+Normalized Net Income,47541333.333333336
+Research Asset,53461800.0
+R&D Amortization,13233400.0
+Adjusted EBIT (R&D),83766600.0
+Adjusted Book Equity (R&D),515739800.0
+Adjusted D/E (R&D),0.19545708902047118
+Adjusted Invested Capital (R&D),576609800.0
+Adjusted ROC (R&D),4.136612020161404
+Adjusted ROE (R&D),1.6923262466848592

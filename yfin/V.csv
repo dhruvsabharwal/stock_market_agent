@@ -1,0 +1,95 @@
+,Value
+ticker,V
+longName,Visa Inc.
+ROCE,36.116422037238586
+ROCE (3yr avg),32.38975276045878
+NFAT,10.80806257521059
+NFAT (3yr avg),10.903020846379292
+NPM,52.96121856921232
+DPR,21.49672142943031
+Retention Ratio,78.50327857056969
+Dep,27.870582881335967
+SSGR,425.43660584323123
+Av NPM (over 3 years),52.96121856921232
+Au NFA/T (over 3 years),10.903020846379292
+Av Dep%NFA (over 3 years),27.870582881335967
+Au Retention ratio (over 3 years),78.50327857056969
+d/e,0.5379392249503008
+Interest coverage,37.53042121684867
+tax %,17.44856999498244
+cPAT,64284000000.0
+CFO,19950000000.0
+cCFO,74781000000.0
+cCFO/cPAT,1.1632910210938958
+p/a,21.81571067083614
+p/e,34.199413
+EY,3.322058407705306
+Earnings Growth 5yr cagr,20.046689285356333
+Sales Growth 5yr cagr,14.226598213316155
+PEG,1.7059880817817594
+no. shares (cr),169.8680064
+Current Price,349.86
+market cap,594300207191.04
+d/e_market,0.03505972191812174
+p/s,17.459627
+NFA + CWIP,4046000000.0
+Capex,1311000000.0
+Capex_from_cashflow_statement,1257000000.0
+FCF,18639000000.0
+FCF%,94.40814465886643
+FCF_capex_from_cashflow,18693000000.0
+FCF%_capex_from_cashflow,94.68165932229144
+DV,0.7095740417005154
+Mcap (cr),67905.7227776
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9342857142857143
+Market Cap,679057227776
+Net Income,19743000000.0
+Total Revenue,35926000000.0
+Total Assets,94511000000.0
+Total Liabilities,55374000000.0
+Total Stockholders Equity,38733000000.0
+Total Debt,20836000000.0
+Cash and Cash Equivalents,5230000000.0
+Current Assets,34033000000.0
+Current Liabilities,26517000000.0
+Working Capital,7516000000.0
+Operating Cash Flow,19950000000.0
+Capital Expenditure,1257000000.0
+Dividends Paid,4217000000.0
+Depreciation & Amortization,1034000000.0
+Interest Expense,641000000.0
+Income Tax Expense,4173000000.0
+Shares Outstanding,1698680064
+Net Fixed Assets,3824000000.0
+Construction in Progress,222000000.0
+Net Debt,15606000000.0
+3-5yr Average ROA (%),18.3965381032262
+3-5yr Average ROE (%),42.70714951480946
+ROE,50.7075895723642
+ROA,21.342630128101185
+insidersPercentHeld,0.00592
+institutionsPercentHeld,0.90543
+institutionsFloatPercentHeld,0.91082
+institutionsCount,5633.0
+current,349.86
+high,430.0
+low,305.0
+mean,391.2297
+median,400.0
+Normalized EBIT,21637333333.333332
+Normalized Net Income,17324333333.333332

@@ -1,0 +1,103 @@
+,Value
+ticker,LIN
+longName,Linde plc
+ROCE,13.804246757008062
+ROCE (3yr avg),11.941328653206021
+NFAT,1.2878994810161157
+NFAT (3yr avg),1.3005516916294104
+NPM,17.062938984432005
+DPR,45.667746653511216
+Retention Ratio,54.33225334648879
+Dep,15.462389133845022
+SSGR,-3.4053915691188945
+Av NPM (over 3 years),17.062938984432005
+Au NFA/T (over 3 years),1.3005516916294104
+Av Dep%NFA (over 3 years),15.462389133845022
+Au Retention ratio (over 3 years),54.332253346488784
+d/e,0.5692094662638469
+Interest coverage,17.648870636550306
+tax %,23.36328626444159
+cPAT,20737000000.0
+CFO,9423000000.0
+cCFO,37317000000.0
+cCFO/cPAT,1.7995370593624922
+p/a,8.12389402432837
+p/e,34.316727
+EY,2.903775588443956
+Earnings Growth 5yr cagr,22.819854443017928
+Sales Growth 5yr cagr,2.339332116065962
+PEG,1.5038100740602975
+no. shares (cr),46.8910016
+Current Price,482.15
+market cap,226084964214.4
+d/e_market,0.10000222738633571
+p/s,6.8005705
+NFA + CWIP,29850000000.0
+Capex,4736000000.0
+Capex_from_cashflow_statement,4497000000.0
+FCF,4687000000.0
+FCF%,71.3937547600914
+FCF_capex_from_cashflow,4926000000.0
+FCF%_capex_from_cashflow,75.03427265803504
+DV,1.1743372714879974
+Mcap (cr),22608.4962304
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.4973999787753369
+Market Cap,226084962304
+Net Income,6565000000.0
+Total Revenue,33005000000.0
+Total Assets,80147000000.0
+Total Liabilities,40659000000.0
+Total Stockholders Equity,39720000000.0
+Total Debt,22609000000.0
+Cash and Cash Equivalents,206000000.0
+Current Assets,12945000000.0
+Current Liabilities,14544000000.0
+Working Capital,-1599000000.0
+Operating Cash Flow,9423000000.0
+Capital Expenditure,4497000000.0
+Dividends Paid,2655000000.0
+Depreciation & Amortization,3780000000.0
+Interest Expense,487000000.0
+Income Tax Expense,2002000000.0
+Shares Outstanding,468910016
+Net Fixed Assets,25764000000.0
+Construction in Progress,4086000000.0
+Net Debt,22403000000.0
+3-5yr Average ROA (%),6.4346270554052225
+3-5yr Average ROE (%),12.706440550692225
+ROE,15.546471384862318
+ROA,7.726102860988727
+insidersPercentHeld,0.0026
+institutionsPercentHeld,0.87431
+institutionsFloatPercentHeld,0.87658995
+institutionsCount,3059.0
+current,482.15
+high,576.0
+low,381.0
+mean,510.5
+median,515.5
+Normalized EBIT,7738333333.333333
+Normalized Net Income,5637000000.0
+Research Asset,409800000.0
+R&D Amortization,116400000.0
+Adjusted EBIT (R&D),9089600000.0
+Adjusted Book Equity (R&D),40129800000.0
+Adjusted D/E (R&D),0.5633967774571516
+Adjusted Invested Capital (R&D),62532800000.0
+Adjusted ROC (R&D),11.13970705247057
+Adjusted ROE (R&D),16.35941370253527

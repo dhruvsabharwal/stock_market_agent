@@ -1,0 +1,103 @@
+,Value
+ticker,BDX
+longName,"Becton, Dickinson and Company"
+ROCE,5.241051106972894
+ROCE (3yr avg),4.885437825776983
+NFAT,3.016594408730752
+NFAT (3yr avg),3.0800575471352456
+NPM,8.512666917490485
+DPR,66.80140008517641
+Retention Ratio,33.19859991482359
+Dep,35.89538856198484
+SSGR,-27.19088033419905
+Av NPM (over 3 years),8.512666917490485
+Au NFA/T (over 3 years),3.0800575471352456
+Av Dep%NFA (over 3 years),35.89538856198484
+Au Retention ratio (over 3 years),33.19859991482358
+d/e,0.7795480094584641
+Interest coverage,5.409090909090909
+tax %,14.962593516209477
+cPAT,7060000000.0
+CFO,3797000000.0
+cCFO,14067000000.0
+cCFO/cPAT,1.9924929178470254
+p/a,3.230390299355817
+p/e,34.96344
+EY,3.110325416277088
+Earnings Growth 5yr cagr,-5.283913849367561
+Sales Growth 5yr cagr,1.7919612257046857
+PEG,-6.616958753819353
+no. shares (cr),28.6627008
+Current Price,191.25
+market cap,54817415280.0
+d/e_market,0.3668542177204237
+p/s,2.5632384
+NFA + CWIP,6821000000.0
+Capex,2550000000.0
+Capex_from_cashflow_statement,725000000.0
+FCF,1247000000.0
+FCF%,73.13782991202345
+FCF_capex_from_cashflow,3072000000.0
+FCF%_capex_from_cashflow,180.1759530791789
+DV,2.0066615588884438
+Mcap (cr),5481.7415168
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.32841717145114563
+Market Cap,54817415168
+Net Income,1705000000.0
+Total Revenue,20178000000.0
+Total Assets,57286000000.0
+Total Liabilities,31397000000.0
+Total Stockholders Equity,25797000000.0
+Total Debt,20110000000.0
+Cash and Cash Equivalents,1291000000.0
+Current Assets,10468000000.0
+Current Liabilities,8956000000.0
+Working Capital,1512000000.0
+Operating Cash Flow,3797000000.0
+Capital Expenditure,725000000.0
+Dividends Paid,1100000000.0
+Depreciation & Amortization,2286000000.0
+Interest Expense,528000000.0
+Income Tax Expense,300000000.0
+Shares Outstanding,286627008
+Net Fixed Assets,6821000000.0
+Construction in Progress,0
+Net Debt,18819000000.0
+3-5yr Average ROA (%),3.069299589338333
+3-5yr Average ROE (%),6.538956197538018
+ROE,5.810607098807729
+ROA,2.8075751556085287
+insidersPercentHeld,0.0056800004
+institutionsPercentHeld,0.92249
+institutionsFloatPercentHeld,0.92776
+institutionsCount,1994.0
+current,191.25
+high,270.0
+low,183.0
+mean,208.0
+median,193.5
+Normalized EBIT,2276000000.0
+Normalized Net Income,1656000000.0
+Research Asset,3444800000.0
+R&D Amortization,992400000.0
+Adjusted EBIT (R&D),2730600000.0
+Adjusted Book Equity (R&D),29241800000.0
+Adjusted D/E (R&D),0.6877141626028493
+Adjusted Invested Capital (R&D),48060800000.0
+Adjusted ROC (R&D),4.831445630215027
+Adjusted ROE (R&D),5.83069441689636

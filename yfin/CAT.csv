@@ -1,0 +1,103 @@
+,Value
+ticker,CAT
+longName,Caterpillar Inc.
+ROCE,25.021624738701075
+ROCE (3yr avg),22.990120397645303
+NFAT,5.245993200582808
+NFAT (3yr avg),5.403492495473426
+NPM,14.448776733526431
+DPR,28.569380233921375
+Retention Ratio,71.43061976607864
+Dep,17.446262041672068
+SSGR,38.32237763754633
+Av NPM (over 3 years),14.448776733526431
+Au NFA/T (over 3 years),5.403492495473426
+Av Dep%NFA (over 3 years),17.446262041672068
+Au Retention ratio (over 3 years),71.43061976607862
+d/e,1.9702985534010464
+Interest coverage,25.53125
+tax %,19.65901443206461
+cPAT,34321000000.0
+CFO,12035000000.0
+cCFO,39884000000.0
+cCFO/cPAT,1.1620873517671397
+p/a,12.337098175499566
+p/e,22.144094
+EY,5.296785763661232
+Earnings Growth 5yr cagr,22.944305067243185
+Sales Growth 5yr cagr,8.335482544945494
+PEG,0.9651237609987317
+no. shares (cr),46.8479008
+Current Price,434.91
+market cap,203746205369.28
+d/e_market,0.1885139403228913
+p/s,3.226947
+NFA + CWIP,15112000000.0
+Capex,3326000000.0
+Capex_from_cashflow_statement,3215000000.0
+FCF,8709000000.0
+FCF%,80.69866567828021
+FCF_capex_from_cashflow,8820000000.0
+FCF%_capex_from_cashflow,81.72720533728688
+DV,1.298674493203078
+Mcap (cr),20374.6213888
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.7236393851267138
+Market Cap,203746213888
+Net Income,10792000000.0
+Total Revenue,64809000000.0
+Total Assets,87764000000.0
+Total Liabilities,68270000000.0
+Total Stockholders Equity,19494000000.0
+Total Debt,38409000000.0
+Cash and Cash Equivalents,3119000000.0
+Current Assets,45682000000.0
+Current Liabilities,32272000000.0
+Working Capital,13410000000.0
+Operating Cash Flow,12035000000.0
+Capital Expenditure,3215000000.0
+Dividends Paid,2646000000.0
+Depreciation & Amortization,2153000000.0
+Interest Expense,512000000.0
+Income Tax Expense,2629000000.0
+Shares Outstanding,468479008
+Net Fixed Assets,13361000000.0
+Construction in Progress,1751000000.0
+Net Debt,35290000000.0
+3-5yr Average ROA (%),10.12381489279621
+3-5yr Average ROE (%),48.65756700965714
+ROE,55.364883929716555
+ROA,12.31682264323214
+insidersPercentHeld,0.00221
+institutionsPercentHeld,0.72008
+institutionsFloatPercentHeld,0.72167
+institutionsCount,3713.0
+current,434.91
+high,520.0
+low,350.0
+mean,451.49228
+median,448.5
+Normalized EBIT,12213666666.666666
+Normalized Net Income,9277333333.333334
+Research Asset,5556200000.0
+R&D Amortization,1543000000.0
+Adjusted EBIT (R&D),14449000000.0
+Adjusted Book Equity (R&D),25050200000.0
+Adjusted D/E (R&D),1.5332811714078132
+Adjusted Invested Capital (R&D),60340200000.0
+Adjusted ROC (R&D),19.238366801420913
+Adjusted ROE (R&D),43.08149236333442

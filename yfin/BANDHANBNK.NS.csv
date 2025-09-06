@@ -1,0 +1,94 @@
+,Value
+ticker,BANDHANBNK.NS
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,12.284079560942986
+NFAT (3yr avg),13.618128164847612
+NPM,18.520653042012594
+DPR,9.819852490513913
+Retention Ratio,90.18014750948609
+Dep,22.310218971725234
+SSGR,205.13910714052793
+Av NPM (over 3 years),18.520653042012594
+Au NFA/T (over 3 years),13.618128164847612
+Av Dep%NFA (over 3 years),22.310218971725234
+Au Retention ratio (over 3 years),90.18014750948609
+d/e,0.5154409666649669
+Interest coverage,0.0
+tax %,24.23169688654773
+cPAT,72952902000.0
+CFO,27523269000.0
+cCFO,142183187000.0
+cCFO/cPAT,1.9489723246376134
+p/a,1.5436740274673213
+p/e,12.998432
+EY,10.274483251412722
+Earnings Growth 5yr cagr,179.5492485935311
+Sales Growth 5yr cagr,7.8140646099634115
+PEG,0.07239480032259135
+no. shares (cr),161.0969984
+Current Price,165.86
+market cap,267195481546.24002
+d/e_market,0.41686680611297716
+p/s,2.667041
+NFA + CWIP,
+Capex,
+Capex_from_cashflow_statement,2880720000.0
+FCF,
+FCF%,
+FCF_capex_from_cashflow,24642549000.0
+FCF%_capex_from_cashflow,89.76282881023191
+DV,0.9043771945603861
+Mcap (cr),26719.5482112
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,
+Market Cap,267195482112
+Net Income,27452955000.0
+Total Revenue,144571836000.0
+Total Assets,1914762885000.0
+Total Liabilities,1668712816000.0
+Total Stockholders Equity,216096380000.0
+Total Debt,111384927000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,27523269000.0
+Capital Expenditure,2880720000.0
+Dividends Paid,2416455000.0
+Depreciation & Amortization,2792019000.0
+Interest Expense,104576451000.0
+Income Tax Expense,8779815000.0
+Shares Outstanding,1610969984
+Net Fixed Assets,11803819000.0
+Construction in Progress,
+Net Debt,0
+3-5yr Average ROA (%),1.4366546015917965
+3-5yr Average ROE (%),11.52647481569196
+ROE,11.880630072741292
+ROA,1.4866840447823078
+insidersPercentHeld,0.46769002
+institutionsPercentHeld,0.26419002
+institutionsFloatPercentHeld,0.4963
+institutionsCount,98.0
+current,165.86
+high,225.0
+low,130.0
+mean,192.21739
+median,198.0
+Normalized EBIT,0.0
+Normalized Net Income,23898320666.666668

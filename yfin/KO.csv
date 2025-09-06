@@ -1,0 +1,95 @@
+,Value
+ticker,KO
+longName,The Coca-Cola Company
+ROCE,19.577689243027887
+ROCE (3yr avg),18.77210371694936
+NFAT,4.817134960847536
+NFAT (3yr avg),4.65543908560885
+NPM,22.73166524125077
+DPR,77.5549124522942
+Retention Ratio,22.4450875477058
+Dep,11.860594532850925
+SSGR,11.892117519863215
+Av NPM (over 3 years),22.73166524125077
+Au NFA/T (over 3 years),4.65543908560885
+Av Dep%NFA (over 3 years),11.860594532850925
+Au Retention ratio (over 3 years),22.4450875477058
+d/e,1.7162792490651864
+Interest coverage,8.467391304347826
+tax %,18.622955830658718
+cPAT,40658000000.0
+CFO,6805000000.0
+cCFO,42047000000.0
+cCFO/cPAT,1.0341630183481725
+p/a,10.880935078759096
+p/e,24.241135
+EY,3.6135421553915075
+Earnings Growth 5yr cagr,3.0060747974675284
+Sales Growth 5yr cagr,6.778830000791425
+PEG,8.064049178158166
+no. shares (cr),430.366976
+Current Price,68.36
+market cap,294198864793.6
+d/e_market,0.15133301085724835
+p/s,6.251304
+NFA + CWIP,10303000000.0
+Capex,2142000000.0
+Capex_from_cashflow_statement,2064000000.0
+FCF,4663000000.0
+FCF%,43.86228953061801
+FCF_capex_from_cashflow,4741000000.0
+FCF%_capex_from_cashflow,44.59599285109585
+DV,2.841275409361077
+Mcap (cr),29419.8870016
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6852314474650992
+Market Cap,294198870016
+Net Income,10631000000.0
+Total Revenue,47061000000.0
+Total Assets,100549000000.0
+Total Liabilities,74177000000.0
+Total Stockholders Equity,25941000000.0
+Total Debt,44522000000.0
+Cash and Cash Equivalents,3129000000.0
+Current Assets,25997000000.0
+Current Liabilities,25249000000.0
+Working Capital,748000000.0
+Operating Cash Flow,6805000000.0
+Capital Expenditure,2064000000.0
+Dividends Paid,8359000000.0
+Depreciation & Amortization,1075000000.0
+Interest Expense,1656000000.0
+Income Tax Expense,2437000000.0
+Shares Outstanding,4303669760
+Net Fixed Assets,10303000000.0
+Construction in Progress,0
+Net Debt,41393000000.0
+3-5yr Average ROA (%),10.72463415661467
+3-5yr Average ROE (%),41.66560734911924
+ROE,42.81660871997762
+ROA,11.250301891151176
+insidersPercentHeld,0.098780006
+institutionsPercentHeld,0.65585
+institutionsFloatPercentHeld,0.72774005
+institutionsCount,4249.0
+current,68.36
+high,85.0
+low,70.0
+mean,78.70435
+median,80.0
+Normalized EBIT,13929666666.666666
+Normalized Net Income,10295666666.666666

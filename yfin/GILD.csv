@@ -1,0 +1,103 @@
+,Value
+ticker,GILD
+longName,"Gilead Sciences, Inc."
+ROCE,3.5474878168159862
+ROCE (3yr avg),10.629906681168936
+NFAT,5.32876204595997
+NFAT (3yr avg),5.223459920677229
+NPM,13.131094987714837
+DPR,321.41944289824943
+Retention Ratio,-221.41944289824943
+Dep,46.62950493383851
+SSGR,-198.50054368864224
+Av NPM (over 3 years),13.131094987714837
+Au NFA/T (over 3 years),5.223459920677229
+Av Dep%NFA (over 3 years),46.62950493383851
+Au Retention ratio (over 3 years),-221.41944289824946
+d/e,1.1698418955021241
+Interest coverage,10.752302968270214
+tax %,30.579710144927535
+cPAT,16962000000.0
+CFO,10828000000.0
+cCFO,39290000000.0
+cCFO/cPAT,2.3163542035137366
+p/a,0.7726358148893361
+p/e,22.333334
+EY,0.34367811180457236
+Earnings Growth 5yr cagr,-57.52820266002132
+Sales Growth 5yr cagr,1.7385075589657184
+PEG,-0.3882153964027863
+no. shares (cr),124.0809984
+Current Price,112.56
+market cap,139665571799.04
+d/e_market,0.19124970925858192
+p/s,4.838914
+NFA + CWIP,5915000000.0
+Capex,2704000000.0
+Capex_from_cashflow_statement,523000000.0
+FCF,8124000000.0
+FCF%,1692.5
+FCF_capex_from_cashflow,10305000000.0
+FCF%_capex_from_cashflow,2146.875
+DV,2.805272587604822
+Mcap (cr),13966.557184
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.7502770594754341
+Market Cap,139665571840
+Net Income,480000000.0
+Total Revenue,28754000000.0
+Total Assets,58995000000.0
+Total Liabilities,39749000000.0
+Total Stockholders Equity,22833000000.0
+Total Debt,26711000000.0
+Cash and Cash Equivalents,995000000.0
+Current Assets,19173000000.0
+Current Liabilities,12004000000.0
+Working Capital,7169000000.0
+Operating Cash Flow,10828000000.0
+Capital Expenditure,523000000.0
+Dividends Paid,3918000000.0
+Depreciation & Amortization,2767000000.0
+Interest Expense,977000000.0
+Income Tax Expense,211000000.0
+Shares Outstanding,1240809984
+Net Fixed Assets,5414000000.0
+Construction in Progress,501000000.0
+Net Debt,25716000000.0
+3-5yr Average ROA (%),6.5000446106609155
+3-5yr Average ROE (%),19.809242645129824
+ROE,2.2768778312738656
+ROA,0.7926023778071334
+insidersPercentHeld,0.001
+institutionsPercentHeld,0.90768
+institutionsFloatPercentHeld,0.90859
+institutionsCount,2743.0
+current,112.56
+high,143.0
+low,98.0
+mean,124.3704
+median,128.0
+Normalized EBIT,5406333333.333333
+Normalized Net Income,3579000000.0
+Research Asset,15308000000.0
+R&D Amortization,4240600000.0
+Adjusted EBIT (R&D),3333400000.0
+Adjusted Book Equity (R&D),38141000000.0
+Adjusted D/E (R&D),0.7003224876117564
+Adjusted Invested Capital (R&D),63857000000.0
+Adjusted ROC (R&D),3.623809358455589
+Adjusted ROE (R&D),1.2584882410004983

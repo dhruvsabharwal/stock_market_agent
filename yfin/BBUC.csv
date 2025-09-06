@@ -1,0 +1,91 @@
+,Value
+ticker,BBUC
+longName,Brookfield Business Corporation
+ROCE,0.4409294512877939
+ROCE (3yr avg),2.0936936153980703
+NFAT,3.1430212521539347
+NFAT (3yr avg),2.4160835525071622
+NPM,3.109203757589343
+DPR,3.9930171791557676
+Retention Ratio,96.00698282084423
+Dep,28.068572086931876
+SSGR,-20.856435313021475
+Av NPM (over 3 years),3.109203757589343
+Au NFA/T (over 3 years),2.4160835525071622
+Av Dep%NFA (over 3 years),28.068572086931876
+Au Retention ratio (over 3 years),96.00698282084424
+d/e,9.965909090909092
+Interest coverage,inf
+tax %,7.132530120481928
+cPAT,578000000.0
+CFO,-111000000.0
+cCFO,826000000.0
+cCFO/cPAT,1.4290657439446366
+p/a,-4.1922386932301015
+p/e,inf
+EY,-37.34563329337363
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,8.789184079844725
+PEG,
+no. shares (cr),6.9996704
+Current Price,33.97
+market cap,2377788034.88
+d/e_market,3.6883018466541304
+p/s,0.28856653
+NFA + CWIP,2480000000.0
+Capex,517000000.0
+Capex_from_cashflow_statement,297000000.0
+FCF,-628000000.0
+FCF%,70.72072072072072
+FCF_capex_from_cashflow,-408000000.0
+FCF%_capex_from_cashflow,45.94594594594595
+DV,0.7570060802710872
+Mcap (cr),237.778816
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,False
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,5.657657657657658
+Market Cap,2377788160
+Net Income,-888000000.0
+Total Revenue,8208000000.0
+Total Assets,19098000000.0
+Total Liabilities,16463000000.0
+Total Stockholders Equity,880000000.0
+Total Debt,8770000000.0
+Cash and Cash Equivalents,222000000.0
+Current Assets,2935000000.0
+Current Liabilities,4810000000.0
+Working Capital,-1875000000.0
+Operating Cash Flow,-111000000.0
+Capital Expenditure,297000000.0
+Dividends Paid,18000000.0
+Depreciation & Amortization,780000000.0
+Interest Expense,0
+Income Tax Expense,-148000000.0
+Shares Outstanding,69996704
+Net Fixed Assets,2480000000.0
+Construction in Progress,0
+Net Debt,8548000000.0
+3-5yr Average ROA (%),3.1729453834393215
+3-5yr Average ROE (%),-538.3661572153421
+ROE,83.7772397094431
+ROA,2.1376498208328187
+insidersPercentHeld,0.01386
+institutionsPercentHeld,0.90537
+institutionsFloatPercentHeld,0.9181
+institutionsCount,201.0
+current,33.97
+Normalized EBIT,373666666.6666667
+Normalized Net Income,180666666.66666666

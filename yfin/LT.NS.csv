@@ -1,0 +1,95 @@
+,Value
+ticker,LT.NS
+longName,Larsen & Toubro Limited
+ROCE,15.155812455083883
+ROCE (3yr avg),13.98837085797656
+NFAT,13.252471851185332
+NFAT (3yr avg),12.57918068617124
+NPM,5.879681325097683
+DPR,29.138713916245667
+Retention Ratio,70.86128608375432
+Dep,21.55105858447196
+SSGR,30.85906379355342
+Av NPM (over 3 years),5.879681325097683
+Au NFA/T (over 3 years),12.57918068617124
+Av Dep%NFA (over 3 years),21.55105858447196
+Au Retention ratio (over 3 years),70.86128608375434
+d/e,1.5332339654679685
+Interest coverage,7.959670833783671
+tax %,24.986014973626723
+cPAT,472362700000.0
+CFO,91607100000.0
+cCFO,693675300000.0
+cCFO/cPAT,1.4685225992653526
+p/a,4.4209114372702185
+p/e,31.218033
+EY,3.036161478721657
+Earnings Growth 5yr cagr,21.013638325909923
+Sales Growth 5yr cagr,17.75865734506241
+PEG,1.4856081805456793
+no. shares (cr),137.536
+Current Price,3601.0
+market cap,4952671360000.0
+d/e_market,0.267348488069275
+p/s,1.8425012
+NFA + CWIP,226013400000.0
+Capex,51576100000.0
+Capex_from_cashflow_statement,44188300000.0
+FCF,40031000000.0
+FCF%,26.621471812070276
+FCF_capex_from_cashflow,47418800000.0
+FCF%_capex_from_cashflow,31.534516938427664
+DV,0.7772714400335257
+Mcap (cr),495267.1387648
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.4369857794865245
+Market Cap,4952671387648
+Net Income,150371100000.0
+Total Revenue,2542086500000.0
+Total Assets,3795241000000.0
+Total Liabilities,2641204200000.0
+Total Stockholders Equity,863592400000.0
+Total Debt,1324089200000.0
+Cash and Cash Equivalents,755598300000.0
+Current Assets,2453417100000.0
+Current Liabilities,2019709000000.0
+Working Capital,433708100000.0
+Operating Cash Flow,91607100000.0
+Capital Expenditure,44188300000.0
+Dividends Paid,38495700000.0
+Depreciation & Amortization,40982200000.0
+Interest Expense,33308400000.0
+Income Tax Expense,58914000000.0
+Shares Outstanding,1375360000
+Net Fixed Assets,197994600000.0
+Construction in Progress,28018800000.0
+Net Debt,568490900000.0
+3-5yr Average ROA (%),3.5575423668224504
+3-5yr Average ROE (%),13.53031558048321
+ROE,14.866489315348662
+ROA,3.8954029144252904
+insidersPercentHeld,0.16620001
+institutionsPercentHeld,0.49723998
+institutionsFloatPercentHeld,0.59634995
+institutionsCount,241.0
+current,3601.0
+high,4550.0
+low,3000.0
+mean,4050.9
+median,4062.0
+Normalized EBIT,237499866666.66666
+Normalized Net Income,128556466666.66667

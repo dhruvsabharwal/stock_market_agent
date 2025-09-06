@@ -1,0 +1,103 @@
+,Value
+ticker,GE
+longName,GE Aerospace
+ROCE,9.69711993509713
+ROCE (3yr avg),6.624164392250445
+NFAT,5.329018932874354
+NFAT (3yr avg),3.68727485940116
+NPM,14.972500366831099
+DPR,70.58852329848843
+Retention Ratio,29.411476701511575
+Dep,12.316642823392215
+SSGR,3.92076411271117
+Av NPM (over 3 years),14.972500366831099
+Au NFA/T (over 3 years),3.68727485940116
+Av Dep%NFA (over 3 years),12.316642823392215
+Au Retention ratio (over 3 years),29.41147670151159
+d/e,0.7033171550560158
+Interest coverage,6.856997971602434
+tax %,12.624671916010499
+cPAT,10037000000.0
+CFO,4710000000.0
+cCFO,19297000000.0
+cCFO/cPAT,1.9225864302082296
+p/a,3.7830351990767452
+p/e,39.42857
+EY,2.239978045755139
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,-11.832653467249132
+PEG,
+no. shares (cr),106.044
+Current Price,276.0
+market cap,292681440000.0
+d/e_market,0.06584975118340268
+p/s,7.0337515
+NFA + CWIP,7278000000.0
+Capex,1215000000.0
+Capex_from_cashflow_statement,1032000000.0
+FCF,3495000000.0
+FCF%,53.30994508846858
+FCF_capex_from_cashflow,3678000000.0
+FCF%_capex_from_cashflow,56.101281269066504
+DV,0.3444017495608878
+Mcap (cr),29268.1449472
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.7420382165605095
+Market Cap,292681449472
+Net Income,6556000000.0
+Total Revenue,38702000000.0
+Total Assets,123140000000.0
+Total Liabilities,103575000000.0
+Total Stockholders Equity,27403000000.0
+Total Debt,19273000000.0
+Cash and Cash Equivalents,962000000.0
+Current Assets,37635000000.0
+Current Liabilities,34392000000.0
+Working Capital,3243000000.0
+Operating Cash Flow,4710000000.0
+Capital Expenditure,1032000000.0
+Dividends Paid,1008000000.0
+Depreciation & Amortization,1184000000.0
+Interest Expense,986000000.0
+Income Tax Expense,962000000.0
+Shares Outstanding,1060440000
+Net Fixed Assets,7278000000.0
+Construction in Progress,0
+Net Debt,18311000000.0
+3-5yr Average ROA (%),2.704904234838069
+3-5yr Average ROE (%),15.97309284046389
+ROE,31.03815119723727
+ROA,5.236489751512491
+insidersPercentHeld,0.00183
+institutionsPercentHeld,0.8064
+institutionsFloatPercentHeld,0.80787003
+institutionsCount,3413.0
+current,276.0
+high,343.0
+low,266.0
+mean,297.93332
+median,300.0
+Normalized EBIT,7645666666.666667
+Normalized Net Income,5458000000.0
+Research Asset,3252400000.0
+R&D Amortization,957400000.0
+Adjusted EBIT (R&D),8934600000.0
+Adjusted Book Equity (R&D),30655400000.0
+Adjusted D/E (R&D),0.6286983696184033
+Adjusted Invested Capital (R&D),48966400000.0
+Adjusted ROC (R&D),15.942842567540447
+Adjusted ROE (R&D),21.386117943331353

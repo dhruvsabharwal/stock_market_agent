@@ -1,0 +1,103 @@
+,Value
+ticker,PLTK
+longName,Playtika Holding Corp.
+ROCE,14.144726163036067
+ROCE (3yr avg),18.755605756893978
+NFAT,11.327704954454566
+NFAT (3yr avg),11.738154417596427
+NPM,8.68096607711626
+DPR,22.914097821619396
+Retention Ratio,77.0859021783806
+Dep,72.85229395392095
+SSGR,5.697099731232824
+Av NPM (over 3 years),8.68096607711626
+Au NFA/T (over 3 years),11.738154417596427
+Av Dep%NFA (over 3 years),72.85229395392095
+Au Retention ratio (over 3 years),77.0859021783806
+d/e,-11.274040632054176
+Interest coverage,2.967139175257732
+tax %,42.174688057040996
+cPAT,981000000.0
+CFO,490100000.0
+cCFO,2051100000.0
+cCFO/cPAT,2.0908256880733944
+p/a,5.108661417322835
+p/e,16.195652
+EY,11.587007104376669
+Earnings Growth 5yr cagr,-16.286184290407245
+Sales Growth 5yr cagr,-0.43679998948291665
+PEG,-0.9944411601396055
+no. shares (cr),37.5796992
+Current Price,3.725
+market cap,1399843795.2
+d/e_market,1.7839133255887434
+p/s,0.523678
+NFA + CWIP,205300000.0
+Capex,150800000.0
+Capex_from_cashflow_statement,93300000.0
+FCF,339300000.0
+FCF%,209.18618988902588
+FCF_capex_from_cashflow,396800000.0
+FCF%_capex_from_cashflow,244.63625154130702
+DV,7.965174427484579
+Mcap (cr),139.9843712
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,True
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6923076923076923
+Market Cap,1399843712
+Net Income,162200000.0
+Total Revenue,2549300000.0
+Total Assets,3639200000.0
+Total Liabilities,3770300000.0
+Total Stockholders Equity,-221500000.0
+Total Debt,2497200000.0
+Cash and Cash Equivalents,60500000.0
+Current Assets,872800000.0
+Current Liabilities,558900000.0
+Working Capital,313900000.0
+Operating Cash Flow,490100000.0
+Capital Expenditure,93300000.0
+Dividends Paid,111500000.0
+Depreciation & Amortization,165700000.0
+Interest Expense,155200000.0
+Income Tax Expense,118300000.0
+Shares Outstanding,375796992
+Net Fixed Assets,205300000.0
+Construction in Progress,0
+Net Debt,2436700000.0
+3-5yr Average ROA (%),8.444518653165465
+3-5yr Average ROE (%),-72.83787470578137
+ROE,-92.00226885989791
+ROA,4.760646884447183
+insidersPercentHeld,0.84733003
+institutionsPercentHeld,0.17477
+institutionsFloatPercentHeld,1.14477
+institutionsCount,285.0
+current,3.725
+high,14.0
+low,4.0
+mean,6.3
+median,5.5
+Normalized EBIT,486766666.6666667
+Normalized Net Income,224166666.66666666
+Research Asset,1166180000.0
+R&D Amortization,333680000.0
+Adjusted EBIT (R&D),505020000.0
+Adjusted Book Equity (R&D),944680000.0
+Adjusted D/E (R&D),2.643434813905238
+Adjusted Invested Capital (R&D),3381380000.0
+Adjusted ROC (R&D),8.636396689349663
+Adjusted ROE (R&D),17.169835288139897

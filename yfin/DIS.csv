@@ -1,0 +1,95 @@
+,Value
+ticker,DIS
+longName,The Walt Disney Company
+ROCE,5.9639896052468755
+ROCE (3yr avg),4.581319982168888
+NFAT,2.538440165596955
+NFAT (3yr avg),2.543666752994859
+NPM,3.9640054463271586
+DPR,9.157951193349422
+Retention Ratio,90.84204880665058
+Dep,15.041834415092856
+SSGR,-5.882131740981141
+Av NPM (over 3 years),3.9640054463271586
+Au NFA/T (over 3 years),2.543666752994859
+Av Dep%NFA (over 3 years),15.041834415092856
+Au Retention ratio (over 3 years),90.84204880665057
+d/e,0.4909797838371425
+Interest coverage,5.7555555555555555
+tax %,23.728365702206368
+cPAT,12466000000.0
+CFO,13971000000.0
+cCFO,35414000000.0
+cCFO/cPAT,2.840847104123215
+p/a,2.4185349670929424
+p/e,18.438871
+EY,2.3507331346754117
+Earnings Growth 5yr cagr,35.2255447412791
+Sales Growth 5yr cagr,10.661102641410714
+PEG,0.5234516921009424
+no. shares (cr),179.7929984
+Current Price,117.64
+market cap,211508483317.76
+d/e_market,0.2304541134020185
+p/s,2.2373562
+NFA + CWIP,41769000000.0
+Capex,5533000000.0
+Capex_from_cashflow_statement,5412000000.0
+FCF,8438000000.0
+FCF%,169.71037811745776
+FCF_capex_from_cashflow,8559000000.0
+FCF%_capex_from_cashflow,172.14400643604185
+DV,0.6458369794784015
+Mcap (cr),21150.8477952
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.6039653568105361
+Market Cap,211508477952
+Net Income,4972000000.0
+Total Revenue,91361000000.0
+Total Assets,196219000000.0
+Total Liabilities,90697000000.0
+Total Stockholders Equity,99277000000.0
+Total Debt,48743000000.0
+Cash and Cash Equivalents,2391000000.0
+Current Assets,25241000000.0
+Current Liabilities,34599000000.0
+Working Capital,-9358000000.0
+Operating Cash Flow,13971000000.0
+Capital Expenditure,5412000000.0
+Dividends Paid,1366000000.0
+Depreciation & Amortization,4990000000.0
+Interest Expense,2070000000.0
+Income Tax Expense,1796000000.0
+Shares Outstanding,1797929984
+Net Fixed Assets,37041000000.0
+Construction in Progress,4728000000.0
+Net Debt,46352000000.0
+3-5yr Average ROA (%),1.3475266381603843
+3-5yr Average ROE (%),2.924949006504421
+ROE,2.4232442031036876
+ROA,1.1505095183402165
+insidersPercentHeld,0.00066
+institutionsPercentHeld,0.74264
+institutionsFloatPercentHeld,0.74313
+institutionsCount,4052.0
+current,117.64
+high,152.0
+low,79.0
+mean,132.22594
+median,135.0
+Normalized EBIT,7738333333.333333
+Normalized Net Income,3490333333.3333335

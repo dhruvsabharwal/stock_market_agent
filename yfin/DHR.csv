@@ -1,0 +1,103 @@
+,Value
+ticker,DHR
+longName,Danaher Corporation
+ROCE,6.960307587922651
+ROCE (3yr avg),7.876597103983312
+NFAT,5.003667609766321
+NFAT (3yr avg),5.964172802520032
+NPM,21.110017297401978
+DPR,19.08025310014429
+Retention Ratio,80.91974689985571
+Dep,52.862138343278495
+SSGR,49.01889069219679
+Av NPM (over 3 years),21.110017297401978
+Au NFA/T (over 3 years),5.964172802520032
+Av Dep%NFA (over 3 years),52.862138343278495
+Au Retention ratio (over 3 years),80.9197468998557
+d/e,0.3205698687507011
+Interest coverage,17.492805755395683
+tax %,16.078346965131296
+cPAT,22305000000.0
+CFO,6688000000.0
+cCFO,30729000000.0
+cCFO/cPAT,1.3776731674512441
+p/a,4.6148565476754095
+p/e,43.493645
+EY,2.6524114729630797
+Earnings Growth 5yr cagr,-15.294969100197465
+Sales Growth 5yr cagr,-1.2617196817318876
+PEG,-2.8436569381129693
+no. shares (cr),71.6051968
+Current Price,205.29
+market cap,146998308510.72
+d/e_market,0.11664079793645796
+p/s,6.121613
+NFA + CWIP,4990000000.0
+Capex,2789000000.0
+Capex_from_cashflow_statement,1392000000.0
+FCF,3899000000.0
+FCF%,100.0
+FCF_capex_from_cashflow,5296000000.0
+FCF%_capex_from_cashflow,135.8296999230572
+DV,0.5224549913402525
+Mcap (cr),14699.8296576
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.5829844497607656
+Market Cap,146998296576
+Net Income,3899000000.0
+Total Revenue,23875000000.0
+Total Assets,77542000000.0
+Total Liabilities,27992000000.0
+Total Stockholders Equity,53486000000.0
+Total Debt,17146000000.0
+Cash and Cash Equivalents,1552000000.0
+Current Assets,9497000000.0
+Current Liabilities,6798000000.0
+Working Capital,2699000000.0
+Operating Cash Flow,6688000000.0
+Capital Expenditure,1392000000.0
+Dividends Paid,768000000.0
+Depreciation & Amortization,2352000000.0
+Interest Expense,278000000.0
+Income Tax Expense,747000000.0
+Shares Outstanding,716051968
+Net Fixed Assets,4990000000.0
+Construction in Progress,0
+Net Debt,15594000000.0
+3-5yr Average ROA (%),7.124646829058783
+3-5yr Average ROE (%),12.16845980690286
+ROE,9.199752819403678
+ROA,5.643279356542958
+insidersPercentHeld,0.11047
+institutionsPercentHeld,0.82684
+institutionsFloatPercentHeld,0.92952
+institutionsCount,2928.0
+current,205.29
+high,310.0
+low,205.0
+mean,245.95
+median,242.5
+Normalized EBIT,5868000000.0
+Normalized Net Income,5290666666.666667
+Research Asset,4302400000.0
+R&D Amortization,1222600000.0
+Adjusted EBIT (R&D),5285400000.0
+Adjusted Book Equity (R&D),57788400000.0
+Adjusted D/E (R&D),0.296703144575728
+Adjusted Invested Capital (R&D),73382400000.0
+Adjusted ROC (R&D),6.0444943876255754
+Adjusted ROE (R&D),6.747028815471618

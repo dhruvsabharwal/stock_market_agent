@@ -1,0 +1,95 @@
+,Value
+ticker,XPOF
+longName,"Xponential Fitness, Inc."
+ROCE,-17.863354878007513
+ROCE (3yr avg),-2.167146965053695
+NFAT,4.865153010858835
+NFAT (3yr avg),5.760162512826736
+NPM,-5.921883886930416
+DPR,10.34901393423227
+Retention Ratio,89.65098606576774
+Dep,33.550530281811895
+SSGR,-64.13139030507024
+Av NPM (over 3 years),-5.921883886930416
+Au NFA/T (over 3 years),5.760162512826736
+Av Dep%NFA (over 3 years),33.550530281811895
+Au Retention ratio (over 3 years),89.65098606576773
+d/e,-2.9200870742438694
+Interest coverage,0.3853621621621622
+tax %,0.34532199761707627
+cPAT,-36707000.0
+CFO,11677000.0
+cCFO,110905000.0
+cCFO/cPAT,-3.0213583240253903
+p/a,-12.26531252006481
+p/e,inf
+EY,-22.16235961276865
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,27.356790094794302
+PEG,
+no. shares (cr),3.5097
+Current Price,8.35
+market cap,293059950.0
+d/e_market,1.2953765944476547
+p/s,1.2869934
+NFA + CWIP,41005000.0
+Capex,-36790000.0
+Capex_from_cashflow_statement,6528000.0
+FCF,48467000.0
+FCF%,-74.6231658686046
+FCF_capex_from_cashflow,5149000.0
+FCF%_capex_from_cashflow,-7.927758702982341
+DV,1.9695628829527885
+Mcap (cr),40.7772256
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,4.150638006337244
+Market Cap,407772256
+Net Income,-64949000.0
+Total Revenue,320346000.0
+Total Assets,403397000.0
+Total Liabilities,714212000.0
+Total Stockholders Equity,-130004000.0
+Total Debt,379623000.0
+Cash and Cash Equivalents,4869000.0
+Current Assets,84147000.0
+Current Liabilities,107887000.0
+Working Capital,-23740000.0
+Operating Cash Flow,11677000.0
+Capital Expenditure,6528000.0
+Dividends Paid,5772000.0
+Depreciation & Amortization,17713000.0
+Interest Expense,46250000.0
+Income Tax Expense,-342000.0
+Shares Outstanding,35097000
+Net Fixed Assets,38687000.0
+Construction in Progress,2318000.0
+Net Debt,374754000.0
+3-5yr Average ROA (%),0.39879667456049317
+3-5yr Average ROE (%),4.526113580196336
+ROE,14.450351496934497
+ROA,-4.065499271407049
+insidersPercentHeld,0.07493
+institutionsPercentHeld,0.90707
+institutionsFloatPercentHeld,0.98054004
+institutionsCount,167.0
+current,8.35
+high,21.0
+low,9.0
+mean,12.33333
+median,12.0
+Normalized EBIT,-1619333.3333333333
+Normalized Net Income,-21228000.0

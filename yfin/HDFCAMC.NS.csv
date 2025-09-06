@@ -1,0 +1,95 @@
+,Value
+ticker,HDFCAMC.NS
+longName,HDFC Asset Management Company Limited
+ROCE,38.897067069607665
+ROCE (3yr avg),34.24227870029325
+NFAT,21.843406593406595
+NFAT (3yr avg),19.100972014328363
+NPM,70.39429296895555
+DPR,58.81764487572695
+Retention Ratio,41.18235512427305
+Dep,38.54629970746648
+SSGR,515.191408422857
+Av NPM (over 3 years),70.39429296895555
+Au NFA/T (over 3 years),19.100972014328363
+Av Dep%NFA (over 3 years),38.54629970746648
+Au Retention ratio (over 3 years),41.18235512427305
+d/e,
+Interest coverage,290.4760892667375
+tax %,25.121591925930886
+cPAT,72193800000.0
+CFO,20748000000.0
+cCFO,60925700000.0
+cCFO/cPAT,0.8439187298632292
+p/a,32.56869013814148
+p/e,45.100307
+EY,2.1049775610619625
+Earnings Growth 5yr cagr,20.78042057751619
+Sales Growth 5yr cagr,18.25786861355414
+PEG,2.1703269590605507
+no. shares (cr),21.3939008
+Current Price,5463.0
+market cap,1168748800704.0
+d/e_market,
+p/s,27.101612
+NFA + CWIP,1826400000.0
+Capex,1035000000.0
+Capex_from_cashflow_statement,447900000.0
+FCF,19713000000.0
+FCF%,80.12795759677098
+FCF_capex_from_cashflow,20300100000.0
+FCF%_capex_from_cashflow,82.51435864709636
+DV,1.2791884783962568
+Mcap (cr),116874.8838912
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9501156737998844
+Market Cap,1168748838912
+Net Income,24601900000.0
+Total Revenue,34984400000.0
+Total Assets,87506600000.0
+Total Liabilities,6206800000.0
+Total Stockholders Equity,70750100000.0
+Total Debt,
+Cash and Cash Equivalents,354000000.0
+Current Assets,22650500000.0
+Current Liabilities,2796100000.0
+Working Capital,19854400000.0
+Operating Cash Flow,20748000000.0
+Capital Expenditure,447900000.0
+Dividends Paid,14950500000.0
+Depreciation & Amortization,585400000.0
+Interest Expense,94100000.0
+Income Tax Expense,8253900000.0
+Shares Outstanding,213939008
+Net Fixed Assets,1826400000.0
+Construction in Progress,0
+Net Debt,
+3-5yr Average ROA (%),25.251258764788446
+3-5yr Average ROE (%),26.967030291081134
+ROE,29.473034242268163
+ROA,27.575463147951133
+insidersPercentHeld,0.54066
+institutionsPercentHeld,0.28175
+institutionsFloatPercentHeld,0.61339
+institutionsCount,228.0
+current,5463.0
+high,6680.0
+low,4600.0
+mean,5759.08
+median,5800.0
+Normalized EBIT,25529500000.0
+Normalized Net Income,19420833333.333332

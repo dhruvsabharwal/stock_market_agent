@@ -1,0 +1,103 @@
+,Value
+ticker,IRWD
+longName,"Ironwood Pharmaceuticals, Inc."
+ROCE,31.47836006947337
+ROCE (3yr avg),-139.83308758805552
+NFAT,20.85890663026058
+NFAT (3yr avg),20.95404389678785
+NPM,-61.16241564042559
+DPR,0.0
+Retention Ratio,100.0
+Dep,8.89394576084659
+SSGR,-1290.4938879239085
+Av NPM (over 3 years),-61.16241564042559
+Au NFA/T (over 3 years),20.95404389678785
+Av Dep%NFA (over 3 years),8.89394576084659
+Au Retention ratio (over 3 years),100.0
+d/e,-1.7311280844366796
+Interest coverage,2.8975298177635165
+tax %,98.65026534556274
+cPAT,-297846000.0
+CFO,103549000.0
+cCFO,822634000.0
+cCFO/cPAT,-2.7619440919132705
+p/a,0.18680756485725145
+p/e,inf
+EY,0.40749040905336636
+Earnings Growth 5yr cagr,-85.47016106972227
+Sales Growth 5yr cagr,-5.298326544223642
+PEG,-inf
+no. shares (cr),16.2434
+Current Price,1.3295
+market cap,215956002.99999997
+d/e_market,2.7759404307922853
+p/s,0.6999763
+NFA + CWIP,
+Capex,
+Capex_from_cashflow_statement,142000.0
+FCF,
+FCF%,
+FCF_capex_from_cashflow,103407000.0
+FCF%_capex_from_cashflow,11750.795454545456
+DV,0.0
+Mcap (cr),21.5956
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,True
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,
+Market Cap,215956000
+Net Income,880000.0
+Total Revenue,351410000.0
+Total Assets,350908000.0
+Total Liabilities,652243000.0
+Total Stockholders Equity,-346295000.0
+Total Debt,599481000.0
+Cash and Cash Equivalents,11923000.0
+Current Assets,182368000.0
+Current Liabilities,38846000.0
+Working Capital,143522000.0
+Operating Cash Flow,103549000.0
+Capital Expenditure,142000.0
+Dividends Paid,0
+Depreciation & Amortization,2011000.0
+Interest Expense,33034000.0
+Income Tax Expense,64318000.0
+Shares Outstanding,162434000
+Net Fixed Assets,15523000.0
+Construction in Progress,
+Net Debt,587558000.0
+3-5yr Average ROA (%),-55.91276335300303
+3-5yr Average ROE (%),-313.5273289604949
+ROE,-654.8805389387846
+ROA,-127.54442628875688
+insidersPercentHeld,0.02658
+institutionsPercentHeld,0.97971
+institutionsFloatPercentHeld,1.0064601
+institutionsCount,220.0
+current,1.3295
+high,1.1
+low,0.7
+mean,0.95
+median,1.0
+Normalized EBIT,-189396000.0
+Normalized Net Income,-275431333.3333333
+Research Asset,259010000.0
+R&D Amortization,68435200.0
+Adjusted EBIT (R&D),141217800.0
+Adjusted Book Equity (R&D),-87285000.0
+Adjusted D/E (R&D),-6.868087300223406
+Adjusted Invested Capital (R&D),500273000.0
+Adjusted ROC (R&D),0.3810050881886267
+Adjusted ROE (R&D),-1.0081915563957151

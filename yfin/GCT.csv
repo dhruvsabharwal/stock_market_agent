@@ -1,0 +1,103 @@
+,Value
+ticker,GCT
+longName,GigaCloud Technology Inc.
+ROCE,17.475586034417738
+ROCE (3yr avg),15.216044327426234
+NFAT,2.5659407446042053
+NFAT (3yr avg),3.6045660158464465
+NPM,9.69938107881998
+DPR,0.0
+Retention Ratio,100.0
+Dep,1.5067760443522433
+SSGR,33.455283367106304
+Av NPM (over 3 years),9.69938107881998
+Au NFA/T (over 3 years),3.6045660158464465
+Av Dep%NFA (over 3 years),1.5067760443522433
+Au Retention ratio (over 3 years),100.0
+d/e,1.6675320918957632
+Interest coverage,511.140625
+tax %,10.529534754718592
+cPAT,273145000.0
+CFO,158078000.0
+cCFO,349742000.0
+cCFO/cPAT,1.2804261472844094
+p/a,14.854960804525632
+p/e,7.9607253
+EY,16.135890858182485
+Earnings Growth 5yr cagr,64.31666417866634
+Sales Growth 5yr cagr,40.99822987485733
+PEG,0.12377391460921804
+no. shares (cr),2.95893
+Current Price,26.35
+market cap,779678055.0
+d/e_market,0.6211256003607797
+p/s,0.83151263
+NFA + CWIP,481428000.0
+Capex,66416000.0
+Capex_from_cashflow_statement,15536000.0
+FCF,91662000.0
+FCF%,72.85864173979397
+FCF_capex_from_cashflow,142542000.0
+FCF%_capex_from_cashflow,113.30122090805037
+DV,0.0
+Mcap (cr),99.250176
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,True
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),False
+FCF/CFO,0.5798529839699389
+Market Cap,992501760
+Net Income,125808000.0
+Total Revenue,1161042000.0
+Total Assets,1070475000.0
+Total Liabilities,665258000.0
+Total Stockholders Equity,290416000.0
+Total Debt,484278000.0
+Cash and Cash Equivalents,1782000.0
+Current Assets,547592000.0
+Current Liabilities,264379000.0
+Working Capital,283213000.0
+Operating Cash Flow,158078000.0
+Capital Expenditure,15536000.0
+Dividends Paid,0
+Depreciation & Amortization,8524000.0
+Interest Expense,256000.0
+Income Tax Expense,14806000.0
+Shares Outstanding,29589300
+Net Fixed Assets,481428000.0
+Construction in Progress,0
+Net Debt,482496000.0
+3-5yr Average ROA (%),11.396221911968354
+3-5yr Average ROE (%),26.848477273156742
+ROE,38.76098941268295
+ROA,14.872750806197349
+insidersPercentHeld,0.13547
+institutionsPercentHeld,0.46640998
+institutionsFloatPercentHeld,0.53949
+institutionsCount,198.0
+current,26.35
+high,44.0
+low,31.0
+mean,36.0
+median,34.5
+Normalized EBIT,96279000.0
+Normalized Net Income,81296000.0
+Research Asset,13786600.0
+R&D Amortization,3028400.0
+Adjusted EBIT (R&D),147632600.0
+Adjusted Book Equity (R&D),304202600.0
+Adjusted D/E (R&D),1.5919587801024713
+Adjusted Invested Capital (R&D),786698600.0
+Adjusted ROC (R&D),16.79011174974829
+Adjusted ROE (R&D),41.35664849675841

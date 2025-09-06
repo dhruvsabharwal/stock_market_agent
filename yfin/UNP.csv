@@ -1,0 +1,95 @@
+,Value
+ticker,UNP
+longName,Union Pacific Corporation
+ROCE,16.110853172379567
+ROCE (3yr avg),16.26781989601444
+NFAT,0.41426082203013426
+NFAT (3yr avg),0.424471022159335
+NPM,27.46779075139437
+DPR,47.50132424039257
+Retention Ratio,52.49867575960743
+Dep,4.032461927263213
+SSGR,2.0885063145945577
+Av NPM (over 3 years),27.46779075139437
+Au NFA/T (over 3 years),0.424471022159335
+Av Dep%NFA (over 3 years),4.032461927263213
+Au Retention ratio (over 3 years),52.49867575960743
+d/e,2.195225858804436
+Interest coverage,7.654058313632782
+tax %,23.27723447805322
+cPAT,26647000000.0
+CFO,9346000000.0
+cCFO,36119000000.0
+cCFO/cPAT,1.3554621533380868
+p/a,10.050348567002324
+p/e,19.317984
+EY,5.11669569843556
+Earnings Growth 5yr cagr,3.6089993107251805
+Sales Growth 5yr cagr,3.6076579346730586
+PEG,5.352725876835456
+no. shares (cr),59.304
+Current Price,222.35
+market cap,131862444000.0
+d/e_market,0.2461883688429133
+p/s,5.4057493
+NFA + CWIP,60018000000.0
+Capex,3016000000.0
+Capex_from_cashflow_statement,3452000000.0
+FCF,6330000000.0
+FCF%,93.81947532236549
+FCF_capex_from_cashflow,5894000000.0
+FCF%_capex_from_cashflow,87.35734400474286
+DV,2.4366300991660674
+Mcap (cr),13186.244608
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.6772950995078109
+Market Cap,131862446080
+Net Income,6747000000.0
+Total Revenue,24250000000.0
+Total Assets,67715000000.0
+Total Liabilities,50825000000.0
+Total Stockholders Equity,14788000000.0
+Total Debt,32463000000.0
+Cash and Cash Equivalents,322000000.0
+Current Assets,4021000000.0
+Current Liabilities,5254000000.0
+Working Capital,-1233000000.0
+Operating Cash Flow,9346000000.0
+Capital Expenditure,3452000000.0
+Dividends Paid,3213000000.0
+Depreciation & Amortization,2398000000.0
+Interest Expense,1269000000.0
+Income Tax Expense,2047000000.0
+Shares Outstanding,593040000
+Net Fixed Assets,58849000000.0
+Construction in Progress,1169000000.0
+Net Debt,32141000000.0
+3-5yr Average ROA (%),10.237298108749226
+3-5yr Average ROE (%),50.252986320021336
+ROE,47.337761122036284
+ROA,9.622796629984688
+insidersPercentHeld,0.00107
+institutionsPercentHeld,0.82627
+institutionsFloatPercentHeld,0.82716006
+institutionsCount,3322.0
+current,222.35
+high,294.0
+low,213.0
+mean,256.92
+median,265.0
+Normalized EBIT,9993000000.0
+Normalized Net Income,6708000000.0

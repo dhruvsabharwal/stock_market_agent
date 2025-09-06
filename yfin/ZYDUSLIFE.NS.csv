@@ -1,0 +1,102 @@
+,Value
+ticker,ZYDUSLIFE.NS
+ROCE,21.733587593794056
+ROCE (3yr avg),18.4767059755777
+NFAT,3.0904174852316055
+NFAT (3yr avg),2.7657638734185013
+NPM,17.317480210750333
+DPR,12.133325627140175
+Retention Ratio,87.86667437285982
+Dep,11.371474843393743
+SSGR,30.71320124077765
+Av NPM (over 3 years),17.317480210750333
+Au NFA/T (over 3 years),2.7657638734185013
+Av Dep%NFA (over 3 years),11.371474843393743
+Au Retention ratio (over 3 years),87.86667437285983
+d/e,0.162041402960236
+Interest coverage,63.94973262032086
+tax %,23.42741467137903
+cPAT,148326000000.0
+CFO,67767000000.0
+cCFO,147663000000.0
+cCFO/cPAT,0.9955301160956272
+p/a,15.45552034097429
+p/e,21.744442
+EY,4.5527971086241035
+Earnings Growth 5yr cagr,0.8595761996243789
+Sales Growth 5yr cagr,15.03886911852199
+PEG,25.29670087364212
+no. shares (cr),100.6230016
+Current Price,987.85
+market cap,994004321305.6
+d/e_market,0.032325815201482644
+p/s,4.211555
+NFA + CWIP,90774000000.0
+Capex,16981000000.0
+Capex_from_cashflow_statement,17126000000.0
+FCF,50786000000.0
+FCF%,112.2218539387913
+FCF_capex_from_cashflow,50641000000.0
+FCF%_capex_from_cashflow,111.90144735388354
+DV,0.30432463271655974
+Mcap (cr),99425.124352
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.7494208095385659
+Market Cap,994251243520
+Net Income,45255000000.0
+Total Revenue,225738000000.0
+Total Assets,372017000000.0
+Total Liabilities,108433000000.0
+Total Stockholders Equity,198295000000.0
+Total Debt,32132000000.0
+Cash and Cash Equivalents,113000000.0
+Current Assets,170461000000.0
+Current Liabilities,90416000000.0
+Working Capital,80045000000.0
+Operating Cash Flow,67767000000.0
+Capital Expenditure,17126000000.0
+Dividends Paid,3025000000.0
+Depreciation & Amortization,9158000000.0
+Interest Expense,935000000.0
+Income Tax Expense,14119000000.0
+Shares Outstanding,1006230016
+Net Fixed Assets,75597000000.0
+Construction in Progress,15177000000.0
+Net Debt,32019000000.0
+3-5yr Average ROA (%),11.653434729298533
+3-5yr Average ROE (%),17.566950387939073
+ROE,20.672595962779734
+ROA,13.614108976046326
+insidersPercentHeld,0.75163
+institutionsPercentHeld,0.14375
+institutionsFloatPercentHeld,0.57875997
+institutionsCount,161.0
+current,987.85
+high,1183.0
+low,850.0
+mean,1006.6333
+median,1000.0
+Normalized EBIT,45627666666.666664
+Normalized Net Income,34484333333.333336
+Research Asset,4413600000.0
+R&D Amortization,1191200000.0
+Adjusted EBIT (R&D),61904800000.0
+Adjusted Book Equity (R&D),202708600000.0
+Adjusted D/E (R&D),0.15851325498770155
+Adjusted Invested Capital (R&D),234727600000.0
+Adjusted ROC (R&D),20.194517305383837
+Adjusted ROE (R&D),22.325150486955167

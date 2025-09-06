@@ -1,0 +1,103 @@
+,Value
+ticker,MSFT
+longName,Microsoft Corporation
+ROCE,26.374205971305088
+ROCE (3yr avg),28.215444173377875
+NFAT,2.1299241321695477
+NFAT (3yr avg),2.305878773672873
+NPM,35.416075357148905
+DPR,25.23771942476905
+Retention Ratio,74.76228057523096
+Dep,15.74144221338324
+SSGR,45.31330610864794
+Av NPM (over 3 years),35.416075357148905
+Au NFA/T (over 3 years),2.305878773672873
+Av Dep%NFA (over 3 years),15.74144221338324
+Au Retention ratio (over 3 years),74.76228057523095
+d/e,0.2256729626746425
+Interest coverage,53.89014675052411
+tax %,17.629644009803684
+cPAT,335067000000.0
+CFO,136162000000.0
+cCFO,431327000000.0
+cCFO/cPAT,1.2872858264168061
+p/a,19.882732645661637
+p/e,37.39105
+EY,2.6881079524689757
+Earnings Growth 5yr cagr,12.197439102494666
+Sales Growth 5yr cagr,12.423114652863054
+PEG,3.0654836384756075
+no. shares (cr),743.316992
+Current Price,509.64
+market cap,3788240718028.8
+d/e_market,0.01599370380864466
+p/s,13.446639
+NFA + CWIP,229789000000.0
+Capex,109390000000.0
+Capex_from_cashflow_statement,64551000000.0
+FCF,26772000000.0
+FCF%,26.2903605939194
+FCF_capex_from_cashflow,71611000000.0
+FCF%_capex_from_cashflow,70.3226883494383
+DV,0.6357040587571477
+Mcap (cr),378824.0846848
+d/e decreasing trend 5 yrs,True
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.19661873356736828
+Market Cap,3788240846848
+Net Income,101832000000.0
+Total Revenue,281724000000.0
+Total Assets,619003000000.0
+Total Liabilities,275524000000.0
+Total Stockholders Equity,268477000000.0
+Total Debt,60588000000.0
+Cash and Cash Equivalents,25723000000.0
+Current Assets,191131000000.0
+Current Liabilities,141218000000.0
+Working Capital,49913000000.0
+Operating Cash Flow,136162000000.0
+Capital Expenditure,64551000000.0
+Dividends Paid,24082000000.0
+Depreciation & Amortization,34153000000.0
+Interest Expense,2385000000.0
+Income Tax Expense,21795000000.0
+Shares Outstanding,7433169920
+Net Fixed Assets,229789000000.0
+Construction in Progress,0
+Net Debt,34865000000.0
+3-5yr Average ROA (%),18.9115204503533
+3-5yr Average ROE (%),38.228391164931004
+ROE,33.280824111537434
+ROA,18.004784443662558
+insidersPercentHeld,0.00066
+institutionsPercentHeld,0.74503
+institutionsFloatPercentHeld,0.74552
+institutionsCount,7550.0
+current,509.64
+high,700.0
+low,483.0
+mean,613.8916
+median,630.0
+Normalized EBIT,109337666666.66667
+Normalized Net Income,87443000000.0
+Research Asset,82217800000.0
+R&D Amortization,22741000000.0
+Adjusted EBIT (R&D),135759000000.0
+Adjusted Book Equity (R&D),350694800000.0
+Adjusted D/E (R&D),0.17276560701784002
+Adjusted Invested Capital (R&D),385559800000.0
+Adjusted ROC (R&D),29.003327522405247
+Adjusted ROE (R&D),29.037214124646272

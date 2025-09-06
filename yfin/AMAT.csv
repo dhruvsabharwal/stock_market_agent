@@ -1,0 +1,103 @@
+,Value
+ticker,AMAT
+longName,"Applied Materials, Inc."
+ROCE,32.377317759531245
+ROCE (3yr avg),35.62907776810392
+NFAT,9.216889944039343
+NFAT (3yr avg),9.993700861540386
+NPM,25.856617900182226
+DPR,14.736347123903096
+Retention Ratio,85.26365287609691
+Dep,15.091007617398759
+SSGR,205.23308902480645
+Av NPM (over 3 years),25.856617900182226
+Au NFA/T (over 3 years),9.993700861540386
+Av Dep%NFA (over 3 years),15.091007617398759
+Au Retention ratio (over 3 years),85.2636528760969
+d/e,0.40406141048382166
+Interest coverage,31.850202429149796
+tax %,11.960255152109912
+cPAT,26446000000.0
+CFO,8677000000.0
+cCFO,28218000000.0
+cCFO/cPAT,1.067004461922408
+p/a,23.355787692407823
+p/e,19.721958
+EY,5.451119824286375
+Earnings Growth 5yr cagr,10.290595463550956
+Sales Growth 5yr cagr,5.622532981176032
+PEG,1.9165030896272919
+no. shares (cr),79.6641984
+Current Price,165.27
+market cap,131661020695.68001
+d/e_market,0.0501743034126178
+p/s,4.601441
+NFA + CWIP,4612000000.0
+Capex,1131000000.0
+Capex_from_cashflow_statement,1190000000.0
+FCF,7546000000.0
+FCF%,105.14142399331196
+FCF_capex_from_cashflow,7487000000.0
+FCF%_capex_from_cashflow,104.31935349031629
+DV,0.9053552780478415
+Mcap (cr),13166.1021184
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8696554108562867
+Market Cap,131661021184
+Net Income,7177000000.0
+Total Revenue,27176000000.0
+Total Assets,34409000000.0
+Total Liabilities,15408000000.0
+Total Stockholders Equity,16349000000.0
+Total Debt,6606000000.0
+Cash and Cash Equivalents,974000000.0
+Current Assets,21220000000.0
+Current Liabilities,8468000000.0
+Working Capital,12752000000.0
+Operating Cash Flow,8677000000.0
+Capital Expenditure,1190000000.0
+Dividends Paid,1192000000.0
+Depreciation & Amortization,392000000.0
+Interest Expense,247000000.0
+Income Tax Expense,975000000.0
+Shares Outstanding,796641984
+Net Fixed Assets,3714000000.0
+Construction in Progress,898000000.0
+Net Debt,5632000000.0
+3-5yr Average ROA (%),23.38363957125982
+3-5yr Average ROE (%),47.529035461383636
+ROE,40.605374823196605
+ROA,22.036292179680064
+insidersPercentHeld,0.0027599998
+institutionsPercentHeld,0.8315
+institutionsFloatPercentHeld,0.83381
+institutionsCount,3092.0
+current,165.27
+high,240.0
+low,160.0
+mean,194.58064
+median,200.0
+Normalized EBIT,8060000000.0
+Normalized Net Income,6852666666.666667
+Research Asset,8371200000.0
+R&D Amortization,2318200000.0
+Adjusted EBIT (R&D),9313800000.0
+Adjusted Book Equity (R&D),24720200000.0
+Adjusted D/E (R&D),0.2672308476468637
+Adjusted Invested Capital (R&D),30352200000.0
+Adjusted ROC (R&D),27.01565539118346
+Adjusted ROE (R&D),29.03293662672632

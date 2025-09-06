@@ -1,0 +1,103 @@
+,Value
+ticker,AAPL
+longName,Apple Inc.
+ROCE,65.33607652660827
+ROCE (3yr avg),60.18927524652738
+NFAT,8.748475865540579
+NFAT (3yr avg),8.761725054571576
+NPM,24.862376913154623
+DPR,15.537603549986954
+Retention Ratio,84.46239645001305
+Dep,25.559721812943977
+SSGR,158.43089118021015
+Av NPM (over 3 years),24.862376913154623
+Au NFA/T (over 3 years),8.761725054571576
+Av Dep%NFA (over 3 years),25.559721812943977
+Au Retention ratio (over 3 years),84.46239645001305
+d/e,1.7157821903260064
+Interest coverage,
+tax %,24.091185164189984
+cPAT,385214000000.0
+CFO,118254000000.0
+cCFO,454986000000.0
+cCFO/cPAT,1.1811252965883898
+p/a,26.58551319831075
+p/e,35.289833
+EY,2.715975169024044
+Earnings Growth 5yr cagr,2.5225462497963536
+Sales Growth 5yr cagr,2.247001899501888
+PEG,13.989766492031203
+no. shares (cr),1484.0399872
+Current Price,232.56
+market cap,3451283394232.32
+d/e_market,0.030895463460982413
+p/s,8.44609
+NFA + CWIP,45680000000.0
+Capex,13410000000.0
+Capex_from_cashflow_statement,9447000000.0
+FCF,104844000000.0
+FCF%,111.85030297857814
+FCF_capex_from_cashflow,108807000000.0
+FCF%_capex_from_cashflow,116.07813433472731
+DV,0.441401016950929
+Mcap (cr),345128.3308544
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8866000304429449
+Market Cap,3451283308544
+Net Income,93736000000.0
+Total Revenue,391035000000.0
+Total Assets,364980000000.0
+Total Liabilities,308030000000.0
+Total Stockholders Equity,62146000000.0
+Total Debt,106629000000.0
+Cash and Cash Equivalents,14287000000.0
+Current Assets,152987000000.0
+Current Liabilities,176392000000.0
+Working Capital,-23405000000.0
+Operating Cash Flow,118254000000.0
+Capital Expenditure,9447000000.0
+Dividends Paid,15234000000.0
+Depreciation & Amortization,11445000000.0
+Interest Expense,
+Income Tax Expense,29749000000.0
+Shares Outstanding,14840399872
+Net Fixed Assets,45680000000.0
+Construction in Progress,0
+Net Debt,92342000000.0
+3-5yr Average ROA (%),27.933020600533844
+3-5yr Average ROE (%),173.70440190464745
+ROE,171.94951160275843
+ROA,27.503126160791
+insidersPercentHeld,0.0197
+institutionsPercentHeld,0.63657004
+institutionsFloatPercentHeld,0.64935994
+institutionsCount,6998.0
+current,232.56
+high,300.0
+low,175.0
+mean,234.99919
+median,239.0
+Normalized EBIT,118984666666.66667
+Normalized Net Income,96844666666.66667
+Research Asset,79818200000.0
+R&D Amortization,21890000000.0
+Adjusted EBIT (R&D),132696000000.0
+Adjusted Book Equity (R&D),141964200000.0
+Adjusted D/E (R&D),0.7510978119835846
+Adjusted Invested Capital (R&D),234306200000.0
+Adjusted ROC (R&D),42.989882868881175
+Adjusted ROE (R&D),66.02791407974686

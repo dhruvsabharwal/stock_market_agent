@@ -1,0 +1,95 @@
+,Value
+ticker,ANF
+longName,Abercrombie & Fitch Co.
+ROCE,35.93071700454177
+ROCE (3yr avg),22.3128699483559
+NFAT,3.813670943436359
+NFAT (3yr avg),3.410004211013577
+NPM,6.3944939516810875
+DPR,-1
+Retention Ratio,101.0
+Dep,11.278422874297824
+SSGR,10.744880941260865
+Av NPM (over 3 years),6.3944939516810875
+Au NFA/T (over 3 years),3.410004211013577
+Av Dep%NFA (over 3 years),11.278422874297824
+Au Retention ratio (over 3 years),-1
+d/e,0.9192907376637428
+Interest coverage,61.34139272998261
+tax %,25.324160863405567
+cPAT,1160172000.0
+CFO,710376000.0
+cCFO,1639237000.0
+cCFO/cPAT,1.4129258420303197
+p/a,19.037614067223384
+p/e,9.253451
+EY,12.66613040377342
+Earnings Growth 5yr cagr,36.19114374031922
+Sales Growth 5yr cagr,10.051119773858508
+PEG,0.255682745657222
+no. shares (cr),4.76433
+Current Price,93.83
+market cap,4470370839.0
+d/e_market,0.21287115415527164
+p/s,0.8765856
+NFA + CWIP,1420060000.0
+Capex,313185000.0
+Capex_from_cashflow_statement,182903000.0
+FCF,397191000.0
+FCF%,70.14745073937301
+FCF_capex_from_cashflow,527473000.0
+FCF%_capex_from_cashflow,93.15640657479474
+DV,
+Mcap (cr),447.0370816
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,True
+peg <1,True
+EY >7%,True
+p/b <3,False
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.5591278421568296
+Market Cap,4470370816
+Net Income,566223000.0
+Total Revenue,4948587000.0
+Total Assets,3299887000.0
+Total Liabilities,1948564000.0
+Total Stockholders Equity,1035160000.0
+Total Debt,951613000.0
+Cash and Cash Equivalents,104154000.0
+Current Assets,1673431000.0
+Current Liabilities,1126944000.0
+Working Capital,546487000.0
+Operating Cash Flow,710376000.0
+Capital Expenditure,182903000.0
+Dividends Paid,
+Depreciation & Amortization,153773000.0
+Interest Expense,12077000.0
+Income Tax Expense,194661000.0
+Shares Outstanding,47643300
+Net Fixed Assets,1378894000.0
+Construction in Progress,41166000.0
+Net Debt,847459000.0
+3-5yr Average ROA (%),5.819182870454668
+3-5yr Average ROE (%),19.151786189140882
+ROE,37.933272870940534
+ROA,11.538730016336304
+insidersPercentHeld,0.02301
+institutionsPercentHeld,1.00447
+institutionsFloatPercentHeld,1.0281199
+institutionsCount,559.0
+current,93.83
+high,145.0
+low,84.0
+mean,114.625
+median,115.0
+Normalized EBIT,464219000.0
+Normalized Net Income,299054000.0

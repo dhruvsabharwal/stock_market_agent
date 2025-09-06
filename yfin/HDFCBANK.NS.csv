@@ -1,0 +1,94 @@
+,Value
+ticker,HDFCBANK.NS
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,8.134582541116117
+NFAT (3yr avg),8.233655603848025
+NPM,33.61356206723425
+DPR,18.272140627523125
+Retention Ratio,81.72785937247687
+Dep,20.004498734458085
+SSGR,206.1875628962369
+Av NPM (over 3 years),33.61356206723425
+Au NFA/T (over 3 years),8.233655603848025
+Av Dep%NFA (over 3 years),20.004498734458085
+Au Retention ratio (over 3 years),81.72785937247687
+d/e,1.0545214984398172
+Interest coverage,0.0
+tax %,20.31404700061355
+cPAT,2177612200000.0
+CFO,1195617400000.0
+cCFO,3276158600000.0
+cCFO/cPAT,1.504472926814058
+p/a,1.5265867733301348
+p/e,22.2746
+EY,4.508694081116412
+Earnings Growth 5yr cagr,8.17213461555757
+Sales Growth 5yr cagr,32.502698064489444
+PEG,2.725677078005432
+no. shares (cr),1534.6199552
+Current Price,973.4
+market cap,14937990643916.799
+d/e_market,0.490434508538363
+p/s,5.462446
+NFA + CWIP,314735300000.0
+Capex,109423700000.0
+Capex_from_cashflow_statement,66397300000.0
+FCF,1086193700000.0
+FCF%,161.27398875411038
+FCF_capex_from_cashflow,1129220100000.0
+FCF%_capex_from_cashflow,167.66238812498673
+DV,1.0580947850865472
+Mcap (cr),1494558.441472
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9084793346098844
+Market Cap,14945584414720
+Net Income,673508300000.0
+Total Revenue,2371508200000.0
+Total Assets,48187671100000.0
+Total Liabilities,39564780100000.0
+Total Stockholders Equity,6947327400000.0
+Total Debt,7326106100000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,1195617400000.0
+Capital Expenditure,66397300000.0
+Dividends Paid,158058100000.0
+Depreciation & Amortization,63021300000.0
+Interest Expense,1823477000000.0
+Income Tax Expense,175014900000.0
+Shares Outstanding,15346199552
+Net Fixed Assets,314735300000.0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),1.7852250812615065
+3-5yr Average ROE (%),13.377861340187915
+ROE,9.21086191626181
+ROA,1.4592908780263112
+insidersPercentHeld,0.00151
+institutionsPercentHeld,0.56126
+institutionsFloatPercentHeld,0.56211
+institutionsCount,502.0
+current,973.4
+high,1385.0
+low,1020.5
+mean,1139.9231
+median,1137.0
+Normalized EBIT,0.0
+Normalized Net Income,597203933333.3334

@@ -1,0 +1,95 @@
+,Value
+ticker,BAC
+longName,Bank of America Corporation
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,8.482454314615161
+NFAT (3yr avg),8.473369513793463
+NPM,27.50608869113911
+DPR,33.48332143333179
+Retention Ratio,66.5166785666682
+Dep,17.845834528527543
+SSGR,137.18409156614322
+Av NPM (over 3 years),27.50608869113911
+Au NFA/T (over 3 years),8.473369513793463
+Av Dep%NFA (over 3 years),17.845834528527543
+Au Retention ratio (over 3 years),66.5166785666682
+d/e,1.1200907950049033
+Interest coverage,0.0
+tax %,7.253708894510153
+cPAT,113153000000.0
+CFO,-8805000000.0
+cCFO,22657000000.0
+cCFO/cPAT,0.20023331241769993
+p/a,0.8531670351502177
+p/e,14.806452
+EY,7.254993560093292
+Earnings Growth 5yr cagr,-3.3518333725167104
+Sales Growth 5yr cagr,4.566499607635399
+PEG,-4.4174188733262225
+no. shares (cr),740.6949888
+Current Price,50.49
+market cap,373976899845.12
+d/e_market,0.8735031498878357
+p/s,3.7984552
+NFA + CWIP,12168000000.0
+Capex,2502000000.0
+Capex_from_cashflow_statement,0
+FCF,-11307000000.0
+FCF%,-41.674038036267135
+FCF_capex_from_cashflow,-8805000000.0
+FCF%_capex_from_cashflow,-32.45245466607696
+DV,2.541066040157989
+Mcap (cr),37397.692416
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,False
+cCFO > PAT,False
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,1.2841567291311755
+Market Cap,373976924160
+Net Income,27132000000.0
+Total Revenue,101887000000.0
+Total Assets,3261519000000.0
+Total Liabilities,2965960000000.0
+Total Stockholders Equity,291646000000.0
+Total Debt,326670000000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,-8805000000.0
+Capital Expenditure,0
+Dividends Paid,9503000000.0
+Depreciation & Amortization,2189000000.0
+Interest Expense,90547000000.0
+Income Tax Expense,2122000000.0
+Shares Outstanding,7406949888
+Net Fixed Assets,12168000000.0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),0.8680081558488504
+3-5yr Average ROE (%),9.761383767218978
+ROE,9.38844953376425
+ROA,0.8509954062616444
+insidersPercentHeld,0.08289
+institutionsPercentHeld,0.67271006
+institutionsFloatPercentHeld,0.73350996
+institutionsCount,4084.0
+current,50.49
+high,59.0
+low,46.0
+mean,53.47917
+median,54.0
+Normalized EBIT,0.0
+Normalized Net Income,27058333333.333332

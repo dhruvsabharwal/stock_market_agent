@@ -1,0 +1,103 @@
+,Value
+ticker,OSPN
+longName,OneSpan Inc.
+ROCE,21.557040869477675
+ROCE (3yr avg),2.923845392949559
+NFAT,9.076552702299194
+NFAT (3yr avg),10.054157247824778
+NPM,1.4026161821550893
+DPR,0.0
+Retention Ratio,100.0
+Dep,31.465505254654534
+SSGR,-17.363381600923624
+Av NPM (over 3 years),1.4026161821550893
+Au NFA/T (over 3 years),10.054157247824778
+Av Dep%NFA (over 3 years),31.465505254654534
+Au Retention ratio (over 3 years),100.0
+d/e,0.04355885661143263
+Interest coverage,inf
+tax %,-22.791318002882527
+cPAT,-17735000.0
+CFO,55667000.0
+cCFO,36428000.0
+cCFO/cPAT,-2.0540174795601915
+p/a,19.738511917729113
+p/e,9.862745
+EY,9.870344495150208
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,4.2747316325940865
+PEG,
+no. shares (cr),3.83246
+Current Price,15.09
+market cap,578318214.0
+d/e_market,0.011986480508808598
+p/s,2.4034405
+NFA + CWIP,28691000.0
+Capex,12162000.0
+Capex_from_cashflow_statement,9305000.0
+FCF,43505000.0
+FCF%,76.21491888861638
+FCF_capex_from_cashflow,46362000.0
+FCF%_capex_from_cashflow,81.21999929925371
+DV,0.0
+Mcap (cr),57.8318208
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,True
+peg <1,False
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),False
+FCF/CFO,0.7815222663337346
+Market Cap,578318208
+Net Income,57082000.0
+Total Revenue,243179000.0
+Total Assets,338734000.0
+Total Liabilities,126204000.0
+Total Stockholders Equity,159141000.0
+Total Debt,6932000.0
+Cash and Cash Equivalents,9479000.0
+Current Assets,175065000.0
+Current Liabilities,110275000.0
+Working Capital,64790000.0
+Operating Cash Flow,55667000.0
+Capital Expenditure,9305000.0
+Dividends Paid,0
+Depreciation & Amortization,8364000.0
+Interest Expense,0
+Income Tax Expense,-10595000.0
+Shares Outstanding,38324600
+Net Fixed Assets,28691000.0
+Construction in Progress,0
+Net Debt,-2547000.0
+3-5yr Average ROA (%),-6.904334474233563
+3-5yr Average ROE (%),-11.633061648819048
+ROE,-16.443004866851336
+ROA,-9.546784820102744
+insidersPercentHeld,0.10491
+institutionsPercentHeld,0.97723997
+institutionsFloatPercentHeld,1.09177
+institutionsCount,301.0
+current,15.09
+high,23.0
+low,15.0
+mean,19.5
+median,20.0
+Normalized EBIT,7961333.333333333
+Normalized Net Income,4283000.0
+Research Asset,107165600.0
+R&D Amortization,31998400.0
+Adjusted EBIT (R&D),49673600.0
+Adjusted Book Equity (R&D),266306600.0
+Adjusted D/E (R&D),0.02603014720626526
+Adjusted Invested Capital (R&D),263759600.0
+Adjusted ROC (R&D),23.125174643683057
+Adjusted ROE (R&D),21.434692193133777

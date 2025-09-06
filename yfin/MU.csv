@@ -1,0 +1,103 @@
+,Value
+ticker,MU
+longName,"Micron Technology, Inc."
+ROCE,2.994947480388246
+ROCE (3yr avg),3.5835432063758588
+NFAT,0.6358180989517395
+NFAT (3yr avg),0.6259949986127834
+NPM,-2.064696673807372
+DPR,20.868196615249285
+Retention Ratio,79.13180338475073
+Dep,19.710137371532692
+SSGR,-20.73290785207552
+Av NPM (over 3 years),-2.064696673807372
+Au NFA/T (over 3 years),0.6259949986127834
+Av Dep%NFA (over 3 years),19.710137371532692
+Au Retention ratio (over 3 years),79.13180338475071
+d/e,0.31747506799637354
+Interest coverage,2.2170818505338077
+tax %,36.37096774193548
+cPAT,9493000000.0
+CFO,8507000000.0
+cCFO,37715000000.0
+cCFO/cPAT,3.972927420204361
+p/a,1.210819559871759
+p/e,21.981981
+EY,0.5698220288527154
+Earnings Growth 5yr cagr,-48.847666504987416
+Sales Growth 5yr cagr,-3.2237882596922174
+PEG,-0.4500108720189451
+no. shares (cr),111.9129984
+Current Price,122.0
+market cap,136533858048.0
+d/e_market,0.10258993776529543
+p/s,4.0379105
+NFA + CWIP,43838000000.0
+Capex,10560000000.0
+Capex_from_cashflow_statement,8386000000.0
+FCF,-2053000000.0
+FCF%,-263.8817480719794
+FCF_capex_from_cashflow,121000000.0
+FCF%_capex_from_cashflow,15.552699228791775
+DV,0.37573097789388554
+Mcap (cr),13653.3860352
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,True
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,-0.24133066886093804
+Market Cap,136533860352
+Net Income,778000000.0
+Total Revenue,25111000000.0
+Total Assets,69416000000.0
+Total Liabilities,24285000000.0
+Total Stockholders Equity,44120000000.0
+Total Debt,14007000000.0
+Cash and Cash Equivalents,776000000.0
+Current Assets,24372000000.0
+Current Liabilities,9248000000.0
+Working Capital,15124000000.0
+Operating Cash Flow,8507000000.0
+Capital Expenditure,8386000000.0
+Dividends Paid,513000000.0
+Depreciation & Amortization,7780000000.0
+Interest Expense,562000000.0
+Income Tax Expense,451000000.0
+Shares Outstanding,1119129984
+Net Fixed Assets,40394000000.0
+Construction in Progress,3444000000.0
+Net Debt,13231000000.0
+3-5yr Average ROA (%),2.47380408428476
+3-5yr Average ROE (%),3.053709094967017
+ROE,-12.407074563689154
+ROA,-8.936929759378568
+insidersPercentHeld,0.00211
+institutionsPercentHeld,0.84036005
+institutionsFloatPercentHeld,0.84213996
+institutionsCount,2576.0
+current,122.0
+high,200.0
+low,95.0
+mean,149.85715
+median,154.0
+Normalized EBIT,2097333333.3333333
+Normalized Net Income,1210666666.6666667
+Research Asset,8856000000.0
+R&D Amortization,2464600000.0
+Adjusted EBIT (R&D),2767400000.0
+Adjusted Book Equity (R&D),52976000000.0
+Adjusted D/E (R&D),0.26440274841437633
+Adjusted Invested Capital (R&D),66207000000.0
+Adjusted ROC (R&D),2.6596429965255597
+Adjusted ROE (R&D),1.4685895499848989

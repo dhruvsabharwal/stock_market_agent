@@ -1,0 +1,103 @@
+,Value
+ticker,ABBV
+longName,AbbVie Inc.
+ROCE,6.766792515454507
+ROCE (3yr avg),9.96315957841254
+NFAT,11.353083434099153
+NFAT (3yr avg),11.084008118244201
+NPM,12.31158032850914
+DPR,186.4277537901376
+Retention Ratio,-86.42775379013759
+Dep,100.0
+SSGR,-217.9407443332143
+Av NPM (over 3 years),12.31158032850914
+Au NFA/T (over 3 years),11.084008118244201
+Av Dep%NFA (over 3 years),100.0
+Au Retention ratio (over 3 years),-86.42775379013761
+d/e,6.481081081081081
+Interest coverage,4.235754985754986
+tax %,-15.33907427341227
+cPAT,32519000000.0
+CFO,18806000000.0
+cCFO,89365000000.0
+cCFO/cPAT,2.7480857344936807
+p/a,3.1756872118832167
+p/e,99.00953
+EY,1.1647054863088746
+Earnings Growth 5yr cagr,-28.358425455617663
+Sales Growth 5yr cagr,0.08119580638035195
+PEG,-3.491362034713627
+no. shares (cr),176.656
+Current Price,207.92
+market cap,367303155200.0
+d/e_market,0.1828026768880857
+p/s,6.2972016
+NFA + CWIP,6227000000.0
+Capex,8551000000.0
+Capex_from_cashflow_statement,974000000.0
+FCF,10255000000.0
+FCF%,239.71482000935018
+FCF_capex_from_cashflow,17832000000.0
+FCF%_capex_from_cashflow,416.8302945301543
+DV,3.0016077574930673
+Mcap (cr),36730.3163904
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,True
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.5453046899925555
+Market Cap,367303163904
+Net Income,4278000000.0
+Total Revenue,56334000000.0
+Total Assets,135161000000.0
+Total Liabilities,131797000000.0
+Total Stockholders Equity,10360000000.0
+Total Debt,67144000000.0
+Cash and Cash Equivalents,4927000000.0
+Current Assets,25582000000.0
+Current Liabilities,38749000000.0
+Working Capital,-13167000000.0
+Operating Cash Flow,18806000000.0
+Capital Expenditure,974000000.0
+Dividends Paid,11025000000.0
+Depreciation & Amortization,8386000000.0
+Interest Expense,2808000000.0
+Income Tax Expense,-570000000.0
+Shares Outstanding,1766560000
+Net Fixed Assets,5134000000.0
+Construction in Progress,1093000000.0
+Net Debt,62217000000.0
+3-5yr Average ROA (%),5.724872378508867
+3-5yr Average ROE (%),61.2817677193767
+ROE,62.52100840336134
+ROA,3.17039188948835
+insidersPercentHeld,0.00104
+institutionsPercentHeld,0.74584
+institutionsFloatPercentHeld,0.74662
+institutionsCount,4640.0
+current,207.92
+high,255.0
+low,170.0
+mean,215.7037
+median,215.0
+Normalized EBIT,10235000000.0
+Normalized Net Income,6992333333.333333
+Research Asset,26055400000.0
+R&D Amortization,7004400000.0
+Adjusted EBIT (R&D),12310600000.0
+Adjusted Book Equity (R&D),36415400000.0
+Adjusted D/E (R&D),1.8438353004498096
+Adjusted Invested Capital (R&D),98632400000.0
+Adjusted ROC (R&D),14.395809163624417
+Adjusted ROE (R&D),11.747777039384436

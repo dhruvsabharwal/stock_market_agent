@@ -1,0 +1,103 @@
+,Value
+ticker,COIN
+longName,"Coinbase Global, Inc."
+ROCE,20.70656398343332
+ROCE (3yr avg),-4.209407564290967
+NFAT,29.4023386495318
+NFAT (3yr avg),22.495021264839867
+NPM,-13.27846429090198
+DPR,0.0
+Retention Ratio,100.0
+Dep,59.614695879188595
+SSGR,-358.31403246744543
+Av NPM (over 3 years),-13.27846429090198
+Au NFA/T (over 3 years),22.495021264839867
+Av Dep%NFA (over 3 years),59.614695879188595
+Au Retention ratio (over 3 years),100.0
+d/e,0.6876968133685916
+Interest coverage,27.719449438898877
+tax %,12.355487106153513
+cPAT,3673108000.0
+CFO,2556844000.0
+cCFO,5932548000.0
+cCFO/cPAT,1.6151302929290399
+p/a,17.48057005398098
+p/e,29.717726
+EY,3.885885407998672
+Earnings Growth 5yr cagr,-15.82335646702071
+Sales Growth 5yr cagr,-5.747027797916893
+PEG,-1.8780924301325166
+no. shares (cr),21.5159008
+Current Price,308.47
+market cap,66370099197.76
+d/e_market,0.06508759294043358
+p/s,11.818845
+NFA + CWIP,
+Capex,
+Capex_from_cashflow_statement,
+FCF,
+FCF%,
+FCF_capex_from_cashflow,
+FCF%_capex_from_cashflow,
+DV,0.0
+Mcap (cr),7925.7665536
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,
+Market Cap,79257665536
+Net Income,2579066000.0
+Total Revenue,6564028000.0
+Total Assets,22541951000.0
+Total Liabilities,12265109000.0
+Total Stockholders Equity,6281649000.0
+Total Debt,4319870000.0
+Cash and Cash Equivalents,266287000.0
+Current Assets,18112653000.0
+Current Liabilities,7941320000.0
+Working Capital,10171333000.0
+Operating Cash Flow,2556844000.0
+Capital Expenditure,
+Dividends Paid,0
+Depreciation & Amortization,127518000.0
+Interest Expense,80645000.0
+Income Tax Expense,363578000.0
+Shares Outstanding,215159008
+Net Fixed Assets,281231000.0
+Construction in Progress,
+Net Debt,4053583000.0
+3-5yr Average ROA (%),6.579338143494985
+3-5yr Average ROE (%),11.300659764983273
+ROE,31.150978673117013
+ROA,13.830310137438339
+insidersPercentHeld,0.01964
+institutionsPercentHeld,0.64925003
+institutionsFloatPercentHeld,0.66226
+institutionsCount,1698.0
+current,308.47
+high,510.0
+low,185.0
+mean,366.53586
+median,369.0
+Normalized EBIT,17843000.0
+Normalized Net Income,16329333.333333334
+Research Asset,4440321600.0
+R&D Amortization,1282141600.0
+Adjusted EBIT (R&D),3209399400.0
+Adjusted Book Equity (R&D),10721970600.0
+Adjusted D/E (R&D),0.4028988850239899
+Adjusted Invested Capital (R&D),14775553600.0
+Adjusted ROC (R&D),19.037272965176967
+Adjusted ROE (R&D),24.05402976949032

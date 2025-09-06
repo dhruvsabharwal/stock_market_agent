@@ -1,0 +1,94 @@
+,Value
+ticker,KTKBANK.NS
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,4.807208677047506
+NFAT (3yr avg),4.966707182096265
+NPM,28.10759560603582
+DPR,12.946604776261333
+Retention Ratio,87.05339522373868
+Dep,9.057376424462214
+SSGR,112.47107584307423
+Av NPM (over 3 years),28.10759560603582
+Au NFA/T (over 3 years),4.966707182096265
+Av Dep%NFA (over 3 years),9.057376424462214
+Au Retention ratio (over 3 years),87.05339522373866
+d/e,0.178893216693352
+Interest coverage,0.0
+tax %,22.441244752091546
+cPAT,42671253000.0
+CFO,2095600000.0
+cCFO,22526245000.0
+cCFO/cPAT,0.5279021218336382
+p/a,1.096488852468861
+p/e,5.5292397
+EY,19.78721825021534
+Earnings Growth 5yr cagr,27.237619086408248
+Sales Growth 5yr cagr,10.055749620814503
+PEG,0.20300011107649005
+no. shares (cr),37.7968
+Current Price,170.19
+market cap,64326373920.0
+d/e_market,0.3016725305258742
+p/s,1.5119218
+NFA + CWIP,
+Capex,
+Capex_from_cashflow_statement,1627100000.0
+FCF,
+FCF%,
+FCF_capex_from_cashflow,468500000.0
+FCF%_capex_from_cashflow,3.680745419691399
+DV,3.228691240365815
+Mcap (cr),6432.6373376
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,True
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,True
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,
+Market Cap,64326373376
+Net Income,12728400000.0
+Total Revenue,45799700000.0
+Total Assets,1209604500000.0
+Total Liabilities,1088756200000.0
+Total Stockholders Equity,108475326000.0
+Total Debt,19405500000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,2095600000.0
+Capital Expenditure,1627100000.0
+Dividends Paid,2076900000.0
+Depreciation & Amortization,851100000.0
+Interest Expense,57032000000.0
+Income Tax Expense,3682900000.0
+Shares Outstanding,377968000
+Net Fixed Assets,9906700000.0
+Construction in Progress,
+Net Debt,0
+3-5yr Average ROA (%),1.175395156424382
+3-5yr Average ROE (%),13.408726994868246
+ROE,11.100818718085332
+ROA,1.0739285194994808
+insidersPercentHeld,0.06343
+institutionsPercentHeld,0.24823
+institutionsFloatPercentHeld,0.26504
+institutionsCount,38.0
+current,170.19
+high,259.0
+low,220.0
+mean,239.5
+median,239.5
+Normalized EBIT,0.0
+Normalized Net Income,12530440333.333334

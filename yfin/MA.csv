@@ -1,0 +1,95 @@
+,Value
+ticker,MA
+longName,Mastercard Incorporated
+ROCE,55.091646166106514
+ROCE (3yr avg),53.02578444106075
+NFAT,13.416051440819242
+NFAT (3yr avg),12.374674177163522
+NPM,44.98880667331523
+DPR,19.15189362715053
+Retention Ratio,80.84810637284947
+Dep,40.116692930389526
+SSGR,409.9823597010495
+Av NPM (over 3 years),44.98880667331523
+Au NFA/T (over 3 years),12.374674177163522
+Av Dep%NFA (over 3 years),40.116692930389526
+Au Retention ratio (over 3 years),80.84810637284947
+d/e,2.630393996247655
+Interest coverage,25.273993808049536
+tax %,15.602464927232202
+cPAT,42686000000.0
+CFO,14780000000.0
+cCFO,47418000000.0
+cCFO/cPAT,1.1108560183666776
+p/a,30.328872973991704
+p/e,39.816586
+EY,2.429871105405879
+Earnings Growth 5yr cagr,16.5322374148432
+Sales Growth 5yr cagr,14.256837911045107
+PEG,2.408420893124323
+no. shares (cr),89.7273984
+Current Price,590.48
+market cap,529822342072.32
+d/e_market,0.034400210320900695
+p/s,17.651566
+NFA + CWIP,2138000000.0
+Capex,974000000.0
+Capex_from_cashflow_statement,1194000000.0
+FCF,13806000000.0
+FCF%,107.23939723473667
+FCF_capex_from_cashflow,13586000000.0
+FCF%_capex_from_cashflow,105.53052664284606
+DV,0.4620416705012888
+Mcap (cr),53380.1009152
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9341001353179973
+Market Cap,533801009152
+Net Income,12874000000.0
+Total Revenue,28167000000.0
+Total Assets,48081000000.0
+Total Liabilities,41566000000.0
+Total Stockholders Equity,6929000000.0
+Total Debt,18226000000.0
+Cash and Cash Equivalents,4813000000.0
+Current Assets,19724000000.0
+Current Liabilities,19220000000.0
+Working Capital,504000000.0
+Operating Cash Flow,14780000000.0
+Capital Expenditure,1194000000.0
+Dividends Paid,2448000000.0
+Depreciation & Amortization,897000000.0
+Interest Expense,646000000.0
+Income Tax Expense,2380000000.0
+Shares Outstanding,897273984
+Net Fixed Assets,2138000000.0
+Construction in Progress,0
+Net Debt,13413000000.0
+3-5yr Average ROA (%),26.79027473966924
+3-5yr Average ROE (%),157.59854197993138
+ROE,169.27496786875332
+ROA,27.58340314394126
+insidersPercentHeld,0.0051200003
+institutionsPercentHeld,0.90449995
+institutionsFloatPercentHeld,0.90916
+institutionsCount,4605.0
+current,590.48
+high,690.0
+low,520.0
+mean,644.1818
+median,650.0
+Normalized EBIT,14105666666.666666
+Normalized Net Income,11333000000.0

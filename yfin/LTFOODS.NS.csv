@@ -1,0 +1,102 @@
+,Value
+ticker,LTFOODS.NS
+ROCE,20.336091711907134
+ROCE (3yr avg),20.551649417051227
+NFAT,6.916452608870716
+NFAT (3yr avg),7.311650929898909
+NPM,6.815360346566089
+DPR,8.998697901258694
+Retention Ratio,91.0013020987413
+Dep,14.457939740320386
+SSGR,30.889406707645396
+Av NPM (over 3 years),6.815360346566089
+Au NFA/T (over 3 years),7.311650929898909
+Av Dep%NFA (over 3 years),14.457939740320386
+Au Retention ratio (over 3 years),91.00130209874129
+d/e,0.37401563663387055
+Interest coverage,9.039719290401903
+tax %,25.5714188042839
+cPAT,18935164000.0
+CFO,4625033000.0
+cCFO,19952531000.0
+cCFO/cPAT,1.053728977472812
+p/a,10.015445555995178
+p/e,24.498878
+EY,3.9840609590277105
+Earnings Growth 5yr cagr,24.053456597035684
+Sales Growth 5yr cagr,17.227837961014703
+PEG,1.0185179789510672
+no. shares (cr),34.7252992
+Current Price,437.55
+market cap,151940546649.6
+d/e_market,0.08299554844357405
+p/s,1.6545999
+NFA + CWIP,14047675000.0
+Capex,3619419000.0
+Capex_from_cashflow_statement,2390543000.0
+FCF,1005614000.0
+FCF%,16.612372146316353
+FCF_capex_from_cashflow,2234490000.0
+FCF%_capex_from_cashflow,36.91295013516362
+DV,0.6841590496559772
+Mcap (cr),15194.054656
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.21742850267230526
+Market Cap,151940546560
+Net Income,6053404000.0
+Total Revenue,86814663000.0
+Total Assets,74226938000.0
+Total Liabilities,35690418000.0
+Total Stockholders Equity,33716208000.0
+Total Debt,12610389000.0
+Cash and Cash Equivalents,1746593000.0
+Current Assets,54640801000.0
+Current Liabilities,29494862000.0
+Working Capital,25145939000.0
+Operating Cash Flow,4625033000.0
+Capital Expenditure,2390543000.0
+Dividends Paid,1039515000.0
+Depreciation & Amortization,1856817000.0
+Interest Expense,876778000.0
+Income Tax Expense,2101965000.0
+Shares Outstanding,347252992
+Net Fixed Assets,13600978000.0
+Construction in Progress,446697000.0
+Net Debt,10863796000.0
+3-5yr Average ROA (%),9.25041778014942
+3-5yr Average ROE (%),17.68543172540151
+ROE,16.756195004844663
+ROA,8.990140050291524
+insidersPercentHeld,0.61854
+institutionsPercentHeld,0.13147001
+institutionsFloatPercentHeld,0.34465
+institutionsCount,51.0
+current,437.55
+high,600.0
+low,424.0
+mean,512.0
+median,512.0
+Normalized EBIT,8054260333.333333
+Normalized Net Income,5337803666.666667
+Research Asset,75322200.0
+R&D Amortization,21334000.0
+Adjusted EBIT (R&D),9096756000.0
+Adjusted Book Equity (R&D),33791530200.0
+Adjusted D/E (R&D),0.37318194604871724
+Adjusted Invested Capital (R&D),44655326200.0
+Adjusted ROC (R&D),15.161878776369067
+Adjusted ROE (R&D),17.913968275991245

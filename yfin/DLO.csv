@@ -1,0 +1,102 @@
+,Value
+ticker,DLO
+ROCE,30.690205546598392
+ROCE (3yr avg),33.167909959960845
+NFAT,109.47666568828882
+NFAT (3yr avg),90.5266655207002
+NPM,21.663531499394477
+DPR,0.0
+Retention Ratio,100.0
+Dep,100.0
+SSGR,1861.1272700428365
+Av NPM (over 3 years),21.663531499394477
+Au NFA/T (over 3 years),90.5266655207002
+Av Dep%NFA (over 3 years),100.0
+Au Retention ratio (over 3 years),100.0
+d/e,0.11967316512501346
+Interest coverage,281.31736526946105
+tax %,20.229242678073618
+cPAT,455939000.0
+CFO,-32784000.0
+cCFO,523606000.0
+cCFO/cPAT,1.148412397272442
+p/a,11.103846824159277
+p/e,30.4375
+EY,5.005816257643702
+Earnings Growth 5yr cagr,15.867554829548315
+Sales Growth 5yr cagr,45.11315234721243
+PEG,1.9182224562614878
+no. shares (cr),16.4648992
+Current Price,14.61
+market cap,2405521773.12
+d/e_market,0.022637500357924844
+p/s,4.9694324
+NFA + CWIP,
+Capex,
+Capex_from_cashflow_statement,22647000.0
+FCF,
+FCF%,
+FCF_capex_from_cashflow,-55431000.0
+FCF%_capex_from_cashflow,-46.03291921339357
+DV,0.0
+Mcap (cr),429.1015424
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,False
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,
+Market Cap,4291015424
+Net Income,120416000.0
+Total Revenue,745974000.0
+Total Assets,1171329000.0
+Total Liabilities,682342000.0
+Total Stockholders Equity,455031000.0
+Total Debt,54455000.0
+Cash and Cash Equivalents,220000.0
+Current Assets,1072883000.0
+Current Liabilities,677621000.0
+Working Capital,395262000.0
+Operating Cash Flow,-32784000.0
+Capital Expenditure,22647000.0
+Dividends Paid,0.0
+Depreciation & Amortization,17395000.0
+Interest Expense,501000.0
+Income Tax Expense,30550000.0
+Shares Outstanding,164648992
+Net Fixed Assets,7022000.0
+Construction in Progress,
+Net Debt,54235000.0
+3-5yr Average ROA (%),13.897321784729646
+3-5yr Average ROE (%),30.78045193120441
+ROE,25.514080672261784
+ROA,10.67620895990836
+insidersPercentHeld,0.16684
+institutionsPercentHeld,0.68666
+institutionsFloatPercentHeld,0.82416
+institutionsCount,153.0
+current,14.61
+high,18.0
+low,10.0
+mean,14.12222
+median,14.6
+Normalized EBIT,150357333.33333334
+Normalized Net Income,126021000.0
+Research Asset,40908200.0
+R&D Amortization,9601800.0
+Adjusted EBIT (R&D),167543200.0
+Adjusted Book Equity (R&D),495939200.0
+Adjusted D/E (R&D),0.10980176602293185
+Adjusted Invested Capital (R&D),550174200.0
+Adjusted ROC (R&D),24.292393115015166
+Adjusted ROE (R&D),24.280395661403656

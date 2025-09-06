@@ -1,0 +1,103 @@
+,Value
+ticker,TSLA
+longName,"Tesla, Inc."
+ROCE,10.016193203144269
+ROCE (3yr avg),16.009571132777356
+NFAT,2.0219184319731762
+NFAT (3yr avg),2.2639845865660306
+NPM,12.748073754815401
+DPR,0.0
+Retention Ratio,100.0
+Dep,11.192914215663128
+SSGR,17.66852827364588
+Av NPM (over 3 years),12.748073754815401
+Au NFA/T (over 3 years),2.2639845865660306
+Av Dep%NFA (over 3 years),11.192914215663128
+Au Retention ratio (over 3 years),100.0
+d/e,0.217501676405786
+Interest coverage,22.17142857142857
+tax %,20.433815350389324
+cPAT,40236000000.0
+CFO,14923000000.0
+cCFO,54400000000.0
+cCFO/cPAT,1.3520230639228552
+p/a,6.687426138175542
+p/e,205.94049
+EY,0.6389225608725387
+Earnings Growth 5yr cagr,6.044403165851664
+Sales Growth 5yr cagr,21.981528090391333
+PEG,34.07126962732684
+no. shares (cr),322.5449984
+Current Price,345.98
+market cap,1115941185464.32
+d/e_market,0.012207632604160721
+p/s,12.0356045
+NFA + CWIP,58290000000.0
+Capex,12743000000.0
+Capex_from_cashflow_statement,11342000000.0
+FCF,2180000000.0
+FCF%,30.575035063113603
+FCF_capex_from_cashflow,3581000000.0
+FCF%_capex_from_cashflow,50.22440392706873
+DV,0.0
+Mcap (cr),111594.1240832
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.14608322723313008
+Market Cap,1115941240832
+Net Income,7130000000.0
+Total Revenue,97690000000.0
+Total Assets,122070000000.0
+Total Liabilities,48390000000.0
+Total Stockholders Equity,62634000000.0
+Total Debt,13623000000.0
+Cash and Cash Equivalents,5362000000.0
+Current Assets,58360000000.0
+Current Liabilities,28821000000.0
+Working Capital,29539000000.0
+Operating Cash Flow,14923000000.0
+Capital Expenditure,11342000000.0
+Dividends Paid,0
+Depreciation & Amortization,5368000000.0
+Interest Expense,350000000.0
+Income Tax Expense,1837000000.0
+Shares Outstanding,3225449984
+Net Fixed Assets,51507000000.0
+Construction in Progress,6783000000.0
+Net Debt,8261000000.0
+3-5yr Average ROA (%),16.64765381737013
+3-5yr Average ROE (%),30.774919246515097
+ROE,27.947232107920772
+ROA,15.875653591312263
+insidersPercentHeld,0.12875
+institutionsPercentHeld,0.50953996
+institutionsFloatPercentHeld,0.58484
+institutionsCount,4647.0
+current,345.98
+high,500.0
+low,115.0
+mean,306.32074
+median,322.5
+Normalized EBIT,11126333333.333334
+Normalized Net Income,11570666666.666666
+Research Asset,10597400000.0
+R&D Amortization,2835400000.0
+Adjusted EBIT (R&D),11044600000.0
+Adjusted Book Equity (R&D),73231400000.0
+Adjusted D/E (R&D),0.18602675901321017
+Adjusted Invested Capital (R&D),81492400000.0
+Adjusted ROC (R&D),10.783541569288548
+Adjusted ROE (R&D),9.736260675065614

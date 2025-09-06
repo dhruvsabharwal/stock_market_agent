@@ -1,0 +1,49 @@
+,index,Value
+0,ticker,GHCL.NS
+1,ROE,20.954967718975468
+2,ROCE,22.31580326151025
+3,Au NFA,20300600000.0
+4,NFAT,1.5646828172566327
+5,Retention Ratio,81.67908355363294
+6,Dep as % NFA,0.0
+7,NPM,19.64960332451832
+8,Av NPM (over 3 years),22.6337991461856
+9,Au NFA/T (over 3 years),1.7699828322233302
+10,Av Dep%NFA (over 3 years),5.53633576730757
+11,Au Retention ratio (over 3 years),82.73771026265528
+12,SSGR,21.996341757164462
+13,d/e,0.03991902045639963
+14,Interest coverage,48.64131812420786
+15,tax %,0.0
+16,cPAT,32096700000.0
+17,CFO,6378800000.0
+18,cCFO/cPAT,0.9142653294575455
+19,p/a,16.557635373889788
+20,EY,11.106145251396649
+21,Earnings Growth 5yr cagr,0
+22,PEG,inf
+23,no. shares (cr),9.6072096
+24,p/s,1.7749262
+25,NFA/CWIP,7.1262255309249225
+26,Capex,3148900000.0
+27,FCF,3229900000.0
+28,DV,0.0
+29,Mcap (cr),5588.994048
+30,d/e decreasing trend 5 yrs,False
+31,FCF%,51.74877833854041
+32,Sales cagr >15%,False
+33,npm >8%,True
+34,Tax payout >25%,False
+35,Interest coverage >3,True
+36,d/e <0.5,True
+37,CFO >0,True
+38,net cash flow positive,False
+39,cCFO > PAT,False
+40,p/e <10,True
+41,peg <1,False
+42,EY >7%,True
+43,p/b <3,True
+44,DV >3%,False
+45,EY >7,True
+46,sgr > Sales growth (very linear),False
+47,FCF/CFO,0.5063491565811752

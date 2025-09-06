@@ -1,0 +1,103 @@
+,Value
+ticker,LRCX
+longName,Lam Research Corporation
+ROCE,41.52670040641315
+ROCE (3yr avg),36.45282102167308
+NFAT,9.192080654369402
+NFAT (3yr avg),8.849546132548973
+NPM,26.87582020819336
+DPR,22.73321540931705
+Retention Ratio,77.26678459068295
+Dep,17.744695227416443
+SSGR,166.02570637293914
+Av NPM (over 3 years),26.87582020819336
+Au NFA/T (over 3 years),8.849546132548973
+Av Dep%NFA (over 3 years),17.744695227416443
+Au Retention ratio (over 3 years),77.26678459068295
+d/e,0.5251512567431126
+Interest coverage,33.113741070576815
+tax %,10.068798443269692
+cPAT,18302206000.0
+CFO,6173264000.0
+cCFO,19104145000.0
+cCFO/cPAT,1.043816521352672
+p/a,28.585194727818937
+p/e,25.081926
+EY,4.0673165250499315
+Earnings Growth 5yr cagr,8.199538770459892
+Sales Growth 5yr cagr,2.285830538778799
+PEG,3.0589435213553133
+no. shares (cr),126.5619968
+Current Price,104.09
+market cap,131738382469.12001
+d/e_market,0.03404099030175344
+p/s,7.1458726
+NFA + CWIP,2428744000.0
+Capex,660503000.0
+Capex_from_cashflow_statement,759186000.0
+FCF,5512761000.0
+FCF%,102.88424302337886
+FCF_capex_from_cashflow,5414078000.0
+FCF%_capex_from_cashflow,101.04252963252516
+DV,0.8725945912304314
+Mcap (cr),13173.837824
+d/e decreasing trend 5 yrs,True
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8930058717722099
+Market Cap,131738378240
+Net Income,5358217000.0
+Total Revenue,18435591000.0
+Total Assets,21345260000.0
+Total Liabilities,11483641000.0
+Total Stockholders Equity,8539454000.0
+Total Debt,4484505000.0
+Cash and Cash Equivalents,440274000.0
+Current Assets,14516995000.0
+Current Liabilities,6568425000.0
+Working Capital,7948570000.0
+Operating Cash Flow,6173264000.0
+Capital Expenditure,759186000.0
+Dividends Paid,1149542000.0
+Depreciation & Amortization,386277000.0
+Interest Expense,178203000.0
+Income Tax Expense,599912000.0
+Shares Outstanding,1265619968
+Net Fixed Assets,2428744000.0
+Construction in Progress,0
+Net Debt,4044231000.0
+3-5yr Average ROA (%),24.74741588098827
+3-5yr Average ROE (%),59.891119833542014
+ROE,58.23809296338317
+ROA,26.730948385417324
+insidersPercentHeld,0.0029199999
+institutionsPercentHeld,0.89067
+institutionsFloatPercentHeld,0.89328
+institutionsCount,2583.0
+current,104.09
+high,135.0
+low,80.0
+mean,108.93333
+median,114.0
+Normalized EBIT,5325820666.666667
+Normalized Net Income,4565640000.0
+Research Asset,5296338600.0
+R&D Amortization,1466048200.0
+Adjusted EBIT (R&D),6766670800.0
+Adjusted Book Equity (R&D),13835792600.0
+Adjusted D/E (R&D),0.3241234622149511
+Adjusted Invested Capital (R&D),17880023600.0
+Adjusted ROC (R&D),34.03434185527818
+Adjusted ROE (R&D),38.72721393641012

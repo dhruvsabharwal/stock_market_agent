@@ -1,0 +1,94 @@
+,Value
+ticker,RBLBANK.NS
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,17.63493719104148
+NFAT (3yr avg),15.339820742949273
+NPM,11.067581381133996
+DPR,9.915496445856473
+Retention Ratio,90.08450355414352
+Dep,39.125547137894024
+SSGR,113.81516152998728
+Av NPM (over 3 years),11.067581381133996
+Au NFA/T (over 3 years),15.339820742949273
+Av Dep%NFA (over 3 years),39.125547137894024
+Au Retention ratio (over 3 years),90.08450355414354
+d/e,0.9256975871048999
+Interest coverage,0.0
+tax %,-3.0569568404259906
+cPAT,27303444000.0
+CFO,-8240700000.0
+cCFO,-4514265000.0
+cCFO/cPAT,-0.16533683443011804
+p/a,0.5179051640818227
+p/e,26.79958
+EY,4.582745251521042
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,15.49950678846448
+PEG,
+no. shares (cr),61.2644992
+Current Price,255.4
+market cap,156469530956.80002
+d/e_market,0.8778054050530846
+p/s,2.1478403
+NFA + CWIP,
+Capex,
+Capex_from_cashflow_statement,2883300000.0
+FCF,
+FCF%,
+FCF_capex_from_cashflow,-11124000000.0
+FCF%_capex_from_cashflow,-155.13346163500964
+DV,0.581327236323814
+Mcap (cr),15646.9526528
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,False
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,
+Market Cap,156469526528
+Net Income,7170600000.0
+Total Revenue,102433000000.0
+Total Assets,1467721100000.0
+Total Liabilities,1311025800000.0
+Total Stockholders Equity,148374374000.0
+Total Debt,137349800000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,-8240700000.0
+Capital Expenditure,2883300000.0
+Dividends Paid,909600000.0
+Depreciation & Amortization,2358400000.0
+Interest Expense,75761900000.0
+Income Tax Expense,-212700000.0
+Shares Outstanding,612644992
+Net Fixed Assets,6038100000.0
+Construction in Progress,
+Net Debt,0
+3-5yr Average ROA (%),0.7741213720950076
+3-5yr Average ROE (%),6.8810472709754
+ROE,4.700958902916059
+ROA,0.5028012350445027
+insidersPercentHeld,0.12172
+institutionsPercentHeld,0.40298998
+institutionsFloatPercentHeld,0.45885
+institutionsCount,64.0
+current,255.4
+high,305.0
+low,140.0
+mean,255.57895
+median,260.0
+Normalized EBIT,0.0
+Normalized Net Income,9654981333.333334

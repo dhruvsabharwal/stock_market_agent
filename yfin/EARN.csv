@@ -1,0 +1,94 @@
+,Value
+ticker,EARN
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,0
+NFAT (3yr avg),0.0
+NPM,69.03124107368053
+DPR,200.30508565380023
+Retention Ratio,-100.30508565380023
+Dep,0.0
+SSGR,-0.0
+Av NPM (over 3 years),69.03124107368053
+Au NFA/T (over 3 years),0.0
+Av Dep%NFA (over 3 years),0.0
+Au Retention ratio (over 3 years),-100.30508565380023
+d/e,0.0
+Interest coverage,0.0
+tax %,7.187147688838783
+cPAT,-25362000.0
+CFO,9112000.0
+cCFO,49387000.0
+cCFO/cPAT,-1.9472833372762401
+p/a,0.6964227178039315
+p/e,21.0
+EY,2.98214026712732
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,
+PEG,
+no. shares (cr),3.75592
+Current Price,5.88
+market cap,220848096.0
+d/e_market,0.0
+p/s,6.1529574
+NFA + CWIP,0
+Capex,0
+Capex_from_cashflow_statement,0
+FCF,9112000.0
+FCF%,138.35408442150015
+FCF_capex_from_cashflow,9112000.0
+FCF%_capex_from_cashflow,138.35408442150015
+DV,10.058950202586306
+Mcap (cr),22.0848096
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,True
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,1.0
+Market Cap,220848096
+Net Income,6586000.0
+Total Revenue,15880000.0
+Total Assets,824092000.0
+Total Liabilities,630366000.0
+Total Stockholders Equity,136238000.0
+Total Debt,0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,9112000.0
+Capital Expenditure,0
+Dividends Paid,22215000.0
+Depreciation & Amortization,0
+Interest Expense,34794000.0
+Income Tax Expense,510000.0
+Shares Outstanding,37559200
+Net Fixed Assets,0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),-0.35898811712742
+3-5yr Average ROE (%),-4.997426030293789
+ROE,3.9919506370391917
+ROA,0.7442724584157823
+insidersPercentHeld,0.01359
+institutionsPercentHeld,0.13154
+institutionsFloatPercentHeld,0.13335
+institutionsCount,64.0
+current,5.88
+high,6.5
+low,5.75
+mean,6.125
+median,6.125
+Normalized EBIT,0.0
+Normalized Net Income,-6351000.0

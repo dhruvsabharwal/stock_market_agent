@@ -1,0 +1,95 @@
+,Value
+ticker,AON
+longName,Aon plc
+ROCE,16.365036580670004
+ROCE (3yr avg),24.92511999240227
+NFAT,11.754399101460127
+NFAT (3yr avg),10.436054857652534
+NPM,18.940709103434795
+DPR,19.37689984681285
+Retention Ratio,80.62310015318714
+Dep,30.22319186850936
+SSGR,129.141490417301
+Av NPM (over 3 years),18.940709103434795
+Au NFA/T (over 3 years),10.436054857652534
+Av Dep%NFA (over 3 years),30.22319186850936
+Au Retention ratio (over 3 years),80.62310015318714
+d/e,-21.661016949152543
+Interest coverage,5.299492385786802
+tax %,21.432697862507222
+cPAT,9062000000.0
+CFO,3035000000.0
+cCFO,11871000000.0
+cCFO/cPAT,1.3099757227984992
+p/a,7.815306693365528
+p/e,30.905567
+EY,3.357966709386648
+Earnings Growth 5yr cagr,30.941498282373693
+Sales Growth 5yr cagr,8.787229581585754
+PEG,0.9988387348910586
+no. shares (cr),21.5627008
+Current Price,366.54
+market cap,79035923512.32
+d/e_market,0.22637807220929126
+p/s,4.7179995
+NFA + CWIP,1490000000.0
+Capex,732000000.0
+Capex_from_cashflow_statement,218000000.0
+FCF,2303000000.0
+FCF%,86.77467972871138
+FCF_capex_from_cashflow,2817000000.0
+FCF%_capex_from_cashflow,106.14167294649586
+DV,0.7110690620479639
+Mcap (cr),7903.592448
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.7588138385502471
+Market Cap,79035924480
+Net Income,2654000000.0
+Total Revenue,15698000000.0
+Total Assets,48965000000.0
+Total Liabilities,42535000000.0
+Total Stockholders Equity,-826000000.0
+Total Debt,17892000000.0
+Cash and Cash Equivalents,156000000.0
+Current Assets,23432000000.0
+Current Liabilities,22995000000.0
+Working Capital,437000000.0
+Operating Cash Flow,3035000000.0
+Capital Expenditure,218000000.0
+Dividends Paid,562000000.0
+Depreciation & Amortization,686000000.0
+Interest Expense,788000000.0
+Income Tax Expense,742000000.0
+Shares Outstanding,215627008
+Net Fixed Assets,1357000000.0
+Construction in Progress,133000000.0
+Net Debt,17736000000.0
+3-5yr Average ROA (%),7.85264907742037
+3-5yr Average ROE (%),297.42904308742334
+ROE,-378.450184501845
+ROA,7.6924230832695795
+insidersPercentHeld,0.03041
+institutionsPercentHeld,0.90422
+institutionsFloatPercentHeld,0.93258005
+institutionsCount,1680.0
+current,366.54
+high,451.0
+low,338.0
+mean,411.51263
+median,420.0
+Normalized EBIT,3821666666.6666665
+Normalized Net Income,2602333333.3333335

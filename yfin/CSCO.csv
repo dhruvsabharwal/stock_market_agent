@@ -1,0 +1,103 @@
+,Value
+ticker,CSCO
+longName,"Cisco Systems, Inc."
+ROCE,15.794056949265766
+ROCE (3yr avg),19.939118282534196
+NFAT,25.77389221556886
+NFAT (3yr avg),25.828929560010412
+NPM,21.406832729476985
+DPR,54.83898836244103
+Retention Ratio,45.16101163755897
+Dep,94.18779483940921
+SSGR,155.5144721843536
+Av NPM (over 3 years),21.406832729476985
+Au NFA/T (over 3 years),25.828929560010412
+Av Dep%NFA (over 3 years),94.18779483940921
+Au Retention ratio (over 3 years),45.16101163755897
+d/e,0.69808130227944
+Interest coverage,12.892644135188867
+tax %,15.644923982344286
+cPAT,45336000000.0
+CFO,10880000000.0
+cCFO,59446000000.0
+cCFO/cPAT,1.3112316922533969
+p/a,10.132348898401602
+p/e,26.601534
+EY,3.75350800239177
+Earnings Growth 5yr cagr,0.5284113952334746
+Sales Growth 5yr cagr,2.598277119054493
+PEG,50.34246846294129
+no. shares (cr),396.0
+Current Price,69.43
+market cap,274942800000.0
+d/e_market,0.11261251431206781
+p/s,4.8530164
+NFA + CWIP,2090000000.0
+Capex,2512000000.0
+Capex_from_cashflow_statement,670000000.0
+FCF,8368000000.0
+FCF%,81.08527131782945
+FCF_capex_from_cashflow,10210000000.0
+FCF%_capex_from_cashflow,98.93410852713178
+DV,2.3219375084563043
+Mcap (cr),27494.2787584
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.7691176470588236
+Market Cap,274942787584
+Net Income,10320000000.0
+Total Revenue,53803000000.0
+Total Assets,124413000000.0
+Total Liabilities,78956000000.0
+Total Stockholders Equity,44353000000.0
+Total Debt,30962000000.0
+Cash and Cash Equivalents,5612000000.0
+Current Assets,36862000000.0
+Current Liabilities,40584000000.0
+Working Capital,-3722000000.0
+Operating Cash Flow,10880000000.0
+Capital Expenditure,670000000.0
+Dividends Paid,6384000000.0
+Depreciation & Amortization,2507000000.0
+Interest Expense,1006000000.0
+Income Tax Expense,1914000000.0
+Shares Outstanding,3960000000
+Net Fixed Assets,2090000000.0
+Construction in Progress,0
+Net Debt,25350000000.0
+3-5yr Average ROA (%),11.300326200326577
+3-5yr Average ROE (%),26.9438958380293
+ROE,22.9818505734328
+ROA,9.122047157094556
+insidersPercentHeld,0.00071000005
+institutionsPercentHeld,0.80711
+institutionsFloatPercentHeld,0.80767995
+institutionsCount,4316.0
+current,69.43
+high,87.0
+low,61.0
+mean,75.81476
+median,75.0
+Normalized EBIT,14607333333.333334
+Normalized Net Income,11581666666.666666
+Research Asset,20707800000.0
+R&D Amortization,5771400000.0
+Adjusted EBIT (R&D),15451600000.0
+Adjusted Book Equity (R&D),65060800000.0
+Adjusted D/E (R&D),0.47589331825000614
+Adjusted Invested Capital (R&D),90410800000.0
+Adjusted ROC (R&D),14.416650362505464
+Adjusted ROE (R&D),15.862085925780192

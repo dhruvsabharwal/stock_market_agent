@@ -1,0 +1,103 @@
+,Value
+ticker,TMO
+longName,Thermo Fisher Scientific Inc.
+ROCE,10.03345676219505
+ROCE (3yr avg),9.92433796199235
+NFAT,4.572784472645836
+NFAT (3yr avg),4.74992599021268
+NPM,14.745394771056901
+DPR,8.15784685377014
+Retention Ratio,91.84215314622986
+Dep,35.317154487148336
+SSGR,29.00866146253016
+Av NPM (over 3 years),14.745394771056901
+Au NFA/T (over 3 years),4.74992599021268
+Av Dep%NFA (over 3 years),35.317154487148336
+Au Retention ratio (over 3 years),91.84215314622986
+d/e,0.6691986733711351
+Interest coverage,5.551798561151079
+tax %,9.336364928236463
+cPAT,27005000000.0
+CFO,8667000000.0
+cCFO,35539000000.0
+cCFO/cPAT,1.3160155526754305
+p/a,6.416749387192837
+p/e,28.341433
+EY,3.425588998454465
+Earnings Growth 5yr cagr,-5.4571896798717106
+Sales Growth 5yr cagr,3.0257006481970494
+PEG,-5.1934117490059934
+no. shares (cr),37.7612
+Current Price,489.74
+market cap,184931700880.0
+d/e_market,0.16911648922914507
+p/s,4.2796373
+NFA + CWIP,11340000000.0
+Capex,2762000000.0
+Capex_from_cashflow_statement,1400000000.0
+FCF,5905000000.0
+FCF%,93.21231254932913
+FCF_capex_from_cashflow,7267000000.0
+FCF%_capex_from_cashflow,114.71191791633781
+DV,0.3152515210890218
+Mcap (cr),18493.169664
+d/e decreasing trend 5 yrs,True
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6813199492327218
+Market Cap,184931696640
+Net Income,6335000000.0
+Total Revenue,42879000000.0
+Total Assets,97321000000.0
+Total Liabilities,47649000000.0
+Total Stockholders Equity,46735000000.0
+Total Debt,31275000000.0
+Cash and Cash Equivalents,1963000000.0
+Current Assets,22137000000.0
+Current Liabilities,13332000000.0
+Working Capital,8805000000.0
+Operating Cash Flow,8667000000.0
+Capital Expenditure,1400000000.0
+Dividends Paid,583000000.0
+Depreciation & Amortization,3108000000.0
+Interest Expense,1390000000.0
+Income Tax Expense,657000000.0
+Shares Outstanding,377612000
+Net Fixed Assets,9306000000.0
+Construction in Progress,2034000000.0
+Net Debt,29312000000.0
+3-5yr Average ROA (%),6.98351215085388
+3-5yr Average ROE (%),15.426442353101974
+ROE,13.154069767441861
+ROA,6.462735976577045
+insidersPercentHeld,0.00162
+institutionsPercentHeld,0.91847
+institutionsFloatPercentHeld,0.91997004
+institutionsCount,3343.0
+current,489.74
+high,767.0
+low,490.0
+mean,555.84
+median,551.5
+Normalized EBIT,8220333333.333333
+Normalized Net Income,6426666666.666667
+Research Asset,3904600000.0
+R&D Amortization,1120800000.0
+Adjusted EBIT (R&D),8696200000.0
+Adjusted Book Equity (R&D),50639600000.0
+Adjusted D/E (R&D),0.6175996650842424
+Adjusted Invested Capital (R&D),79951600000.0
+Adjusted ROC (R&D),9.861329895975441
+Adjusted ROE (R&D),12.509972432641646

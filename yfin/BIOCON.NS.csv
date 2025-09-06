@@ -1,0 +1,102 @@
+,Value
+ticker,BIOCON.NS
+ROCE,6.239499814454553
+ROCE (3yr avg),5.134171422218198
+NFAT,1.1661140378060117
+NFAT (3yr avg),1.1855944074859621
+NPM,6.055485466540085
+DPR,14.517368302993445
+Retention Ratio,85.48263169700657
+Dep,12.8380370595571
+SSGR,-6.700939994066813
+Av NPM (over 3 years),6.055485466540085
+Au NFA/T (over 3 years),1.1855944074859621
+Av Dep%NFA (over 3 years),12.8380370595571
+Au Retention ratio (over 3 years),85.48263169700654
+d/e,0.9281378104196889
+Interest coverage,1.8315872479441253
+tax %,24.234071875331285
+cPAT,31469000000.0
+CFO,40612000000.0
+cCFO,100442000000.0
+cCFO/cPAT,3.1917760335568337
+p/a,1.8071827175333999
+p/e,111.96874
+EY,2.1190923400997415
+Earnings Growth 5yr cagr,15.857411473562898
+Sales Growth 5yr cagr,23.326172823508372
+PEG,7.060972100438438
+no. shares (cr),133.4569984
+Current Price,358.3
+market cap,478176425267.2
+d/e_market,0.3840005284605887
+p/s,3.0320559
+NFA + CWIP,179032000000.0
+Capex,31664000000.0
+Capex_from_cashflow_statement,23433000000.0
+FCF,8948000000.0
+FCF%,88.30553636632784
+FCF_capex_from_cashflow,17179000000.0
+FCF%_capex_from_cashflow,169.53518207835785
+DV,0.17336697423691758
+Mcap (cr),47817.6411648
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.22032896680784006
+Market Cap,478176411648
+Net Income,10133000000.0
+Total Revenue,150522000000.0
+Total Assets,587973000000.0
+Total Liabilities,310848000000.0
+Total Stockholders Equity,197837000000.0
+Total Debt,183620000000.0
+Cash and Cash Equivalents,7474000000.0
+Current Assets,162862000000.0
+Current Liabilities,143338000000.0
+Working Capital,19524000000.0
+Operating Cash Flow,40612000000.0
+Capital Expenditure,23433000000.0
+Dividends Paid,829000000.0
+Depreciation & Amortization,16870000000.0
+Interest Expense,8877000000.0
+Income Tax Expense,4572000000.0
+Shares Outstanding,1334569984
+Net Fixed Assets,136078000000.0
+Construction in Progress,42954000000.0
+Net Debt,176146000000.0
+3-5yr Average ROA (%),1.6444480225135152
+3-5yr Average ROE (%),4.614042601020309
+ROE,4.8918960019503865
+ROA,1.764285963018421
+insidersPercentHeld,0.56068003
+institutionsPercentHeld,0.27769
+institutionsFloatPercentHeld,0.63209
+institutionsCount,91.0
+current,358.3
+high,465.0
+low,270.0
+mean,380.10526
+median,400.0
+Normalized EBIT,21966666666.666668
+Normalized Net Income,8328333333.333333
+Research Asset,15745800000.0
+R&D Amortization,4056200000.0
+Adjusted EBIT (R&D),30027800000.0
+Adjusted Book Equity (R&D),213582800000.0
+Adjusted D/E (R&D),0.8597134226164279
+Adjusted Invested Capital (R&D),389728800000.0
+Adjusted ROC (R&D),5.837608451163803
+Adjusted ROE (R&D),4.744295888994807

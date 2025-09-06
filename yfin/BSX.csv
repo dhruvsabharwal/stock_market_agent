@@ -1,0 +1,103 @@
+,Value
+ticker,BSX
+longName,Boston Scientific Corporation
+ROCE,7.840344284155655
+ROCE (3yr avg),6.9699445071811565
+NFAT,4.75631922749219
+NFAT (3yr avg),4.666835554543126
+NPM,9.253767004741164
+DPR,3.2124486845805222
+Retention Ratio,96.78755131541948
+Dep,38.750091001823165
+SSGR,3.0483959203531255
+Av NPM (over 3 years),9.253767004741164
+Au NFA/T (over 3 years),4.666835554543126
+Av Dep%NFA (over 3 years),38.750091001823165
+Au Retention ratio (over 3 years),96.78755131541948
+d/e,0.5781339142160676
+Interest coverage,9.842622950819672
+tax %,19.10604732690622
+cPAT,5186000000.0
+CFO,3435000000.0
+cCFO,9334000000.0
+cCFO/cPAT,1.799845738526803
+p/a,5.276639344262295
+p/e,62.94643
+EY,1.183189789391372
+Earnings Growth 5yr cagr,22.228876016833944
+Sales Growth 5yr cagr,12.100979665120736
+PEG,2.831741467824582
+no. shares (cr),148.1750016
+Current Price,105.75
+market cap,156695064192.0
+d/e_market,0.07113816926831512
+p/s,8.472752
+NFA + CWIP,4779000000.0
+Capex,1893000000.0
+Capex_from_cashflow_statement,1070000000.0
+FCF,1542000000.0
+FCF%,83.1715210355987
+FCF_capex_from_cashflow,2365000000.0
+FCF%_capex_from_cashflow,127.56202804746495
+DV,0.0
+Mcap (cr),15669.5068672
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.4489082969432314
+Market Cap,156695068672
+Net Income,1854000000.0
+Total Revenue,16747000000.0
+Total Assets,39395000000.0
+Total Liabilities,17392000000.0
+Total Stockholders Equity,19281000000.0
+Total Debt,11147000000.0
+Cash and Cash Equivalents,415000000.0
+Current Assets,6920000000.0
+Current Liabilities,6399000000.0
+Working Capital,521000000.0
+Operating Cash Flow,3435000000.0
+Capital Expenditure,1070000000.0
+Dividends Paid,0.0
+Depreciation & Amortization,1269000000.0
+Interest Expense,305000000.0
+Income Tax Expense,436000000.0
+Shares Outstanding,1481750016
+Net Fixed Assets,3744000000.0
+Construction in Progress,1035000000.0
+Net Debt,10732000000.0
+3-5yr Average ROA (%),3.4351932879690077
+3-5yr Average ROE (%),6.363459040009614
+ROE,8.644688644688644
+ROA,4.712669181273575
+insidersPercentHeld,0.00191
+institutionsPercentHeld,0.93617
+institutionsFloatPercentHeld,0.93795997
+institutionsCount,2361.0
+current,105.75
+high,140.0
+low,99.0
+mean,124.14387
+median,125.0
+Normalized EBIT,2149333333.3333335
+Normalized Net Income,1381666666.6666667
+Research Asset,4021600000.0
+R&D Amortization,1111200000.0
+Adjusted EBIT (R&D),3090800000.0
+Adjusted Book Equity (R&D),23302600000.0
+Adjusted D/E (R&D),0.4783586380918867
+Adjusted Invested Capital (R&D),34034600000.0
+Adjusted ROC (R&D),7.346260244633351
+Adjusted ROE (R&D),7.956193729455083

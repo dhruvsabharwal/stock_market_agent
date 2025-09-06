@@ -1,0 +1,94 @@
+,Value
+ticker,SOUTHBANK.NS
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,5.339234219902242
+NFAT (3yr avg),5.09504617873417
+NPM,22.082452492582206
+DPR,5.944815924833666
+Retention Ratio,94.05518407516634
+Dep,10.137688801518962
+SSGR,95.68484769490286
+Av NPM (over 3 years),22.082452492582206
+Au NFA/T (over 3 years),5.09504617873417
+Av Dep%NFA (over 3 years),10.137688801518962
+Au Retention ratio (over 3 years),94.05518407516634
+d/e,0.4872324396867617
+Interest coverage,0.0
+tax %,25.83676233730016
+cPAT,31933963000.0
+CFO,-23529400000.0
+cCFO,26267810000.0
+cCFO/cPAT,0.8225665571166347
+p/a,1.1098479565278168
+p/e,5.781925
+EY,16.92239302673179
+Earnings Growth 5yr cagr,195.5341065164559
+Sales Growth 5yr cagr,17.318670988180894
+PEG,0.02956990523550121
+no. shares (cr),261.652992
+Current Price,29.43
+market cap,77004475545.6
+d/e_market,0.5584714355275844
+p/s,1.5961338
+NFA + CWIP,
+Capex,
+Capex_from_cashflow_statement,1582800000.0
+FCF,
+FCF%,
+FCF_capex_from_cashflow,-25112200000.0
+FCF%_capex_from_cashflow,-192.7112270739007
+DV,1.0192914040888483
+Mcap (cr),7703.0375424
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,False
+cCFO > PAT,False
+p/e <10,True
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,
+Market Cap,77030375424
+Net Income,13031000000.0
+Total Revenue,52986200000.0
+Total Assets,1246550700000.0
+Total Liabilities,1145470400000.0
+Total Stockholders Equity,88263417000.0
+Total Debt,43004800000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,-23529400000.0
+Capital Expenditure,1582800000.0
+Dividends Paid,784900000.0
+Depreciation & Amortization,1017800000.0
+Interest Expense,59276700000.0
+Income Tax Expense,4539700000.0
+Shares Outstanding,2616529920
+Net Fixed Assets,10183000000.0
+Construction in Progress,
+Net Debt,0
+3-5yr Average ROA (%),0.9246128800086403
+3-5yr Average ROE (%),13.316144265682894
+ROE,13.764385960586164
+ROA,1.0766416273844943
+insidersPercentHeld,0.04847
+institutionsPercentHeld,0.20705
+institutionsFloatPercentHeld,0.2176
+institutionsCount,41.0
+current,29.43
+high,42.0
+low,25.0
+mean,35.0
+median,34.0
+Normalized EBIT,0.0
+Normalized Net Income,10495294000.0

@@ -1,0 +1,103 @@
+,Value
+ticker,MELI
+Name,"MercadoLibre, Inc."
+ROCE,30.222273943907833
+ROCE (3yr avg),25.035994903522298
+NFAT,8.98076507456235
+NFAT (3yr avg),8.109053323629752
+NPM,6.734102886184611
+DPR,-1
+Retention Ratio,101.0
+Dep,27.298048807345157
+SSGR,27.855222577443666
+Av NPM (over 3 years),6.734102886184611
+Au NFA/T (over 3 years),8.109053323629752
+Av Dep%NFA (over 3 years),27.298048807345157
+Au Retention ratio (over 3 years),-1
+d/e,2.230543796808857
+Interest coverage,15.945454545454545
+tax %,21.422697368421055
+cPAT,3463000000.0
+CFO,7918000000.0
+cCFO,16963000000.0
+cCFO/cPAT,4.898354028299162
+p/a,10.850556438791733
+p/e,60.96893
+EY,1.5246690610848186
+Earnings Growth 5yr cagr,182.5985237074258
+Sales Growth 5yr cagr,43.243509473001815
+PEG,0.33389607299174756
+no. shares (cr),5.06974
+Current Price,2472.29
+market cap,125338675046.0
+d/e_market,0.05465192605144431
+p/s,5.201638
+NFA + CWIP,2622000000.0
+Capex,1028000000.0
+Capex_from_cashflow_statement,860000000.0
+FCF,6890000000.0
+FCF%,360.5442176870748
+FCF_capex_from_cashflow,7058000000.0
+FCF%_capex_from_cashflow,369.33542647828364
+DV,
+Mcap (cr),12533.8673152
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.870169234655216
+Market Cap,125338673152
+Net Income,1911000000.0
+Total Revenue,20777000000.0
+Total Assets,25196000000.0
+Total Liabilities,20845000000.0
+Total Stockholders Equity,3071000000.0
+Total Debt,6850000000.0
+Cash and Cash Equivalents,51000000.0
+Current Assets,20142000000.0
+Current Liabilities,16603000000.0
+Working Capital,3539000000.0
+Operating Cash Flow,7918000000.0
+Capital Expenditure,860000000.0
+Dividends Paid,
+Depreciation & Amortization,617000000.0
+Interest Expense,165000000.0
+Income Tax Expense,521000000.0
+Shares Outstanding,50697400
+Net Fixed Assets,2478000000.0
+Construction in Progress,144000000.0
+Net Debt,6799000000.0
+3-5yr Average ROA (%),6.4231410755169565
+3-5yr Average ROE (%),40.168427311310914
+ROE,51.495553759094584
+ROA,8.928237712577088
+insidersPercentHeld,0.07279
+institutionsPercentHeld,0.84793
+institutionsFloatPercentHeld,0.9145
+institutionsCount,2258.0
+current,2472.29
+high,3500.0
+low,2170.0
+mean,2867.5386
+median,2850.0
+Normalized EBIT,1746333333.3333333
+Normalized Net Income,1126666666.6666667
+Research Asset,4294200000.0
+R&D Amortization,1090800000.0
+Adjusted EBIT (R&D),3440200000.0
+Adjusted Book Equity (R&D),7365200000.0
+Adjusted D/E (R&D),0.9300494216043013
+Adjusted Invested Capital (R&D),14164200000.0
+Adjusted ROC (R&D),19.084850292509135
+Adjusted ROE (R&D),25.94634225818715

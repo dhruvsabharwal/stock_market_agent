@@ -1,0 +1,103 @@
+,Value
+ticker,MRK
+longName,"Merck & Co., Inc."
+ROCE,23.912455178945944
+ROCE (3yr avg),16.052314933715625
+NFAT,2.740465513559684
+NFAT (3yr avg),2.7856671709664753
+NPM,17.25782008284339
+DPR,711.2745943966064
+Retention Ratio,-611.2745943966064
+Dep,18.61178815729356
+SSGR,-312.4792549546773
+Av NPM (over 3 years),17.25782008284339
+Au NFA/T (over 3 years),2.7856671709664753
+Av Dep%NFA (over 3 years),18.61178815729356
+Au Retention ratio (over 3 years),-611.2745943966064
+d/e,0.9874936803171815
+Interest coverage,15.909520062942565
+tax %,14.059991974317818
+cPAT,45050000000.0
+CFO,21468000000.0
+cCFO,67678000000.0
+cCFO/cPAT,1.5022863485016649
+p/a,16.045933911413172
+p/e,12.821264
+EY,8.235651303925646
+Earnings Growth 5yr cagr,9.420576375695088
+Sales Growth 5yr cagr,9.627108025433696
+PEG,1.3609850914301402
+no. shares (cr),249.7779968
+Current Price,83.21
+market cap,207840271137.28
+d/e_market,0.17855538677337424
+p/s,3.2671068
+NFA + CWIP,31763000000.0
+Capex,4949000000.0
+Capex_from_cashflow_statement,3372000000.0
+FCF,16519000000.0
+FCF%,96.50639714903313
+FCF_capex_from_cashflow,18096000000.0
+FCF%_capex_from_cashflow,105.71946018578022
+DV,3.7721274886240037
+Mcap (cr),20784.0264192
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,True
+p/b <3,False
+DV >3%,True
+EY >7,True
+sgr > Sales growth (very linear),False
+FCF/CFO,0.769470840320477
+Market Cap,207840264192
+Net Income,17117000000.0
+Total Revenue,64168000000.0
+Total Assets,117106000000.0
+Total Liabilities,70734000000.0
+Total Stockholders Equity,37581000000.0
+Total Debt,37111000000.0
+Cash and Cash Equivalents,8706000000.0
+Current Assets,38782000000.0
+Current Liabilities,28420000000.0
+Working Capital,10362000000.0
+Operating Cash Flow,21468000000.0
+Capital Expenditure,3372000000.0
+Dividends Paid,7840000000.0
+Depreciation & Amortization,4499000000.0
+Interest Expense,1271000000.0
+Income Tax Expense,2803000000.0
+Shares Outstanding,2497779968
+Net Fixed Assets,23779000000.0
+Construction in Progress,7984000000.0
+Net Debt,28405000000.0
+3-5yr Average ROA (%),6.926722809160469
+3-5yr Average ROE (%),17.685338399022406
+ROE,0.8734983008663189
+ROA,0.3382213264762434
+insidersPercentHeld,0.00067000004
+institutionsPercentHeld,0.80572
+institutionsFloatPercentHeld,0.80626
+institutionsCount,4223.0
+current,83.21
+high,141.0
+low,82.0
+mean,100.41
+median,99.0
+Normalized EBIT,13882666666.666666
+Normalized Net Income,10667000000.0
+Research Asset,55389600000.0
+R&D Amortization,14852400000.0
+Adjusted EBIT (R&D),24292600000.0
+Adjusted Book Equity (R&D),92970600000.0
+Adjusted D/E (R&D),0.39916919972550463
+Adjusted Invested Capital (R&D),121375600000.0
+Adjusted ROC (R&D),17.200378321216842
+Adjusted ROE (R&D),18.411196657868185

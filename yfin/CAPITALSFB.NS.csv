@@ -1,0 +1,94 @@
+,Value
+ticker,CAPITALSFB.NS
+ROCE,0.0
+ROCE (3yr avg),0.0
+NFAT,5.787312534151631
+NFAT (3yr avg),5.075088903493328
+NPM,26.241885769059778
+DPR,3.855897328272698
+Retention Ratio,96.14410267172731
+Dep,21.721182472691435
+SSGR,106.32344046849218
+Av NPM (over 3 years),26.241885769059778
+Au NFA/T (over 3 years),5.075088903493328
+Av Dep%NFA (over 3 years),21.721182472691435
+Au Retention ratio (over 3 years),96.1441026717273
+d/e,0.2677261243090026
+Interest coverage,0.0
+tax %,26.198085621145307
+cPAT,3993377000.0
+CFO,2794945000.0
+cCFO,2595272000.0
+cCFO/cPAT,0.649894062093311
+p/a,1.4162805019275757
+p/e,10.059261
+EY,9.794747394842082
+Earnings Growth 5yr cagr,28.070640412029203
+Sales Growth 5yr cagr,17.042640418570866
+PEG,0.3583552370856944
+no. shares (cr),4.52469
+Current Price,297.05
+market cap,13440591645.0
+d/e_market,0.23851628593988133
+p/s,2.967319
+NFA + CWIP,877485000.0
+Capex,210086000.0
+Capex_from_cashflow_statement,211922000.0
+FCF,2584859000.0
+FCF%,196.34743465869383
+FCF_capex_from_cashflow,2583023000.0
+FCF%_capex_from_cashflow,196.20797100128223
+DV,0.4022069967441526
+Mcap (cr),1344.0590848
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9248335834873316
+Market Cap,13440590848
+Net Income,1316472000.0
+Total Revenue,4961981000.0
+Total Assets,101075126000.0
+Total Liabilities,87673772000.0
+Total Stockholders Equity,11974177000.0
+Total Debt,3205800000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,2794945000.0
+Capital Expenditure,211922000.0
+Dividends Paid,54059000.0
+Depreciation & Amortization,169895000.0
+Interest Expense,4983049000.0
+Income Tax Expense,458800000.0
+Shares Outstanding,45246900
+Net Fixed Assets,877485000.0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),1.189495019448625
+3-5yr Average ROE (%),12.865570563543068
+ROE,10.375916862587033
+ROA,1.3569924807565947
+insidersPercentHeld,0.36508
+institutionsPercentHeld,0.24382
+institutionsFloatPercentHeld,0.38402
+institutionsCount,9.0
+current,297.05
+high,425.0
+low,340.0
+mean,382.5
+median,382.5
+Normalized EBIT,0.0
+Normalized Net Income,1122562333.3333333

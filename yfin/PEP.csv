@@ -1,0 +1,95 @@
+,Value
+ticker,PEP
+longName,"PepsiCo, Inc."
+ROCE,18.938334486464207
+ROCE (3yr avg),18.17151856283806
+NFAT,2.9951577402787968
+NFAT (3yr avg),3.2029263305485873
+NPM,10.22031877795713
+DPR,72.79483268928664
+Retention Ratio,27.205167310713364
+Dep,12.569684255017611
+SSGR,-3.664092290788644
+Av NPM (over 3 years),10.22031877795713
+Au NFA/T (over 3 years),3.2029263305485873
+Av Dep%NFA (over 3 years),12.569684255017611
+Au Retention ratio (over 3 years),27.205167310713364
+d/e,2.4292276928065717
+Interest coverage,14.058759521218716
+tax %,19.420726603047044
+cPAT,35180000000.0
+CFO,12507000000.0
+cCFO,48376000000.0
+cCFO/cPAT,1.3750994883456509
+p/a,9.530822428976567
+p/e,26.772314
+EY,4.759789462257355
+Earnings Growth 5yr cagr,8.161160097180332
+Sales Growth 5yr cagr,4.944012948116239
+PEG,3.2804544551515162
+no. shares (cr),136.9080064
+Current Price,146.98
+market cap,201227387806.72
+d/e_market,0.22336919685690498
+p/s,2.1932619
+NFA + CWIP,37332000000.0
+Capex,5508000000.0
+Capex_from_cashflow_statement,5318000000.0
+FCF,6999000000.0
+FCF%,73.07371058676134
+FCF_capex_from_cashflow,7189000000.0
+FCF%_capex_from_cashflow,75.05742326164126
+DV,3.592453332914849
+Mcap (cr),20122.738688
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,True
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.5596066202926361
+Market Cap,201227386880
+Net Income,9578000000.0
+Total Revenue,91854000000.0
+Total Assets,99467000000.0
+Total Liabilities,81296000000.0
+Total Stockholders Equity,18503000000.0
+Total Debt,44948000000.0
+Cash and Cash Equivalents,921000000.0
+Current Assets,25826000000.0
+Current Liabilities,31536000000.0
+Working Capital,-5710000000.0
+Operating Cash Flow,12507000000.0
+Capital Expenditure,5318000000.0
+Dividends Paid,7229000000.0
+Depreciation & Amortization,3815000000.0
+Interest Expense,919000000.0
+Income Tax Expense,2320000000.0
+Shares Outstanding,1369080064
+Net Fixed Assets,31391000000.0
+Construction in Progress,5941000000.0
+Net Debt,44027000000.0
+3-5yr Average ROA (%),9.536907471876962
+3-5yr Average ROE (%),52.2954053561385
+ROE,50.903175137439696
+ROA,9.41862758327192
+insidersPercentHeld,0.0018799999
+institutionsPercentHeld,0.79049003
+institutionsFloatPercentHeld,0.79197
+institutionsCount,4167.0
+current,146.98
+high,175.0
+low,115.0
+mean,153.04546
+median,155.5
+Normalized EBIT,12248333333.333334
+Normalized Net Income,9187333333.333334

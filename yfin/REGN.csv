@@ -1,0 +1,103 @@
+,Value
+ticker,REGN
+longName,"Regeneron Pharmaceuticals, Inc."
+ROCE,14.298641731060977
+ROCE (3yr avg),15.855830407930142
+NFAT,3.5911700002528635
+NFAT (3yr avg),3.60605262006791
+NPM,32.28355782000798
+DPR,0.0
+Retention Ratio,100.0
+Dep,10.253581874337266
+SSGR,106.16262638761637
+Av NPM (over 3 years),32.28355782000798
+Au NFA/T (over 3 years),3.60605262006791
+Av Dep%NFA (over 3 years),10.253581874337266
+Au Retention ratio (over 3 years),100.0
+d/e,0.1041231119889424
+Interest coverage,72.29528985507247
+tax %,7.684261177012071
+cPAT,20779900000.0
+CFO,4420500000.0
+cCFO,21110700000.0
+cCFO/cPAT,1.015919229640181
+p/a,13.339097103403244
+p/e,14.607106
+EY,7.308294282820557
+Earnings Growth 5yr cagr,-18.802376161008326
+Sales Growth 5yr cagr,-4.038749873780356
+PEG,-0.7768755329069353
+no. shares (cr),10.417
+Current Price,579.61
+market cap,60377973700.0
+d/e_market,0.04479116860458668
+p/s,4.3218136
+NFA + CWIP,6321300000.0
+Capex,1312800000.0
+Capex_from_cashflow_statement,881600000.0
+FCF,3107700000.0
+FCF%,70.42786565743553
+FCF_capex_from_cashflow,3538900000.0
+FCF%_capex_from_cashflow,80.1998821556452
+DV,0.0
+Mcap (cr),6143.1123968
+d/e decreasing trend 5 yrs,True
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.7030200203596878
+Market Cap,61431123968
+Net Income,4412600000.0
+Total Revenue,14202000000.0
+Total Assets,37759400000.0
+Total Liabilities,8405800000.0
+Total Stockholders Equity,25973100000.0
+Total Debt,2704400000.0
+Cash and Cash Equivalents,349200000.0
+Current Assets,18660900000.0
+Current Liabilities,3944300000.0
+Working Capital,14716600000.0
+Operating Cash Flow,4420500000.0
+Capital Expenditure,881600000.0
+Dividends Paid,0
+Depreciation & Amortization,482900000.0
+Interest Expense,55200000.0
+Income Tax Expense,367300000.0
+Shares Outstanding,104170000
+Net Fixed Assets,4599700000.0
+Construction in Progress,1721600000.0
+Net Debt,2355200000.0
+3-5yr Average ROA (%),18.194369615755505
+3-5yr Average ROE (%),24.043901593775896
+ROE,15.951068832950458
+ROA,12.458003715435998
+insidersPercentHeld,0.01935
+institutionsPercentHeld,0.90282
+institutionsFloatPercentHeld,0.92064005
+institutionsCount,1757.0
+current,579.61
+high,890.0
+low,543.0
+mean,718.78046
+median,750.0
+Normalized EBIT,4675200000.0
+Normalized Net Income,4234866666.6666665
+Research Asset,12404880000.0
+R&D Amortization,3322760000.0
+Adjusted EBIT (R&D),6745340000.0
+Adjusted Book Equity (R&D),38377980000.0
+Adjusted D/E (R&D),0.07046749203579761
+Adjusted Invested Capital (R&D),40733180000.0
+Adjusted ROC (R&D),15.28731726106956
+Adjusted ROE (R&D),11.497739068080186

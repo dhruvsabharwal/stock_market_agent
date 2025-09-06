@@ -1,0 +1,95 @@
+,Value
+ticker,UNH
+longName,UnitedHealth Group Incorporated
+ROCE,12.326936028667054
+ROCE (3yr avg),16.341874741324695
+NFAT,36.383947643503156
+NFAT (3yr avg),34.92582390036116
+NPM,5.276013176837682
+DPR,37.42644777369987
+Retention Ratio,62.57355222630012
+Dep,36.560505846571
+SSGR,78.74322012797812
+Av NPM (over 3 years),5.276013176837682
+Au NFA/T (over 3 years),34.92582390036116
+Av Dep%NFA (over 3 years),36.560505846571
+Au Retention ratio (over 3 years),62.57355222630013
+d/e,0.866465365721754
+Interest coverage,8.26600102406554
+tax %,24.059588460963578
+cPAT,74191000000.0
+CFO,24204000000.0
+cCFO,101821000000.0
+cCFO/cPAT,1.3724171395452278
+p/a,5.262677188367675
+p/e,13.091815
+EY,5.26159709959922
+Earnings Growth 5yr cagr,-5.152746117936524
+Sales Growth 5yr cagr,11.650101756925668
+PEG,-2.5407452066050493
+no. shares (cr),90.5673984
+Current Price,302.29
+market cap,273776188623.36002
+d/e_market,0.28090098115069656
+p/s,0.6475037
+NFA + CWIP,10553000000.0
+Capex,3202000000.0
+Capex_from_cashflow_statement,3499000000.0
+FCF,21002000000.0
+FCF%,145.79659840333215
+FCF_capex_from_cashflow,20705000000.0
+FCF%_capex_from_cashflow,143.73481430059007
+DV,2.7515175946741355
+Mcap (cr),27377.6197632
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8677078168897703
+Market Cap,273776197632
+Net Income,14405000000.0
+Total Revenue,400278000000.0
+Total Assets,298278000000.0
+Total Liabilities,195687000000.0
+Total Stockholders Equity,88756000000.0
+Total Debt,76904000000.0
+Cash and Cash Equivalents,8212000000.0
+Current Assets,85779000000.0
+Current Liabilities,103769000000.0
+Working Capital,-17990000000.0
+Operating Cash Flow,24204000000.0
+Capital Expenditure,3499000000.0
+Dividends Paid,7533000000.0
+Depreciation & Amortization,4099000000.0
+Interest Expense,3906000000.0
+Income Tax Expense,4829000000.0
+Shares Outstanding,905673984
+Net Fixed Assets,10553000000.0
+Construction in Progress,0
+Net Debt,68692000000.0
+3-5yr Average ROA (%),8.702669933794368
+3-5yr Average ROE (%),26.89509581128067
+ROE,26.87956379707917
+ROA,8.61760600664196
+insidersPercentHeld,0.00816
+institutionsPercentHeld,0.86647004
+institutionsFloatPercentHeld,0.8736
+institutionsCount,4162.0
+current,302.29
+high,626.0
+low,198.0
+mean,328.04166
+median,325.0
+Normalized EBIT,28256666666.666668
+Normalized Net Income,18968666666.666668

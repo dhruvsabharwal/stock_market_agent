@@ -1,0 +1,95 @@
+,Value
+ticker,MCK
+longName,McKesson Corporation
+ROCE,34.160756501182036
+ROCE (3yr avg),31.636481717220477
+NFAT,86.21707287789651
+NFAT (3yr avg),79.70849027238252
+NPM,1.0586376267534465
+DPR,9.710783480112392
+Retention Ratio,90.2892165198876
+Dep,15.917879568405004
+SSGR,60.27033456909244
+Av NPM (over 3 years),1.0586376267534465
+Au NFA/T (over 3 years),79.70849027238252
+Av Dep%NFA (over 3 years),15.917879568405004
+Au Retention ratio (over 3 years),90.2892165198876
+d/e,-3.7493658041603246
+Interest coverage,18.173584905660377
+tax %,20.14223445744437
+cPAT,10971000000.0
+CFO,6085000000.0
+cCFO,19992000000.0
+cCFO/cPAT,1.8222586819797648
+p/a,4.885607105259256
+p/e,27.295391
+EY,3.8898336917813707
+Earnings Growth 5yr cagr,52.30207249378935
+Sales Growth 5yr cagr,10.79905331890676
+PEG,0.5218797209850758
+no. shares (cr),12.4384
+Current Price,681.02
+market cap,84707991680.0
+d/e_market,0.0872408831024714
+p/s,0.22433557
+NFA + CWIP,5006000000.0
+Capex,1156000000.0
+Capex_from_cashflow_statement,859000000.0
+FCF,4929000000.0
+FCF%,149.59028831562975
+FCF_capex_from_cashflow,5226000000.0
+FCF%_capex_from_cashflow,158.6039453717754
+DV,0.4072815246326473
+Mcap (cr),8470.7991552
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.810024650780608
+Market Cap,84707991552
+Net Income,3295000000.0
+Total Revenue,359051000000.0
+Total Assets,75140000000.0
+Total Liabilities,76834000000.0
+Total Stockholders Equity,-1971000000.0
+Total Debt,7390000000.0
+Cash and Cash Equivalents,1063000000.0
+Current Assets,55398000000.0
+Current Liabilities,61604000000.0
+Working Capital,-6206000000.0
+Operating Cash Flow,6085000000.0
+Capital Expenditure,859000000.0
+Dividends Paid,345000000.0
+Depreciation & Amortization,636000000.0
+Interest Expense,265000000.0
+Income Tax Expense,878000000.0
+Shares Outstanding,124384000
+Net Fixed Assets,4284000000.0
+Construction in Progress,722000000.0
+Net Debt,6327000000.0
+3-5yr Average ROA (%),5.147437123127769
+3-5yr Average ROE (%),-164.64157614933038
+ROE,-156.84430512016718
+ROA,4.626896727110194
+insidersPercentHeld,0.00029
+institutionsPercentHeld,0.90638
+institutionsFloatPercentHeld,0.90664
+institutionsCount,2387.0
+current,681.02
+high,830.0
+low,640.0
+mean,788.5714
+median,800.0
+Normalized EBIT,4514333333.333333
+Normalized Net Income,3285666666.6666665

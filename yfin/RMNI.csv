@@ -1,0 +1,95 @@
+,Value
+ticker,RMNI
+longName,"Rimini Street, Inc."
+ROCE,-68.2197387061231
+ROCE (3yr avg),11.510662265898725
+NFAT,25.605601839409957
+NFAT (3yr avg),27.203737758465724
+NPM,-1.0086793092199018
+DPR,0.0
+Retention Ratio,100.0
+Dep,50.27254116925883
+SSGR,-77.7123885796674
+Av NPM (over 3 years),-1.0086793092199018
+Au NFA/T (over 3 years),27.203737758465724
+Av Dep%NFA (over 3 years),50.27254116925883
+Au Retention ratio (over 3 years),100.0
+d/e,-2.446652825602593
+Interest coverage,6.059000793021411
+tax %,1.012471686270229
+cPAT,62526000.0
+CFO,-38849000.0
+cCFO,75461000.0
+cCFO/cPAT,1.2068739404407767
+p/a,-9.210860445509859
+p/e,inf
+EY,-9.075311070598474
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,4.619388674994673
+PEG,
+no. shares (cr),9.2518
+Current Price,4.32
+market cap,399677760.0
+d/e_market,0.24177727577336303
+p/s,0.9355687
+NFA + CWIP,17874000.0
+Capex,7884000.0
+Capex_from_cashflow_statement,3378000.0
+FCF,-46733000.0
+FCF%,128.8404278782532
+FCF_capex_from_cashflow,-42227000.0
+FCF%_capex_from_cashflow,116.41762240846933
+DV,
+Mcap (cr),39.967776
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,False
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,1.2029395866045458
+Market Cap,399677760
+Net Income,-36272000.0
+Total Revenue,428753000.0
+Total Assets,369063000.0
+Total Liabilities,438508000.0
+Total Stockholders Equity,-39496000.0
+Total Debt,96633000.0
+Cash and Cash Equivalents,4406000.0
+Current Assets,256276000.0
+Current Liabilities,324592000.0
+Working Capital,-68316000.0
+Operating Cash Flow,-38849000.0
+Capital Expenditure,3378000.0
+Dividends Paid,
+Depreciation & Amortization,8162000.0
+Interest Expense,6305000.0
+Income Tax Expense,-371000.0
+Shares Outstanding,92518000
+Net Fixed Assets,17052000.0
+Construction in Progress,822000.0
+Net Debt,92227000.0
+3-5yr Average ROA (%),3.0032945564157343
+3-5yr Average ROE (%),-20.76236983624659
+ROE,-44.67282670186687
+ROA,6.640614547988946
+insidersPercentHeld,0.21751
+institutionsPercentHeld,0.64548
+institutionsFloatPercentHeld,0.8249
+institutionsCount,159.0
+current,4.32
+high,7.0
+low,6.0
+mean,6.625
+median,6.75
+Normalized EBIT,8164000.0
+Normalized Net Income,-4231000.0

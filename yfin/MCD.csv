@@ -1,0 +1,95 @@
+,Value
+ticker,MCD
+longName,McDonald's Corporation
+ROCE,23.091911693069115
+ROCE (3yr avg),22.18975974238756
+NFAT,0.6727662059567842
+NFAT (3yr avg),0.6587383030656887
+NPM,30.529496166016205
+DPR,60.07495591373976
+Retention Ratio,39.92504408626024
+Dep,5.2499099342724636
+SSGR,2.779395119660026
+Av NPM (over 3 years),30.529496166016205
+Au NFA/T (over 3 years),0.6587383030656887
+Av Dep%NFA (over 3 years),5.2499099342724636
+Au Retention ratio (over 3 years),39.92504408626025
+d/e,-11.03867403314917
+Interest coverage,7.869189907038512
+tax %,20.502658289028517
+cPAT,30414200000.0
+CFO,9447000000.0
+cCFO,35587500000.0
+cCFO/cPAT,1.1700948898869608
+p/a,14.645484175467969
+p/e,26.731163
+EY,3.6907303365112525
+Earnings Growth 5yr cagr,4.165714500757423
+Sales Growth 5yr cagr,3.730430836935339
+PEG,6.416945519223571
+no. shares (cr),71.3603968
+Current Price,312.22
+market cap,222801430888.96002
+d/e_market,0.23315828714713188
+p/s,8.549556
+NFA + CWIP,38634000000.0
+Capex,2310000000.0
+Capex_from_cashflow_statement,2775000000.0
+FCF,7137000000.0
+FCF%,86.79314118934695
+FCF_capex_from_cashflow,6672000000.0
+FCF%_capex_from_cashflow,81.13827070412259
+DV,2.185802838235413
+Mcap (cr),22280.142848
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.755477929501429
+Market Cap,222801428480
+Net Income,8223000000.0
+Total Revenue,25920000000.0
+Total Assets,55182000000.0
+Total Liabilities,58979000000.0
+Total Stockholders Equity,-4706000000.0
+Total Debt,51948000000.0
+Cash and Cash Equivalents,1075000000.0
+Current Assets,4599000000.0
+Current Liabilities,3861000000.0
+Working Capital,738000000.0
+Operating Cash Flow,9447000000.0
+Capital Expenditure,2775000000.0
+Dividends Paid,4870000000.0
+Depreciation & Amortization,2097000000.0
+Interest Expense,1506000000.0
+Income Tax Expense,2121000000.0
+Shares Outstanding,713603968
+Net Fixed Assets,38634000000.0
+Construction in Progress,0
+Net Debt,50873000000.0
+3-5yr Average ROA (%),13.868862858821615
+3-5yr Average ROE (%),-137.3294664145735
+ROE,-158.16012101518294
+ROA,15.891899803532658
+insidersPercentHeld,0.00227
+institutionsPercentHeld,0.74997
+institutionsFloatPercentHeld,0.75168
+institutionsCount,4213.0
+current,312.22
+high,373.0
+low,260.0
+mean,334.2963
+median,335.0
+Normalized EBIT,10922000000.0
+Normalized Net Income,7623000000.0

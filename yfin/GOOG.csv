@@ -1,0 +1,103 @@
+,Value
+ticker,GOOG
+longName,Alphabet Inc.
+ROCE,33.251646203348336
+ROCE (3yr avg),28.1022801186553
+NFAT,2.5411038713541574
+NFAT (3yr avg),2.5642596126394577
+NPM,24.604709470354823
+DPR,2.4514406333859378
+Retention Ratio,97.54855936661406
+Dep,9.490995927748893
+SSGR,52.05518277296309
+Av NPM (over 3 years),24.604709470354823
+Au NFA/T (over 3 years),2.5642596126394577
+Av Dep%NFA (over 3 years),9.490995927748893
+Au Retention ratio (over 3 years),97.54855936661407
+d/e,0.0898478715783456
+Interest coverage,419.36567164179104
+tax %,16.439510912657013
+cPAT,309918000000.0
+CFO,125299000000.0
+cCFO,410192000000.0
+cCFO/cPAT,1.3235501003491246
+p/a,24.880713334261117
+p/e,22.616611
+EY,8.681987545447068
+Earnings Growth 5yr cagr,12.605005014260273
+Sales Growth 5yr cagr,10.754330242226517
+PEG,1.7942564064364444
+no. shares (cr),543.0000128
+Current Price,212.37
+market cap,1153169127183.36
+d/e_market,0.02207915508646076
+p/s,6.9021006
+NFA + CWIP,
+Capex,
+Capex_from_cashflow_statement,52535000000.0
+FCF,
+FCF%,
+FCF_capex_from_cashflow,72764000000.0
+FCF%_capex_from_cashflow,72.67823967718093
+DV,0.6385013114237877
+Mcap (cr),256343.3299968
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,True
+p/b <3,False
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,
+Market Cap,2563433299968
+Net Income,100118000000.0
+Total Revenue,350018000000.0
+Total Assets,450256000000.0
+Total Liabilities,125172000000.0
+Total Stockholders Equity,283379000000.0
+Total Debt,25461000000.0
+Cash and Cash Equivalents,15714000000.0
+Current Assets,163711000000.0
+Current Liabilities,89122000000.0
+Working Capital,74589000000.0
+Operating Cash Flow,125299000000.0
+Capital Expenditure,52535000000.0
+Dividends Paid,7363000000.0
+Depreciation & Amortization,15311000000.0
+Interest Expense,268000000.0
+Income Tax Expense,19697000000.0
+Shares Outstanding,5430000128
+Net Fixed Assets,184624000000.0
+Construction in Progress,
+Net Debt,9747000000.0
+3-5yr Average ROA (%),20.107018154200258
+3-5yr Average ROE (%),28.52525696883024
+ROE,32.90849238162386
+ROA,23.484016851033488
+insidersPercentHeld,0.0669
+institutionsPercentHeld,0.60863
+institutionsFloatPercentHeld,0.65226
+institutionsCount,5437.0
+current,212.37
+high,237.0
+low,185.0
+mean,217.19473
+median,220.0
+Normalized EBIT,92597666666.66667
+Normalized Net Income,77961666666.66667
+Research Asset,121992400000.0
+R&D Amortization,33163000000.0
+Adjusted EBIT (R&D),136246000000.0
+Adjusted Book Equity (R&D),405371400000.0
+Adjusted D/E (R&D),0.06280906842465946
+Adjusted Invested Capital (R&D),415118400000.0
+Adjusted ROC (R&D),27.425386097542614
+Adjusted ROE (R&D),24.697844988570974

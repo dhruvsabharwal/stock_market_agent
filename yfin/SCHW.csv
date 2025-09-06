@@ -1,0 +1,95 @@
+,Value
+ticker,SCHW
+longName,The Charles Schwab Corporation
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,4.753545884349618
+NFAT (3yr avg),4.5477065044727185
+NPM,30.60103209292629
+DPR,37.526594204394506
+Retention Ratio,62.473405795605494
+Dep,30.945129909934717
+SSGR,55.99568082797728
+Av NPM (over 3 years),30.60103209292629
+Au NFA/T (over 3 years),4.5477065044727185
+Av Dep%NFA (over 3 years),30.945129909934717
+Au Retention ratio (over 3 years),62.473405795605494
+d/e,1.1019581034230188
+Interest coverage,0.0
+tax %,22.750910036401457
+cPAT,24047000000.0
+CFO,2670000000.0
+cCFO,26432000000.0
+cCFO/cPAT,1.0991807709901442
+p/a,1.2048388208719774
+p/e,26.09946
+EY,3.3715444217951385
+Earnings Growth 5yr cagr,1.843731883552091
+Sales Growth 5yr cagr,1.917635317445976
+PEG,14.155778414873092
+no. shares (cr),181.5219968
+Current Price,97.09
+market cap,176239706693.12
+d/e_market,0.25609438898233217
+p/s,8.149436
+NFA + CWIP,4134000000.0
+Capex,1036000000.0
+Capex_from_cashflow_statement,620000000.0
+FCF,1634000000.0
+FCF%,27.499158532480646
+FCF_capex_from_cashflow,2050000000.0
+FCF%_capex_from_cashflow,34.50016829350387
+DV,1.2908555300545168
+Mcap (cr),17623.9706112
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6119850187265917
+Market Cap,176239706112
+Net Income,5942000000.0
+Total Revenue,19606000000.0
+Total Assets,479843000000.0
+Total Liabilities,431468000000.0
+Total Stockholders Equity,40958000000.0
+Total Debt,45134000000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,2670000000.0
+Capital Expenditure,620000000.0
+Dividends Paid,2275000000.0
+Depreciation & Amortization,1435000000.0
+Interest Expense,6393000000.0
+Income Tax Expense,1750000000.0
+Shares Outstanding,1815219968
+Net Fixed Assets,3929000000.0
+Construction in Progress,205000000.0
+Net Debt,0
+3-5yr Average ROA (%),1.074136768650247
+3-5yr Average ROE (%),14.267052172581327
+ROE,13.065002707371786
+ROA,0.9698071678070722
+insidersPercentHeld,0.06067
+institutionsPercentHeld,0.84638
+institutionsFloatPercentHeld,0.90103996
+institutionsCount,2692.0
+current,97.09
+high,131.0
+low,84.0
+mean,108.0
+median,110.0
+Normalized EBIT,0.0
+Normalized Net Income,6064000000.0

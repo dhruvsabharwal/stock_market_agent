@@ -1,0 +1,103 @@
+,Value
+ticker,AMZN
+longName,"Amazon.com, Inc."
+ROCE,15.942962715197446
+ROCE (3yr avg),8.668767337229307
+NFAT,2.107227793412343
+NFAT (3yr avg),2.156349120538313
+NPM,4.683603757580886
+DPR,0.0
+Retention Ratio,100.0
+Dep,17.895820430718416
+SSGR,-7.796335587108934
+Av NPM (over 3 years),4.683603757580886
+Au NFA/T (over 3 years),2.156349120538313
+Av Dep%NFA (over 3 years),17.895820430718416
+Au Retention ratio (over 3 years),100.0
+d/e,0.6484210526315789
+Interest coverage,28.509143807148796
+tax %,13.503075174162706
+cPAT,120315000000.0
+CFO,115877000000.0
+cCFO,293902000000.0
+cCFO/cPAT,2.4427710593026637
+p/a,11.22431581460025
+p/e,35.35878
+EY,2.3987134426399273
+Earnings Growth 5yr cagr,19.726033125687415
+Sales Growth 5yr cagr,10.735398559596486
+PEG,1.7924931877943309
+no. shares (cr),1066.4899584
+Current Price,231.6
+market cap,2469990743654.4
+d/e_market,0.052996150020518246
+p/s,3.6863441
+NFA + CWIP,375442000000.0
+Capex,122707000000.0
+Capex_from_cashflow_statement,82999000000.0
+FCF,-6830000000.0
+FCF%,-11.527815284904133
+FCF_capex_from_cashflow,32878000000.0
+FCF%_capex_from_cashflow,55.49216851201728
+DV,0.0
+Mcap (cr),246999.0760448
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,-0.05894180898711565
+Market Cap,2469990760448
+Net Income,59248000000.0
+Total Revenue,637959000000.0
+Total Assets,624894000000.0
+Total Liabilities,338924000000.0
+Total Stockholders Equity,201875000000.0
+Total Debt,130900000000.0
+Cash and Cash Equivalents,0
+Current Assets,190867000000.0
+Current Liabilities,179431000000.0
+Working Capital,11436000000.0
+Operating Cash Flow,115877000000.0
+Capital Expenditure,82999000000.0
+Dividends Paid,0
+Depreciation & Amortization,52795000000.0
+Interest Expense,2406000000.0
+Income Tax Expense,9265000000.0
+Shares Outstanding,10664899584
+Net Fixed Assets,328806000000.0
+Construction in Progress,46636000000.0
+Net Debt,0
+3-5yr Average ROA (%),2.7634019496631823
+3-5yr Average ROE (%),7.787396927484549
+ROE,17.48975333268184
+ROA,6.143182077455582
+insidersPercentHeld,0.08449
+institutionsPercentHeld,0.66345
+institutionsFloatPercentHeld,0.72468
+institutionsCount,7108.0
+current,231.6
+high,306.0
+low,225.0
+mean,262.7742
+median,262.0
+Normalized EBIT,36063333333.333336
+Normalized Net Income,28983666666.666668
+Research Asset,8548000000.0
+R&D Amortization,8548000000.0
+Adjusted EBIT (R&D),71020000000.0
+Adjusted Book Equity (R&D),210423000000.0
+Adjusted D/E (R&D),0.6220802859003056
+Adjusted Invested Capital (R&D),341323000000.0
+Adjusted ROC (R&D),17.99764915089509
+Adjusted ROE (R&D),28.1566178602149

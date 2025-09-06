@@ -1,0 +1,95 @@
+,Value
+ticker,PG
+longName,The Procter & Gamble Company
+ROCE,23.632713938075426
+ROCE (3yr avg),22.759252573658824
+NFAT,3.8257869771453215
+NFAT (3yr avg),3.862573332670656
+NPM,18.175222916408053
+DPR,61.9331072432326
+Retention Ratio,38.0668927567674
+Dep,12.632701557263871
+SSGR,14.091449166494385
+Av NPM (over 3 years),18.175222916408053
+Au NFA/T (over 3 years),3.862573332670656
+Av Dep%NFA (over 3 years),12.632701557263871
+Au Retention ratio (over 3 years),38.06689275676741
+d/e,0.7052261066698484
+Interest coverage,22.54796030871003
+tax %,20.340159666782366
+cPAT,60248000000.0
+CFO,17817000000.0
+cCFO,71234000000.0
+cCFO/cPAT,1.182346301951932
+p/a,13.053853068562557
+p/e,23.909369
+EY,4.3813611098083225
+Earnings Growth 5yr cagr,3.5916763916712613
+Sales Growth 5yr cagr,1.674893047051751
+PEG,6.656882857109132
+no. shares (cr),234.2370048
+Current Price,155.65
+market cap,364589897971.2
+d/e_market,0.09726819145932925
+p/s,4.325731
+NFA + CWIP,27832000000.0
+Capex,5401000000.0
+Capex_from_cashflow_statement,3773000000.0
+FCF,12416000000.0
+FCF%,77.72630524602478
+FCF_capex_from_cashflow,14044000000.0
+FCF%_capex_from_cashflow,87.91786653311632
+DV,2.707699816954286
+Mcap (cr),36458.98752
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6968625470056687
+Market Cap,364589875200
+Net Income,15974000000.0
+Total Revenue,84284000000.0
+Total Assets,125231000000.0
+Total Liabilities,72947000000.0
+Total Stockholders Equity,50286000000.0
+Total Debt,35463000000.0
+Cash and Cash Equivalents,2100000000.0
+Current Assets,25392000000.0
+Current Liabilities,36058000000.0
+Working Capital,-10666000000.0
+Operating Cash Flow,17817000000.0
+Capital Expenditure,3773000000.0
+Dividends Paid,9872000000.0
+Depreciation & Amortization,2847000000.0
+Interest Expense,907000000.0
+Income Tax Expense,4102000000.0
+Shares Outstanding,2342370048
+Net Fixed Assets,23897000000.0
+Construction in Progress,3935000000.0
+Net Debt,33363000000.0
+3-5yr Average ROA (%),12.507064639074407
+3-5yr Average ROE (%),31.22993191447062
+ROE,31.230327083618448
+ROA,12.90301735453411
+insidersPercentHeld,0.00062
+institutionsPercentHeld,0.70045996
+institutionsFloatPercentHeld,0.70088995
+institutionsCount,4957.0
+current,155.65
+high,186.0
+low,140.0
+mean,170.63635
+median,174.5
+Normalized EBIT,19956333333.333332
+Normalized Net Income,15168666666.666666

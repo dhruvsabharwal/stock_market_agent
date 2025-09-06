@@ -1,0 +1,95 @@
+,Value
+ticker,BRO
+longName,"Brown & Brown, Inc."
+ROCE,13.31209063551071
+ROCE (3yr avg),12.587101345964939
+NFAT,9.524291497975709
+NFAT (3yr avg),8.954866195658084
+NPM,20.236250695861163
+DPR,16.28837624125535
+Retention Ratio,83.71162375874465
+Dep,44.2010645345465
+SSGR,107.49521098383576
+Av NPM (over 3 years),20.236250695861163
+Au NFA/T (over 3 years),8.954866195658084
+Av Dep%NFA (over 3 years),44.2010645345465
+Au Retention ratio (over 3 years),83.71162375874466
+d/e,0.7277289836888331
+Interest coverage,6.800995024875622
+tax %,23.100537221795854
+cPAT,3123100000.0
+CFO,1174000000.0
+cCFO,3873800000.0
+cCFO/cPAT,1.2403701450481892
+p/a,6.672041927030841
+p/e,27.729107
+EY,3.1287914313943275
+Earnings Growth 5yr cagr,18.714919675472185
+Sales Growth 5yr cagr,15.577147365133959
+PEG,1.4816578153066737
+no. shares (cr),32.9843008
+Current Price,96.22
+market cap,31737494229.76
+d/e_market,0.1279244029351558
+p/s,6.4038525
+NFA + CWIP,
+Capex,
+Capex_from_cashflow_statement,82000000.0
+FCF,
+FCF%,
+FCF_capex_from_cashflow,1092000000.0
+FCF%_capex_from_cashflow,109.96978851963746
+DV,0.48523049389197026
+Mcap (cr),3173.7495552
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,
+Market Cap,31737495552
+Net Income,993000000.0
+Total Revenue,4705000000.0
+Total Assets,17612000000.0
+Total Liabilities,11175000000.0
+Total Stockholders Equity,5579000000.0
+Total Debt,4060000000.0
+Cash and Cash Equivalents,354000000.0
+Current Assets,6924000000.0
+Current Liabilities,6314000000.0
+Working Capital,610000000.0
+Operating Cash Flow,1174000000.0
+Capital Expenditure,82000000.0
+Dividends Paid,154000000.0
+Depreciation & Amortization,222000000.0
+Interest Expense,201000000.0
+Income Tax Expense,301000000.0
+Shares Outstanding,329843008
+Net Fixed Assets,519000000.0
+Construction in Progress,
+Net Debt,3706000000.0
+3-5yr Average ROA (%),5.84560788217588
+3-5yr Average ROE (%),16.184615746768095
+ROE,17.10257618598806
+ROA,6.036768145825031
+insidersPercentHeld,0.13494
+institutionsPercentHeld,0.84129
+institutionsFloatPercentHeld,0.97252
+institutionsCount,1284.0
+current,96.22
+high,130.0
+low,87.0
+mean,109.91667
+median,107.0
+Normalized EBIT,1290333333.3333333
+Normalized Net Income,845333333.3333334

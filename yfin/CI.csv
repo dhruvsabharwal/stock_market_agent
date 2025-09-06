@@ -1,0 +1,95 @@
+,Value
+ticker,CI
+longName,The Cigna Group
+ROCE,
+ROCE (3yr avg),5.591132447406302
+NFAT,63.93302812295618
+NFAT (3yr avg),57.090339521640274
+NPM,2.5915455880614555
+DPR,31.451772020477012
+Retention Ratio,68.54822797952298
+Dep,76.04287771650917
+SSGR,25.37574564179712
+Av NPM (over 3 years),2.5915455880614555
+Au NFA/T (over 3 years),57.090339521640274
+Av Dep%NFA (over 3 years),76.04287771650917
+Au Retention ratio (over 3 years),68.54822797952299
+d/e,0.6916902840577202
+Interest coverage,0.0
+tax %,28.297589675460237
+cPAT,20672000000.0
+CFO,10363000000.0
+cCFO,38023000000.0
+cCFO/cPAT,1.8393479102167183
+p/a,2.247955957345134
+p/e,16.392544
+EY,4.302639600482497
+Earnings Growth 5yr cagr,-8.632254769813574
+Sales Growth 5yr cagr,11.931555207609978
+PEG,-1.8989875110409908
+no. shares (cr),26.6928
+Current Price,299.0
+market cap,79811472000.0
+d/e_market,0.4005940399144624
+p/s,0.3045972
+NFA + CWIP,3956000000.0
+Capex,2860000000.0
+Capex_from_cashflow_statement,1406000000.0
+FCF,7503000000.0
+FCF%,218.49155503785673
+FCF_capex_from_cashflow,8957000000.0
+FCF%_capex_from_cashflow,260.8328479906814
+DV,1.963376893988373
+Mcap (cr),7981.1469312
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,True
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.7240181414648268
+Market Cap,79811469312
+Net Income,3434000000.0
+Total Revenue,244384000000.0
+Total Assets,155881000000.0
+Total Liabilities,114638000000.0
+Total Stockholders Equity,46223000000.0
+Total Debt,31972000000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,10363000000.0
+Capital Expenditure,1406000000.0
+Dividends Paid,1567000000.0
+Depreciation & Amortization,2775000000.0
+Interest Expense,1435000000.0
+Income Tax Expense,1491000000.0
+Shares Outstanding,266928000
+Net Fixed Assets,3956000000.0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),3.41537364470706
+3-5yr Average ROE (%),11.309845277333384
+ROE,7.8710919592921975
+ROA,2.225231821981454
+insidersPercentHeld,0.01593
+institutionsPercentHeld,0.90159
+institutionsFloatPercentHeld,0.91617996
+institutionsCount,2274.0
+current,299.0
+high,428.0
+low,300.0
+mean,367.87216
+median,371.0
+Normalized EBIT,7762666666.666667
+Normalized Net Income,5100666666.666667

@@ -1,0 +1,94 @@
+,Value
+ticker,UGROCAP.NS
+ROCE,3.3388754437592385
+ROCE (3yr avg),3.5913408061072114
+NFAT,28.559417683148162
+NFAT (3yr avg),27.98584596969669
+NPM,13.322057624947577
+DPR,0.0
+Retention Ratio,100.0
+Dep,82.56590478937743
+SSGR,290.2631479018288
+Av NPM (over 3 years),13.322057624947577
+Au NFA/T (over 3 years),27.98584596969669
+Av Dep%NFA (over 3 years),82.56590478937743
+Au Retention ratio (over 3 years),100.0
+d/e,4.799985705959774
+Interest coverage,-7.450703991498971
+tax %,29.13955180599988
+cPAT,3176017000.0
+CFO,-24740307000.0
+cCFO,-63542488000.0
+cCFO/cPAT,-20.006973514310534
+p/a,2.2918848700063434
+p/e,11.691409
+EY,7.3999159933888805
+Earnings Growth 5yr cagr,96.70993615869288
+Sales Growth 5yr cagr,53.19092564956953
+PEG,0.12089149744464085
+no. shares (cr),11.4339
+Current Price,170.11
+market cap,19450207290.0
+d/e_market,3.549635999791959
+p/s,2.8700695
+NFA + CWIP,
+Capex,
+Capex_from_cashflow_statement,529059000.0
+FCF,
+FCF%,
+FCF_capex_from_cashflow,-25269366000.0
+FCF%_capex_from_cashflow,-1755.6717540969596
+DV,0.0
+Mcap (cr),1945.0208256
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,False
+cCFO > PAT,False
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,
+Market Cap,19450208256
+Net Income,1439299000.0
+Total Revenue,9638218000.0
+Total Assets,91683122000.0
+Total Liabilities,71219228000.0
+Total Stockholders Equity,14383617000.0
+Total Debt,69041156000.0
+Cash and Cash Equivalents,1348459000.0
+Current Assets,38160047000.0
+Current Liabilities,27241365000.0
+Working Capital,10918682000.0
+Operating Cash Flow,-24740307000.0
+Capital Expenditure,529059000.0
+Dividends Paid,0
+Depreciation & Amortization,463849000.0
+Interest Expense,120456000.0
+Income Tax Expense,591875000.0
+Shares Outstanding,114339000
+Net Fixed Assets,696311000.0
+Construction in Progress,
+Net Debt,67692697000.0
+3-5yr Average ROA (%),1.4347258234800266
+3-5yr Average ROE (%),5.924432237130635
+ROE,8.260555538672474
+ROA,1.863376259266259
+insidersPercentHeld,0.43198
+institutionsPercentHeld,0.20567
+institutionsFloatPercentHeld,0.36208
+institutionsCount,7.0
+current,170.11
+high,302.0
+low,250.0
+mean,268.66666
+median,254.0
+Normalized EBIT,1627181666.6666667
+Normalized Net Income,1010170333.3333334

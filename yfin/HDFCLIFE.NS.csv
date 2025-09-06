@@ -1,0 +1,95 @@
+,Value
+ticker,HDFCLIFE.NS
+longName,HDFC Life Insurance Company Limited
+ROCE,
+ROCE (3yr avg),0.6456679119894314
+NFAT,269.431190871198
+NFAT (3yr avg),285.3559602048781
+NPM,1.8670032249675996
+DPR,29.74371658402074
+Retention Ratio,70.25628341597925
+Dep,0.0
+SSGR,374.2977253795394
+Av NPM (over 3 years),1.8670032249675996
+Au NFA/T (over 3 years),285.3559602048781
+Av Dep%NFA (over 3 years),0.0
+Au Retention ratio (over 3 years),70.25628341597927
+d/e,0.20114084359151635
+Interest coverage,0.0
+tax %,3.5741290989062486
+cPAT,60801102000.0
+CFO,0
+cCFO,0
+cCFO/cPAT,0.0
+p/a,0.5982484543849677
+p/e,88.94585
+EY,1.0881578005127108
+Earnings Growth 5yr cagr,9.02274175391633
+Sales Growth 5yr cagr,10.123321184533228
+PEG,9.857962515816542
+no. shares (cr),215.5450112
+Current Price,772.05
+market cap,1664115258969.5999
+d/e_market,0.017727137493028004
+p/s,1.6692487
+NFA + CWIP,6637400000.0
+Capex,2918900000.0
+Capex_from_cashflow_statement,3007200000.0
+FCF,-2918900000.0
+FCF%,-16.119216708452523
+FCF_capex_from_cashflow,-3007200000.0
+FCF%_capex_from_cashflow,-16.60684109961233
+DV,
+Mcap (cr),166411.5277824
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,False
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0
+Market Cap,1664115277824
+Net Income,18108200000.0
+Total Revenue,900685300000.0
+Total Assets,3494115800000.0
+Total Liabilities,3332569600000.0
+Total Stockholders Equity,146663400000.0
+Total Debt,29500000000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,0
+Capital Expenditure,3007200000.0
+Dividends Paid,
+Depreciation & Amortization,0
+Interest Expense,1418500000.0
+Income Tax Expense,671200000.0
+Shares Outstanding,2155450112
+Net Fixed Assets,5545700000.0
+Construction in Progress,1091700000.0
+Net Debt,0
+3-5yr Average ROA (%),0.5684051144637868
+3-5yr Average ROE (%),10.29933690384343
+ROE,11.75057493342193
+ROA,0.5553823284956646
+insidersPercentHeld,0.56099
+institutionsPercentHeld,0.26591
+institutionsFloatPercentHeld,0.6057
+institutionsCount,235.0
+current,772.05
+high,975.0
+low,700.0
+mean,868.5455
+median,890.0
+Normalized EBIT,16989537333.333334
+Normalized Net Income,15843923666.666666

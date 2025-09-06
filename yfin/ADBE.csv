@@ -1,0 +1,103 @@
+,Value
+ticker,ADBE
+longName,Adobe Inc.
+ROCE,36.02415140291237
+ROCE (3yr avg),33.426365760352944
+NFAT,9.339847991313789
+NFAT (3yr avg),8.513489126082886
+NPM,26.944792636181187
+DPR,0.0
+Retention Ratio,100.0
+Dep,37.64666743612851
+SSGR,191.74753167655822
+Av NPM (over 3 years),26.944792636181187
+Au NFA/T (over 3 years),8.513489126082886
+Av Dep%NFA (over 3 years),37.64666743612851
+Au Retention ratio (over 3 years),100.0
+d/e,0.36663034265649597
+Interest coverage,45.80473372781065
+tax %,19.780695426345403
+cPAT,20566000000.0
+CFO,8056000000.0
+cCFO,30426000000.0
+cCFO/cPAT,1.4794320723524264
+p/a,18.670875449142013
+p/e,22.675209
+EY,3.70296784614451
+Earnings Growth 5yr cagr,7.16424739257806
+Sales Growth 5yr cagr,10.857467624937179
+PEG,3.165051087360665
+no. shares (cr),42.42
+Current Price,353.96
+market cap,150149832000.0
+d/e_market,0.040333045460883364
+p/s,6.643503
+NFA + CWIP,2244000000.0
+Capex,711000000.0
+Capex_from_cashflow_statement,183000000.0
+FCF,7345000000.0
+FCF%,132.1043165467626
+FCF_capex_from_cashflow,7873000000.0
+FCF%_capex_from_cashflow,141.60071942446044
+DV,0.0
+Mcap (cr),15014.9824512
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9117428003972194
+Market Cap,150149824512
+Net Income,5560000000.0
+Total Revenue,21505000000.0
+Total Assets,30230000000.0
+Total Liabilities,16125000000.0
+Total Stockholders Equity,16518000000.0
+Total Debt,6056000000.0
+Cash and Cash Equivalents,1274000000.0
+Current Assets,11232000000.0
+Current Liabilities,10521000000.0
+Working Capital,711000000.0
+Operating Cash Flow,8056000000.0
+Capital Expenditure,183000000.0
+Dividends Paid,0
+Depreciation & Amortization,857000000.0
+Interest Expense,169000000.0
+Income Tax Expense,1371000000.0
+Shares Outstanding,424200000
+Net Fixed Assets,2217000000.0
+Construction in Progress,27000000.0
+Net Debt,4782000000.0
+3-5yr Average ROA (%),18.27385486103632
+3-5yr Average ROE (%),34.242962290360204
+ROE,35.51310150806373
+ROA,19.06434391683057
+insidersPercentHeld,0.00179
+institutionsPercentHeld,0.86099
+institutionsFloatPercentHeld,0.86254
+institutionsCount,3716.0
+current,353.96
+high,605.0
+low,280.0
+mean,480.95206
+median,480.0
+Normalized EBIT,6710666666.666667
+Normalized Net Income,5248000000.0
+Research Asset,9530600000.0
+R&D Amortization,2588800000.0
+Adjusted EBIT (R&D),8455200000.0
+Adjusted Book Equity (R&D),26048600000.0
+Adjusted D/E (R&D),0.232488502261158
+Adjusted Invested Capital (R&D),30830600000.0
+Adjusted ROC (R&D),21.999904770947186
+Adjusted ROE (R&D),21.344717182497334

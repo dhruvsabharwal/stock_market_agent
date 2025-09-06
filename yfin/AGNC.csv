@@ -1,0 +1,94 @@
+,Value
+ticker,AGNC
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,0
+NFAT (3yr avg),0.0
+NPM,85.69285696649992
+DPR,239.7208606464303
+Retention Ratio,-139.7208606464303
+Dep,0.0
+SSGR,-0.0
+Av NPM (over 3 years),85.69285696649992
+Au NFA/T (over 3 years),0.0
+Av Dep%NFA (over 3 years),0.0
+Au Retention ratio (over 3 years),-139.72086064643028
+d/e,0.007750999152234468
+Interest coverage,0.0
+tax %,0.0
+cPAT,577000000.0
+CFO,86000000.0
+cCFO,2521000000.0
+cCFO/cPAT,4.369150779896014
+p/a,1.205374601933069
+p/e,32.666664
+EY,8.45336371635012
+Earnings Growth 5yr cagr,-8.898412327330064
+Sales Growth 5yr cagr,5.146735606347219
+PEG,-3.671066567647075
+no. shares (cr),104.1729984
+Current Price,9.8
+market cap,10208953843.2
+d/e_market,0.006269006695786879
+p/s,20.58257
+NFA + CWIP,0
+Capex,
+Capex_from_cashflow_statement,0
+FCF,
+FCF%,
+FCF_capex_from_cashflow,86000000.0
+FCF%_capex_from_cashflow,9.965237543453071
+DV,12.155995796049247
+Mcap (cr),1020.8954368
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,True
+EY >7,True
+sgr > Sales growth (very linear),False
+FCF/CFO,
+Market Cap,10208954368
+Net Income,863000000.0
+Total Revenue,973000000.0
+Total Assets,88015000000.0
+Total Liabilities,78253000000.0
+Total Stockholders Equity,8257000000.0
+Total Debt,64000000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,86000000.0
+Capital Expenditure,0
+Dividends Paid,1241000000.0
+Depreciation & Amortization,
+Interest Expense,2931000000.0
+Income Tax Expense,0
+Shares Outstanding,1041729984
+Net Fixed Assets,0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),-0.21744281307098143
+3-5yr Average ROE (%),-0.5346616906235339
+ROE,9.578777956601366
+ROA,1.0813791029440327
+insidersPercentHeld,0.0037099998
+institutionsPercentHeld,0.43558997
+institutionsFloatPercentHeld,0.43721
+institutionsCount,695.0
+current,9.8
+high,10.5
+low,9.0
+mean,9.72083
+median,9.7
+Normalized EBIT,0.0
+Normalized Net Income,-57333333.333333336

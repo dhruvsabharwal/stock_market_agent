@@ -1,0 +1,103 @@
+,Value
+ticker,TSM
+longName,Taiwan Semiconductor Manufacturing Company Limited
+ROCE,26.310733307118
+ROCE (3yr avg),25.655671973479897
+NFAT,0.9073053228991148
+NFAT (3yr avg),0.8673486521374049
+NPM,41.09419827457793
+DPR,31.439481940791154
+Retention Ratio,68.56051805920885
+Dep,19.145504111804996
+SSGR,5.291519615140117
+Av NPM (over 3 years),41.09419827457793
+Au NFA/T (over 3 years),0.8673486521374049
+Av Dep%NFA (over 3 years),19.145504111804996
+Au Retention ratio (over 3 years),68.56051805920885
+d/e,0.3053025984026231
+Interest coverage,125.9602397240696
+tax %,17.663183577078474
+cPAT,3595402800000.0
+CFO,1826177100000.0
+cCFO,5790904300000.0
+cCFO/cPAT,1.6106413167392537
+p/a,20.938883480749762
+p/e,26.068928
+EY,93.73584493571744
+Earnings Growth 5yr cagr,24.757170179994702
+Sales Growth 5yr cagr,22.166296051413248
+PEG,1.0529849659903892
+no. shares (cr),518.6520064
+Current Price,238.27
+market cap,1235792135649.28
+d/e_market,0.8472639287754397
+p/s,0.36334017
+NFA + CWIP,4355392700000.0
+Capex,1004999800000.0
+Capex_from_cashflow_statement,964981600000.0
+FCF,821177300000.0
+FCF%,70.89013607104127
+FCF_capex_from_cashflow,861195500000.0
+FCF%_capex_from_cashflow,74.34480492674167
+DV,29.378338761579215
+Mcap (cr),123579.2166912
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,True
+p/b <3,True
+DV >3%,True
+EY >7,True
+sgr > Sales growth (very linear),False
+FCF/CFO,0.4496701333074432
+Market Cap,1235792166912
+Net Income,1158380200000.0
+Total Revenue,2894307700000.0
+Total Assets,6691764700000.0
+Total Liabilities,2412493100000.0
+Total Stockholders Equity,3429522400000.0
+Total Debt,1047042100000.0
+Cash and Cash Equivalents,43237400000.0
+Current Assets,3088352100000.0
+Current Liabilities,1308655900000.0
+Working Capital,1779696200000.0
+Operating Cash Flow,1826177100000.0
+Capital Expenditure,964981600000.0
+Dividends Paid,363055200000.0
+Depreciation & Amortization,662796600000.0
+Interest Expense,10495400000.0
+Income Tax Expense,248316100000.0
+Shares Outstanding,5186520064
+Net Fixed Assets,3275108500000.0
+Construction in Progress,1080284200000.0
+Net Debt,1003804700000.0
+3-5yr Average ROA (%),19.540753890160367
+3-5yr Average ROE (%),33.10318509425401
+ROE,26.900413342692186
+ROA,16.22878799387504
+insidersPercentHeld,0.00039
+institutionsPercentHeld,0.16406
+institutionsFloatPercentHeld,0.16412
+institutionsCount,3524.0
+current,238.27
+high,306.0
+low,210.0
+mean,269.75668
+median,274.0
+Normalized EBIT,1187824500000.0
+Normalized Net Income,1001014533333.3334
+Research Asset,497929200000.0
+R&D Amortization,134909800000.0
+Adjusted EBIT (R&D),1485607400000.0
+Adjusted Book Equity (R&D),3927451600000.0
+Adjusted D/E (R&D),0.2665957996783461
+Adjusted Invested Capital (R&D),4931256300000.0
+Adjusted ROC (R&D),24.805075284838416
+Adjusted ROE (R&D),29.494448766727004

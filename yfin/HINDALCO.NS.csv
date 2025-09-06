@@ -1,0 +1,102 @@
+,Value
+ticker,HINDALCO.NS
+ROCE,12.802593839630877
+ROCE (3yr avg),11.120959173632778
+NFAT,2.220273808352888
+NFAT (3yr avg),2.3616831613587768
+NPM,5.342612990304503
+DPR,6.7482961591192145
+Retention Ratio,93.25170384088078
+Dep,7.87233138706454
+SSGR,3.893757491187026
+Av NPM (over 3 years),5.342612990304503
+Au NFA/T (over 3 years),2.3616831613587768
+Av Dep%NFA (over 3 years),7.87233138706454
+Au Retention ratio (over 3 years),93.2517038408808
+d/e,0.6022742260659846
+Interest coverage,7.652147792129768
+tax %,28.361015355687876
+cPAT,499830000000.0
+CFO,244100000000.0
+cCFO,845120000000.0
+cCFO/cPAT,1.6908148770581999
+p/a,6.899748606122282
+p/e,9.274544
+EY,10.210083029919652
+Earnings Growth 5yr cagr,5.288087263008978
+Sales Growth 5yr cagr,6.924995961584313
+PEG,1.753856080416246
+no. shares (cr),222.0740096
+Current Price,705.7
+market cap,1567176285747.2002
+d/e_market,0.4079247534652418
+p/s,0.6378025
+NFA + CWIP,1436360000000.0
+Capex,329820000000.0
+Capex_from_cashflow_statement,206490000000.0
+FCF,-85720000000.0
+FCF%,-53.57165177176426
+FCF_capex_from_cashflow,37610000000.0
+FCF%_capex_from_cashflow,23.50478095119055
+DV,0.4964342601885813
+Mcap (cr),156717.6261632
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,True
+peg <1,False
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),False
+FCF/CFO,-0.35116755428103236
+Market Cap,1567176261632
+Net Income,160010000000.0
+Total Revenue,2370220000000.0
+Total Assets,2659910000000.0
+Total Liabilities,1422700000000.0
+Total Stockholders Equity,1061460000000.0
+Total Debt,639290000000.0
+Cash and Cash Equivalents,28350000000.0
+Current Assets,1019590000000.0
+Current Liabilities,655160000000.0
+Working Capital,364430000000.0
+Operating Cash Flow,244100000000.0
+Capital Expenditure,206490000000.0
+Dividends Paid,7780000000.0
+Depreciation & Amortization,78810000000.0
+Interest Expense,33290000000.0
+Income Tax Expense,63350000000.0
+Shares Outstanding,2220740096
+Net Fixed Assets,1141620000000.0
+Construction in Progress,294740000000.0
+Net Debt,610940000000.0
+3-5yr Average ROA (%),5.127704967913313
+3-5yr Average ROE (%),11.900872127392526
+ROE,13.922690391768725
+ROA,6.427420877368458
+insidersPercentHeld,0.36731
+institutionsPercentHeld,0.41837
+institutionsFloatPercentHeld,0.66126
+institutionsCount,267.0
+current,705.7
+high,875.0
+low,600.0
+mean,746.8889
+median,741.0
+Normalized EBIT,201013333333.33334
+Normalized Net Income,120843333333.33333
+Research Asset,23494000000.0
+R&D Amortization,6534000000.0
+Adjusted EBIT (R&D),259196000000.0
+Adjusted Book Equity (R&D),1084954000000.0
+Adjusted D/E (R&D),0.5892323545514372
+Adjusted Invested Capital (R&D),1695894000000.0
+Adjusted ROC (R&D),10.94911489979157
+Adjusted ROE (R&D),14.748090702462962

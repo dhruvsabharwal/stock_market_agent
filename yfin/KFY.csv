@@ -1,0 +1,95 @@
+,Value
+ticker,KFY
+longName,Korn Ferry
+ROCE,12.571301330591067
+ROCE (3yr avg),11.275333089287678
+NFAT,8.808991846911445
+NFAT (3yr avg),8.983747715511704
+NPM,7.426362368991774
+DPR,27.29289134285033
+Retention Ratio,72.70710865714966
+Dep,24.022287194697537
+SSGR,24.485398915242225
+Av NPM (over 3 years),7.426362368991774
+Au NFA/T (over 3 years),8.983747715511704
+Av Dep%NFA (over 3 years),24.022287194697537
+Au Retention ratio (over 3 years),72.70710865714967
+d/e,0.3277853366707866
+Interest coverage,17.10032902813927
+tax %,27.20578002504987
+cPAT,951105000.0
+CFO,364362000.0
+cCFO,1493875000.0
+cCFO/cPAT,1.570673059231105
+p/a,6.688523021613436
+p/e,16.201088
+EY,6.309744134877528
+Earnings Growth 5yr cagr,-8.086641658588833
+Sales Growth 5yr cagr,1.461825230551339
+PEG,-2.0034383473382675
+no. shares (cr),5.23276
+Current Price,74.525
+market cap,3899714390.0000005
+d/e_market,0.14566989866147606
+p/s,1.4284209
+NFA + CWIP,326322000.0
+Capex,84296000.0
+Capex_from_cashflow_statement,62484000.0
+FCF,280066000.0
+FCF%,113.81928131934227
+FCF_capex_from_cashflow,301878000.0
+FCF%_capex_from_cashflow,122.68371386073429
+DV,2.1445673102229414
+Mcap (cr),389.971456
+d/e decreasing trend 5 yrs,True
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.7686476635873115
+Market Cap,3899714560
+Net Income,246062000.0
+Total Revenue,2761086000.0
+Total Assets,3861224000.0
+Total Liabilities,1989085000.0
+Total Stockholders Equity,1733058000.0
+Total Debt,568071000.0
+Cash and Cash Equivalents,103137000.0
+Current Assets,1750138000.0
+Current Liabilities,955598000.0
+Working Capital,794540000.0
+Operating Cash Flow,364362000.0
+Capital Expenditure,62484000.0
+Dividends Paid,83632000.0
+Depreciation & Amortization,80287000.0
+Interest Expense,20363000.0
+Income Tax Expense,93836000.0
+Shares Outstanding,52327600
+Net Fixed Assets,326322000.0
+Construction in Progress,0
+Net Debt,464934000.0
+3-5yr Average ROA (%),6.641081163392004
+3-5yr Average ROE (%),14.4842414306532
+ROE,13.671956825282525
+ROA,6.526762998811818
+insidersPercentHeld,0.01102
+institutionsPercentHeld,1.00748
+institutionsFloatPercentHeld,1.0187
+institutionsCount,487.0
+current,74.525
+high,88.0
+low,78.0
+mean,83.75
+median,84.5
+Normalized EBIT,310162000.0
+Normalized Net Income,208248333.33333334

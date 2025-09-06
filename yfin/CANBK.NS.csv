@@ -1,0 +1,94 @@
+,Value
+ticker,CANBK.NS
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,6.2713288820853075
+NFAT (3yr avg),6.170970838800846
+NPM,22.703594584408705
+DPR,13.79262308657861
+Retention Ratio,86.2073769134214
+Dep,8.507572487050643
+SSGR,112.27173854648554
+Av NPM (over 3 years),22.703594584408705
+Au NFA/T (over 3 years),6.170970838800846
+Av Dep%NFA (over 3 years),8.507572487050643
+Au Retention ratio (over 3 years),86.20737691342138
+d/e,0.903448803635984
+Interest coverage,0.0
+tax %,24.331923275352377
+cPAT,501977558000.0
+CFO,606685800000.0
+cCFO,366562000000.0
+cCFO/cPAT,0.7302358325748101
+p/a,1.142633392575493
+p/e,5.196569
+EY,18.240427802178296
+Earnings Growth 5yr cagr,40.266553335414535
+Sales Growth 5yr cagr,12.60564524288299
+PEG,0.12905422911947134
+no. shares (cr),907.0650368
+Current Price,106.01
+market cap,961579645511.68
+d/e_market,0.8656345814777225
+p/s,1.6737798
+NFA + CWIP,104538738000.0
+Capex,-11541628000.0
+Capex_from_cashflow_statement,
+FCF,618227428000.0
+FCF%,352.4747306300595
+FCF_capex_from_cashflow,
+FCF%_capex_from_cashflow,
+DV,3.037449901974368
+Mcap (cr),96184.467456
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,False
+p/e <10,True
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,True
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,1.0190240615488282
+Market Cap,961844674560
+Net Income,175396241000.0
+Total Revenue,710695975000.0
+Total Assets,17306913490000.0
+Total Liabilities,16240847936000.0
+Total Stockholders Equity,921332333000.0
+Total Debt,832376594000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,606685800000.0
+Capital Expenditure,
+Dividends Paid,29207500000.0
+Depreciation & Amortization,8697700000.0
+Interest Expense,826806753000.0
+Income Tax Expense,56890299000.0
+Shares Outstanding,9070650368
+Net Fixed Assets,103015852000.0
+Construction in Progress,1522886000.0
+Net Debt,0
+3-5yr Average ROA (%),0.8653301556576001
+3-5yr Average ROE (%),14.918582695415477
+ROE,17.757149770676733
+ROA,1.0741694484270357
+insidersPercentHeld,0.64394
+institutionsPercentHeld,0.16123
+institutionsFloatPercentHeld,0.45281
+institutionsCount,171.0
+current,106.01
+high,140.0
+low,95.0
+mean,123.75
+median,125.0
+Normalized EBIT,0.0
+Normalized Net Income,146909780666.66666

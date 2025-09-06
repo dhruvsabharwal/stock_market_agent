@@ -1,0 +1,102 @@
+,Value
+ticker,NATCOPHARM.NS
+ROCE,30.11850714815345
+ROCE (3yr avg),25.388133409705986
+NFAT,1.7396854073797694
+NFAT (3yr avg),1.5323591836188957
+NPM,34.6018612996183
+DPR,10.68550159324914
+Retention Ratio,89.31449840675086
+Dep,8.075170411738164
+SSGR,39.28159158304206
+Av NPM (over 3 years),34.6018612996183
+Au NFA/T (over 3 years),1.5323591836188957
+Av Dep%NFA (over 3 years),8.075170411738164
+Au Retention ratio (over 3 years),89.31449840675084
+d/e,0.047735388084946435
+Interest coverage,82.0418410041841
+tax %,17.80570830060225
+cPAT,41590000000.0
+CFO,16968000000.0
+cCFO,38040000000.0
+cCFO/cPAT,0.9146429430151479
+p/a,27.299711857289722
+p/e,9.026385
+EY,12.30808781037933
+Earnings Growth 5yr cagr,124.36192167197149
+Sales Growth 5yr cagr,32.48320972726562
+PEG,0.07258158187526909
+no. shares (cr),17.911
+Current Price,855.25
+market cap,153183827500.0
+d/e_market,0.018239523359605308
+p/s,3.4849715
+NFA + CWIP,28827000000.0
+Capex,5456000000.0
+Capex_from_cashflow_statement,5116000000.0
+FCF,11512000000.0
+FCF%,61.05866129203352
+FCF_capex_from_cashflow,11852000000.0
+FCF%_capex_from_cashflow,62.86199215020686
+DV,0.7037296414335906
+Mcap (cr),15319.2382464
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,True
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6784535596416784
+Market Cap,153192382464
+Net Income,18854000000.0
+Total Revenue,44295000000.0
+Total Assets,86308000000.0
+Total Liabilities,10185000000.0
+Total Stockholders Equity,58531000000.0
+Total Debt,2794000000.0
+Cash and Cash Equivalents,3309000000.0
+Current Assets,52700000000.0
+Current Liabilities,9435000000.0
+Working Capital,43265000000.0
+Operating Cash Flow,16968000000.0
+Capital Expenditure,5116000000.0
+Dividends Paid,1078000000.0
+Depreciation & Amortization,2352000000.0
+Interest Expense,239000000.0
+Income Tax Expense,4080000000.0
+Shares Outstanding,179110000
+Net Fixed Assets,26573000000.0
+Construction in Progress,2254000000.0
+Net Debt,-515000000.0
+3-5yr Average ROA (%),19.885780345570783
+3-5yr Average ROE (%),23.185213966171787
+ROE,28.014650708389983
+ROA,24.26965135063815
+insidersPercentHeld,0.51265997
+institutionsPercentHeld,0.13032
+institutionsFloatPercentHeld,0.2674
+institutionsCount,64.0
+current,855.25
+high,1480.0
+low,712.0
+mean,982.63635
+median,952.0
+Normalized EBIT,16264666666.666666
+Normalized Net Income,13296666666.666666
+Research Asset,2677000000.0
+R&D Amortization,1112200000.0
+Adjusted EBIT (R&D),23153000000.0
+Adjusted Book Equity (R&D),61208000000.0
+Adjusted D/E (R&D),0.04564762776107698
+Adjusted Invested Capital (R&D),60693000000.0
+Adjusted ROC (R&D),31.355254077342625
+Adjusted ROE (R&D),30.803162985230685

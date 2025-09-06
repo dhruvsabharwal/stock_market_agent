@@ -1,0 +1,103 @@
+,Value
+ticker,LNTH
+longName,"Lantheus Holdings, Inc."
+ROCE,25.901964232958235
+ROCE (3yr avg),19.500467042938894
+NFAT,7.57667885888719
+NFAT (3yr avg),7.456135075326458
+NPM,16.189199140612352
+DPR,0.0
+Retention Ratio,100.0
+Dep,34.630994721785605
+SSGR,86.07786083197911
+Av NPM (over 3 years),16.189199140612352
+Au NFA/T (over 3 years),7.456135075326458
+Av Dep%NFA (over 3 years),34.630994721785605
+Au Retention ratio (over 3 years),100.0
+d/e,0.7592156805067337
+Interest coverage,22.805633229955767
+tax %,27.50378790515503
+cPAT,595891000.0
+CFO,544750000.0
+cCFO,1185707000.0
+cCFO/cPAT,1.989805182491429
+p/a,18.92270170650862
+p/e,14.75
+EY,8.285480042265288
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,53.36731600107309
+PEG,
+no. shares (cr),6.79942
+Current Price,55.46
+market cap,3770958332.0
+d/e_market,0.16426540562474717
+p/s,2.4798281
+NFA + CWIP,240379000.0
+Capex,72017000.0
+Capex_from_cashflow_statement,79625000.0
+FCF,472733000.0
+FCF%,151.30264177031256
+FCF_capex_from_cashflow,465125000.0
+FCF%_capex_from_cashflow,148.86762983209684
+DV,0.0
+Mcap (cr),377.0958336
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,True
+p/b <3,False
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8677980725103258
+Market Cap,3770958336
+Net Income,312442000.0
+Total Revenue,1533910000.0
+Total Assets,1980340000.0
+Total Liabilities,892329000.0
+Total Stockholders Equity,815892000.0
+Total Debt,619438000.0
+Cash and Cash Equivalents,9130000.0
+Current Assets,1326633000.0
+Current Liabilities,240526000.0
+Working Capital,1086107000.0
+Operating Cash Flow,544750000.0
+Capital Expenditure,79625000.0
+Dividends Paid,0
+Depreciation & Amortization,64624000.0
+Interest Expense,19669000.0
+Income Tax Expense,118535000.0
+Shares Outstanding,67994200
+Net Fixed Assets,212881000.0
+Construction in Progress,27498000.0
+Net Debt,610308000.0
+3-5yr Average ROA (%),12.274286537984382
+3-5yr Average ROE (%),28.94201646126565
+ROE,51.72619372798465
+ROA,21.979560672545855
+insidersPercentHeld,0.022780001
+institutionsPercentHeld,1.17214
+institutionsFloatPercentHeld,1.19946
+institutionsCount,658.0
+current,55.46
+high,130.0
+low,63.0
+mean,88.0
+median,81.0
+Normalized EBIT,305170666.6666667
+Normalized Net Income,222390000.0
+Research Asset,435258600.0
+R&D Amortization,120490400.0
+Adjusted EBIT (R&D),498253600.0
+Adjusted Book Equity (R&D),1251150600.0
+Adjusted D/E (R&D),0.49509467525332285
+Adjusted Invested Capital (R&D),1861458600.0
+Adjusted ROC (R&D),19.404943339927115
+Adjusted ROE (R&D),24.972373429705424

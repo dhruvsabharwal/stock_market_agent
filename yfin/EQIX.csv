@@ -1,0 +1,95 @@
+,Value
+ticker,EQIX
+longName,"Equinix, Inc."
+ROCE,4.512225863372826
+ROCE (3yr avg),4.616318537012492
+NFAT,0.4588815773944066
+NFAT (3yr avg),0.46468976833923126
+NPM,10.285846576180072
+DPR,168.96607071759013
+Retention Ratio,-68.96607071759013
+Dep,9.718189226200602
+SSGR,-13.01457958613753
+Av NPM (over 3 years),10.285846576180072
+Au NFA/T (over 3 years),0.46468976833923126
+Av Dep%NFA (over 3 years),9.718189226200602
+Au Retention ratio (over 3 years),-68.96607071759011
+d/e,1.5182160301064938
+Interest coverage,3.553610503282276
+tax %,16.512820512820515
+cPAT,2989191000.0
+CFO,3249000000.0
+cCFO,11976206000.0
+cCFO/cPAT,4.006504100942362
+p/a,2.4960950660010415
+p/e,77.09314
+EY,1.05905558511584
+Earnings Growth 5yr cagr,15.310155686919602
+Sales Growth 5yr cagr,9.650571542588327
+PEG,5.035424954291312
+no. shares (cr),9.7864
+Current Price,786.35
+market cap,76955356400.0
+d/e_market,0.2463896067408766
+p/s,8.616655
+NFA + CWIP,22872000000.0
+Capex,2913000000.0
+Capex_from_cashflow_statement,3066000000.0
+FCF,336000000.0
+FCF%,41.22699386503068
+FCF_capex_from_cashflow,183000000.0
+FCF%_capex_from_cashflow,22.45398773006135
+DV,2.1350040814053064
+Mcap (cr),7695.5353088
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.10341643582640812
+Market Cap,76955353088
+Net Income,815000000.0
+Total Revenue,8748000000.0
+Total Assets,35085000000.0
+Total Liabilities,21533000000.0
+Total Stockholders Equity,12489000000.0
+Total Debt,18961000000.0
+Cash and Cash Equivalents,72000000.0
+Current Assets,5447000000.0
+Current Liabilities,3349000000.0
+Working Capital,2098000000.0
+Operating Cash Flow,3249000000.0
+Capital Expenditure,3066000000.0
+Dividends Paid,1643000000.0
+Depreciation & Amortization,2009000000.0
+Interest Expense,457000000.0
+Income Tax Expense,161000000.0
+Shares Outstanding,97864000
+Net Fixed Assets,20668000000.0
+Construction in Progress,2204000000.0
+Net Debt,18889000000.0
+3-5yr Average ROA (%),2.4243787853641376
+3-5yr Average ROE (%),6.309073970712015
+ROE,6.265134335242342
+ROA,2.4064013227825676
+insidersPercentHeld,0.00275
+institutionsPercentHeld,0.98003
+institutionsFloatPercentHeld,0.98273003
+institutionsCount,1795.0
+current,786.35
+high,1200.0
+low,804.0
+mean,957.0
+median,950.0
+Normalized EBIT,1381000000.0
+Normalized Net Income,829666666.6666666

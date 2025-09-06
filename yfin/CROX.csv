@@ -1,0 +1,95 @@
+,Value
+ticker,CROX
+longName,"Crocs, Inc."
+ROCE,25.045745951873123
+ROCE (3yr avg),24.494332250108158
+NFAT,7.6154078925628275
+NFAT (3yr avg),8.759099689288265
+NPM,19.452467850592516
+DPR,-1
+Retention Ratio,101.0
+Dep,11.930908695745993
+SSGR,160.159057461329
+Av NPM (over 3 years),19.452467850592516
+Au NFA/T (over 3 years),8.759099689288265
+Av Dep%NFA (over 3 years),11.930908695745993
+Au Retention ratio (over 3 years),-1
+d/e,1.1701417475340854
+Interest coverage,9.35267791770391
+tax %,-4.336333236326098
+cPAT,3008490000.0
+CFO,992486000.0
+cCFO,3093237000.0
+cCFO/cPAT,1.028169280934954
+p/a,20.458763168537033
+p/e,23.855978
+EY,19.81435732576208
+Earnings Growth 5yr cagr,11.251177982099247
+Sales Growth 5yr cagr,21.03689808171314
+PEG,2.1203093612024566
+no. shares (cr),5.46174
+Current Price,87.79
+market cap,4794861546.0
+d/e_market,0.35481650172344725
+p/s,1.1585488
+NFA + CWIP,562426000.0
+Capex,93093000.0
+Capex_from_cashflow_statement,69347000.0
+FCF,899393000.0
+FCF%,94.66587234006721
+FCF_capex_from_cashflow,923139000.0
+FCF%_capex_from_cashflow,97.16526449075911
+DV,
+Mcap (cr),479.4861568
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,True
+p/b <3,False
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9062022033560171
+Market Cap,4794861568
+Net Income,950071000.0
+Total Revenue,4102108000.0
+Total Assets,4812153000.0
+Total Liabilities,2976421000.0
+Total Stockholders Equity,1453923000.0
+Total Debt,1701296000.0
+Cash and Cash Equivalents,51623000.0
+Current Assets,872269000.0
+Current Liabilities,740208000.0
+Working Capital,132061000.0
+Operating Cash Flow,992486000.0
+Capital Expenditure,69347000.0
+Dividends Paid,
+Depreciation & Amortization,69840000.0
+Interest Expense,109264000.0
+Income Tax Expense,-39486000.0
+Shares Outstanding,54617400
+Net Fixed Assets,551563000.0
+Construction in Progress,10863000.0
+Net Debt,1649673000.0
+3-5yr Average ROA (%),17.598938211428536
+3-5yr Average ROE (%),99.80825104068116
+ROE,69.7726174305215
+ROA,17.332122846417047
+insidersPercentHeld,0.03281
+institutionsPercentHeld,1.0400801
+institutionsFloatPercentHeld,1.0753601
+institutionsCount,679.0
+current,87.79
+high,140.0
+low,67.0
+mean,91.83333
+median,90.0
+Normalized EBIT,970712666.6666666
+Normalized Net Income,760932000.0

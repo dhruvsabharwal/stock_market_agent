@@ -1,0 +1,102 @@
+,Value
+ticker,WELSPUNLIV.NS
+ROCE,15.276822863137301
+ROCE (3yr avg),13.135175417330293
+NFAT,2.690746666258401
+NFAT (3yr avg),2.3841888759806316
+NPM,5.29345383127012
+DPR,3.4570417029410225
+Retention Ratio,96.54295829705897
+Dep,10.54075915302132
+SSGR,1.6435353982583099
+Av NPM (over 3 years),5.29345383127012
+Au NFA/T (over 3 years),2.3841888759806316
+Av Dep%NFA (over 3 years),10.54075915302132
+Au Retention ratio (over 3 years),96.54295829705897
+d/e,0.6116289215002403
+Interest coverage,4.303582103278613
+tax %,25.129624032179308
+cPAT,21202600000.0
+CFO,6879800000.0
+cCFO,25634700000.0
+cCFO/cPAT,1.2090356843028685
+p/a,6.692746836662463
+p/e,20.155203
+EY,5.852469142358238
+Earnings Growth 5yr cagr,3.4032191698078584
+Sales Growth 5yr cagr,8.10463006662674
+PEG,5.922393473452942
+no. shares (cr),95.5652992
+Current Price,114.28
+market cap,109212023925.76
+d/e_market,0.2529025560296867
+p/s,1.0635843
+NFA + CWIP,45528500000.0
+Capex,12196300000.0
+Capex_from_cashflow_statement,7127000000.0
+FCF,-5316500000.0
+FCF%,-83.17948557481695
+FCF_capex_from_cashflow,-247200000.0
+FCF%_capex_from_cashflow,-3.8675761937543025
+DV,0.08808553906609651
+Mcap (cr),10922.1281792
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,-0.7727695572545713
+Market Cap,109221281792
+Net Income,6391600000.0
+Total Revenue,105450900000.0
+Total Assets,103070100000.0
+Total Liabilities,53863500000.0
+Total Stockholders Equity,45158100000.0
+Total Debt,27620000000.0
+Cash and Cash Equivalents,3086000000.0
+Current Assets,54685900000.0
+Current Liabilities,32528600000.0
+Working Capital,22157300000.0
+Operating Cash Flow,6879800000.0
+Capital Expenditure,7127000000.0
+Dividends Paid,96200000.0
+Depreciation & Amortization,3733900000.0
+Interest Expense,2174700000.0
+Income Tax Expense,2161600000.0
+Shares Outstanding,955652992
+Net Fixed Assets,41782000000.0
+Construction in Progress,3746500000.0
+Net Debt,24534000000.0
+3-5yr Average ROA (%),5.3735943530131545
+3-5yr Average ROE (%),11.486266231759998
+ROE,13.691053775878503
+ROA,6.437612837757875
+insidersPercentHeld,0.68834996
+institutionsPercentHeld,0.12986
+institutionsFloatPercentHeld,0.41669998
+institutionsCount,44.0
+current,114.28
+high,192.0
+low,130.0
+mean,163.2
+median,160.0
+Normalized EBIT,8676766666.666666
+Normalized Net Income,5063633333.333333
+Research Asset,307144000.0
+R&D Amortization,125044000.0
+Adjusted EBIT (R&D),10776500000.0
+Adjusted Book Equity (R&D),45465244000.0
+Adjusted D/E (R&D),0.6074970146426576
+Adjusted Invested Capital (R&D),69999244000.0
+Adjusted ROC (R&D),11.526418865569743
+Adjusted ROE (R&D),14.058211146958763

@@ -1,0 +1,94 @@
+,Value
+ticker,MAHABANK.NS
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,6.302400823827456
+NFAT (3yr avg),5.876792153837501
+NPM,33.230624871082384
+DPR,17.432114843334983
+Retention Ratio,82.56788515666503
+Dep,11.249144999963434
+SSGR,149.99724486176925
+Av NPM (over 3 years),33.230624871082384
+Au NFA/T (over 3 years),5.876792153837501
+Av Dep%NFA (over 3 years),11.249144999963434
+Au Retention ratio (over 3 years),82.56788515666501
+d/e,1.2003910074034323
+Interest coverage,0.0
+tax %,3.6645286760737097
+cPAT,133719885000.0
+CFO,76278435000.0
+cCFO,246651126000.0
+cCFO/cPAT,1.8445358818548192
+p/a,1.803206473560857
+p/e,6.9672775
+EY,13.535636557545045
+Earnings Growth 5yr cagr,63.129039079366024
+Sales Growth 5yr cagr,18.87647762217739
+PEG,0.11036565107922389
+no. shares (cr),769.1550208
+Current Price,53.23
+market cap,409421217571.83997
+d/e_market,0.5825910816606535
+p/s,3.4623833
+NFA + CWIP,29199827000.0
+Capex,9912733000.0
+Capex_from_cashflow_statement,5194074000.0
+FCF,66365702000.0
+FCF%,119.75527776578805
+FCF_capex_from_cashflow,71084361000.0
+FCF%_capex_from_cashflow,128.26998193070494
+DV,2.421448272465369
+Mcap (cr),40957.2376576
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,True
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.87004540667359
+Market Cap,409572376576
+Net Income,55417768000.0
+Total Revenue,137592477000.0
+Total Assets,3693538065000.0
+Total Liabilities,3406458306000.0
+Total Stockholders Equity,198706212000.0
+Total Debt,238525150000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,76278435000.0
+Capital Expenditure,5194074000.0
+Dividends Paid,9913923000.0
+Depreciation & Amortization,2905975000.0
+Interest Expense,132805751000.0
+Income Tax Expense,2030800000.0
+Shares Outstanding,7691550208
+Net Fixed Assets,29156222000.0
+Construction in Progress,43605000.0
+Net Debt,0
+3-5yr Average ROA (%),1.1496260466265866
+3-5yr Average ROE (%),17.82677426403571
+ROE,22.8157136303963
+ROA,1.6379244678908191
+insidersPercentHeld,0.79602
+institutionsPercentHeld,0.09443
+institutionsFloatPercentHeld,0.46292
+institutionsCount,51.0
+current,53.23
+high,70.0
+low,70.0
+mean,70.0
+median,70.0
+Normalized EBIT,0.0
+Normalized Net Income,40728530666.666664

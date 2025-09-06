@@ -1,0 +1,103 @@
+,Value
+ticker,AMCR
+longName,Amcor plc
+ROCE,3.4775092257056417
+ROCE (3yr avg),8.670991829124247
+NFAT,2.199443141852286
+NFAT (3yr avg),2.9397822502684554
+NPM,5.296230946073789
+DPR,111.08489814413689
+Retention Ratio,-11.08489814413689
+Dep,12.721339865149178
+SSGR,-14.447232537444139
+Av NPM (over 3 years),5.296230946073789
+Au NFA/T (over 3 years),2.9397822502684554
+Av Dep%NFA (over 3 years),12.721339865149178
+Au Retention ratio (over 3 years),-11.084898144136881
+d/e,3.86704457614017
+Interest coverage,3.323232323232323
+tax %,20.76923076923077
+cPAT,3094000000.0
+CFO,1390000000.0
+cCFO,5498000000.0
+cCFO/cPAT,1.7769877181641887
+p/a,3.092471556523844
+p/e,26.718752
+EY,2.5930461876499815
+Earnings Growth 5yr cagr,-15.498490572503487
+Sales Growth 5yr cagr,1.0545712737626056
+PEG,-1.7239583348460297
+no. shares (cr),230.4859904
+Current Price,8.55
+market cap,19706552179.2
+d/e_market,0.7615741131947343
+p/s,1.3129823
+NFA + CWIP,9318000000.0
+Capex,5710000000.0
+Capex_from_cashflow_statement,580000000.0
+FCF,-4320000000.0
+FCF%,-845.4011741682974
+FCF_capex_from_cashflow,810000000.0
+FCF%_capex_from_cashflow,158.5127201565558
+DV,4.287913950223551
+Mcap (cr),1970.655232
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,True
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,-3.1079136690647484
+Market Cap,19706552320
+Net Income,511000000.0
+Total Revenue,15009000000.0
+Total Assets,37066000000.0
+Total Liabilities,25326000000.0
+Total Stockholders Equity,3881000000.0
+Total Debt,15008000000.0
+Cash and Cash Equivalents,710000000.0
+Current Assets,8434000000.0
+Current Liabilities,6987000000.0
+Working Capital,1447000000.0
+Operating Cash Flow,1390000000.0
+Capital Expenditure,580000000.0
+Dividends Paid,845000000.0
+Depreciation & Amortization,722000000.0
+Interest Expense,396000000.0
+Income Tax Expense,135000000.0
+Shares Outstanding,2304859904
+Net Fixed Assets,9318000000.0
+Construction in Progress,0
+Net Debt,14298000000.0
+3-5yr Average ROA (%),5.221295109882523
+3-5yr Average ROE (%),22.157831460686076
+ROE,18.464651574554193
+ROA,4.354699197661587
+insidersPercentHeld,0.00263
+institutionsPercentHeld,0.68738
+institutionsFloatPercentHeld,0.68919
+institutionsCount,1101.0
+current,8.55
+high,12.4
+low,10.0
+mean,11.04
+median,11.0
+Normalized EBIT,1280666666.6666667
+Normalized Net Income,763000000.0
+Research Asset,303800000.0
+R&D Amortization,84600000.0
+Adjusted EBIT (R&D),1081400000.0
+Adjusted Book Equity (R&D),4184800000.0
+Adjusted D/E (R&D),3.5863123685719747
+Adjusted Invested Capital (R&D),18482800000.0
+Adjusted ROC (R&D),4.635669587192083
+Adjusted ROE (R&D),12.210858344484803

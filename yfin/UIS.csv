@@ -1,0 +1,103 @@
+,Value
+ticker,UIS
+longName,Unisys Corporation
+ROCE,-3.4879048460982083
+ROCE (3yr avg),-9.912554321195532
+NFAT,20.577868852459016
+NFAT (3yr avg),17.952252760927212
+NPM,-12.117936388988658
+DPR,0.0
+Retention Ratio,100.0
+Dep,100.0
+SSGR,-317.544256995962
+Av NPM (over 3 years),-12.117936388988658
+Au NFA/T (over 3 years),17.952252760927212
+Av Dep%NFA (over 3 years),100.0
+Au Retention ratio (over 3 years),100.0
+d/e,-3.538208168642951
+Interest coverage,5.987460815047022
+tax %,-156.57370517928285
+cPAT,-1178600000.0
+CFO,135100000.0
+cCFO,354500000.0
+cCFO/cPAT,-0.3007805871372815
+p/a,-9.840236084257658
+p/e,inf
+EY,-69.3797646347089
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,-0.7520064862900577
+PEG,
+no. shares (cr),7.1293
+Current Price,3.91
+market cap,278755630.0
+d/e_market,1.9267772277819106
+p/s,0.14238209
+NFA + CWIP,95500000.0
+Capex,102200000.0
+Capex_from_cashflow_statement,63500000.0
+FCF,32900000.0
+FCF%,-17.01137538779731
+FCF_capex_from_cashflow,71600000.0
+FCF%_capex_from_cashflow,-37.02171664943123
+DV,0.0
+Mcap (cr),27.8755648
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.24352331606217617
+Market Cap,278755648
+Net Income,-193400000.0
+Total Revenue,2008400000.0
+Total Assets,1872300000.0
+Total Liabilities,2141600000.0
+Total Stockholders Equity,-151800000.0
+Total Debt,537100000.0
+Cash and Cash Equivalents,106300000.0
+Current Assets,982400000.0
+Current Liabilities,628000000.0
+Working Capital,354400000.0
+Operating Cash Flow,135100000.0
+Capital Expenditure,63500000.0
+Dividends Paid,0
+Depreciation & Amortization,106400000.0
+Interest Expense,31900000.0
+Income Tax Expense,117900000.0
+Shares Outstanding,71293000
+Net Fixed Assets,95500000.0
+Construction in Progress,0
+Net Debt,430800000.0
+3-5yr Average ROA (%),-13.048074596964383
+3-5yr Average ROE (%),341.2331958126351
+ROE,517.3573573573574
+ROA,-21.369387248821635
+insidersPercentHeld,0.0715
+institutionsPercentHeld,0.83055997
+institutionsFloatPercentHeld,0.89452004
+institutionsCount,241.0
+current,3.91
+high,9.0
+low,8.0
+mean,8.5
+median,8.5
+Normalized EBIT,-130200000.0
+Normalized Net Income,-243366666.66666666
+Research Asset,70400000.0
+R&D Amortization,20400000.0
+Adjusted EBIT (R&D),-38600000.0
+Adjusted Book Equity (R&D),-81400000.0
+Adjusted D/E (R&D),-6.598280098280099
+Adjusted Invested Capital (R&D),349400000.0
+Adjusted ROC (R&D),-28.345005781111382
+Adjusted ROE (R&D),237.5921375921376

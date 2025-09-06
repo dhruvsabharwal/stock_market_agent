@@ -1,0 +1,103 @@
+,Value
+ticker,BMBL
+longName,Bumble Inc.
+ROCE,-29.556048085815924
+ROCE (3yr avg),-10.417179758627144
+NFAT,35.857092667257795
+NFAT (3yr avg),32.352390662578614
+NPM,-20.40128790277787
+DPR,-1
+Retention Ratio,101.0
+Dep,100.0
+SSGR,-766.630740612913
+Av NPM (over 3 years),-20.40128790277787
+Au NFA/T (over 3 years),32.352390662578614
+Av Dep%NFA (over 3 years),100.0
+Au Retention ratio (over 3 years),-1
+d/e,0.38502154414485495
+Interest coverage,4.800951308048567
+tax %,-3.1034047817767556
+cPAT,-331152000.0
+CFO,123441000.0
+cCFO,543305000.0
+cCFO/cPAT,-1.640651422911533
+p/a,-15.36519961921334
+p/e,inf
+EY,-87.36182267583287
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,12.09139650872071
+PEG,
+no. shares (cr),10.4011
+Current Price,6.13
+market cap,637587430.0
+d/e_market,0.9873406694984561
+p/s,0.8935221
+NFA + CWIP,19727000.0
+Capex,62456000.0
+Capex_from_cashflow_statement,26754000.0
+FCF,60985000.0
+FCF%,-10.948675782035448
+FCF_capex_from_cashflow,96687000.0
+FCF%_capex_from_cashflow,-17.35827851664608
+DV,
+Mcap (cr),92.084864
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.49404168793188646
+Market Cap,920848640
+Net Income,-557008000.0
+Total Revenue,1071643000.0
+Total Assets,2524887000.0
+Total Liabilities,1175833000.0
+Total Stockholders Equity,1635015000.0
+Total Debt,629516000.0
+Cash and Cash Equivalents,21157000.0
+Current Assets,342242000.0
+Current Liabilities,138570000.0
+Working Capital,203672000.0
+Operating Cash Flow,123441000.0
+Capital Expenditure,26754000.0
+Dividends Paid,
+Depreciation & Amortization,70616000.0
+Interest Expense,39945000.0
+Income Tax Expense,23128000.0
+Shares Outstanding,104011000
+Net Fixed Assets,19727000.0
+Construction in Progress,0
+Net Debt,608359000.0
+3-5yr Average ROA (%),-3.0404279725354275
+3-5yr Average ROE (%),-7.803909387879191
+ROE,-45.293488646297085
+ROA,-18.114040065599852
+insidersPercentHeld,0.03823
+institutionsPercentHeld,1.0552601
+institutionsFloatPercentHeld,1.09721
+institutionsCount,285.0
+current,6.13
+high,8.0
+low,5.0
+mean,6.70714
+median,7.0
+Normalized EBIT,-255040000.0
+Normalized Net Income,-213655666.66666666
+Research Asset,316094600.0
+R&D Amortization,90814800.0
+Adjusted EBIT (R&D),-695390800.0
+Adjusted Book Equity (R&D),1951109600.0
+Adjusted D/E (R&D),0.3226451245998687
+Adjusted Invested Capital (R&D),2559468600.0
+Adjusted ROC (R&D),-28.012517572563134
+Adjusted ROE (R&D),-28.548268123943423

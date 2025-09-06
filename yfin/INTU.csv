@@ -1,0 +1,103 @@
+,Value
+ticker,INTU
+longName,Intuit Inc.
+ROCE,15.388985836613776
+ROCE (3yr avg),13.254706418423496
+NFAT,11.396081175647305
+NFAT (3yr avg),10.397250231329288
+NPM,17.00718862275548
+DPR,36.55034340338822
+Retention Ratio,63.44965659661178
+Dep,54.398903434271624
+SSGR,57.79785269427855
+Av NPM (over 3 years),17.00718862275548
+Au NFA/T (over 3 years),10.397250231329288
+Av Dep%NFA (over 3 years),54.398903434271624
+Au Retention ratio (over 3 years),63.44965659661178
+d/e,0.38027679657189184
+Interest coverage,16.020661157024794
+tax %,16.535211267605636
+cPAT,9475000000.0
+CFO,4884000000.0
+cCFO,17069000000.0
+cCFO/cPAT,1.8014775725593668
+p/a,10.665946724262058
+p/e,48.916546
+EY,1.589657167949569
+Earnings Growth 5yr cagr,11.414421814813135
+Sales Growth 5yr cagr,19.126596563414356
+PEG,4.285503619335169
+no. shares (cr),27.8947008
+Current Price,668.2
+market cap,186392390745.6
+d/e_market,0.035232124947434426
+p/s,9.898168
+NFA + CWIP,1437000000.0
+Capex,428000000.0
+Capex_from_cashflow_statement,250000000.0
+FCF,4456000000.0
+FCF%,150.38812014849813
+FCF_capex_from_cashflow,4634000000.0
+FCF%_capex_from_cashflow,156.3955450556868
+DV,0.5547436758892523
+Mcap (cr),18639.2395776
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9123669123669124
+Market Cap,186392395776
+Net Income,2963000000.0
+Total Revenue,16285000000.0
+Total Assets,32132000000.0
+Total Liabilities,13696000000.0
+Total Stockholders Equity,17269000000.0
+Total Debt,6567000000.0
+Cash and Cash Equivalents,366000000.0
+Current Assets,9678000000.0
+Current Liabilities,7491000000.0
+Working Capital,2187000000.0
+Operating Cash Flow,4884000000.0
+Capital Expenditure,250000000.0
+Dividends Paid,1034000000.0
+Depreciation & Amortization,789000000.0
+Interest Expense,242000000.0
+Income Tax Expense,587000000.0
+Shares Outstanding,278947008
+Net Fixed Assets,1420000000.0
+Construction in Progress,17000000.0
+Net Debt,6201000000.0
+3-5yr Average ROA (%),10.330815748156535
+3-5yr Average ROE (%),16.83501220010597
+ROE,16.597115249964993
+ROA,9.891173721458138
+insidersPercentHeld,0.02564
+institutionsPercentHeld,0.89587
+institutionsFloatPercentHeld,0.91945
+institutionsCount,2979.0
+current,668.2
+high,971.0
+low,600.0
+mean,820.4439
+median,830.215
+Normalized EBIT,3217333333.3333335
+Normalized Net Income,2471000000.0
+Research Asset,6864600000.0
+R&D Amortization,1863600000.0
+Adjusted EBIT (R&D),4682400000.0
+Adjusted Book Equity (R&D),24133600000.0
+Adjusted D/E (R&D),0.27211025292538205
+Adjusted Invested Capital (R&D),30334600000.0
+Adjusted ROC (R&D),12.883490362838588
+Adjusted ROE (R&D),12.277488646534293

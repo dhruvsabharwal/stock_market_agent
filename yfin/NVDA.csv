@@ -1,0 +1,103 @@
+,Value
+ticker,NVDA
+longName,NVIDIA Corporation
+ROCE,90.07952626290698
+ROCE (3yr avg),54.9196638957491
+NFAT,25.828203859475508
+NFAT (3yr avg),20.122100036694686
+NPM,40.29691563315185
+DPR,3.861117809842625
+Retention Ratio,96.13888219015737
+Dep,29.882761642957338
+SSGR,749.667601333628
+Av NPM (over 3 years),40.29691563315185
+Au NFA/T (over 3 years),20.122100036694686
+Av Dep%NFA (over 3 years),29.882761642957338
+Au Retention ratio (over 3 years),96.13888219015739
+d/e,0.23895946763460374
+Interest coverage,329.7692307692308
+tax %,13.264941803727417
+cPAT,116760000000.0
+CFO,64089000000.0
+cCFO,106928000000.0
+cCFO/cPAT,0.9157930798218568
+p/a,110.88120740019474
+p/e,57.932476
+EY,1.6586578764127704
+Earnings Growth 5yr cagr,96.57422131180678
+Sales Growth 5yr cagr,69.25470878444982
+PEG,0.5998751552234096
+no. shares (cr),2438.7600384
+Current Price,180.17
+market cap,4393913961185.28
+d/e_market,0.002337323873594834
+p/s,29.585657
+NFA + CWIP,8605000000.0
+Capex,5020000000.0
+Capex_from_cashflow_statement,3236000000.0
+FCF,59069000000.0
+FCF%,81.04967069154775
+FCF_capex_from_cashflow,60853000000.0
+FCF%_capex_from_cashflow,83.49753018660813
+DV,0.01898079951877402
+Mcap (cr),439391.3810944
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9216714256736726
+Market Cap,4393913810944
+Net Income,72880000000.0
+Total Revenue,130497000000.0
+Total Assets,111601000000.0
+Total Liabilities,32274000000.0
+Total Stockholders Equity,42978000000.0
+Total Debt,10270000000.0
+Cash and Cash Equivalents,3771000000.0
+Current Assets,80126000000.0
+Current Liabilities,18047000000.0
+Working Capital,62079000000.0
+Operating Cash Flow,64089000000.0
+Capital Expenditure,3236000000.0
+Dividends Paid,834000000.0
+Depreciation & Amortization,1864000000.0
+Interest Expense,247000000.0
+Income Tax Expense,11146000000.0
+Shares Outstanding,24387600384
+Net Fixed Assets,8076000000.0
+Construction in Progress,529000000.0
+Net Debt,6499000000.0
+3-5yr Average ROA (%),42.543388915850564
+3-5yr Average ROE (%),66.303568463973
+ROE,119.17746617063898
+ROA,82.19749730726502
+insidersPercentHeld,0.043169998
+institutionsPercentHeld,0.68685997
+institutionsFloatPercentHeld,0.71785
+institutionsCount,6771.0
+current,180.17
+high,270.0
+low,100.0
+mean,202.9276
+median,206.0
+Normalized EBIT,40930333333.333336
+Normalized Net Income,35669333333.333336
+Research Asset,26364600000.0
+R&D Amortization,6839200000.0
+Adjusted EBIT (R&D),90347800000.0
+Adjusted Book Equity (R&D),69342600000.0
+Adjusted D/E (R&D),0.14810520516969367
+Adjusted Invested Capital (R&D),75841600000.0
+Adjusted ROC (R&D),103.32484666601438
+Adjusted ROE (R&D),105.10133741740286

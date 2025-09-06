@@ -1,0 +1,95 @@
+,Value
+ticker,ICE
+longName,"Intercontinental Exchange, Inc."
+ROCE,9.09874686716792
+ROCE (3yr avg),7.2199045235839945
+NFAT,6.374525745257452
+NFAT (3yr avg),6.044446946489083
+NPM,20.77818289451319
+DPR,45.68221754658138
+Retention Ratio,54.31778245341863
+Dep,66.53940523603599
+SSGR,1.6797231274810254
+Av NPM (over 3 years),20.77818289451319
+Au NFA/T (over 3 years),6.044446946489083
+Av Dep%NFA (over 3 years),66.53940523603599
+Au Retention ratio (over 3 years),54.31778245341862
+d/e,0.8050316910992729
+Interest coverage,4.849450549450549
+tax %,22.76736493936053
+cPAT,10626000000.0
+CFO,4609000000.0
+cCFO,14828000000.0
+cCFO/cPAT,1.3954451345755694
+p/a,2.0237500367420123
+p/e,34.0
+EY,2.7160029565297106
+Earnings Growth 5yr cagr,-12.722691138424235
+Sales Growth 5yr cagr,8.656709371938875
+PEG,-2.6723905838848383
+no. shares (cr),57.2422976
+Current Price,177.14
+market cap,101399005968.64
+d/e_market,0.20417359916134567
+p/s,10.466454
+NFA + CWIP,2153000000.0
+Capex,1767000000.0
+Capex_from_cashflow_statement,752000000.0
+FCF,2842000000.0
+FCF%,103.19535221496005
+FCF_capex_from_cashflow,3857000000.0
+FCF%_capex_from_cashflow,140.05083514887437
+DV,1.0246648772092846
+Mcap (cr),10139.9003136
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.6166196571924496
+Market Cap,101399003136
+Net Income,2754000000.0
+Total Revenue,11761000000.0
+Total Assets,139428000000.0
+Total Liabilities,111708000000.0
+Total Stockholders Equity,25717000000.0
+Total Debt,20703000000.0
+Cash and Cash Equivalents,713000000.0
+Current Assets,89095000000.0
+Current Liabilities,89553000000.0
+Working Capital,-458000000.0
+Operating Cash Flow,4609000000.0
+Capital Expenditure,752000000.0
+Dividends Paid,1039000000.0
+Depreciation & Amortization,1537000000.0
+Interest Expense,910000000.0
+Income Tax Expense,826000000.0
+Shares Outstanding,572422976
+Net Fixed Assets,2153000000.0
+Construction in Progress,0
+Net Debt,19990000000.0
+3-5yr Average ROA (%),1.5688274591757694
+3-5yr Average ROE (%),11.084887139978386
+ROE,10.321565100067462
+ROA,1.9991869682627252
+insidersPercentHeld,0.00939
+institutionsPercentHeld,0.93337995
+institutionsFloatPercentHeld,0.94223
+institutionsCount,2283.0
+current,177.14
+high,227.0
+low,170.0
+mean,204.375
+median,208.5
+Normalized EBIT,3554666666.6666665
+Normalized Net Income,2189333333.3333335

@@ -1,0 +1,103 @@
+,Value
+ticker,MDT
+longName,Medtronic plc
+ROCE,8.06715650816614
+ROCE (3yr avg),7.469764127939345
+NFAT,5.7328205128205125
+NFAT (3yr avg),5.813414445082629
+NPM,12.43127373383282
+DPR,90.97782884079048
+Retention Ratio,9.022171159209524
+Dep,45.93355435956281
+SSGR,-39.413398507236366
+Av NPM (over 3 years),12.43127373383282
+Au NFA/T (over 3 years),5.813414445082629
+Av Dep%NFA (over 3 years),45.93355435956281
+Au Retention ratio (over 3 years),9.022171159209533
+d/e,0.5678894332257935
+Interest coverage,8.97119341563786
+tax %,16.631130063965884
+cPAT,17135000000.0
+CFO,7044000000.0
+cCFO,27216000000.0
+cCFO/cPAT,1.588327983659177
+p/a,5.181093786466032
+p/e,25.403315
+EY,3.9523152800621415
+Earnings Growth 5yr cagr,-1.0782511350259871
+Sales Growth 5yr cagr,1.9104996811027286
+PEG,-23.55973870538773
+no. shares (cr),128.2690048
+Current Price,91.96
+market cap,117956176814.07999
+d/e_market,0.24175079906960967
+p/s,3.4490108
+NFA + CWIP,9177000000.0
+Capex,3788000000.0
+Capex_from_cashflow_statement,1859000000.0
+FCF,3256000000.0
+FCF%,69.84126984126983
+FCF_capex_from_cashflow,5185000000.0
+FCF%_capex_from_cashflow,111.21836121836122
+DV,3.042655414016093
+Mcap (cr),11795.6173824
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,True
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.46223736513344693
+Market Cap,117956173824
+Net Income,4662000000.0
+Total Revenue,33537000000.0
+Total Assets,91680000000.0
+Total Liabilities,43424000000.0
+Total Stockholders Equity,50214000000.0
+Total Debt,28516000000.0
+Cash and Cash Equivalents,2858000000.0
+Current Assets,23814000000.0
+Current Liabilities,12879000000.0
+Working Capital,10935000000.0
+Operating Cash Flow,7044000000.0
+Capital Expenditure,1859000000.0
+Dividends Paid,3589000000.0
+Depreciation & Amortization,2861000000.0
+Interest Expense,729000000.0
+Income Tax Expense,936000000.0
+Shares Outstanding,1282690048
+Net Fixed Assets,6837000000.0
+Construction in Progress,2340000000.0
+Net Debt,25658000000.0
+3-5yr Average ROA (%),4.716477647934038
+3-5yr Average ROE (%),8.383473915091997
+ROE,9.491235570756734
+ROA,5.132637164828995
+insidersPercentHeld,0.00303
+institutionsPercentHeld,0.87292
+institutionsFloatPercentHeld,0.87557
+institutionsCount,2856.0
+current,91.96
+high,112.0
+low,82.0
+mean,98.43654
+median,99.0
+Normalized EBIT,5971000000.0
+Normalized Net Income,4032000000.0
+Research Asset,7636000000.0
+R&D Amortization,2181800000.0
+Adjusted EBIT (R&D),6907200000.0
+Adjusted Book Equity (R&D),57850000000.0
+Adjusted D/E (R&D),0.49292999135695764
+Adjusted Invested Capital (R&D),83508000000.0
+Adjusted ROC (R&D),6.895692130360861
+Adjusted ROE (R&D),8.05877268798617

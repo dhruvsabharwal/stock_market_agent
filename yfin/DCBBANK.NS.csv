@@ -1,0 +1,94 @@
+,Value
+ticker,DCBBANK.NS
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,3.3683931551013115
+NFAT (3yr avg),3.297704188351893
+NPM,21.94086055160299
+DPR,6.770369484600461
+Retention Ratio,93.22963051539955
+Dep,10.66349130206089
+SSGR,56.79231163058973
+Av NPM (over 3 years),21.94086055160299
+Au NFA/T (over 3 years),3.297704188351893
+Av Dep%NFA (over 3 years),10.66349130206089
+Au Retention ratio (over 3 years),93.22963051539955
+d/e,1.4592358883858196
+Interest coverage,0.0
+tax %,25.73878082819339
+cPAT,19043724000.0
+CFO,-4410036000.0
+cCFO,842741000.0
+cCFO/cPAT,0.044252951786110745
+p/a,0.9761489650606905
+p/e,6.0157638
+EY,16.019542101120116
+Earnings Growth 5yr cagr,28.460548187332147
+Sales Growth 5yr cagr,16.31888873095717
+PEG,0.21137202840940464
+no. shares (cr),31.4539008
+Current Price,122.12
+market cap,38411503656.96
+d/e_market,1.9265526978814638
+p/s,1.4024332
+NFA + CWIP,9648364000.0
+Capex,1775724000.0
+Capex_from_cashflow_statement,1360460000.0
+FCF,-6185760000.0
+FCF%,-100.5267539763319
+FCF_capex_from_cashflow,-5770496000.0
+FCF%_capex_from_cashflow,-93.77816658153685
+DV,1.0188692520218137
+Mcap (cr),3841.1505664
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,False
+cCFO > PAT,False
+p/e <10,True
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,1.402655216420002
+Market Cap,38411505664
+Net Income,6153347000.0
+Total Revenue,28482314000.0
+Total Assets,768097809000.0
+Total Liabilities,711191008000.0
+Total Stockholders Equity,50712696000.0
+Total Debt,74001786000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,-4410036000.0
+Capital Expenditure,1360460000.0
+Dividends Paid,391363000.0
+Depreciation & Amortization,1013982000.0
+Interest Expense,43640176000.0
+Income Tax Expense,2132737000.0
+Shares Outstanding,314539008
+Net Fixed Assets,8983981000.0
+Construction in Progress,664383000.0
+Net Debt,0
+3-5yr Average ROA (%),0.852273973452277
+3-5yr Average ROE (%),10.116827263380763
+ROE,11.435375878034442
+ROA,0.8800128850761877
+insidersPercentHeld,0.16851
+institutionsPercentHeld,0.33188
+institutionsFloatPercentHeld,0.39914
+institutionsCount,32.0
+current,122.12
+high,260.0
+low,145.0
+mean,169.44444
+median,166.0
+Normalized EBIT,0.0
+Normalized Net Income,5389560333.333333

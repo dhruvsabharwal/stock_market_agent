@@ -1,0 +1,103 @@
+,Value
+ticker,PLTR
+longName,Palantir Technologies Inc.
+ROCE,5.807498260947982
+ROCE (3yr avg),1.1246363077176962
+NFAT,12.167783795719311
+NFAT (3yr avg),9.477123758923147
+NPM,1.9838743056372283
+DPR,0.0
+Retention Ratio,100.0
+Dep,11.818603800691603
+SSGR,6.982818515980137
+Av NPM (over 3 years),1.9838743056372283
+Au NFA/T (over 3 years),9.477123758923147
+Av Dep%NFA (over 3 years),11.818603800691603
+Au Retention ratio (over 3 years),100.0
+d/e,0.06882888834349332
+Interest coverage,
+tax %,4.34508854740552
+cPAT,-222069000.0
+CFO,1153865000.0
+cCFO,2423636000.0
+cCFO/cPAT,-10.913887125172806
+p/a,10.219959424423845
+p/e,527.06665
+EY,0.1285267814812896
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,22.94648620989339
+PEG,
+no. shares (cr),227.4259968
+Current Price,158.12
+market cap,359605986140.16003
+d/e_market,0.0006652252999669533
+p/s,109.026276
+NFA + CWIP,248010000.0
+Capex,46877000.0
+Capex_from_cashflow_statement,12634000.0
+FCF,1106988000.0
+FCF%,239.50929271511714
+FCF_capex_from_cashflow,1141231000.0
+FCF%_capex_from_cashflow,246.9181505441485
+DV,0.0
+Mcap (cr),37511.4399744
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.9593739302258063
+Market Cap,375114399744
+Net Income,462190000.0
+Total Revenue,2865507000.0
+Total Assets,6340884000.0
+Total Liabilities,1246477000.0
+Total Stockholders Equity,3475561000.0
+Total Debt,239219000.0
+Cash and Cash Equivalents,129254000.0
+Current Assets,5934289000.0
+Current Liabilities,996018000.0
+Working Capital,4938271000.0
+Operating Cash Flow,1153865000.0
+Capital Expenditure,12634000.0
+Dividends Paid,0
+Depreciation & Amortization,31587000.0
+Interest Expense,
+Income Tax Expense,21255000.0
+Shares Outstanding,2274259968
+Net Fixed Assets,240378000.0
+Construction in Progress,7632000.0
+Net Debt,109965000.0
+3-5yr Average ROA (%),-2.9422831836569694
+3-5yr Average ROE (%),-4.221759333330736
+ROE,6.946827510595713
+ROA,5.256358484024378
+insidersPercentHeld,0.036229998
+institutionsPercentHeld,0.5719
+institutionsFloatPercentHeld,0.5934
+institutionsCount,3193.0
+current,158.12
+high,200.0
+low,45.0
+mean,151.31181
+median,162.5
+Normalized EBIT,89722666.66666667
+Normalized Net Income,99436666.66666667
+Research Asset,1202379400.0
+R&D Amortization,331933600.0
+Adjusted EBIT (R&D),486347400.0
+Adjusted Book Equity (R&D),4677940400.0
+Adjusted D/E (R&D),0.05113767588830332
+Adjusted Invested Capital (R&D),4787905400.0
+Adjusted ROC (R&D),9.716465467801337
+Adjusted ROE (R&D),9.88020283456369

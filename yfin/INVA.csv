@@ -1,0 +1,103 @@
+,Value
+ticker,INVA
+longName,"Innoviva, Inc."
+ROCE,5.596083295695588
+ROCE (3yr avg),16.965623915816995
+NFAT,119.84998329435349
+NFAT (3yr avg),134.347936002325
+NPM,42.990694850894634
+DPR,-1
+Retention Ratio,101.0
+Dep,100.0
+SSGR,5733.468231728711
+Av NPM (over 3 years),42.990694850894634
+Au NFA/T (over 3 years),134.347936002325
+Av Dep%NFA (over 3 years),100.0
+Au Retention ratio (over 3 years),-1
+d/e,0.6683334444518524
+Interest coverage,7.513485523886713
+tax %,37.43447095324703
+cPAT,682889000.0
+CFO,188690000.0
+cCFO,895293000.0
+cCFO/cPAT,1.311037372105862
+p/a,1.8811313486775707
+p/e,35.63158
+EY,1.8275620942777189
+Earnings Growth 5yr cagr,-51.48393477057795
+Sales Growth 5yr cagr,-2.903769419420499
+PEG,-0.6920912350382888
+no. shares (cr),6.3021
+Current Price,20.31
+market cap,1279956510.0
+d/e_market,0.35242994310798886
+p/s,3.4572022
+NFA + CWIP,2967000.0
+Capex,25850000.0
+Capex_from_cashflow_statement,4270000.0
+FCF,162840000.0
+FCF%,696.1354309165527
+FCF_capex_from_cashflow,184420000.0
+FCF%_capex_from_cashflow,788.389192886457
+DV,
+Mcap (cr),127.995648
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8630028088398961
+Market Cap,1279956480
+Net Income,23392000.0
+Total Revenue,358711000.0
+Total Assets,1301060000.0
+Total Liabilities,609901000.0
+Total Stockholders Equity,674955000.0
+Total Debt,451095000.0
+Cash and Cash Equivalents,656000.0
+Current Assets,554306000.0
+Current Liabilities,236083000.0
+Working Capital,318223000.0
+Operating Cash Flow,188690000.0
+Capital Expenditure,4270000.0
+Dividends Paid,
+Depreciation & Amortization,25902000.0
+Interest Expense,22209000.0
+Income Tax Expense,13996000.0
+Shares Outstanding,63021000
+Net Fixed Assets,2967000.0
+Construction in Progress,0
+Net Debt,450439000.0
+3-5yr Average ROA (%),17.17490798201055
+3-5yr Average ROE (%),36.30188263806867
+ROE,28.970060681382044
+ROA,14.522966427529004
+insidersPercentHeld,0.00977
+institutionsPercentHeld,1.2844901
+institutionsFloatPercentHeld,1.29716
+institutionsCount,376.0
+current,20.31
+high,55.0
+low,29.0
+mean,41.0
+median,40.0
+Normalized EBIT,191863333.33333334
+Normalized Net Income,139011666.66666666
+Research Asset,65881200.0
+R&D Amortization,17916800.0
+Adjusted EBIT (R&D),55334200.0
+Adjusted Book Equity (R&D),740836200.0
+Adjusted D/E (R&D),0.6088997810852116
+Adjusted Invested Capital (R&D),1191275200.0
+Adjusted ROC (R&D),2.9061408290702584
+Adjusted ROE (R&D),3.157513091287926

@@ -1,0 +1,103 @@
+,Value
+ticker,ISRG
+longName,"Intuitive Surgical, Inc."
+ROCE,13.818765847545874
+ROCE (3yr avg),13.42998038980038
+NFAT,2.825569200581887
+NFAT (3yr avg),3.0888068089203133
+NPM,24.766058899504014
+DPR,0.0
+Retention Ratio,100.0
+Dep,13.655702439270572
+SSGR,62.84186891963894
+Av NPM (over 3 years),24.766058899504014
+Au NFA/T (over 3 years),3.0888068089203133
+Av Dep%NFA (over 3 years),13.655702439270572
+Au Retention ratio (over 3 years),100.0
+d/e,
+Interest coverage,inf
+tax %,12.577604906874113
+cPAT,7147500000.0
+CFO,2415000000.0
+cCFO,7809000000.0
+cCFO/cPAT,1.0925498426023086
+p/a,15.041284849269825
+p/e,66.17877
+EY,1.3673554164788426
+Earnings Growth 5yr cagr,10.938105461598058
+Sales Growth 5yr cagr,13.514321380025196
+PEG,6.050295476885197
+no. shares (cr),35.8476992
+Current Price,473.84
+market cap,169860737889.28
+d/e_market,
+p/s,18.574165
+NFA + CWIP,6278200000.0
+Capex,1847900000.0
+Capex_from_cashflow_statement,1111200000.0
+FCF,567100000.0
+FCF%,24.41660208387152
+FCF_capex_from_cashflow,1303800000.0
+FCF%_capex_from_cashflow,56.135365538620505
+DV,0.0
+Mcap (cr),16986.0743168
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.234824016563147
+Market Cap,169860743168
+Net Income,2322600000.0
+Total Revenue,8352100000.0
+Total Assets,18743200000.0
+Total Liabilities,2213600000.0
+Total Stockholders Equity,13307600000.0
+Total Debt,
+Cash and Cash Equivalents,253700000.0
+Current Assets,7111000000.0
+Current Liabilities,1745300000.0
+Working Capital,5365700000.0
+Operating Cash Flow,2415000000.0
+Capital Expenditure,1111200000.0
+Dividends Paid,0
+Depreciation & Amortization,462000000.0
+Interest Expense,0
+Income Tax Expense,336300000.0
+Shares Outstanding,358476992
+Net Fixed Assets,4646600000.0
+Construction in Progress,1631600000.0
+Net Debt,
+3-5yr Average ROA (%),12.196936785497469
+3-5yr Average ROE (%),14.059207161852779
+ROE,15.618685128087877
+ROA,13.588535221897516
+insidersPercentHeld,0.00526
+institutionsPercentHeld,0.89004
+institutionsFloatPercentHeld,0.89475
+institutionsCount,3111.0
+current,473.84
+high,685.0
+low,350.0
+mean,582.10077
+median,595.0
+Normalized EBIT,1897600000.0
+Normalized Net Income,1814300000.0
+Research Asset,2740140000.0
+R&D Amortization,738820000.0
+Adjusted EBIT (R&D),2755380000.0
+Adjusted Book Equity (R&D),16047740000.0
+Adjusted D/E (R&D),
+Adjusted Invested Capital (R&D),
+Adjusted ROC (R&D),
+Adjusted ROE (R&D),14.473065989354264

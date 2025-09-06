@@ -1,0 +1,103 @@
+,Value
+ticker,BRKR
+Name,Bruker Corporation
+ROCE,5.630441507933001
+ROCE (3yr avg),13.321574236137062
+NFAT,4.470057097331032
+NFAT (3yr avg),4.777393808546699
+NPM,9.830091347517929
+DPR,14.543752562945548
+Retention Ratio,85.45624743705446
+Dep,20.253532527633396
+SSGR,19.878616296200256
+Av NPM (over 3 years),9.830091347517929
+Au NFA/T (over 3 years),4.777393808546699
+Av Dep%NFA (over 3 years),20.253532527633396
+Au Retention ratio (over 3 years),85.45624743705446
+d/e,1.6303369154806855
+Interest coverage,7.916492693110647
+tax %,44.17593040115998
+cPAT,1114000000.0
+CFO,251300000.0
+cCFO,1158200000.0
+cCFO/cPAT,1.03967684021544
+p/a,2.6612390879785406
+p/e,64.34615
+EY,2.2279050291734785
+Earnings Growth 5yr cagr,-25.391638766804213
+Sales Growth 5yr cagr,11.662957823038633
+PEG,-2.5341471888030718
+no. shares (cr),15.1719008
+Current Price,33.46
+market cap,5076518007.68
+d/e_market,0.4422913494255713
+p/s,1.4745317
+NFA + CWIP,814800000.0
+Capex,307200000.0
+Capex_from_cashflow_statement,115300000.0
+FCF,-55900000.0
+FCF%,-49.42528735632184
+FCF_capex_from_cashflow,136000000.0
+FCF%_capex_from_cashflow,120.24756852343059
+DV,0.5948959494344743
+Mcap (cr),507.6517888
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,-0.2224432948666932
+Market Cap,5076517888
+Net Income,113100000.0
+Total Revenue,3366400000.0
+Total Assets,5806700000.0
+Total Liabilities,3991500000.0
+Total Stockholders Equity,1377200000.0
+Total Debt,2245300000.0
+Cash and Cash Equivalents,28900000.0
+Current Assets,2053200000.0
+Current Liabilities,1281300000.0
+Working Capital,771900000.0
+Operating Cash Flow,251300000.0
+Capital Expenditure,115300000.0
+Dividends Paid,30200000.0
+Depreciation & Amortization,183800000.0
+Interest Expense,47900000.0
+Income Tax Expense,91400000.0
+Shares Outstanding,151719008
+Net Fixed Assets,814800000.0
+Construction in Progress,0
+Net Debt,2216400000.0
+3-5yr Average ROA (%),7.095307055891785
+3-5yr Average ROE (%),22.872924655976732
+ROE,7.161854103343465
+ROA,2.249269136686355
+insidersPercentHeld,0.31983
+institutionsPercentHeld,0.84356004
+institutionsFloatPercentHeld,1.24021
+institutionsCount,516.0
+current,33.46
+high,65.0
+low,38.0
+mean,46.72727
+median,43.0
+Normalized EBIT,415133333.3333333
+Normalized Net Income,278966666.6666667
+Research Asset,842200000.0
+R&D Amortization,225600000.0
+Adjusted EBIT (R&D),405700000.0
+Adjusted Book Equity (R&D),2219400000.0
+Adjusted D/E (R&D),1.0116698206722539
+Adjusted Invested Capital (R&D),4435800000.0
+Adjusted ROC (R&D),5.1056912025450645
+Adjusted ROE (R&D),5.095971884293053

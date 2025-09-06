@@ -1,0 +1,95 @@
+,Value
+ticker,OMI
+longName,"Owens & Minor, Inc."
+ROCE,-7.675089679224934
+ROCE (3yr avg),-0.2641636286329758
+NFAT,12.548829976798308
+NFAT (3yr avg),13.080711818733462
+NPM,-1.1880267825498754
+DPR,0.0
+Retention Ratio,100.0
+Dep,32.74930920511212
+SSGR,-48.28954518058416
+Av NPM (over 3 years),-1.1880267825498754
+Au NFA/T (over 3 years),13.080711818733462
+Av Dep%NFA (over 3 years),32.74930920511212
+Au Retention ratio (over 3 years),100.0
+d/e,2.315393554837551
+Interest coverage,2.058690996077995
+tax %,-1.49122586097376
+cPAT,-160009000.0
+CFO,161495000.0
+cCFO,1351388000.0
+cCFO/cPAT,-8.445699929378973
+p/a,-7.120814274063175
+p/e,inf
+EY,-96.11703029568586
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,3.026339170800929
+PEG,
+no. shares (cr),7.72442
+Current Price,4.885
+market cap,377337917.0
+d/e_market,5.670800371752728
+p/s,0.035073664
+NFA + CWIP,897159000.0
+Capex,310701000.0
+Capex_from_cashflow_statement,228162000.0
+FCF,-149206000.0
+FCF%,41.139167213512515
+FCF_capex_from_cashflow,-66667000.0
+FCF%_capex_from_cashflow,18.381464958669483
+DV,
+Mcap (cr),37.733792
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,-0.923904764853401
+Market Cap,377337920
+Net Income,-362686000.0
+Total Revenue,10700883000.0
+Total Assets,4656156000.0
+Total Liabilities,4090930000.0
+Total Stockholders Equity,924166000.0
+Total Debt,2139808000.0
+Cash and Cash Equivalents,149515000.0
+Current Assets,2021017000.0
+Current Liabilities,1873739000.0
+Working Capital,147278000.0
+Operating Cash Flow,161495000.0
+Capital Expenditure,228162000.0
+Dividends Paid,
+Depreciation & Amortization,264775000.0
+Interest Expense,143804000.0
+Income Tax Expense,5329000.0
+Shares Outstanding,77244200
+Net Fixed Assets,864974000.0
+Construction in Progress,32185000.0
+Net Debt,1990293000.0
+3-5yr Average ROA (%),-0.14319032780179103
+3-5yr Average ROE (%),-1.0205717375226926
+ROE,-4.4177626125138385
+ROA,-0.7882167314512332
+insidersPercentHeld,0.03437
+institutionsPercentHeld,1.00343
+institutionsFloatPercentHeld,1.03915
+institutionsCount,326.0
+current,4.885
+high,7.0
+low,4.7
+mean,6.11667
+median,6.5
+Normalized EBIT,9806000.0
+Normalized Net Income,-127199333.33333333

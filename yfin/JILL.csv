@@ -1,0 +1,95 @@
+,Value
+ticker,JILL
+longName,"J.Jill, Inc."
+ROCE,23.979407483370096
+ROCE (3yr avg),25.134413705437865
+NFAT,3.702735877362865
+NFAT (3yr avg),3.5877496971292486
+NPM,6.411947009687009
+DPR,2.447466842269669
+Retention Ratio,97.55253315773032
+Dep,13.630988565653587
+SSGR,8.810445822561116
+Av NPM (over 3 years),6.411947009687009
+Au NFA/T (over 3 years),3.5877496971292486
+Av Dep%NFA (over 3 years),13.630988565653587
+Au Retention ratio (over 3 years),97.55253315773034
+d/e,5.610699124079747
+Interest coverage,4.870645181835552
+tax %,26.857598043756138
+cPAT,89716000.0
+CFO,65036000.0
+cCFO,277773000.0
+cCFO/cPAT,3.0961366980248783
+p/a,9.221121958055022
+p/e,7.6787324
+EY,15.22368146735885
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,1.4402384899571574
+PEG,
+no. shares (cr),1.5283
+Current Price,16.97
+market cap,259352509.99999997
+d/e_market,0.8051551149437498
+p/s,0.43012646
+NFA + CWIP,175950000.0
+Capex,31233000.0
+Capex_from_cashflow_statement,17755000.0
+FCF,33803000.0
+FCF%,85.61406174809412
+FCF_capex_from_cashflow,47281000.0
+FCF%_capex_from_cashflow,119.75027226907784
+DV,1.117783668259081
+Mcap (cr),25.9352496
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,True
+peg <1,False
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.5197582877175718
+Market Cap,259352496
+Net Income,39483000.0
+Total Revenue,610857000.0
+Total Assets,417699000.0
+Total Liabilities,311930000.0
+Total Stockholders Equity,37218000.0
+Total Debt,208819000.0
+Cash and Cash Equivalents,3519000.0
+Current Assets,122030000.0
+Current Liabilities,127108000.0
+Working Capital,-5078000.0
+Operating Cash Flow,65036000.0
+Capital Expenditure,17755000.0
+Dividends Paid,2899000.0
+Depreciation & Amortization,21325000.0
+Interest Expense,15701000.0
+Income Tax Expense,14498000.0
+Shares Outstanding,15283000
+Net Fixed Assets,167628000.0
+Construction in Progress,8322000.0
+Net Debt,205300000.0
+3-5yr Average ROA (%),8.639522322028007
+3-5yr Average ROE (%),3.8557091860080135
+ROE,195.68636990188924
+ROA,8.093253163156147
+insidersPercentHeld,0.05682
+institutionsPercentHeld,0.98820996
+institutionsFloatPercentHeld,1.04775
+institutionsCount,121.0
+current,16.97
+high,30.0
+low,16.0
+mean,21.25
+median,19.5
+Normalized EBIT,75260666.66666667
+Normalized Net Income,39286333.333333336

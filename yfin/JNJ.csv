@@ -1,0 +1,103 @@
+,Value
+ticker,JNJ
+longName,Johnson & Johnson
+ROCE,13.439356464251867
+ROCE (3yr avg),13.806153378902158
+NFAT,4.689598732840549
+NFAT (3yr avg),4.649882735844267
+NPM,26.514884247118726
+DPR,60.88312677444204
+Retention Ratio,39.11687322555796
+Dep,38.201032830172544
+SSGR,10.026591434548093
+Av NPM (over 3 years),26.514884247118726
+Au NFA/T (over 3 years),4.649882735844267
+Av Dep%NFA (over 3 years),38.201032830172544
+Au Retention ratio (over 3 years),39.11687322555797
+d/e,0.5326722307848897
+Interest coverage,29.336423841059602
+tax %,15.706837658057172
+cPAT,88038000000.0
+CFO,24266000000.0
+cCFO,91661000000.0
+cCFO/cPAT,1.0411526840682432
+p/a,8.394705117034102
+p/e,18.80493
+EY,3.3288900217978874
+Earnings Growth 5yr cagr,-9.696875284725037
+Sales Growth 5yr cagr,4.0974479889682724
+PEG,-1.939277287563179
+no. shares (cr),240.8339968
+Current Price,175.45
+market cap,422543247385.6
+d/e_market,0.08669881775810025
+p/s,4.662443
+NFA + CWIP,26807000000.0
+Capex,8621000000.0
+Capex_from_cashflow_statement,6207000000.0
+FCF,15645000000.0
+FCF%,111.22565050476325
+FCF_capex_from_cashflow,18059000000.0
+FCF%_capex_from_cashflow,128.38760130811886
+DV,2.798056784282413
+Mcap (cr),42254.3228928
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6447292508035936
+Market Cap,422543228928
+Net Income,14066000000.0
+Total Revenue,88821000000.0
+Total Assets,180104000000.0
+Total Liabilities,108614000000.0
+Total Stockholders Equity,68774000000.0
+Total Debt,36634000000.0
+Cash and Cash Equivalents,
+Current Assets,55893000000.0
+Current Liabilities,50321000000.0
+Working Capital,5572000000.0
+Operating Cash Flow,24266000000.0
+Capital Expenditure,6207000000.0
+Dividends Paid,11823000000.0
+Depreciation & Amortization,7339000000.0
+Interest Expense,755000000.0
+Income Tax Expense,2621000000.0
+Shares Outstanding,2408339968
+Net Fixed Assets,20518000000.0
+Construction in Progress,6289000000.0
+Net Debt,
+3-5yr Average ROA (%),12.270958575562203
+3-5yr Average ROE (%),30.08644186514615
+ROE,20.056464951805168
+ROA,8.091767291219632
+insidersPercentHeld,0.00058
+institutionsPercentHeld,0.74355006
+institutionsFloatPercentHeld,0.74398005
+institutionsCount,5077.0
+current,175.45
+high,200.0
+low,155.0
+mean,176.5987
+median,175.0
+Normalized EBIT,17637000000.0
+Normalized Net Income,22386666666.666668
+Research Asset,43491800000.0
+R&D Amortization,12145800000.0
+Adjusted EBIT (R&D),22528200000.0
+Adjusted Book Equity (R&D),112265800000.0
+Adjusted D/E (R&D),0.3263148706017327
+Adjusted Invested Capital (R&D),
+Adjusted ROC (R&D),
+Adjusted ROE (R&D),12.52919410898065

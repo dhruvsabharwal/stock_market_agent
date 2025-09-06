@@ -1,0 +1,94 @@
+,Value
+ticker,AUBANK.NS
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,11.951423921758565
+NFAT (3yr avg),9.526501727076344
+NPM,22.83809621065817
+DPR,3.3605708095035207
+Retention Ratio,96.63942919049649
+Dep,28.282975066733126
+SSGR,181.97268935659733
+Av NPM (over 3 years),22.83809621065817
+Au NFA/T (over 3 years),9.526501727076344
+Av Dep%NFA (over 3 years),28.282975066733126
+Au Retention ratio (over 3 years),96.63942919049647
+d/e,0.9283708074620458
+Interest coverage,0.0
+tax %,24.466139917569127
+cPAT,61984051000.0
+CFO,54624118000.0
+cCFO,204131033000.0
+cCFO/cPAT,3.2932831866700676
+p/a,1.9245270345838659
+p/e,25.426476
+EY,3.792036114716957
+Earnings Growth 5yr cagr,16.24274065333957
+Sales Growth 5yr cagr,35.59391826180971
+PEG,1.5654055274700345
+no. shares (cr),74.5193024
+Current Price,745.25
+market cap,555355101136.0
+d/e_market,0.2099539983723788
+p/s,6.226617
+NFA + CWIP,9999045000.0
+Capex,3393669000.0
+Capex_from_cashflow_statement,2643614000.0
+FCF,51230449000.0
+FCF%,243.26797049811705
+FCF_capex_from_cashflow,51980504000.0
+FCF%_capex_from_cashflow,246.82960935105714
+DV,0.13381690354150705
+Mcap (cr),55542.8872192
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9378723332429825
+Market Cap,555428872192
+Net Income,21059266000.0
+Total Revenue,105415001000.0
+Total Assets,1578456662000.0
+Total Liabilities,1406793845000.0
+Total Stockholders Equity,125595315000.0
+Total Debt,116599024000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,54624118000.0
+Capital Expenditure,2643614000.0
+Dividends Paid,743159000.0
+Depreciation & Amortization,2585137000.0
+Interest Expense,80521494000.0
+Income Tax Expense,6821300000.0
+Shares Outstanding,745193024
+Net Fixed Assets,9124652000.0
+Construction in Progress,874393000.0
+Net Debt,0
+3-5yr Average ROA (%),1.6353875646854608
+3-5yr Average ROE (%),14.218076400435493
+ROE,14.169009176172848
+ROA,1.5758716446959835
+insidersPercentHeld,0.35207
+institutionsPercentHeld,0.44062
+institutionsFloatPercentHeld,0.68004
+institutionsCount,170.0
+current,745.25
+high,930.0
+low,610.0
+mean,780.3043
+median,784.0
+Normalized EBIT,0.0
+Normalized Net Income,16895236333.333334

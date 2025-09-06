@@ -1,0 +1,90 @@
+,Value
+ticker,INDBANK.NS
+ROCE,9.91566509726159
+ROCE (3yr avg),10.529124371382208
+NFAT,32.7382561263535
+NFAT (3yr avg),25.053031263059097
+NPM,37.191247436805575
+DPR,0.0
+Retention Ratio,100.0
+Dep,45.32976589668678
+SSGR,886.4237188497699
+Av NPM (over 3 years),37.191247436805575
+Au NFA/T (over 3 years),25.053031263059097
+Av Dep%NFA (over 3 years),45.32976589668678
+Au Retention ratio (over 3 years),100.0
+d/e,7.436808121954058e-05
+Interest coverage,42.443349753694584
+tax %,26.401607054342442
+cPAT,279278000.0
+CFO,755000.0
+cCFO,-58246000.0
+cCFO/cPAT,-0.20855921340026784
+p/a,7.95875474306349
+p/e,18.171429
+EY,5.997122673609166
+Earnings Growth 5yr cagr,6.752463261056185
+Sales Growth 5yr cagr,4.39443207083785
+PEG,2.691081505737466
+no. shares (cr),4.43782
+Current Price,31.8
+market cap,1411226760.0
+d/e_market,4.393340727184057e-05
+p/s,5.5283985
+NFA + CWIP,5346000.0
+Capex,
+Capex_from_cashflow_statement,2497000.0
+FCF,
+FCF%,
+FCF_capex_from_cashflow,-1742000.0
+FCF%_capex_from_cashflow,-2.0582987723464843
+DV,0.0
+Mcap (cr),141.4308096
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,
+Market Cap,1414308096
+Net Income,84633000.0
+Total Revenue,201062000.0
+Total Assets,1180901000.0
+Total Liabilities,264384000.0
+Total Stockholders Equity,833691000.0
+Total Debt,62000.0
+Cash and Cash Equivalents,
+Current Assets,1044221000.0
+Current Liabilities,8907000.0
+Working Capital,1035314000.0
+Operating Cash Flow,755000.0
+Capital Expenditure,2497000.0
+Dividends Paid,0
+Depreciation & Amortization,
+Interest Expense,1218000.0
+Income Tax Expense,30360000.0
+Shares Outstanding,44378200
+Net Fixed Assets,5346000.0
+Construction in Progress,0.0
+Net Debt,
+3-5yr Average ROA (%),6.674340209026298
+3-5yr Average ROE (%),8.626824483570505
+ROE,9.67119336673127
+ROA,7.542053276394914
+insidersPercentHeld,0.69629997
+institutionsPercentHeld,0.0
+institutionsFloatPercentHeld,0.0
+institutionsCount,0.0
+current,31.8
+Normalized EBIT,97730666.66666667
+Normalized Net Income,69880666.66666667

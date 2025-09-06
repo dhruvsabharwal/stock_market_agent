@@ -1,0 +1,103 @@
+,Value
+ticker,META
+longName,"Meta Platforms, Inc."
+ROCE,29.439325573913834
+ROCE (3yr avg),23.978404559692553
+NFAT,1.3365969392522414
+NFAT (3yr avg),1.3700085287246244
+NPM,28.92888438600457
+DPR,2.711139619414155
+Retention Ratio,97.28886038058585
+Dep,11.456320920268302
+SSGR,27.10199637486741
+Av NPM (over 3 years),28.92888438600457
+Au NFA/T (over 3 years),1.3700085287246244
+Av Dep%NFA (over 3 years),11.456320920268302
+Au Retention ratio (over 3 years),97.28886038058585
+d/e,0.32030189073435705
+Interest coverage,97.03496503496504
+tax %,11.750137978857394
+cPAT,164028000000.0
+CFO,91328000000.0
+cCFO,270599000000.0
+cCFO/cPAT,1.6497122442509815
+p/a,27.157558258536817
+p/e,27.233864
+EY,3.827815702240373
+Earnings Growth 5yr cagr,20.715943486273748
+Sales Growth 5yr cagr,11.733304241692032
+PEG,1.3146330514970261
+no. shares (cr),216.896
+Current Price,751.11
+market cap,1629127545600.0
+d/e_market,0.030114278119293254
+p/s,10.552859
+NFA + CWIP,163070000000.0
+Capex,44418000000.0
+Capex_from_cashflow_statement,37256000000.0
+FCF,46910000000.0
+FCF%,75.22450288646569
+FCF_capex_from_cashflow,54072000000.0
+FCF%_capex_from_cashflow,86.70942912123157
+DV,0.3113322841847847
+Mcap (cr),188689.350656
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.5136431324456903
+Market Cap,1886893506560
+Net Income,62360000000.0
+Total Revenue,164501000000.0
+Total Assets,276054000000.0
+Total Liabilities,93417000000.0
+Total Stockholders Equity,153168000000.0
+Total Debt,49060000000.0
+Cash and Cash Equivalents,5236000000.0
+Current Assets,100045000000.0
+Current Liabilities,33596000000.0
+Working Capital,66449000000.0
+Operating Cash Flow,91328000000.0
+Capital Expenditure,37256000000.0
+Dividends Paid,5072000000.0
+Depreciation & Amortization,15498000000.0
+Interest Expense,715000000.0
+Income Tax Expense,8303000000.0
+Shares Outstanding,2168960000
+Net Fixed Assets,136268000000.0
+Construction in Progress,26802000000.0
+Net Debt,43824000000.0
+3-5yr Average ROA (%),16.009534479421543
+3-5yr Average ROE (%),23.277676631565164
+ROE,28.03919951520541
+ROA,18.826531840616347
+insidersPercentHeld,0.00079
+institutionsPercentHeld,0.79783994
+institutionsFloatPercentHeld,0.79847
+institutionsCount,6153.0
+current,751.11
+high,1086.0
+low,658.0
+mean,861.89935
+median,875.0
+Normalized EBIT,49418666666.666664
+Normalized Net Income,41552666666.666664
+Research Asset,105724200000.0
+R&D Amortization,28469800000.0
+Adjusted EBIT (R&D),86781200000.0
+Adjusted Book Equity (R&D),258892200000.0
+Adjusted D/E (R&D),0.1894997222782301
+Adjusted Invested Capital (R&D),302716200000.0
+Adjusted ROC (R&D),25.299038921700195
+Adjusted ROE (R&D),24.087245579434217

@@ -1,0 +1,102 @@
+,Value
+ticker,AUROPHARMA.NS
+ROCE,15.735373674280245
+ROCE (3yr avg),13.19839925713349
+NFAT,2.101182169556355
+NFAT (3yr avg),2.099721047592866
+NPM,9.997697066260356
+DPR,10.380627339680629
+Retention Ratio,89.61937266031937
+Dep,10.928862125472625
+SSGR,7.884372617926805
+Av NPM (over 3 years),9.997697066260356
+Au NFA/T (over 3 years),2.099721047592866
+Av Dep%NFA (over 3 years),10.928862125472625
+Au Retention ratio (over 3 years),89.61937266031937
+d/e,0.2768798504161808
+Interest coverage,10.838990464526288
+tax %,31.240217200357655
+cPAT,112345000000.0
+CFO,39246200000.0
+cCFO,137623700000.0
+cCFO/cPAT,1.2250095687391518
+p/a,7.7341096404358325
+p/e,17.940975
+EY,5.7400908588202695
+Earnings Growth 5yr cagr,9.793632457029178
+Sales Growth 5yr cagr,10.325902220839666
+PEG,1.831902011712032
+no. shares (cr),58.0801984
+Current Price,1045.6
+market cap,607286554470.3999
+d/e_market,0.13606212650642088
+p/s,1.8962977
+NFA + CWIP,187214300000.0
+Capex,30929800000.0
+Capex_from_cashflow_statement,25195500000.0
+FCF,8316400000.0
+FCF%,23.85739038635868
+FCF_capex_from_cashflow,14050700000.0
+FCF%_capex_from_cashflow,40.3074689891792
+DV,0.0017125358569925182
+Mcap (cr),60728.6525952
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.21190331802824222
+Market Cap,607286525952
+Net Income,34858800000.0
+Total Revenue,313781300000.0
+Total Assets,497849700000.0
+Total Liabilities,171380400000.0
+Total Stockholders Equity,298428000000.0
+Total Debt,82628700000.0
+Cash and Cash Equivalents,23570200000.0
+Current Assets,271624600000.0
+Current Liabilities,146823400000.0
+Working Capital,124801200000.0
+Operating Cash Flow,39246200000.0
+Capital Expenditure,25195500000.0
+Dividends Paid,10400000.0
+Depreciation & Amortization,16494200000.0
+Interest Expense,4572400000.0
+Income Tax Expense,15827200000.0
+Shares Outstanding,580801984
+Net Fixed Assets,154554300000.0
+Construction in Progress,32660000000.0
+Net Debt,59058500000.0
+3-5yr Average ROA (%),6.6805805833235965
+3-5yr Average ROE (%),9.94958642028054
+ROE,11.155508533969789
+ROA,7.349798347988455
+insidersPercentHeld,0.54153997
+institutionsPercentHeld,0.29641
+institutionsFloatPercentHeld,0.64653
+institutionsCount,172.0
+current,1045.6
+high,1930.0
+low,730.0
+mean,1293.3928
+median,1284.5
+Normalized EBIT,43115600000.0
+Normalized Net Income,28621166666.666668
+Research Asset,1240680000.0
+R&D Amortization,498380000.0
+Adjusted EBIT (R&D),55235300000.0
+Adjusted Book Equity (R&D),299668680000.0
+Adjusted D/E (R&D),0.275733520099598
+Adjusted Invested Capital (R&D),358727180000.0
+Adjusted ROC (R&D),10.58734169759059
+Adjusted ROE (R&D),11.632446874328007

@@ -1,0 +1,103 @@
+,Value
+ticker,TXN
+longName,Texas Instruments Incorporated
+ROCE,18.70645829410657
+ROCE (3yr avg),29.259183506260285
+NFAT,1.4654736250351355
+NFAT (3yr avg),2.2916924691104015
+NPM,37.17522643266454
+DPR,73.01027792672132
+Retention Ratio,26.98972207327869
+Dep,15.256628992936898
+SSGR,7.73704515337566
+Av NPM (over 3 years),37.17522643266454
+Au NFA/T (over 3 years),2.2916924691104015
+Av Dep%NFA (over 3 years),15.256628992936898
+Au Retention ratio (over 3 years),26.989722073278674
+d/e,0.8046398769012251
+Interest coverage,10.513779527559056
+tax %,11.993398129470016
+cPAT,27827000000.0
+CFO,6318000000.0
+cCFO,30214000000.0
+cCFO/cPAT,1.0857799978438207
+p/a,14.835538518610115
+p/e,37.310787
+EY,2.5864237512812216
+Earnings Growth 5yr cagr,-14.613484604832571
+Sales Growth 5yr cagr,-5.174860247574175
+PEG,-2.553175235676616
+no. shares (cr),90.9137024
+Current Price,204.09
+market cap,185545775228.16
+d/e_market,0.0732757185297343
+p/s,11.127182
+NFA + CWIP,11347000000.0
+Capex,2928000000.0
+Capex_from_cashflow_statement,4820000000.0
+FCF,3390000000.0
+FCF%,70.6397166076266
+FCF_capex_from_cashflow,1498000000.0
+FCF%_capex_from_cashflow,31.214836424255054
+DV,2.584267949029685
+Mcap (cr),18554.576896
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.5365622032288699
+Market Cap,185545768960
+Net Income,4799000000.0
+Total Revenue,15641000000.0
+Total Assets,35509000000.0
+Total Liabilities,18606000000.0
+Total Stockholders Equity,16897000000.0
+Total Debt,13596000000.0
+Cash and Cash Equivalents,1200000000.0
+Current Assets,15026000000.0
+Current Liabilities,3643000000.0
+Working Capital,11383000000.0
+Operating Cash Flow,6318000000.0
+Capital Expenditure,4820000000.0
+Dividends Paid,4795000000.0
+Depreciation & Amortization,1580000000.0
+Interest Expense,508000000.0
+Income Tax Expense,654000000.0
+Shares Outstanding,909137024
+Net Fixed Assets,11347000000.0
+Construction in Progress,0
+Net Debt,12396000000.0
+3-5yr Average ROA (%),27.794013736852
+3-5yr Average ROE (%),52.030926347173846
+ROE,41.36747791828176
+ROA,21.862144236420118
+insidersPercentHeld,0.00213
+institutionsPercentHeld,0.91112
+institutionsFloatPercentHeld,0.91306996
+institutionsCount,3161.0
+current,204.09
+high,260.0
+low,125.0
+mean,205.72575
+median,200.0
+Normalized EBIT,7992666666.666667
+Normalized Net Income,6686000000.0
+Research Asset,5073000000.0
+R&D Amortization,1409200000.0
+Adjusted EBIT (R&D),6510800000.0
+Adjusted Book Equity (R&D),21970000000.0
+Adjusted D/E (R&D),0.6188438780154757
+Adjusted Invested Capital (R&D),34366000000.0
+Adjusted ROC (R&D),16.67326379149877
+Adjusted ROE (R&D),21.84342284934001

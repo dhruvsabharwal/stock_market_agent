@@ -1,0 +1,103 @@
+,Value
+ticker,SSTK
+longName,"Shutterstock, Inc."
+ROCE,10.690482109172796
+ROCE (3yr avg),16.853948532774325
+NFAT,11.687049752891266
+NFAT (3yr avg),11.301221970586624
+NPM,8.547718672458315
+DPR,66.15655570479895
+Retention Ratio,33.84344429520105
+Dep,96.15703502708057
+SSGR,-63.46438085485657
+Av NPM (over 3 years),8.547718672458315
+Au NFA/T (over 3 years),11.301221970586624
+Av Dep%NFA (over 3 years),96.15703502708057
+Au Retention ratio (over 3 years),33.84344429520105
+d/e,0.5711865435766675
+Interest coverage,6.505823312186346
+tax %,42.552919357933106
+cPAT,314187000.0
+CFO,32646000.0
+cCFO,548021000.0
+cCFO/cPAT,1.7442510352115141
+p/a,3.468289551792204
+p/e,11.60221
+EY,4.823371471151119
+Earnings Growth 5yr cagr,-26.02813921346594
+Sales Growth 5yr cagr,6.538578892756153
+PEG,-0.44575641404274763
+no. shares (cr),3.54741
+Current Price,21.0
+market cap,744956100.0
+d/e_market,0.404143277704552
+p/s,0.7372124
+NFA + CWIP,80356000.0
+Capex,88287000.0
+Capex_from_cashflow_statement,51244000.0
+FCF,-55641000.0
+FCF%,-154.85082934431705
+FCF_capex_from_cashflow,-18598000.0
+FCF%_capex_from_cashflow,-51.758877880440835
+DV,5.689328538956858
+Mcap (cr),74.4956096
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,True
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,-1.7043741959198677
+Market Cap,744956096
+Net Income,35932000.0
+Total Revenue,935262000.0
+Total Assets,1309156000.0
+Total Liabilities,790806000.0
+Total Stockholders Equity,527094000.0
+Total Debt,301069000.0
+Cash and Cash Equivalents,49482000.0
+Current Assets,255958000.0
+Current Liabilities,625286000.0
+Working Capital,-369328000.0
+Operating Cash Flow,32646000.0
+Capital Expenditure,51244000.0
+Dividends Paid,42383000.0
+Depreciation & Amortization,87626000.0
+Interest Expense,10561000.0
+Income Tax Expense,26616000.0
+Shares Outstanding,35474100
+Net Fixed Assets,80356000.0
+Construction in Progress,0
+Net Debt,251587000.0
+3-5yr Average ROA (%),10.143238593905012
+3-5yr Average ROE (%),19.62307571769186
+ROE,22.629122818538523
+ROA,11.503135563913814
+insidersPercentHeld,0.31756002
+institutionsPercentHeld,0.6981
+institutionsFloatPercentHeld,1.0229499
+institutionsCount,289.0
+current,21.0
+high,28.85
+low,25.0
+mean,26.925
+median,26.925
+Normalized EBIT,96602333.33333333
+Normalized Net Income,74101333.33333333
+Research Asset,225412600.0
+R&D Amortization,60405400.0
+Adjusted EBIT (R&D),101120600.0
+Adjusted Book Equity (R&D),752506600.0
+Adjusted D/E (R&D),0.4000881852730594
+Adjusted Invested Capital (R&D),1004093600.0
+Adjusted ROC (R&D),5.785400148725368
+Adjusted ROE (R&D),4.774974731118637

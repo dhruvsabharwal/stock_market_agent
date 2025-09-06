@@ -1,0 +1,103 @@
+,Value
+ticker,AVGO
+longName,Broadcom Inc.
+ROCE,9.311303273625695
+ROCE (3yr avg),18.75365562113516
+NFAT,22.06374331550802
+NFAT (3yr avg),17.652778588447124
+NPM,28.45495800319763
+DPR,93.98121832922448
+Retention Ratio,6.018781670775519
+Dep,100.0
+SSGR,-69.76711356112278
+Av NPM (over 3 years),28.45495800319763
+Au NFA/T (over 3 years),17.652778588447124
+Av Dep%NFA (over 3 years),100.0
+Au Retention ratio (over 3 years),6.01878167077552
+d/e,2.816658329164582
+Interest coverage,3.7935745003794588
+tax %,37.79749899152884
+cPAT,38208000000.0
+CFO,19962000000.0
+cCFO,68547000000.0
+cCFO/cPAT,1.794048366834171
+p/a,8.090748136863342
+p/e,113.0586
+EY,0.40606835152039766
+Earnings Growth 5yr cagr,-6.746804773767434
+Sales Growth 5yr cagr,23.39460034495897
+PEG,-16.757354598370537
+no. shares (cr),470.347008
+Current Price,308.65
+market cap,1451726040192.0
+d/e_market,0.046541839251615244
+p/s,25.44834
+NFA + CWIP,2578000000.0
+Capex,10371000000.0
+Capex_from_cashflow_statement,548000000.0
+FCF,9591000000.0
+FCF%,162.69720101781172
+FCF_capex_from_cashflow,19414000000.0
+FCF%_capex_from_cashflow,329.32994062765056
+DV,0.6760228671452388
+Mcap (cr),145172.594688
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.48046287947099486
+Market Cap,1451725946880
+Net Income,5895000000.0
+Total Revenue,51574000000.0
+Total Assets,165645000000.0
+Total Liabilities,97967000000.0
+Total Stockholders Equity,23988000000.0
+Total Debt,67566000000.0
+Cash and Cash Equivalents,764000000.0
+Current Assets,19595000000.0
+Current Liabilities,16697000000.0
+Working Capital,2898000000.0
+Operating Cash Flow,19962000000.0
+Capital Expenditure,548000000.0
+Dividends Paid,9814000000.0
+Depreciation & Amortization,10010000000.0
+Interest Expense,3953000000.0
+Income Tax Expense,3748000000.0
+Shares Outstanding,4703470080
+Net Fixed Assets,2521000000.0
+Construction in Progress,57000000.0
+Net Debt,66802000000.0
+3-5yr Average ROA (%),17.362092141030704
+3-5yr Average ROE (%),54.255655770162235
+ROE,60.312225624772466
+ROA,19.275888029566765
+insidersPercentHeld,0.02015
+institutionsPercentHeld,0.7981
+institutionsFloatPercentHeld,0.81451
+institutionsCount,5230.0
+current,308.65
+high,400.0
+low,210.0
+mean,302.64474
+median,305.0
+Normalized EBIT,14919666666.666666
+Normalized Net Income,10490666666.666666
+Research Asset,18405400000.0
+R&D Amortization,4867200000.0
+Adjusted EBIT (R&D),18311800000.0
+Adjusted Book Equity (R&D),42393400000.0
+Adjusted D/E (R&D),1.5937858251520285
+Adjusted Invested Capital (R&D),109195400000.0
+Adjusted ROC (R&D),10.431206424143529
+Adjusted ROE (R&D),13.90546641694226

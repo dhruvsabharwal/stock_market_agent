@@ -1,0 +1,95 @@
+,Value
+ticker,WMT
+longName,Walmart Inc.
+ROCE,17.679722842930122
+ROCE (3yr avg),15.230453613638085
+NFAT,5.043548781300687
+NFAT (3yr avg),5.170133632735552
+NPM,2.386009588661134
+DPR,42.11369123167878
+Retention Ratio,57.886308768321214
+Dep,9.515973395313289
+SSGR,-2.3751250475178884
+Av NPM (over 3 years),2.386009588661134
+Au NFA/T (over 3 years),5.170133632735552
+Av Dep%NFA (over 3 years),9.515973395313289
+Au Retention ratio (over 3 years),57.886308768321214
+d/e,0.7168290385280405
+Interest coverage,10.758064516129032
+tax %,23.383632977308146
+cPAT,60300000000.0
+CFO,36443000000.0
+cCFO,125191000000.0
+cCFO/cPAT,2.076135986733002
+p/a,7.700505944952238
+p/e,36.267925
+EY,2.5340347112547983
+Earnings Growth 5yr cagr,14.002281564968477
+Sales Growth 5yr cagr,5.939146972127429
+PEG,2.590143958448649
+no. shares (cr),798.0420096
+Current Price,96.11
+market cap,766998175426.5599
+d/e_market,0.07837567536137628
+p/s,1.1065352
+NFA + CWIP,155107000000.0
+Capex,24352000000.0
+Capex_from_cashflow_statement,23783000000.0
+FCF,12091000000.0
+FCF%,62.2093023255814
+FCF_capex_from_cashflow,12660000000.0
+FCF%_capex_from_cashflow,65.13685943609796
+DV,0.871970783539416
+Mcap (cr),76699.8151168
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.3317783936558461
+Market Cap,766998151168
+Net Income,19436000000.0
+Total Revenue,680985000000.0
+Total Assets,260823000000.0
+Total Liabilities,163131000000.0
+Total Stockholders Equity,83861000000.0
+Total Debt,60114000000.0
+Cash and Cash Equivalents,4011000000.0
+Current Assets,79458000000.0
+Current Liabilities,96584000000.0
+Working Capital,-17126000000.0
+Operating Cash Flow,36443000000.0
+Capital Expenditure,23783000000.0
+Dividends Paid,6688000000.0
+Depreciation & Amortization,12973000000.0
+Interest Expense,2728000000.0
+Income Tax Expense,6152000000.0
+Shares Outstanding,7980420096
+Net Fixed Assets,139704000000.0
+Construction in Progress,15403000000.0
+Net Debt,56103000000.0
+3-5yr Average ROA (%),5.522930081282063
+3-5yr Average ROE (%),16.963388632271585
+ROE,19.321848100950458
+ROA,6.259533975254038
+insidersPercentHeld,0.45381
+institutionsPercentHeld,0.36047
+institutionsFloatPercentHeld,0.65998
+institutionsCount,4796.0
+current,96.11
+high,127.0
+low,64.0
+mean,111.84615
+median,112.0
+Normalized EBIT,24237333333.333332
+Normalized Net Income,15542333333.333334

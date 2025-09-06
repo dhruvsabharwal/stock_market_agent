@@ -1,0 +1,95 @@
+,Value
+ticker,ELV
+longName,"Elevance Health, Inc."
+ROCE,
+ROCE (3yr avg),8.598664633588431
+NFAT,39.24314726445456
+NFAT (3yr avg),38.925579037227855
+NPM,3.5467443592094057
+DPR,23.12319643141177
+Retention Ratio,76.87680356858823
+Dep,37.27611300348954
+SSGR,68.85929310634403
+Av NPM (over 3 years),3.5467443592094057
+Au NFA/T (over 3 years),38.925579037227855
+Av Dep%NFA (over 3 years),37.27611300348954
+Au Retention ratio (over 3 years),76.87680356858823
+d/e,0.7945860682847402
+Interest coverage,0.0
+tax %,24.45597165991903
+cPAT,24019000000.0
+CFO,5808000000.0
+cCFO,30632000000.0
+cCFO/cPAT,1.2753237020691952
+p/a,5.489864864864865
+p/e,13.164123
+EY,8.555384305661216
+Earnings Growth 5yr cagr,0.7377876617618684
+Sales Growth 5yr cagr,8.44440135469926
+PEG,17.84269876316922
+no. shares (cr),22.5178
+Current Price,310.41
+market cap,69897502980.0
+d/e_market,0.4468256900240988
+p/s,0.36933172
+NFA + CWIP,4652000000.0
+Capex,1686000000.0
+Capex_from_cashflow_statement,1256000000.0
+FCF,4122000000.0
+FCF%,68.92976588628763
+FCF_capex_from_cashflow,4552000000.0
+FCF%_capex_from_cashflow,76.12040133779264
+DV,2.1574447379493495
+Mcap (cr),6989.750272
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.7097107438016529
+Market Cap,69897502720
+Net Income,5980000000.0
+Total Revenue,176810000000.0
+Total Assets,116889000000.0
+Total Liabilities,75463000000.0
+Total Stockholders Equity,39306000000.0
+Total Debt,31232000000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,5808000000.0
+Capital Expenditure,1256000000.0
+Dividends Paid,1508000000.0
+Depreciation & Amortization,1393000000.0
+Interest Expense,1185000000.0
+Income Tax Expense,1933000000.0
+Shares Outstanding,225178000
+Net Fixed Assets,4652000000.0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),5.77212106831011
+3-5yr Average ROE (%),16.076463764765585
+ROE,15.849316337741067
+ROA,5.656571382680706
+insidersPercentHeld,0.0016300001
+institutionsPercentHeld,0.9327
+institutionsFloatPercentHeld,0.93421
+institutionsCount,2181.0
+current,310.41
+high,507.0
+low,297.0
+mean,368.44443
+median,345.0
+Normalized EBIT,8761666666.666666
+Normalized Net Income,5953666666.666667

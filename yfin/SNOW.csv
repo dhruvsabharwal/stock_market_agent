@@ -1,0 +1,103 @@
+,Value
+ticker,SNOW
+longName,Snowflake Inc.
+ROCE,-22.36865172155447
+ROCE (3yr avg),-17.35827223930043
+NFAT,9.112669650283578
+NFAT (3yr avg),8.726049488658685
+NPM,-34.60429696231247
+DPR,0.0
+Retention Ratio,100.0
+Dep,28.666016170044056
+SSGR,-330.62482398342405
+Av NPM (over 3 years),-34.60429696231247
+Au NFA/T (over 3 years),8.726049488658685
+Av Dep%NFA (over 3 years),28.666016170044056
+Au Retention ratio (over 3 years),100.0
+d/e,0.5183610704228397
+Interest coverage,-527.7310619789779
+tax %,-0.32005316321933175
+cPAT,-3598390000.0
+CFO,959764000.0
+cCFO,2463704000.0
+cCFO/cPAT,-0.6846684211550166
+p/a,-15.633955027997601
+p/e,inf
+EY,-1.5988245643564851
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,43.808650910292954
+PEG,
+no. shares (cr),33.3657984
+Current Price,241.0
+market cap,80411574144.0
+d/e_market,0.03339407328590849
+p/s,20.941818
+NFA + CWIP,585450000.0
+Capex,226359000.0
+Capex_from_cashflow_statement,75712000.0
+FCF,733405000.0
+FCF%,-57.045907096854485
+FCF_capex_from_cashflow,884052000.0
+FCF%_capex_from_cashflow,-68.76357300644037
+DV,0.0
+Mcap (cr),8041.1574272
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.7641513955514064
+Market Cap,80411574272
+Net Income,-1285640000.0
+Total Revenue,3626396000.0
+Total Assets,9033938000.0
+Total Liabilities,6027295000.0
+Total Stockholders Equity,5180308000.0
+Total Debt,2685270000.0
+Cash and Cash Equivalents,211234000.0
+Current Assets,5869372000.0
+Current Liabilities,3301183000.0
+Working Capital,2568189000.0
+Operating Cash Flow,959764000.0
+Capital Expenditure,75712000.0
+Dividends Paid,0
+Depreciation & Amortization,182508000.0
+Interest Expense,2759000.0
+Income Tax Expense,4113000.0
+Shares Outstanding,333657984
+Net Fixed Assets,517672000.0
+Construction in Progress,67778000.0
+Net Debt,2474036000.0
+3-5yr Average ROA (%),-11.674645574559467
+3-5yr Average ROE (%),-18.947007365708366
+ROE,-31.432830124603967
+ROA,-14.899647517711468
+insidersPercentHeld,0.04078
+institutionsPercentHeld,0.72288
+institutionsFloatPercentHeld,0.75361
+institutionsCount,1743.0
+current,241.0
+high,440.0
+low,170.0
+mean,259.43256
+median,265.0
+Normalized EBIT,-982518666.6666666
+Normalized Net Income,-972814000.0
+Research Asset,3473345800.0
+R&D Amortization,865263600.0
+Adjusted EBIT (R&D),-364224600.0
+Adjusted Book Equity (R&D),8653653800.0
+Adjusted D/E (R&D),0.31030476398304724
+Adjusted Invested Capital (R&D),11127689800.0
+Adjusted ROC (R&D),-3.2836133907464147
+Adjusted ROE (R&D),-14.856614670672405

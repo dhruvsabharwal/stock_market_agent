@@ -1,0 +1,103 @@
+,Value
+ticker,HRMY
+longName,"Harmony Biosciences Holdings, Inc."
+ROCE,25.396848509558094
+ROCE (3yr avg),25.530311593709982
+NFAT,878.051597051597
+NFAT (3yr avg),913.266483170005
+NPM,27.97995626927192
+DPR,0.0
+Retention Ratio,100.0
+Dep,100.0
+SSGR,25453.156261288503
+Av NPM (over 3 years),27.97995626927192
+Au NFA/T (over 3 years),913.266483170005
+Av Dep%NFA (over 3 years),100.0
+Au Retention ratio (over 3 years),100.0
+d/e,0.38387381368417445
+Interest coverage,10.906835848193873
+tax %,24.1449604804905
+cPAT,490411000.0
+CFO,219821000.0
+cCFO,682231000.0
+cCFO/cPAT,1.3911413080049184
+p/a,17.930046041151126
+p/e,11.926259
+EY,6.840096071229139
+Earnings Growth 5yr cagr,62.19205321529066
+Sales Growth 5yr cagr,32.7617118598057
+PEG,0.19176499863599591
+no. shares (cr),5.75326
+Current Price,36.9714
+market cap,2127060767.64
+d/e_market,0.08427873934175271
+p/s,2.7533808
+NFA + CWIP,1257000.0
+Capex,24998000.0
+Capex_from_cashflow_statement,1153000.0
+FCF,194823000.0
+FCF%,133.90541125689896
+FCF_capex_from_cashflow,218668000.0
+FCF%_capex_from_cashflow,150.29451588736228
+DV,0.0
+Mcap (cr),212.7060864
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8862802007087585
+Market Cap,2127060864
+Net Income,145493000.0
+Total Revenue,714734000.0
+Total Assets,999200000.0
+Total Liabilities,340045000.0
+Total Stockholders Equity,466992000.0
+Total Debt,179266000.0
+Cash and Cash Equivalents,8121000.0
+Current Assets,579252000.0
+Current Liabilities,175082000.0
+Working Capital,404170000.0
+Operating Cash Flow,219821000.0
+Capital Expenditure,1153000.0
+Dividends Paid,0
+Depreciation & Amortization,24112000.0
+Interest Expense,17496000.0
+Income Tax Expense,46311000.0
+Shares Outstanding,57532600
+Net Fixed Assets,1257000.0
+Construction in Progress,0
+Net Debt,171145000.0
+3-5yr Average ROA (%),25.06325157373682
+3-5yr Average ROE (%),45.60505615187449
+ROE,29.62716852718347
+ROA,17.350223992437982
+insidersPercentHeld,0.110360004
+institutionsPercentHeld,0.9497
+institutionsFloatPercentHeld,1.06751
+institutionsCount,399.0
+current,36.9714
+high,70.0
+low,31.0
+mean,50.54545
+median,49.0
+Normalized EBIT,176644666.66666666
+Normalized Net Income,151938000.0
+Research Asset,261353800.0
+R&D Amortization,64628200.0
+Adjusted EBIT (R&D),290496800.0
+Adjusted Book Equity (R&D),728345800.0
+Adjusted D/E (R&D),0.2461275948869342
+Adjusted Invested Capital (R&D),899490800.0
+Adjusted ROC (R&D),24.497911756619466
+Adjusted ROE (R&D),19.975813686301205

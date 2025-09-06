@@ -1,0 +1,94 @@
+,Value
+ticker,AXISBANK.NS
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,13.770205780541849
+NFAT (3yr avg),13.732737807770947
+NPM,28.275560920326807
+DPR,1.7026547761514073
+Retention Ratio,98.2973452238486
+Dep,51.54620375707597
+SSGR,330.14323751441003
+Av NPM (over 3 years),28.275560920326807
+Au NFA/T (over 3 years),13.732737807770947
+Av Dep%NFA (over 3 years),51.54620375707597
+Au Retention ratio (over 3 years),98.2973452238486
+d/e,1.4054375420956045
+Interest coverage,0.0
+tax %,23.447476945800574
+cPAT,793790500000.0
+CFO,443836800000.0
+cCFO,890410900000.0
+cCFO/cPAT,1.1217202775795376
+p/a,1.8478723498079053
+p/e,11.7251005
+EY,8.611787584680078
+Earnings Growth 5yr cagr,25.368734551120053
+Sales Growth 5yr cagr,18.35963837108192
+PEG,0.46218704667246896
+no. shares (cr),310.2330112
+Current Price,1050.1
+market cap,3257756850611.1997
+d/e_market,0.6774193413440176
+p/s,4.2345495
+NFA + CWIP,66126600000.0
+Capex,22751700000.0
+Capex_from_cashflow_statement,24455400000.0
+FCF,421085100000.0
+FCF%,150.0921222550901
+FCF_capex_from_cashflow,419381400000.0
+FCF%_capex_from_cashflow,149.48485320499546
+DV,0.09487816745501142
+Mcap (cr),325791.4097664
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.948738590400796
+Market Cap,3257914097664
+Net Income,280551100000.0
+Total Revenue,848908400000.0
+Total Assets,16569626100000.0
+Total Liabilities,14690919900000.0
+Total Stockholders Equity,1570235200000.0
+Total Debt,2206867500000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,443836800000.0
+Capital Expenditure,24455400000.0
+Dividends Paid,3090900000.0
+Depreciation & Amortization,17669700000.0
+Interest Expense,710363100000.0
+Income Tax Expense,86104200000.0
+Shares Outstanding,3102330112
+Net Fixed Assets,64920800000.0
+Construction in Progress,1205800000.0
+Net Debt,0
+3-5yr Average ROA (%),1.4874653137889364
+3-5yr Average ROE (%),14.473995832526347
+ROE,16.29883848210683
+ROA,1.767139073274583
+insidersPercentHeld,0.022920001
+institutionsPercentHeld,0.67538
+institutionsFloatPercentHeld,0.69122005
+institutionsCount,327.0
+current,1050.1
+high,1691.0
+low,1180.0
+mean,1329.2927
+median,1325.0
+Normalized EBIT,0.0
+Normalized Net Income,217532533333.33334

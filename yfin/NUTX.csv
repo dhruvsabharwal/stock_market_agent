@@ -1,0 +1,94 @@
+,Value
+ticker,NUTX
+ROCE,25.207441179203123
+ROCE (3yr avg),-30.762819509045432
+NFAT,1.6157683720511606
+NFAT (3yr avg),1.1050631676946578
+NPM,-67.10675056181456
+DPR,-3.703807539358819
+Retention Ratio,103.70380753935882
+Dep,5.8472737122279455
+SSGR,-82.75111196520932
+Av NPM (over 3 years),-67.10675056181456
+Au NFA/T (over 3 years),1.1050631676946578
+Av Dep%NFA (over 3 years),5.8472737122279455
+Au Retention ratio (over 3 years),103.70380753935882
+d/e,5.537494310710315
+Interest coverage,6.9087549352135245
+tax %,13.190876484032957
+cPAT,-285794564.0
+CFO,23153807.0
+cCFO,248449853.0
+cCFO/cPAT,-0.869330226308993
+p/a,13.102261894501721
+p/e,1.6781589
+EY,10.430856912996527
+Earnings Growth 5yr cagr,-30.773394666455513
+Sales Growth 5yr cagr,13.124516498821116
+PEG,-0.05453278451042238
+no. shares (cr),0.555512
+Current Price,90.05
+market cap,500238556.0
+d/e_market,0.6802688155848586
+p/s,0.80129886
+NFA + CWIP,326586523.0
+Capex,63325804.0
+Capex_from_cashflow_statement,2303897.0
+FCF,-40171997.0
+FCF%,-76.98857329423113
+FCF_capex_from_cashflow,20849910.0
+FCF%_capex_from_cashflow,39.95830289973194
+DV,1.286979166795772
+Mcap (cr),50.023856
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,False
+p/e <10,True
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),False
+FCF/CFO,-1.7350061266382673
+Market Cap,500238560
+Net Income,52179168.0
+Total Revenue,479948633.0
+Total Assets,655320393.0
+Total Liabilities,453428516.0
+Total Stockholders Equity,61453190.0
+Total Debt,340296690.0
+Cash and Cash Equivalents,9996244.0
+Current Assets,292478885.0
+Current Liabilities,140866125.0
+Working Capital,151612760.0
+Operating Cash Flow,23153807.0
+Capital Expenditure,2303897.0
+Dividends Paid,6437966.0
+Depreciation & Amortization,18971972.0
+Interest Expense,19932015.0
+Income Tax Expense,14476821.0
+Shares Outstanding,5555120
+Net Fixed Assets,324693925.0
+Construction in Progress,1892598.0
+Net Debt,330300446.0
+3-5yr Average ROA (%),-34.64335834758712
+3-5yr Average ROE (%),-137.1845769848452
+ROE,50.22106403086125
+ROA,9.905250064616272
+insidersPercentHeld,0.35812
+institutionsPercentHeld,0.31737
+institutionsFloatPercentHeld,0.49443
+institutionsCount,144.0
+current,90.05
+high,300.0
+low,205.0
+mean,241.66667
+median,220.0
+Normalized EBIT,-103216875.33333333
+Normalized Net Income,-139462630.66666666

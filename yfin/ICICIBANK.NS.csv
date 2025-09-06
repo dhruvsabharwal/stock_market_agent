@@ -1,0 +1,94 @@
+,Value
+ticker,ICICIBANK.NS
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,14.150789164446675
+NFAT (3yr avg),13.302841136923623
+NPM,25.880590509341374
+DPR,12.223844517440527
+Retention Ratio,87.77615548255947
+Dep,16.722364959015163
+SSGR,285.4781090708592
+Av NPM (over 3 years),25.880590509341374
+Au NFA/T (over 3 years),13.302841136923623
+Av Dep%NFA (over 3 years),16.722364959015163
+Au Retention ratio (over 3 years),87.77615548255947
+d/e,0.8545333146191605
+Interest coverage,0.0
+tax %,25.251735482104387
+cPAT,1544323103000.0
+CFO,1228052600000.0
+cCFO,3344299763000.0
+cCFO/cPAT,2.1655440862753186
+p/a,2.158538051075713
+p/e,19.268227
+EY,5.045239975789246
+Earnings Growth 5yr cagr,25.986305583035406
+Sales Growth 5yr cagr,20.885119620887615
+PEG,0.7414761955458125
+no. shares (cr),713.9859968
+Current Price,1416.6
+market cap,10114325630668.799
+d/e_market,0.21640932672396723
+p/s,4.922864
+NFA + CWIP,158124200000.0
+Capex,52625237000.0
+Capex_from_cashflow_statement,47700000000.0
+FCF,1175427363000.0
+FCF%,230.34407025781317
+FCF_capex_from_cashflow,1180352600000.0
+FCF%_capex_from_cashflow,231.3092503899728
+DV,0.696168015260391
+Mcap (cr),1011572.801536
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9571474080181908
+Market Cap,10115728015360
+Net Income,510292000000.0
+Total Revenue,2055592900000.0
+Total Assets,26422414100000.0
+Total Liabilities,23134987600000.0
+Total Stockholders Equity,2561438346000.0
+Total Debt,2188834400000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,1228052600000.0
+Capital Expenditure,47700000000.0
+Dividends Paid,70412700000.0
+Depreciation & Amortization,26903800000.0
+Interest Expense,890276500000.0
+Income Tax Expense,184348300000.0
+Shares Outstanding,7139859968
+Net Fixed Assets,158124200000.0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),1.973531684301579
+3-5yr Average ROE (%),17.958871182824904
+ROE,17.90342000269006
+ROA,2.038597557821812
+insidersPercentHeld,0.0223
+institutionsPercentHeld,0.54977
+institutionsFloatPercentHeld,0.56231
+institutionsCount,422.0
+current,1416.6
+high,1860.0
+low,1440.0
+mean,1680.4359
+median,1683.0
+Normalized EBIT,0.0
+Normalized Net Income,431074047666.6667

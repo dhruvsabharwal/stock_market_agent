@@ -1,0 +1,103 @@
+,Value
+ticker,SPOT
+longName,Spotify Technology S.A.
+ROCE,18.226340172071474
+ROCE (3yr avg),-0.2439470273448888
+NFAT,32.61810613943808
+NFAT (3yr avg),22.570864384678345
+NPM,-0.1406203438106036
+DPR,0.0
+Retention Ratio,100.0
+Dep,23.66518305074656
+SSGR,-26.839105760622537
+Av NPM (over 3 years),-0.1406203438106036
+Au NFA/T (over 3 years),22.570864384678345
+Av Dep%NFA (over 3 years),23.66518305074656
+Au Retention ratio (over 3 years),100.0
+d/e,0.7931034482758621
+Interest coverage,37.916666666666664
+tax %,15.137956748695004
+cPAT,142000000.0
+CFO,2301000000.0
+cCFO,3388000000.0
+cCFO/cPAT,23.859154929577464
+p/a,13.635274382937935
+p/e,152.84444
+EY,0.8040464682787376
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,17.473118332956084
+PEG,
+no. shares (cr),20.5778
+Current Price,687.8
+market cap,141534108400.0
+d/e_market,0.014137934824479384
+p/s,8.519479
+NFA + CWIP,414000000.0
+Capex,-12000000.0
+Capex_from_cashflow_statement,17000000.0
+FCF,2313000000.0
+FCF%,203.2513181019332
+FCF_capex_from_cashflow,2284000000.0
+FCF%_capex_from_cashflow,200.7029876977153
+DV,0.0
+Mcap (cr),14153.4101504
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,1.0052151238591918
+Market Cap,141534101504
+Net Income,1138000000.0
+Total Revenue,15673000000.0
+Total Assets,12005000000.0
+Total Liabilities,6480000000.0
+Total Stockholders Equity,2523000000.0
+Total Debt,2001000000.0
+Cash and Cash Equivalents,118000000.0
+Current Assets,8379000000.0
+Current Liabilities,4450000000.0
+Working Capital,3929000000.0
+Operating Cash Flow,2301000000.0
+Capital Expenditure,17000000.0
+Dividends Paid,0
+Depreciation & Amortization,121000000.0
+Interest Expense,36000000.0
+Income Tax Expense,203000000.0
+Shares Outstanding,205778000
+Net Fixed Assets,414000000.0
+Construction in Progress,0
+Net Debt,1883000000.0
+3-5yr Average ROA (%),-6.232972853612008
+3-5yr Average ROE (%),-20.317498544244195
+ROE,-21.608448415922016
+ROA,-6.657489675885371
+insidersPercentHeld,0.24324
+institutionsPercentHeld,0.70412004
+institutionsFloatPercentHeld,0.93043
+institutionsCount,1874.0
+current,687.8
+high,911.6679
+low,486.22284
+mean,741.03143
+median,762.2559
+Normalized EBIT,193666666.66666666
+Normalized Net Income,58666666.666666664
+Research Asset,4063000000.0
+R&D Amortization,1102000000.0
+Adjusted EBIT (R&D),1761000000.0
+Adjusted Book Equity (R&D),6586000000.0
+Adjusted D/E (R&D),0.3038262982083207
+Adjusted Invested Capital (R&D),8469000000.0
+Adjusted ROC (R&D),17.645773782683683
+Adjusted ROE (R&D),17.279076829638626

@@ -1,0 +1,95 @@
+,Value
+ticker,LULU
+Name,lululemon athletica inc.
+ROCE,43.47404479999001
+ROCE (3yr avg),41.94755418081936
+NFAT,4.192940278240332
+NFAT (3yr avg),4.519287538169
+NPM,14.597689459249759
+DPR,0.0
+Retention Ratio,100.0
+Dep,14.306451654171392
+SSGR,51.664704405077025
+Av NPM (over 3 years),14.597689459249759
+Au NFA/T (over 3 years),4.519287538169
+Av Dep%NFA (over 3 years),14.306451654171392
+Au Retention ratio (over 3 years),100.0
+d/e,0.3723442438838009
+Interest coverage,inf
+tax %,29.558937873363256
+cPAT,5194928000.0
+CFO,2272713000.0
+cCFO,6924448000.0
+cCFO/cPAT,1.332924729659391
+p/a,25.587014894793963
+p/e,13.95102
+EY,7.712376433250665
+Earnings Growth 5yr cagr,24.950334879549008
+Sales Growth 5yr cagr,19.16805291773731
+PEG,0.5591516132889746
+no. shares (cr),11.4729
+Current Price,205.08
+market cap,23528623320.0
+d/e_market,0.06697336170368
+p/s,2.2864451
+NFA + CWIP,3403271000.0
+Capex,790431000.0
+Capex_from_cashflow_statement,689232000.0
+FCF,1482282000.0
+FCF%,81.6857120184105
+FCF_capex_from_cashflow,1583481000.0
+FCF%_capex_from_cashflow,87.26259440013754
+DV,0.0
+Mcap (cr),2457.9043328
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,False
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6522081758673445
+Market Cap,24579043328
+Net Income,1814616000.0
+Total Revenue,10588126000.0
+Total Assets,7603292000.0
+Total Liabilities,3279245000.0
+Total Stockholders Equity,4232081000.0
+Total Debt,1575791000.0
+Cash and Cash Equivalents,26931000.0
+Current Assets,3980302000.0
+Current Liabilities,1839630000.0
+Working Capital,2140672000.0
+Operating Cash Flow,2272713000.0
+Capital Expenditure,689232000.0
+Dividends Paid,0
+Depreciation & Amortization,446524000.0
+Interest Expense,0
+Income Tax Expense,761461000.0
+Shares Outstanding,114729000
+Net Fixed Assets,3196873000.0
+Construction in Progress,206398000.0
+Net Debt,1548860000.0
+3-5yr Average ROA (%),21.262502493214974
+3-5yr Average ROE (%),37.26214316510992
+ROE,42.416756738562114
+ROA,24.696661835848403
+insidersPercentHeld,0.09021
+institutionsPercentHeld,0.87648004
+institutionsFloatPercentHeld,0.96338
+institutionsCount,1560.0
+current,205.08
+high,500.0
+low,155.0
+mean,273.783
+median,269.0
+Normalized EBIT,2146338333.3333333
+Normalized Net Income,1406535333.3333333

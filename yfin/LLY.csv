@@ -1,0 +1,103 @@
+,Value
+ticker,LLY
+longName,Eli Lilly and Company
+ROCE,26.741069920915088
+ROCE (3yr avg),22.660657379710372
+NFAT,3.0012460021321963
+NFAT (3yr avg),2.9817427564374177
+NPM,20.249236060825577
+DPR,59.48959624985768
+Retention Ratio,40.51040375014232
+Dep,13.64563475984233
+SSGR,10.813742061607645
+Av NPM (over 3 years),20.249236060825577
+Au NFA/T (over 3 years),2.9817427564374177
+Av Dep%NFA (over 3 years),13.64563475984233
+Au Retention ratio (over 3 years),40.51040375014232
+d/e,3.1233301460280916
+Interest coverage,22.420830130668715
+tax %,16.485284375887197
+cPAT,27656900000.0
+CFO,8817900000.0
+cCFO,28009600000.0
+cCFO/cPAT,1.0127526946259342
+p/a,16.545246327314654
+p/e,47.934513
+EY,1.6139093485478737
+Earnings Growth 5yr cagr,26.185779657861396
+Sales Growth 5yr cagr,16.73073889020138
+PEG,1.8305551190876719
+no. shares (cr),89.6457024
+Current Price,731.96
+market cap,656170683287.04
+d/e_market,0.051273549484810554
+p/s,12.32058
+NFA + CWIP,25347200000.0
+Capex,9116100000.0
+Capex_from_cashflow_statement,8403600000.0
+FCF,-298200000.0
+FCF%,-2.8158640226628897
+FCF_capex_from_cashflow,414300000.0
+FCF%_capex_from_cashflow,3.9121813031161476
+DV,0.7132900202968336
+Mcap (cr),65617.068032
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,-0.033817575613241245
+Market Cap,656170680320
+Net Income,10590000000.0
+Total Revenue,45042700000.0
+Total Assets,78714900000.0
+Total Liabilities,64443300000.0
+Total Stockholders Equity,10771900000.0
+Total Debt,33644200000.0
+Cash and Cash Equivalents,111400000.0
+Current Assets,32739700000.0
+Current Liabilities,28376600000.0
+Working Capital,4363100000.0
+Operating Cash Flow,8817900000.0
+Capital Expenditure,8403600000.0
+Dividends Paid,4680400000.0
+Depreciation & Amortization,1766600000.0
+Interest Expense,780600000.0
+Income Tax Expense,2090400000.0
+Shares Outstanding,896457024
+Net Fixed Assets,17102400000.0
+Construction in Progress,8244800000.0
+Net Debt,33532800000.0
+3-5yr Average ROA (%),10.970320167389456
+3-5yr Average ROE (%),56.27719701235161
+ROE,48.926088965861716
+ROA,9.234502330917097
+insidersPercentHeld,0.00164
+institutionsPercentHeld,0.83875
+institutionsFloatPercentHeld,0.84012
+institutionsCount,5007.0
+current,731.96
+high,1190.0
+low,650.0
+mean,888.52185
+median,876.0
+Normalized EBIT,9213166666.666666
+Normalized Net Income,7358400000.0
+Research Asset,25528080000.0
+R&D Amortization,6885100000.0
+Adjusted EBIT (R&D),17566500000.0
+Adjusted Book Equity (R&D),36299980000.0
+Adjusted D/E (R&D),0.9268379762192707
+Adjusted Invested Capital (R&D),69832780000.0
+Adjusted ROC (R&D),21.00820348281964
+Adjusted ROE (R&D),29.173569792600436

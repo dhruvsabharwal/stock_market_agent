@@ -1,0 +1,94 @@
+,Value
+ticker,BANKINDIA.NS
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,3.3252119490461984
+NFAT (3yr avg),3.1472718592453384
+NPM,21.672877586979325
+DPR,15.74568046738171
+Retention Ratio,84.2543195326183
+Dep,4.874878392125216
+SSGR,52.595361774557894
+Av NPM (over 3 years),21.672877586979325
+Au NFA/T (over 3 years),3.1472718592453384
+Av Dep%NFA (over 3 years),4.874878392125216
+Au Retention ratio (over 3 years),84.2543195326183
+d/e,1.32994881193285
+Interest coverage,0.0
+tax %,25.63126932362453
+cPAT,234432735000.0
+CFO,185344466000.0
+cCFO,-282638100000.0
+cCFO/cPAT,-1.2056255710193373
+p/a,1.0330501626133233
+p/e,5.392514
+EY,18.662503972195683
+Earnings Growth 5yr cagr,32.230116672965536
+Sales Growth 5yr cagr,16.32811921941064
+PEG,0.16731289106760244
+no. shares (cr),455.2670208
+Current Price,112.38
+market cap,511629077975.04
+d/e_market,1.8347169803468335
+p/s,1.670506
+NFA + CWIP,122287744000.0
+Capex,23547869000.0
+Capex_from_cashflow_statement,7230490000.0
+FCF,161796597000.0
+FCF%,169.45104467352377
+FCF_capex_from_cashflow,178113976000.0
+FCF%_capex_from_cashflow,186.54038381385078
+DV,2.4915452519729318
+Mcap (cr),51162.906624
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,False
+p/e <10,True
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8729507845138468
+Market Cap,511629066240
+Net Income,95482797000.0
+Total Revenue,338973506000.0
+Total Assets,10564250062000.0
+Total Liabilities,9755376827000.0
+Total Stockholders Equity,705812546000.0
+Total Debt,938694557000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,185344466000.0
+Capital Expenditure,7230490000.0
+Dividends Paid,12747470000.0
+Depreciation & Amortization,6035552000.0
+Interest Expense,465941808000.0
+Income Tax Expense,32188600000.0
+Shares Outstanding,4552670208
+Net Fixed Assets,120469407000.0
+Construction in Progress,1818337000.0
+Net Debt,0
+3-5yr Average ROA (%),0.6703721978997892
+3-5yr Average ROE (%),8.904800550391505
+ROE,12.621067251509016
+ROA,0.9641292331370144
+insidersPercentHeld,0.73383003
+institutionsPercentHeld,0.14893
+institutionsFloatPercentHeld,0.55951
+institutionsCount,77.0
+current,112.38
+high,139.0
+low,110.0
+mean,129.8
+median,135.0
+Normalized EBIT,0.0
+Normalized Net Income,66502323333.333336

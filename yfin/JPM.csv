@@ -1,0 +1,95 @@
+,Value
+ticker,JPM
+longName,JPMorgan Chase & Co.
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,5.432478358448221
+NFAT (3yr avg),5.1489800884614185
+NPM,31.99493560177436
+DPR,29.482815725005494
+Retention Ratio,70.5171842749945
+Dep,25.711461287061756
+SSGR,90.45945518193807
+Av NPM (over 3 years),31.99493560177436
+Au NFA/T (over 3 years),5.1489800884614185
+Av Dep%NFA (over 3 years),25.711461287061756
+Au Retention ratio (over 3 years),70.5171842749945
+d/e,1.3856098914840276
+Interest coverage,0.0
+tax %,22.122774070670342
+cPAT,194033000000.0
+CFO,-42012000000.0
+cCFO,156165000000.0
+cCFO/cPAT,0.8048373214865513
+p/a,1.5087760131682129
+p/e,15.431574
+EY,7.062847442723753
+Earnings Growth 5yr cagr,8.743270751737576
+Sales Growth 5yr cagr,11.667153163692667
+PEG,1.7649658163603406
+no. shares (cr),274.9750016
+Current Price,301.07
+market cap,827867237317.12
+d/e_market,0.5487727736059365
+p/s,5.0557394
+NFA + CWIP,32223000000.0
+Capex,10004000000.0
+Capex_from_cashflow_statement,0
+FCF,-52016000000.0
+FCF%,-88.96033931350584
+FCF_capex_from_cashflow,-42012000000.0
+FCF%_capex_from_cashflow,-71.85100306134665
+DV,1.785672790713093
+Mcap (cr),82786.7267072
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,False
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,1.2381224412072742
+Market Cap,827867267072
+Net Income,58471000000.0
+Total Revenue,169439000000.0
+Total Assets,4002814000000.0
+Total Liabilities,3658056000000.0
+Total Stockholders Equity,327878000000.0
+Total Debt,454311000000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,-42012000000.0
+Capital Expenditure,0
+Dividends Paid,14783000000.0
+Depreciation & Amortization,7938000000.0
+Interest Expense,101350000000.0
+Income Tax Expense,16610000000.0
+Shares Outstanding,2749750016
+Net Fixed Assets,32223000000.0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),1.165584722735689
+3-5yr Average ROE (%),14.413871443608
+ROE,15.979103851921122
+ROA,1.314178659554741
+insidersPercentHeld,0.00467
+institutionsPercentHeld,0.74484
+institutionsFloatPercentHeld,0.74833
+institutionsCount,5795.0
+current,301.07
+high,350.0
+low,235.0
+mean,305.31818
+median,307.0
+Normalized EBIT,0.0
+Normalized Net Income,48566333333.333336

@@ -1,0 +1,95 @@
+,Value
+ticker,ACN
+longName,Accenture plc
+ROCE,26.40499427484985
+ROCE (3yr avg),28.375719493187233
+NFAT,14.673890955744051
+NFAT (3yr avg),14.086048227453862
+NPM,11.02592934746245
+DPR,40.498915858212094
+Retention Ratio,59.501084141787906
+Dep,23.854841607125206
+SSGR,68.55734685451115
+Av NPM (over 3 years),11.02592934746245
+Au NFA/T (over 3 years),14.086048227453862
+Av Dep%NFA (over 3 years),23.854841607125206
+Au Retention ratio (over 3 years),59.501084141787906
+d/e,0.16037733315496977
+Interest coverage,162.72697519035427
+tax %,23.50809432782061
+cPAT,26920322000.0
+CFO,9131027000.0
+cCFO,37171572000.0
+cCFO/cPAT,1.3807996798849582
+p/a,14.176492851393899
+p/e,20.379477
+EY,4.553119640415785
+Earnings Growth 5yr cagr,7.5130607955534945
+Sales Growth 5yr cagr,8.696160344110426
+PEG,2.712539876166226
+no. shares (cr),62.2852992
+Current Price,256.17
+market cap,159556250960.64
+d/e_market,0.025825055271676407
+p/s,2.3298824
+NFA + CWIP,4278515000.0
+Capex,1189026000.0
+Capex_from_cashflow_statement,516509000.0
+FCF,7942001000.0
+FCF%,109.32187000114388
+FCF_capex_from_cashflow,8614518000.0
+FCF%_capex_from_cashflow,118.57908566348883
+DV,2.031558764062225
+Mcap (cr),15955.6255744
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8697817890583392
+Market Cap,159556255744
+Net Income,7264787000.0
+Total Revenue,64896464000.0
+Total Assets,55932363000.0
+Total Liabilities,26764115000.0
+Total Stockholders Equity,25692839000.0
+Total Debt,4120549000.0
+Cash and Cash Equivalents,2183069000.0
+Current Assets,20857781000.0
+Current Liabilities,18976127000.0
+Working Capital,1881654000.0
+Operating Cash Flow,9131027000.0
+Capital Expenditure,516509000.0
+Dividends Paid,3241479000.0
+Depreciation & Amortization,1077997000.0
+Interest Expense,58969000.0
+Income Tax Expense,2280126000.0
+Shares Outstanding,622852992
+Net Fixed Assets,4278515000.0
+Construction in Progress,0
+Net Debt,1937480000.0
+3-5yr Average ROA (%),14.099223539311014
+3-5yr Average ROE (%),29.737124003666253
+ROE,26.915847165004813
+ROA,13.55653119827164
+insidersPercentHeld,0.00077
+institutionsPercentHeld,0.82
+institutionsFloatPercentHeld,0.82063
+institutionsCount,3263.0
+current,256.17
+high,372.0
+low,240.0
+mean,323.41
+median,329.0
+Normalized EBIT,9396212000.0
+Normalized Net Income,7004504333.333333

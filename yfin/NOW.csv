@@ -1,0 +1,103 @@
+,Value
+ticker,NOW
+longName,"ServiceNow, Inc."
+ROCE,14.644490644490645
+ROCE (3yr avg),9.936283489247009
+NFAT,4.85051887833959
+NFAT (3yr avg),4.749488578320211
+NPM,12.251591978921615
+DPR,0.0
+Retention Ratio,100.0
+Dep,27.476909663113645
+SSGR,30.711886507014075
+Av NPM (over 3 years),12.251591978921615
+Au NFA/T (over 3 years),4.749488578320211
+Av Dep%NFA (over 3 years),27.476909663113645
+Au Retention ratio (over 3 years),100.0
+d/e,0.2986366019926586
+Interest coverage,59.30434782608695
+tax %,18.00920598388953
+cPAT,3711000000.0
+CFO,4267000000.0
+cCFO,12579000000.0
+cCFO/cPAT,3.38965238480194
+p/a,8.195778455167654
+p/e,116.220276
+EY,0.7394831836962708
+Earnings Growth 5yr cagr,81.3632828801355
+Sales Growth 5yr cagr,23.046051841325422
+PEG,1.4284118325365
+no. shares (cr),20.7519008
+Current Price,928.6
+market cap,192702150828.80002
+d/e_market,0.011821352227790209
+p/s,15.982595
+NFA + CWIP,2519000000.0
+Capex,977000000.0
+Capex_from_cashflow_statement,892000000.0
+FCF,3290000000.0
+FCF%,230.87719298245614
+FCF_capex_from_cashflow,3375000000.0
+FCF%_capex_from_cashflow,236.84210526315786
+DV,0.0
+Mcap (cr),19270.2152704
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.7710335130067963
+Market Cap,192702152704
+Net Income,1425000000.0
+Total Revenue,10984000000.0
+Total Assets,20383000000.0
+Total Liabilities,10774000000.0
+Total Stockholders Equity,7628000000.0
+Total Debt,2278000000.0
+Cash and Cash Equivalents,668000000.0
+Current Assets,9187000000.0
+Current Liabilities,8358000000.0
+Working Capital,829000000.0
+Operating Cash Flow,4267000000.0
+Capital Expenditure,892000000.0
+Dividends Paid,0
+Depreciation & Amortization,564000000.0
+Interest Expense,23000000.0
+Income Tax Expense,313000000.0
+Shares Outstanding,207519008
+Net Fixed Assets,2456000000.0
+Construction in Progress,63000000.0
+Net Debt,1610000000.0
+3-5yr Average ROA (%),6.989724536905362
+3-5yr Average ROE (%),17.397060492658564
+ROE,27.345971563981042
+ROA,11.28201785830672
+insidersPercentHeld,0.00196
+institutionsPercentHeld,0.90892
+institutionsFloatPercentHeld,0.9107
+institutionsCount,3125.0
+current,928.6
+high,1300.0
+low,734.0
+mean,1141.4354
+median,1160.0
+Normalized EBIT,1049333333.3333334
+Normalized Net Income,1160333333.3333333
+Research Asset,5861800000.0
+R&D Amortization,1566400000.0
+Adjusted EBIT (R&D),2737600000.0
+Adjusted Book Equity (R&D),13489800000.0
+Adjusted D/E (R&D),0.16886833014573974
+Adjusted Invested Capital (R&D),15099800000.0
+Adjusted ROC (R&D),14.86496494645651
+Adjusted ROE (R&D),10.563536894542542

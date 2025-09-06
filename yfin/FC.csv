@@ -1,0 +1,95 @@
+,Value
+ticker,FC
+longName,Franklin Covey Co.
+ROCE,34.48014855781846
+ROCE (3yr avg),28.71076486869767
+NFAT,30.597390146471373
+NFAT (3yr avg),27.844426182564998
+NPM,7.165933028486056
+DPR,0.0
+Retention Ratio,100.0
+Dep,96.73055437322388
+SSGR,102.80073886766054
+Av NPM (over 3 years),7.165933028486056
+Au NFA/T (over 3 years),27.844426182564998
+Av Dep%NFA (over 3 years),96.73055437322388
+Au Retention ratio (over 3 years),100.0
+d/e,0.0767157423652961
+Interest coverage,33.0455764075067
+tax %,29.18356230708709
+cPAT,73236000.0
+CFO,60257000.0
+cCFO,194426000.0
+cCFO/cPAT,2.654787263094653
+p/a,9.516141493743875
+p/e,24.816454
+EY,9.442287355337204
+Earnings Growth 5yr cagr,22.428564128791617
+Sales Growth 5yr cagr,8.6142745183873
+PEG,1.1064664620301325
+no. shares (cr),1.26418
+Current Price,19.605
+market cap,247842489.0
+d/e_market,0.024346107983123103
+p/s,0.8853319
+NFA + CWIP,8736000.0
+Capex,7610000.0
+Capex_from_cashflow_statement,11310000.0
+FCF,52647000.0
+FCF%,224.9679514571404
+FCF_capex_from_cashflow,48947000.0
+FCF%_capex_from_cashflow,209.1573369797453
+DV,0.0
+Mcap (cr),24.784248
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,True
+p/b <3,False
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8737076190318137
+Market Cap,247842480
+Net Income,23402000.0
+Total Revenue,287233000.0
+Total Assets,261539000.0
+Total Liabilities,178404000.0
+Total Stockholders Equity,78654000.0
+Total Debt,6034000.0
+Cash and Cash Equivalents,1691000.0
+Current Assets,160253000.0
+Current Liabilities,162453000.0
+Working Capital,-2200000.0
+Operating Cash Flow,60257000.0
+Capital Expenditure,11310000.0
+Dividends Paid,0
+Depreciation & Amortization,8913000.0
+Interest Expense,1119000.0
+Income Tax Expense,9644000.0
+Shares Outstanding,12641800
+Net Fixed Assets,8736000.0
+Construction in Progress,0
+Net Debt,4343000.0
+3-5yr Average ROA (%),7.142658583554651
+3-5yr Average ROE (%),22.341287432771345
+ROE,22.02417816533307
+ROA,7.04094845507787
+insidersPercentHeld,0.16268
+institutionsPercentHeld,0.76564
+institutionsFloatPercentHeld,0.91439
+institutionsCount,175.0
+current,19.605
+high,35.0
+low,27.0
+mean,31.0
+median,31.0
+Normalized EBIT,28452000.0
+Normalized Net Income,19871000.0
