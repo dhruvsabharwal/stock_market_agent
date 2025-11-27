@@ -1,0 +1,103 @@
+,Value
+ticker,MDB
+longName,"MongoDB, Inc."
+ROCE,-4.305921334752987
+ROCE (3yr avg),-9.053730507462165
+NFAT,21.18266276749612
+NFAT (3yr avg),18.865518350636776
+NPM,-14.608430882689282
+DPR,0.0
+Retention Ratio,100.0
+Dep,31.619047422685554
+SSGR,-307.21466831406923
+Av NPM (over 3 years),-14.608430882689282
+Au NFA/T (over 3 years),18.865518350636776
+Av Dep%NFA (over 3 years),31.619047422685554
+Au Retention ratio (over 3 years),100.0
+d/e,0.03414441121470848
+Interest coverage,-26.700939199209095
+tax %,1.9202273573507396
+cPAT,-957936000.0
+CFO,150191000.0
+cCFO,265678000.0
+cCFO/cPAT,-0.2773442067110955
+p/a,-4.497843284981193
+p/e,inf
+EY,-0.5111448108346841
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,31.929295771854328
+PEG,
+no. shares (cr),8.1356893
+Current Price,310.38
+market cap,25251552449.34
+d/e_market,0.001445455683298157
+p/s,11.678377
+NFA + CWIP,81370000.0
+Capex,17141000.0
+Capex_from_cashflow_statement,29550000.0
+FCF,133050000.0
+FCF%,-103.08200074377092
+FCF_capex_from_cashflow,120641000.0
+FCF%_capex_from_cashflow,-93.4679868600471
+DV,0.0
+Mcap (cr),2590.4848896
+d/e decreasing trend 5 yrs,True
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.8858719896664914
+Market Cap,25904848896
+Net Income,-129072000.0
+Total Revenue,2006443000.0
+Total Assets,3430293000.0
+Total Liabilities,648069000.0
+Total Stockholders Equity,1068989000.0
+Total Debt,36500000.0
+Cash and Cash Equivalents,81214000.0
+Current Assets,2923522000.0
+Current Liabilities,561987000.0
+Working Capital,2361535000.0
+Operating Cash Flow,150191000.0
+Capital Expenditure,29550000.0
+Dividends Paid,0
+Depreciation & Amortization,26973000.0
+Interest Expense,8092000.0
+Income Tax Expense,-2527000.0
+Shares Outstanding,81356893
+Net Fixed Assets,80984000.0
+Construction in Progress,386000.0
+Net Debt,-44714000.0
+3-5yr Average ROA (%),-9.20145454965167
+3-5yr Average ROE (%),-30.346323414862873
+ROE,-6.7029271037462745
+ROA,-4.0975660859993
+insidersPercentHeld,0.030079998
+institutionsPercentHeld,0.87131
+institutionsFloatPercentHeld,0.89833
+institutionsCount,1037.0
+current,310.38
+high,425.0
+low,240.0
+mean,348.59973
+median,365.0
+Normalized EBIT,-200364333.33333334
+Normalized Net Income,-217023333.33333334
+Research Asset,1386132200.0
+R&D Amortization,368657800.0
+Adjusted EBIT (R&D),104672200.0
+Adjusted Book Equity (R&D),2455121200.0
+Adjusted D/E (R&D),0.014866883150208633
+Adjusted Invested Capital (R&D),2410407200.0
+Adjusted ROC (R&D),4.259125005105326
+Adjusted ROE (R&D),-5.257255731407476

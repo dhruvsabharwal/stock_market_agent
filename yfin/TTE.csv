@@ -1,0 +1,95 @@
+,Value
+ticker,TTE
+longName,TotalEnergies SE
+ROCE,14.767601391202215
+ROCE (3yr avg),19.036118418508376
+NFAT,1.5202987591856403
+NFAT (3yr avg),1.615166152284769
+NPM,8.539345353525539
+DPR,44.258297748084125
+Retention Ratio,55.74170225191588
+Dep,10.524732878704002
+SSGR,-2.836580012861116
+Av NPM (over 3 years),8.539345353525539
+Au NFA/T (over 3 years),1.615166152284769
+Av Dep%NFA (over 3 years),10.524732878704002
+Au Retention ratio (over 3 years),55.741702251915875
+d/e,0.4389094926896953
+Interest coverage,10.196700507614214
+tax %,40.19622472580765
+cPAT,73700000000.0
+CFO,30854000000.0
+cCFO,149310000000.0
+cCFO/cPAT,2.0259158751696065
+p/a,5.55535969878796
+p/e,10.813406
+EY,12.178613589445344
+Earnings Growth 5yr cagr,4.243178148186066
+Sales Growth 5yr cagr,1.9435590302241623
+PEG,2.548421400742429
+no. shares (cr),216.7712421
+Current Price,59.69
+market cap,129390754409.48999
+d/e_market,0.3960406617448517
+p/s,0.72781026
+NFA + CWIP,133327000000.0
+Capex,11895000000.0
+Capex_from_cashflow_statement,14909000000.0
+FCF,18959000000.0
+FCF%,120.31349155984262
+FCF_capex_from_cashflow,15945000000.0
+FCF%_capex_from_cashflow,101.18669881964718
+DV,5.964104649685856
+Mcap (cr),13618.712576
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,True
+p/b <3,True
+DV >3%,True
+EY >7,True
+sgr > Sales growth (very linear),False
+FCF/CFO,0.614474622415246
+Market Cap,136187125760
+Net Income,15758000000.0
+Total Revenue,195610000000.0
+Total Assets,285487000000.0
+Total Liabilities,165232000000.0
+Total Stockholders Equity,116753000000.0
+Total Debt,51244000000.0
+Cash and Cash Equivalents,71000000.0
+Current Assets,96571000000.0
+Current Liabilities,87960000000.0
+Working Capital,8611000000.0
+Operating Cash Flow,30854000000.0
+Capital Expenditure,14909000000.0
+Dividends Paid,7717000000.0
+Depreciation & Amortization,13107000000.0
+Interest Expense,2364000000.0
+Income Tax Expense,10775000000.0
+Shares Outstanding,2167712421
+Net Fixed Assets,128945000000.0
+Construction in Progress,4382000000.0
+Net Debt,51173000000.0
+3-5yr Average ROA (%),6.2881780417027215
+3-5yr Average ROE (%),16.21780319467178
+ROE,13.433300228889525
+ROA,5.537467868243546
+insidersPercentHeld,5e-05
+institutionsPercentHeld,0.07169
+institutionsFloatPercentHeld,0.0717
+institutionsCount,929.0
+current,59.69
+high,76.0
+low,62.5
+mean,68.79
+median,67.2
+Normalized EBIT,37165333333.333336
+Normalized Net Income,19222666666.666668

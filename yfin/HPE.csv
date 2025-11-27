@@ -1,0 +1,103 @@
+,Value
+ticker,HPE
+longName,Hewlett Packard Enterprise Company
+ROCE,5.506855969440703
+ROCE (3yr avg),6.330076881483243
+NFAT,4.2912897941742045
+NFAT (3yr avg),4.304195407741504
+NPM,6.185624122727037
+DPR,42.774463333837986
+Retention Ratio,57.225536666162014
+Dep,37.57803934020214
+SSGR,-22.34223523631473
+Av NPM (over 3 years),6.185624122727037
+Au NFA/T (over 3 years),4.304195407741504
+Av Dep%NFA (over 3 years),37.57803934020214
+Au Retention ratio (over 3 years),57.22553666616201
+d/e,0.9355112831649514
+Interest coverage,21.316239316239315
+tax %,12.665086352861495
+cPAT,8899000000.0
+CFO,4341000000.0
+cCFO,19233000000.0
+cCFO/cPAT,2.1612540734914036
+p/a,4.512449040295348
+p/e,28.229885
+EY,7.9584780316206905
+Earnings Growth 5yr cagr,-9.375746951057328
+Sales Growth 5yr cagr,2.73546060371912
+PEG,-3.0109478367285116
+no. shares (cr),131.9450062
+Current Price,24.56
+market cap,32405693522.719997
+d/e_market,0.611497482258998
+p/s,0.97976404
+NFA + CWIP,7072000000.0
+Capex,2667000000.0
+Capex_from_cashflow_statement,2367000000.0
+FCF,1674000000.0
+FCF%,64.90887941062428
+FCF_capex_from_cashflow,1974000000.0
+FCF%_capex_from_cashflow,76.5412950756107
+DV,2.086053179284834
+Mcap (cr),3240.5694464
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),False
+FCF/CFO,0.38562543192812715
+Market Cap,32405694464
+Net Income,2579000000.0
+Total Revenue,30127000000.0
+Total Assets,71262000000.0
+Total Liabilities,46382000000.0
+Total Stockholders Equity,21182000000.0
+Total Debt,19816000000.0
+Cash and Cash Equivalents,3380000000.0
+Current Assets,33457000000.0
+Current Liabilities,25973000000.0
+Working Capital,7484000000.0
+Operating Cash Flow,4341000000.0
+Capital Expenditure,2367000000.0
+Dividends Paid,676000000.0
+Depreciation & Amortization,2564000000.0
+Interest Expense,117000000.0
+Income Tax Expense,374000000.0
+Shares Outstanding,1319450062
+Net Fixed Assets,7072000000.0
+Construction in Progress,0
+Net Debt,16436000000.0
+3-5yr Average ROA (%),2.527978314170709
+3-5yr Average ROE (%),7.1124775828049795
+ROE,9.866978511913462
+ROA,3.5440512443557703
+insidersPercentHeld,0.00415
+institutionsPercentHeld,0.88238996
+institutionsFloatPercentHeld,0.88607
+institutionsCount,1449.0
+current,24.56
+high,30.0
+low,21.0
+mean,25.81833
+median,26.0
+Normalized EBIT,2387666666.6666665
+Normalized Net Income,1824000000.0
+Research Asset,6143800000.0
+R&D Amortization,1723800000.0
+Adjusted EBIT (R&D),3016200000.0
+Adjusted Book Equity (R&D),27325800000.0
+Adjusted D/E (R&D),0.7251754751919431
+Adjusted Invested Capital (R&D),43761800000.0
+Adjusted ROC (R&D),6.0193951469660565
+Adjusted ROE (R&D),9.437967049455095

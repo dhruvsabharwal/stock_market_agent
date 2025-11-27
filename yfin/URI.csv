@@ -1,0 +1,95 @@
+,Value
+ticker,URI
+longName,"United Rentals, Inc."
+ROCE,16.42109500805153
+ROCE (3yr avg),16.292705154206512
+NFAT,0.9214832607716559
+NFAT (3yr avg),0.9046157738224809
+NPM,17.258332427073675
+DPR,11.20118128317686
+Retention Ratio,88.79881871682313
+Dep,16.751678190575063
+SSGR,-2.888264762249912
+Av NPM (over 3 years),17.258332427073675
+Au NFA/T (over 3 years),0.9046157738224809
+Av Dep%NFA (over 3 years),16.751678190575063
+Au Retention ratio (over 3 years),88.79881871682313
+d/e,1.8190651906519064
+Interest coverage,5.88712011577424
+tax %,23.996458087367177
+cPAT,8490000000.0
+CFO,4546000000.0
+cCFO,17372000000.0
+cCFO/cPAT,2.0461719670200234
+p/a,10.062917659932003
+p/e,24.572973
+EY,4.192173055361595
+Earnings Growth 5yr cagr,26.57374367069203
+Sales Growth 5yr cagr,16.455444005794572
+PEG,0.9247087389911621
+no. shares (cr),6.4341222
+Current Price,954.66
+market cap,61423990994.52
+d/e_market,0.24076911578929178
+p/s,3.9001837
+NFA + CWIP,17302000000.0
+Capex,4202000000.0
+Capex_from_cashflow_statement,4127000000.0
+FCF,344000000.0
+FCF%,13.359223300970873
+FCF_capex_from_cashflow,419000000.0
+FCF%_capex_from_cashflow,16.271844660194173
+DV,0.7065643130201679
+Mcap (cr),6142.3992832
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.07567091948966125
+Market Cap,61423992832
+Net Income,2575000000.0
+Total Revenue,15345000000.0
+Total Assets,28163000000.0
+Total Liabilities,19541000000.0
+Total Stockholders Equity,8130000000.0
+Total Debt,14789000000.0
+Cash and Cash Equivalents,90000000.0
+Current Assets,3249000000.0
+Current Liabilities,3323000000.0
+Working Capital,-74000000.0
+Operating Cash Flow,4546000000.0
+Capital Expenditure,4127000000.0
+Dividends Paid,434000000.0
+Depreciation & Amortization,2903000000.0
+Interest Expense,691000000.0
+Income Tax Expense,813000000.0
+Shares Outstanding,64341222
+Net Fixed Assets,17302000000.0
+Construction in Progress,0
+Net Debt,14699000000.0
+3-5yr Average ROA (%),8.904431303960761
+3-5yr Average ROE (%),29.510488556248163
+ROE,30.742597898758355
+ROA,9.58103884506623
+insidersPercentHeld,0.00521
+institutionsPercentHeld,0.9501
+institutionsFloatPercentHeld,0.95507
+institutionsCount,1807.0
+current,954.66
+high,1150.0
+low,620.0
+mean,951.9583
+median,952.0
+Normalized EBIT,3724000000.0
+Normalized Net Income,2368000000.0

@@ -1,0 +1,103 @@
+,Value
+ticker,GDDY
+longName,GoDaddy Inc.
+ROCE,16.682318945277224
+ROCE (3yr avg),13.253319480837026
+NFAT,20.23987607877849
+NFAT (3yr avg),16.11840854600349
+NPM,20.470772821490296
+DPR,0.0
+Retention Ratio,100.0
+Dep,60.812861330016936
+SSGR,269.1434182591882
+Av NPM (over 3 years),20.470772821490296
+Au NFA/T (over 3 years),16.11840854600349
+Av Dep%NFA (over 3 years),60.812861330016936
+Au Retention ratio (over 3 years),100.0
+d/e,62.61575562700965
+Interest coverage,5.893240682248894
+tax %,-22.406584792265484
+cPAT,2906200000.0
+CFO,1287700000.0
+cCFO,4144300000.0
+cCFO/cPAT,1.4260202326061524
+p/a,12.384829938267524
+p/e,25.245388
+EY,4.945634706374966
+Earnings Growth 5yr cagr,66.3605492079474
+Sales Growth 5yr cagr,6.222207895005072
+PEG,0.380427653196345
+no. shares (cr),13.8449017
+Current Price,136.83
+market cap,18943978996.11
+d/e_market,0.20559038841838595
+p/s,4.1195874
+NFA + CWIP,205800000.0
+Capex,95000000.0
+Capex_from_cashflow_statement,26600000.0
+FCF,1192700000.0
+FCF%,127.30280712989648
+FCF_capex_from_cashflow,1261100000.0
+FCF%_capex_from_cashflow,134.60347956025188
+DV,0.0
+Mcap (cr),1957.6690688
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9262250524190417
+Market Cap,19576690688
+Net Income,936900000.0
+Total Revenue,4573200000.0
+Total Assets,8235400000.0
+Total Liabilities,7543300000.0
+Total Stockholders Equity,62200000.0
+Total Debt,3894700000.0
+Cash and Cash Equivalents,19100000.0
+Current Assets,1951800000.0
+Current Liabilities,2698400000.0
+Working Capital,-746600000.0
+Operating Cash Flow,1287700000.0
+Capital Expenditure,26600000.0
+Dividends Paid,0
+Depreciation & Amortization,135300000.0
+Interest Expense,158300000.0
+Income Tax Expense,-171500000.0
+Shares Outstanding,138449017
+Net Fixed Assets,205800000.0
+Construction in Progress,0
+Net Debt,3875600000.0
+3-5yr Average ROA (%),11.903767284994602
+3-5yr Average ROE (%),-650.7643233507783
+ROE,-1019.8813056379821
+ROA,18.91267264623342
+insidersPercentHeld,0.00664
+institutionsPercentHeld,0.98305
+institutionsFloatPercentHeld,0.98962
+institutionsCount,1173.0
+current,136.83
+high,250.0
+low,150.0
+mean,189.29411
+median,186.0
+Normalized EBIT,669766666.6666666
+Normalized Net Income,887966666.6666666
+Research Asset,2245000000.0
+R&D Amortization,630860000.0
+Adjusted EBIT (R&D),1107240000.0
+Adjusted Book Equity (R&D),2307200000.0
+Adjusted D/E (R&D),1.6880634535367545
+Adjusted Invested Capital (R&D),6182800000.0
+Adjusted ROC (R&D),21.921049839132436
+Adjusted ROE (R&D),40.60766296809986

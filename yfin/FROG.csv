@@ -1,0 +1,103 @@
+,Value
+ticker,FROG
+longName,JFrog Ltd.
+ROCE,-11.213565881453636
+ROCE (3yr avg),-11.808872894147461
+NFAT,13.886474486736992
+NFAT (3yr avg),12.300466500308367
+NPM,-21.95653323156904
+DPR,0.0
+Retention Ratio,100.0
+Dep,60.72659384851416
+SSGR,-330.8021953263365
+Av NPM (over 3 years),-21.95653323156904
+Au NFA/T (over 3 years),12.300466500308367
+Av Dep%NFA (over 3 years),60.72659384851416
+Au Retention ratio (over 3 years),100.0
+d/e,0.02057948265630821
+Interest coverage,inf
+tax %,-5.189911880887268
+cPAT,-284879000.0
+CFO,110924000.0
+cCFO,234406000.0
+cCFO/cPAT,-0.8228265333703081
+p/a,-7.118973097693089
+p/e,inf
+EY,-1.253052323145799
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,27.510114493404146
+PEG,
+no. shares (cr),11.6741766
+Current Price,47.33
+market cap,5525387784.78
+d/e_market,0.002529415227379642
+p/s,12.324736
+NFA + CWIP,19870000.0
+Capex,12240000.0
+Capex_from_cashflow_statement,3143000.0
+FCF,98684000.0
+FCF%,-142.53278641169334
+FCF_capex_from_cashflow,107781000.0
+FCF%_capex_from_cashflow,-155.67190478941592
+DV,0.0
+Mcap (cr),585.1303936
+d/e decreasing trend 5 yrs,True
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.8896541776351375
+Market Cap,5851303936
+Net Income,-69236000.0
+Total Revenue,428488000.0
+Total Assets,1129906000.0
+Total Liabilities,356380000.0
+Total Stockholders Equity,679123000.0
+Total Debt,13976000.0
+Cash and Cash Equivalents,20043000.0
+Current Assets,649227000.0
+Current Liabilities,317515000.0
+Working Capital,331712000.0
+Operating Cash Flow,110924000.0
+Capital Expenditure,3143000.0
+Dividends Paid,0
+Depreciation & Amortization,21460000.0
+Interest Expense,0
+Income Tax Expense,3416000.0
+Shares Outstanding,116741766
+Net Fixed Assets,19870000.0
+Construction in Progress,0
+Net Debt,-6067000.0
+3-5yr Average ROA (%),-7.806351333566527
+3-5yr Average ROE (%),-10.814786759601112
+ROE,-9.532378434157184
+ROA,-6.5861832461181224
+insidersPercentHeld,0.13013
+institutionsPercentHeld,0.76716006
+institutionsFloatPercentHeld,0.88192004
+institutionsCount,398.0
+current,47.33
+high,60.0
+low,48.0
+mean,54.875
+median,55.0
+Normalized EBIT,-85495333.33333333
+Normalized Net Income,-73558666.66666667
+Research Asset,373107800.0
+R&D Amortization,99255400.0
+Adjusted EBIT (R&D),-29489400.0
+Adjusted Book Equity (R&D),1052230800.0
+Adjusted D/E (R&D),0.013282257086563137
+Adjusted Invested Capital (R&D),1046163800.0
+Adjusted ROC (R&D),-2.965106790562087
+Adjusted ROE (R&D),-6.5799252407361575

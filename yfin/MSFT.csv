@@ -22,16 +22,16 @@ CFO,136162000000.0
 cCFO,431327000000.0
 cCFO/cPAT,1.2872858264168061
 p/a,19.882732645661637
-p/e,37.39105
-EY,2.6881079524689757
+p/e,37.597366
+EY,2.6674870312690406
 Earnings Growth 5yr cagr,12.197439102494666
 Sales Growth 5yr cagr,12.423114652863054
-PEG,3.0654836384756075
-no. shares (cr),743.316992
-Current Price,509.64
-market cap,3788240718028.8
-d/e_market,0.01599370380864466
-p/s,13.446639
+PEG,3.082398336574638
+no. shares (cr),743.3166379
+Current Price,513.58
+market cap,3817525588926.8203
+d/e_market,0.015871013458493267
+p/s,13.550588
 NFA + CWIP,229789000000.0
 Capex,109390000000.0
 Capex_from_cashflow_statement,64551000000.0
@@ -39,8 +39,8 @@ FCF,26772000000.0
 FCF%,26.2903605939194
 FCF_capex_from_cashflow,71611000000.0
 FCF%_capex_from_cashflow,70.3226883494383
-DV,0.6357040587571477
-Mcap (cr),378824.0846848
+DV,0.630827467662631
+Mcap (cr),381752.573952
 d/e decreasing trend 5 yrs,True
 Sales cagr >15%,False
 npm >8%,True
@@ -57,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),True
 FCF/CFO,0.19661873356736828
-Market Cap,3788240846848
+Market Cap,3817525739520
 Net Income,101832000000.0
 Total Revenue,281724000000.0
 Total Assets,619003000000.0
@@ -74,7 +74,7 @@ Dividends Paid,24082000000.0
 Depreciation & Amortization,34153000000.0
 Interest Expense,2385000000.0
 Income Tax Expense,21795000000.0
-Shares Outstanding,7433169920
+Shares Outstanding,7433166379
 Net Fixed Assets,229789000000.0
 Construction in Progress,0
 Net Debt,34865000000.0
@@ -82,14 +82,14 @@ Net Debt,34865000000.0
 3-5yr Average ROE (%),38.228391164931004
 ROE,33.280824111537434
 ROA,18.004784443662558
-insidersPercentHeld,0.00066
-institutionsPercentHeld,0.74503
-institutionsFloatPercentHeld,0.74552
-institutionsCount,7550.0
-current,509.64
-high,700.0
+insidersPercentHeld,0.00068000006
+institutionsPercentHeld,0.76137
+institutionsFloatPercentHeld,0.76189005
+institutionsCount,7503.0
+current,513.58
+high,710.0
 low,483.0
-mean,613.8916
+mean,621.031
 median,630.0
 Normalized EBIT,109337666666.66667
 Normalized Net Income,87443000000.0

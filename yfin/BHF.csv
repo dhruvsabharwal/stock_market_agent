@@ -1,0 +1,95 @@
+,Value
+ticker,BHF
+longName,"Brighthouse Financial, Inc."
+ROCE,
+ROCE (3yr avg),0.8320993464732263
+NFAT,0
+NFAT (3yr avg),0.0
+NPM,13.078546446672282
+DPR,6.5990337668232995
+Retention Ratio,93.4009662331767
+Dep,0.0
+SSGR,0.0
+Av NPM (over 3 years),13.078546446672282
+Au NFA/T (over 3 years),0.0
+Av Dep%NFA (over 3 years),0.0
+Au Retention ratio (over 3 years),93.4009662331767
+d/e,0.6382763503944973
+Interest coverage,0.0
+tax %,6.872037914691943
+cPAT,4798000000.0
+CFO,-290000000.0
+cCFO,-1014000000.0
+cCFO/cPAT,-0.2113380575239683
+p/a,0.16417026318016417
+p/e,6.372149
+EY,12.78988263773698
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,6.814684382628267
+PEG,
+no. shares (cr),5.7152371
+Current Price,53.08
+market cap,3033647852.68
+d/e_market,1.0400020546922724
+p/s,0.39527026
+NFA + CWIP,0
+Capex,0
+Capex_from_cashflow_statement,0
+FCF,-290000000.0
+FCF%,-74.74226804123711
+FCF_capex_from_cashflow,-290000000.0
+FCF%_capex_from_cashflow,-74.74226804123711
+DV,3.362288734662814
+Mcap (cr),318.6273536
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,False
+cCFO > PAT,False
+p/e <10,True
+peg <1,False
+EY >7%,True
+p/b <3,True
+DV >3%,True
+EY >7,True
+sgr > Sales growth (very linear),False
+FCF/CFO,1.0
+Market Cap,3186273536
+Net Income,388000000.0
+Total Revenue,4369000000.0
+Total Assets,238537000000.0
+Total Liabilities,233513000000.0
+Total Stockholders Equity,4943000000.0
+Total Debt,3155000000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,-290000000.0
+Capital Expenditure,0
+Dividends Paid,102000000.0
+Depreciation & Amortization,0
+Interest Expense,152000000.0
+Income Tax Expense,29000000.0
+Shares Outstanding,57152371
+Net Fixed Assets,0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),0.559193359464307
+3-5yr Average ROE (%),7.281455321836301
+ROE,-21.229476899579993
+ROA,-0.4822338877722052
+insidersPercentHeld,0.01149
+institutionsPercentHeld,0.86857
+institutionsFloatPercentHeld,0.87867
+institutionsCount,565.0
+current,53.08
+high,72.0
+low,42.0
+mean,56.22222
+median,52.0
+Normalized EBIT,1379333333.3333333
+Normalized Net Income,1051666666.6666666

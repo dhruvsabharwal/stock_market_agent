@@ -1,0 +1,95 @@
+,Value
+ticker,BGC
+longName,"BGC Group, Inc."
+ROCE,10.091342966179118
+ROCE (3yr avg),7.747106083884707
+NFAT,7.2712968317755005
+NFAT (3yr avg),6.416842012384478
+NPM,3.4439812185562713
+DPR,35.11188275352723
+Retention Ratio,64.88811724647276
+Dep,25.474505272243615
+SSGR,-11.134566590244996
+Av NPM (over 3 years),3.4439812185562713
+Au NFA/T (over 3 years),6.416842012384478
+Av Dep%NFA (over 3 years),25.474505272243615
+Au Retention ratio (over 3 years),64.88811724647276
+d/e,1.6683339302641673
+Interest coverage,2.032401866593467
+tax %,28.828771593422776
+cPAT,335972000.0
+CFO,315350000.0
+cCFO,1362100000.0
+cCFO/cPAT,4.054206898193897
+p/a,3.9984420345869585
+p/e,31.533333
+EY,3.67911025597432
+Earnings Growth 5yr cagr,-7.63945873616807
+Sales Growth 5yr cagr,3.4451981966802547
+PEG,-4.127692038011717
+no. shares (cr),36.4862092
+Current Price,9.46
+market cap,3451595390.32
+d/e_market,0.42780622669191304
+p/s,1.8147428
+NFA + CWIP,304468000.0
+Capex,83437000.0
+Capex_from_cashflow_statement,72055000.0
+FCF,231913000.0
+FCF%,182.62591740951902
+FCF_capex_from_cashflow,243295000.0
+FCF%_capex_from_cashflow,191.58896903644438
+DV,0.989832125046167
+Mcap (cr),448.9390592
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,True
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.7354146186776598
+Market Cap,4489390592
+Net Income,126988000.0
+Total Revenue,2206595000.0
+Total Assets,3591967000.0
+Total Liabilities,2512728000.0
+Total Stockholders Equity,885083000.0
+Total Debt,1476614000.0
+Cash and Cash Equivalents,0
+Current Assets,1853678000.0
+Current Liabilities,973703000.0
+Working Capital,879975000.0
+Operating Cash Flow,315350000.0
+Capital Expenditure,72055000.0
+Dividends Paid,34165000.0
+Depreciation & Amortization,81434000.0
+Interest Expense,91075000.0
+Income Tax Expense,49915000.0
+Shares Outstanding,364862092
+Net Fixed Assets,304468000.0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),1.3392481264378544
+3-5yr Average ROE (%),6.11045232666882
+ROE,4.6651247034851115
+ROA,1.1603114299554562
+insidersPercentHeld,0.01296
+institutionsPercentHeld,0.84389997
+institutionsFloatPercentHeld,0.85498
+institutionsCount,457.0
+current,9.46
+high,15.0
+low,14.0
+mean,14.5
+median,14.5
+Normalized EBIT,184847000.0
+Normalized Net Income,70655000.0

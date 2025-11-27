@@ -22,16 +22,16 @@ CFO,115877000000.0
 cCFO,293902000000.0
 cCFO/cPAT,2.4427710593026637
 p/a,11.22431581460025
-p/e,35.35878
-EY,2.3987134426399273
+p/e,33.573395
+EY,2.530133358406445
 Earnings Growth 5yr cagr,19.726033125687415
 Sales Growth 5yr cagr,10.735398559596486
-PEG,1.7924931877943309
-no. shares (cr),1066.4899584
-Current Price,231.6
-market cap,2469990743654.4
-d/e_market,0.052996150020518246
-p/s,3.6863441
+PEG,1.70198411338367
+no. shares (cr),1066.4912097
+Current Price,219.57
+market cap,2341694749138.29
+d/e_market,0.05589968549409325
+p/s,3.498211
 NFA + CWIP,375442000000.0
 Capex,122707000000.0
 Capex_from_cashflow_statement,82999000000.0
@@ -40,7 +40,7 @@ FCF%,-11.527815284904133
 FCF_capex_from_cashflow,32878000000.0
 FCF%_capex_from_cashflow,55.49216851201728
 DV,0.0
-Mcap (cr),246999.0760448
+Mcap (cr),234393.43616
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,False
 npm >8%,False
@@ -57,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),False
 FCF/CFO,-0.05894180898711565
-Market Cap,2469990760448
+Market Cap,2343934361600
 Net Income,59248000000.0
 Total Revenue,637959000000.0
 Total Assets,624894000000.0
@@ -74,7 +74,7 @@ Dividends Paid,0
 Depreciation & Amortization,52795000000.0
 Interest Expense,2406000000.0
 Income Tax Expense,9265000000.0
-Shares Outstanding,10664899584
+Shares Outstanding,10664912097
 Net Fixed Assets,328806000000.0
 Construction in Progress,46636000000.0
 Net Debt,0
@@ -82,15 +82,15 @@ Net Debt,0
 3-5yr Average ROE (%),7.787396927484549
 ROE,17.48975333268184
 ROA,6.143182077455582
-insidersPercentHeld,0.08449
-institutionsPercentHeld,0.66345
-institutionsFloatPercentHeld,0.72468
-institutionsCount,7108.0
-current,231.6
+insidersPercentHeld,0.08445
+institutionsPercentHeld,0.6632
+institutionsFloatPercentHeld,0.72438
+institutionsCount,7118.0
+current,219.57
 high,306.0
-low,225.0
-mean,262.7742
-median,262.0
+low,230.0
+mean,266.0
+median,265.0
 Normalized EBIT,36063333333.333336
 Normalized Net Income,28983666666.666668
 Research Asset,8548000000.0

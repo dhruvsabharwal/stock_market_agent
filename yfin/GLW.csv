@@ -1,0 +1,103 @@
+,Value
+ticker,GLW
+longName,Corning Incorporated
+ROCE,5.0052594670406725
+ROCE (3yr avg),6.109535901585793
+NFAT,0.8843198058514224
+NFAT (3yr avg),0.8480522453350692
+NPM,5.915864160616529
+DPR,145.30202697450784
+Retention Ratio,-45.30202697450785
+Dep,8.86529009012945
+SSGR,-11.138075516350092
+Av NPM (over 3 years),5.915864160616529
+Au NFA/T (over 3 years),0.8480522453350692
+Av Dep%NFA (over 3 years),8.86529009012945
+Au Retention ratio (over 3 years),-45.30202697450783
+d/e,0.7004588347329236
+Interest coverage,3.4498480243161094
+tax %,27.183271832718326
+cPAT,4309000000.0
+CFO,1939000000.0
+cCFO,9971000000.0
+cCFO/cPAT,2.3139939661174287
+p/a,1.775438596491228
+p/e,87.26595
+EY,0.7200957519348052
+Earnings Growth 5yr cagr,-23.151354047655527
+Sales Growth 5yr cagr,-2.336017707358451
+PEG,-3.769367002049592
+no. shares (cr),85.6618711
+Current Price,82.03
+market cap,70268432863.33
+d/e_market,0.11514416460285593
+p/s,4.9463906
+NFA + CWIP,15974000000.0
+Capex,-133000000.0
+Capex_from_cashflow_statement,965000000.0
+FCF,2072000000.0
+FCF%,409.4861660079052
+FCF_capex_from_cashflow,974000000.0
+FCF%_capex_from_cashflow,192.4901185770751
+DV,1.4031905363788892
+Mcap (cr),7026.8428288
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,1.068592057761733
+Market Cap,70268428288
+Net Income,506000000.0
+Total Revenue,13118000000.0
+Total Assets,27735000000.0
+Total Liabilities,16665000000.0
+Total Stockholders Equity,11551000000.0
+Total Debt,8091000000.0
+Cash and Cash Equivalents,828000000.0
+Current Assets,7992000000.0
+Current Liabilities,4919000000.0
+Working Capital,3073000000.0
+Operating Cash Flow,1939000000.0
+Capital Expenditure,965000000.0
+Dividends Paid,986000000.0
+Depreciation & Amortization,1350000000.0
+Interest Expense,329000000.0
+Income Tax Expense,221000000.0
+Shares Outstanding,856618711
+Net Fixed Assets,14155000000.0
+Construction in Progress,1819000000.0
+Net Debt,7263000000.0
+3-5yr Average ROA (%),3.2078333074789116
+3-5yr Average ROE (%),7.872664573171511
+ROE,4.932297635723079
+ROA,2.0034828186692875
+insidersPercentHeld,0.08239
+institutionsPercentHeld,0.74415
+institutionsFloatPercentHeld,0.81096
+institutionsCount,1924.0
+current,82.03
+high,93.0
+low,47.0
+mean,74.83333
+median,75.0
+Normalized EBIT,1458666666.6666667
+Normalized Net Income,801000000.0
+Research Asset,2976000000.0
+R&D Amortization,841400000.0
+Adjusted EBIT (R&D),1389600000.0
+Adjusted Book Equity (R&D),14527000000.0
+Adjusted D/E (R&D),0.5569628966751566
+Adjusted Invested Capital (R&D),21790000000.0
+Adjusted ROC (R&D),4.643695523692273
+Adjusted ROE (R&D),3.483169271012597

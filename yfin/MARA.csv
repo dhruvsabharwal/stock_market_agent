@@ -1,5 +1,6 @@
 ,Value
 ticker,MARA
+longName,"MARA Holdings, Inc."
 ROCE,9.386933129738209
 ROCE (3yr avg),-12.01815699111988
 NFAT,0.5864235363489355
@@ -21,16 +22,16 @@ CFO,-677022000.0
 cCFO,-1188115000.0
 cCFO/cPAT,-15.117697955236604
 p/a,27.1853510821091
-p/e,8.5161295
-EY,9.223721475054678
+p/e,8.493023
+EY,8.001302802908402
 Earnings Growth 5yr cagr,
 Sales Growth 5yr cagr,60.362924074132685
 PEG,
-no. shares (cr),37.0457984
-Current Price,15.84
-market cap,5868054466.56
-d/e_market,0.4215487456867672
-p/s,7.3496757
+no. shares (cr),37.045788
+Current Price,18.26
+market cap,6764560888.8
+d/e_market,0.3656809422908184
+p/s,8.472541
 NFA + CWIP,1637761000.0
 Capex,1392171000.0
 Capex_from_cashflow_statement,253458000.0
@@ -39,7 +40,7 @@ FCF%,-382.2968186781413
 FCF_capex_from_cashflow,-930480000.0
 FCF%_capex_from_cashflow,-171.91221111014627
 DV,0.0
-Mcap (cr),586.8054528
+Mcap (cr),676.4560896
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,False
@@ -56,7 +57,7 @@ DV >3%,False
 EY >7,True
 sgr > Sales growth (very linear),False
 FCF/CFO,3.056315747494173
-Market Cap,5868054528
+Market Cap,6764560896
 Net Income,541253000.0
 Total Revenue,656378000.0
 Total Assets,6801317000.0
@@ -73,22 +74,22 @@ Dividends Paid,0
 Depreciation & Amortization,426625000.0
 Interest Expense,12996000.0
 Income Tax Expense,75495000.0
-Shares Outstanding,370457984
+Shares Outstanding,370457880
 Net Fixed Assets,1566365000.0
 Construction in Progress,71396000.0
 Net Debt,2433734000.0
-3-5yr Average ROA (%),-7.959991346522198
-3-5yr Average ROE (%),-28.341981021618878
-ROE,18.842727026186807
-ROA,12.311991528941835
-insidersPercentHeld,0.00684
-institutionsPercentHeld,0.63053
-institutionsFloatPercentHeld,0.63487
-institutionsCount,510.0
-current,15.84
-high,34.0
+3-5yr Average ROA (%),-18.095982784254215
+3-5yr Average ROE (%),-51.93433504552172
+ROE,26.093007410101194
+ROA,16.393924205413505
+insidersPercentHeld,0.0066500003
+institutionsPercentHeld,0.62994
+institutionsFloatPercentHeld,0.63416
+institutionsCount,509.0
+current,18.26
+high,28.0
 low,18.0
-mean,23.86818
+mean,23.14091
 median,23.0
 Normalized EBIT,71391666.66666667
 Normalized Net Income,36134666.666666664

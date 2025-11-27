@@ -1,0 +1,103 @@
+,Value
+ticker,ENPH
+longName,"Enphase Energy, Inc."
+ROCE,4.983964612090355
+ROCE (3yr avg),14.053953607243814
+NFAT,7.385641560864038
+NFAT (3yr avg),13.997052862504304
+NPM,14.641760247107149
+DPR,0.0
+Retention Ratio,100.0
+Dep,47.66848427434517
+SSGR,157.2730079045277
+Av NPM (over 3 years),14.641760247107149
+Au NFA/T (over 3 years),13.997052862504304
+Av Dep%NFA (over 3 years),47.66848427434517
+Au Retention ratio (over 3 years),100.0
+d/e,1.3299746651159385
+Interest coverage,10.156765861875352
+tax %,14.564868216280097
+cPAT,1084405000.0
+CFO,513693000.0
+cCFO,2307318000.0
+cCFO/cPAT,2.1277271867982903
+p/a,3.034514805149967
+p/e,28.312
+EY,2.2185436500260605
+Earnings Growth 5yr cagr,-11.32612279448817
+Sales Growth 5yr cagr,-1.2619797304100677
+PEG,-2.4997080213343588
+no. shares (cr),13.0750771
+Current Price,35.39
+market cap,4627269785.690001
+d/e_market,0.28271422687426623
+p/s,3.2184577
+NFA + CWIP,191436000.0
+Capex,54942000.0
+Capex_from_cashflow_statement,33604000.0
+FCF,458751000.0
+FCF%,446.8731126653549
+FCF_capex_from_cashflow,480089000.0
+FCF%_capex_from_cashflow,467.6586335210115
+DV,0.0
+Mcap (cr),477.24032
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8930450677739428
+Market Cap,4772403200
+Net Income,102658000.0
+Total Revenue,1330383000.0
+Total Assets,3249676000.0
+Total Liabilities,2416660000.0
+Total Stockholders Equity,983624000.0
+Total Debt,1308195000.0
+Cash and Cash Equivalents,220735000.0
+Current Assets,2327084000.0
+Current Liabilities,660091000.0
+Working Capital,1666993000.0
+Operating Cash Flow,513693000.0
+Capital Expenditure,33604000.0
+Dividends Paid,0
+Depreciation & Amortization,81389000.0
+Interest Expense,8905000.0
+Income Tax Expense,17501000.0
+Shares Outstanding,130750771
+Net Fixed Assets,172131000.0
+Construction in Progress,19305000.0
+Net Debt,1087460000.0
+3-5yr Average ROA (%),14.482554212225288
+3-5yr Average ROE (%),55.904998354244285
+ROE,48.52274241003053
+ROA,13.574027583724376
+insidersPercentHeld,0.03291
+institutionsPercentHeld,0.96022004
+institutionsFloatPercentHeld,0.9929
+institutionsCount,831.0
+current,35.39
+high,85.0
+low,27.0
+mean,42.67031
+median,40.0
+Normalized EBIT,370842666.6666667
+Normalized Net Income,312985333.3333333
+Research Asset,526701800.0
+R&D Amortization,140604600.0
+Adjusted EBIT (R&D),189774400.0
+Adjusted Book Equity (R&D),1510325800.0
+Adjusted D/E (R&D),0.8661674189767532
+Adjusted Invested Capital (R&D),2597785800.0
+Adjusted ROC (R&D),6.2412385475262715
+Adjusted ROE (R&D),6.7970764983290355

@@ -1,0 +1,103 @@
+,Value
+ticker,NVMI
+longName,Nova Ltd.
+ROCE,18.712981145329437
+ROCE (3yr avg),17.553288766462945
+NFAT,5.564602824524453
+NFAT (3yr avg),5.797027378778391
+NPM,26.071805767872707
+DPR,0.0
+Retention Ratio,100.0
+Dep,15.83976463199904
+SSGR,135.29920721855143
+Av NPM (over 3 years),26.071805767872707
+Au NFA/T (over 3 years),5.797027378778391
+Av Dep%NFA (over 3 years),15.83976463199904
+Au Retention ratio (over 3 years),100.0
+d/e,0.31447934870636374
+Interest coverage,
+tax %,15.037889470934454
+cPAT,553386000.0
+CFO,235266000.0
+cCFO,610598000.0
+cCFO/cPAT,1.1033853404314529
+p/a,16.207520327533697
+p/e,42.005257
+EY,1.9386822162118682
+Earnings Growth 5yr cagr,24.370822135030966
+Sales Growth 5yr cagr,17.346807566376988
+PEG,1.7235880171486315
+no. shares (cr),2.9652464
+Current Price,319.66
+market cap,9478706642.240002
+d/e_market,0.024908039557621116
+p/s,11.744373
+NFA + CWIP,132939000.0
+Capex,41588000.0
+Capex_from_cashflow_statement,17215000.0
+FCF,193678000.0
+FCF%,105.39611018600145
+FCF_capex_from_cashflow,218051000.0
+FCF%_capex_from_cashflow,118.65946169501855
+DV,0.0
+Mcap (cr),947.87072
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8232298759701784
+Market Cap,9478707200
+Net Income,183762000.0
+Total Revenue,672396000.0
+Total Assets,1390422000.0
+Total Liabilities,462627000.0
+Total Stockholders Equity,750752000.0
+Total Debt,236096000.0
+Cash and Cash Equivalents,7335000.0
+Current Assets,901949000.0
+Current Liabilities,388230000.0
+Working Capital,513719000.0
+Operating Cash Flow,235266000.0
+Capital Expenditure,17215000.0
+Dividends Paid,0
+Depreciation & Amortization,17379000.0
+Interest Expense,
+Income Tax Expense,32525000.0
+Shares Outstanding,29652464
+Net Fixed Assets,132939000.0
+Construction in Progress,0
+Net Debt,228761000.0
+3-5yr Average ROA (%),14.272428376165756
+3-5yr Average ROE (%),23.408464069525586
+ROE,20.379527776843346
+ROA,12.872111778015327
+insidersPercentHeld,0.0
+institutionsPercentHeld,0.77138
+institutionsFloatPercentHeld,0.77138
+institutionsCount,354.0
+current,319.66
+high,350.0
+low,280.0
+mean,306.66666
+median,302.5
+Normalized EBIT,156578000.0
+Normalized Net Income,153428333.33333334
+Research Asset,261309000.0
+R&D Amortization,70923000.0
+Adjusted EBIT (R&D),226874000.0
+Adjusted Book Equity (R&D),1012061000.0
+Adjusted D/E (R&D),0.23328238120034267
+Adjusted Invested Capital (R&D),1240822000.0
+Adjusted ROC (R&D),15.534616459227202
+Adjusted ROE (R&D),18.157205939167696

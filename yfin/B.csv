@@ -1,0 +1,103 @@
+,Value
+ticker,B
+longName,Barrick Mining Corporation
+ROCE,11.183976524986662
+ROCE (3yr avg),7.728136352180918
+NFAT,0.4687063602894503
+NFAT (3yr avg),0.4453658652073052
+NPM,10.558442508968144
+DPR,117.35915548045934
+Retention Ratio,-17.359155480459343
+Dep,7.52813117926928
+SSGR,-8.344422878568627
+Av NPM (over 3 years),10.558442508968144
+Au NFA/T (over 3 years),0.4453658652073052
+Av Dep%NFA (over 3 years),7.52813117926928
+Au Retention ratio (over 3 years),-17.35915548045934
+d/e,0.22518315410650785
+Interest coverage,9.891252955082741
+tax %,32.98611111111111
+cPAT,5870000000.0
+CFO,4491000000.0
+cCFO,16082000000.0
+cCFO/cPAT,2.7396933560477
+p/a,4.6800986662591955
+p/e,20.610064
+EY,3.835048791855787
+Earnings Growth 5yr cagr,2.2865019087619176
+Sales Growth 5yr cagr,2.540925466888888
+PEG,9.01379698001644
+no. shares (cr),170.599379
+Current Price,32.77
+market cap,55905416498.3
+d/e_market,0.09401593493467358
+p/s,4.2538347
+NFA + CWIP,28641000000.0
+Capex,4058000000.0
+Capex_from_cashflow_statement,3174000000.0
+FCF,433000000.0
+FCF%,20.19589552238806
+FCF_capex_from_cashflow,1317000000.0
+FCF%_capex_from_cashflow,61.427238805970156
+DV,1.2449598689979606
+Mcap (cr),5880.5010432
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.09641505232687597
+Market Cap,58805010432
+Net Income,2144000000.0
+Total Revenue,12922000000.0
+Total Assets,47626000000.0
+Total Liabilities,14370000000.0
+Total Stockholders Equity,23341000000.0
+Total Debt,5256000000.0
+Cash and Cash Equivalents,103000000.0
+Current Assets,7632000000.0
+Current Liabilities,2642000000.0
+Working Capital,4990000000.0
+Operating Cash Flow,4491000000.0
+Capital Expenditure,3174000000.0
+Dividends Paid,696000000.0
+Depreciation & Amortization,1915000000.0
+Interest Expense,423000000.0
+Income Tax Expense,1520000000.0
+Shares Outstanding,1705993790
+Net Fixed Assets,28641000000.0
+Construction in Progress,0
+Net Debt,5153000000.0
+3-5yr Average ROA (%),1.8512247691715318
+3-5yr Average ROE (%),3.684982983124453
+ROE,5.517002081887578
+ROA,2.7719665271966525
+insidersPercentHeld,0.00801
+institutionsPercentHeld,0.62726
+institutionsFloatPercentHeld,0.63233
+institutionsCount,1140.0
+current,32.77
+high,39.6
+low,21.0
+mean,33.57857
+median,36.0
+Normalized EBIT,3405666666.6666665
+Normalized Net Income,1282666666.6666667
+Research Asset,25200000.0
+R&D Amortization,10000000.0
+Adjusted EBIT (R&D),5031000000.0
+Adjusted Book Equity (R&D),23366200000.0
+Adjusted D/E (R&D),0.22494029837971086
+Adjusted Invested Capital (R&D),28519200000.0
+Adjusted ROC (R&D),11.821750785435778
+Adjusted ROE (R&D),9.175646874545283

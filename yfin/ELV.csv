@@ -22,16 +22,16 @@ CFO,5808000000.0
 cCFO,30632000000.0
 cCFO/cPAT,1.2753237020691952
 p/a,5.489864864864865
-p/e,13.164123
-EY,8.555384305661216
-Earnings Growth 5yr cagr,0.7377876617618684
+p/e,13.714771
+EY,8.218845187691887
+Earnings Growth 5yr cagr,1.3559523566173626
 Sales Growth 5yr cagr,8.44440135469926
-PEG,17.84269876316922
-no. shares (cr),22.5178
-Current Price,310.41
-market cap,69897502980.0
-d/e_market,0.4468256900240988
-p/s,0.36933172
+PEG,10.114493280732713
+no. shares (cr),22.5178304
+Current Price,323.12
+market cap,72759613588.48
+d/e_market,0.4292491185652057
+p/s,0.38445485
 NFA + CWIP,4652000000.0
 Capex,1686000000.0
 Capex_from_cashflow_statement,1256000000.0
@@ -39,8 +39,8 @@ FCF,4122000000.0
 FCF%,68.92976588628763
 FCF_capex_from_cashflow,4552000000.0
 FCF%_capex_from_cashflow,76.12040133779264
-DV,2.1574447379493495
-Mcap (cr),6989.750272
+DV,2.0725783516788234
+Mcap (cr),7275.9615488
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,False
 npm >8%,False
@@ -57,7 +57,7 @@ DV >3%,False
 EY >7,True
 sgr > Sales growth (very linear),True
 FCF/CFO,0.7097107438016529
-Market Cap,69897502720
+Market Cap,72759615488
 Net Income,5980000000.0
 Total Revenue,176810000000.0
 Total Assets,116889000000.0
@@ -74,7 +74,7 @@ Dividends Paid,1508000000.0
 Depreciation & Amortization,1393000000.0
 Interest Expense,1185000000.0
 Income Tax Expense,1933000000.0
-Shares Outstanding,225178000
+Shares Outstanding,225178304
 Net Fixed Assets,4652000000.0
 Construction in Progress,0
 Net Debt,0
@@ -82,14 +82,14 @@ Net Debt,0
 3-5yr Average ROE (%),16.076463764765585
 ROE,15.849316337741067
 ROA,5.656571382680706
-insidersPercentHeld,0.0016300001
-institutionsPercentHeld,0.9327
-institutionsFloatPercentHeld,0.93421
-institutionsCount,2181.0
-current,310.41
+insidersPercentHeld,0.0016699999
+institutionsPercentHeld,0.93174005
+institutionsFloatPercentHeld,0.9333
+institutionsCount,2184.0
+current,323.12
 high,507.0
 low,297.0
-mean,368.44443
-median,345.0
+mean,370.44443
+median,362.5
 Normalized EBIT,8761666666.666666
 Normalized Net Income,5953666666.666667

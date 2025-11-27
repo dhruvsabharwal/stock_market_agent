@@ -1,0 +1,95 @@
+,Value
+ticker,ALK
+longName,"Alaska Air Group, Inc."
+ROCE,5.042942083241577
+ROCE (3yr avg),3.644830397060097
+NFAT,1.0835641735918744
+NFAT (3yr avg),1.1348378333916678
+NPM,2.073755029441919
+DPR,-1
+Retention Ratio,101.0
+Dep,5.131763851836106
+SSGR,-2.7548544305931952
+Av NPM (over 3 years),2.073755029441919
+Au NFA/T (over 3 years),1.1348378333916678
+Av Dep%NFA (over 3 years),5.131763851836106
+Au Retention ratio (over 3 years),-1
+d/e,1.5543398978847556
+Interest coverage,6.443661971830986
+tax %,27.522935779816514
+cPAT,1166000000.0
+CFO,1464000000.0
+cCFO,4962000000.0
+cCFO/cPAT,4.25557461406518
+p/a,2.7030726065831794
+p/e,20.828451
+EY,6.8813481788634085
+Earnings Growth 5yr cagr,-6.424894618072175
+Sales Growth 5yr cagr,23.858343920919122
+PEG,-3.241835428928746
+no. shares (cr),11.5310451
+Current Price,49.78
+market cap,5740154250.78
+d/e_market,1.11373313689807
+p/s,0.43630517
+NFA + CWIP,12960000000.0
+Capex,3469000000.0
+Capex_from_cashflow_statement,1281000000.0
+FCF,-2005000000.0
+FCF%,-507.5949367088608
+FCF_capex_from_cashflow,183000000.0
+FCF%_capex_from_cashflow,46.32911392405064
+DV,
+Mcap (cr),586.6995712
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,-1.369535519125683
+Market Cap,5866995712
+Net Income,395000000.0
+Total Revenue,11735000000.0
+Total Assets,19768000000.0
+Total Liabilities,15396000000.0
+Total Stockholders Equity,4113000000.0
+Total Debt,6393000000.0
+Cash and Cash Equivalents,192000000.0
+Current Assets,3760000000.0
+Current Liabilities,6145000000.0
+Working Capital,-2385000000.0
+Operating Cash Flow,1464000000.0
+Capital Expenditure,1281000000.0
+Dividends Paid,
+Depreciation & Amortization,583000000.0
+Interest Expense,142000000.0
+Income Tax Expense,150000000.0
+Shares Outstanding,115310451
+Net Fixed Assets,12077000000.0
+Construction in Progress,883000000.0
+Net Debt,6201000000.0
+3-5yr Average ROA (%),1.0221348271745194
+3-5yr Average ROE (%),3.7252583992901553
+ROE,5.927607516710808
+ROA,1.6320011111496928
+insidersPercentHeld,0.00583
+institutionsPercentHeld,0.92434
+institutionsFloatPercentHeld,0.92976
+institutionsCount,631.0
+current,49.78
+high,96.0
+low,58.0
+mean,71.0
+median,69.0
+Normalized EBIT,425666666.6666667
+Normalized Net Income,229333333.33333334

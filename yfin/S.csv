@@ -1,0 +1,103 @@
+,Value
+ticker,S
+longName,"SentinelOne, Inc."
+ROCE,-15.695744509980635
+ROCE (3yr avg),-18.756119366794685
+NFAT,14.784849084789691
+NFAT (3yr avg),12.983017394330368
+NPM,-59.77855361234213
+DPR,0.0
+Retention Ratio,100.0
+Dep,62.88817255096266
+SSGR,-838.9941739079111
+Av NPM (over 3 years),-59.77855361234213
+Au NFA/T (over 3 years),12.983017394330368
+Av Dep%NFA (over 3 years),62.88817255096266
+Au Retention ratio (over 3 years),100.0
+d/e,
+Interest coverage,-1926.076023391813
+tax %,-2.4267862659664
+cPAT,-1276913000.0
+CFO,33728000.0
+cCFO,-323521000.0
+cCFO/cPAT,0.25336181869868973
+p/a,-12.425266228627724
+p/e,inf
+EY,-5.101785637353051
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,58.88627106177393
+PEG,
+no. shares (cr),32.1052037
+Current Price,17.61
+market cap,5653726371.57
+d/e_market,
+p/s,6.704098
+NFA + CWIP,71906000.0
+Capex,65834000.0
+Capex_from_cashflow_statement,27136000.0
+FCF,-32106000.0
+FCF%,11.13087251812329
+FCF_capex_from_cashflow,6592000.0
+FCF%_capex_from_cashflow,-2.2853893863909778
+DV,0.0
+Mcap (cr),608.3171328
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,-0.9519093927893738
+Market Cap,6083171328
+Net Income,-288441000.0
+Total Revenue,821461000.0
+Total Assets,2406625000.0
+Total Liabilities,737378000.0
+Total Stockholders Equity,1594043000.0
+Total Debt,
+Cash and Cash Equivalents,47023000.0
+Current Assets,1069722000.0
+Current Liabilities,613553000.0
+Working Capital,456169000.0
+Operating Cash Flow,33728000.0
+Capital Expenditure,27136000.0
+Dividends Paid,0
+Depreciation & Amortization,42766000.0
+Interest Expense,171000.0
+Income Tax Expense,6834000.0
+Shares Outstanding,321052037
+Net Fixed Assets,71774000.0
+Construction in Progress,132000.0
+Net Debt,
+3-5yr Average ROA (%),-14.46847245135482
+3-5yr Average ROE (%),-19.459121549259635
+ROE,-17.677926264598
+ROA,-12.201313358285223
+insidersPercentHeld,0.00819
+institutionsPercentHeld,0.82751
+institutionsFloatPercentHeld,0.83435
+institutionsCount,601.0
+current,17.61
+high,30.0
+low,19.0
+mean,23.45455
+median,24.0
+Normalized EBIT,-331838333.3333333
+Normalized Net Income,-335270666.6666667
+Research Asset,620257200.0
+R&D Amortization,165692000.0
+Adjusted EBIT (R&D),-180126000.0
+Adjusted Book Equity (R&D),2214300200.0
+Adjusted D/E (R&D),
+Adjusted Invested Capital (R&D),
+Adjusted ROC (R&D),
+Adjusted ROE (R&D),-13.026282524835612

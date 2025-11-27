@@ -1,5 +1,6 @@
 ,Value
 ticker,IBKR
+longName,"Interactive Brokers Group, Inc."
 ROCE,23.797453075019614
 ROCE (3yr avg),21.256669203627055
 NFAT,
@@ -21,16 +22,16 @@ CFO,8724000000.0
 cCFO,23132000000.0
 cCFO/cPAT,11.322564855604503
 p/a,0.5886893669445072
-p/e,33.14136
-EY,2.678811976154969
+p/e,36.21579
+EY,2.4643047562499207
 Earnings Growth 5yr cagr,28.817976938346803
 Sales Growth 5yr cagr,46.87934139249845
-PEG,1.1500238226612036
-no. shares (cr),44.5247008
-Current Price,63.3
-market cap,28184135606.399998
-d/e_market,0.0004967333465717823
-p/s,19.087921
+PEG,1.256708271974819
+no. shares (cr),44.5246976
+Current Price,68.81
+market cap,30637444418.56
+d/e_market,0.00045695717334435614
+p/s,19.938292
 NFA + CWIP,
 Capex,
 Capex_from_cashflow_statement,49000000.0
@@ -38,8 +39,8 @@ FCF,
 FCF%,
 FCF_capex_from_cashflow,8675000000.0
 FCF%_capex_from_cashflow,1149.0066225165563
-DV,0.3264247706043141
-Mcap (cr),10759.8610432
+DV,0.30028614248343405
+Mcap (cr),11239.215104
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,True
@@ -56,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),False
 FCF/CFO,
-Market Cap,107598610432
+Market Cap,112392151040
 Net Income,755000000.0
 Total Revenue,9316000000.0
 Total Assets,150142000000.0
@@ -73,22 +74,22 @@ Dividends Paid,92000000.0
 Depreciation & Amortization,96000000.0
 Interest Expense,4191000000.0
 Income Tax Expense,288000000.0
-Shares Outstanding,445247008
+Shares Outstanding,445246976
 Net Fixed Assets,
 Construction in Progress,0
 Net Debt,0
-3-5yr Average ROA (%),0.458108287625439
-3-5yr Average ROE (%),17.451219487603048
-ROE,19.20142421159715
-ROA,0.5423986953694957
+3-5yr Average ROA (%),0.4159630837534106
+3-5yr Average ROE (%),16.576117125605997
+ROE,18.65671641791045
+ROA,0.49302776568033724
 insidersPercentHeld,0.028280001
-institutionsPercentHeld,0.86896
-institutionsFloatPercentHeld,0.89424
-institutionsCount,1091.0
-current,63.3
+institutionsPercentHeld,0.88918
+institutionsFloatPercentHeld,0.91506
+institutionsCount,1102.0
+current,68.81
 high,75.0
 low,46.0
-mean,66.22222
-median,68.0
+mean,66.0
+median,67.0
 Normalized EBIT,5802333333.333333
 Normalized Net Income,578333333.3333334

@@ -1,0 +1,103 @@
+,Value
+ticker,POWL
+longName,"Powell Industries, Inc."
+ROCE,35.742804874391446
+ROCE (3yr avg),18.54341941041086
+NFAT,9.939773586387691
+NFAT (3yr avg),7.3071549725811105
+NPM,8.39274078244822
+DPR,40.08335210958758
+Retention Ratio,59.91664789041242
+Dep,8.213676944620822
+SSGR,28.531440184400363
+Av NPM (over 3 years),8.39274078244822
+Au NFA/T (over 3 years),7.3071549725811105
+Av Dep%NFA (over 3 years),8.213676944620822
+Au Retention ratio (over 3 years),59.91664789041241
+d/e,0.003524372076307293
+Interest coverage,
+tax %,23.58124923503733
+cPAT,218741000.0
+CFO,108661000.0
+cCFO,257171000.0
+cCFO/cPAT,1.1756872282745348
+p/a,19.920185259530843
+p/e,20.320667
+EY,4.073490594001956
+Earnings Growth 5yr cagr,530.1284696434622
+Sales Growth 5yr cagr,29.094099463329126
+PEG,0.03833158972515976
+no. shares (cr),1.2068548
+Current Price,304.81
+market cap,3678614115.88
+d/e_market,0.0003305592708815852
+p/s,3.4017208
+NFA + CWIP,107954000.0
+Capex,11635000.0
+Capex_from_cashflow_statement,12233000.0
+FCF,97026000.0
+FCF%,64.74961294111367
+FCF_capex_from_cashflow,96428000.0
+FCF%_capex_from_cashflow,64.35054188244087
+DV,0.34396105711058367
+Mcap (cr),367.8614016
+d/e decreasing trend 5 yrs,True
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.8929238641278839
+Market Cap,3678614016
+Net Income,149848000.0
+Total Revenue,1012356000.0
+Total Assets,928180000.0
+Total Liabilities,445107000.0
+Total Stockholders Equity,345026000.0
+Total Debt,1216000.0
+Cash and Cash Equivalents,7436000.0
+Current Assets,776481000.0
+Current Liabilities,428015000.0
+Working Capital,348466000.0
+Operating Cash Flow,108661000.0
+Capital Expenditure,12233000.0
+Dividends Paid,12653000.0
+Depreciation & Amortization,6871000.0
+Interest Expense,
+Income Tax Expense,46240000.0
+Shares Outstanding,12068548
+Net Fixed Assets,104637000.0
+Construction in Progress,3317000.0
+Net Debt,-6220000.0
+3-5yr Average ROA (%),7.422361220055339
+3-5yr Average ROE (%),14.492796846119397
+ROE,36.19084191624432
+ROA,17.83456774548298
+insidersPercentHeld,0.2156
+institutionsPercentHeld,1.06855
+institutionsFloatPercentHeld,1.3622501
+institutionsCount,500.0
+current,304.81
+high,280.0
+low,224.78
+mean,245.92667
+median,233.0
+Normalized EBIT,82839000.0
+Normalized Net Income,72703333.33333333
+Research Asset,21248800.0
+R&D Amortization,5856000.0
+Adjusted EBIT (R&D),182344000.0
+Adjusted Book Equity (R&D),366274800.0
+Adjusted D/E (R&D),0.0033199117165581687
+Adjusted Invested Capital (R&D),360054800.0
+Adjusted ROC (R&D),38.701055199059574
+Adjusted ROE (R&D),40.91135944924412

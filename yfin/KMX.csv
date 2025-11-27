@@ -1,0 +1,95 @@
+,Value
+ticker,KMX
+longName,"CarMax, Inc."
+ROCE,6.111587073595085
+ROCE (3yr avg),5.386977788089401
+NFAT,6.456925887785596
+NFAT (3yr avg),6.6644314826087605
+NPM,1.7794282596990374
+DPR,0.0
+Retention Ratio,100.0
+Dep,6.656385084630368
+SSGR,5.202492630351616
+Av NPM (over 3 years),1.7794282596990374
+Au NFA/T (over 3 years),6.6644314826087605
+Av Dep%NFA (over 3 years),6.656385084630368
+Au Retention ratio (over 3 years),100.0
+d/e,3.164767836621258
+Interest coverage,-0.25313927366522754
+tax %,25.218716385801365
+cPAT,2615819000.0
+CFO,624439000.0
+cCFO,-183062000.0
+cCFO/cPAT,-0.0699826708193495
+p/a,1.8404961437186884
+p/e,13.158357
+EY,7.596915769073057
+Earnings Growth 5yr cagr,-23.133599304965678
+Sales Growth 5yr cagr,-6.168880669385879
+PEG,-0.5687985179710245
+no. shares (cr),14.6845043
+Current Price,44.87
+market cap,6588937079.41
+d/e_market,2.917310754122608
+p/s,0.23299077
+NFA + CWIP,4635324000.0
+Capex,626526000.0
+Capex_from_cashflow_statement,467939000.0
+FCF,-2087000.0
+FCF%,-0.4169363667601627
+FCF_capex_from_cashflow,156500000.0
+FCF%_capex_from_cashflow,31.26523306083635
+DV,0.0
+Mcap (cr),658.8936704
+d/e decreasing trend 5 yrs,True
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,True
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,-0.003342199958682914
+Market Cap,6588936704
+Net Income,500556000.0
+Total Revenue,26353420000.0
+Total Assets,27404206000.0
+Total Liabilities,21161218000.0
+Total Stockholders Equity,6073740000.0
+Total Debt,19221977000.0
+Cash and Cash Equivalents,148203000.0
+Current Assets,5077636000.0
+Current Liabilities,2197971000.0
+Working Capital,2879665000.0
+Operating Cash Flow,624439000.0
+Capital Expenditure,467939000.0
+Dividends Paid,0
+Depreciation & Amortization,294801000.0
+Interest Expense,871141000.0
+Income Tax Expense,168804000.0
+Shares Outstanding,146845043
+Net Fixed Assets,4335188000.0
+Construction in Progress,300136000.0
+Net Debt,19073774000.0
+3-5yr Average ROA (%),2.461533481234927
+3-5yr Average ROE (%),11.814053626780455
+ROE,8.128067779040018
+ROA,1.833504780122812
+insidersPercentHeld,0.00416
+institutionsPercentHeld,1.11064
+institutionsFloatPercentHeld,1.11527
+institutionsCount,994.0
+current,44.87
+high,111.0
+low,35.0
+mean,61.35714
+median,56.5
+Normalized EBIT,1337682666.6666667
+Normalized Net Income,488174000.0

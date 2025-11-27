@@ -1,5 +1,6 @@
 ,Value
 ticker,VITL
+longName,"Vital Farms, Inc."
 ROCE,24.41142010591055
 ROCE (3yr avg),13.961384166818299
 NFAT,8.864137426900585
@@ -21,16 +22,16 @@ CFO,64824000.0
 cCFO,125314000.0
 cCFO/cPAT,1.5164944211825642
 p/a,19.401260275167346
-p/e,45.74107
-EY,2.3321034677794974
+p/e,37.752293
+EY,2.9033709386850957
 Earnings Growth 5yr cagr,175.16060407455223
 Sales Growth 5yr cagr,32.45619634309311
-PEG,0.26113788680776406
-no. shares (cr),4.4686
-Current Price,51.23
-market cap,2289263780.0
-d/e_market,0.008172933221352062
-p/s,3.4794047
+PEG,0.21552958897042734
+no. shares (cr),4.468598
+Current Price,41.15
+market cap,1838828077.0
+d/e_market,0.010174958841462153
+p/s,2.8729017
 NFA + CWIP,118594000.0
 Capex,52936000.0
 Capex_from_cashflow_statement,28646000.0
@@ -39,7 +40,7 @@ FCF%,22.267176144451938
 FCF_capex_from_cashflow,36178000.0
 FCF%_capex_from_cashflow,67.76429160110887
 DV,0.0
-Mcap (cr),228.9263872
+Mcap (cr),189.0217088
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,False
@@ -56,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),False
 FCF/CFO,0.18338886832037518
-Market Cap,2289263872
+Market Cap,1890217088
 Net Income,53388000.0
 Total Revenue,606307000.0
 Total Assets,359332000.0
@@ -73,7 +74,7 @@ Dividends Paid,0
 Depreciation & Amortization,13093000.0
 Interest Expense,1010000.0
 Income Tax Expense,14150000.0
-Shares Outstanding,44686000
+Shares Outstanding,44685980
 Net Fixed Assets,104138000.0
 Construction in Progress,14456000.0
 Net Debt,10970000.0
@@ -81,14 +82,14 @@ Net Debt,10970000.0
 3-5yr Average ROE (%),10.022779305986433
 ROE,23.1127388907288
 ROA,16.82810357598777
-insidersPercentHeld,0.22504999
-institutionsPercentHeld,0.94118
-institutionsFloatPercentHeld,1.2145
+insidersPercentHeld,0.21651
+institutionsPercentHeld,0.94161004
+institutionsFloatPercentHeld,1.20181
 institutionsCount,339.0
-current,51.23
+current,41.15
 high,60.0
 low,48.0
-mean,51.6
-median,51.0
+mean,53.684
+median,52.5
 Normalized EBIT,34825333.333333336
 Normalized Net Income,26735000.0

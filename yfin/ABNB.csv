@@ -1,0 +1,103 @@
+,Value
+ticker,ABNB
+longName,"Airbnb, Inc."
+ROCE,23.643267271716983
+ROCE (3yr avg),20.432784706784073
+NFAT,38.954385964912284
+NFAT (3yr avg),33.41208488101612
+NPM,31.570340181403253
+DPR,0.0
+Retention Ratio,100.0
+Dep,20.9034688317289
+SSGR,1033.9274170318706
+Av NPM (over 3 years),31.570340181403253
+Au NFA/T (over 3 years),33.41208488101612
+Av Dep%NFA (over 3 years),20.9034688317289
+Au Retention ratio (over 3 years),100.0
+d/e,0.28095529699938765
+Interest coverage,
+tax %,20.50435304713299
+cPAT,8981000000.0
+CFO,4518000000.0
+cCFO,14145000000.0
+cCFO/cPAT,1.5749916490368556
+p/a,12.826350205860985
+p/e,30.054455
+EY,5.082646760346108
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,22.82208702894919
+PEG,
+no. shares (cr),42.9079558
+Current Price,121.42
+market cap,52098839932.36
+d/e_market,0.044031690590007444
+p/s,6.54003
+NFA + CWIP,307000000.0
+Capex,11000000.0
+Capex_from_cashflow_statement,
+FCF,4507000000.0
+FCF%,170.20392749244712
+FCF_capex_from_cashflow,
+FCF%_capex_from_cashflow,
+DV,0.0
+Mcap (cr),7573.3549056
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9975652943780434
+Market Cap,75733549056
+Net Income,2648000000.0
+Total Revenue,11102000000.0
+Total Assets,20959000000.0
+Total Liabilities,12547000000.0
+Total Stockholders Equity,8165000000.0
+Total Debt,2294000000.0
+Cash and Cash Equivalents,491000000.0
+Current Assets,17180000000.0
+Current Liabilities,10161000000.0
+Working Capital,7019000000.0
+Operating Cash Flow,4518000000.0
+Capital Expenditure,
+Dividends Paid,0
+Depreciation & Amortization,65000000.0
+Interest Expense,
+Income Tax Expense,683000000.0
+Shares Outstanding,429079558
+Net Fixed Assets,291000000.0
+Construction in Progress,16000000.0
+Net Debt,1803000000.0
+3-5yr Average ROA (%),19.427152673212763
+3-5yr Average ROE (%),53.23079038018722
+ROE,69.8287795992714
+ROA,26.12654363056457
+insidersPercentHeld,0.01501
+institutionsPercentHeld,0.81913
+institutionsFloatPercentHeld,0.83161
+institutionsCount,1730.0
+current,121.42
+high,180.0
+low,98.0
+mean,138.14285
+median,140.0
+Normalized EBIT,1987333333.3333333
+Normalized Net Income,3111000000.0
+Research Asset,4904800000.0
+R&D Amortization,1341000000.0
+Adjusted EBIT (R&D),3268000000.0
+Adjusted Book Equity (R&D),13069800000.0
+Adjusted D/E (R&D),0.1755191357174555
+Adjusted Invested Capital (R&D),14872800000.0
+Adjusted ROC (R&D),17.467576666261188
+Adjusted ROE (R&D),20.260447749774286

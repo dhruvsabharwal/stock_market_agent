@@ -1,0 +1,95 @@
+,Value
+ticker,NUE
+longName,Nucor Corporation
+ROCE,10.806891551289578
+ROCE (3yr avg),23.110846422770653
+NFAT,2.5302762112542707
+NFAT (3yr avg),3.523960040729816
+NPM,12.651736689060144
+DPR,14.717802990740738
+Retention Ratio,85.28219700925926
+Dep,11.484998496479148
+SSGR,26.537399180919856
+Av NPM (over 3 years),12.651736689060144
+Au NFA/T (over 3 years),3.523960040729816
+Av Dep%NFA (over 3 years),11.484998496479148
+Au Retention ratio (over 3 years),85.28219700925926
+d/e,0.3319006685768863
+Interest coverage,13.06578947368421
+tax %,20.08959338387319
+cPAT,20986461000.0
+CFO,3979000000.0
+cCFO,27393776000.0
+cCFO/cPAT,1.3053070739273287
+p/a,5.7357102433503115
+p/e,24.758684
+EY,6.520623238125632
+Earnings Growth 5yr cagr,-28.55945919379087
+Sales Growth 5yr cagr,-5.55641692266734
+PEG,-0.8669171160419872
+no. shares (cr),22.9535447
+Current Price,135.43
+market cap,31085985587.210003
+d/e_market,0.22357341640341954
+p/s,1.0292064
+NFA + CWIP,17001000000.0
+Capex,5185000000.0
+Capex_from_cashflow_statement,3173000000.0
+FCF,-1206000000.0
+FCF%,-59.49679329057721
+FCF_capex_from_cashflow,806000000.0
+FCF%_capex_from_cashflow,39.76319684262457
+DV,1.67921328579259
+Mcap (cr),3170.5731072
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,-0.30309122895199797
+Market Cap,31705731072
+Net Income,2027000000.0
+Total Revenue,30734000000.0
+Total Assets,33940000000.0
+Total Liabilities,12523000000.0
+Total Stockholders Equity,20940000000.0
+Total Debt,6950000000.0
+Cash and Cash Equivalents,555000000.0
+Current Assets,12475000000.0
+Current Liabilities,4977000000.0
+Working Capital,7498000000.0
+Operating Cash Flow,3979000000.0
+Capital Expenditure,3173000000.0
+Dividends Paid,522000000.0
+Depreciation & Amortization,1356000000.0
+Interest Expense,228000000.0
+Income Tax Expense,583000000.0
+Shares Outstanding,229535447
+Net Fixed Assets,13243000000.0
+Construction in Progress,3758000000.0
+Net Debt,6395000000.0
+3-5yr Average ROA (%),19.71966758875736
+3-5yr Average ROE (%),34.953885706076576
+ROE,22.99598619671646
+ROA,13.344301710385597
+insidersPercentHeld,0.03265
+institutionsPercentHeld,0.77357
+institutionsFloatPercentHeld,0.79968
+institutionsCount,1614.0
+current,135.43
+high,174.0
+low,140.0
+mean,159.83333
+median,160.0
+Normalized EBIT,6718333333.333333
+Normalized Net Income,4719666666.666667

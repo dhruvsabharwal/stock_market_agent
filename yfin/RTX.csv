@@ -1,0 +1,103 @@
+,Value
+ticker,RTX
+longName,RTX Corporation
+ROCE,7.331046497009752
+ROCE (3yr avg),6.097782874189723
+NFAT,4.569342652593452
+NFAT (3yr avg),4.177284411377242
+NPM,6.098973797630856
+DPR,76.31718736506937
+Retention Ratio,23.682812634930627
+Dep,24.468812401751492
+SSGR,-18.43510713586951
+Av NPM (over 3 years),6.098973797630856
+Au NFA/T (over 3 years),4.177284411377242
+Av Dep%NFA (over 3 years),24.468812401751492
+Au Retention ratio (over 3 years),23.682812634930627
+d/e,0.7172982373992441
+Interest coverage,3.318781725888325
+tax %,19.066838876331936
+cPAT,17030000000.0
+CFO,7159000000.0
+cCFO,29281000000.0
+cCFO/cPAT,1.7193775689958897
+p/a,2.9492985068172413
+p/e,35.830833
+EY,2.13145739925551
+Earnings Growth 5yr cagr,11.68203045122782
+Sales Growth 5yr cagr,7.834488811442708
+PEG,3.0671751070666025
+no. shares (cr),133.8541827
+Current Price,167.33
+market cap,223978203911.91
+d/e_market,0.19150524136210012
+p/s,2.6791973
+NFA + CWIP,17953000000.0
+Capex,4931000000.0
+Capex_from_cashflow_statement,3236000000.0
+FCF,2228000000.0
+FCF%,46.669459572685376
+FCF_capex_from_cashflow,3923000000.0
+FCF%_capex_from_cashflow,82.17427733556765
+DV,1.4363004720161239
+Mcap (cr),22397.820928
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.31121665037016344
+Market Cap,223978209280
+Net Income,4774000000.0
+Total Revenue,80738000000.0
+Total Assets,162861000000.0
+Total Liabilities,100903000000.0
+Total Stockholders Equity,59798000000.0
+Total Debt,42893000000.0
+Cash and Cash Equivalents,7241000000.0
+Current Assets,51133000000.0
+Current Liabilities,51499000000.0
+Working Capital,-366000000.0
+Operating Cash Flow,7159000000.0
+Capital Expenditure,3236000000.0
+Dividends Paid,3217000000.0
+Depreciation & Amortization,4364000000.0
+Interest Expense,1970000000.0
+Income Tax Expense,1181000000.0
+Shares Outstanding,1338541827
+Net Fixed Assets,17953000000.0
+Construction in Progress,0
+Net Debt,35652000000.0
+3-5yr Average ROA (%),2.61885916672407
+3-5yr Average ROE (%),5.979513658709687
+ROE,4.825190666767349
+ROA,1.9923113617869068
+insidersPercentHeld,0.00079
+institutionsPercentHeld,0.83335
+institutionsFloatPercentHeld,0.83401
+institutionsCount,3488.0
+current,167.33
+high,180.0
+low,134.0
+mean,165.22221
+median,172.0
+Normalized EBIT,7023333333.333333
+Normalized Net Income,4388666666.666667
+Research Asset,7897400000.0
+R&D Amortization,2236400000.0
+Adjusted EBIT (R&D),8861600000.0
+Adjusted Book Equity (R&D),67695400000.0
+Adjusted D/E (R&D),0.6336176461029849
+Adjusted Invested Capital (R&D),103347400000.0
+Adjusted ROC (R&D),6.939674347042082
+Adjusted ROE (R&D),7.052177843693959

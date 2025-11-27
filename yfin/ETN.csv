@@ -1,0 +1,103 @@
+,Value
+ticker,ETN
+longName,Eaton Corporation plc
+ROCE,15.384615384615385
+ROCE (3yr avg),13.003430675588334
+NFAT,6.3022165927802405
+NFAT (3yr avg),6.362516298605266
+NPM,13.662473452118599
+DPR,45.05026510591157
+Retention Ratio,54.94973489408843
+Dep,23.42152278578278
+SSGR,24.345023418811472
+Av NPM (over 3 years),13.662473452118599
+Au NFA/T (over 3 years),6.362516298605266
+Av Dep%NFA (over 3 years),23.42152278578278
+Au Retention ratio (over 3 years),54.94973489408843
+d/e,0.5159172094977936
+Interest coverage,35.63076923076923
+tax %,16.819973718791065
+cPAT,11618000000.0
+CFO,4327000000.0
+cCFO,12647000000.0
+cCFO/cPAT,1.0885694611809262
+p/a,9.871981681931723
+p/e,36.76326
+EY,2.604060763019317
+Earnings Growth 5yr cagr,21.03808196736361
+Sales Growth 5yr cagr,8.22139755779765
+PEG,1.747462532802699
+no. shares (cr),38.93
+Current Price,374.25
+market cap,145695525000.0
+d/e_market,0.06740769834900558
+p/s,5.6060457
+NFA + CWIP,4535000000.0
+Capex,1278000000.0
+Capex_from_cashflow_statement,808000000.0
+FCF,3049000000.0
+FCF%,80.36373220875066
+FCF_capex_from_cashflow,3519000000.0
+FCF%_capex_from_cashflow,92.75171323141804
+DV,1.0295443185368938
+Mcap (cr),14569.5522816
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.7046452507510977
+Market Cap,145695522816
+Net Income,3794000000.0
+Total Revenue,24878000000.0
+Total Assets,38381000000.0
+Total Liabilities,19850000000.0
+Total Stockholders Equity,19036000000.0
+Total Debt,9821000000.0
+Cash and Cash Equivalents,875000000.0
+Current Assets,11801000000.0
+Current Liabilities,7857000000.0
+Working Capital,3944000000.0
+Operating Cash Flow,4327000000.0
+Capital Expenditure,808000000.0
+Dividends Paid,1500000000.0
+Depreciation & Amortization,921000000.0
+Interest Expense,130000000.0
+Income Tax Expense,768000000.0
+Shares Outstanding,389300000
+Net Fixed Assets,4535000000.0
+Construction in Progress,0
+Net Debt,8946000000.0
+3-5yr Average ROA (%),8.018577391563682
+3-5yr Average ROE (%),16.46142087117536
+ROE,20.221724762818464
+ROA,9.878536185281138
+insidersPercentHeld,0.00185
+institutionsPercentHeld,0.87213
+institutionsFloatPercentHeld,0.87374
+institutionsCount,2987.0
+current,374.25
+high,495.0
+low,288.0
+mean,397.79
+median,402.5
+Normalized EBIT,3909666666.6666665
+Normalized Net Income,3158000000.0
+Research Asset,2042600000.0
+R&D Amortization,565800000.0
+Adjusted EBIT (R&D),4924200000.0
+Adjusted Book Equity (R&D),21078600000.0
+Adjusted D/E (R&D),0.465922784245633
+Adjusted Invested Capital (R&D),30024600000.0
+Adjusted ROC (R&D),13.641983087665748
+Adjusted ROE (R&D),17.999297866082188

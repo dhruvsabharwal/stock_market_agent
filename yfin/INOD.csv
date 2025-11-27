@@ -1,5 +1,6 @@
 ,Value
 ticker,INOD
+longName,Innodata Inc.
 ROCE,32.91183749644997
 ROCE (3yr avg),-1.560022604163997
 NFAT,21.750797499043003
@@ -21,16 +22,16 @@ CFO,35015000.0
 cCFO,44853000.0
 cCFO/cPAT,3.1711679864253393
 p/a,48.22399084652791
-p/e,29.651163
-EY,2.3528557971953235
+p/e,54.659576
+EY,1.1677263795254422
 Earnings Growth 5yr cagr,
 Sales Growth 5yr cagr,34.694510483007754
 PEG,
-no. shares (cr),3.18456
-Current Price,38.25
-market cap,1218094200.0
-d/e_market,0.0038215435226602343
-p/s,5.3392167
+no. shares (cr),3.1845622
+Current Price,77.07
+market cap,2454342087.54
+d/e_market,0.0018966386241070948
+p/s,10.758006
 NFA + CWIP,8886000.0
 Capex,6913000.0
 Capex_from_cashflow_statement,7741000.0
@@ -39,7 +40,7 @@ FCF%,98.05303558967202
 FCF_capex_from_cashflow,27274000.0
 FCF%_capex_from_cashflow,95.16399162595953
 DV,0.0
-Mcap (cr),121.8094208
+Mcap (cr),245.4342144
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,False
@@ -56,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),False
 FCF/CFO,0.8025703270027131
-Market Cap,1218094208
+Market Cap,2454342144
 Net Income,28660000.0
 Total Revenue,170461000.0
 Total Assets,113449000.0
@@ -73,22 +74,22 @@ Dividends Paid,0
 Depreciation & Amortization,5796000.0
 Interest Expense,
 Income Tax Expense,-4190000.0
-Shares Outstanding,31845600
+Shares Outstanding,31845622
 Net Fixed Assets,8339000.0
 Construction in Progress,547000.0
 Net Debt,-1435000.0
-3-5yr Average ROA (%),3.0705589522510714
-3-5yr Average ROE (%),3.726876711696787
-ROE,64.27810485001402
-ROA,33.15594632114762
+3-5yr Average ROA (%),-11.972134732197201
+3-5yr Average ROE (%),-26.548737357461828
+ROE,-4.083100998291213
+ROA,-1.6897267220604244
 insidersPercentHeld,0.04417
-institutionsPercentHeld,0.58966
-institutionsFloatPercentHeld,0.61691004
-institutionsCount,285.0
-current,38.25
+institutionsPercentHeld,0.53096
+institutionsFloatPercentHeld,0.55549
+institutionsCount,286.0
+current,77.07
 high,75.0
 low,55.0
-mean,64.4
-median,60.0
+mean,67.8
+median,74.0
 Normalized EBIT,4727333.333333333
 Normalized Net Income,5272333.333333333

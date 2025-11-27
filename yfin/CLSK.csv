@@ -1,5 +1,6 @@
 ,Value
 ticker,CLSK
+longName,"CleanSpark, Inc."
 ROCE,-7.887084278288797
 ROCE (3yr avg),-11.95727135633368
 NFAT,0.40447845623472406
@@ -7,11 +8,11 @@ NFAT (3yr avg),0.38606191266664386
 NPM,-54.69473293921214
 DPR,-0.9704750194889743
 Retention Ratio,100.97047501948897
-Dep,18.61532163600773
-SSGR,-39.935796016453864
+Dep,17.501780112906438
+SSGR,-38.822254493352574
 Av NPM (over 3 years),-54.69473293921214
 Au NFA/T (over 3 years),0.38606191266664386
-Av Dep%NFA (over 3 years),18.61532163600773
+Av Dep%NFA (over 3 years),17.501780112906438
 Au Retention ratio (over 3 years),100.97047501948896
 d/e,0.09909304569699912
 Interest coverage,-24.131568228105905
@@ -21,16 +22,16 @@ CFO,-233662000.0
 cCFO,-201437210.0
 cCFO/cPAT,0.5548271359288296
 p/a,-19.14144053530958
-p/e,11.255815
-EY,-5.357708224759189
+p/e,14.646464
+EY,-3.576727352347195
 Earnings Growth 5yr cagr,
 Sales Growth 5yr cagr,112.87149197883903
 PEG,
-no. shares (cr),28.1083008
-Current Price,9.68
-market cap,2720883517.44
-d/e_market,0.0246074481214819
-p/s,4.305625
+no. shares (cr),28.1083382
+Current Price,14.5
+market cap,4075709039.0
+d/e_market,0.016427571094826624
+p/s,6.4495497
 NFA + CWIP,1612135000.0
 Capex,967868000.0
 Capex_from_cashflow_statement,806396000.0
@@ -38,8 +39,8 @@ FCF,-1201530000.0
 FCF%,824.2246719304143
 FCF_capex_from_cashflow,-1040058000.0
 FCF%_capex_from_cashflow,713.4582272923712
-DV,0.12573121848371954
-Mcap (cr),272.0883712
+DV,0.0839363155530691
+Mcap (cr),407.5709184
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,False
@@ -56,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),False
 FCF/CFO,5.142171170322945
-Market Cap,2720883712
+Market Cap,4075709184
 Net Income,-145777000.0
 Total Revenue,378968000.0
 Total Assets,1962662000.0
@@ -73,30 +74,22 @@ Dividends Paid,3421000.0
 Depreciation & Amortization,154609000.0
 Interest Expense,2455000.0
 Income Tax Expense,3344000.0
-Shares Outstanding,281083008
+Shares Outstanding,281083382
 Net Fixed Assets,1232818000.0
 Construction in Progress,379317000.0
 Net Debt,58959000.0
-3-5yr Average ROA (%),-16.11517514277463
-3-5yr Average ROE (%),-17.903649059218395
+3-5yr Average ROA (%),-13.804007870728405
+3-5yr Average ROE (%),-15.211416480152412
 ROE,-11.966054711884915
 ROA,-10.70221419551875
-insidersPercentHeld,0.02908
-institutionsPercentHeld,0.63921
-institutionsFloatPercentHeld,0.65835
-institutionsCount,429.0
-current,9.68
-high,26.0
-low,15.0
-mean,20.43182
+insidersPercentHeld,0.03137
+institutionsPercentHeld,0.64035004
+institutionsFloatPercentHeld,0.66109
+institutionsCount,432.0
+current,14.5
+high,25.0
+low,14.0
+mean,20.06818
 median,20.0
 Normalized EBIT,-102438333.33333333
 Normalized Net Income,-113750333.33333333
-Research Asset,32783.6
-R&D Amortization,32783.6
-Adjusted EBIT (R&D),-139978000.0
-Adjusted Book Equity (R&D),675700783.6
-Adjusted D/E (R&D),0.09908823790803134
-Adjusted Invested Capital (R&D),734659783.6
-Adjusted ROC (R&D),-19.50077647253852
-Adjusted ROE (R&D),-21.574194308807666

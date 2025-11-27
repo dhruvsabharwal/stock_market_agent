@@ -1,0 +1,103 @@
+,Value
+ticker,RGTI
+longName,"Rigetti Computing, Inc."
+ROCE,-72.45090136303679
+ROCE (3yr avg),-53.96140105937108
+NFAT,0.20600841980659265
+NFAT (3yr avg),0.2745727076579036
+NPM,-1011.3593068373317
+DPR,0.0
+Retention Ratio,100.0
+Dep,14.087066352349867
+SSGR,-291.77872964569656
+Av NPM (over 3 years),-1011.3593068373317
+Au NFA/T (over 3 years),0.2745727076579036
+Av Dep%NFA (over 3 years),14.087066352349867
+Au Retention ratio (over 3 years),100.0
+d/e,0.08030076285724715
+Interest coverage,-21.047619047619047
+tax %,-0.0
+cPAT,-373743496.0
+CFO,-50627000.0
+cCFO,-193962263.0
+cCFO/cPAT,0.5189716077360179
+p/a,-125.68584167641154
+p/e,inf
+EY,-2.081293247686645
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,24.863648646880108
+PEG,
+no. shares (cr),32.416517
+Current Price,29.79
+market cap,9656880414.3
+d/e_market,0.0009112673681832983
+p/s,1275.3905
+NFA + CWIP,53975000.0
+Capex,8764000.0
+Capex_from_cashflow_statement,11098000.0
+FCF,-59391000.0
+FCF%,29.549525344796706
+FCF_capex_from_cashflow,-61725000.0
+FCF%_capex_from_cashflow,30.71078870380321
+DV,0.0
+Mcap (cr),1010.7469824
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,False
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,1.173109210500326
+Market Cap,10107469824
+Net Income,-200988000.0
+Total Revenue,10790000.0
+Total Assets,284787000.0
+Total Liabilities,158198000.0
+Total Stockholders Equity,109588000.0
+Total Debt,8800000.0
+Cash and Cash Equivalents,9081000.0
+Current Assets,206758000.0
+Current Liabilities,11867000.0
+Working Capital,194891000.0
+Operating Cash Flow,-50627000.0
+Capital Expenditure,11098000.0
+Dividends Paid,0
+Depreciation & Amortization,6906000.0
+Interest Expense,3255000.0
+Income Tax Expense,0.0
+Shares Outstanding,324165170
+Net Fixed Assets,52636000.0
+Construction in Progress,1339000.0
+Net Debt,-281000.0
+3-5yr Average ROA (%),-60.20836290327904
+3-5yr Average ROE (%),-69.71664707905093
+ROE,-170.20116268730655
+ROA,-90.3926242410614
+insidersPercentHeld,0.01759
+institutionsPercentHeld,0.37561
+institutionsFloatPercentHeld,0.38234
+institutionsCount,447.0
+current,29.79
+high,35.0
+low,18.0
+mean,21.83333
+median,20.0
+Normalized EBIT,-111098666.66666667
+Normalized Net Income,-115872000.0
+Research Asset,137575334.0
+R&D Amortization,37313867.0
+Adjusted EBIT (R&D),-185296867.0
+Adjusted Book Equity (R&D),247163334.0
+Adjusted D/E (R&D),0.03560398647155326
+Adjusted Invested Capital (R&D),246882334.0
+Adjusted ROC (R&D),-56.29104683124066
+Adjusted ROE (R&D),-81.31788673800622

@@ -1,5 +1,6 @@
 ,Value
 ticker,KKR
+longName,KKR & Co. Inc.
 ROCE,2.9855380779354688
 ROCE (3yr avg),2.321834779595212
 NFAT,13.678598303661474
@@ -21,16 +22,16 @@ CFO,6649878000.0
 cCFO,-7299901000.0
 cCFO/cPAT,-0.6624681647967267
 p/a,0.9695245164177193
-p/e,66.07548
-EY,2.464858239629233
+p/e,63.390244
+EY,2.65700227533794
 Earnings Growth 5yr cagr,-24.144434785686265
 Sales Growth 5yr cagr,10.34686575346393
-PEG,-2.7366753699768545
-no. shares (cr),89.0948992
-Current Price,140.08
-market cap,124804134799.36002
-d/e_market,0.4071695227220996
-p/s,6.052593
+PEG,-2.62545984458415
+no. shares (cr),89.0948725
+Current Price,129.95
+market cap,115778786813.74998
+d/e_market,0.43890976402911314
+p/s,5.790322
 NFA + CWIP,1769374000.0
 Capex,374639000.0
 Capex_from_cashflow_statement,141536000.0
@@ -38,8 +39,8 @@ FCF,6275239000.0
 FCF%,203.99022184513913
 FCF_capex_from_cashflow,6508342000.0
 FCF%_capex_from_cashflow,211.5677392405351
-DV,0.49042285416583703
-Mcap (cr),12964.6419968
+DV,0.5286529742141937
+Mcap (cr),12402.8567552
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,False
 npm >8%,True
@@ -56,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),True
 FCF/CFO,0.9436622747063931
-Market Cap,129646419968
+Market Cap,124028567552
 Net Income,3076245000.0
 Total Revenue,21640288000.0
 Total Assets,360099411000.0
@@ -73,22 +74,22 @@ Dividends Paid,612068000.0
 Depreciation & Amortization,0
 Interest Expense,3305914000.0
 Income Tax Expense,954396000.0
-Shares Outstanding,890948992
+Shares Outstanding,890948725
 Net Fixed Assets,1769374000.0
 Construction in Progress,0
 Net Debt,0
-3-5yr Average ROA (%),0.6581513931737857
-3-5yr Average ROE (%),9.425368131261939
-ROE,13.228241973782042
-ROA,0.908259238733144
+3-5yr Average ROA (%),0.5330974703941066
+3-5yr Average ROE (%),7.523931210001885
+ROE,17.914941228149903
+ROA,1.2595355605181642
 insidersPercentHeld,0.23586
-institutionsPercentHeld,0.61755
-institutionsFloatPercentHeld,0.80816
-institutionsCount,1754.0
-current,140.08
+institutionsPercentHeld,0.61805
+institutionsFloatPercentHeld,0.80881
+institutionsCount,1750.0
+current,129.95
 high,187.0
-low,135.0
-mean,164.47221
+low,140.0
+mean,164.91667
 median,166.0
 Normalized EBIT,6670888333.333333
 Normalized Net Income,2095614000.0

@@ -1,0 +1,95 @@
+,Value
+ticker,CAVA
+longName,"CAVA Group, Inc."
+ROCE,5.8773443082332
+ROCE (3yr avg),2.170533998060377
+NFAT,1.4658179426046551
+NFAT (3yr avg),1.444205405551357
+NPM,1.6295120588208185
+DPR,0.0
+Retention Ratio,100.0
+Dep,8.596462448237931
+SSGR,-6.243112324477784
+Av NPM (over 3 years),1.6295120588208185
+Au NFA/T (over 3 years),1.444205405551357
+Av Dep%NFA (over 3 years),8.596462448237931
+Au Retention ratio (over 3 years),100.0
+d/e,0.6634664910073896
+Interest coverage,
+tax %,-117.52462026372892
+cPAT,47221000.0
+CFO,161027000.0
+cCFO,267559000.0
+cCFO/cPAT,5.666101946168019
+p/a,13.247072193641316
+p/e,54.918182
+EY,1.8604246366799169
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,24.44335935550135
+PEG,
+no. shares (cr),11.595429
+Current Price,60.41
+market cap,7004798658.9
+d/e_market,0.054064080702566616
+p/s,6.887591
+NFA + CWIP,722459000.0
+Capex,104132000.0
+Capex_from_cashflow_statement,108131000.0
+FCF,56895000.0
+FCF%,43.65825397678005
+FCF_capex_from_cashflow,52896000.0
+FCF%_capex_from_cashflow,40.58963006161803
+DV,0.0
+Mcap (cr),746.3758336
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.35332583976600196
+Market Cap,7463758336
+Net Income,130319000.0
+Total Revenue,963713000.0
+Total Assets,1169669000.0
+Total Liabilities,474103000.0
+Total Stockholders Equity,570802000.0
+Total Debt,378708000.0
+Cash and Cash Equivalents,7438000.0
+Current Assets,394154000.0
+Current Liabilities,132636000.0
+Working Capital,261518000.0
+Operating Cash Flow,161027000.0
+Capital Expenditure,108131000.0
+Dividends Paid,0
+Depreciation & Amortization,60355000.0
+Interest Expense,
+Income Tax Expense,-70409000.0
+Shares Outstanding,115954290
+Net Fixed Assets,694734000.0
+Construction in Progress,27725000.0
+Net Debt,371270000.0
+3-5yr Average ROA (%),-2.248890835541537
+3-5yr Average ROE (%),16.45790849787299
+ROE,20.581537120331532
+ROA,12.103411029680148
+insidersPercentHeld,0.055809997
+institutionsPercentHeld,0.83671
+institutionsFloatPercentHeld,0.88616997
+institutionsCount,685.0
+current,60.41
+high,125.0
+low,72.0
+mean,91.4
+median,90.0
+Normalized EBIT,25865000.0
+Normalized Net Income,28204000.0

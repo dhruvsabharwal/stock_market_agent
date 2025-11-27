@@ -3,16 +3,16 @@ ticker,COST
 longName,Costco Wholesale Corporation
 ROCE,28.832892018506122
 ROCE (3yr avg),26.03835866050728
-NFAT,7.937948432329718
-NFAT (3yr avg),7.736743531475665
+NFAT,8.336434819644202
+NFAT (3yr avg),8.43395275385864
 NPM,2.689029775551378
 DPR,56.0794906813206
 Retention Ratio,43.9205093186794
-Dep,7.234342018197975
-SSGR,1.9030273128369775
+Dep,7.189780104916841
+SSGR,2.7710181196828194
 Av NPM (over 3 years),2.689029775551378
-Au NFA/T (over 3 years),7.736743531475665
-Av Dep%NFA (over 3 years),7.234342018197975
+Au NFA/T (over 3 years),8.43395275385864
+Av Dep%NFA (over 3 years),7.189780104916841
 Au Retention ratio (over 3 years),43.9205093186794
 d/e,0.3301141352063213
 Interest coverage,54.94082840236686
@@ -22,16 +22,16 @@ CFO,11339000000.0
 cCFO,38757000000.0
 cCFO/cPAT,1.5812729498164015
 p/a,10.67774009334145
-p/e,53.508495
-EY,1.7579485136624668
+p/e,50.251358
+EY,1.795631606930723
 Earnings Growth 5yr cagr,13.655200953355573
 Sales Growth 5yr cagr,9.102897510533413
-PEG,3.9185432116874885
-no. shares (cr),44.3476992
-Current Price,944.96
-market cap,419068018360.32
-d/e_market,0.01973903910006234
-p/s,1.559172
+PEG,3.680016000617804
+no. shares (cr),44.3237
+Current Price,925.63
+market cap,410273464310.0
+d/e_market,0.02016216187393911
+p/s,1.4906296
 NFA + CWIP,33038000000.0
 Capex,4612000000.0
 Capex_from_cashflow_statement,4710000000.0
@@ -39,8 +39,8 @@ FCF,6727000000.0
 FCF%,91.31261028912719
 FCF_capex_from_cashflow,6629000000.0
 FCF%_capex_from_cashflow,89.9823537396498
-DV,2.1574063407116006
-Mcap (cr),41906.8018688
+DV,2.2036521458206417
+Mcap (cr),41027.3447936
 d/e decreasing trend 5 yrs,True
 Sales cagr >15%,False
 npm >8%,False
@@ -57,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),False
 FCF/CFO,0.5932621924331951
-Market Cap,419068018688
+Market Cap,410273447936
 Net Income,7367000000.0
 Total Revenue,254453000000.0
 Total Assets,69831000000.0
@@ -74,22 +74,22 @@ Dividends Paid,9041000000.0
 Depreciation & Amortization,2237000000.0
 Interest Expense,169000000.0
 Income Tax Expense,2373000000.0
-Shares Outstanding,443476992
+Shares Outstanding,443237000
 Net Fixed Assets,31649000000.0
 Construction in Progress,1389000000.0
 Net Debt,6538000000.0
-3-5yr Average ROA (%),6.488724500632582
-3-5yr Average ROE (%),19.409121779751946
-ROE,25.850451930977812
-ROA,9.064649738879885
-insidersPercentHeld,0.00202
-institutionsPercentHeld,0.72489
-institutionsFloatPercentHeld,0.72635
-institutionsCount,4872.0
-current,944.96
-high,1225.0
+3-5yr Average ROA (%),9.495185477584947
+3-5yr Average ROE (%),29.225595631185236
+ROE,30.267050123253902
+ROA,10.61336214658743
+insidersPercentHeld,0.002
+institutionsPercentHeld,0.72541
+institutionsFloatPercentHeld,0.72686
+institutionsCount,4879.0
+current,925.63
+high,1218.0
 low,620.0
-mean,1072.6666
-median,1097.5
+mean,1061.2
+median,1082.5
 Normalized EBIT,8851333333.333334
 Normalized Net Income,6501000000.0

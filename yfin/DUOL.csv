@@ -1,5 +1,6 @@
 ,Value
 ticker,DUOL
+longName,"Duolingo, Inc."
 ROCE,3.1596322217370783
 ROCE (3yr avg),-0.948471469268256
 NFAT,15.370408802769873
@@ -21,16 +22,16 @@ CFO,285513000.0
 cCFO,501953000.0
 cCFO/cPAT,-33.31251659145208
 p/a,4.783246163774366
-p/e,130.04938
-EY,0.7060921012509734
+p/e,130.29959
+EY,0.6933226847936259
 Earnings Growth 5yr cagr,
 Sales Growth 5yr cagr,43.950163624600044
 PEG,
-no. shares (cr),3.96945
-Current Price,316.02
-market cap,12544255890.0
-d/e_market,0.004357053975881546
-p/s,16.359491
+no. shares (cr),3.9694545
+Current Price,321.84
+market cap,12775292362.8
+d/e_market,0.0042782582541242824
+p/s,16.539669
 NFA + CWIP,66438000.0
 Capex,46397000.0
 Capex_from_cashflow_statement,21140000.0
@@ -39,7 +40,7 @@ FCF%,269.9618398175537
 FCF_capex_from_cashflow,264373000.0
 FCF%_capex_from_cashflow,298.4769797005893
 DV,0.0
-Mcap (cr),1448.0635904
+Mcap (cr),1464.0120832
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,False
@@ -56,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),False
 FCF/CFO,0.837496015943232
-Market Cap,14480635904
+Market Cap,14640120832
 Net Income,88574000.0
 Total Revenue,748024000.0
 Total Assets,2403316000.0
@@ -73,23 +74,23 @@ Dividends Paid,0
 Depreciation & Amortization,10854000.0
 Interest Expense,0
 Income Tax Expense,13732000.0
-Shares Outstanding,39694500
+Shares Outstanding,39694545
 Net Fixed Assets,66438000.0
 Construction in Progress,0
 Net Debt,39798000.0
-3-5yr Average ROA (%),0.25528394569991847
-3-5yr Average ROE (%),1.1200262596830441
-ROE,11.969047012569161
-ROA,4.1632207782196815
-insidersPercentHeld,0.00808
-institutionsPercentHeld,1.01535
-institutionsFloatPercentHeld,1.02362
-institutionsCount,785.0
-current,316.02
+3-5yr Average ROA (%),-1.698684470559963
+3-5yr Average ROE (%),-4.3044841167600145
+ROE,2.6832467837194875
+ROA,0.9748550261885728
+insidersPercentHeld,0.00797
+institutionsPercentHeld,1.01654
+institutionsFloatPercentHeld,1.0247
+institutionsCount,792.0
+current,321.84
 high,600.0
-low,390.0
-mean,489.765
-median,500.0
+low,239.0
+mean,451.7385
+median,460.0
 Normalized EBIT,-5286333.333333333
 Normalized Net Income,15022333.333333334
 Research Asset,522579200.0

@@ -1,0 +1,95 @@
+,Value
+ticker,IT
+longName,"Gartner, Inc."
+ROCE,33.25744060819313
+ROCE (3yr avg),31.983670562688843
+NFAT,11.093607124082009
+NFAT (3yr avg),9.054158728417823
+NPM,16.565064032551877
+DPR,0.0
+Retention Ratio,100.0
+Dep,29.913095172498213
+SSGR,120.06962392463151
+Av NPM (over 3 years),16.565064032551877
+Au NFA/T (over 3 years),9.054158728417823
+Av Dep%NFA (over 3 years),29.913095172498213
+Au Retention ratio (over 3 years),100.0
+d/e,4.260742190369567
+Interest coverage,8.830944859057125
+tax %,9.633955948432074
+cPAT,3737540000.0
+CFO,1484922000.0
+cCFO,5054551000.0
+cCFO/cPAT,1.3523737538594904
+p/a,15.999591113690686
+p/e,16.286865
+EY,6.297332261593619
+Earnings Growth 5yr cagr,19.994442202203256
+Sales Growth 5yr cagr,9.804752152662388
+PEG,0.8145696106593708
+no. shares (cr),7.5735795
+Current Price,262.87
+market cap,19908668431.65
+d/e_market,0.1456654928960335
+p/s,3.1154263
+NFA + CWIP,500387000.0
+Capex,73175000.0
+Capex_from_cashflow_statement,101737000.0
+FCF,1411747000.0
+FCF%,112.60509764978484
+FCF_capex_from_cashflow,1383185000.0
+FCF%_capex_from_cashflow,110.32690842815154
+DV,0.0
+Mcap (cr),2000.106496
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9507213173486554
+Market Cap,20001064960
+Net Income,1253715000.0
+Total Revenue,6267411000.0
+Total Assets,8534671000.0
+Total Liabilities,7175502000.0
+Total Stockholders Equity,680634000.0
+Total Debt,2900006000.0
+Cash and Cash Equivalents,153245000.0
+Current Assets,4196531000.0
+Current Liabilities,3969016000.0
+Working Capital,227515000.0
+Operating Cash Flow,1484922000.0
+Capital Expenditure,101737000.0
+Dividends Paid,0
+Depreciation & Amortization,202315000.0
+Interest Expense,131046000.0
+Income Tax Expense,133659000.0
+Shares Outstanding,75735795
+Net Fixed Assets,500387000.0
+Construction in Progress,0
+Net Debt,2746761000.0
+3-5yr Average ROA (%),11.319612876263058
+3-5yr Average ROE (%),232.03202589635646
+ROE,194.28333656234037
+ROA,11.66075733095132
+insidersPercentHeld,0.030620001
+institutionsPercentHeld,0.99214995
+institutionsFloatPercentHeld,1.02349
+institutionsCount,1336.0
+current,262.87
+high,457.0
+low,225.0
+mean,300.6
+median,286.5
+Normalized EBIT,1317239666.6666667
+Normalized Net Income,981326666.6666666

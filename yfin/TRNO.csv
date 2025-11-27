@@ -1,0 +1,95 @@
+,Value
+ticker,TRNO
+longName,Terreno Realty Corporation
+ROCE,4.504712538340977
+ROCE (3yr avg),5.444102556219559
+NFAT,0
+NFAT (3yr avg),0.0
+NPM,55.57120331255987
+DPR,79.59219278319068
+Retention Ratio,20.407807216809314
+Dep,0.0
+SSGR,0.0
+Av NPM (over 3 years),55.57120331255987
+Au NFA/T (over 3 years),0.0
+Av Dep%NFA (over 3 years),0.0
+Au Retention ratio (over 3 years),20.40780721680932
+d/e,0.28251882659427774
+Interest coverage,7.075570001433966
+tax %,0.0
+cPAT,621222000.0
+CFO,232687000.0
+cCFO,687782000.0
+cCFO/cPAT,1.1071436620081065
+p/a,4.725025911234143
+p/e,22.791164
+EY,3.147142678712257
+Earnings Growth 5yr cagr,16.00197206705065
+Sales Growth 5yr cagr,19.908764936021605
+PEG,1.4242722024823953
+no. shares (cr),10.3301591
+Current Price,56.75
+market cap,5862365289.25
+d/e_market,0.14046156446613142
+p/s,13.989428
+NFA + CWIP,0
+Capex,76632000.0
+Capex_from_cashflow_statement,46433000.0
+FCF,156055000.0
+FCF%,84.5840311766587
+FCF_capex_from_cashflow,186254000.0
+FCF%_capex_from_cashflow,100.95231900789715
+DV,2.984614423820468
+Mcap (cr),595.9468544
+d/e decreasing trend 5 yrs,True
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.6706648845874501
+Market Cap,5959468544
+Net Income,184497000.0
+Total Revenue,382621000.0
+Total Assets,4770156000.0
+Total Liabilities,1107824000.0
+Total Stockholders Equity,2914627000.0
+Total Debt,823437000.0
+Cash and Cash Equivalents,0
+Current Assets,24610000.0
+Current Liabilities,210087000.0
+Working Capital,-185477000.0
+Operating Cash Flow,232687000.0
+Capital Expenditure,46433000.0
+Dividends Paid,174969000.0
+Depreciation & Amortization,76632000.0
+Interest Expense,20921000.0
+Income Tax Expense,0
+Shares Outstanding,103301591
+Net Fixed Assets,0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),4.506712317312637
+3-5yr Average ROE (%),6.243623735766786
+ROE,5.610404443755845
+ROA,4.253615026364196
+insidersPercentHeld,0.01979
+institutionsPercentHeld,1.1085601
+institutionsFloatPercentHeld,1.13095
+institutionsCount,498.0
+current,56.75
+high,80.0
+low,53.0
+mean,62.375
+median,61.5
+Normalized EBIT,201178333.33333334
+Normalized Net Income,177989333.33333334

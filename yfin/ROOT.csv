@@ -1,5 +1,6 @@
 ,Value
 ticker,ROOT
+longName,"Root, Inc."
 ROCE,
 ROCE (3yr avg),-13.858960617241074
 NFAT,283.49397590361446
@@ -21,16 +22,16 @@ CFO,195700000.0
 cCFO,-451900000.0
 cCFO/cPAT,0.48316048326740085
 p/a,2.292795132447874
-p/e,17.245136
-EY,2.5596860468355813
+p/e,18.046371
+EY,2.534811429244519
 Earnings Growth 5yr cagr,
 Sales Growth 5yr cagr,50.460742071697794
 PEG,
-no. shares (cr),1.36189
-Current Price,88.64
-market cap,1207179296.0
-d/e_market,0.16575831002323618
-p/s,1.0033331
+no. shares (cr),1.3618876
+Current Price,89.51
+market cap,1219025590.76
+d/e_market,0.16414749740835868
+p/s,1.0491091
 NFA + CWIP,1800000.0
 Capex,13900000.0
 Capex_from_cashflow_statement,11800000.0
@@ -39,7 +40,7 @@ FCF%,588.3495145631068
 FCF_capex_from_cashflow,183900000.0
 FCF%_capex_from_cashflow,595.1456310679612
 DV,0.0
-Mcap (cr),136.924864
+Mcap (cr),143.1719168
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,False
@@ -56,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),False
 FCF/CFO,0.9289729177312213
-Market Cap,1369248640
+Market Cap,1431719168
 Net Income,30900000.0
 Total Revenue,1176500000.0
 Total Assets,1495700000.0
@@ -73,7 +74,7 @@ Dividends Paid,0
 Depreciation & Amortization,14900000.0
 Interest Expense,42200000.0
 Income Tax Expense,0.0
-Shares Outstanding,13618900
+Shares Outstanding,13618876
 Net Fixed Assets,1800000.0
 Construction in Progress,0
 Net Debt,0
@@ -81,11 +82,11 @@ Net Debt,0
 3-5yr Average ROE (%),-55.04601784369574
 ROE,16.729832160259882
 ROA,2.173454315256383
-insidersPercentHeld,0.05969
-institutionsPercentHeld,0.64338
-institutionsFloatPercentHeld,0.68422997
-institutionsCount,274.0
-current,88.64
+insidersPercentHeld,0.05831
+institutionsPercentHeld,0.67864996
+institutionsFloatPercentHeld,0.72068
+institutionsCount,276.0
+current,89.51
 high,165.0
 low,105.0
 mean,130.6

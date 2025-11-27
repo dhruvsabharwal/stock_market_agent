@@ -1,0 +1,103 @@
+,Value
+ticker,FSLR
+longName,"First Solar, Inc."
+ROCE,14.384588947119012
+ROCE (3yr avg),8.218379582471881
+NFAT,0.8365745718891076
+NFAT (3yr avg),0.8114785062974667
+NPM,18.02157964867204
+DPR,0.0
+Retention Ratio,100.0
+Dep,8.015554357736123
+SSGR,6.6085701766890885
+Av NPM (over 3 years),18.02157964867204
+Au NFA/T (over 3 years),0.8114785062974667
+Av Dep%NFA (over 3 years),8.015554357736123
+Au Retention ratio (over 3 years),100.0
+d/e,0.10748490946275788
+Interest coverage,35.8563159248778
+tax %,8.127064759680817
+cPAT,2547348000.0
+CFO,1217999000.0
+cCFO,2931187000.0
+cCFO/cPAT,1.1506818071186191
+p/a,12.465292289572385
+p/e,18.800512
+EY,5.462882221941024
+Earnings Growth 5yr cagr,39.88019429482736
+Sales Growth 5yr cagr,12.894147261092058
+PEG,0.47142478446847763
+no. shares (cr),10.7247651
+Current Price,220.53
+market cap,23651324475.03
+d/e_market,0.03039161721191888
+p/s,5.4453015
+NFA + CWIP,6415766000.0
+Capex,1116513000.0
+Capex_from_cashflow_statement,1526076000.0
+FCF,101486000.0
+FCF%,7.854686063322921
+FCF_capex_from_cashflow,-308077000.0
+FCF%_capex_from_cashflow,-23.844157010132783
+DV,0.0
+Mcap (cr),2365.1323904
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.08332190748925081
+Market Cap,23651323904
+Net Income,1292044000.0
+Total Revenue,4206289000.0
+Total Assets,12124361000.0
+Total Liabilities,4146784000.0
+Total Stockholders Equity,6687469000.0
+Total Debt,718802000.0
+Cash and Cash Equivalents,35484000.0
+Current Assets,5089033000.0
+Current Liabilities,2077442000.0
+Working Capital,3011591000.0
+Operating Cash Flow,1217999000.0
+Capital Expenditure,1526076000.0
+Dividends Paid,0
+Depreciation & Amortization,423498000.0
+Interest Expense,38870000.0
+Income Tax Expense,114294000.0
+Shares Outstanding,107247651
+Net Fixed Assets,5557228000.0
+Construction in Progress,858538000.0
+Net Debt,683318000.0
+3-5yr Average ROA (%),4.180676726536752
+3-5yr Average ROE (%),6.259304285098373
+ROE,13.267463694723624
+ROA,8.92523565294182
+insidersPercentHeld,0.0553
+institutionsPercentHeld,1.07358
+institutionsFloatPercentHeld,1.13643
+institutionsCount,1396.0
+current,220.53
+high,287.0
+low,100.0
+mean,221.526
+median,216.5
+Normalized EBIT,790095333.3333334
+Normalized Net Income,692885000.0
+Research Asset,420549000.0
+R&D Amortization,111120200.0
+Adjusted EBIT (R&D),1525462800.0
+Adjusted Book Equity (R&D),7108018000.0
+Adjusted D/E (R&D),0.10112551769002273
+Adjusted Invested Capital (R&D),7791336000.0
+Adjusted ROC (R&D),17.98776808443584
+Adjusted ROE (R&D),18.177275296714217

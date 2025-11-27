@@ -1,0 +1,95 @@
+,Value
+ticker,LMND
+longName,"Lemonade, Inc."
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,13.032178217821782
+NFAT (3yr avg),11.915586596348078
+NPM,-69.84470864022443
+DPR,0.0
+Retention Ratio,100.0
+Dep,45.513687262957696
+SSGR,-877.7543613622527
+Av NPM (over 3 years),-69.84470864022443
+Au NFA/T (over 3 years),11.915586596348078
+Av Dep%NFA (over 3 years),45.513687262957696
+Au Retention ratio (over 3 years),100.0
+d/e,0.15122020031033998
+Interest coverage,inf
+tax %,0.8337420304070623
+cPAT,-978200000.0
+CFO,-11400000.0
+cCFO,-438100000.0
+cCFO/cPAT,0.4478634226129626
+p/a,-12.379844486622176
+p/e,inf
+EY,-5.112334961836421
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,60.05814670083849
+PEG,
+no. shares (cr),7.3886417
+Current Price,53.53
+market cap,3955139902.01
+d/e_market,0.02710397170666985
+p/s,6.584218
+NFA + CWIP,31300000.0
+Capex,16500000.0
+Capex_from_cashflow_statement,9400000.0
+FCF,-27900000.0
+FCF%,13.798219584569733
+FCF_capex_from_cashflow,-20800000.0
+FCF%_capex_from_cashflow,10.286844708209692
+DV,0.0
+Mcap (cr),395.513984
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,False
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,2.4473684210526314
+Market Cap,3955139840
+Net Income,-202200000.0
+Total Revenue,526500000.0
+Total Assets,1849100000.0
+Total Liabilities,1255700000.0
+Total Stockholders Equity,708900000.0
+Total Debt,107200000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,-11400000.0
+Capital Expenditure,9400000.0
+Dividends Paid,0
+Depreciation & Amortization,20000000.0
+Interest Expense,0
+Income Tax Expense,-1700000.0
+Shares Outstanding,73886417
+Net Fixed Assets,31300000.0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),-15.111739389144137
+3-5yr Average ROE (%),-29.41196977974737
+ROE,-31.05275282193043
+ROA,-11.612680909717437
+insidersPercentHeld,0.18404
+institutionsPercentHeld,0.53692
+institutionsFloatPercentHeld,0.65803003
+institutionsCount,371.0
+current,53.53
+high,60.0
+low,31.0
+mean,45.75
+median,42.5
+Normalized EBIT,0.0
+Normalized Net Income,-245633333.33333334

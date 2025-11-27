@@ -1,0 +1,103 @@
+,Value
+ticker,CNH
+longName,CNH Industrial N.V.
+ROCE,10.905342480361142
+ROCE (3yr avg),11.692762811034925
+NFAT,5.893048128342246
+NFAT (3yr avg),7.063771798227211
+NPM,8.037410101051348
+DPR,31.070650243243154
+Retention Ratio,68.92934975675684
+Dep,17.608926400374752
+SSGR,21.525319579952484
+Av NPM (over 3 years),8.037410101051348
+Au NFA/T (over 3 years),7.063771798227211
+Av Dep%NFA (over 3 years),17.608926400374752
+Au Retention ratio (over 3 years),68.92934975675685
+d/e,3.3828144458281444
+Interest coverage,2.3898199875853505
+tax %,23.06108442004118
+cPAT,7273000000.0
+CFO,1968000000.0
+cCFO,7514000000.0
+cCFO/cPAT,1.0331362573903478
+p/a,2.6930641710074137
+p/e,16.692308
+EY,9.181073622654143
+Earnings Growth 5yr cagr,-7.966947955803949
+Sales Growth 5yr cagr,0.577968909221771
+PEG,-2.095194808928003
+no. shares (cr),125.082005
+Current Price,10.85
+market cap,13571397542.5
+d/e_market,2.0015624709933957
+p/s,0.7531641
+NFA + CWIP,3629000000.0
+Capex,628000000.0
+Capex_from_cashflow_statement,1186000000.0
+FCF,1340000000.0
+FCF%,107.54414125200643
+FCF_capex_from_cashflow,782000000.0
+FCF%_capex_from_cashflow,62.76083467094703
+DV,4.472641804936648
+Mcap (cr),1360.8922112
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,True
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6808943089430894
+Market Cap,13608922112
+Net Income,1246000000.0
+Total Revenue,19836000000.0
+Total Assets,42933000000.0
+Total Liabilities,35165000000.0
+Total Stockholders Equity,8030000000.0
+Total Debt,27164000000.0
+Cash and Cash Equivalents,0
+Current Assets,32020000000.0
+Current Liabilities,14800000000.0
+Working Capital,17220000000.0
+Operating Cash Flow,1968000000.0
+Capital Expenditure,1186000000.0
+Dividends Paid,607000000.0
+Depreciation & Amortization,605000000.0
+Interest Expense,1611000000.0
+Income Tax Expense,336000000.0
+Shares Outstanding,1250820050
+Net Fixed Assets,3402000000.0
+Construction in Progress,227000000.0
+Net Debt,0
+3-5yr Average ROA (%),4.9412079161805496
+3-5yr Average ROE (%),30.015085199729924
+ROE,30.42053887811727
+ROA,5.312441621520643
+insidersPercentHeld,0.29945
+institutionsPercentHeld,0.72900003
+institutionsFloatPercentHeld,1.0406
+institutionsCount,835.0
+current,10.85
+high,21.0
+low,10.5
+mean,14.82105
+median,15.0
+Normalized EBIT,3510666666.6666665
+Normalized Net Income,1850000000.0
+Research Asset,2533200000.0
+R&D Amortization,694600000.0
+Adjusted EBIT (R&D),3297400000.0
+Adjusted Book Equity (R&D),10563200000.0
+Adjusted D/E (R&D),2.571569221448046
+Adjusted Invested Capital (R&D),37727200000.0
+Adjusted ROC (R&D),6.724548342664079
+Adjusted ROE (R&D),11.795667979400182

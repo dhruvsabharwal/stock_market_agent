@@ -1,0 +1,95 @@
+,Value
+ticker,BBAR
+longName,Banco BBVA Argentina S.A.
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,5.296862186243121
+NFAT (3yr avg),9.107634655534367
+NPM,11.273155596517208
+DPR,9.899350207777472
+Retention Ratio,90.10064979222253
+Dep,20.013181720009246
+SSGR,72.49476154510101
+Av NPM (over 3 years),11.273155596517208
+Au NFA/T (over 3 years),9.107634655534367
+Av Dep%NFA (over 3 years),20.013181720009246
+Au Retention ratio (over 3 years),90.10064979222251
+d/e,0.1147357413119496
+Interest coverage,0.0
+tax %,17.290454890665792
+cPAT,1158014959000.0
+CFO,2589348863000.0
+cCFO,5345200213000.0
+cCFO/cPAT,4.61583002141512
+p/a,2.708686435273852
+p/e,8.40404
+EY,21209.681652966323
+Earnings Growth 5yr cagr,155.48147893687027
+Sales Growth 5yr cagr,55.708988534767734
+PEG,0.05405171122286707
+no. shares (cr),20.4236693
+Current Price,8.32
+market cap,1699249285.76
+d/e_market,205.3818782945139
+p/s,0.00085912214
+NFA + CWIP,666410104000.0
+Capex,87730342000.0
+Capex_from_cashflow_statement,164525453000.0
+FCF,2501618521000.0
+FCF%,694.1124552741118
+FCF_capex_from_cashflow,2424823410000.0
+FCF%_capex_from_cashflow,672.8044730211063
+DV,5332.33868387205
+Mcap (cr),199.1563264
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,True
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,True
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.9661187631942509
+Market Cap,1991563264
+Net Income,360405364000.0
+Total Revenue,3432246397000.0
+Total Assets,14719893843000.0
+Total Liabilities,12104066606000.0
+Total Stockholders Equity,3041728811000.0
+Total Debt,348995010000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,2589348863000.0
+Capital Expenditure,164525453000.0
+Dividends Paid,90609727000.0
+Depreciation & Amortization,79611677000.0
+Interest Expense,1767275340000.0
+Income Tax Expense,76264805000.0
+Shares Outstanding,204236693
+Net Fixed Assets,646547368000.0
+Construction in Progress,19862736000.0
+Net Debt,0
+3-5yr Average ROA (%),6.696401277400215
+3-5yr Average ROE (%),36.33272040642696
+ROE,16.460367348949642
+ROA,3.524346379838634
+insidersPercentHeld,0.0
+institutionsPercentHeld,0.08686
+institutionsFloatPercentHeld,0.08686
+institutionsCount,97.0
+current,8.32
+high,38.0
+low,18.0
+mean,24.875
+median,21.75
+Normalized EBIT,0.0
+Normalized Net Income,367000981000.0

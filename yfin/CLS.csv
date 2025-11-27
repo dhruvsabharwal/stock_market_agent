@@ -1,0 +1,103 @@
+,Value
+ticker,CLS
+longName,Celestica Inc.
+ROCE,19.694620466495888
+ROCE (3yr avg),15.137737166697315
+NFAT,14.91572599350549
+NFAT (3yr avg),14.639912662549014
+NPM,3.3303921257659588
+DPR,-1
+Retention Ratio,101.0
+Dep,23.491257999757465
+SSGR,25.75295835202967
+Av NPM (over 3 years),3.3303921257659588
+Au NFA/T (over 3 years),14.639912662549014
+Av Dep%NFA (over 3 years),23.491257999757465
+Au Retention ratio (over 3 years),-1
+d/e,0.44985883681535854
+Interest coverage,11.875239923224568
+tax %,19.579105599398723
+cPAT,956400000.0
+CFO,473900000.0
+cCFO,1238000000.0
+cCFO/cPAT,1.2944374738603095
+p/a,7.265936677701383
+p/e,53.21382
+EY,1.5101394657270693
+Earnings Growth 5yr cagr,64.0457207735281
+Sales Growth 5yr cagr,19.625973867259816
+PEG,0.8308723730062972
+no. shares (cr),11.5032686
+Current Price,246.38
+market cap,28341753176.68
+d/e_market,0.028110469914597102
+p/s,2.676983
+NFA + CWIP,661600000.0
+Capex,181700000.0
+Capex_from_cashflow_statement,170900000.0
+FCF,292200000.0
+FCF%,68.27102803738318
+FCF_capex_from_cashflow,303000000.0
+FCF%_capex_from_cashflow,70.7943925233645
+DV,
+Mcap (cr),2834.1753856
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6165857775902089
+Market Cap,28341753856
+Net Income,428000000.0
+Total Revenue,9646000000.0
+Total Assets,5988200000.0
+Total Liabilities,4092200000.0
+Total Stockholders Equity,1771000000.0
+Total Debt,796700000.0
+Cash and Cash Equivalents,250800000.0
+Current Assets,4512200000.0
+Current Liabilities,3021400000.0
+Working Capital,1490800000.0
+Operating Cash Flow,473900000.0
+Capital Expenditure,170900000.0
+Dividends Paid,
+Depreciation & Amortization,151900000.0
+Interest Expense,52100000.0
+Income Tax Expense,104200000.0
+Shares Outstanding,115032686
+Net Fixed Assets,661600000.0
+Construction in Progress,0
+Net Debt,545900000.0
+3-5yr Average ROA (%),3.8712139563376597
+3-5yr Average ROE (%),12.821118754932385
+ROE,14.173456664830224
+ROA,4.243608108694708
+insidersPercentHeld,0.00528
+institutionsPercentHeld,0.75967
+institutionsFloatPercentHeld,0.7637
+institutionsCount,852.0
+current,246.38
+high,300.0
+low,208.0
+mean,236.6923
+median,230.0
+Normalized EBIT,420000000.0
+Normalized Net Income,284166666.6666667
+Research Asset,169860000.0
+R&D Amortization,44720000.0
+Adjusted EBIT (R&D),617580000.0
+Adjusted Book Equity (R&D),1940860000.0
+Adjusted D/E (R&D),0.41048813412610907
+Adjusted Invested Capital (R&D),2486760000.0
+Adjusted ROC (R&D),19.972307727293078
+Adjusted ROE (R&D),22.052080005770637

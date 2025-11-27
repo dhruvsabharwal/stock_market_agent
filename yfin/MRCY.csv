@@ -1,0 +1,103 @@
+,Value
+ticker,MRCY
+longName,"Mercury Systems, Inc."
+ROCE,-0.7962005015960085
+ROCE (3yr avg),-3.0243401384492277
+NFAT,5.6138644638476904
+NFAT (3yr avg),5.171442734546155
+NPM,-7.8479815288286865
+DPR,0.0
+Retention Ratio,100.0
+Dep,50.66985328532763
+SSGR,-91.25524034344117
+Av NPM (over 3 years),-7.8479815288286865
+Au NFA/T (over 3 years),5.171442734546155
+Av Dep%NFA (over 3 years),50.66985328532763
+Au Retention ratio (over 3 years),100.0
+d/e,0.43743137953862604
+Interest coverage,-0.3115166018546216
+tax %,24.829446295414883
+cPAT,-192604000.0
+CFO,138851000.0
+cCFO,159110000.0
+cCFO/cPAT,-0.8260991464351727
+p/a,-1.5933381114420289
+p/e,inf
+EY,-0.8159117195504979
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,-2.6385700631610165
+PEG,
+no. shares (cr),6.002068
+Current Price,77.4
+market cap,4645600632.0
+d/e_market,0.1386770088591636
+p/s,5.093749
+NFA + CWIP,153704000.0
+Capex,64518000.0
+Capex_from_cashflow_statement,19803000.0
+FCF,74333000.0
+FCF%,-196.10859012241454
+FCF_capex_from_cashflow,119048000.0
+FCF%_capex_from_cashflow,-314.07766990291265
+DV,0.0
+Mcap (cr),464.5600768
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.5353436417454681
+Market Cap,4645600768
+Net Income,-37904000.0
+Total Revenue,912020000.0
+Total Assets,2434764000.0
+Total Liabilities,961303000.0
+Total Stockholders Equity,1472775000.0
+Total Debt,644238000.0
+Cash and Cash Equivalents,27639000.0
+Current Assets,1058178000.0
+Current Liabilities,300377000.0
+Working Capital,757801000.0
+Operating Cash Flow,138851000.0
+Capital Expenditure,19803000.0
+Dividends Paid,0
+Depreciation & Amortization,82027000.0
+Interest Expense,33430000.0
+Income Tax Expense,-12520000.0
+Shares Outstanding,60020680
+Net Fixed Assets,153704000.0
+Construction in Progress,0
+Net Debt,616599000.0
+3-5yr Average ROA (%),-3.4887839308421182
+3-5yr Average ROE (%),-5.4413285868828485
+ROE,-9.056871944358537
+ROA,-5.7707401171253965
+insidersPercentHeld,0.01951
+institutionsPercentHeld,1.1185601
+institutionsFloatPercentHeld,1.14082
+institutionsCount,401.0
+current,77.4
+high,90.0
+low,39.0
+mean,70.42857
+median,71.0
+Normalized EBIT,-64879000.0
+Normalized Net Income,-67959666.66666667
+Research Asset,256856400.0
+R&D Amortization,76988600.0
+Adjusted EBIT (R&D),-26335600.0
+Adjusted Book Equity (R&D),1729631400.0
+Adjusted D/E (R&D),0.3724712675775891
+Adjusted Invested Capital (R&D),2346230400.0
+Adjusted ROC (R&D),-0.8437626731554037
+Adjusted ROE (R&D),-2.191449577060176

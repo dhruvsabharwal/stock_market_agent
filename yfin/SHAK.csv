@@ -1,0 +1,95 @@
+,Value
+ticker,SHAK
+longName,Shake Shack Inc.
+ROCE,1.0789861014878868
+ROCE (3yr avg),0.23564195013355263
+NFAT,1.3147275626055497
+NFAT (3yr avg),1.2313813156645745
+NPM,0.10688497715210821
+DPR,0.0
+Retention Ratio,100.0
+Dep,10.328863872122124
+SSGR,-10.197247708331783
+Av NPM (over 3 years),0.10688497715210821
+Au NFA/T (over 3 years),1.2313813156645745
+Av Dep%NFA (over 3 years),10.328863872122124
+Au Retention ratio (over 3 years),100.0
+d/e,1.8258727112402096
+Interest coverage,24.915892420537897
+tax %,24.038191519236168
+cPAT,4681000.0
+CFO,171155000.0
+cCFO,438440000.0
+cCFO/cPAT,93.66374706259346
+p/a,0.6356107673348249
+p/e,195.02084
+EY,0.2709157084058566
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,19.183304019128332
+PEG,
+no. shares (cr),4.0247757
+Current Price,93.61
+market cap,3767592532.77
+d/e_market,0.21489133789230414
+p/s,2.9814155
+NFA + CWIP,1016245000.0
+Capex,135027000.0
+Capex_from_cashflow_statement,135499000.0
+FCF,36128000.0
+FCF%,353.9531693935535
+FCF_capex_from_cashflow,35656000.0
+FCF%_capex_from_cashflow,349.3288919369061
+DV,0.0
+Mcap (cr),394.4329216
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.21108352078525314
+Market Cap,3944329216
+Net Income,10207000.0
+Total Revenue,1252608000.0
+Total Assets,1696971000.0
+Total Liabilities,1203345000.0
+Total Stockholders Equity,443417000.0
+Total Debt,809623000.0
+Cash and Cash Equivalents,844000.0
+Current Assets,368216000.0
+Current Liabilities,187313000.0
+Working Capital,180903000.0
+Operating Cash Flow,171155000.0
+Capital Expenditure,135499000.0
+Dividends Paid,0
+Depreciation & Amortization,104606000.0
+Interest Expense,2045000.0
+Income Tax Expense,3424000.0
+Shares Outstanding,40247757
+Net Fixed Assets,976211000.0
+Construction in Progress,40034000.0
+Net Debt,808779000.0
+3-5yr Average ROA (%),-0.06495266850282655
+3-5yr Average ROE (%),-0.21507908478999482
+ROE,4.736676636033945
+ROA,1.2998880302725602
+insidersPercentHeld,0.04535
+institutionsPercentHeld,1.0778
+institutionsFloatPercentHeld,1.12901
+institutionsCount,511.0
+current,93.61
+high,160.0
+low,100.0
+mean,132.2381
+median,127.0
+Normalized EBIT,4073000.0
+Normalized Net Income,3080666.6666666665

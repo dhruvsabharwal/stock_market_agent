@@ -22,16 +22,16 @@ CFO,992486000.0
 cCFO,3093237000.0
 cCFO/cPAT,1.028169280934954
 p/a,20.458763168537033
-p/e,23.855978
-EY,19.81435732576208
+p/e,22.161804
+EY,20.819913432461867
 Earnings Growth 5yr cagr,11.251177982099247
 Sales Growth 5yr cagr,21.03689808171314
-PEG,2.1203093612024566
-no. shares (cr),5.46174
-Current Price,87.79
-market cap,4794861546.0
-d/e_market,0.35481650172344725
-p/s,1.1585488
+PEG,1.9697318836533992
+no. shares (cr),5.4617358
+Current Price,83.55
+market cap,4563280260.9
+d/e_market,0.37282303578357456
+p/s,1.1025934
 NFA + CWIP,562426000.0
 Capex,93093000.0
 Capex_from_cashflow_statement,69347000.0
@@ -40,7 +40,7 @@ FCF%,94.66587234006721
 FCF_capex_from_cashflow,923139000.0
 FCF%_capex_from_cashflow,97.16526449075911
 DV,
-Mcap (cr),479.4861568
+Mcap (cr),456.3280384
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,True
@@ -57,7 +57,7 @@ DV >3%,False
 EY >7,True
 sgr > Sales growth (very linear),True
 FCF/CFO,0.9062022033560171
-Market Cap,4794861568
+Market Cap,4563280384
 Net Income,950071000.0
 Total Revenue,4102108000.0
 Total Assets,4812153000.0
@@ -74,7 +74,7 @@ Dividends Paid,
 Depreciation & Amortization,69840000.0
 Interest Expense,109264000.0
 Income Tax Expense,-39486000.0
-Shares Outstanding,54617400
+Shares Outstanding,54617358
 Net Fixed Assets,551563000.0
 Construction in Progress,10863000.0
 Net Debt,1649673000.0
@@ -82,14 +82,14 @@ Net Debt,1649673000.0
 3-5yr Average ROE (%),99.80825104068116
 ROE,69.7726174305215
 ROA,17.332122846417047
-insidersPercentHeld,0.03281
-institutionsPercentHeld,1.0400801
-institutionsFloatPercentHeld,1.0753601
-institutionsCount,679.0
-current,87.79
-high,140.0
+insidersPercentHeld,0.03364
+institutionsPercentHeld,1.0418
+institutionsFloatPercentHeld,1.07806
+institutionsCount,677.0
+current,83.55
+high,100.0
 low,67.0
-mean,91.83333
-median,90.0
+mean,86.16667
+median,85.0
 Normalized EBIT,970712666.6666666
 Normalized Net Income,760932000.0

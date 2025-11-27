@@ -1,0 +1,95 @@
+,Value
+ticker,BITF
+longName,Bitfarms Ltd.
+ROCE,-10.551266658852674
+ROCE (3yr avg),-36.47243888551492
+NFAT,0.5813704996993394
+NFAT (3yr avg),0.6150140265735438
+NPM,-75.25600413229033
+DPR,0.0
+Retention Ratio,100.0
+Dep,36.94050298580514
+SSGR,-83.22400111104027
+Av NPM (over 3 years),-75.25600413229033
+Au NFA/T (over 3 years),0.6150140265735438
+Av Dep%NFA (over 3 years),36.94050298580514
+Au Retention ratio (over 3 years),100.0
+d/e,0.07943696948724734
+Interest coverage,-59.60817031070196
+tax %,20.906178221877607
+cPAT,-316499000.0
+CFO,-140562000.0
+cCFO,-412016000.0
+cCFO/cPAT,1.3017924227248743
+p/a,-14.275001650273946
+p/e,inf
+EY,-3.4692888204655117
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,4.403310297495211
+PEG,
+no. shares (cr),55.2599613
+Current Price,2.82
+market cap,1558330908.6599998
+d/e_market,0.015025691828274413
+p/s,6.3433423
+NFA + CWIP,475253000.0
+Capex,336267000.0
+Capex_from_cashflow_statement,339854000.0
+FCF,-476829000.0
+FCF%,881.987681038788
+FCF_capex_from_cashflow,-480416000.0
+FCF%_capex_from_cashflow,888.6225329707934
+DV,0.0
+Mcap (cr),155.833088
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,False
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,3.3923037520809323
+Market Cap,1558330880
+Net Income,-54063000.0
+Total Revenue,192881000.0
+Total Assets,667616000.0
+Total Liabilities,59621000.0
+Total Stockholders Equity,294762000.0
+Total Debt,23415000.0
+Cash and Cash Equivalents,
+Current Assets,213709000.0
+Current Liabilities,36270000.0
+Working Capital,177439000.0
+Operating Cash Flow,-140562000.0
+Capital Expenditure,339854000.0
+Dividends Paid,0
+Depreciation & Amortization,140967000.0
+Interest Expense,1738000.0
+Income Tax Expense,-14290000.0
+Shares Outstanding,552599613
+Net Fixed Assets,423399000.0
+Construction in Progress,51854000.0
+Net Debt,
+3-5yr Average ROA (%),-34.921278806657135
+3-5yr Average ROE (%),-48.3858984898949
+ROE,-39.5964810237022
+ROA,-30.179697792949238
+insidersPercentHeld,0.04718
+institutionsPercentHeld,0.22036
+institutionsFloatPercentHeld,0.23127002
+institutionsCount,191.0
+current,2.82
+high,4.0
+low,2.0
+mean,2.68125
+median,2.5
+Normalized EBIT,-116898000.0
+Normalized Net Income,-112876333.33333333

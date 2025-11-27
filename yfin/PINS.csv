@@ -1,5 +1,6 @@
 ,Value
 ticker,PINS
+longName,"Pinterest, Inc."
 ROCE,3.636687594182416
 ROCE (3yr avg),-1.0393352290749474
 NFAT,28.504043621865655
@@ -21,16 +22,16 @@ CFO,964594000.0
 cCFO,2799664000.0
 cCFO/cPAT,1.3677667599628118
 p/a,51.80568132973329
-p/e,13.065218
-EY,8.61708720989483
+p/e,12.185605
+EY,9.65906423201079
 Earnings Growth 5yr cagr,77.49447033960688
 Sales Growth 5yr cagr,12.24913212254588
-PEG,0.16859548742953934
-no. shares (cr),59.9264
-Current Price,36.06
-market cap,21609459840.0
-d/e_market,0.008597577235877821
-p/s,6.277534
+PEG,0.15724483239382855
+no. shares (cr),59.9264132
+Current Price,32.17
+market cap,19278327126.440002
+d/e_market,0.009637195114569487
+p/s,5.8492794
 NFA + CWIP,134688000.0
 Capex,21275000.0
 Capex_from_cashflow_statement,24606000.0
@@ -39,7 +40,7 @@ FCF%,50.65871652848979
 FCF_capex_from_cashflow,939988000.0
 FCF%_capex_from_cashflow,50.479833049246395
 DV,0.0
-Mcap (cr),2451.827712
+Mcap (cr),2284.5636608
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,False
 npm >8%,True
@@ -56,7 +57,7 @@ DV >3%,False
 EY >7,True
 sgr > Sales growth (very linear),True
 FCF/CFO,0.9779440883936661
-Market Cap,24518277120
+Market Cap,22845636608
 Net Income,1862106000.0
 Total Revenue,3646166000.0
 Total Assets,5342660000.0
@@ -73,22 +74,22 @@ Dividends Paid,0
 Depreciation & Amortization,21266000.0
 Interest Expense,
 Income Tax Expense,-1574501000.0
-Shares Outstanding,599264000
+Shares Outstanding,599264132
 Net Fixed Assets,131491000.0
 Construction in Progress,3197000.0
 Net Debt,107354000.0
-3-5yr Average ROA (%),12.706866178720608
-3-5yr Average ROE (%),14.444893155614388
-ROE,47.49159444079025
-ROA,41.67153310398884
-insidersPercentHeld,0.00701
-institutionsPercentHeld,0.93363
-institutionsFloatPercentHeld,0.94022006
-institutionsCount,1205.0
-current,36.06
+3-5yr Average ROA (%),-1.7754672839135104
+3-5yr Average ROE (%),-2.078457486973545
+ROE,-1.1176438648696065
+ROA,-0.9550584775520357
+insidersPercentHeld,0.0069199996
+institutionsPercentHeld,0.93278
+institutionsFloatPercentHeld,0.93928003
+institutionsCount,1210.0
+current,32.17
 high,50.0
 low,26.0
-mean,43.00811
+mean,43.46757
 median,44.0
 Normalized EBIT,-15846000.0
 Normalized Net Income,576816333.3333334

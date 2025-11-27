@@ -1,0 +1,103 @@
+,Value
+ticker,DELL
+longName,Dell Technologies Inc.
+ROCE,19.452722839338932
+ROCE (3yr avg),15.956767417860148
+NFAT,14.969768170426065
+NFAT (3yr avg),15.52054832881732
+NPM,3.674524989993369
+DPR,32.9608683682963
+Retention Ratio,67.0391316317037
+Dep,51.82638068963599
+SSGR,-13.593533064511076
+Av NPM (over 3 years),3.674524989993369
+Au NFA/T (over 3 years),15.52054832881732
+Av Dep%NFA (over 3 years),51.82638068963599
+Au Retention ratio (over 3 years),67.0391316317037
+d/e,-11.031432420296364
+Interest coverage,4.410891089108911
+tax %,9.350237717908081
+cPAT,15985000000.0
+CFO,4521000000.0
+cCFO,27069000000.0
+cCFO/cPAT,1.6934000625586487
+p/a,5.591408323795144
+p/e,19.080755
+EY,9.564678530140286
+Earnings Growth 5yr cagr,-3.3215970827971897
+Sales Growth 5yr cagr,-1.8899632586211856
+PEG,-5.744451998353659
+no. shares (cr),33.8646945
+Current Price,141.77
+market cap,48009977392.65
+d/e_market,0.5117061355617518
+p/s,0.8638198
+NFA + CWIP,6336000000.0
+Capex,3027000000.0
+Capex_from_cashflow_statement,2652000000.0
+FCF,1494000000.0
+FCF%,32.534843205574916
+FCF_capex_from_cashflow,1869000000.0
+FCF%_capex_from_cashflow,40.70121951219512
+DV,2.6556979803852054
+Mcap (cr),8763.5378176
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),False
+FCF/CFO,0.33045786330457866
+Market Cap,87635378176
+Net Income,4592000000.0
+Total Revenue,95567000000.0
+Total Assets,79746000000.0
+Total Liabilities,81133000000.0
+Total Stockholders Equity,-2227000000.0
+Total Debt,24567000000.0
+Cash and Cash Equivalents,9610000000.0
+Current Assets,36229000000.0
+Current Liabilities,46527000000.0
+Working Capital,-10298000000.0
+Operating Cash Flow,4521000000.0
+Capital Expenditure,2652000000.0
+Dividends Paid,1275000000.0
+Depreciation & Amortization,3123000000.0
+Interest Expense,1414000000.0
+Income Tax Expense,472000000.0
+Shares Outstanding,338646945
+Net Fixed Assets,6336000000.0
+Construction in Progress,0
+Net Debt,14957000000.0
+3-5yr Average ROA (%),3.311996232970356
+3-5yr Average ROE (%),-114.13985719009905
+ROE,-126.67788371658253
+ROA,3.9455679323616923
+insidersPercentHeld,0.09316
+institutionsPercentHeld,0.71038
+institutionsFloatPercentHeld,0.78336
+institutionsCount,1814.0
+current,141.77
+high,180.0
+low,104.0
+mean,150.09091
+median,152.0
+Normalized EBIT,5518666666.666667
+Normalized Net Income,3474000000.0
+Research Asset,8000000000.0
+R&D Amortization,2243600000.0
+Adjusted EBIT (R&D),7279400000.0
+Adjusted Book Equity (R&D),5773000000.0
+Adjusted D/E (R&D),4.255499740169756
+Adjusted Invested Capital (R&D),20730000000.0
+Adjusted ROC (R&D),31.831928584479495
+Adjusted ROE (R&D),79.54269877013684

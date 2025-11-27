@@ -1,0 +1,95 @@
+,Value
+ticker,EVGO
+longName,"EVgo, Inc."
+ROCE,-19.003366789388622
+ROCE (3yr avg),-18.97451026105404
+NFAT,0.5343763199454024
+NFAT (3yr avg),0.38325509012208375
+NPM,-31.37899078265085
+DPR,0.0
+Retention Ratio,100.0
+Dep,13.658334421168755
+SSGR,-25.684492361513644
+Av NPM (over 3 years),-31.37899078265085
+Au NFA/T (over 3 years),0.38325509012208375
+Av Dep%NFA (over 3 years),13.658334421168755
+Au Retention ratio (over 3 years),100.0
+d/e,-0.5627346829483962
+Interest coverage,
+tax %,1.7707485366515487
+cPAT,-120242000.0
+CFO,-7256000.0
+cCFO,-132708000.0
+cCFO/cPAT,1.103674256915221
+p/a,-5.4963092631667685
+p/e,inf
+EY,-6.9588503250848674
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,126.11888906766207
+PEG,
+no. shares (cr),13.4690908
+Current Price,4.73
+market cap,637087994.84
+d/e_market,0.1418469673450612
+p/s,4.547432
+NFA + CWIP,557407000.0
+Capex,74448000.0
+Capex_from_cashflow_statement,94787000.0
+FCF,-81704000.0
+FCF%,184.29196553435287
+FCF_capex_from_cashflow,-102043000.0
+FCF%_capex_from_cashflow,230.16871926737946
+DV,0.0
+Mcap (cr),140.22688
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,False
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,11.260198456449835
+Market Cap,1402268800
+Net Income,-44334000.0
+Total Revenue,256825000.0
+Total Assets,803761000.0
+Total Liabilities,360030000.0
+Total Stockholders Equity,-160589000.0
+Total Debt,90369000.0
+Cash and Cash Equivalents,21282000.0
+Current Assets,205375000.0
+Current Liabilities,111410000.0
+Working Capital,93965000.0
+Operating Cash Flow,-7256000.0
+Capital Expenditure,94787000.0
+Dividends Paid,0
+Depreciation & Amortization,65795000.0
+Interest Expense,
+Income Tax Expense,-2284000.0
+Shares Outstanding,134690908
+Net Fixed Assets,504263000.0
+Construction in Progress,53144000.0
+Net Debt,69087000.0
+3-5yr Average ROA (%),-4.629734766549715
+3-5yr Average ROE (%),9.786191871146443
+ROE,16.359321288864813
+ROA,-5.523133581282244
+insidersPercentHeld,0.051069997
+institutionsPercentHeld,0.6667
+institutionsFloatPercentHeld,0.70258003
+institutionsCount,272.0
+current,4.73
+high,12.0
+low,3.5
+mean,6.34
+median,6.2
+Normalized EBIT,-130392666.66666667
+Normalized Net Income,-38112000.0

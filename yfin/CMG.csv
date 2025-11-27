@@ -1,0 +1,95 @@
+,Value
+ticker,CMG
+longName,"Chipotle Mexican Grill, Inc."
+ROCE,24.704782688449384
+ROCE (3yr avg),22.71847315184945
+NFAT,1.8640749745506964
+NFAT (3yr avg),1.7871569572924244
+NPM,12.1398028741799
+DPR,0.0
+Retention Ratio,100.0
+Dep,5.66089889925924
+SSGR,16.034834267489938
+Av NPM (over 3 years),12.1398028741799
+Au NFA/T (over 3 years),1.7871569572924244
+Av Dep%NFA (over 3 years),5.66089889925924
+Au Retention ratio (over 3 years),100.0
+d/e,1.4827926394264006
+Interest coverage,inf
+tax %,23.6848519821115
+cPAT,4314932000.0
+CFO,2105076000.0
+cCFO,6493813000.0
+cCFO/cPAT,1.5049629982581418
+p/a,19.07062362434709
+p/e,35.306305
+EY,2.9193737916860623
+Earnings Growth 5yr cagr,34.12332011995369
+Sales Growth 5yr cagr,14.448706985570926
+PEG,1.0346679301981099
+no. shares (cr),134.0885
+Current Price,39.19
+market cap,52549283150.0
+d/e_market,0.08640684949096208
+p/s,4.641979
+NFA + CWIP,6583198000.0
+Capex,1007921000.0
+Capex_from_cashflow_statement,593603000.0
+FCF,1097155000.0
+FCF%,71.51736185801539
+FCF_capex_from_cashflow,1511473000.0
+FCF%_capex_from_cashflow,98.5244213257198
+DV,0.0
+Mcap (cr),5374.2669824
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.5211949592318758
+Market Cap,53742669824
+Net Income,1534110000.0
+Total Revenue,11313853000.0
+Total Assets,9204374000.0
+Total Liabilities,5548828000.0
+Total Stockholders Equity,3062207000.0
+Total Debt,4540618000.0
+Cash and Cash Equivalents,17285000.0
+Current Assets,1780587000.0
+Current Liabilities,1168768000.0
+Working Capital,611819000.0
+Operating Cash Flow,2105076000.0
+Capital Expenditure,593603000.0
+Dividends Paid,0
+Depreciation & Amortization,335030000.0
+Interest Expense,0
+Income Tax Expense,476120000.0
+Shares Outstanding,1340885000
+Net Fixed Assets,6390253000.0
+Construction in Progress,192945000.0
+Net Debt,4523333000.0
+3-5yr Average ROA (%),14.827520959295573
+3-5yr Average ROE (%),41.899408861911965
+ROE,45.25543116958213
+ROA,16.413945997112183
+insidersPercentHeld,0.00666
+institutionsPercentHeld,0.90379
+institutionsFloatPercentHeld,0.90985
+institutionsCount,2063.0
+current,39.19
+high,65.0
+low,45.0
+mean,57.09091
+median,58.0
+Normalized EBIT,1609798333.3333333
+Normalized Net Income,1220649333.3333333

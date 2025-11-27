@@ -1,0 +1,95 @@
+,Value
+ticker,AXP
+longName,American Express Company
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,10.915997682694695
+NFAT (3yr avg),10.719701776252386
+NPM,14.470366270710718
+DPR,20.60649023474465
+Retention Ratio,79.39350976525535
+Dep,29.766889733394663
+SSGR,93.3867434895965
+Av NPM (over 3 years),14.470366270710718
+Au NFA/T (over 3 years),10.719701776252386
+Av Dep%NFA (over 3 years),29.766889733394663
+Au Retention ratio (over 3 years),79.39350976525536
+d/e,1.8209003100830452
+Interest coverage,0.0
+tax %,21.450174486234975
+cPAT,34077000000.0
+CFO,14050000000.0
+cCFO,68333000000.0
+cCFO/cPAT,2.0052528098130704
+p/a,3.8792377100663327
+p/e,23.982672
+EY,4.382112215817704
+Earnings Growth 5yr cagr,11.826431158241956
+Sales Growth 5yr cagr,15.191173676725889
+PEG,2.0278875071526747
+no. shares (cr),69.5882227
+Current Price,332.16
+market cap,231144240520.32
+d/e_market,0.22102648928217072
+p/s,3.748231
+NFA + CWIP,6175000000.0
+Capex,1943000000.0
+Capex_from_cashflow_statement,1911000000.0
+FCF,12107000000.0
+FCF%,119.52808766906901
+FCF_capex_from_cashflow,12139000000.0
+FCF%_capex_from_cashflow,119.84401224207721
+DV,0.8648279513692951
+Mcap (cr),23776.903168
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8617081850533808
+Market Cap,237769031680
+Net Income,10129000000.0
+Total Revenue,65949000000.0
+Total Assets,271461000000.0
+Total Liabilities,241197000000.0
+Total Stockholders Equity,28057000000.0
+Total Debt,51089000000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,14050000000.0
+Capital Expenditure,1911000000.0
+Dividends Paid,1999000000.0
+Depreciation & Amortization,1676000000.0
+Interest Expense,8252000000.0
+Income Tax Expense,2766000000.0
+Shares Outstanding,695882227
+Net Fixed Assets,6175000000.0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),3.513200081355637
+3-5yr Average ROE (%),31.894888626125205
+ROE,31.73893268647665
+ROA,3.4217160882765154
+insidersPercentHeld,0.21916
+institutionsPercentHeld,0.65331
+institutionsFloatPercentHeld,0.83668
+institutionsCount,3428.0
+current,332.16
+high,375.0
+low,265.0
+mean,328.03625
+median,328.5
+Normalized EBIT,0.0
+Normalized Net Income,8672333333.333334

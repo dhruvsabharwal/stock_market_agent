@@ -1,5 +1,6 @@
 ,Value
 ticker,AGX
+longName,"Argan, Inc."
 ROCE,24.748155007436093
 ROCE (3yr avg),17.195320588880417
 NFAT,40.60566226165316
@@ -21,16 +22,16 @@ CFO,167584000.0
 cCFO,282796000.0
 cCFO/cPAT,1.4950174192081793
 p/a,14.285332205560078
-p/e,32.036213
-EY,2.723656697068173
+p/e,31.95858
+EY,2.2912391368299945
 Earnings Growth 5yr cagr,37.73864846349404
 Sales Growth 5yr cagr,19.726145831998032
-PEG,0.8488966697095628
-no. shares (cr),1.36408
-Current Price,230.02
-market cap,3137656816.0
-d/e_market,0.0008637018510694893
-p/s,3.4473798
+PEG,0.8468395478156748
+no. shares (cr),1.3811575
+Current Price,270.05
+market cap,3729815828.75
+d/e_market,0.0007265774302073842
+p/s,4.050251
 NFA + CWIP,
 Capex,
 Capex_from_cashflow_statement,6583000.0
@@ -38,8 +39,8 @@ FCF,
 FCF%,
 FCF_capex_from_cashflow,161001000.0
 FCF%_capex_from_cashflow,188.3956049099568
-DV,0.5822179120050712
-Mcap (cr),313.7656832
+DV,0.48978289649551643
+Mcap (cr),372.9815552
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,False
@@ -56,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),True
 FCF/CFO,
-Market Cap,3137656832
+Market Cap,3729815552
 Net Income,85459000.0
 Total Revenue,874179000.0
 Total Assets,836227000.0
@@ -73,22 +74,22 @@ Dividends Paid,18268000.0
 Depreciation & Amortization,5660000.0
 Interest Expense,0
 Income Tax Expense,25745000.0
-Shares Outstanding,13640800
+Shares Outstanding,13811575
 Net Fixed Assets,24516000.0
 Construction in Progress,
 Net Debt,-7240000.0
-3-5yr Average ROA (%),8.070382650520612
-3-5yr Average ROE (%),16.269083692157235
-ROE,26.589773427339313
-ROA,11.915178994685093
-insidersPercentHeld,0.044889998
-institutionsPercentHeld,0.90147
-institutionsFloatPercentHeld,0.94384
-institutionsCount,459.0
-current,230.02
+3-5yr Average ROA (%),6.147984478438373
+3-5yr Average ROE (%),11.108738824566197
+ROE,11.317230814429312
+ROA,5.9497148152642785
+insidersPercentHeld,0.045900002
+institutionsPercentHeld,0.89166
+institutionsFloatPercentHeld,0.93455005
+institutionsCount,467.0
+current,270.05
 high,236.0
 low,220.0
-mean,225.33333
-median,220.0
+mean,230.33333
+median,235.0
 Normalized EBIT,55440666.666666664
 Normalized Net Income,50305000.0

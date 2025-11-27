@@ -1,0 +1,103 @@
+,Value
+ticker,SMCI
+longName,"Super Micro Computer, Inc."
+ROCE,10.891969657785316
+ROCE (3yr avg),20.210737393398464
+NFAT,62.398592541263874
+NFAT (3yr avg),57.212727091232686
+NPM,7.149292455461001
+DPR,0.0
+Retention Ratio,100.0
+Dep,10.880199265994046
+SSGR,398.150318883705
+Av NPM (over 3 years),7.149292455461001
+Au NFA/T (over 3 years),57.212727091232686
+Av Dep%NFA (over 3 years),10.880199265994046
+Au Retention ratio (over 3 years),100.0
+d/e,0.8821599178617169
+Interest coverage,21.032917596897924
+tax %,12.942398648091121
+cPAT,3126681000.0
+CFO,1659524000.0
+cCFO,-603669000.0
+cCFO/cPAT,-0.19307022366528598
+p/a,10.674172397327442
+p/e,28.199999
+EY,3.6815506933998465
+Earnings Growth 5yr cagr,47.28363717411423
+Sales Growth 5yr cagr,61.707812102886514
+PEG,0.5964007992058252
+no. shares (cr),59.4273308
+Current Price,47.94
+market cap,28489462385.52
+d/e_market,0.1677406872524518
+p/s,1.2966232
+NFA + CWIP,799218000.0
+Capex,428726000.0
+Capex_from_cashflow_statement,127214000.0
+FCF,1230798000.0
+FCF%,117.34693293823544
+FCF_capex_from_cashflow,1532310000.0
+FCF%_capex_from_cashflow,146.09373659250954
+DV,0.0
+Mcap (cr),2848.9459712
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.7416572462947206
+Market Cap,28489459712
+Net Income,1048854000.0
+Total Revenue,21972042000.0
+Total Assets,14018429000.0
+Total Liabilities,7716558000.0
+Total Stockholders Equity,5417206000.0
+Total Debt,4778842000.0
+Cash and Cash Equivalents,233681000.0
+Current Assets,12301654000.0
+Current Liabilities,2344792000.0
+Working Capital,9956862000.0
+Operating Cash Flow,1659524000.0
+Capital Expenditure,127214000.0
+Dividends Paid,0
+Depreciation & Amortization,58344000.0
+Interest Expense,59573000.0
+Income Tax Expense,156851000.0
+Shares Outstanding,594273308
+Net Fixed Assets,798180000.0
+Construction in Progress,1038000.0
+Net Debt,4545161000.0
+3-5yr Average ROA (%),13.343820668615816
+3-5yr Average ROE (%),26.693989744035314
+ROE,17.900214004745667
+ROA,8.797442397773477
+insidersPercentHeld,0.16623
+institutionsPercentHeld,0.52128
+institutionsFloatPercentHeld,0.62522
+institutionsCount,1151.0
+current,47.94
+high,93.0
+low,15.0
+mean,49.82353
+median,50.0
+Normalized EBIT,1089922666.6666667
+Normalized Net Income,947172666.6666666
+Research Asset,1300653600.0
+R&D Amortization,335926200.0
+Adjusted EBIT (R&D),1572112800.0
+Adjusted Book Equity (R&D),6717859600.0
+Adjusted D/E (R&D),0.7113637802135668
+Adjusted Invested Capital (R&D),11263020600.0
+Adjusted ROC (R&D),12.151657560018423
+Adjusted ROE (R&D),15.61291932924588

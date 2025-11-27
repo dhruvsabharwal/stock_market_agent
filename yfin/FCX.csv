@@ -1,0 +1,95 @@
+,Value
+ticker,FCX
+longName,Freeport-McMoRan Inc.
+ROCE,14.641757172961581
+ROCE (3yr avg),14.955252007062953
+NFAT,0.6897532821200667
+NFAT (3yr avg),0.6954090888834198
+NPM,10.243525849545433
+DPR,39.153907723192475
+Retention Ratio,60.846092276807525
+Dep,0.0
+SSGR,4.334335470749372
+Av NPM (over 3 years),10.243525849545433
+Au NFA/T (over 3 years),0.6954090888834198
+Av Dep%NFA (over 3 years),0.0
+Au Retention ratio (over 3 years),60.846092276807525
+d/e,0.5833582938956449
+Interest coverage,21.517241379310345
+tax %,36.528159837845664
+cPAT,11511000000.0
+CFO,7160000000.0
+cCFO,25293000000.0
+cCFO/cPAT,2.197289549126922
+p/a,3.5976840742010436
+p/e,27.048275
+EY,3.354580696032155
+Earnings Growth 5yr cagr,-23.66433816205744
+Sales Growth 5yr cagr,3.6718017414506754
+PEG,-1.142997315824714
+no. shares (cr),143.5774134
+Current Price,39.22
+market cap,56311061535.479996
+d/e_market,0.17293227537300754
+p/s,2.1809087
+NFA + CWIP,47878000000.0
+Capex,5638000000.0
+Capex_from_cashflow_statement,4808000000.0
+FCF,1522000000.0
+FCF%,80.57173107464267
+FCF_capex_from_cashflow,2352000000.0
+FCF%_capex_from_cashflow,124.51032292218105
+DV,1.536110271078779
+Mcap (cr),5631.1062528
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.21256983240223465
+Market Cap,56311062528
+Net Income,1889000000.0
+Total Revenue,25455000000.0
+Total Assets,54848000000.0
+Total Liabilities,26070000000.0
+Total Stockholders Equity,16693000000.0
+Total Debt,9738000000.0
+Cash and Cash Equivalents,535000000.0
+Current Assets,13296000000.0
+Current Liabilities,5496000000.0
+Working Capital,7800000000.0
+Operating Cash Flow,7160000000.0
+Capital Expenditure,4808000000.0
+Dividends Paid,865000000.0
+Depreciation & Amortization,0
+Interest Expense,319000000.0
+Income Tax Expense,2523000000.0
+Shares Outstanding,1435774134
+Net Fixed Assets,38514000000.0
+Construction in Progress,9364000000.0
+Net Debt,9203000000.0
+3-5yr Average ROA (%),5.282766849692784
+3-5yr Average ROE (%),17.472588959182385
+ROE,11.461175886876704
+ROA,3.567602003880346
+insidersPercentHeld,0.00664
+institutionsPercentHeld,0.87095
+institutionsFloatPercentHeld,0.87678003
+institutionsCount,2060.0
+current,39.22
+high,55.0
+low,27.0
+mean,46.59474
+median,47.0
+Normalized EBIT,7007333333.333333
+Normalized Net Income,2401666666.6666665

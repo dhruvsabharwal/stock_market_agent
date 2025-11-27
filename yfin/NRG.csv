@@ -1,0 +1,103 @@
+,Value
+ticker,NRG
+longName,"NRG Energy, Inc."
+ROCE,13.801038858570584
+ROCE (3yr avg),9.804777900878703
+NFAT,13.675255226057365
+NFAT (3yr avg),14.963126624764554
+NPM,2.3897887327156977
+DPR,-41.80767806510381
+Retention Ratio,141.8076780651038
+Dep,49.470470046120575
+SSGR,1.2381283161600143
+Av NPM (over 3 years),2.3897887327156977
+Au NFA/T (over 3 years),14.963126624764554
+Av Dep%NFA (over 3 years),49.470470046120575
+Au Retention ratio (over 3 years),141.8076780651038
+d/e,3.7821748107364073
+Interest coverage,3.5053763440860215
+tax %,22.306629834254142
+cPAT,4331000000.0
+CFO,2306000000.0
+cCFO,2938000000.0
+cCFO/cPAT,0.6783652736088663
+p/a,4.320608341654505
+p/e,72.623314
+EY,3.591252469307502
+Earnings Growth 5yr cagr,-16.81649417751634
+Sales Growth 5yr cagr,1.3898108736443815
+PEG,-4.318576347327935
+no. shares (cr),19.3430802
+Current Price,161.95
+market cap,31326118383.899998
+d/e_market,0.35085738569030006
+p/s,1.1103153
+NFA + CWIP,2614000000.0
+Capex,1591000000.0
+Capex_from_cashflow_statement,490000000.0
+FCF,715000000.0
+FCF%,63.55555555555556
+FCF_capex_from_cashflow,1816000000.0
+FCF%_capex_from_cashflow,161.42222222222222
+DV,1.2928508889507009
+Mcap (cr),3260.6629888
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.31006071118820466
+Market Cap,32606629888
+Net Income,1125000000.0
+Total Revenue,28130000000.0
+Total Assets,24022000000.0
+Total Liabilities,21544000000.0
+Total Stockholders Equity,2906000000.0
+Total Debt,10991000000.0
+Cash and Cash Equivalents,830000000.0
+Current Assets,8964000000.0
+Current Liabilities,8813000000.0
+Working Capital,151000000.0
+Operating Cash Flow,2306000000.0
+Capital Expenditure,490000000.0
+Dividends Paid,405000000.0
+Depreciation & Amortization,1071000000.0
+Interest Expense,651000000.0
+Income Tax Expense,323000000.0
+Shares Outstanding,193430802
+Net Fixed Assets,2172000000.0
+Construction in Progress,442000000.0
+Net Debt,10161000000.0
+3-5yr Average ROA (%),1.9673106837443357
+3-5yr Average ROE (%),13.438099908212994
+ROE,-5.999405999406
+ROA,-0.732096259785445
+insidersPercentHeld,0.02596
+institutionsPercentHeld,0.95886004
+institutionsFloatPercentHeld,0.98442
+institutionsCount,1388.0
+current,161.95
+high,212.0
+low,92.0
+mean,176.95
+median,186.75
+Normalized EBIT,1544333333.3333333
+Normalized Net Income,714666666.6666666
+Research Asset,1600000.0
+R&D Amortization,1600000.0
+Adjusted EBIT (R&D),2099000000.0
+Adjusted Book Equity (R&D),2907600000.0
+Adjusted D/E (R&D),3.780093547943321
+Adjusted Invested Capital (R&D),13068600000.0
+Adjusted ROC (R&D),12.4786422400181
+Adjusted ROE (R&D),38.69170449855551

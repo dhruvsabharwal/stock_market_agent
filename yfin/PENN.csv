@@ -1,0 +1,95 @@
+,Value
+ticker,PENN
+longName,"PENN Entertainment, Inc."
+ROCE,0.9330810451663224
+ROCE (3yr avg),2.135134194577536
+NFAT,0.6741307043523709
+NFAT (3yr avg),0.6450718490918007
+NPM,-2.9889700269601343
+DPR,0.0
+Retention Ratio,100.0
+Dep,4.786982936635447
+SSGR,-6.71508335880659
+Av NPM (over 3 years),-2.9889700269601343
+Au NFA/T (over 3 years),0.6450718490918007
+Av Dep%NFA (over 3 years),4.786982936635447
+Au Retention ratio (over 3 years),100.0
+d/e,3.5130695481090535
+Interest coverage,0.3434643995749203
+tax %,8.203926164664518
+cPAT,-158600000.0
+CFO,359300000.0
+cCFO,2589500000.0
+cCFO/cPAT,-16.327238335435055
+p/a,-1.9390943837850623
+p/e,inf
+EY,-11.106266958929327
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,3.6637359692537785
+PEG,
+no. shares (cr),14.5624236
+Current Price,19.26
+market cap,2804722785.36
+d/e_market,4.010806365148886
+p/s,0.4285535
+NFA + CWIP,10187500000.0
+Capex,628600000.0
+Capex_from_cashflow_statement,540600000.0
+FCF,-269300000.0
+FCF%,86.45264847512038
+FCF_capex_from_cashflow,-181300000.0
+FCF%_capex_from_cashflow,58.20224719101124
+DV,0.0
+Mcap (cr),289.0893312
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,-0.7495129418313388
+Market Cap,2890893312
+Net Income,-311500000.0
+Total Revenue,6578100000.0
+Total Assets,15261700000.0
+Total Liabilities,12403300000.0
+Total Stockholders Equity,3202100000.0
+Total Debt,11249200000.0
+Cash and Cash Equivalents,38700000.0
+Current Assets,1154400000.0
+Current Liabilities,1415100000.0
+Working Capital,-260700000.0
+Operating Cash Flow,359300000.0
+Capital Expenditure,540600000.0
+Dividends Paid,0
+Depreciation & Amortization,433600000.0
+Interest Expense,470500000.0
+Income Tax Expense,-28000000.0
+Shares Outstanding,145624236
+Net Fixed Assets,9696100000.0
+Construction in Progress,491400000.0
+Net Debt,11210500000.0
+3-5yr Average ROA (%),-0.8136733474644152
+3-5yr Average ROE (%),-4.3199920293321235
+ROE,-14.412188593782172
+ROA,-2.919594950888242
+insidersPercentHeld,0.01413
+institutionsPercentHeld,1.01246
+institutionsFloatPercentHeld,1.0269799
+institutionsCount,477.0
+current,19.26
+high,30.0
+low,17.0
+mean,22.19444
+median,21.75
+Normalized EBIT,342600000.0
+Normalized Net Income,-193133333.33333334

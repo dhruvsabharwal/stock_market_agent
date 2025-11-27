@@ -1,0 +1,103 @@
+,Value
+ticker,SYK
+longName,Stryker Corporation
+ROCE,13.197567529345214
+ROCE (3yr avg),11.878833517534735
+NFAT,6.782230226624644
+NFAT (3yr avg),6.589653259674045
+NPM,13.822668254344
+DPR,40.42913295489084
+Retention Ratio,59.57086704510917
+Dep,33.05168347521893
+SSGR,21.209388497436866
+Av NPM (over 3 years),13.822668254344
+Au NFA/T (over 3 years),6.589653259674045
+Av Dep%NFA (over 3 years),33.05168347521893
+Au Retention ratio (over 3 years),59.57086704510916
+d/e,0.7312967245737643
+Interest coverage,inf
+tax %,14.289805269186711
+cPAT,10510000000.0
+CFO,4242000000.0
+cCFO,13840000000.0
+cCFO/cPAT,1.3168411037107517
+p/a,7.498997795149329
+p/e,48.76913
+EY,2.1177755052690106
+Earnings Growth 5yr cagr,14.109628465877822
+Sales Growth 5yr cagr,9.71627003159552
+PEG,3.456443244975682
+no. shares (cr),38.2307298
+Current Price,369.67
+market cap,141327538851.66
+d/e_market,0.09620913312777393
+p/s,5.933645
+NFA + CWIP,3448000000.0
+Capex,1283000000.0
+Capex_from_cashflow_statement,755000000.0
+FCF,2959000000.0
+FCF%,98.86401603742064
+FCF_capex_from_cashflow,3487000000.0
+FCF%_capex_from_cashflow,116.50517875041764
+DV,0.86253536282089
+Mcap (cr),14132.7548416
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6975483262611976
+Market Cap,141327548416
+Net Income,2993000000.0
+Total Revenue,22595000000.0
+Total Assets,42971000000.0
+Total Liabilities,22337000000.0
+Total Stockholders Equity,18593000000.0
+Total Debt,13597000000.0
+Cash and Cash Equivalents,1593000000.0
+Current Assets,14847000000.0
+Current Liabilities,7616000000.0
+Working Capital,7231000000.0
+Operating Cash Flow,4242000000.0
+Capital Expenditure,755000000.0
+Dividends Paid,1219000000.0
+Depreciation & Amortization,1050000000.0
+Interest Expense,0
+Income Tax Expense,499000000.0
+Shares Outstanding,382307298
+Net Fixed Assets,3448000000.0
+Construction in Progress,0
+Net Debt,12004000000.0
+3-5yr Average ROA (%),7.418518776924953
+3-5yr Average ROE (%),16.476557050646207
+ROE,17.978357806242723
+ROA,8.242616802958487
+insidersPercentHeld,0.053590003
+institutionsPercentHeld,0.82014
+institutionsFloatPercentHeld,0.86657995
+institutionsCount,2954.0
+current,369.67
+high,465.0
+low,316.0
+mean,430.55704
+median,435.0
+Normalized EBIT,3900333333.3333335
+Normalized Net Income,2838666666.6666665
+Research Asset,3942800000.0
+R&D Amortization,1108600000.0
+Adjusted EBIT (R&D),5023400000.0
+Adjusted Book Equity (R&D),22535800000.0
+Adjusted D/E (R&D),0.6033511124521872
+Adjusted Invested Capital (R&D),34539800000.0
+Adjusted ROC (R&D),12.46552070975418
+Adjusted ROE (R&D),13.281090531509864

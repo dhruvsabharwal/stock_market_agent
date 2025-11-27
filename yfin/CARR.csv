@@ -1,0 +1,103 @@
+,Value
+ticker,CARR
+longName,Carrier Global Corporation
+ROCE,9.67097014672495
+ROCE (3yr avg),9.361756266585251
+NFAT,7.331594391913923
+NFAT (3yr avg),6.910760928097596
+NPM,17.494152234010834
+DPR,24.106219695056115
+Retention Ratio,75.89378030494387
+Dep,23.468567638352
+SSGR,68.28542181101275
+Av NPM (over 3 years),17.494152234010834
+Au NFA/T (over 3 years),6.910760928097596
+Av Dep%NFA (over 3 years),23.468567638352
+Au Retention ratio (over 3 years),75.89378030494389
+d/e,1.4647919787945143
+Interest coverage,3.617241379310345
+tax %,46.701846965699204
+cPAT,12151000000.0
+CFO,563000000.0
+cCFO,7150000000.0
+cCFO/cPAT,0.5884289358900502
+p/a,17.073913838279204
+p/e,33.728813
+EY,11.030179526623954
+Earnings Growth 5yr cagr,48.124803420368536
+Sales Growth 5yr cagr,2.9414625785119997
+PEG,0.7008613148064202
+no. shares (cr),85.1022837
+Current Price,59.7
+market cap,50806063368.9
+d/e_market,0.2501669910481628
+p/s,2.2617664
+NFA + CWIP,3553000000.0
+Capex,2204000000.0
+Capex_from_cashflow_statement,519000000.0
+FCF,-1641000000.0
+FCF%,-29.282655246252677
+FCF_capex_from_cashflow,44000000.0
+FCF%_capex_from_cashflow,0.7851534618129907
+DV,1.3187402360524711
+Mcap (cr),5080.6063104
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,False
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,-2.9147424511545292
+Market Cap,50806063104
+Net Income,5604000000.0
+Total Revenue,22486000000.0
+Total Assets,37403000000.0
+Total Liabilities,23008000000.0
+Total Stockholders Equity,8677000000.0
+Total Debt,12710000000.0
+Cash and Cash Equivalents,972000000.0
+Current Assets,9891000000.0
+Current Liabilities,7892000000.0
+Working Capital,1999000000.0
+Operating Cash Flow,563000000.0
+Capital Expenditure,519000000.0
+Dividends Paid,670000000.0
+Depreciation & Amortization,1232000000.0
+Interest Expense,580000000.0
+Income Tax Expense,1062000000.0
+Shares Outstanding,851022837
+Net Fixed Assets,3553000000.0
+Construction in Progress,0
+Net Debt,11738000000.0
+3-5yr Average ROA (%),9.052612484906287
+3-5yr Average ROE (%),32.53855720155602
+ROE,16.416184971098264
+ROA,4.580023086847287
+insidersPercentHeld,0.060310002
+institutionsPercentHeld,0.86656
+institutionsFloatPercentHeld,0.92218
+institutionsCount,2039.0
+current,59.7
+high,90.0
+low,65.0
+mean,77.175
+median,76.0
+Normalized EBIT,2354333333.3333335
+Normalized Net Income,3495666666.6666665
+Research Asset,1531200000.0
+R&D Amortization,419600000.0
+Adjusted EBIT (R&D),3120400000.0
+Adjusted Book Equity (R&D),10208200000.0
+Adjusted D/E (R&D),1.2450774867263572
+Adjusted Invested Capital (R&D),21946200000.0
+Adjusted ROC (R&D),7.578148231959618
+Adjusted ROE (R&D),54.89704355322193

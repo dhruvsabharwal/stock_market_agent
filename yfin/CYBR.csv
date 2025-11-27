@@ -1,0 +1,103 @@
+,Value
+ticker,CYBR
+longName,CyberArk Software Ltd.
+ROCE,-0.5236595244954277
+ROCE (3yr avg),-5.681093770771054
+NFAT,50.077161729383505
+NFAT (3yr avg),42.26120266646467
+NPM,-13.405506404974153
+DPR,0.0
+Retention Ratio,100.0
+Dep,88.45078874721146
+SSGR,-654.9836117744143
+Av NPM (over 3 years),-13.405506404974153
+Au NFA/T (over 3 years),42.26120266646467
+Av Dep%NFA (over 3 years),88.45078874721146
+Au Retention ratio (over 3 years),100.0
+d/e,0.014018219773174172
+Interest coverage,-27.369924812030074
+tax %,-485.3751722410122
+cPAT,-374279000.0
+CFO,231887000.0
+cCFO,412539000.0
+cCFO/cPAT,-1.1022232078209035
+p/a,-4.621730306674684
+p/e,inf
+EY,-0.3837565764692605
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,25.779134968243554
+PEG,
+no. shares (cr),5.0407204
+Current Price,483.15
+market cap,24354240612.6
+d/e_market,0.0004560602063795675
+p/s,20.293222
+NFA + CWIP,19581000.0
+Capex,45070000.0
+Capex_from_cashflow_statement,11059000.0
+FCF,186817000.0
+FCF%,-199.88765367372488
+FCF_capex_from_cashflow,220828000.0
+FCF%_capex_from_cashflow,-236.27823370175793
+DV,0.0
+Mcap (cr),2435.4240512
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.8056380909667209
+Market Cap,24354240512
+Net Income,-93461000.0
+Total Revenue,1000742000.0
+Total Assets,3348395000.0
+Total Liabilities,978591000.0
+Total Stockholders Equity,792326000.0
+Total Debt,11107000.0
+Cash and Cash Equivalents,12605000.0
+Current Assets,1193533000.0
+Current Liabilities,807431000.0
+Working Capital,386102000.0
+Operating Cash Flow,231887000.0
+Capital Expenditure,11059000.0
+Dividends Paid,0
+Depreciation & Amortization,41983000.0
+Interest Expense,2660000.0
+Income Tax Expense,77495000.0
+Shares Outstanding,50407204
+Net Fixed Assets,19581000.0
+Construction in Progress,0
+Net Debt,-1498000.0
+3-5yr Average ROA (%),-4.83086545452206
+3-5yr Average ROE (%),-11.268367072088578
+ROE,-5.911268670168526
+ROA,-3.4804657875475065
+insidersPercentHeld,0.00027000002
+institutionsPercentHeld,0.93917
+institutionsFloatPercentHeld,0.93943
+institutionsCount,1050.0
+current,483.15
+high,551.0
+low,415.0
+mean,461.88666
+median,450.0
+Normalized EBIT,-69202000.0
+Normalized Net Income,-96777666.66666667
+Research Asset,583255000.0
+R&D Amortization,157389000.0
+Adjusted EBIT (R&D),72363000.0
+Adjusted Book Equity (R&D),1375581000.0
+Adjusted D/E (R&D),0.008074406378104962
+Adjusted Invested Capital (R&D),1374083000.0
+Adjusted ROC (R&D),30.827470821541613
+Adjusted ROE (R&D),-6.794292738849984

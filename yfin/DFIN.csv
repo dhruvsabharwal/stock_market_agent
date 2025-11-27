@@ -1,0 +1,95 @@
+,Value
+ticker,DFIN
+longName,"Donnelley Financial Solutions, Inc."
+ROCE,22.70445344129555
+ROCE (3yr avg),22.41727843398938
+NFAT,30.602739726027398
+NFAT (3yr avg),21.73153100966825
+NPM,11.474840673273576
+DPR,0.0
+Retention Ratio,100.0
+Dep,100.0
+SSGR,149.3658559222472
+Av NPM (over 3 years),11.474840673273576
+Au NFA/T (over 3 years),21.73153100966825
+Av Dep%NFA (over 3 years),100.0
+Au Retention ratio (over 3 years),100.0
+d/e,0.35156638488314274
+Interest coverage,9.483443708609272
+tax %,26.139088729016784
+cPAT,423000000.0
+CFO,171100000.0
+cCFO,625300000.0
+cCFO/cPAT,1.4782505910165484
+p/a,11.4512331143884
+p/e,18.173145
+EY,6.53439291631839
+Earnings Growth 5yr cagr,-10.17438531933158
+Sales Growth 5yr cagr,-7.667004380886667
+PEG,-1.7861663805351053
+no. shares (cr),2.7494777
+Current Price,51.43
+market cap,1414056381.11
+d/e_market,0.09999601281032687
+p/s,1.8736506
+NFA + CWIP,21200000.0
+Capex,60800000.0
+Capex_from_cashflow_statement,65900000.0
+FCF,110300000.0
+FCF%,119.37229437229438
+FCF_capex_from_cashflow,105200000.0
+FCF%_capex_from_cashflow,113.85281385281385
+DV,0.0
+Mcap (cr),141.4606208
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6446522501461134
+Market Cap,1414606208
+Net Income,92400000.0
+Total Revenue,781900000.0
+Total Assets,841600000.0
+Total Liabilities,405500000.0
+Total Stockholders Equity,402200000.0
+Total Debt,141400000.0
+Cash and Cash Equivalents,17800000.0
+Current Assets,232500000.0
+Current Liabilities,224100000.0
+Working Capital,8400000.0
+Operating Cash Flow,171100000.0
+Capital Expenditure,65900000.0
+Dividends Paid,0
+Depreciation & Amortization,69500000.0
+Interest Expense,15100000.0
+Income Tax Expense,32700000.0
+Shares Outstanding,27494777
+Net Fixed Assets,21200000.0
+Construction in Progress,0
+Net Debt,123600000.0
+3-5yr Average ROA (%),11.015456749821295
+3-5yr Average ROE (%),25.742251053083777
+ROE,22.468224682246824
+ROA,10.053816046966732
+insidersPercentHeld,0.046329997
+institutionsPercentHeld,1.03264
+institutionsFloatPercentHeld,1.0828099
+institutionsCount,364.0
+current,51.43
+high,72.0
+low,70.0
+mean,70.66667
+median,70.0
+Normalized EBIT,136466666.66666666
+Normalized Net Income,92366666.66666667

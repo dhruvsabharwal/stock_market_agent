@@ -1,0 +1,95 @@
+,Value
+ticker,SG
+longName,"Sweetgreen, Inc."
+ROCE,-12.338260917683293
+ROCE (3yr avg),-16.564208274411666
+NFAT,1.271183941777204
+NFAT (3yr avg),1.2807856350304287
+NPM,-24.42549625160027
+DPR,0.0
+Retention Ratio,100.0
+Dep,12.943709825618365
+SSGR,-44.22753455315757
+Av NPM (over 3 years),-24.42549625160027
+Au NFA/T (over 3 years),1.2807856350304287
+Av Dep%NFA (over 3 years),12.943709825618365
+Au Retention ratio (over 3 years),100.0
+d/e,0.6852798504756556
+Interest coverage,-329.44921875
+tax %,1.4191591945371644
+cPAT,-547373000.0
+CFO,43390000.0
+cCFO,-37828000.0
+cCFO/cPAT,0.06910826803660393
+p/a,-10.550728089315713
+p/e,inf
+EY,-10.651911344265946
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,25.811313623238654
+PEG,
+no. shares (cr),10.6318359
+Current Price,7.98
+market cap,848420504.82
+d/e_market,0.3897996313398436
+p/s,1.4039583
+NFA + CWIP,553981000.0
+Capex,111347000.0
+Capex_from_cashflow_statement,92198000.0
+FCF,-67957000.0
+FCF%,75.19613158797428
+FCF_capex_from_cashflow,-48808000.0
+FCF%_capex_from_cashflow,54.00728093567769
+DV,0.0
+Mcap (cr),96.3427136
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,-1.566190366443881
+Market Cap,963427136
+Net Income,-90373000.0
+Total Revenue,676826000.0
+Total Assets,856758000.0
+Total Liabilities,410613000.0
+Total Stockholders Equity,482597000.0
+Total Debt,330714000.0
+Cash and Cash Equivalents,4790000.0
+Current Assets,234537000.0
+Current Liabilities,115827000.0
+Working Capital,118710000.0
+Operating Cash Flow,43390000.0
+Capital Expenditure,92198000.0
+Dividends Paid,0
+Depreciation & Amortization,68260000.0
+Interest Expense,256000.0
+Income Tax Expense,-1301000.0
+Shares Outstanding,106318359
+Net Fixed Assets,553981000.0
+Construction in Progress,0
+Net Debt,325924000.0
+3-5yr Average ROA (%),-17.81507898840646
+3-5yr Average ROE (%),-27.019822415187498
+ROE,-22.14914101363224
+ROA,-12.844464885708911
+insidersPercentHeld,0.03542
+institutionsPercentHeld,1.05067
+institutionsFloatPercentHeld,1.0892501
+institutionsCount,331.0
+current,7.98
+high,21.0
+low,10.0
+mean,13.91667
+median,13.0
+Normalized EBIT,-131102666.66666667
+Normalized Net Income,-131399333.33333333

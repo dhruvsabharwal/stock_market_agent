@@ -1,5 +1,6 @@
 ,Value
 ticker,AXON
+longName,"Axon Enterprise, Inc."
 ROCE,13.894954541277563
 ROCE (3yr avg),8.074930588467234
 NFAT,7.879715236511477
@@ -21,16 +22,16 @@ CFO,408312000.0
 cCFO,957430000.0
 cCFO/cPAT,1.496618099226391
 p/a,11.05939444569271
-p/e,188.4853
-EY,0.6245236398456028
+p/e,175.4621
+EY,0.6692365598402313
 Earnings Growth 5yr cagr,
 Sales Growth 5yr cagr,34.11045883116009
 PEG,
-no. shares (cr),7.85044
-Current Price,769.02
-market cap,60371453688.0
-d/e_market,0.011953861567250059
-p/s,25.24323
+no. shares (cr),7.850444
+Current Price,717.64
+market cap,56337926321.6
+d/e_market,0.012809701157270151
+p/s,23.556684
 NFA + CWIP,354069000.0
 Capex,110409000.0
 Capex_from_cashflow_statement,78785000.0
@@ -39,7 +40,7 @@ FCF%,79.01223762313214
 FCF_capex_from_cashflow,329527000.0
 FCF%_capex_from_cashflow,87.39981009670215
 DV,0.0
-Mcap (cr),6037.1456
+Mcap (cr),5633.7928192
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,True
@@ -56,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),True
 FCF/CFO,0.7295964850408511
-Market Cap,60371456000
+Market Cap,56337928192
 Net Income,377034000.0
 Total Revenue,2082526000.0
 Total Assets,4474588000.0
@@ -73,23 +74,23 @@ Dividends Paid,0
 Depreciation & Amortization,48425000.0
 Interest Expense,7098000.0
 Income Tax Expense,4470000.0
-Shares Outstanding,78504400
+Shares Outstanding,78504440
 Net Fixed Assets,291891000.0
 Construction in Progress,62178000.0
 Net Debt,591357000.0
-3-5yr Average ROA (%),7.217491924625236
-3-5yr Average ROE (%),14.665889306062974
-ROE,19.12213479128576
-ROA,9.56482450890831
-insidersPercentHeld,0.041890003
-institutionsPercentHeld,0.83445
-institutionsFloatPercentHeld,0.87094
-institutionsCount,1602.0
-current,769.02
+3-5yr Average ROA (%),6.043825632483697
+3-5yr Average ROE (%),12.43776656345158
+ROE,12.189139937647699
+ROA,5.615112309912622
+insidersPercentHeld,0.041729998
+institutionsPercentHeld,0.83392
+institutionsFloatPercentHeld,0.87023
+institutionsCount,1616.0
+current,717.64
 high,1000.0
-low,664.1
-mean,868.9357
-median,877.5
+low,800.0
+mean,888.93335
+median,893.0
 Normalized EBIT,215210333.33333334
 Normalized Net Income,233249000.0
 Research Asset,902464600.0

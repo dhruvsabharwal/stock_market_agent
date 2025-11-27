@@ -1,0 +1,103 @@
+,Value
+ticker,PYPL
+longName,"PayPal Holdings, Inc."
+ROCE,17.18369189107868
+ROCE (3yr avg),15.062388526533537
+NFAT,19.761963952765694
+NFAT (3yr avg),18.062075683445226
+NPM,12.031640714960881
+DPR,0.0
+Retention Ratio,100.0
+Dep,70.54808550060547
+SSGR,146.76831968903903
+Av NPM (over 3 years),12.031640714960881
+Au NFA/T (over 3 years),18.062075683445226
+Av Dep%NFA (over 3 years),70.54808550060547
+Au Retention ratio (over 3 years),100.0
+d/e,0.46928886988741625
+Interest coverage,15.086387434554974
+tax %,22.180521673860014
+cPAT,14981000000.0
+CFO,7450000000.0
+cCFO,23903000000.0
+cCFO/cPAT,1.5955543688672318
+p/a,5.047099773628995
+p/e,14.421505
+EY,6.472842889449991
+Earnings Growth 5yr cagr,4.317914869219397
+Sales Growth 5yr cagr,7.815910254312786
+PEG,3.339923420631763
+no. shares (cr),95.5378405
+Current Price,67.06
+market cap,64067675839.3
+d/e_market,0.1541963224134952
+p/s,1.9911113
+NFA + CWIP,1612000000.0
+Capex,1122000000.0
+Capex_from_cashflow_statement,683000000.0
+FCF,6328000000.0
+FCF%,152.59223535085604
+FCF_capex_from_cashflow,6767000000.0
+FCF%_capex_from_cashflow,163.1782011092356
+DV,0.0
+Mcap (cr),6429.6964096
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8493959731543624
+Market Cap,64296964096
+Net Income,4147000000.0
+Total Revenue,31797000000.0
+Total Assets,81611000000.0
+Total Liabilities,61194000000.0
+Total Stockholders Equity,21051000000.0
+Total Debt,9879000000.0
+Cash and Cash Equivalents,4651000000.0
+Current Assets,61092000000.0
+Current Liabilities,48376000000.0
+Working Capital,12716000000.0
+Operating Cash Flow,7450000000.0
+Capital Expenditure,683000000.0
+Dividends Paid,0
+Depreciation & Amortization,1032000000.0
+Interest Expense,382000000.0
+Income Tax Expense,1182000000.0
+Shares Outstanding,955378405
+Net Fixed Assets,1508000000.0
+Construction in Progress,104000000.0
+Net Debt,5228000000.0
+3-5yr Average ROA (%),4.744570075307102
+3-5yr Average ROE (%),17.81428730516364
+ROE,20.000964599209027
+ROA,5.064203154289064
+insidersPercentHeld,0.00137
+institutionsPercentHeld,0.81527
+institutionsFloatPercentHeld,0.81639
+institutionsCount,2602.0
+current,67.06
+high,120.0
+low,62.0
+mean,82.87188
+median,80.5
+Normalized EBIT,5046333333.333333
+Normalized Net Income,3604000000.0
+Research Asset,8524400000.0
+R&D Amortization,2448600000.0
+Adjusted EBIT (R&D),6241400000.0
+Adjusted Book Equity (R&D),29575400000.0
+Adjusted D/E (R&D),0.3340276040222617
+Adjusted Invested Capital (R&D),34803400000.0
+Adjusted ROC (R&D),13.95560468301287
+Adjusted ROE (R&D),14.021788378179162

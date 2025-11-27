@@ -1,0 +1,103 @@
+,Value
+ticker,ASH
+longName,Ashland Inc.
+ROCE,0.562560620756547
+ROCE (3yr avg),3.066838592669258
+NFAT,1.4512362637362637
+NFAT (3yr avg),1.5126135417023268
+NPM,18.29754671396955
+DPR,32.1339053094262
+Retention Ratio,67.8660946905738
+Dep,17.34249808520693
+SSGR,1.4408803045622587
+Av NPM (over 3 years),18.29754671396955
+Au NFA/T (over 3 years),1.5126135417023268
+Av Dep%NFA (over 3 years),17.34249808520693
+Au Retention ratio (over 3 years),67.8660946905738
+d/e,0.4740071036486923
+Interest coverage,1.5660377358490567
+tax %,929.1666666666666
+cPAT,1494000000.0
+CFO,411000000.0
+cCFO,1001000000.0
+cCFO/cPAT,0.6700133868808568
+p/a,2.8455969018353255
+p/e,inf
+EY,7.717696885415326
+Earnings Growth 5yr cagr,-2.3331851342057175
+Sales Growth 5yr cagr,0.03157064140288934
+PEG,-inf
+no. shares (cr),4.5705958
+Current Price,47.91
+market cap,2189772447.7799997
+d/e_market,0.6703892915851893
+p/s,1.2004142
+NFA + CWIP,1598000000.0
+Capex,150000000.0
+Capex_from_cashflow_statement,137000000.0
+FCF,261000000.0
+FCF%,154.4378698224852
+FCF_capex_from_cashflow,274000000.0
+FCF%_capex_from_cashflow,162.1301775147929
+DV,3.5620139471147656
+Mcap (cr),224.3574016
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,True
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.635036496350365
+Market Cap,2243574016
+Net Income,169000000.0
+Total Revenue,2113000000.0
+Total Assets,5645000000.0
+Total Liabilities,2777000000.0
+Total Stockholders Equity,3097000000.0
+Total Debt,1468000000.0
+Cash and Cash Equivalents,107000000.0
+Current Assets,1195000000.0
+Current Liabilities,490000000.0
+Working Capital,705000000.0
+Operating Cash Flow,411000000.0
+Capital Expenditure,137000000.0
+Dividends Paid,78000000.0
+Depreciation & Amortization,274000000.0
+Interest Expense,53000000.0
+Income Tax Expense,-223000000.0
+Shares Outstanding,45705958
+Net Fixed Assets,1417000000.0
+Construction in Progress,181000000.0
+Net Debt,1361000000.0
+3-5yr Average ROA (%),5.907700169333827
+3-5yr Average ROE (%),12.585258976630051
+ROE,5.666387259010897
+ROA,2.917817679558011
+insidersPercentHeld,0.01081
+institutionsPercentHeld,0.98095
+institutionsFloatPercentHeld,0.99166
+institutionsCount,450.0
+current,47.91
+high,79.0
+low,53.0
+mean,64.0
+median,61.5
+Normalized EBIT,170333333.33333334
+Normalized Net Income,424666666.6666667
+Research Asset,148800000.0
+R&D Amortization,42200000.0
+Adjusted EBIT (R&D),41800000.0
+Adjusted Book Equity (R&D),3245800000.0
+Adjusted D/E (R&D),0.45227678846509334
+Adjusted Invested Capital (R&D),4606800000.0
+Adjusted ROC (R&D),-7.523479783508435
+Adjusted ROE (R&D),5.206728695545012

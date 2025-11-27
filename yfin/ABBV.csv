@@ -22,16 +22,16 @@ CFO,18806000000.0
 cCFO,89365000000.0
 cCFO/cPAT,2.7480857344936807
 p/a,3.1756872118832167
-p/e,99.00953
-EY,1.1647054863088746
-Earnings Growth 5yr cagr,-28.358425455617663
+p/e,105.24545
+EY,1.0458918726690716
+Earnings Growth 5yr cagr,-28.125917881859543
 Sales Growth 5yr cagr,0.08119580638035195
-PEG,-3.491362034713627
-no. shares (cr),176.656
-Current Price,207.92
-market cap,367303155200.0
-d/e_market,0.1828026768880857
-p/s,6.2972016
+PEG,-3.74193832329577
+no. shares (cr),176.6558253
+Current Price,231.54
+market cap,409028897899.62
+d/e_market,0.1641546608192897
+p/s,7.012565
 NFA + CWIP,6227000000.0
 Capex,8551000000.0
 Capex_from_cashflow_statement,974000000.0
@@ -39,8 +39,8 @@ FCF,10255000000.0
 FCF%,239.71482000935018
 FCF_capex_from_cashflow,17832000000.0
 FCF%_capex_from_cashflow,416.8302945301543
-DV,3.0016077574930673
-Mcap (cr),36730.3163904
+DV,2.695408577881373
+Mcap (cr),40902.8886528
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,False
 npm >8%,True
@@ -53,11 +53,11 @@ p/e <10,False
 peg <1,True
 EY >7%,False
 p/b <3,True
-DV >3%,True
+DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),False
 FCF/CFO,0.5453046899925555
-Market Cap,367303163904
+Market Cap,409028886528
 Net Income,4278000000.0
 Total Revenue,56334000000.0
 Total Assets,135161000000.0
@@ -74,7 +74,7 @@ Dividends Paid,11025000000.0
 Depreciation & Amortization,8386000000.0
 Interest Expense,2808000000.0
 Income Tax Expense,-570000000.0
-Shares Outstanding,1766560000
+Shares Outstanding,1766558253
 Net Fixed Assets,5134000000.0
 Construction in Progress,1093000000.0
 Net Debt,62217000000.0
@@ -83,14 +83,14 @@ Net Debt,62217000000.0
 ROE,62.52100840336134
 ROA,3.17039188948835
 insidersPercentHeld,0.00104
-institutionsPercentHeld,0.74584
-institutionsFloatPercentHeld,0.74662
-institutionsCount,4640.0
-current,207.92
-high,255.0
-low,170.0
-mean,215.7037
-median,215.0
+institutionsPercentHeld,0.74594
+institutionsFloatPercentHeld,0.74671996
+institutionsCount,4652.0
+current,231.54
+high,270.0
+low,184.0
+mean,227.22408
+median,230.0
 Normalized EBIT,10235000000.0
 Normalized Net Income,6992333333.333333
 Research Asset,26055400000.0

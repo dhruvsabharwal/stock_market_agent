@@ -1,0 +1,103 @@
+,Value
+ticker,CORZ
+longName,"Core Scientific, Inc."
+ROCE,-87.21689489452984
+ROCE (3yr avg),-163.7916746223405
+NFAT,0.807968426273783
+NFAT (3yr avg),0.8515391405988749
+NPM,-213.92165821730532
+DPR,0.0
+Retention Ratio,100.0
+Dep,22.757019435778886
+SSGR,-204.9196844296293
+Av NPM (over 3 years),-213.92165821730532
+Au NFA/T (over 3 years),0.8515391405988749
+Av Dep%NFA (over 3 years),22.757019435778886
+Au Retention ratio (over 3 years),100.0
+d/e,-2.0098619461554827
+Interest coverage,-0.3298893984353925
+tax %,-0.06536564430436193
+cPAT,-3660498000.0
+CFO,42896000.0
+cCFO,256462000.0
+cCFO/cPAT,-0.07006205166619406
+p/a,-184.65125618544252
+p/e,inf
+EY,-23.84868350803504
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,-2.1143023339483924
+PEG,
+no. shares (cr),30.7355193
+Current Price,17.94
+market cap,5513952162.42
+d/e_market,0.21758785072111278
+p/s,15.825046
+NFA + CWIP,833670000.0
+Capex,176607000.0
+Capex_from_cashflow_statement,95192000.0
+FCF,-133711000.0
+FCF%,10.168098220158859
+FCF_capex_from_cashflow,-52296000.0
+FCF%_capex_from_cashflow,3.9768670081102355
+DV,0.0
+Mcap (cr),551.3952256
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,-3.117097165236852
+Market Cap,5513952256
+Net Income,-1315005000.0
+Total Revenue,510672000.0
+Total Assets,1598815000.0
+Total Liabilities,2418995000.0
+Total Stockholders Equity,-596941000.0
+Total Debt,1199769000.0
+Cash and Cash Equivalents,65957000.0
+Current Assets,903962000.0
+Current Liabilities,134562000.0
+Working Capital,769400000.0
+Operating Cash Flow,42896000.0
+Capital Expenditure,95192000.0
+Dividends Paid,0
+Depreciation & Amortization,120121000.0
+Interest Expense,37070000.0
+Income Tax Expense,859000.0
+Shares Outstanding,307355193
+Net Fixed Assets,670814000.0
+Construction in Progress,162856000.0
+Net Debt,1133812000.0
+3-5yr Average ROA (%),-82.32866874363037
+3-5yr Average ROE (%),-205.83053878332564
+ROE,48.98940361944455
+ROA,-32.435871623497704
+insidersPercentHeld,0.06875
+institutionsPercentHeld,0.97659
+institutionsFloatPercentHeld,1.0486901
+institutionsCount,483.0
+current,17.94
+high,23.0
+low,17.0
+mean,19.31818
+median,18.0
+Normalized EBIT,-1167741666.6666667
+Normalized Net Income,-1235936666.6666667
+Research Asset,36824000.0
+R&D Amortization,10730000.0
+Adjusted EBIT (R&D),-1275976000.0
+Adjusted Book Equity (R&D),-560117000.0
+Adjusted D/E (R&D),-2.1419971184591793
+Adjusted Invested Capital (R&D),573695000.0
+Adjusted ROC (R&D),-222.55903396989152
+Adjusted ROE (R&D),234.77327058453858

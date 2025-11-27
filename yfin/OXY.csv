@@ -1,0 +1,95 @@
+,Value
+ticker,OXY
+longName,Occidental Petroleum Corporation
+ROCE,6.908224013487171
+ROCE (3yr avg),13.877861340185902
+NFAT,0.41123609337252065
+NFAT (3yr avg),0.49907202738806095
+NPM,21.456622490767426
+DPR,28.427874770806323
+Retention Ratio,71.57212522919367
+Dep,0.0
+SSGR,7.6642295205738
+Av NPM (over 3 years),21.456622490767426
+Au NFA/T (over 3 years),0.49907202738806095
+Av Dep%NFA (over 3 years),0.0
+Au Retention ratio (over 3 years),71.57212522919367
+d/e,0.896
+Interest coverage,4.76
+tax %,28.845208845208848
+cPAT,23378000000.0
+CFO,11439000000.0
+cCFO,50991000000.0
+cCFO/cPAT,2.181153220976987
+p/a,4.129283320722084
+p/e,27.958578
+EY,6.569955063562303
+Earnings Growth 5yr cagr,16.930619300912376
+Sales Growth 5yr cagr,0.9779732111812711
+PEG,1.6513618021340386
+no. shares (cr),98.4439742
+Current Price,47.25
+market cap,46514777809.5
+d/e_market,0.5826965380981436
+p/s,1.7212285
+NFA + CWIP,70315000000.0
+Capex,10656000000.0
+Capex_from_cashflow_statement,7018000000.0
+FCF,783000000.0
+FCF%,25.621727748691097
+FCF_capex_from_cashflow,4421000000.0
+FCF%_capex_from_cashflow,144.66623036649216
+DV,3.1086894705206447
+Mcap (cr),4673.1354112
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,True
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.06845003933910307
+Market Cap,46731354112
+Net Income,3056000000.0
+Total Revenue,26725000000.0
+Total Assets,85445000000.0
+Total Liabilities,50965000000.0
+Total Stockholders Equity,30250000000.0
+Total Debt,27104000000.0
+Cash and Cash Equivalents,597000000.0
+Current Assets,9070000000.0
+Current Liabilities,9521000000.0
+Working Capital,-451000000.0
+Operating Cash Flow,11439000000.0
+Capital Expenditure,7018000000.0
+Dividends Paid,1446000000.0
+Depreciation & Amortization,0
+Interest Expense,1175000000.0
+Income Tax Expense,1174000000.0
+Shares Outstanding,984439742
+Net Fixed Assets,70315000000.0
+Construction in Progress,0
+Net Debt,26507000000.0
+3-5yr Average ROA (%),12.213705740659073
+3-5yr Average ROE (%),34.173752343012296
+ROE,15.5664208171045
+ROA,6.405805602351705
+insidersPercentHeld,0.27218
+institutionsPercentHeld,0.50418997
+institutionsFloatPercentHeld,0.69274
+institutionsCount,1498.0
+current,47.25
+high,65.0
+low,40.0
+mean,50.78261
+median,49.0
+Normalized EBIT,9255333333.333334
+Normalized Net Income,7018666666.666667

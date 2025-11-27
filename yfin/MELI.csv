@@ -1,6 +1,6 @@
 ,Value
 ticker,MELI
-Name,"MercadoLibre, Inc."
+longName,"MercadoLibre, Inc."
 ROCE,30.222273943907833
 ROCE (3yr avg),25.035994903522298
 NFAT,8.98076507456235
@@ -22,16 +22,16 @@ CFO,7918000000.0
 cCFO,16963000000.0
 cCFO/cPAT,4.898354028299162
 p/a,10.850556438791733
-p/e,60.96893
-EY,1.5246690610848186
+p/e,60.96895
+EY,1.6129750579030682
 Earnings Growth 5yr cagr,182.5985237074258
 Sales Growth 5yr cagr,43.243509473001815
-PEG,0.33389607299174756
-no. shares (cr),5.06974
-Current Price,2472.29
-market cap,125338675046.0
-d/e_market,0.05465192605144431
-p/s,5.201638
+PEG,0.3338961825216583
+no. shares (cr),5.0697375
+Current Price,2336.94
+market cap,118476723532.5
+d/e_market,0.057817263980303596
+p/s,5.1934934
 NFA + CWIP,2622000000.0
 Capex,1028000000.0
 Capex_from_cashflow_statement,860000000.0
@@ -40,7 +40,7 @@ FCF%,360.5442176870748
 FCF_capex_from_cashflow,7058000000.0
 FCF%_capex_from_cashflow,369.33542647828364
 DV,
-Mcap (cr),12533.8673152
+Mcap (cr),12514.2417408
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,False
@@ -57,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),False
 FCF/CFO,0.870169234655216
-Market Cap,125338673152
+Market Cap,125142417408
 Net Income,1911000000.0
 Total Revenue,20777000000.0
 Total Assets,25196000000.0
@@ -74,23 +74,23 @@ Dividends Paid,
 Depreciation & Amortization,617000000.0
 Interest Expense,165000000.0
 Income Tax Expense,521000000.0
-Shares Outstanding,50697400
+Shares Outstanding,50697375
 Net Fixed Assets,2478000000.0
 Construction in Progress,144000000.0
 Net Debt,6799000000.0
-3-5yr Average ROA (%),6.4231410755169565
-3-5yr Average ROE (%),40.168427311310914
-ROE,51.495553759094584
-ROA,8.928237712577088
+3-5yr Average ROA (%),5.170592756986892
+3-5yr Average ROE (%),34.50486408741908
+ROE,40.302164148632095
+ROA,6.297052443537068
 insidersPercentHeld,0.07279
-institutionsPercentHeld,0.84793
-institutionsFloatPercentHeld,0.9145
-institutionsCount,2258.0
-current,2472.29
+institutionsPercentHeld,0.84848
+institutionsFloatPercentHeld,0.91509
+institutionsCount,2276.0
+current,2336.94
 high,3500.0
 low,2170.0
-mean,2867.5386
-median,2850.0
+mean,2889.6538
+median,2862.5
 Normalized EBIT,1746333333.3333333
 Normalized Net Income,1126666666.6666667
 Research Asset,4294200000.0

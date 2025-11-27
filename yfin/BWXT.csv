@@ -1,0 +1,103 @@
+,Value
+ticker,BWXT
+longName,"BWX Technologies, Inc."
+ROCE,16.203667953265047
+ROCE (3yr avg),15.773106311321092
+NFAT,2.287919567304458
+NFAT (3yr avg),2.2887736528963645
+NPM,10.314766859969618
+DPR,33.31229037393703
+Retention Ratio,66.68770962606297
+Dep,6.668551732691245
+SSGR,9.075193874137184
+Av NPM (over 3 years),10.314766859969618
+Au NFA/T (over 3 years),2.2887736528963645
+Av Dep%NFA (over 3 years),6.668551732691245
+Au Retention ratio (over 3 years),66.68770962606295
+d/e,1.1308393091130775
+Interest coverage,8.336060797973401
+tax %,19.047373250745583
+cPAT,1071852000.0
+CFO,408428000.0
+cCFO,1402859000.0
+cCFO/cPAT,1.3088178218634663
+p/a,10.263353797598528
+p/e,56.90432
+EY,1.6731226224854525
+Earnings Growth 5yr cagr,-1.6739554489121677
+Sales Growth 5yr cagr,8.374512363381935
+PEG,-33.99392739931023
+no. shares (cr),9.139874
+Current Price,184.37
+market cap,16851185693.800001
+d/e_market,0.06263476168257617
+p/s,5.8827257
+NFA + CWIP,1862700000.0
+Capex,148284000.0
+Capex_from_cashflow_statement,153647000.0
+FCF,260144000.0
+FCF%,92.26894988667841
+FCF_capex_from_cashflow,254781000.0
+FCF%_capex_from_cashflow,90.3667788650817
+DV,0.5242895165086571
+Mcap (cr),1685.118464
+d/e decreasing trend 5 yrs,True
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6369396809229534
+Market Cap,16851184640
+Net Income,281941000.0
+Total Revenue,2703654000.0
+Total Assets,2869924000.0
+Total Liabilities,1789520000.0
+Total Stockholders Equity,933351000.0
+Total Debt,1055470000.0
+Cash and Cash Equivalents,49080000.0
+Current Assets,929997000.0
+Current Liabilities,474201000.0
+Working Capital,455796000.0
+Operating Cash Flow,408428000.0
+Capital Expenditure,153647000.0
+Dividends Paid,88349000.0
+Depreciation & Amortization,85862000.0
+Interest Expense,39475000.0
+Income Tax Expense,66422000.0
+Shares Outstanding,91398740
+Net Fixed Assets,1278161000.0
+Construction in Progress,584539000.0
+Net Debt,1006390000.0
+3-5yr Average ROA (%),10.183479593457292
+3-5yr Average ROE (%),34.90613035120781
+ROE,27.99768226010424
+ROA,10.038866018786933
+insidersPercentHeld,0.004
+institutionsPercentHeld,0.97333
+institutionsFloatPercentHeld,0.97723
+institutionsCount,816.0
+current,184.37
+high,250.0
+low,145.0
+mean,190.0
+median,186.5
+Normalized EBIT,369139333.3333333
+Normalized Net Income,255327000.0
+Research Asset,23713000.0
+R&D Amortization,7137000.0
+Adjusted EBIT (R&D),388536000.0
+Adjusted Book Equity (R&D),957064000.0
+Adjusted D/E (R&D),1.1028207100047647
+Adjusted Invested Capital (R&D),1963454000.0
+Adjusted ROC (R&D),16.01922417670509
+Adjusted ROE (R&D),29.45894945374604

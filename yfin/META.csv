@@ -22,16 +22,16 @@ CFO,91328000000.0
 cCFO,270599000000.0
 cCFO/cPAT,1.6497122442509815
 p/a,27.157558258536817
-p/e,27.233864
-EY,3.827815702240373
+p/e,26.949724
+EY,3.915013160349199
 Earnings Growth 5yr cagr,20.715943486273748
 Sales Growth 5yr cagr,11.733304241692032
-PEG,1.3146330514970261
-no. shares (cr),216.896
-Current Price,751.11
-market cap,1629127545600.0
-d/e_market,0.030114278119293254
-p/s,10.552859
+PEG,1.3009170457457906
+no. shares (cr),216.896248
+Current Price,734.38
+market cap,1592842666062.4
+d/e_market,0.03080027993052144
+p/s,10.44946
 NFA + CWIP,163070000000.0
 Capex,44418000000.0
 Capex_from_cashflow_statement,37256000000.0
@@ -39,8 +39,8 @@ FCF,46910000000.0
 FCF%,75.22450288646569
 FCF_capex_from_cashflow,54072000000.0
 FCF%_capex_from_cashflow,86.70942912123157
-DV,0.3113322841847847
-Mcap (cr),188689.350656
+DV,0.318424418686516
+Mcap (cr),186840.5276672
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,False
 npm >8%,True
@@ -57,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),True
 FCF/CFO,0.5136431324456903
-Market Cap,1886893506560
+Market Cap,1868405276672
 Net Income,62360000000.0
 Total Revenue,164501000000.0
 Total Assets,276054000000.0
@@ -74,7 +74,7 @@ Dividends Paid,5072000000.0
 Depreciation & Amortization,15498000000.0
 Interest Expense,715000000.0
 Income Tax Expense,8303000000.0
-Shares Outstanding,2168960000
+Shares Outstanding,2168962480
 Net Fixed Assets,136268000000.0
 Construction in Progress,26802000000.0
 Net Debt,43824000000.0
@@ -83,14 +83,14 @@ Net Debt,43824000000.0
 ROE,28.03919951520541
 ROA,18.826531840616347
 insidersPercentHeld,0.00079
-institutionsPercentHeld,0.79783994
-institutionsFloatPercentHeld,0.79847
-institutionsCount,6153.0
-current,751.11
+institutionsPercentHeld,0.79842
+institutionsFloatPercentHeld,0.79905
+institutionsCount,6175.0
+current,734.38
 high,1086.0
 low,658.0
-mean,861.89935
-median,875.0
+mean,867.14404
+median,877.5
 Normalized EBIT,49418666666.666664
 Normalized Net Income,41552666666.666664
 Research Asset,105724200000.0

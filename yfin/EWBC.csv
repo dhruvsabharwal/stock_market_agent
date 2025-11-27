@@ -1,0 +1,95 @@
+,Value
+ticker,EWBC
+longName,"East West Bancorp, Inc."
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,14.89604578141233
+NFAT (3yr avg),13.521758670722809
+NPM,46.44649896878167
+DPR,23.451774010044545
+Retention Ratio,76.54822598995545
+Dep,89.93675506986756
+SSGR,390.8154605110138
+Av NPM (over 3 years),46.44649896878167
+Au NFA/T (over 3 years),13.521758670722809
+Av Dep%NFA (over 3 years),89.93675506986756
+Au Retention ratio (over 3 years),76.54822598995544
+d/e,0.5215542480226114
+Interest coverage,0.0
+tax %,21.343094932655625
+cPAT,4327811000.0
+CFO,1411667000.0
+cCFO,6071020000.0
+cCFO/cPAT,1.4027923123260235
+p/a,1.6743825755013972
+p/e,12.657551
+EY,7.944761167556267
+Earnings Growth 5yr cagr,10.847801227478659
+Sales Growth 5yr cagr,12.526055815296333
+PEG,1.1668310226718617
+no. shares (cr),13.7821766
+Current Price,106.45
+market cap,14671126990.7
+d/e_market,0.2471001036456184
+p/s,6.083144
+NFA + CWIP,164200000.0
+Capex,182253000.0
+Capex_from_cashflow_statement,
+FCF,1229414000.0
+FCF%,105.47604380972318
+FCF_capex_from_cashflow,
+FCF%_capex_from_cashflow,
+DV,2.1026196569325832
+Mcap (cr),1493.7172992
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8708951898712657
+Market Cap,14937172992
+Net Income,1165586000.0
+Total Revenue,2566544000.0
+Total Assets,75976475000.0
+Total Liabilities,68253421000.0
+Total Stockholders Equity,6950834000.0
+Total Debt,3625237000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,1411667000.0
+Capital Expenditure,
+Dividends Paid,308478000.0
+Depreciation & Amortization,198447000.0
+Interest Expense,1914480000.0
+Income Tax Expense,316275000.0
+Shares Outstanding,137821766
+Net Fixed Assets,164200000.0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),1.7709100672098095
+3-5yr Average ROE (%),18.518954675134076
+ROE,17.95316527934174
+ROA,1.736639678102456
+insidersPercentHeld,0.00975
+institutionsPercentHeld,0.95502
+institutionsFloatPercentHeld,0.96442
+institutionsCount,701.0
+current,106.45
+high,140.0
+low,104.0
+mean,122.66667
+median,125.0
+Normalized EBIT,0.0
+Normalized Net Income,1151610000.0

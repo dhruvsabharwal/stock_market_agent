@@ -1,0 +1,103 @@
+,Value
+ticker,IBM
+longName,International Business Machines Corporation
+ROCE,7.2179020118616215
+ROCE (3yr avg),6.626182922392783
+NFAT,7.110418673162994
+NFAT (3yr avg),7.16146304840727
+NPM,8.144910740761013
+DPR,181.75118834310967
+Retention Ratio,-81.75118834310967
+Dep,53.62400046424495
+SSGR,-101.30904131339213
+Av NPM (over 3 years),8.144910740761013
+Au NFA/T (over 3 years),7.16146304840727
+Av Dep%NFA (over 3 years),53.62400046424495
+Au Retention ratio (over 3 years),-81.75118834310966
+d/e,2.59157679847335
+Interest coverage,5.884345794392523
+tax %,-3.7605658099016734
+cPAT,20907000000.0
+CFO,13445000000.0
+cCFO,50607000000.0
+cCFO/cPAT,2.420576840292725
+p/a,4.453531103733336
+p/e,45.879673
+EY,2.2915302051568505
+Earnings Growth 5yr cagr,0.6201708908226911
+Sales Growth 5yr cagr,3.0460065935723035
+PEG,73.9790816997845
+no. shares (cr),93.1519242
+Current Price,282.16
+market cap,262837469322.72003
+d/e_market,0.22217532435719647
+p/s,4.135544
+NFA + CWIP,8929000000.0
+Capex,4874000000.0
+Capex_from_cashflow_statement,1685000000.0
+FCF,8571000000.0
+FCF%,142.30449941889424
+FCF_capex_from_cashflow,11760000000.0
+FCF%_capex_from_cashflow,195.25153577951187
+DV,2.338707649194614
+Mcap (cr),26484.023296
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.637486054295277
+Market Cap,264840232960
+Net Income,6023000000.0
+Total Revenue,62753000000.0
+Total Assets,137175000000.0
+Total Liabilities,109782000000.0
+Total Stockholders Equity,22533000000.0
+Total Debt,58396000000.0
+Cash and Cash Equivalents,2519000000.0
+Current Assets,34482000000.0
+Current Liabilities,33142000000.0
+Working Capital,1340000000.0
+Operating Cash Flow,13445000000.0
+Capital Expenditure,1685000000.0
+Dividends Paid,6147000000.0
+Depreciation & Amortization,4667000000.0
+Interest Expense,1712000000.0
+Income Tax Expense,-218000000.0
+Shares Outstanding,931519242
+Net Fixed Assets,8929000000.0
+Construction in Progress,0
+Net Debt,55877000000.0
+3-5yr Average ROA (%),3.490687630732676
+3-5yr Average ROE (%),20.88232415293807
+ROE,33.73428963284395
+ROA,5.716157937245699
+insidersPercentHeld,0.00122
+institutionsPercentHeld,0.65126
+institutionsFloatPercentHeld,0.65206003
+institutionsCount,4182.0
+current,282.16
+high,350.0
+low,198.0
+mean,281.2463
+median,290.0
+Normalized EBIT,6726000000.0
+Normalized Net Income,5055000000.0
+Research Asset,19434400000.0
+R&D Amortization,5461800000.0
+Adjusted EBIT (R&D),9526200000.0
+Adjusted Book Equity (R&D),41967400000.0
+Adjusted D/E (R&D),1.3914609911502738
+Adjusted Invested Capital (R&D),97844400000.0
+Adjusted ROC (R&D),10.102202088400412
+Adjusted ROE (R&D),14.351615777960989

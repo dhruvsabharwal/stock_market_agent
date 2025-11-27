@@ -1,0 +1,95 @@
+,Value
+ticker,WULF
+longName,TeraWulf Inc.
+ROCE,-10.682701117083024
+ROCE (3yr avg),-15.880447078625105
+NFAT,0.6673989497059749
+NFAT (3yr avg),0.6739496407291824
+NPM,-253.9027424029291
+DPR,0.0
+Retention Ratio,100.0
+Dep,11.32146587042279
+SSGR,-182.439127893031
+Av NPM (over 3 years),-253.9027424029291
+Au NFA/T (over 3 years),0.6739496407291824
+Av Dep%NFA (over 3 years),11.32146587042279
+Au Retention ratio (over 3 years),100.0
+d/e,2.2079653376121966
+Interest coverage,-3.061129635243003
+tax %,-0.0
+cPAT,-236630000.0
+CFO,-24422000.0
+cCFO,-54225000.0
+cCFO/cPAT,0.2291552212314584
+p/a,-19.152830158738553
+p/e,inf
+EY,-1.546088161837038
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,205.22512364794014
+PEG,
+no. shares (cr),41.015326
+Current Price,11.42
+market cap,4683950229.2
+d/e_market,0.10487899656523533
+p/s,32.508244
+NFA + CWIP,666589000.0
+Capex,450496000.0
+Capex_from_cashflow_statement,267940000.0
+FCF,-474918000.0
+FCF%,655.8010439393521
+FCF_capex_from_cashflow,-292362000.0
+FCF%_capex_from_cashflow,403.7145461073214
+DV,0.0
+Mcap (cr),468.395008
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,False
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,19.44631889280157
+Market Cap,4683950080
+Net Income,-72418000.0
+Total Revenue,140051000.0
+Total Assets,787511000.0
+Total Liabilities,543066000.0
+Total Stockholders Equity,222489000.0
+Total Debt,491248000.0
+Cash and Cash Equivalents,1074000.0
+Current Assets,281431000.0
+Current Liabilities,51845000.0
+Working Capital,229586000.0
+Operating Cash Flow,-24422000.0
+Capital Expenditure,267940000.0
+Dividends Paid,0
+Depreciation & Amortization,61181000.0
+Interest Expense,19794000.0
+Income Tax Expense,0.0
+Shares Outstanding,410153260
+Net Fixed Assets,505052000.0
+Construction in Progress,161537000.0
+Net Debt,490174000.0
+3-5yr Average ROA (%),-20.702905800970523
+3-5yr Average ROE (%),-50.42625294866206
+ROE,-31.018516535527507
+ROA,-12.42569385999003
+insidersPercentHeld,0.27981
+institutionsPercentHeld,0.54332
+institutionsFloatPercentHeld,0.75441
+institutionsCount,378.0
+current,11.42
+high,21.5
+low,6.5
+mean,12.86364
+median,13.0
+Normalized EBIT,-51192666.666666664
+Normalized Net Income,-78876666.66666667

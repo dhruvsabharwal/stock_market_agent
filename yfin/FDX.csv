@@ -1,0 +1,95 @@
+,Value
+ticker,FDX
+longName,FedEx Corporation
+ROCE,8.626897086518223
+ROCE (3yr avg),8.598863552509103
+NFAT,1.5068594099450734
+NFAT (3yr avg),1.5365286129735676
+NPM,4.666159945623645
+DPR,30.47477036388047
+Retention Ratio,69.52522963611953
+Dep,7.355099383569332
+SSGR,-2.3703571502405847
+Av NPM (over 3 years),4.666159945623645
+Au NFA/T (over 3 years),1.5365286129735676
+Av Dep%NFA (over 3 years),7.355099383569332
+Au Retention ratio (over 3 years),69.52522963611952
+d/e,1.3565368718729607
+Interest coverage,7.596958174904943
+tax %,24.793236537401214
+cPAT,16221000000.0
+CFO,7036000000.0
+cCFO,34028000000.0
+cCFO/cPAT,2.097774489858825
+p/a,4.70306986794166
+p/e,13.945003
+EY,7.354334405137711
+Earnings Growth 5yr cagr,5.646270281156918
+Sales Growth 5yr cagr,-2.0322071995889424
+PEG,2.4697724879622087
+no. shares (cr),23.5955461
+Current Price,235.81
+market cap,55640657258.41
+d/e_market,0.6724579083642048
+p/s,0.6334157
+NFA + CWIP,58095000000.0
+Capex,3753000000.0
+Capex_from_cashflow_statement,4055000000.0
+FCF,3283000000.0
+FCF%,80.22971652003909
+FCF_capex_from_cashflow,2981000000.0
+FCF%_capex_from_cashflow,72.84946236559139
+DV,2.406513628660654
+Mcap (cr),5611.4929664
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),False
+FCF/CFO,0.4666003411028994
+Market Cap,56114929664
+Net Income,4092000000.0
+Total Revenue,87926000000.0
+Total Assets,87627000000.0
+Total Liabilities,59553000000.0
+Total Stockholders Equity,27582000000.0
+Total Debt,37416000000.0
+Cash and Cash Equivalents,914000000.0
+Current Assets,18386000000.0
+Current Liabilities,15411000000.0
+Working Capital,2975000000.0
+Operating Cash Flow,7036000000.0
+Capital Expenditure,4055000000.0
+Dividends Paid,1339000000.0
+Depreciation & Amortization,4264000000.0
+Interest Expense,789000000.0
+Income Tax Expense,1349000000.0
+Shares Outstanding,235955461
+Net Fixed Assets,58095000000.0
+Construction in Progress,0
+Net Debt,36502000000.0
+3-5yr Average ROA (%),4.781073561837802
+3-5yr Average ROE (%),15.853799405159336
+ROE,16.139370225451835
+ROA,4.9738730979041055
+insidersPercentHeld,0.075430006
+institutionsPercentHeld,0.79776
+institutionsFloatPercentHeld,0.86285
+institutionsCount,2165.0
+current,235.81
+high,320.0
+low,200.0
+mean,264.82144
+median,270.0
+Normalized EBIT,6289333333.333333
+Normalized Net Income,4131666666.6666665

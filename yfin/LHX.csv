@@ -1,0 +1,103 @@
+,Value
+ticker,LHX
+longName,"L3Harris Technologies, Inc."
+ROCE,6.610800744878957
+ROCE (3yr avg),5.813686619283067
+NFAT,7.5247000705716305
+NFAT (3yr avg),7.401985283576377
+NPM,6.528762845112553
+DPR,70.36186482461783
+Retention Ratio,29.638135175382175
+Dep,43.38628763666821
+SSGR,-29.063419781757705
+Av NPM (over 3 years),6.528762845112553
+Au NFA/T (over 3 years),7.401985283576377
+Av Dep%NFA (over 3 years),43.38628763666821
+Au Retention ratio (over 3 years),29.63813517538218
+d/e,0.6520650146549427
+Interest coverage,3.0770370370370372
+tax %,5.322479649342517
+cPAT,5637000000.0
+CFO,2559000000.0
+cCFO,9500000000.0
+cCFO/cPAT,1.6852935958843356
+p/a,3.6030417156427665
+p/e,32.769314
+EY,2.6286028059683337
+Earnings Growth 5yr cagr,-4.807576727294515
+Sales Growth 5yr cagr,6.179953453025777
+PEG,-6.81618117792185
+no. shares (cr),18.7094798
+Current Price,305.41
+market cap,57140622257.18001
+d/e_market,0.21413837505877853
+p/s,2.6734958
+NFA + CWIP,2806000000.0
+Capex,1233000000.0
+Capex_from_cashflow_statement,408000000.0
+FCF,1326000000.0
+FCF%,88.28229027962716
+FCF_capex_from_cashflow,2151000000.0
+FCF%_capex_from_cashflow,143.20905459387484
+DV,1.550560643201028
+Mcap (cr),5714.0625408
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.5181711606096131
+Market Cap,57140625408
+Net Income,1502000000.0
+Total Revenue,21325000000.0
+Total Assets,42001000000.0
+Total Liabilities,22422000000.0
+Total Stockholders Equity,18765000000.0
+Total Debt,12236000000.0
+Cash and Cash Equivalents,461000000.0
+Current Assets,8218000000.0
+Current Liabilities,7633000000.0
+Working Capital,585000000.0
+Operating Cash Flow,2559000000.0
+Capital Expenditure,408000000.0
+Dividends Paid,886000000.0
+Depreciation & Amortization,1289000000.0
+Interest Expense,675000000.0
+Income Tax Expense,85000000.0
+Shares Outstanding,187094798
+Net Fixed Assets,2806000000.0
+Construction in Progress,0
+Net Debt,11775000000.0
+3-5yr Average ROA (%),3.187841937675328
+3-5yr Average ROE (%),6.104891617764574
+ROE,6.58120574983909
+ROA,3.262820598050817
+insidersPercentHeld,0.00336
+institutionsPercentHeld,0.90688
+institutionsFloatPercentHeld,0.90994
+institutionsCount,1779.0
+current,305.41
+high,327.0
+low,250.0
+mean,302.44443
+median,317.0
+Normalized EBIT,1862666666.6666667
+Normalized Net Income,1263666666.6666667
+Research Asset,1260800000.0
+R&D Amortization,319600000.0
+Adjusted EBIT (R&D),2467400000.0
+Adjusted Book Equity (R&D),20025800000.0
+Adjusted D/E (R&D),0.6110117947847277
+Adjusted Invested Capital (R&D),31800800000.0
+Adjusted ROC (R&D),7.345957136713929
+Adjusted ROE (R&D),7.500324581290135

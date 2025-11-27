@@ -1,0 +1,103 @@
+,Value
+ticker,ALAB
+longName,"Astera Labs, Inc."
+ROCE,-11.990710417514665
+ROCE (3yr avg),-21.78577713620369
+NFAT,19.63630057230632
+NFAT (3yr avg),23.877645186590264
+NPM,-38.92474463948354
+DPR,0.0
+Retention Ratio,100.0
+Dep,25.4418005258546
+SSGR,-954.8730420060741
+Av NPM (over 3 years),-38.92474463948354
+Au NFA/T (over 3 years),23.877645186590264
+Av Dep%NFA (over 3 years),25.4418005258546
+Au Retention ratio (over 3 years),100.0
+d/e,-0.013162608366342208
+Interest coverage,inf
+tax %,-2.00909780136467
+cPAT,-168023000.0
+CFO,136676000.0
+cCFO,88062000.0
+cCFO/cPAT,-0.5241068187093434
+p/a,-42.49842072015161
+p/e,251.02565
+EY,-0.2563195152937515
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,122.74567339462656
+PEG,
+no. shares (cr),16.621914
+Current Price,195.8
+market cap,32545707612.0
+d/e_market,3.951365923062113e-05
+p/s,54.28928
+NFA + CWIP,64715000.0
+Capex,63157000.0
+Capex_from_cashflow_statement,34245000.0
+FCF,73519000.0
+FCF%,-88.13008714831997
+FCF_capex_from_cashflow,102431000.0
+FCF%_capex_from_cashflow,-122.78802699560063
+DV,0.0
+Mcap (cr),3287.4819584
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.5379071673154029
+Market Cap,32874819584
+Net Income,-83421000.0
+Total Revenue,396290000.0
+Total Assets,1054508000.0
+Total Liabilities,89709000.0
+Total Stockholders Equity,-97701000.0
+Total Debt,1286000.0
+Cash and Cash Equivalents,16652000.0
+Current Assets,1012979000.0
+Current Liabilities,86542000.0
+Working Capital,926437000.0
+Operating Cash Flow,136676000.0
+Capital Expenditure,34245000.0
+Dividends Paid,0
+Depreciation & Amortization,3154000.0
+Interest Expense,0
+Income Tax Expense,1643000.0
+Shares Outstanding,166219140
+Net Fixed Assets,35651000.0
+Construction in Progress,29064000.0
+Net Debt,-15366000.0
+3-5yr Average ROA (%),-17.92178921089025
+3-5yr Average ROE (%),25.954010000269204
+ROE,-19.24142369143972
+ROA,-13.338823153181965
+insidersPercentHeld,0.12937
+institutionsPercentHeld,0.72558
+institutionsFloatPercentHeld,0.83339995
+institutionsCount,657.0
+current,195.8
+high,275.0
+low,125.0
+mean,182.625
+median,182.5
+Normalized EBIT,-68585666.66666667
+Normalized Net Income,-56007666.666666664
+Research Asset,303782200.0
+R&D Amortization,69589600.0
+Adjusted EBIT (R&D),15174400.0
+Adjusted Book Equity (R&D),206081200.0
+Adjusted D/E (R&D),0.006240258694145803
+Adjusted Invested Capital (R&D),190715200.0
+Adjusted ROC (R&D),8.116431483578802
+Adjusted ROE (R&D),-40.47967500189246

@@ -1,0 +1,95 @@
+,Value
+ticker,BOOM
+longName,DMC Global Inc.
+ROCE,-23.746893142031638
+ROCE (3yr avg),-3.9989565486418077
+NFAT,4.969626457218838
+NFAT (3yr avg),4.852572708694491
+NPM,-6.515399518625585
+DPR,-1
+Retention Ratio,101.0
+Dep,31.63046189479518
+SSGR,-63.56307628402216
+Av NPM (over 3 years),-6.515399518625585
+Au NFA/T (over 3 years),4.852572708694491
+Av Dep%NFA (over 3 years),31.63046189479518
+Au Retention ratio (over 3 years),-1
+d/e,0.17260263956421598
+Interest coverage,1.4996537396121883
+tax %,-7.780693666217463
+cPAT,-127765000.0
+CFO,46596000.0
+cCFO,144647000.0
+cCFO/cPAT,-1.1321332133213322
+p/a,-17.943798438657087
+p/e,inf
+EY,-91.26009288883301
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,35.20154116804803
+PEG,
+no. shares (cr),2.0581269
+Current Price,8.45
+market cap,173911723.04999998
+d/e_market,0.4072065917007773
+p/s,0.2806929
+NFA + CWIP,145138000.0
+Capex,31386000.0
+Capex_from_cashflow_statement,17284000.0
+FCF,15210000.0
+FCF%,-9.58339634054136
+FCF_capex_from_cashflow,29312000.0
+FCF%_capex_from_cashflow,-18.46867281617017
+DV,
+Mcap (cr),17.3911712
+d/e decreasing trend 5 yrs,True
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.32642286891578676
+Market Cap,173911712
+Net Income,-158712000.0
+Total Revenue,642851000.0
+Total Assets,671337000.0
+Total Liabilities,233286000.0
+Total Stockholders Equity,410295000.0
+Total Debt,70818000.0
+Cash and Cash Equivalents,18792000.0
+Current Assets,289022000.0
+Current Liabilities,114102000.0
+Working Capital,174920000.0
+Operating Cash Flow,46596000.0
+Capital Expenditure,17284000.0
+Dividends Paid,
+Depreciation & Amortization,35046000.0
+Interest Expense,8664000.0
+Income Tax Expense,10970000.0
+Shares Outstanding,20581269
+Net Fixed Assets,129276000.0
+Construction in Progress,15862000.0
+Net Debt,52026000.0
+3-5yr Average ROA (%),-4.221102060384606
+3-5yr Average ROE (%),-10.012414376312577
+ROE,-48.00246799321302
+ROA,-20.402202808529456
+insidersPercentHeld,0.04565
+institutionsPercentHeld,0.82237
+institutionsFloatPercentHeld,0.86170995
+institutionsCount,157.0
+current,8.45
+high,12.0
+low,8.5
+mean,10.25
+median,10.25
+Normalized EBIT,-14511666.666666666
+Normalized Net Income,-41046333.333333336

@@ -1,0 +1,95 @@
+,Value
+ticker,ALLY
+longName,Ally Financial Inc.
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,0.8990046986308291
+NFAT (3yr avg),0.827364777639306
+NPM,12.203066760065953
+DPR,50.30830408794153
+Retention Ratio,49.69169591205848
+Dep,11.39087658093837
+SSGR,-6.3738103484645485
+Av NPM (over 3 years),12.203066760065953
+Au NFA/T (over 3 years),0.827364777639306
+Av Dep%NFA (over 3 years),11.39087658093837
+Au Retention ratio (over 3 years),49.69169591205847
+d/e,1.4034153105159455
+Interest coverage,0.0
+tax %,19.976076555023923
+cPAT,6399000000.0
+CFO,4528000000.0
+cCFO,19374000000.0
+cCFO/cPAT,3.027660571964369
+p/a,0.34024520065807906
+p/e,38.431374
+EY,5.536183143490045
+Earnings Growth 5yr cagr,-40.033369441651544
+Sales Growth 5yr cagr,0.4422327628851974
+PEG,-0.9599834971676204
+no. shares (cr),30.7808031
+Current Price,39.2
+market cap,12066074815.2
+d/e_market,1.5938074555757042
+p/s,1.8040822
+NFA + CWIP,9336000000.0
+Capex,78000000.0
+Capex_from_cashflow_statement,3460000000.0
+FCF,4450000000.0
+FCF%,666.1676646706587
+FCF_capex_from_cashflow,1068000000.0
+FCF%_capex_from_cashflow,159.8802395209581
+DV,3.9946710706020983
+Mcap (cr),1236.1570304
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,True
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.982773851590106
+Market Cap,12361570304
+Net Income,668000000.0
+Total Revenue,8897000000.0
+Total Assets,191836000000.0
+Total Liabilities,177933000000.0
+Total Stockholders Equity,13703000000.0
+Total Debt,19231000000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,4528000000.0
+Capital Expenditure,3460000000.0
+Dividends Paid,482000000.0
+Depreciation & Amortization,1199000000.0
+Interest Expense,7472000000.0
+Income Tax Expense,167000000.0
+Shares Outstanding,307808031
+Net Fixed Assets,9336000000.0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),0.7049132953406905
+3-5yr Average ROE (%),9.333607855280134
+ROE,7.205782697086064
+ROA,0.49310198245546233
+insidersPercentHeld,0.103310004
+institutionsPercentHeld,0.85348
+institutionsFloatPercentHeld,0.95181
+institutionsCount,765.0
+current,39.2
+high,70.0
+low,39.0
+mean,47.52941
+median,45.0
+Normalized EBIT,0.0
+Normalized Net Income,1113000000.0

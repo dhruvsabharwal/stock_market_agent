@@ -1,0 +1,103 @@
+,Value
+ticker,EB
+longName,"Eventbrite, Inc."
+ROCE,-1.1971144876764577
+ROCE (3yr avg),-3.940808257367286
+NFAT,28.237317581653926
+NFAT (3yr avg),25.593676889789247
+NPM,-11.378330052048243
+DPR,0.0
+Retention Ratio,100.0
+Dep,100.0
+SSGR,-391.2133028975016
+Av NPM (over 3 years),-11.378330052048243
+Au NFA/T (over 3 years),25.593676889789247
+Av Dep%NFA (over 3 years),100.0
+Au Retention ratio (over 3 years),100.0
+d/e,1.2680997303879389
+Interest coverage,-3.502388535031847
+tax %,-16.097524604831495
+cPAT,-236514000.0
+CFO,35573000.0
+cCFO,149035000.0
+cCFO/cPAT,-0.6301318315194873
+p/a,-1.7048602367161925
+p/e,inf
+EY,-7.6422199883361905
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,20.20997481414264
+PEG,
+no. shares (cr),8.0853054
+Current Price,2.52
+market cap,203749696.08
+d/e_market,1.193459448913844
+p/s,0.8628221
+NFA + CWIP,
+Capex,
+Capex_from_cashflow_statement,8275000.0
+FCF,
+FCF%,
+FCF_capex_from_cashflow,27298000.0
+FCF%_capex_from_cashflow,-175.3130820114315
+DV,0.0
+Mcap (cr),25.9585216
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,
+Market Cap,259585216
+Net Income,-15571000.0
+Total Revenue,325068000.0
+Total Assets,752301000.0
+Total Liabilities,582072000.0
+Total Stockholders Equity,191757000.0
+Total Debt,243167000.0
+Cash and Cash Equivalents,19810000.0
+Current Assets,552496000.0
+Current Liabilities,366373000.0
+Working Capital,186123000.0
+Operating Cash Flow,35573000.0
+Capital Expenditure,8275000.0
+Dividends Paid,0
+Depreciation & Amortization,15104000.0
+Interest Expense,8792000.0
+Income Tax Expense,2159000.0
+Shares Outstanding,80853054
+Net Fixed Assets,13463000.0
+Construction in Progress,
+Net Debt,223357000.0
+3-5yr Average ROA (%),-4.543675764845575
+3-5yr Average ROE (%),-23.85097066911684
+ROE,-14.779856661233785
+ROA,-2.9279447384847423
+insidersPercentHeld,0.06425
+institutionsPercentHeld,0.80107003
+institutionsFloatPercentHeld,0.85607004
+institutionsCount,187.0
+current,2.52
+high,3.0
+low,2.7
+mean,2.85
+median,2.85
+Normalized EBIT,-20637333.333333332
+Normalized Net Income,-32478000.0
+Research Asset,252247000.0
+R&D Amortization,69245200.0
+Adjusted EBIT (R&D),21417800.0
+Adjusted Book Equity (R&D),444004000.0
+Adjusted D/E (R&D),0.5476684894730678
+Adjusted Invested Capital (R&D),667361000.0
+Adjusted ROC (R&D),3.7259497670396677
+Adjusted ROE (R&D),-3.506950387834344

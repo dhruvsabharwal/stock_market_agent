@@ -1,0 +1,103 @@
+,Value
+ticker,OKLO
+longName,Oklo Inc.
+ROCE,-19.103111432706225
+ROCE (3yr avg),-91.82353970472764
+NFAT,0.0
+NFAT (3yr avg),0.0
+NPM,-1
+DPR,0.0
+Retention Ratio,100.0
+Dep,12.986781381369232
+SSGR,-12.98678138136923
+Av NPM (over 3 years),-1
+Au NFA/T (over 3 years),0.0
+Av Dep%NFA (over 3 years),12.986781381369232
+Au Retention ratio (over 3 years),100.0
+d/e,-0.037397048979948194
+Interest coverage,inf
+tax %,-0.9364759436743312
+cPAT,-120969427.0
+CFO,-38390000.0
+cCFO,-69921084.0
+cCFO/cPAT,0.5780062428501046
+p/a,-494.56499832045677
+p/e,inf
+EY,-0.4467637034255533
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,
+PEG,
+no. shares (cr),14.7609194
+Current Price,111.63
+market cap,16477614326.22
+d/e_market,7.798459015728048e-05
+p/s,0
+NFA + CWIP,2184000.0
+Capex,1791000.0
+Capex_from_cashflow_statement,352000.0
+FCF,-40181000.0
+FCF%,54.5818843729624
+FCF_capex_from_cashflow,-38742000.0
+FCF%_capex_from_cashflow,52.62714627254944
+DV,0.0
+Mcap (cr),1647.761408
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,False
+cCFO > PAT,False
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,1.0466527741599374
+Market Cap,16477614080
+Net Income,-73616000.0
+Total Revenue,0.0
+Total Assets,281736000.0
+Total Liabilities,30879000.0
+Total Stockholders Equity,-34361000.0
+Total Debt,1285000.0
+Cash and Cash Equivalents,143000.0
+Current Assets,231939000.0
+Current Liabilities,5336000.0
+Working Capital,226603000.0
+Operating Cash Flow,-38390000.0
+Capital Expenditure,352000.0
+Dividends Paid,0
+Depreciation & Amortization,268000.0
+Interest Expense,0
+Income Tax Expense,683000.0
+Shares Outstanding,147609194
+Net Fixed Assets,2184000.0
+Construction in Progress,0
+Net Debt,1142000.0
+3-5yr Average ROA (%),-109.01287100200615
+3-5yr Average ROE (%),26.330463515375406
+ROE,-68.00679920183282
+ROA,-49.636404704993915
+insidersPercentHeld,0.21141
+institutionsPercentHeld,0.38304
+institutionsFloatPercentHeld,0.48571998
+institutionsCount,595.0
+current,111.63
+high,150.0
+low,14.0
+mean,90.87733
+median,86.0
+Normalized EBIT,-27153937.0
+Normalized Net Income,-38604297.0
+Research Asset,39126855.0
+R&D Amortization,8995100.8
+Adjusted EBIT (R&D),-35085100.8
+Adjusted Book Equity (R&D),4765855.0
+Adjusted D/E (R&D),0.2696263314767235
+Adjusted Invested Capital (R&D),5907855.0
+Adjusted ROC (R&D),-599.4335393946855
+Adjusted ROE (R&D),-1544.6546317502316

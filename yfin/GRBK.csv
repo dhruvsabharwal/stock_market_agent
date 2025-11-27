@@ -1,5 +1,6 @@
 ,Value
 ticker,GRBK
+longName,"Green Brick Partners, Inc."
 ROCE,23.606176195899266
 ROCE (3yr avg),22.95200993225156
 NFAT,149.38032880222048
@@ -21,16 +22,16 @@ CFO,25912000.0
 cCFO,237549000.0
 cCFO/cPAT,0.20686673302453412
 p/a,20.053425630849176
-p/e,8.891443
-EY,12.581032489846525
+p/e,9.278894
+EY,11.858807502759438
 Earnings Growth 5yr cagr,31.41131588502981
 Sales Growth 5yr cagr,14.373949915844818
-PEG,0.28306496399399605
-no. shares (cr),4.35651
-Current Price,69.62
-market cap,3033002262.0
-d/e_market,0.11373186374497996
-p/s,1.418788
+PEG,0.2953997226337846
+no. shares (cr),4.3565098
+Current Price,73.86
+market cap,3217718138.28
+d/e_market,0.1072029883215281
+p/s,1.5051948
 NFA + CWIP,13793000.0
 Capex,4363000.0
 Capex_from_cashflow_statement,4365000.0
@@ -38,8 +39,8 @@ FCF,21549000.0
 FCF%,5.647264160090989
 FCF_capex_from_cashflow,21547000.0
 FCF%_capex_from_cashflow,5.646740027726603
-DV,0.09479056563921545
-Mcap (cr),303.3002496
+DV,0.0893490317190058
+Mcap (cr),321.7718016
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,False
 npm >8%,True
@@ -56,7 +57,7 @@ DV >3%,False
 EY >7,True
 sgr > Sales growth (very linear),True
 FCF/CFO,0.8316224143254091
-Market Cap,3033002496
+Market Cap,3217718016
 Net Income,381583000.0
 Total Revenue,2098943000.0
 Total Assets,2249994000.0
@@ -73,19 +74,19 @@ Dividends Paid,2875000.0
 Depreciation & Amortization,4879000.0
 Interest Expense,0
 Income Tax Expense,94725000.0
-Shares Outstanding,43565100
+Shares Outstanding,43565098
 Net Fixed Assets,13793000.0
 Construction in Progress,0
 Net Debt,0
-3-5yr Average ROA (%),17.78121529008087
-3-5yr Average ROE (%),26.774410530684136
-ROE,26.081167580675974
-ROA,18.377028076784338
+3-5yr Average ROA (%),17.483308896729138
+3-5yr Average ROE (%),27.121032005688217
+ROE,24.094190706807
+ROA,15.996933545444762
 insidersPercentHeld,0.08213
-institutionsPercentHeld,0.78535
-institutionsFloatPercentHeld,0.85563004
-institutionsCount,410.0
-current,69.62
+institutionsPercentHeld,0.78499
+institutionsFloatPercentHeld,0.85524005
+institutionsCount,409.0
+current,73.86
 high,62.0
 low,62.0
 mean,62.0

@@ -1,0 +1,103 @@
+,Value
+ticker,HWM
+longName,Howmet Aerospace Inc.
+ROCE,17.447045707915272
+ROCE (3yr avg),13.5887884425022
+NFAT,2.973784270562337
+NFAT (3yr avg),2.6472053665519675
+NPM,11.782667079853852
+DPR,9.453792070122185
+Retention Ratio,90.54620792987782
+Dep,10.917645291947997
+SSGR,17.324748759038616
+Av NPM (over 3 years),11.782667079853852
+Au NFA/T (over 3 years),2.6472053665519675
+Av Dep%NFA (over 3 years),10.917645291947997
+Au Retention ratio (over 3 years),90.54620792987782
+d/e,0.8597968788704483
+Interest coverage,9.005494505494505
+tax %,16.48590021691974
+cPAT,2647000000.0
+CFO,1298000000.0
+cCFO,3381000000.0
+cCFO/cPAT,1.2772950510011334
+p/a,11.075949367088606
+p/e,56.55043
+EY,1.4600758718320344
+Earnings Growth 5yr cagr,67.70463344160211
+Sales Growth 5yr cagr,14.32798904383381
+PEG,0.8352519927425196
+no. shares (cr),40.3126322
+Current Price,196.23
+market cap,79105478166.06
+d/e_market,0.04387812425219906
+p/s,10.245497
+NFA + CWIP,2850000000.0
+Capex,447000000.0
+Capex_from_cashflow_statement,321000000.0
+FCF,851000000.0
+FCF%,73.67965367965368
+FCF_capex_from_cashflow,977000000.0
+FCF%_capex_from_cashflow,84.58874458874459
+DV,0.1377907099824171
+Mcap (cr),7910.5482752
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6556240369799692
+Market Cap,79105482752
+Net Income,1155000000.0
+Total Revenue,7430000000.0
+Total Assets,10519000000.0
+Total Liabilities,5965000000.0
+Total Stockholders Equity,4037000000.0
+Total Debt,3471000000.0
+Cash and Cash Equivalents,249000000.0
+Current Assets,3362000000.0
+Current Liabilities,1549000000.0
+Working Capital,1813000000.0
+Operating Cash Flow,1298000000.0
+Capital Expenditure,321000000.0
+Dividends Paid,109000000.0
+Depreciation & Amortization,277000000.0
+Interest Expense,182000000.0
+Income Tax Expense,228000000.0
+Shares Outstanding,403126322
+Net Fixed Assets,2541000000.0
+Construction in Progress,309000000.0
+Net Debt,3222000000.0
+3-5yr Average ROA (%),5.989399914196196
+3-5yr Average ROE (%),16.612981983936145
+ROE,20.031421838177533
+ROA,7.397379490402746
+insidersPercentHeld,0.011410001
+institutionsPercentHeld,0.9654
+institutionsFloatPercentHeld,0.97655
+institutionsCount,1659.0
+current,196.23
+high,225.0
+low,189.0
+mean,205.65611
+median,203.5
+Normalized EBIT,1197666666.6666667
+Normalized Net Income,796333333.3333334
+Research Asset,87800000.0
+R&D Amortization,23600000.0
+Adjusted EBIT (R&D),1574400000.0
+Adjusted Book Equity (R&D),4124800000.0
+Adjusted D/E (R&D),0.8414953452288596
+Adjusted Invested Capital (R&D),7346800000.0
+Adjusted ROC (R&D),17.896852874514284
+Adjusted ROE (R&D),28.001357641582626

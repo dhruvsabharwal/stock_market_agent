@@ -1,0 +1,103 @@
+,Value
+ticker,NVT
+longName,nVent Electric plc
+ROCE,9.020275394805589
+ROCE (3yr avg),8.679541456417297
+NFAT,6.103132860736337
+NFAT (3yr avg),6.213937493234123
+NPM,16.56857722018319
+DPR,29.358813258177634
+Retention Ratio,70.64118674182237
+Dep,28.569474813713626
+SSGR,44.15993830851795
+Av NPM (over 3 years),16.56857722018319
+Au NFA/T (over 3 years),6.213937493234123
+Av Dep%NFA (over 3 years),28.569474813713626
+Au Retention ratio (over 3 years),70.64118674182235
+d/e,0.7218420801374876
+Interest coverage,4.972641509433962
+tax %,43.89561975768873
+cPAT,1571600000.0
+CFO,643100000.0
+cCFO,1939100000.0
+cCFO/cPAT,1.233838126749809
+p/a,5.384877550026778
+p/e,62.828022
+EY,2.0899679976836327
+Earnings Growth 5yr cagr,7.056768578629002
+Sales Growth 5yr cagr,6.8821361397828795
+PEG,8.90322834027332
+no. shares (cr),16.0947295
+Current Price,98.64
+market cap,15875841178.8
+d/e_market,0.14286487087240046
+p/s,4.8012586
+NFA + CWIP,502300000.0
+Capex,196400000.0
+Capex_from_cashflow_statement,74000000.0
+FCF,446700000.0
+FCF%,134.62929475587703
+FCF_capex_from_cashflow,569100000.0
+FCF%_capex_from_cashflow,171.51898734177215
+DV,0.7986978363661381
+Mcap (cr),1587.5841024
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,True
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6946042606126575
+Market Cap,15875841024
+Net Income,331800000.0
+Total Revenue,3006100000.0
+Total Assets,6734900000.0
+Total Liabilities,3497300000.0
+Total Stockholders Equity,3142100000.0
+Total Debt,2268100000.0
+Cash and Cash Equivalents,14800000.0
+Current Assets,1389300000.0
+Current Liabilities,801600000.0
+Working Capital,587700000.0
+Operating Cash Flow,643100000.0
+Capital Expenditure,74000000.0
+Dividends Paid,126800000.0
+Depreciation & Amortization,146000000.0
+Interest Expense,106000000.0
+Income Tax Expense,188400000.0
+Shares Outstanding,160947295
+Net Fixed Assets,455100000.0
+Construction in Progress,47200000.0
+Net Debt,2253300000.0
+3-5yr Average ROA (%),5.4302754378426155
+3-5yr Average ROE (%),10.45789922997485
+ROE,17.778265435678794
+ROA,8.794566009645953
+insidersPercentHeld,0.012200001
+institutionsPercentHeld,1.03284
+institutionsFloatPercentHeld,1.0455899
+institutionsCount,835.0
+current,98.64
+high,115.0
+low,68.04
+mean,99.00333
+median,103.0
+Normalized EBIT,452466666.6666667
+Normalized Net Income,432900000.0
+Research Asset,157060000.0
+R&D Amortization,43100000.0
+Adjusted EBIT (R&D),558200000.0
+Adjusted Book Equity (R&D),3299160000.0
+Adjusted D/E (R&D),0.68747802470932
+Adjusted Invested Capital (R&D),5552460000.0
+Adjusted ROC (R&D),5.6402864768513705
+Adjusted ROE (R&D),10.05710544502237

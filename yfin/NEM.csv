@@ -1,5 +1,6 @@
 ,Value
 ticker,NEM
+longName,Newmont Corporation
 ROCE,10.146293488505512
 ROCE (3yr avg),2.3432499239315527
 NFAT,0.5254394599915624
@@ -21,19 +22,25 @@ CFO,6363000000.0
 cCFO,16625000000.0
 cCFO/cPAT,10.449402891263356
 p/a,6.0317803480704795
-p/e,12.820652
-EY,4.306812268700499
+p/e,15.27355
+EY,3.6151487828322235
 Earnings Growth 5yr cagr,25.99210498948732
 Sales Growth 5yr cagr,15.19324948381433
-PEG,0.49325177799895004
-no. shares (cr),109.8450048
-p/s,3.776589
+PEG,0.5876226648891073
+no. shares (cr),109.8449725
+Current Price,84.31
+market cap,92610296314.75
+d/e_market,0.09687907670122672
+p/s,4.549302
 NFA + CWIP,38730000000.0
 Capex,-1056000000.0
+Capex_from_cashflow_statement,3402000000.0
 FCF,7419000000.0
 FCF%,221.59498207885306
-DV,1.4729092137580857
-Mcap (cr),7773.7304064
+FCF_capex_from_cashflow,2961000000.0
+FCF%_capex_from_cashflow,88.44086021505376
+DV,1.2363636070319282
+Mcap (cr),9364.283392
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,False
@@ -41,7 +48,6 @@ Tax payout >25%,True
 Interest coverage >3,True
 d/e <0.5,True
 CFO >0,True
-net cash flow positive,False
 cCFO > PAT,True
 p/e <10,False
 peg <1,True
@@ -51,14 +57,13 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),False
 FCF/CFO,1.165959453088166
-Current Price,70.77
-Market Cap,77737304064
+Market Cap,93642833920
 Net Income,3348000000.0
 Total Revenue,18682000000.0
 Total Assets,56349000000.0
 Total Liabilities,26240000000.0
 Total Stockholders Equity,29027000000.0
-Total Debt,8476000000.0
+Total Debt,8972000000.0
 Cash and Cash Equivalents,786000000.0
 Current Assets,12275000000.0
 Current Liabilities,7543000000.0
@@ -69,20 +74,30 @@ Dividends Paid,1145000000.0
 Depreciation & Amortization,2576000000.0
 Interest Expense,375000000.0
 Income Tax Expense,1397000000.0
-Shares Outstanding,1098450048
+Shares Outstanding,1098449725
 Net Fixed Assets,33547000000.0
 Construction in Progress,5183000000.0
-Net Debt,7690000000.0
-3-5yr Average ROA (%),-0.13539427249819358
-3-5yr Average ROE (%),-0.3418943275469495
-ROE,11.357815282842846
-ROA,5.986321577041706
+Net Debt,8186000000.0
+3-5yr Average ROA (%),-3.1962521972681435
+3-5yr Average ROE (%),-6.1917491327418475
+ROE,-10.309832372212233
+ROA,-5.307060475805422
 insidersPercentHeld,0.00262
-institutionsPercentHeld,0.80033994
-institutionsFloatPercentHeld,0.80244005
-institutionsCount,1939.0
-current,70.77
-high,87.0
+institutionsPercentHeld,0.8051
+institutionsFloatPercentHeld,0.80721
+institutionsCount,1970.0
+current,84.31
+high,107.0
 low,58.0
-mean,72.33
-median,72.0
+mean,83.0595
+median,79.5
+Normalized EBIT,1113333333.3333333
+Normalized Net Income,141666666.66666666
+Research Asset,556000000.0
+R&D Amortization,156000000.0
+Adjusted EBIT (R&D),4993000000.0
+Adjusted Book Equity (R&D),29583000000.0
+Adjusted D/E (R&D),0.30328229050468175
+Adjusted Invested Capital (R&D),37769000000.0
+Adjusted ROC (R&D),9.184854635899326
+Adjusted ROE (R&D),11.317310617584424

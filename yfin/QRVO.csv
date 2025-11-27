@@ -1,0 +1,103 @@
+,Value
+ticker,QRVO
+longName,"Qorvo, Inc."
+ROCE,2.800552005466462
+ROCE (3yr avg),2.876454275673149
+NFAT,3.6807136621951435
+NFAT (3yr avg),3.4087643809114394
+NPM,0.8399297733863351
+DPR,0.0
+Retention Ratio,100.0
+Dep,32.24041767384867
+SSGR,-29.377294979862313
+Av NPM (over 3 years),0.8399297733863351
+Au NFA/T (over 3 years),3.4087643809114394
+Av Dep%NFA (over 3 years),32.24041767384867
+Au Retention ratio (over 3 years),100.0
+d/e,0.43561669026749733
+Interest coverage,3.6780716984986213
+tax %,15.605699631253888
+cPAT,1121798000.0
+CFO,622202000.0
+cCFO,3347865000.0
+cCFO/cPAT,2.98437419214511
+p/a,0.8484835540041513
+p/e,109.73495
+EY,0.6590274571333987
+Earnings Growth 5yr cagr,-60.44029013620208
+Sales Growth 5yr cagr,-7.148247050912926
+PEG,-1.8155927073267268
+no. shares (cr),9.2654264
+Current Price,91.08
+market cap,8438950365.12
+d/e_market,0.1835791103124909
+p/s,2.3605905
+NFA + CWIP,900118000.0
+Capex,239742000.0
+Capex_from_cashflow_statement,137600000.0
+FCF,382460000.0
+FCF%,687.6921693787647
+FCF_capex_from_cashflow,484602000.0
+FCF%_capex_from_cashflow,871.3512541580508
+DV,0.0
+Mcap (cr),861.8699776
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.6146878344974783
+Market Cap,8618699776
+Net Income,55615000.0
+Total Revenue,3718971000.0
+Total Assets,5933131000.0
+Total Liabilities,2540819000.0
+Total Stockholders Equity,3556372000.0
+Total Debt,1549215000.0
+Cash and Cash Equivalents,74557000.0
+Current Assets,2167275000.0
+Current Liabilities,783182000.0
+Working Capital,1384093000.0
+Operating Cash Flow,622202000.0
+Capital Expenditure,137600000.0
+Dividends Paid,0
+Depreciation & Amortization,296836000.0
+Interest Expense,78328000.0
+Income Tax Expense,10284000.0
+Shares Outstanding,92654264
+Net Fixed Assets,801895000.0
+Construction in Progress,98223000.0
+Net Debt,1474658000.0
+3-5yr Average ROA (%),3.7607774327612
+3-5yr Average ROE (%),6.2124877828025555
+ROE,1.6007347578332818
+ROA,0.8907117574112136
+insidersPercentHeld,0.00478
+institutionsPercentHeld,1.0307701
+institutionsFloatPercentHeld,1.03573
+institutionsCount,670.0
+current,91.08
+high,128.0
+low,70.0
+mean,97.87429
+median,95.0
+Normalized EBIT,160041333.33333334
+Normalized Net Income,29481666.666666668
+Research Asset,1932867200.0
+R&D Amortization,540687000.0
+Adjusted EBIT (R&D),351249000.0
+Adjusted Book Equity (R&D),5489239200.0
+Adjusted D/E (R&D),0.2822276354799769
+Adjusted Invested Capital (R&D),6963897200.0
+Adjusted ROC (R&D),4.256727628061727
+Adjusted ROE (R&D),1.013164082920635

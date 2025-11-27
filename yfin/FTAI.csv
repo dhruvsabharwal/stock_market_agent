@@ -1,5 +1,6 @@
 ,Value
 ticker,FTAI
+longName,FTAI Aviation Ltd.
 ROCE,6.3914600621127775
 ROCE (3yr avg),7.179610949480252
 NFAT,0.7552399667066002
@@ -21,16 +22,16 @@ CFO,-187956000.0
 cCFO,-101675000.0
 cCFO/cPAT,2.2622093670041163
 p/a,0.2928473008093609
-p/e,36.656017
-EY,0.056735577253121464
+p/e,40.5
+EY,0.050727639604654755
 Earnings Growth 5yr cagr,
 Sales Growth 5yr cagr,72.91191278023253
 PEG,
-no. shares (cr),10.2571
-Current Price,149.19
-market cap,15302567490.0
-d/e_market,0.22483011443983508
-p/s,7.1409554
+no. shares (cr),10.2570598
+Current Price,166.86
+market cap,17114929982.28
+d/e_market,0.2010220318495086
+p/s,7.986696
 NFA + CWIP,
 Capex,
 Capex_from_cashflow_statement,1156561000.0
@@ -38,8 +39,8 @@ FCF,
 FCF%,
 FCF_capex_from_cashflow,-1344517000.0
 FCF%_capex_from_cashflow,-15486.258926514629
-DV,1.0085889188259347
-Mcap (cr),1530.2567936
+DV,0.901785751737205
+Mcap (cr),1711.4930176
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,False
@@ -56,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),False
 FCF/CFO,
-Market Cap,15302567936
+Market Cap,17114930176
 Net Income,8682000.0
 Total Revenue,1734901000.0
 Total Assets,4037952000.0
@@ -73,22 +74,22 @@ Dividends Paid,154340000.0
 Depreciation & Amortization,262031000.0
 Interest Expense,221721000.0
 Income Tax Expense,5487000.0
-Shares Outstanding,102571000
+Shares Outstanding,102570598
 Net Fixed Assets,2507088000.0
 Construction in Progress,
 Net Debt,3031555000.0
-3-5yr Average ROA (%),1.329878793114836
-3-5yr Average ROE (%),74.67511101963834
-ROE,6.76386838425192
-ROA,0.24796373137719405
+3-5yr Average ROA (%),1.870836323983657
+3-5yr Average ROE (%),108.63073233733155
+ROE,251.06396124122801
+ROA,9.039864952796139
 insidersPercentHeld,0.01469
-institutionsPercentHeld,1.09517
-institutionsFloatPercentHeld,1.1115
+institutionsPercentHeld,0.97911
+institutionsFloatPercentHeld,0.9937
 institutionsCount,555.0
-current,149.19
-high,300.0
+current,166.86
+high,230.0
 low,150.0
-mean,194.9
+mean,186.0
 median,180.0
 Normalized EBIT,215143000.0
 Normalized Net Income,19763000.0

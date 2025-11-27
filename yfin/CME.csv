@@ -1,0 +1,95 @@
+,Value
+ticker,CME
+longName,CME Group Inc.
+ROCE,13.38424448739223
+ROCE (3yr avg),11.760259667302046
+NFAT,15.40806836747518
+NFAT (3yr avg),12.9185451573198
+NPM,56.3189267672947
+DPR,99.93595812390699
+Retention Ratio,0.06404187609301282
+Dep,80.55326666358026
+SSGR,-80.0873244873255
+Av NPM (over 3 years),56.3189267672947
+Au NFA/T (over 3 years),12.9185451573198
+Av Dep%NFA (over 3 years),80.55326666358026
+Au Retention ratio (over 3 years),0.06404187609300911
+d/e,0.12820752564711516
+Interest coverage,24.434431323803604
+tax %,22.363147927951733
+cPAT,12079400000.0
+CFO,3690500000.0
+cCFO,12602700000.0
+cCFO/cPAT,1.0433216881633194
+p/a,2.718299293556741
+p/e,26.181202
+EY,3.621023020852935
+Earnings Growth 5yr cagr,9.900661288015545
+Sales Growth 5yr cagr,9.338765414954487
+PEG,2.644389221929202
+no. shares (cr),36.0377042
+Current Price,270.19
+market cap,97370272977.98
+d/e_market,0.03520581687981128
+p/s,15.141941
+NFA + CWIP,386200000.0
+Capex,313500000.0
+Capex_from_cashflow_statement,94000000.0
+FCF,3377000000.0
+FCF%,95.77968120710193
+FCF_capex_from_cashflow,3596500000.0
+FCF%_capex_from_cashflow,102.00521867377617
+DV,3.681000258477817
+Mcap (cr),9740.3559936
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,True
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.9150521609538003
+Market Cap,97403559936
+Net Income,3525800000.0
+Total Revenue,6130100000.0
+Total Assets,137447000000.0
+Total Liabilities,110960100000.0
+Total Stockholders Equity,26737900000.0
+Total Debt,3428000000.0
+Cash and Cash Equivalents,553100000.0
+Current Assets,103033500000.0
+Current Liabilities,102313900000.0
+Working Capital,719600000.0
+Operating Cash Flow,3690500000.0
+Capital Expenditure,94000000.0
+Dividends Paid,3584200000.0
+Depreciation & Amortization,336800000.0
+Interest Expense,160900000.0
+Income Tax Expense,1015600000.0
+Shares Outstanding,360377042
+Net Fixed Assets,386200000.0
+Construction in Progress,0
+Net Debt,2874900000.0
+3-5yr Average ROA (%),1.787085752470066
+3-5yr Average ROE (%),10.974976119377823
+ROE,12.034332650708922
+ROA,2.1233255825126744
+insidersPercentHeld,0.00451
+institutionsPercentHeld,0.91646004
+institutionsFloatPercentHeld,0.92060995
+institutionsCount,2246.0
+current,270.19
+high,313.0
+low,212.0
+mean,283.83334
+median,290.5
+Normalized EBIT,4222766666.6666665
+Normalized Net Income,3147666666.6666665

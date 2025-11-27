@@ -1,0 +1,95 @@
+,Value
+ticker,TOL
+longName,"Toll Brothers, Inc."
+ROCE,18.792107964397008
+ROCE (3yr avg),17.183882160253855
+NFAT,21.95485251924157
+NFAT (3yr avg),23.778690022829593
+NPM,13.577691289367996
+DPR,6.49772301799518
+Retention Ratio,93.50227698200482
+Dep,17.924504573495444
+SSGR,283.9566779739006
+Av NPM (over 3 years),13.577691289367996
+Au NFA/T (over 3 years),23.778690022829593
+Av Dep%NFA (over 3 years),17.924504573495444
+Au Retention ratio (over 3 years),93.50227698200483
+d/e,0.43569795955838003
+Interest coverage,
+tax %,24.666049749717114
+cPAT,5063393000.0
+CFO,1010167000.0
+cCFO,4566540000.0
+cCFO/cPAT,0.9018735065597318
+p/a,12.54245024633955
+p/e,10.120147
+EY,11.800765946953698
+Earnings Growth 5yr cagr,31.152520932905947
+Sales Growth 5yr cagr,7.258282818998185
+PEG,0.3248580434885524
+no. shares (cr),9.6383
+Current Price,138.14
+market cap,13314347619.999998
+d/e_market,0.2224297490589329
+p/s,1.2241068
+NFA + CWIP,561318000.0
+Capex,215742000.0
+Capex_from_cashflow_statement,73643000.0
+FCF,794425000.0
+FCF%,50.561833508889734
+FCF_capex_from_cashflow,936524000.0
+FCF%_capex_from_cashflow,59.605841413701036
+DV,0.7015063949486998
+Mcap (cr),1331.4348032
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,False
+p/e <10,False
+peg <1,True
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,0.7864293725690901
+Market Cap,13314348032
+Net Income,1571195000.0
+Total Revenue,10846740000.0
+Total Assets,13367932000.0
+Total Liabilities,5681217000.0
+Total Stockholders Equity,6797156000.0
+Total Debt,2961507000.0
+Cash and Cash Equivalents,0
+Current Assets,11570119000.0
+Current Liabilities,2511316000.0
+Working Capital,9058803000.0
+Operating Cash Flow,1010167000.0
+Capital Expenditure,73643000.0
+Dividends Paid,93401000.0
+Depreciation & Amortization,81201000.0
+Interest Expense,
+Income Tax Expense,514445000.0
+Shares Outstanding,96383000
+Net Fixed Assets,561318000.0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),10.928472672145684
+3-5yr Average ROE (%),22.10042420425627
+ROE,21.43317740410165
+ROA,11.058073966949674
+insidersPercentHeld,0.00685
+institutionsPercentHeld,0.93517
+institutionsFloatPercentHeld,0.94162005
+institutionsCount,854.0
+current,138.14
+high,183.0
+low,92.0
+mean,151.0
+median,155.0
+Normalized EBIT,1757856000.0
+Normalized Net Income,1409922000.0

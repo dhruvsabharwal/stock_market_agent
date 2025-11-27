@@ -22,16 +22,16 @@ CFO,14923000000.0
 cCFO,54400000000.0
 cCFO/cPAT,1.3520230639228552
 p/a,6.687426138175542
-p/e,205.94049
-EY,0.6389225608725387
+p/e,263.14792
+EY,0.4821603699374498
 Earnings Growth 5yr cagr,6.044403165851664
 Sales Growth 5yr cagr,21.981528090391333
-PEG,34.07126962732684
-no. shares (cr),322.5449984
-Current Price,345.98
-market cap,1115941185464.32
-d/e_market,0.012207632604160721
-p/s,12.0356045
+PEG,43.535798784348984
+no. shares (cr),332.5150886
+Current Price,444.72
+market cap,1478761102021.9202
+d/e_market,0.00921244140204471
+p/s,15.948675
 NFA + CWIP,58290000000.0
 Capex,12743000000.0
 Capex_from_cashflow_statement,11342000000.0
@@ -40,7 +40,7 @@ FCF%,30.575035063113603
 FCF_capex_from_cashflow,3581000000.0
 FCF%_capex_from_cashflow,50.22440392706873
 DV,0.0
-Mcap (cr),111594.1240832
+Mcap (cr),147876.1119744
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,True
@@ -57,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),False
 FCF/CFO,0.14608322723313008
-Market Cap,1115941240832
+Market Cap,1478761119744
 Net Income,7130000000.0
 Total Revenue,97690000000.0
 Total Assets,122070000000.0
@@ -74,7 +74,7 @@ Dividends Paid,0
 Depreciation & Amortization,5368000000.0
 Interest Expense,350000000.0
 Income Tax Expense,1837000000.0
-Shares Outstanding,3225449984
+Shares Outstanding,3325150886
 Net Fixed Assets,51507000000.0
 Construction in Progress,6783000000.0
 Net Debt,8261000000.0
@@ -82,15 +82,15 @@ Net Debt,8261000000.0
 3-5yr Average ROE (%),30.774919246515097
 ROE,27.947232107920772
 ROA,15.875653591312263
-insidersPercentHeld,0.12875
-institutionsPercentHeld,0.50953996
-institutionsFloatPercentHeld,0.58484
-institutionsCount,4647.0
-current,345.98
-high,500.0
+insidersPercentHeld,0.12560001
+institutionsPercentHeld,0.49403998
+institutionsFloatPercentHeld,0.565
+institutionsCount,4654.0
+current,444.72
+high,600.0
 low,115.0
-mean,306.32074
-median,322.5
+mean,345.4979
+median,352.0
 Normalized EBIT,11126333333.333334
 Normalized Net Income,11570666666.666666
 Research Asset,10597400000.0

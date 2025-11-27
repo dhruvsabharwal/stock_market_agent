@@ -1,0 +1,95 @@
+,Value
+ticker,CLF
+longName,Cleveland-Cliffs Inc.
+ROCE,-3.251063829787234
+ROCE (3yr avg),5.563541899284449
+NFAT,2.036948558687689
+NFAT (3yr avg),2.334741500114548
+NPM,1.2303125188382185
+DPR,-1
+Retention Ratio,101.0
+Dep,0.0
+SSGR,2.901186312800471
+Av NPM (over 3 years),1.2303125188382185
+Au NFA/T (over 3 years),2.334741500114548
+Av Dep%NFA (over 3 years),0.0
+Au Retention ratio (over 3 years),-1
+d/e,0.895777862305059
+Interest coverage,-1.3621621621621622
+tax %,24.920466595970307
+cPAT,3968000000.0
+CFO,105000000.0
+cCFO,7580000000.0
+cCFO/cPAT,1.9102822580645162
+p/a,-4.29948109710897
+p/e,inf
+EY,-12.49320171161784
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,-2.0964039968698667
+PEG,
+no. shares (cr),49.4695276
+Current Price,12.2
+market cap,6035282367.2
+d/e_market,1.1706163142251993
+p/s,0.33154795
+NFA + CWIP,10670000000.0
+Capex,1185000000.0
+Capex_from_cashflow_statement,695000000.0
+FCF,-1080000000.0
+FCF%,143.23607427055703
+FCF_capex_from_cashflow,-590000000.0
+FCF%_capex_from_cashflow,78.24933687002653
+DV,
+Mcap (cr),611.938048
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,-10.285714285714286
+Market Cap,6119380480
+Net Income,-754000000.0
+Total Revenue,19185000000.0
+Total Assets,20947000000.0
+Total Liabilities,14050000000.0
+Total Stockholders Equity,7887000000.0
+Total Debt,7065000000.0
+Cash and Cash Equivalents,183000000.0
+Current Assets,6907000000.0
+Current Liabilities,3322000000.0
+Working Capital,3585000000.0
+Operating Cash Flow,105000000.0
+Capital Expenditure,695000000.0
+Dividends Paid,
+Depreciation & Amortization,0
+Interest Expense,370000000.0
+Income Tax Expense,-235000000.0
+Shares Outstanding,494695276
+Net Fixed Assets,9942000000.0
+Construction in Progress,728000000.0
+Net Debt,6882000000.0
+3-5yr Average ROA (%),4.637714285480589
+3-5yr Average ROE (%),12.596921389473202
+ROE,5.08993494068121
+ROA,2.1988316984459386
+insidersPercentHeld,0.016210001
+institutionsPercentHeld,0.77870005
+institutionsFloatPercentHeld,0.79153
+institutionsCount,698.0
+current,12.2
+high,14.0
+low,5.0
+mean,11.31364
+median,12.0
+Normalized EBIT,795000000.0
+Normalized Net Income,326666666.6666667

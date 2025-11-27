@@ -22,16 +22,16 @@ CFO,24204000000.0
 cCFO,101821000000.0
 cCFO/cPAT,1.3724171395452278
 p/a,5.262677188367675
-p/e,13.091815
-EY,5.26159709959922
-Earnings Growth 5yr cagr,-5.152746117936524
+p/e,14.948051
+EY,4.606223045778663
+Earnings Growth 5yr cagr,-4.944650238572423
 Sales Growth 5yr cagr,11.650101756925668
-PEG,-2.5407452066050493
-no. shares (cr),90.5673984
-Current Price,302.29
-market cap,273776188623.36002
-d/e_market,0.28090098115069656
-p/s,0.6475037
+PEG,-3.0230755015577544
+no. shares (cr),90.5673625
+Current Price,345.3
+market cap,312729102712.5
+d/e_market,0.2459125144828617
+p/s,0.73963046
 NFA + CWIP,10553000000.0
 Capex,3202000000.0
 Capex_from_cashflow_statement,3499000000.0
@@ -39,8 +39,8 @@ FCF,21002000000.0
 FCF%,145.79659840333215
 FCF_capex_from_cashflow,20705000000.0
 FCF%_capex_from_cashflow,143.73481430059007
-DV,2.7515175946741355
-Mcap (cr),27377.6197632
+DV,2.408794044002129
+Mcap (cr),31272.9075712
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,False
 npm >8%,False
@@ -52,12 +52,12 @@ cCFO > PAT,True
 p/e <10,False
 peg <1,True
 EY >7%,False
-p/b <3,True
+p/b <3,False
 DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),True
 FCF/CFO,0.8677078168897703
-Market Cap,273776197632
+Market Cap,312729075712
 Net Income,14405000000.0
 Total Revenue,400278000000.0
 Total Assets,298278000000.0
@@ -74,7 +74,7 @@ Dividends Paid,7533000000.0
 Depreciation & Amortization,4099000000.0
 Interest Expense,3906000000.0
 Income Tax Expense,4829000000.0
-Shares Outstanding,905673984
+Shares Outstanding,905673625
 Net Fixed Assets,10553000000.0
 Construction in Progress,0
 Net Debt,68692000000.0
@@ -82,14 +82,14 @@ Net Debt,68692000000.0
 3-5yr Average ROE (%),26.89509581128067
 ROE,26.87956379707917
 ROA,8.61760600664196
-insidersPercentHeld,0.00816
-institutionsPercentHeld,0.86647004
-institutionsFloatPercentHeld,0.8736
-institutionsCount,4162.0
-current,302.29
+insidersPercentHeld,0.008169999
+institutionsPercentHeld,0.86547
+institutionsFloatPercentHeld,0.87261003
+institutionsCount,4144.0
+current,345.3
 high,626.0
 low,198.0
-mean,328.04166
-median,325.0
+mean,342.58334
+median,341.0
 Normalized EBIT,28256666666.666668
 Normalized Net Income,18968666666.666668

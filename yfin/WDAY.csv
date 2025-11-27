@@ -1,0 +1,103 @@
+,Value
+ticker,WDAY
+longName,"Workday, Inc."
+ROCE,6.050366079330598
+ROCE (3yr avg),2.7968533266350994
+NFAT,5.681802892700976
+NFAT (3yr avg),5.414209165954597
+NPM,6.449446927302045
+DPR,0.0
+Retention Ratio,100.0
+Dep,21.706673642923292
+SSGR,13.211981026213154
+Av NPM (over 3 years),6.449446927302045
+Au NFA/T (over 3 years),5.414209165954597
+Av Dep%NFA (over 3 years),21.706673642923292
+Au Retention ratio (over 3 years),100.0
+d/e,0.4159861420440485
+Interest coverage,4.37719298245614
+tax %,17.55485893416928
+cPAT,1569000000.0
+CFO,2461000000.0
+cCFO,7918000000.0
+cCFO/cPAT,5.046526449968132
+p/a,3.197179674203744
+p/e,115.18182
+EY,1.0069219181824256
+Earnings Growth 5yr cagr,154.58216848297442
+Sales Growth 5yr cagr,18.011451789701738
+PEG,0.7451171188136493
+no. shares (cr),21.7
+Current Price,240.73
+market cap,52238410000.0
+d/e_market,0.06435877355378926
+p/s,7.3513665
+NFA + CWIP,1575000000.0
+Capex,378000000.0
+Capex_from_cashflow_statement,272000000.0
+FCF,2083000000.0
+FCF%,396.00760456273764
+FCF_capex_from_cashflow,2189000000.0
+FCF%_capex_from_cashflow,416.1596958174905
+DV,0.0
+Mcap (cr),6586.0890624
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),False
+FCF/CFO,0.8464039008533116
+Market Cap,65860890624
+Net Income,526000000.0
+Total Revenue,8446000000.0
+Total Assets,17977000000.0
+Total Liabilities,8943000000.0
+Total Stockholders Equity,8082000000.0
+Total Debt,3362000000.0
+Cash and Cash Equivalents,311000000.0
+Current Assets,10545000000.0
+Current Liabilities,5548000000.0
+Working Capital,4997000000.0
+Operating Cash Flow,2461000000.0
+Capital Expenditure,272000000.0
+Dividends Paid,0
+Depreciation & Amortization,326000000.0
+Interest Expense,114000000.0
+Income Tax Expense,112000000.0
+Shares Outstanding,217000000
+Net Fixed Assets,1575000000.0
+Construction in Progress,0
+Net Debt,3051000000.0
+3-5yr Average ROA (%),2.3743043665566503
+3-5yr Average ROE (%),4.935528153577604
+ROE,6.146295863519514
+ROA,3.055563623689332
+insidersPercentHeld,0.00875
+institutionsPercentHeld,0.93307996
+institutionsFloatPercentHeld,0.94132006
+institutionsCount,1636.0
+current,240.73
+high,340.0
+low,230.0
+mean,282.1265
+median,280.0
+Normalized EBIT,354666666.6666667
+Normalized Net Income,513333333.3333333
+Research Asset,6697000000.0
+R&D Amortization,1843200000.0
+Adjusted EBIT (R&D),1534800000.0
+Adjusted Book Equity (R&D),14779000000.0
+Adjusted D/E (R&D),0.227484944854185
+Adjusted Invested Capital (R&D),17830000000.0
+Adjusted ROC (R&D),7.096848149626303
+Adjusted ROE (R&D),3.559104134244536

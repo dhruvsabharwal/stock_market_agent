@@ -1,5 +1,6 @@
 ,Value
 ticker,CELH
+longName,"Celsius Holdings, Inc."
 ROCE,11.1127444613964
 ROCE (3yr avg),5.793506712008548
 NFAT,25.952273836758526
@@ -21,16 +22,16 @@ CFO,262898000.0
 cCFO,415712000.0
 cCFO/cPAT,2.2050177690553228
 p/a,9.44248748369561
-p/e,156.76315
-EY,0.9441330223334141
+p/e,143.725
+EY,0.9789091778477652
 Earnings Growth 5yr cagr,184.38669798515656
 Sales Growth 5yr cagr,62.78404172576728
-PEG,0.8501868720086289
-no. shares (cr),25.7946
-Current Price,59.57
-market cap,15365843220.0
-d/e_market,0.0013178580381220367
-p/s,9.220538
+PEG,0.7794759685515389
+no. shares (cr),25.7783358
+Current Price,57.49
+market cap,14819965251.42
+d/e_market,0.0013663999649432181
+p/s,8.892976
 NFA + CWIP,77438000.0
 Capex,57679000.0
 Capex_from_cashflow_statement,23390000.0
@@ -38,8 +39,8 @@ FCF,205219000.0
 FCF%,141.45815239119347
 FCF_capex_from_cashflow,239508000.0
 FCF%_capex_from_cashflow,165.0936763307002
-DV,0.17896837554743708
-Mcap (cr),1536.5842944
+DV,0.18556048906636297
+Mcap (cr),1481.9965952
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,False
@@ -56,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),False
 FCF/CFO,0.7806031236449117
-Market Cap,15365842944
+Market Cap,14819965952
 Net Income,145074000.0
 Total Revenue,1355630000.0
 Total Assets,1766881000.0
@@ -73,22 +74,22 @@ Dividends Paid,27500000.0
 Depreciation & Amortization,7274000.0
 Interest Expense,
 Income Tax Expense,49976000.0
-Shares Outstanding,257946000
+Shares Outstanding,257783358
 Net Fixed Assets,77438000.0
 Construction in Progress,0
 Net Debt,1491000.0
-3-5yr Average ROA (%),0.28111527705907174
-3-5yr Average ROE (%),0.3797946933350496
-ROE,12.544526566779583
-ROA,8.783641214466725
-insidersPercentHeld,0.36191002
-institutionsPercentHeld,0.65814
-institutionsFloatPercentHeld,1.03142
-institutionsCount,715.0
-current,59.57
-high,68.0
-low,33.5
-mean,57.925
-median,60.0
+3-5yr Average ROA (%),-3.9701476916447547
+3-5yr Average ROE (%),-5.702571243387217
+ROE,23.224636438249416
+ROA,16.44400055828151
+insidersPercentHeld,0.36188
+institutionsPercentHeld,0.67047995
+institutionsFloatPercentHeld,1.05072
+institutionsCount,720.0
+current,57.49
+high,80.0
+low,38.0
+mean,67.19048
+median,70.0
 Normalized EBIT,88097666.66666667
 Normalized Net Income,61531000.0

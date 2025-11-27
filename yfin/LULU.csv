@@ -1,6 +1,6 @@
 ,Value
 ticker,LULU
-Name,lululemon athletica inc.
+longName,lululemon athletica inc.
 ROCE,43.47404479999001
 ROCE (3yr avg),41.94755418081936
 NFAT,4.192940278240332
@@ -22,16 +22,16 @@ CFO,2272713000.0
 cCFO,6924448000.0
 cCFO/cPAT,1.332924729659391
 p/a,25.587014894793963
-p/e,13.95102
-EY,7.712376433250665
+p/e,12.030425
+EY,8.98797474105286
 Earnings Growth 5yr cagr,24.950334879549008
 Sales Growth 5yr cagr,19.16805291773731
-PEG,0.5591516132889746
-no. shares (cr),11.4729
-Current Price,205.08
-market cap,23528623320.0
-d/e_market,0.06697336170368
-p/s,2.2864451
+PEG,0.4821748909615219
+no. shares (cr),11.3468082
+Current Price,177.93
+market cap,20189375830.260002
+d/e_market,0.07805050603090917
+p/s,1.917388
 NFA + CWIP,3403271000.0
 Capex,790431000.0
 Capex_from_cashflow_statement,689232000.0
@@ -40,7 +40,7 @@ FCF%,81.6857120184105
 FCF_capex_from_cashflow,1583481000.0
 FCF%_capex_from_cashflow,87.26259440013754
 DV,0.0
-Mcap (cr),2457.9043328
+Mcap (cr),2090.7268096
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,True
 npm >8%,True
@@ -57,7 +57,7 @@ DV >3%,False
 EY >7,True
 sgr > Sales growth (very linear),True
 FCF/CFO,0.6522081758673445
-Market Cap,24579043328
+Market Cap,20907268096
 Net Income,1814616000.0
 Total Revenue,10588126000.0
 Total Assets,7603292000.0
@@ -74,7 +74,7 @@ Dividends Paid,0
 Depreciation & Amortization,446524000.0
 Interest Expense,0
 Income Tax Expense,761461000.0
-Shares Outstanding,114729000
+Shares Outstanding,113468082
 Net Fixed Assets,3196873000.0
 Construction in Progress,206398000.0
 Net Debt,1548860000.0
@@ -82,14 +82,14 @@ Net Debt,1548860000.0
 3-5yr Average ROE (%),37.26214316510992
 ROE,42.416756738562114
 ROA,24.696661835848403
-insidersPercentHeld,0.09021
-institutionsPercentHeld,0.87648004
-institutionsFloatPercentHeld,0.96338
-institutionsCount,1560.0
-current,205.08
-high,500.0
-low,155.0
-mean,273.783
-median,269.0
+insidersPercentHeld,0.09127
+institutionsPercentHeld,0.88495004
+institutionsFloatPercentHeld,0.97382003
+institutionsCount,1552.0
+current,177.93
+high,303.0
+low,100.0
+mean,196.95148
+median,185.0
 Normalized EBIT,2146338333.3333333
 Normalized Net Income,1406535333.3333333

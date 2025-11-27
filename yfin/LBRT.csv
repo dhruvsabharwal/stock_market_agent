@@ -1,0 +1,95 @@
+,Value
+ticker,LBRT
+longName,Liberty Energy Inc.
+ROCE,16.577353033665908
+ROCE (3yr avg),23.474023207851776
+NFAT,2.070733919419544
+NFAT (3yr avg),2.593177871196435
+NPM,9.557017567479349
+DPR,8.118202832757325
+Retention Ratio,91.88179716724267
+Dep,-1
+SSGR,23.771108490001346
+Av NPM (over 3 years),9.557017567479349
+Au NFA/T (over 3 years),2.593177871196435
+Av Dep%NFA (over 3 years),-1
+Au Retention ratio (over 3 years),91.88179716724267
+d/e,0.28978151501459753
+Interest coverage,11.75
+tax %,21.638302779024528
+cPAT,1092685000.0
+CFO,829374000.0
+cCFO,2509788000.0
+cCFO/cPAT,2.2968998384712886
+p/a,10.417143966637186
+p/e,9.793651
+EY,15.812092570838733
+Earnings Growth 5yr cagr,
+Sales Growth 5yr cagr,20.426165568502697
+PEG,
+no. shares (cr),16.195573
+Current Price,12.34
+market cap,1998533708.2
+d/e_market,0.26699874903816245
+p/s,0.502986
+NFA + CWIP,2459326000.0
+Capex,
+Capex_from_cashflow_statement,651034000.0
+FCF,
+FCF%,
+FCF_capex_from_cashflow,178340000.0
+FCF%_capex_from_cashflow,56.43492294547641
+DV,2.4172722132123003
+Mcap (cr),206.3315968
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,True
+CFO >0,True
+cCFO > PAT,True
+p/e <10,True
+peg <1,False
+EY >7%,True
+p/b <3,True
+DV >3%,False
+EY >7,True
+sgr > Sales growth (very linear),True
+FCF/CFO,
+Market Cap,2063315968
+Net Income,316010000.0
+Total Revenue,4315161000.0
+Total Assets,3296394000.0
+Total Liabilities,1317525000.0
+Total Stockholders Equity,1841408000.0
+Total Debt,533606000.0
+Cash and Cash Equivalents,85214000.0
+Current Assets,848523000.0
+Current Liabilities,666523000.0
+Working Capital,182000000.0
+Operating Cash Flow,829374000.0
+Capital Expenditure,651034000.0
+Dividends Paid,48310000.0
+Depreciation & Amortization,
+Interest Expense,32692000.0
+Income Tax Expense,87261000.0
+Shares Outstanding,161955730
+Net Fixed Assets,2247433000.0
+Construction in Progress,211893000.0
+Net Debt,448392000.0
+3-5yr Average ROA (%),18.57320639784583
+3-5yr Average ROE (%),31.428985174404524
+ROE,33.34808964685255
+ROA,19.83485483258814
+insidersPercentHeld,0.03645
+institutionsPercentHeld,0.97275
+institutionsFloatPercentHeld,1.00955
+institutionsCount,431.0
+current,12.34
+high,19.0
+low,10.0
+mean,14.46154
+median,14.0
+Normalized EBIT,540856666.6666666
+Normalized Net Income,423976333.3333333

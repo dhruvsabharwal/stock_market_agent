@@ -1,5 +1,6 @@
 ,Value
 ticker,FIX
+longName,"Comfort Systems USA, Inc."
 ROCE,31.555951695188405
 ROCE (3yr avg),24.66577072056096
 NFAT,20.402168690439037
@@ -21,16 +22,16 @@ CFO,849057000.0
 cCFO,1970307000.0
 cCFO/cPAT,1.5952275314421362
 p/a,15.804583705305486
-p/e,36.42585
-EY,2.093267085590901
+p/e,41.320984
+EY,1.794466926279753
 Earnings Growth 5yr cagr,54.75617737654987
 Sales Growth 5yr cagr,31.73938922629269
-PEG,0.6652372708471774
-no. shares (cr),3.52815
-Current Price,707.39
-market cap,24957780285.0
-d/e_market,0.012364881671206683
-p/s,3.2476916
+PEG,0.7546360242761635
+no. shares (cr),3.5281452
+Current Price,825.18
+market cap,29113548561.359997
+d/e_market,0.010599875839580037
+p/s,3.7884712
 NFA + CWIP,532519000.0
 Capex,251079000.0
 Capex_from_cashflow_statement,111071000.0
@@ -38,8 +39,8 @@ FCF,597978000.0
 FCF%,114.46022743586259
 FCF_capex_from_cashflow,737986000.0
 FCF%_capex_from_cashflow,141.2594533653119
-DV,0.17135337963409755
-Mcap (cr),2495.7779968
+DV,0.14689380756820475
+Mcap (cr),2911.35488
 d/e decreasing trend 5 yrs,True
 Sales cagr >15%,True
 npm >8%,False
@@ -56,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),True
 FCF/CFO,0.7042848713337267
-Market Cap,24957779968
+Market Cap,29113548800
 Net Income,522433000.0
 Total Revenue,7027476000.0
 Total Assets,4711088000.0
@@ -73,7 +74,7 @@ Dividends Paid,42766000.0
 Depreciation & Amortization,145485000.0
 Interest Expense,5050000.0
 Income Tax Expense,144128000.0
-Shares Outstanding,35281500
+Shares Outstanding,35281452
 Net Fixed Assets,506286000.0
 Construction in Progress,26233000.0
 Net Debt,262387000.0
@@ -81,14 +82,14 @@ Net Debt,262387000.0
 3-5yr Average ROE (%),27.1161879615525
 ROE,35.03316842721135
 ROA,13.033670975730939
-insidersPercentHeld,0.014140001
-institutionsPercentHeld,0.9867
-institutionsFloatPercentHeld,1.00085
-institutionsCount,1008.0
-current,707.39
-high,810.0
-low,710.0
-mean,767.2
-median,775.0
+insidersPercentHeld,0.013940001
+institutionsPercentHeld,0.98767
+institutionsFloatPercentHeld,1.0016301
+institutionsCount,1009.0
+current,825.18
+high,875.0
+low,746.0
+mean,800.2
+median,795.0
 Normalized EBIT,438877666.6666667
 Normalized Net Income,363926000.0

@@ -1,0 +1,95 @@
+,Value
+ticker,C
+longName,Citigroup Inc.
+ROCE,
+ROCE (3yr avg),0.0
+NFAT,2.751624560986783
+NFAT (3yr avg),2.832492209442639
+NPM,15.850604150970023
+DPR,43.72565720744914
+Retention Ratio,56.274342792550854
+Dep,16.020893256839063
+SSGR,9.244436791390553
+Av NPM (over 3 years),15.850604150970023
+Au NFA/T (over 3 years),2.832492209442639
+Av Dep%NFA (over 3 years),16.020893256839063
+Au Retention ratio (over 3 years),56.27434279255086
+d/e,1.634461409665471
+Interest coverage,0.0
+tax %,24.7037428135633
+cPAT,58707000000.0
+CFO,-19669000000.0
+cCFO,-20926000000.0
+cCFO/cPAT,-0.3564481237331153
+p/a,0.5258239165713726
+p/e,15.263158
+EY,6.78722122197142
+Earnings Growth 5yr cagr,-17.668467482855853
+Sales Growth 5yr cagr,4.096755819215803
+PEG,-0.8638642833516952
+no. shares (cr),184.0897898
+Current Price,101.5
+market cap,186851136647.0
+d/e_market,1.7971793269548277
+p/s,2.6142898
+NFA + CWIP,30192000000.0
+Capex,5756000000.0
+Capex_from_cashflow_statement,6500000000.0
+FCF,-25425000000.0
+FCF%,-200.4809966882195
+FCF_capex_from_cashflow,-26169000000.0
+FCF%_capex_from_cashflow,-206.34757924617566
+DV,2.7824288860613002
+Mcap (cr),19038.5668096
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,False
+d/e <0.5,False
+CFO >0,False
+cCFO > PAT,False
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,True
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,1.29264324571661
+Market Cap,190385668096
+Net Income,12682000000.0
+Total Revenue,81089000000.0
+Total Assets,2352945000000.0
+Total Liabilities,2143579000000.0
+Total Stockholders Equity,205453000000.0
+Total Debt,335805000000.0
+Cash and Cash Equivalents,0
+Current Assets,0
+Current Liabilities,0
+Working Capital,0
+Operating Cash Flow,-19669000000.0
+Capital Expenditure,6500000000.0
+Dividends Paid,5199000000.0
+Depreciation & Amortization,4311000000.0
+Interest Expense,89618000000.0
+Income Tax Expense,4211000000.0
+Shares Outstanding,1840897898
+Net Fixed Assets,30192000000.0
+Construction in Progress,0
+Net Debt,0
+3-5yr Average ROA (%),0.506423255329209
+3-5yr Average ROE (%),5.951469770461277
+ROE,4.5386359500494295
+ROA,0.3822297147567262
+insidersPercentHeld,0.0023700001
+institutionsPercentHeld,0.79657996
+institutionsFloatPercentHeld,0.79847
+institutionsCount,2688.0
+current,101.5
+high,129.0
+low,82.0
+mean,106.30952
+median,107.0
+Normalized EBIT,0.0
+Normalized Net Income,12251666666.666666

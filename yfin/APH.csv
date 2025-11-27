@@ -22,16 +22,16 @@ CFO,2814700000.0
 cCFO,9058100000.0
 cCFO/cPAT,1.1546188066436374
 p/a,14.66744118501307
-p/e,44.59761
-EY,1.7736179774354706
+p/e,48.720474
+EY,1.6043525344430536
 Earnings Growth 5yr cagr,14.757604006902824
 Sales Growth 5yr cagr,11.858803648199068
-PEG,3.0220088558508285
-no. shares (cr),122.0920064
-Current Price,111.94
-market cap,136669791964.16
-d/e_market,0.05038494535651153
-p/s,7.2627163
+PEG,3.301381035648548
+no. shares (cr),122.0921111
+Current Price,123.75
+market cap,151088987486.25
+d/e_market,0.04557645209335112
+p/s,8.02896
 NFA + CWIP,1711800000.0
 Capex,969600000.0
 Capex_from_cashflow_statement,665400000.0
@@ -39,8 +39,8 @@ FCF,1845100000.0
 FCF%,76.11798679867987
 FCF_capex_from_cashflow,2149300000.0
 FCF%_capex_from_cashflow,88.66749174917491
-DV,0.4354290669850861
-Mcap (cr),13666.97984
+DV,0.39387384209862264
+Mcap (cr),15108.898816
 d/e decreasing trend 5 yrs,False
 Sales cagr >15%,False
 npm >8%,True
@@ -57,7 +57,7 @@ DV >3%,False
 EY >7,False
 sgr > Sales growth (very linear),True
 FCF/CFO,0.6555227910612144
-Market Cap,136669798400
+Market Cap,151088988160
 Net Income,2424000000.0
 Total Revenue,15222700000.0
 Total Assets,21440200000.0
@@ -74,7 +74,7 @@ Dividends Paid,595100000.0
 Depreciation & Amortization,572500000.0
 Interest Expense,217000000.0
 Income Tax Expense,570300000.0
-Shares Outstanding,1220920064
+Shares Outstanding,1220921111
 Net Fixed Assets,1711800000.0
 Construction in Progress,0
 Net Debt,6369100000.0
@@ -82,14 +82,14 @@ Net Debt,6369100000.0
 3-5yr Average ROE (%),26.834472706969922
 ROE,25.10073492556356
 ROA,12.105762166981659
-insidersPercentHeld,0.00564
-institutionsPercentHeld,0.96952003
-institutionsFloatPercentHeld,0.97502
-institutionsCount,2188.0
-current,111.94
-high,127.0
+insidersPercentHeld,0.00562
+institutionsPercentHeld,0.96966004
+institutionsFloatPercentHeld,0.97515
+institutionsCount,2200.0
+current,123.75
+high,145.0
 low,85.0
-mean,115.375
+mean,118.375
 median,120.0
 Normalized EBIT,2806333333.3333335
 Normalized Net Income,2084766666.6666667

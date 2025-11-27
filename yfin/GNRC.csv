@@ -1,0 +1,103 @@
+,Value
+ticker,GNRC
+longName,Generac Holdings Inc.
+ROCE,12.245561345564068
+ROCE (3yr avg),11.646211894356389
+NFAT,5.17609649889088
+NFAT (3yr avg),6.106401135970626
+NPM,6.764455650820001
+DPR,0.0
+Retention Ratio,100.0
+Dep,23.22320891940058
+SSGR,18.0832707509896
+Av NPM (over 3 years),6.764455650820001
+Au NFA/T (over 3 years),6.106401135970626
+Av Dep%NFA (over 3 years),23.22320891940058
+Au Retention ratio (over 3 years),100.0
+d/e,0.6305889280299728
+Interest coverage,5.98287873552328
+tax %,22.582173613587404
+cPAT,1412004000.0
+CFO,741301000.0
+cCFO,1732643000.0
+cCFO/cPAT,1.2270808014708174
+p/a,6.385942977771634
+p/e,27.993309
+EY,3.311385371198445
+Earnings Growth 5yr cagr,-13.750941919566518
+Sales Growth 5yr cagr,4.7532895778522155
+PEG,-2.035737563560479
+no. shares (cr),5.8675951
+Current Price,167.4
+market cap,9822354197.4
+d/e_market,0.15024269847554786
+p/s,2.238027
+NFA + CWIP,968897000.0
+Capex,240954000.0
+Capex_from_cashflow_statement,136733000.0
+FCF,500347000.0
+FCF%,153.83175098998942
+FCF_capex_from_cashflow,604568000.0
+FCF%_capex_from_cashflow,185.87451115429076
+DV,0.0
+Mcap (cr),987.3401856
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,False
+npm >8%,False
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,True
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.6749579455578772
+Market Cap,9873401856
+Net Income,325256000.0
+Total Revenue,4295834000.0
+Total Assets,5109331000.0
+Total Liabilities,2611888000.0
+Total Stockholders Equity,2340252000.0
+Total Debt,1475737000.0
+Cash and Cash Equivalents,107139000.0
+Current Assets,2032170000.0
+Current Liabilities,1033152000.0
+Working Capital,999018000.0
+Operating Cash Flow,741301000.0
+Capital Expenditure,136733000.0
+Dividends Paid,0
+Depreciation & Amortization,171768000.0
+Interest Expense,89713000.0
+Income Tax Expense,92460000.0
+Shares Outstanding,58675951
+Net Fixed Assets,858246000.0
+Construction in Progress,110651000.0
+Net Debt,1368598000.0
+3-5yr Average ROA (%),5.465090409704393
+3-5yr Average ROE (%),12.251177805198344
+ROE,8.834502449412557
+ROA,3.957779836133973
+insidersPercentHeld,0.01706
+institutionsPercentHeld,0.96800005
+institutionsFloatPercentHeld,0.98481005
+institutionsCount,995.0
+current,167.4
+high,250.0
+low,172.0
+mean,206.1875
+median,207.5
+Normalized EBIT,483456666.6666667
+Normalized Net Income,292870666.6666667
+Research Asset,495940000.0
+R&D Amortization,131424000.0
+Adjusted EBIT (R&D),587327000.0
+Adjusted Book Equity (R&D),2836192000.0
+Adjusted D/E (R&D),0.5203233772607778
+Adjusted Invested Capital (R&D),4204790000.0
+Adjusted ROC (R&D),10.813757576015103
+Adjusted ROE (R&D),11.468052938588079

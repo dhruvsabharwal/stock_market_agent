@@ -1,0 +1,103 @@
+,Value
+ticker,CDNS
+longName,"Cadence Design Systems, Inc."
+ROCE,19.354879433252716
+ROCE (3yr avg),26.621441945633325
+NFAT,8.470696452036794
+NFAT (3yr avg),8.417915349292059
+NPM,24.010899761053647
+DPR,0.0
+Retention Ratio,100.0
+Dep,28.42132084231569
+SSGR,173.70040080657083
+Av NPM (over 3 years),24.010899761053647
+Au NFA/T (over 3 years),8.417915349292059
+Av Dep%NFA (over 3 years),28.42132084231569
+Au Retention ratio (over 3 years),100.0
+d/e,0.7593625771861289
+Interest coverage,18.08613271227253
+tax %,24.382459330328647
+cPAT,3641535000.0
+CFO,1260551000.0
+cCFO,4952579000.0
+cCFO/cPAT,1.36002509930565
+p/a,18.616909348652285
+p/e,94.424736
+EY,1.1027381215610779
+Earnings Growth 5yr cagr,15.267080890508943
+Sales Growth 5yr cagr,15.80840281349911
+PEG,6.184858564462107
+no. shares (cr),27.249
+Current Price,351.26
+market cap,95714837400.0
+d/e_market,0.027008101044948336
+p/s,18.807121
+NFA + CWIP,619269000.0
+Capex,242337000.0
+Capex_from_cashflow_statement,142542000.0
+FCF,1018214000.0
+FCF%,96.4689185245821
+FCF_capex_from_cashflow,1118009000.0
+FCF%_capex_from_cashflow,105.92382262544955
+DV,0.0
+Mcap (cr),9571.483648
+d/e decreasing trend 5 yrs,False
+Sales cagr >15%,True
+npm >8%,True
+Tax payout >25%,False
+Interest coverage >3,True
+d/e <0.5,False
+CFO >0,True
+cCFO > PAT,True
+p/e <10,False
+peg <1,False
+EY >7%,False
+p/b <3,False
+DV >3%,False
+EY >7,False
+sgr > Sales growth (very linear),True
+FCF/CFO,0.8077531174859248
+Market Cap,95714836480
+Net Income,1055484000.0
+Total Revenue,4641264000.0
+Total Assets,8974482000.0
+Total Liabilities,4300904000.0
+Total Stockholders Equity,3404271000.0
+Total Debt,2585076000.0
+Cash and Cash Equivalents,293253000.0
+Current Assets,4016079000.0
+Current Liabilities,1370105000.0
+Working Capital,2645974000.0
+Operating Cash Flow,1260551000.0
+Capital Expenditure,142542000.0
+Dividends Paid,0
+Depreciation & Amortization,195015000.0
+Interest Expense,75999000.0
+Income Tax Expense,340335000.0
+Shares Outstanding,272490000
+Net Fixed Assets,604390000.0
+Construction in Progress,14879000.0
+Net Debt,2291823000.0
+3-5yr Average ROA (%),16.84484635748013
+3-5yr Average ROE (%),29.084763128923242
+ROE,26.132798471474274
+ROA,14.415268315504271
+insidersPercentHeld,0.0031
+institutionsPercentHeld,0.90529996
+institutionsFloatPercentHeld,0.90810996
+institutionsCount,1978.0
+current,351.26
+high,410.0
+low,200.0
+mean,369.5726
+median,390.0
+Normalized EBIT,1286075333.3333333
+Normalized Net Income,981860000.0
+Research Asset,3907167000.0
+R&D Amortization,1075342000.0
+Adjusted EBIT (R&D),1945569000.0
+Adjusted Book Equity (R&D),7311438000.0
+Adjusted D/E (R&D),0.35356601533104703
+Adjusted Invested Capital (R&D),9603261000.0
+Adjusted ROC (R&D),15.319706814503098
+Adjusted ROE (R&D),14.436065791708828
