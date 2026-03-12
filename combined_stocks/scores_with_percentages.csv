@@ -1,0 +1,3 @@
+ticker,longName,profitability_score,profitability_pct,growth_score,growth_pct,valuation_score,valuation_pct,financial_health_score,financial_health_pct,cashflow_quality_score,cashflow_quality_pct,fundamental_total_score,fundamental_total_pct,ma_score,ma_pct,ma_distance_bonus,macd_score,macd_pct,macd_crossover_bonus,rsi_score,rsi_pct,vwma_score,vwma_pct,vwma_volume_bonus,technical_total_score,technical_total_pct,combined_score
+AAPL,Apple Inc.,25,100.0,6,30.0,0,0.0,13,65.0,13,86.7,57,57,30.0,100.0,5,20.0,100.0,5,20.0,100.0,10.0,66.7,0,90.0,90.0,66.9
+MSFT,Microsoft Corporation,22,88.0,11,55.0,2,10.0,20,100.0,9,60.0,64,64,20.0,66.7,5,0.0,0.0,0,13.333333333333332,66.7,0.0,0.0,0,38.33333333333333,38.3,56.3

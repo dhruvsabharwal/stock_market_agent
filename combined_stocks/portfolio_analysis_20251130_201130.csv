@@ -1,0 +1,4 @@
+ticker,company_name,fundamental_score,technical_score,combined_score,recommendation,llm_summary,current_price,pe_ratio,roe,eps_growth_5yr
+GOOGL,Alphabet Inc.,75,85,80.0,🟢 STRONG BUY,"Error generating summary: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",320.18,31.63834,32.90849238162386,12.605005014260273
+AAPL,Apple Inc.,45,100,72.5,🔴 AVOID,"Error generating summary: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",278.85,37.32932,157.41250755692886,6.791224750372327
+MSFT,Microsoft Corporation,75,40,57.5,🔴 AVOID,Pending...,492.01,34.96873,33.280824111537434,12.197439102494666
