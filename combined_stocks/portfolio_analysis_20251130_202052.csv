@@ -1,0 +1,20 @@
+ticker,company_name,fundamental_score,technical_score,combined_score,recommendation,llm_summary,current_price,pe_ratio,roe,eps_growth_5yr
+AAPL,Apple Inc.,57,90.0,73.5,🟡 TRADING BUY,"Error generating summary: 400 API Key not found. Please pass a valid API key. [reason: ""API_KEY_INVALID""
+domain: ""googleapis.com""
+metadata {
+  key: ""service""
+  value: ""generativelanguage.googleapis.com""
+}
+, locale: ""en-US""
+message: ""API Key not found. Please pass a valid API key.""
+]",278.85,37.32932,157.41250755692886,6.791224750372327
+GOOGL,Alphabet Inc.,65,81.66666666666666,73.33333333333333,🟡 TRADING BUY,"Error generating summary: 400 API Key not found. Please pass a valid API key. [reason: ""API_KEY_INVALID""
+domain: ""googleapis.com""
+metadata {
+  key: ""service""
+  value: ""generativelanguage.googleapis.com""
+}
+, locale: ""en-US""
+message: ""API Key not found. Please pass a valid API key.""
+]",320.18,31.63834,32.90849238162386,12.605005014260273
+MSFT,Microsoft Corporation,64,38.33333333333333,51.166666666666664,🔴 AVOID,Pending...,492.01,34.96873,33.280824111537434,12.197439102494666

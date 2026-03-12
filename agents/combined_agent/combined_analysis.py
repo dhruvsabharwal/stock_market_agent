@@ -7,13 +7,25 @@ import sys
 import os
 import pandas as pd
 from datetime import datetime
+import warnings
+import logging
+
+# Nuclear silence for all warnings and loggers
+warnings.filterwarnings('ignore')
+logging.getLogger('yfinance').setLevel(logging.CRITICAL)
+logging.getLogger('urllib3').setLevel(logging.CRITICAL)
+os.environ['PYTHONWARNINGS'] = 'ignore'
+# Add the project root to the path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 # Add the agents directories to the path
-sys.path.append('agents/fundamanetal_analysis_agent')
-sys.path.append('agents/technical_analysis_agent')
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from fundamental_analysis_agent.fundamental_analysis import FundamentalAnalysis
-from technical_analysis_agent.technical_analysis import TechnicalAnalysis
+from agents.fundamental_analysis_agent.fundamental_analysis import FundamentalAnalysis
+from agents.technical_analysis_agent.technical_analysis import TechnicalAnalysis
+from agents.llm_agent import LLMAgent
+from agents.utils import Config, MathUtils
+from agents.scoring import calculate_comprehensive_fundamental_score, calculate_comprehensive_technical_score
 
 
 class CombinedAnalysis:
@@ -28,8 +40,9 @@ class CombinedAnalysis:
         """
         self.fund_analyzer = FundamentalAnalysis()
         self.tech_analyzer = TechnicalAnalysis()
+        self.llm_agent = LLMAgent()
     
-    def analyze_stock_comprehensive(self, ticker, portfolio_value=100000, risk_percent=1.5):
+    async def analyze_stock_comprehensive(self, ticker, portfolio_value=100000, risk_percent=1.5):
         """
         Perform comprehensive analysis combining fundamental and technical analysis.
         
@@ -48,43 +61,50 @@ class CombinedAnalysis:
         # Fundamental Analysis
         print("\n1. FUNDAMENTAL ANALYSIS:")
         print("-" * 50)
-        fund_result = self.fund_analyzer.analyze_single_stock(ticker)
+        fund_result = await self.fund_analyzer.analyze_single_stock(ticker)
         
-        if not fund_result:
+        if not isinstance(fund_result, dict) or not fund_result:
             print(f"❌ Fundamental analysis failed for {ticker}")
             return None
         
         # Technical Analysis
         print("\n2. TECHNICAL ANALYSIS:")
         print("-" * 50)
-        tech_result = self.tech_analyzer.complete_technical_analysis(ticker)
+        df, stock = await self.tech_analyzer.get_stock_data(ticker)
+        if df is None:
+            print(f"❌ Technical analysis failed for {ticker} (No Data)")
+            return None
+            
+        tech_result = await self.tech_analyzer.complete_technical_analysis(df)
         
         if not tech_result:
             print(f"❌ Technical analysis failed for {ticker}")
             return None
         
-        # Calculate combined score
-        fund_score = self._calculate_fundamental_score(fund_result)
-        tech_score = tech_result['score_percentage']
-        combined_score = (fund_score + tech_score) / 2
+        # Calculate scores
+        fund_score = calculate_comprehensive_fundamental_score(fund_result)
+        tech_score = calculate_comprehensive_technical_score(tech_result)
+        
+        # Weighted Final Score (50% Fundamental, 50% Technical)
+        combined_score = (fund_score * 0.5) + (tech_score * 0.5)
         
         # Determine overall recommendation
-        if fund_score >= 70 and tech_score >= 67:
+        if fund_score >= 70 and tech_score >= 70:
             recommendation = "🟢 STRONG BUY"
             action = "Enter position - Excellent fundamentals and technicals"
         elif fund_score >= 70 and tech_score >= 50:
             recommendation = "🟡 BUY WITH CAUTION"
             action = "Good fundamentals, wait for better technical setup"
-        elif fund_score >= 50 and tech_score >= 67:
-            recommendation = "🟡 WAIT"
-            action = "Good technicals, but fundamental concerns"
+        elif fund_score >= 50 and tech_score >= 70:
+            recommendation = "🟡 TRADING BUY"
+            action = "Good technicals, but fundamental concerns (Short term)"
         else:
             recommendation = "🔴 AVOID"
             action = "Poor fundamentals and/or technicals"
         
         # Position sizing (if buy signal)
         position_info = None
-        if tech_score >= 67:
+        if tech_score >= 60:
             try:
                 entry_price = tech_result['current_price']
                 stop_loss = tech_result['support_resistance']['nearest_support'] * 0.97
@@ -114,7 +134,8 @@ class CombinedAnalysis:
             'combined_score': combined_score,
             'recommendation': recommendation,
             'action': action,
-            'position_info': position_info
+            'position_info': position_info,
+            'llm_summary': "Pending..." # Placeholder
         }
         
         # Print summary
@@ -125,141 +146,117 @@ class CombinedAnalysis:
     def _calculate_fundamental_score(self, fund_result):
         """
         Calculate a fundamental score based on key metrics.
-        
-        Args:
-            fund_result (dict): Fundamental analysis results
-            
-        Returns:
-            float: Fundamental score (0-100)
+        Max Score: 100
         """
         score = 0
-        max_score = 0
         
-        # Profitability metrics (30 points)
-        max_score += 30
-        if fund_result.get('ROE', 0) > 15:
-            score += 10
-        elif fund_result.get('ROE', 0) > 10:
-            score += 5
+        # 1. Profitability (30 points)
+        roe = fund_result.get('ROE', 0)
+        roce = fund_result.get('ROCE', 0)
+        npm = fund_result.get('NPM', 0)
         
-        if fund_result.get('ROCE', 0) > 15:
-            score += 10
-        elif fund_result.get('ROCE', 0) > 10:
-            score += 5
+        if roe > 20: score += 10
+        elif roe > 15: score += 5
         
-        if fund_result.get('NPM', 0) > 10:
-            score += 10
-        elif fund_result.get('NPM', 0) > 5:
-            score += 5
+        if roce > 20: score += 10
+        elif roce > 15: score += 5
         
-        # Growth metrics (20 points)
-        max_score += 20
-        if fund_result.get('Earnings Growth 5yr cagr', 0) > 15:
-            score += 10
-        elif fund_result.get('Earnings Growth 5yr cagr', 0) > 5:
-            score += 5
+        if npm > 15: score += 10
+        elif npm > 10: score += 5
         
-        if fund_result.get('Sales Growth 5yr cagr', 0) > 15:
-            score += 10
-        elif fund_result.get('Sales Growth 5yr cagr', 0) > 5:
-            score += 5
+        # 2. Growth (25 points)
+        eps_growth = fund_result.get('Earnings Growth 5yr cagr', 0)
+        sales_growth = fund_result.get('Sales Growth 5yr cagr', 0)
         
-        # Financial health (25 points)
-        max_score += 25
-        if fund_result.get('d/e_market', 0) < 0.5:
-            score += 10
-        elif fund_result.get('d/e_market', 0) < 1.0:
-            score += 5
+        if eps_growth > 20: score += 15
+        elif eps_growth > 10: score += 10
+        elif eps_growth > 5: score += 5
         
-        if fund_result.get('Interest coverage', 0) > 3:
-            score += 10
-        elif fund_result.get('Interest coverage', 0) > 2:
-            score += 5
+        if sales_growth > 15: score += 10
+        elif sales_growth > 10: score += 5
         
-        if fund_result.get('CFO', 0) > 0:
-            score += 5
-        
-        # Valuation (15 points)
-        max_score += 15
+        # 3. Valuation (20 points)
         pe = fund_result.get('p/e', float('inf'))
-        if pe < 15 and pe > 0:
-            score += 10
-        elif pe < 25 and pe > 0:
-            score += 5
+        peg = fund_result.get('PEG', float('inf'))
         
-        if fund_result.get('EY', 0) > 7:
-            score += 5
+        if 0 < pe < 25: score += 10
+        elif 0 < pe < 40: score += 5
         
-        # Cash flow quality (10 points)
-        max_score += 10
-        if fund_result.get('cCFO/cPAT', 0) > 1:
-            score += 10
-        elif fund_result.get('cCFO/cPAT', 0) > 0.8:
-            score += 5
+        if 0 < peg < 1.5: score += 10
+        elif 0 < peg < 2.0: score += 5
         
-        return (score / max_score) * 100 if max_score > 0 else 0
+        # 4. Financial Health (25 points)
+        de = fund_result.get('d/e', 100)
+        interest_cov = fund_result.get('Interest coverage', 0)
+        cfo = fund_result.get('CFO', 0)
+        
+        if de < 0.5: score += 10
+        elif de < 1.0: score += 5
+        
+        if interest_cov > 5: score += 10
+        elif interest_cov > 3: score += 5
+        
+        if cfo > 0: score += 5
+        
+        return min(score, 100)
+
+    def _calculate_technical_score(self, tech_result):
+        """
+        Calculate a technical score based on indicators.
+        Max Score: 100
+        """
+        score = 0
+        
+        # 1. Trend (Moving Averages) (30 points)
+        ma = tech_result.get('moving_averages', {})
+        if ma.get('above_200'): score += 15
+        if ma.get('above_50'): score += 10
+        if ma.get('golden_cross'): score += 5
+        
+        # 2. Momentum (MACD) (25 points)
+        macd = tech_result.get('macd', {})
+        if macd.get('bullish_crossover'): score += 10
+        if macd.get('above_zero'): score += 10
+        if macd.get('histogram_positive'): score += 5
+        
+        # 3. RSI (20 points)
+        rsi_data = tech_result.get('rsi', {})
+        rsi = rsi_data.get('RSI', 50)
+        if 40 <= rsi <= 70: score += 20 # Sweet spot
+        elif rsi > 70: score += 5 # Overbought but strong momentum
+        elif rsi < 30: score += 5 # Oversold bounce candidate
+        
+        # 4. Volume (VWMA) (25 points)
+        vwma = tech_result.get('vwma', {})
+        if vwma.get('above_vwma'): score += 15
+        if vwma.get('vwma_rising'): score += 10
+        
+        return min(score, 100)
     
     def _print_analysis_summary(self, results):
         """
         Print a summary of the analysis results.
-        
-        Args:
-            results (dict): Analysis results
         """
         print(f"\n{'='*80}")
         print(f"ANALYSIS SUMMARY: {results['ticker']}")
         print(f"{'='*80}")
         
-        # Basic info
         fund = results['fundamental_analysis']
-        tech = results['technical_analysis']
         
         print(f"Company: {fund.get('longName', 'N/A')}")
         print(f"Current Price: ${fund.get('Current Price', 0):.2f}")
-        print(f"Market Cap: ${fund.get('Market Cap', 0):,.0f}")
         
-        # Scores
         print(f"\nSCORES:")
         print(f"  Fundamental: {results['fundamental_score']:.1f}/100")
         print(f"  Technical: {results['technical_score']:.1f}/100")
         print(f"  Combined: {results['combined_score']:.1f}/100")
         
-        # Key metrics
-        print(f"\nKEY METRICS:")
-        print(f"  P/E Ratio: {fund.get('p/e', 'N/A')}")
-        print(f"  ROE: {fund.get('ROE', 0):.2f}%")
-        print(f"  ROCE: {fund.get('ROCE', 0):.2f}%")
-        print(f"  NPM: {fund.get('NPM', 0):.2f}%")
-        print(f"  D/E Ratio: {fund.get('d/e', 0):.2f}")
-        print(f"  Interest Coverage: {fund.get('Interest coverage', 0):.2f}")
-        
-        # Recommendation
         print(f"\nRECOMMENDATION: {results['recommendation']}")
-        print(f"ACTION: {results['action']}")
-        
-        # Position sizing
-        if results['position_info']:
-            pos = results['position_info']
-            print(f"\nPOSITION SIZING:")
-            print(f"  Entry Price: ${pos['entry_price']:.2f}")
-            print(f"  Stop Loss: ${pos['stop_loss']:.2f}")
-            print(f"  Shares: {pos['position']['shares']}")
-            print(f"  Position Value: ${pos['position']['position_value']:,.2f}")
-            print(f"  Risk Amount: ${pos['position']['risk_amount']:,.2f}")
-        
         print(f"{'='*80}\n")
     
-    def analyze_portfolio(self, ticker_list, portfolio_value=100000, risk_percent=1.5):
+    async def analyze_portfolio(self, ticker_list, portfolio_value=100000, risk_percent=1.5, top_n_enrich=5):
         """
-        Analyze a portfolio of stocks.
-        
-        Args:
-            ticker_list (list): List of stock tickers
-            portfolio_value (float): Total portfolio value
-            risk_percent (float): Risk per trade percentage
-            
-        Returns:
-            list: List of analysis results for all stocks
+        Analyze a portfolio of stocks, sort by score, and enrich top N with LLM summary.
         """
         print(f"\n{'='*80}")
         print(f"PORTFOLIO ANALYSIS: {len(ticker_list)} STOCKS")
@@ -267,128 +264,88 @@ class CombinedAnalysis:
         
         all_results = []
         
+        # 1. Run Analysis
         for i, ticker in enumerate(ticker_list, 1):
             print(f"\n[{i}/{len(ticker_list)}] Analyzing {ticker}...")
             try:
-                result = self.analyze_stock_comprehensive(ticker, portfolio_value, risk_percent)
+                result = await self.analyze_stock_comprehensive(ticker, portfolio_value, risk_percent)
                 if result:
                     all_results.append(result)
             except Exception as e:
                 print(f"Error analyzing {ticker}: {e}")
                 continue
         
-        # Sort by combined score
+        # 2. Sort by Combined Score
         all_results.sort(key=lambda x: x['combined_score'], reverse=True)
         
-        # Print portfolio summary
-        self._print_portfolio_summary(all_results)
+        # 3. Enrich Top N with LLM Summary
+        print(f"\n{'='*80}")
+        print(f"GENERATING LLM SUMMARIES FOR TOP {top_n_enrich} STOCKS")
+        print(f"{'='*80}")
         
-        # Save to CSV
+        for i in range(min(len(all_results), top_n_enrich)):
+            result = all_results[i]
+            ticker = result['ticker']
+            print(f"Enriching {ticker}...")
+            
+            # Fetch News
+            news = self.llm_agent.fetch_news(ticker)
+            
+            # Generate Summary
+            summary = self.llm_agent.generate_summary(ticker, result, news)
+            result['llm_summary'] = summary
+            print(f"Summary generated for {ticker}")
+        
+        # 4. Save Results
         self._save_portfolio_results(all_results)
         
         return all_results
     
-    def _print_portfolio_summary(self, results):
-        """
-        Print portfolio summary.
-        
-        Args:
-            results (list): List of analysis results
-        """
-        print(f"\n{'='*80}")
-        print(f"PORTFOLIO SUMMARY")
-        print(f"{'='*80}")
-        
-        print(f"{'Ticker':<8} {'Fund':<8} {'Tech':<8} {'Combined':<10} {'Recommendation':<20}")
-        print(f"{'-'*80}")
-        
-        for result in results:
-            ticker = result['ticker']
-            fund_score = result['fundamental_score']
-            tech_score = result['technical_score']
-            combined_score = result['combined_score']
-            recommendation = result['recommendation']
-            
-            print(f"{ticker:<8} {fund_score:.1f}{'':<4} {tech_score:.1f}{'':<4} {combined_score:.1f}{'':<6} {recommendation:<20}")
-        
-        # Count recommendations
-        strong_buy = len([r for r in results if 'STRONG BUY' in r['recommendation']])
-        buy_caution = len([r for r in results if 'BUY WITH CAUTION' in r['recommendation']])
-        wait = len([r for r in results if 'WAIT' in r['recommendation']])
-        avoid = len([r for r in results if 'AVOID' in r['recommendation']])
-        
-        print(f"\nRECOMMENDATION BREAKDOWN:")
-        print(f"  🟢 Strong Buy: {strong_buy}")
-        print(f"  🟡 Buy with Caution: {buy_caution}")
-        print(f"  🟡 Wait: {wait}")
-        print(f"  🔴 Avoid: {avoid}")
-    
     def _save_portfolio_results(self, results):
         """
         Save portfolio results to CSV.
-        
-        Args:
-            results (list): List of analysis results
         """
         if not results:
             return
         
-        # Create summary dataframe
         summary_data = []
         for result in results:
             fund = result['fundamental_analysis']
-            tech = result['technical_analysis']
             
             summary_data.append({
                 'ticker': result['ticker'],
                 'company_name': fund.get('longName', 'N/A'),
-                'current_price': fund.get('Current Price', 0),
-                'market_cap': fund.get('Market Cap', 0),
-                'pe_ratio': fund.get('p/e', 0),
-                'roe': fund.get('ROE', 0),
-                'roce': fund.get('ROCE', 0),
-                'npm': fund.get('NPM', 0),
-                'de_ratio': fund.get('d/e', 0),
-                'interest_coverage': fund.get('Interest coverage', 0),
-                'earnings_growth_5yr': fund.get('Earnings Growth 5yr cagr', 0),
-                'sales_growth_5yr': fund.get('Sales Growth 5yr cagr', 0),
                 'fundamental_score': result['fundamental_score'],
                 'technical_score': result['technical_score'],
                 'combined_score': result['combined_score'],
                 'recommendation': result['recommendation'],
-                'action': result['action']
+                'llm_summary': result.get('llm_summary', 'N/A'),
+                'current_price': fund.get('Current Price', 0),
+                'pe_ratio': fund.get('p/e', 0),
+                'roe': fund.get('ROE', 0),
+                'eps_growth_5yr': fund.get('Earnings Growth 5yr cagr', 0),
             })
         
         df = pd.DataFrame(summary_data)
         
         # Save to combined_stocks directory
-        os.makedirs('combined_stocks', exist_ok=True)
+        MathUtils.ensure_directories([Config.COMBINED_DIR])
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        filename = f'combined_stocks/portfolio_analysis_{timestamp}.csv'
+        filename = f'{Config.COMBINED_DIR}/portfolio_analysis_{timestamp}.csv'
         df.to_csv(filename, index=False)
         
         print(f"\nPortfolio analysis saved to: {filename}")
 
-
-def main():
+async def main():
     """
     Main function to demonstrate the combined analysis.
     """
-    # Initialize combined analyzer
     analyzer = CombinedAnalysis()
     
-    # Example 1: Single stock analysis
-    print("EXAMPLE 1: Single Stock Analysis")
-    result = analyzer.analyze_stock_comprehensive("AAPL")
-    
-    # Example 2: Portfolio analysis
-    print("\n" + "="*80)
-    print("EXAMPLE 2: Portfolio Analysis")
-    tickers = ["AAPL", "MSFT", "GOOGL", "NVDA", "META", "TSLA", "AMZN", "NFLX"]
-    portfolio_results = analyzer.analyze_portfolio(tickers)
-    
-    print(f"\nAnalysis complete! Check the 'combined_stocks' folder for detailed results.")
-
+    # Example: Portfolio Analysis
+    tickers = ["AAPL", "MSFT", "GOOGL"]
+    await analyzer.analyze_portfolio(tickers, top_n_enrich=2)
 
 if __name__ == "__main__":
-    main()
+    import asyncio
+    asyncio.run(main())

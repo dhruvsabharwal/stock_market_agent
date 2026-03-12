@@ -1,0 +1,29 @@
+[project]
+name = "financial-analysis"
+version = "0.1.0"
+description = "Stock market analysis agent with MCP server"
+requires-python = ">=3.10"
+dependencies = [
+    "yfinance==0.2.65",
+    "pandas",
+    "numpy",
+    "requests==2.31.0",
+    "beautifulsoup4==4.12.2",
+    "lxml",
+    "matplotlib",
+    "seaborn",
+    "plotly==5.17.0",
+    "scipy",
+    "scikit-learn",
+    "openpyxl==3.1.2",
+    "xlsxwriter==3.1.9",
+    "fastmcp",
+    "tqdm",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["agents", "mcp"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

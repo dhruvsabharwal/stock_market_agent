@@ -1,0 +1,62 @@
+{
+  "astro-ph/0412590v2": {
+    "title": "Precise measurement of CMB polarisation from Dome-C: the BRAIN and CLOVER experiments",
+    "authors": [
+      "M. Piat",
+      "C. Rosset",
+      "the BRAIN",
+      "CLOVER Collaboration"
+    ],
+    "summary": "The characterisation of CMB polarisation is one of the next challenge in observationnal cosmology. This is especially true for the so-called B-modes that are at least 3 order of magnitude lower than CMB temperature fluctuations. A precise measurement of the angular power spectrum of these B-modes will give important constraints on inflation parameters. In this talk, I will describe two complementary experiments, BRAIN and CLOVER, dedicated to CMB polarisation measurement. These experiments are proposed to be installed in Dome-C, Antarctica, to take advantage of the extreme dryness of the atmosphere and to allow long integration time.",
+    "pdf_url": "https://arxiv.org/pdf/astro-ph/0412590v2",
+    "published": "2004-12-22"
+  },
+  "2008.03129v3": {
+    "title": "Brain Drain and Brain Gain in Russia: Analyzing International Migration of Researchers by Discipline using Scopus Bibliometric Data 1996-2020",
+    "authors": [
+      "Alexander Subbotin",
+      "Samin Aref"
+    ],
+    "summary": "We study international mobility in academia, with a focus on the migration of published researchers to and from Russia. Using an exhaustive set of over $2.4$ million Scopus publications, we analyze all researchers who have published with a Russian affiliation address in Scopus-indexed sources in 1996-2020. The migration of researchers is observed through the changes in their affiliation addresses, which altered their mode countries of affiliation across different years. While only $5.2\\%$ of these researchers were internationally mobile, they accounted for a substantial proportion of citations. Our estimates of net migration rates indicate that while Russia was a donor country in the late 1990s and early 2000s, it has experienced a relatively balanced circulation of researchers in more recent years. These findings suggest that the current trends in scholarly migration in Russia could be better framed as brain circulation, rather than as brain drain. Overall, researchers emigrating from Russia outnumbered and outperformed researchers immigrating to Russia. Our analysis on the subject categories of publication venues shows that in the past 25 years, Russia has, overall, suffered a net loss in most disciplines, and most notably in the five disciplines of neuroscience, decision sciences, mathematics, biochemistry, and pharmacology. We demonstrate the robustness of our main findings under random exclusion of data and changes in numeric parameters. Our substantive results shed light on new aspects of international mobility in academia, and on the impact of this mobility on a national science system, which have direct implications for policy development. Methodologically, our novel approach to handling big data can be adopted as a framework of analysis for studying scholarly migration in other countries.",
+    "pdf_url": "https://arxiv.org/pdf/2008.03129v3",
+    "published": "2020-08-07"
+  },
+  "2011.11052v1": {
+    "title": "Efficient embedding network for 3D brain tumor segmentation",
+    "authors": [
+      "Hicham Messaoudi",
+      "Ahror Belaid",
+      "Mohamed Lamine Allaoui",
+      "Ahcene Zetout",
+      "Mohand Said Allili",
+      "Souhil Tliba",
+      "Douraied Ben Salem",
+      "Pierre-Henri Conze"
+    ],
+    "summary": "3D medical image processing with deep learning greatly suffers from a lack of data. Thus, studies carried out in this field are limited compared to works related to 2D natural image analysis, where very large datasets exist. As a result, powerful and efficient 2D convolutional neural networks have been developed and trained. In this paper, we investigate a way to transfer the performance of a two-dimensional classiffication network for the purpose of three-dimensional semantic segmentation of brain tumors. We propose an asymmetric U-Net network by incorporating the EfficientNet model as part of the encoding branch. As the input data is in 3D, the first layers of the encoder are devoted to the reduction of the third dimension in order to fit the input of the EfficientNet network. Experimental results on validation and test data from the BraTS 2020 challenge demonstrate that the proposed method achieve promising performance.",
+    "pdf_url": "https://arxiv.org/pdf/2011.11052v1",
+    "published": "2020-11-22"
+  },
+  "2202.08261v2": {
+    "title": "Evaluation and Analysis of Different Aggregation and Hyperparameter Selection Methods for Federated Brain Tumor Segmentation",
+    "authors": [
+      "Ece Isik-Polat",
+      "Gorkem Polat",
+      "Altan Kocyigit",
+      "Alptekin Temizel"
+    ],
+    "summary": "Availability of large, diverse, and multi-national datasets is crucial for the development of effective and clinically applicable AI systems in the medical imaging domain. However, forming a global model by bringing these datasets together at a central location, comes along with various data privacy and ownership problems. To alleviate these problems, several recent studies focus on the federated learning paradigm, a distributed learning approach for decentralized data. Federated learning leverages all the available data without any need for sharing collaborators' data with each other or collecting them on a central server. Studies show that federated learning can provide competitive performance with conventional central training, while having a good generalization capability. In this work, we have investigated several federated learning approaches on the brain tumor segmentation problem. We explore different strategies for faster convergence and better performance which can also work on strong Non-IID cases.",
+    "pdf_url": "https://arxiv.org/pdf/2202.08261v2",
+    "published": "2022-02-16"
+  },
+  "2103.03234v2": {
+    "title": "An Agent-Based Modelling Approach to Brain Drain",
+    "authors": [
+      "Furkan G\u00fcrsoy",
+      "Bertan Badur"
+    ],
+    "summary": "The phenomenon of brain drain, that is the emigration of highly skilled people, has many undesirable effects, particularly for developing countries. In this study, an agent-based model is developed to understand the dynamics of such emigration. We hypothesise that skilled people's emigration decisions are based on several factors including the overall economic and social difference between the home and host countries, people's ability and capacity to obtain good jobs and start a life abroad, and the barriers of moving abroad. Furthermore, the social network of individuals also plays a significant role. The model is validated using qualitative and quantitative pattern matching with real-world observations. Sensitivity and uncertainty analyses are performed in addition to several scenario analyses. Linear and random forest response surface models are created to provide quick predictions on the number of emigrants as well as to understand the effect sizes of individual parameters. Overall, the study provides an abstract model where brain drain dynamics can be explored. Findings from the simulation outputs show that future socioeconomic state of the country is more important than the current state, lack of barriers results in a large number of emigrants, and network effects ensue compounding effects on emigration. Upon further development and customisation, future versions can assist in the decision-making of social policymakers regarding brain drain.",
+    "pdf_url": "https://arxiv.org/pdf/2103.03234v2",
+    "published": "2021-03-04"
+  }
+}

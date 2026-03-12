@@ -3,12 +3,29 @@ Technical Analysis Agent
 A comprehensive class for technical analysis of stocks using multiple indicators.
 """
 
-import yfinance as yf
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 import os
 import asyncio
+import sys
+import warnings
+import logging
+
+# Nuclear silence for all warnings and loggers
+warnings.filterwarnings('ignore')
+logging.getLogger('yfinance').setLevel(logging.CRITICAL)
+logging.getLogger('urllib3').setLevel(logging.CRITICAL)
+os.environ['PYTHONWARNINGS'] = 'ignore'
+
+# Add parent directory to path to allow imports from agents
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+
+try:
+    from agents.utils import StockDataProvider, Config
+except ImportError:
+    # Fallback for when running from different contexts
+    from utils import StockDataProvider, Config
 
 class TechnicalAnalysis:
     """
@@ -32,33 +49,27 @@ class TechnicalAnalysis:
         Returns:
             yfinance.Ticker: yfinance ticker object
         """
-        return yf.Ticker(ticker)
+        return StockDataProvider.get_ticker(ticker)
 
 
     async def get_stock_data(self, ticker, period="1y"):
         """
         Fetch historical price data from yfinance.
-        
-        Args:
-            ticker (str): Stock ticker symbol
-            period (str): Data period - '1y', '2y', '6mo', etc.
-        
-        Returns:
-            DataFrame: Historical OHLCV data
         """
         try:
-            #stock = yf.Ticker(ticker)
             stock = self.get_yfinance_data(ticker)
-            df = stock.history(period=period)
+            # Use to_thread to prevent blocking the event loop during network I/O
+            df = await asyncio.to_thread(StockDataProvider.get_history, ticker, period=period)
             
-            if df.empty:
-                print(f"No data found for {ticker}")
-                return None
+            if df is None or df.empty:
+                return {"error": "EMPTY_DATA", "message": f"No data found for {ticker}"}, None
                 
             return df, stock
         except Exception as e:
-            print(f"Error fetching data for {ticker}: {e}")
-            return None, None
+            err_msg = str(e)
+            if "429" in err_msg or "Too Many Requests" in err_msg or "Rate Limit" in err_msg:
+                return {"error": "RATE_LIMIT_HIT", "message": err_msg}, None
+            return {"error": "FETCH_ERROR", "message": err_msg}, None
     
     def calculate_moving_averages(self, df):
         """
@@ -93,11 +104,11 @@ class TechnicalAnalysis:
         Returns:
             dict: MA analysis with signals and scores
         """
-        if df is None or df.empty:
+        if df is None or len(df) < 1:
             return None
         
         latest = df.iloc[-1]
-        current_price = latest['Close']
+        current_price = latest.get('Close', 0)
         
         # Check conditions
         above_50 = current_price > latest['SMA_50']
@@ -140,15 +151,15 @@ class TechnicalAnalysis:
             'signal': entry_signal
         }
     
-    def calculate_macd(self, df, fast=12, slow=26, signal=9):
+    def calculate_macd(self, df, fast=Config.MACD_FAST, slow=Config.MACD_SLOW, signal=Config.MACD_SIGNAL):
         """
         Calculate MACD indicator.
         
         Args:
             df (DataFrame): Price data
-            fast (int): Fast EMA period (default 12)
-            slow (int): Slow EMA period (default 26)
-            signal (int): Signal line EMA period (default 9)
+            fast (int): Fast EMA period
+            slow (int): Slow EMA period
+            signal (int): Signal line EMA period
         
         Returns:
             DataFrame: Data with MACD columns
@@ -183,13 +194,19 @@ class TechnicalAnalysis:
         if df is None or df.empty:
             return None
         
+        if len(df) < 2:
+            return None
+
         latest = df.iloc[-1]
         prev = df.iloc[-2]
         
         # Current values
-        macd = latest['MACD']
-        signal = latest['MACD_signal']
-        hist = latest['MACD_hist']
+        macd = latest.get('MACD')
+        signal = latest.get('MACD_signal')
+        hist = latest.get('MACD_hist')
+
+        if macd is None or signal is None:
+            return None
         
         # Check conditions
         bullish_crossover = macd > signal
@@ -234,9 +251,9 @@ class TechnicalAnalysis:
             'signal': signal_str
         }
     
-    def calculate_rsi(self, df, period=14):
+    def calculate_rsi(self, df, period=Config.RSI_PERIOD):
         """
-        Calculate RSI (Relative Strength Index).
+        Calculate RSI (Relative Strength Index) using Wilder's smoothing method.
         
         Args:
             df (DataFrame): Price data
@@ -251,11 +268,16 @@ class TechnicalAnalysis:
         delta = df['Close'].diff()
         
         # Separate gains and losses
-        gain = (delta.where(delta > 0, 0)).rolling(window=period).mean()
-        loss = (-delta.where(delta < 0, 0)).rolling(window=period).mean()
+        gain = delta.where(delta > 0, 0)
+        loss = -delta.where(delta < 0, 0)
+        
+        # Use Wilder's smoothing (equivalent to EMA with alpha = 1/period)
+        # This is the standard RSI calculation used by TradingView, etc.
+        avg_gain = gain.ewm(alpha=1/period, min_periods=period, adjust=False).mean()
+        avg_loss = loss.ewm(alpha=1/period, min_periods=period, adjust=False).mean()
         
         # Calculate RS and RSI
-        rs = gain / loss
+        rs = avg_gain / avg_loss
         df['RSI'] = 100 - (100 / (1 + rs))
         
         return df
@@ -270,11 +292,14 @@ class TechnicalAnalysis:
         Returns:
             dict: RSI analysis with signals and scores
         """
-        if df is None or df.empty:
+        if df is None or len(df) < 1:
             return None
         
         latest = df.iloc[-1]
-        rsi = latest['RSI']
+        rsi = latest.get('RSI')
+        
+        if rsi is None or pd.isna(rsi):
+            return None
         
         # Check conditions
         not_overbought = rsi < 70
@@ -317,13 +342,13 @@ class TechnicalAnalysis:
             'signal': signal
         }
     
-    def calculate_vwma(self, df, period=20):
+    def calculate_vwma(self, df, period=Config.VWMA_PERIOD):
         """
         Calculate Volume Weighted Moving Average.
         
         Args:
             df (DataFrame): Price data with Close and Volume
-            period (int): VWMA period (default 20)
+            period (int): VWMA period
         
         Returns:
             DataFrame: Data with VWMA column
@@ -349,12 +374,15 @@ class TechnicalAnalysis:
         Returns:
             dict: VWMA analysis with signals and scores
         """
-        if df is None or df.empty:
+        if df is None or len(df) < 1:
             return None
         
         latest = df.iloc[-1]
-        current_price = latest['Close']
-        vwma = latest['VWMA']
+        current_price = latest.get('Close', 0)
+        vwma = latest.get('VWMA')
+
+        if vwma is None or pd.isna(vwma):
+            return None
         
         # Check conditions
         above_vwma = current_price > vwma
@@ -551,7 +579,7 @@ class TechnicalAnalysis:
         """
         spy_data,_ = await self.get_stock_data("SPY", period=period)
 
-        if spy_data is None:
+        if spy_data is None or spy_data.empty:
             return None
         
         spy_data = self.calculate_moving_averages(spy_data)
@@ -563,7 +591,7 @@ class TechnicalAnalysis:
         
         # Try to get VIX (volatility)
         try:
-            vix = yf.Ticker("^VIX")
+            vix = StockDataProvider.get_ticker("^VIX")
             vix_data = vix.history(period="5d")
             vix_level = vix_data['Close'].iloc[-1] if not vix_data.empty else None
             low_vix = vix_level < 20 if vix_level else None
@@ -609,16 +637,13 @@ class TechnicalAnalysis:
         Compare stock performance vs benchmark.
         
         Args:
-            ticker (str): Stock ticker
-            benchmark (str): Benchmark ticker (default SPY)
+            ticker_df (DataFrame): Stock data
+            benchmark_df (DataFrame): Benchmark data
             period (str): Comparison period
         
         Returns:
             dict: Relative strength analysis
         """
-        #stock_data,_ = self.get_stock_data(ticker, period=period)
-        #bench_data,_ = self.get_stock_data(benchmark, period=period)
-        
         stock_data = ticker_df
         bench_data = benchmark_df
 
@@ -654,20 +679,14 @@ class TechnicalAnalysis:
         Run complete technical analysis on a stock.
         
         Args:
-            ticker (str): Stock ticker symbol
+            df (DataFrame): Stock data
             period (str): Data period for analysis
         
         Returns:
             dict: Complete technical analysis results
         """
-        #print(f"\n{'='*70}")
-        #print(f"TECHNICAL ANALYSIS: {ticker}")
-        #print(f"{'='*70}\n")
-        
-        # Fetch data
-        #df = self.get_stock_data(ticker, period=period)
-        #if df is None:
-        #    return None
+        if df is None or df.empty:
+            return None
         
         # Calculate all indicators
         df = self.calculate_moving_averages(df)
@@ -687,13 +706,18 @@ class TechnicalAnalysis:
         market_analysis, spy_df = await self.analyze_market_trend()
         rel_strength = self.compare_relative_strength(df, spy_df)
         
-        # Calculate total score
+        # Calculate total score safely
+        # Use .get() and defaults in case any analysis returned None
+        def get_score(analysis):
+            if analysis is None: return 0
+            return analysis.get('score', 0)
+
         total_score = (
-            ma_analysis['score'] +
-            macd_analysis['score'] +
-            rsi_analysis['score'] +
-            vwma_analysis['score'] +
-            sr_analysis['score']
+            get_score(ma_analysis) +
+            get_score(macd_analysis) +
+            get_score(rsi_analysis) +
+            get_score(vwma_analysis) +
+            get_score(sr_analysis)
         )
         max_score = 15
         
@@ -712,14 +736,13 @@ class TechnicalAnalysis:
         
         # Compile results
         results = {
-            #'ticker': ticker,
             'analysis_date': datetime.now().strftime('%Y-%m-%d'),
-            'current_price': ma_analysis['current_price'],
-            'moving_averages': ma_analysis,
-            'macd': macd_analysis,
-            'rsi': rsi_analysis,
-            'vwma': vwma_analysis,
-            'support_resistance': sr_analysis,
+            'current_price': df.iloc[-1]['Close'] if not df.empty else 0,
+            'moving_averages': ma_analysis or {'score': 0, 'signal': 'N/A'},
+            'macd': macd_analysis or {'score': 0, 'signal': 'N/A'},
+            'rsi': rsi_analysis or {'score': 0, 'signal': 'N/A'},
+            'vwma': vwma_analysis or {'score': 0, 'signal': 'N/A'},
+            'support_resistance': sr_analysis or {'score': 0, 'signal': 'N/A'},
             'market_context': market_analysis,
             'relative_strength': rel_strength,
             'total_score': total_score,
@@ -727,7 +750,6 @@ class TechnicalAnalysis:
             'score_percentage': score_pct,
             'overall_technical_signal': overall_signal,
             'action': action,
-            #'data': df  # Include full dataframe for further analysis
         }
         
         return results
@@ -744,7 +766,7 @@ class TechnicalAnalysis:
             return
         
         print(f"\n{'='*70}")
-        print(f"TECHNICAL ANALYSIS REPORT: {results['ticker']}")
+        print(f"TECHNICAL ANALYSIS REPORT")
         print(f"Date: {results['analysis_date']}")
         print(f"Current Price: ${results['current_price']:.2f}")
         print(f"{'='*70}\n")
@@ -801,9 +823,8 @@ class TechnicalAnalysis:
         print("3. RSI:")
         print(f"  RSI: {rsi['RSI']:.1f}")
         print(f"  Zone: {rsi['zone']}")
-        print(f"  Not Overbought (<70): {'✓' if rsi['not_overbought'] else '✗'}")
+        print(f"  Not Overbought: {'✓' if rsi['not_overbought'] else '✗'}")
         print(f"  Above 50: {'✓' if rsi['above_50'] else '✗'}")
-        print(f"  In Sweet Spot (40-70): {'✓' if rsi['in_sweet_spot'] else '✗'}")
         print(f"  Score: {rsi['score']}/{rsi['max_score']}")
         print(f"  Signal: {rsi['signal']}\n")
         
@@ -813,127 +834,23 @@ class TechnicalAnalysis:
         print(f"  VWMA: ${vwma['VWMA']:.2f}")
         print(f"  Above VWMA: {'✓' if vwma['above_vwma'] else '✗'}")
         print(f"  VWMA Rising: {'✓' if vwma['vwma_rising'] else '✗'}")
-        print(f"  Volume Pattern Bullish: {'✓' if vwma['volume_pattern_bullish'] else '✗'}")
-        print(f"  Current Volume: {vwma['current_volume']:,.0f}")
-        print(f"  Avg Volume: {vwma['avg_volume']:,.0f}")
         print(f"  Volume Ratio: {vwma['volume_ratio']:.2f}x")
         print(f"  Score: {vwma['score']}/{vwma['max_score']}")
         print(f"  Signal: {vwma['signal']}\n")
         
-        # Support & Resistance
+        # Support/Resistance
         sr = results['support_resistance']
         print("5. SUPPORT & RESISTANCE:")
-        print(f"  Current Price: ${sr['current_price']:.2f}")
-        print(f"  Nearest Support: ${sr['nearest_support']:.2f} (-{sr['dist_to_support_%']:.1f}%)")
-        print(f"  Nearest Resistance: ${sr['nearest_resistance']:.2f} (+{sr['dist_to_resistance_%']:.1f}%)")
+        print(f"  Nearest Resistance: ${sr['nearest_resistance']:.2f} ({sr['dist_to_resistance_%']:.1f}% away)")
+        print(f"  Nearest Support: ${sr['nearest_support']:.2f} ({sr['dist_to_support_%']:.1f}% away)")
         print(f"  At Support: {'✓' if sr['at_support'] else '✗'}")
         print(f"  Near Resistance: {'✓' if sr['near_resistance'] else '✗'}")
         print(f"  Score: {sr['score']}/{sr['max_score']}")
         print(f"  Signal: {sr['signal']}\n")
         
-        # Overall Score
+        # Summary
         print(f"{'='*70}")
-        print(f"OVERALL TECHNICAL SCORE: {results['total_score']}/{results['max_score']} ({results['score_percentage']:.0f}%)")
-        print(f"SIGNAL: {results['overall_signal']}")
+        print(f"OVERALL SIGNAL: {results['overall_technical_signal']}")
+        print(f"TOTAL SCORE: {results['total_score']}/{results['max_score']} ({results['score_percentage']:.1f}%)")
         print(f"ACTION: {results['action']}")
         print(f"{'='*70}\n")
-    
-    def calculate_position_size(self, portfolio_value, risk_percent, entry_price, stop_loss_price):
-        """
-        Calculate position size based on risk management.
-        
-        Args:
-            portfolio_value (float): Total portfolio value
-            risk_percent (float): Risk per trade (e.g., 1.5 for 1.5%)
-            entry_price (float): Entry price per share
-            stop_loss_price (float): Stop loss price per share
-        
-        Returns:
-            dict: Position sizing details
-        """
-        # Calculate risk amount
-        risk_amount = portfolio_value * (risk_percent / 100)
-        
-        # Calculate risk per share
-        risk_per_share = entry_price - stop_loss_price
-        
-        if risk_per_share <= 0:
-            return {
-                'error': 'Stop loss must be below entry price',
-                'shares': 0,
-                'position_value': 0
-            }
-        
-        # Calculate number of shares
-        shares = int(risk_amount / risk_per_share)
-        
-        # Calculate position value
-        position_value = shares * entry_price
-        
-        # Calculate position as % of portfolio
-        position_percent = (position_value / portfolio_value) * 100
-        
-        # Calculate actual risk (accounting for integer shares)
-        actual_risk = shares * risk_per_share
-        actual_risk_percent = (actual_risk / portfolio_value) * 100
-        
-        return {
-            'shares': shares,
-            'position_value': position_value,
-            'position_percent': position_percent,
-            'risk_amount': actual_risk,
-            'risk_percent': actual_risk_percent,
-            'risk_per_share': risk_per_share,
-            'risk_reward_ratio': None  # Will calculate with targets
-        }
-    
-    def calculate_targets(self, entry_price, stop_loss_price, target_percents=[15, 30]):
-        """
-        Calculate profit targets.
-        
-        Args:
-            entry_price (float): Entry price
-            stop_loss_price (float): Stop loss price
-            target_percents (list): Target percentages
-        
-        Returns:
-            dict: Target prices and R:R ratios
-        """
-        risk = entry_price - stop_loss_price
-        
-        targets = {}
-        for i, pct in enumerate(target_percents, 1):
-            target_price = entry_price * (1 + pct/100)
-            reward = target_price - entry_price
-            rr_ratio = reward / risk if risk > 0 else 0
-            
-            targets[f'target_{i}'] = {
-                'percent': pct,
-                'price': target_price,
-                'reward_amount': reward,
-                'risk_reward_ratio': rr_ratio
-            }
-        
-        return targets
-
-
-# Example usage
-if __name__ == "__main__":
-    # Initialize technical analyzer
-    analyzer = TechnicalAnalysis()
-    
-    # Analyze single stock
-    results = analyzer.complete_technical_analysis("AAPL")
-    if results:
-        analyzer.print_technical_report(results)
-    
-    # Get just the data with indicators
-    df, _ = analyzer.get_stock_data("AAPL", period="1y")
-    df = analyzer.calculate_moving_averages(df)
-    df = analyzer.calculate_macd(df)
-    df = analyzer.calculate_rsi(df)
-    df = analyzer.calculate_vwma(df)
-    df = analyzer.calculate_support_resistance(df)
-    
-    print(f"Data shape: {df.shape}")
-    print(f"Columns: {list(df.columns)}")
