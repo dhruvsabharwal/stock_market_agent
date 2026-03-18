@@ -13,6 +13,7 @@ try:
     from agents.combined_agent.combined import analyze_stock, analyze_multiple_stocks
     from agents.fundamental_analysis_agent.fundamental_analysis import FundamentalAnalysis
     from agents.technical_analysis_agent.technical_analysis import TechnicalAnalysis
+    from agents.base_breakout_strategy.base_breakout import BaseBreakoutAnalyzer
 except ImportError as e:
     print(f"Error importing agents: {e}")
     sys.exit(1)
@@ -78,6 +79,19 @@ async def get_technical_analysis(ticker: str) -> str:
         
     result = await t_an.complete_technical_analysis(df)
     return json.dumps(result, indent=2, default=str)
+
+@mcp.tool()
+def get_base_breakout_analysis(ticker: str) -> str:
+    """
+    Retrieve only the base breakout analysis and metrics for a stock.
+    
+    Args:
+        ticker: The stock ticker symbol.
+    """
+    bba = BaseBreakoutAnalyzer(ticker)
+    if bba.run_analysis():
+        report = bba.generate_report()
+    return report
 
 if __name__ == "__main__":
     # Run the server using stdio transport
