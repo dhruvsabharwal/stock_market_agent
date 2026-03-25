@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LRCX — Lam Research Full Analysis | March 20, 2026</title>
+<style>
+  :root {
+    --bg: #f8f9fa;
+    --card: #ffffff;
+    --border: #e2e8f0;
+    --text: #1a202c;
+    --muted: #64748b;
+    --green: #16a34a;
+    --green-bg: #dcfce7;
+    --amber: #d97706;
+    --amber-bg: #fef3c7;
+    --red: #dc2626;
+    --red-bg: #fee2e2;
+    --blue: #2563eb;
+    --blue-bg: #dbeafe;
+    --header-bg: #0f172a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); font-size: 14px; line-height: 1.5; }
+  .page { max-width: 960px; margin: 0 auto; padding: 24px 16px 60px; }
+
+  /* HEADER */
+  .header { background: var(--header-bg); color: white; border-radius: 12px; padding: 28px 32px; margin-bottom: 20px; }
+  .header-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; }
+  .ticker-block h1 { font-size: 36px; font-weight: 800; letter-spacing: -1px; }
+  .ticker-block .company { font-size: 16px; color: #94a3b8; margin-top: 2px; }
+  .ticker-block .meta { font-size: 12px; color: #64748b; margin-top: 4px; }
+  .price-block { text-align: right; }
+  .price-block .price { font-size: 32px; font-weight: 700; }
+  .price-block .sector { font-size: 12px; color: #94a3b8; margin-top: 4px; }
+  .badge { display: inline-block; padding: 6px 18px; border-radius: 999px; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; margin-top: 14px; }
+  .badge-developing { background: #fef3c7; color: #92400e; }
+  .badge-actionable { background: #dcfce7; color: #14532d; }
+  .badge-notready { background: #fee2e2; color: #991b1b; }
+  .score-bar { margin-top: 16px; display: flex; align-items: center; gap: 10px; }
+  .score-label { font-size: 12px; color: #94a3b8; min-width: 90px; }
+  .score-track { flex: 1; height: 6px; background: #1e293b; border-radius: 3px; }
+  .score-fill { height: 6px; border-radius: 3px; background: #f59e0b; }
+  .score-num { font-size: 13px; font-weight: 700; color: #f59e0b; min-width: 36px; text-align: right; }
+
+  /* WARNING BANNERS */
+  .banner { padding: 12px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .banner-info { background: var(--blue-bg); color: #1e40af; }
+  .banner-warn { background: var(--amber-bg); color: #92400e; }
+  .banner-danger { background: var(--red-bg); color: #991b1b; }
+
+  /* SECTIONS */
+  .section { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 24px 28px; margin-bottom: 18px; }
+  .section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+
+  /* GRIDS */
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+
+  /* METRIC CARDS */
+  .metric { background: var(--bg); border-radius: 8px; padding: 14px 16px; }
+  .metric .label { font-size: 11px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  .metric .value { font-size: 20px; font-weight: 700; margin-top: 2px; }
+  .metric .sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .metric.green .value { color: var(--green); }
+  .metric.amber .value { color: var(--amber); }
+  .metric.red .value { color: var(--red); }
+
+  /* TABLE ROWS */
+  .trow { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border); }
+  .trow:last-child { border-bottom: none; }
+  .trow .tlabel { color: var(--muted); font-size: 13px; }
+  .trow .tval { font-weight: 600; font-size: 13px; }
+  .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+  .pill-green { background: var(--green-bg); color: var(--green); }
+  .pill-amber { background: var(--amber-bg); color: var(--amber); }
+  .pill-red { background: var(--red-bg); color: var(--red); }
+  .pill-blue { background: var(--blue-bg); color: var(--blue); }
+
+  /* SCORECARD */
+  .scorecard { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .sc-item { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 6px; background: var(--bg); font-size: 13px; }
+  .sc-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .sc-dot.g { background: var(--green); }
+  .sc-dot.a { background: var(--amber); }
+  .sc-dot.r { background: var(--red); }
+
+  /* CHART */
+  .chart-wrap { overflow-x: auto; }
+
+  /* ENTRY CARDS */
+  .entry-card { background: var(--bg); border-radius: 10px; padding: 18px 20px; }
+  .entry-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+  .entry-title { font-size: 14px; font-weight: 700; }
+  .entry-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .entry-stat { }
+  .entry-stat .e-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); font-weight: 600; }
+  .entry-stat .e-val { font-size: 16px; font-weight: 700; margin-top: 2px; }
+
+  /* INTUITION */
+  .intuition { background: #f0f9ff; border-left: 4px solid var(--blue); border-radius: 0 8px 8px 0; padding: 16px 20px; font-size: 13.5px; line-height: 1.7; color: #1e3a5f; }
+  .intuition p { margin-bottom: 10px; }
+  .intuition p:last-child { margin-bottom: 0; }
+
+  /* RISK */
+  .risk-list { list-style: none; }
+  .risk-list li { padding: 10px 14px; margin-bottom: 6px; background: var(--red-bg); border-radius: 6px; font-size: 13px; color: #7f1d1d; display: flex; gap: 10px; align-items: flex-start; }
+  .risk-list li::before { content: "⚠"; flex-shrink: 0; }
+
+  .rs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 12px; }
+
+  @media (max-width: 640px) {
+    .grid2, .grid3, .grid4, .entry-grid, .rs-grid { grid-template-columns: 1fr 1fr; }
+    .scorecard { grid-template-columns: 1fr; }
+    .header-top { flex-direction: column; }
+    .price-block { text-align: left; }
+  }
+  @media print {
+    body { background: white; }
+    .page { padding: 16px; }
+    .section { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ═══ HEADER ═══ -->
+  <div class="header">
+    <div class="header-top">
+      <div class="ticker-block">
+        <h1>LRCX</h1>
+        <div class="company">Lam Research Corporation</div>
+        <div class="meta">Semiconductor Equipment &amp; Materials · Nasdaq · Report: March 20, 2026</div>
+        <span class="badge badge-developing">DEVELOPING — WATCH</span>
+      </div>
+      <div class="price-block">
+        <div class="price">$228.36</div>
+        <div class="sector">52w Range: $55.91 – $256.37</div>
+        <div class="sector" style="margin-top:6px">Breakout Score: 9 / 11</div>
+      </div>
+    </div>
+    <div class="score-bar">
+      <div class="score-label">Breakout Score</div>
+      <div class="score-track"><div class="score-fill" style="width:81.8%"></div></div>
+      <div class="score-num">9/11</div>
+    </div>
+    <div class="score-bar">
+      <div class="score-label">Technical Score</div>
+      <div class="score-track"><div class="score-fill" style="width:78.3%;background:#34d399"></div></div>
+      <div class="score-num" style="color:#34d399">78.3%</div>
+    </div>
+    <div class="score-bar">
+      <div class="score-label">Fundamental Score</div>
+      <div class="score-track"><div class="score-fill" style="width:62%;background:#818cf8"></div></div>
+      <div class="score-num" style="color:#818cf8">62%</div>
+    </div>
+  </div>
+
+  <!-- EARNINGS BANNER -->
+  <div class="banner banner-warn">⚠ EARNINGS APPROACHING — Next report expected April 22–29, 2026 (~5–6 weeks). Binary event risk window; monitor as date approaches.</div>
+  <div class="banner banner-info">✓ SPY above 50-week SMA — Market is in UPTREND. Normal position sizing applies.</div>
+
+  <!-- ═══ 1. EXECUTIVE SUMMARY ═══ -->
+  <div class="section">
+    <div class="section-title">1 · Executive Summary</div>
+    <div class="grid2">
+      <div>
+        <p style="font-size:14px;line-height:1.7;margin-bottom:12px">Lam Research is a global leader in wafer fabrication equipment, specialising in plasma etch, deposition, and clean technologies critical to advanced semiconductor manufacturing. Nearly every advanced chip produced today involves Lam tooling at some stage of its fabrication, giving the company deep customer stickiness across leading logic, memory, and foundry fabs.</p>
+        <p style="font-size:14px;line-height:1.7;margin-bottom:12px"><strong>Moat:</strong> High switching costs embedded in process recipes, proprietary Equipment Intelligence® software, and an installed base of over 100,000 chambers generating recurring CSBG (Customer Support Business Group) revenue that reached a record $7.2B in 2025 — insulating the business from pure cyclicality.</p>
+        <p style="font-size:14px;line-height:1.7"><strong>Competitive position:</strong> Dominant in conductor etch alongside KLA (KLAC) and Applied Materials (AMAT). SAM share of WFE has expanded into the mid-thirties percent range vs. a multi-year goal of high-thirties. Advanced packaging (HBM, 3D stacking) is expected to grow &gt;40% in 2026.</p>
+      </div>
+      <div>
+        <div class="section-title" style="border-bottom:none;margin-bottom:10px">Recent Headlines</div>
+        <div class="trow"><span class="tlabel">Mar 10, 2026</span><span class="tval" style="text-align:right;max-width:260px;font-size:12px">IBM 5-year collaboration on sub-1nm logic scaling (High-NA EUV)</span></div>
+        <div class="trow"><span class="tlabel">Mar 18, 2026</span><span class="tval" style="text-align:right;max-width:260px;font-size:12px">Named to 2026 World's Most Ethical Companies® (4th consecutive year)</span></div>
+        <div class="trow"><span class="tlabel">Mar 6, 2026</span><span class="tval" style="text-align:right;max-width:260px;font-size:12px">Leadership transition: Sesha Varadarajan to COO; stock dipped briefly</span></div>
+        <div class="trow"><span class="tlabel">Feb 17, 2026</span><span class="tval" style="text-align:right;max-width:260px;font-size:12px">New Boise, Idaho R&amp;D office opened to support Micron + AI manufacturing</span></div>
+        <div class="trow"><span class="tlabel">Jan 28, 2026</span><span class="tval" style="text-align:right;max-width:260px;font-size:12px">Q2 FY26 EPS $1.27 (+9.5% beat); record revenue $5.34B; 10th consecutive qtr of growth</span></div>
+        <div class="trow"><span class="tlabel">Guidance</span><span class="tval" style="text-align:right;max-width:260px;font-size:12px">Q3 FY26: Revenue $5.7B ±$300M, EPS $1.35 ±$0.10, GM ~49%</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ 2. FUNDAMENTALS ═══ -->
+  <div class="section">
+    <div class="section-title">2 · Fundamental Snapshot</div>
+    <div class="grid4" style="margin-bottom:16px">
+      <div class="metric green"><div class="label">EPS Growth YoY</div><div class="value">+37.0%</div><div class="sub">5yr CAGR: 37.0%</div></div>
+      <div class="metric green"><div class="label">Revenue Growth YoY</div><div class="value">+22.1%</div><div class="sub">FY26 est: $22.8B</div></div>
+      <div class="metric green"><div class="label">Net Margin</div><div class="value">27-30%</div><div class="sub">Above 8% threshold ✓</div></div>
+      <div class="metric green"><div class="label">ROE</div><div class="value">58.2%</div><div class="sub">3yr avg: 59.9%</div></div>
+    </div>
+    <div class="grid4" style="margin-bottom:16px">
+      <div class="metric green"><div class="label">ROCE</div><div class="value">41.5%</div><div class="sub">3yr avg: 36.5%</div></div>
+      <div class="metric green"><div class="label">Free Cash Flow</div><div class="value">$5.5B</div><div class="sub">FCF/CFO: 89.3%</div></div>
+      <div class="metric green"><div class="label">Interest Coverage</div><div class="value">33.1×</div><div class="sub">D/E: 0.53 (mkt: 0.016)</div></div>
+      <div class="metric amber"><div class="label">P/E Ratio</div><div class="value">48.1×</div><div class="sub">Forward ~36×</div></div>
+    </div>
+    <div class="grid3">
+      <div>
+        <div class="trow"><span class="tlabel">Revenue (TTM)</span><span class="tval">$18.4B</span></div>
+        <div class="trow"><span class="tlabel">Net Income</span><span class="tval">$5.4B</span></div>
+        <div class="trow"><span class="tlabel">Market Cap</span><span class="tval">$285B</span></div>
+        <div class="trow"><span class="tlabel">Total Assets</span><span class="tval">$21.3B</span></div>
+        <div class="trow"><span class="tlabel">Working Capital</span><span class="tval">$7.9B</span></div>
+      </div>
+      <div>
+        <div class="trow"><span class="tlabel">Earnings Yield (EY)</span><span class="tval amber"><span class="pill pill-amber">1.88% — below 7%</span></span></div>
+        <div class="trow"><span class="tlabel">PEG Ratio</span><span class="tval red"><span class="pill pill-red">5.86 — Expensive</span></span></div>
+        <div class="trow"><span class="tlabel">P/S Ratio</span><span class="tval amber">14.0×</span></div>
+        <div class="trow"><span class="tlabel">Dividend</span><span class="tval">$0.26/qtr (Apr 8, 2026)</span></div>
+        <div class="trow"><span class="tlabel">Shares Outstanding</span><span class="tval">1.25B</span></div>
+      </div>
+      <div>
+        <div class="trow"><span class="tlabel">Sales 5yr CAGR</span><span class="tval amber">2.3% <span class="pill pill-amber">Below 15%</span></span></div>
+        <div class="trow"><span class="tlabel">SSGR (Sustainable Growth)</span><span class="tval green">166%</span></div>
+        <div class="trow"><span class="tlabel">cCFO &gt; PAT</span><span class="tval"><span class="pill pill-green">PASS</span></span></div>
+        <div class="trow"><span class="tlabel">D/E Decreasing 5yr</span><span class="tval"><span class="pill pill-green">PASS</span></span></div>
+        <div class="trow"><span class="tlabel">Analyst Consensus PT</span><span class="tval">$241–$284 (Strong Buy)</span></div>
+      </div>
+    </div>
+    <div style="margin-top:14px;padding:12px 16px;background:var(--amber-bg);border-radius:8px;font-size:13px;color:#92400e">
+      <strong>Valuation note:</strong> At 48× trailing P/E and a PEG of 5.86, LRCX is pricing in continued AI-driven WFE growth aggressively. The bull case (consensus ~$274–$284) assumes $23.6B revenue and $6.7B earnings by 2028 — requiring sustained ~8.5% annual revenue growth. Earnings quality is excellent (FCF &gt;100% of net income), but valuation leaves limited margin of safety if WFE capex softens.
+    </div>
+  </div>
+
+  <!-- ═══ 3. BASE BREAKOUT ANALYSIS ═══ -->
+  <div class="section">
+    <div class="section-title">3 · Base Breakout Analysis (Strategy Scorecard)</div>
+    <div class="grid2" style="margin-bottom:18px">
+      <div>
+        <div class="trow"><span class="tlabel">Overall Score</span><span class="tval"><strong>9 / 11</strong> <span class="pill pill-amber">DEVELOPING</span></span></div>
+        <div class="trow"><span class="tlabel">Stage 2 Confirmed</span><span class="tval"><span class="pill pill-green">YES</span></span></div>
+        <div class="trow"><span class="tlabel">30-week SMA</span><span class="tval">$174.39 (rising ✓)</span></div>
+        <div class="trow"><span class="tlabel">% Above 30w SMA</span><span class="tval green">+30.9%</span></div>
+        <div class="trow"><span class="tlabel">% From 52w High</span><span class="tval amber">-10.9%</span></div>
+        <div class="trow"><span class="tlabel">% Above 52w Low</span><span class="tval green">+308.4%</span></div>
+        <div class="trow"><span class="tlabel">Prior Uptrend</span><span class="tval"><span class="pill pill-green">CONFIRMED</span></span></div>
+      </div>
+      <div>
+        <div class="trow"><span class="tlabel">Base Pattern</span><span class="tval"><span class="pill pill-blue">VCP</span></span></div>
+        <div class="trow"><span class="tlabel">Base Length</span><span class="tval amber">5 weeks <span style="font-size:11px;color:var(--amber)">(minimum — watch for extension)</span></span></div>
+        <div class="trow"><span class="tlabel">Base Depth</span><span class="tval green">-18.6% ✓</span></div>
+        <div class="trow"><span class="tlabel">Base High</span><span class="tval">$244.63 (Feb 16, 2026)</span></div>
+        <div class="trow"><span class="tlabel">Base Low</span><span class="tval">$199.09 (Mar 2, 2026)</span></div>
+        <div class="trow"><span class="tlabel">Accumulation Ratio</span><span class="tval green">1.35× ✓</span></div>
+        <div class="trow"><span class="tlabel">Volume Dry-up</span><span class="tval amber">57.5% <span class="pill pill-amber">FAIL (need &gt;60%)</span></span></div>
+      </div>
+    </div>
+
+    <!-- RS Section -->
+    <div class="section-title" style="margin-bottom:10px;border-bottom:none">Relative Strength</div>
+    <div class="rs-grid">
+      <div class="metric amber"><div class="label">RS 4-Week</div><div class="value">+3.4%</div><div class="sub">Neutral near-term</div></div>
+      <div class="metric green"><div class="label">RS 13-Week</div><div class="value">+36.7%</div><div class="sub">Strong momentum</div></div>
+      <div class="metric green"><div class="label">RS 26-Week</div><div class="value">+81.9%</div><div class="sub">Leading the market</div></div>
+      <div class="metric green"><div class="label">RS 52-Week</div><div class="value">+169.1%</div><div class="sub">vs benchmark -2.5%</div></div>
+    </div>
+    <div style="margin-top:12px;padding:10px 14px;background:var(--green-bg);border-radius:6px;font-size:13px;color:#14532d">
+      <strong>RS Line at 52-week high</strong> — Leading RS signal CONFIRMED. The RS line is at/near its 52-week peak, a hallmark of the strongest breakout candidates.
+    </div>
+
+    <!-- Scorecard checklist -->
+    <div style="margin-top:16px">
+      <div class="section-title" style="margin-bottom:10px;border-bottom:none">Scorecard Checklist</div>
+      <div class="scorecard">
+        <div class="sc-item"><div class="sc-dot g"></div>Stage 2 Uptrend Confirmed</div>
+        <div class="sc-item"><div class="sc-dot g"></div>RS Line at 52-week High</div>
+        <div class="sc-item"><div class="sc-dot g"></div>Leading RS (26w / 52w)</div>
+        <div class="sc-item"><div class="sc-dot g"></div>EPS Growth &gt;25% YoY</div>
+        <div class="sc-item"><div class="sc-dot g"></div>Revenue Growth &gt;15% YoY</div>
+        <div class="sc-item"><div class="sc-dot g"></div>Net Margin &gt;8%</div>
+        <div class="sc-item"><div class="sc-dot g"></div>Accumulation Ratio &gt;1.0×</div>
+        <div class="sc-item"><div class="sc-dot g"></div>Prior Uptrend Present</div>
+        <div class="sc-item"><div class="sc-dot g"></div>Upside Reversal Priming Signal</div>
+        <div class="sc-item"><div class="sc-dot a"></div>Base Length (5 wks — at minimum)</div>
+        <div class="sc-item"><div class="sc-dot a"></div>Volume Dry-up (57.5% — near threshold)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ 4. TECHNICAL ANALYSIS ═══ -->
+  <div class="section">
+    <div class="section-title">4 · Technical Analysis</div>
+    <div class="grid2">
+      <div>
+        <div class="section-title" style="font-size:10px;border-bottom:none;margin-bottom:8px">Moving Averages — Score: 3/3 ✓</div>
+        <div class="trow"><span class="tlabel">Current Price</span><span class="tval">$228.36</span></div>
+        <div class="trow"><span class="tlabel">SMA 20</span><span class="tval green">$224.61 — +1.7% above ✓</span></div>
+        <div class="trow"><span class="tlabel">SMA 50</span><span class="tval green">$225.94 — +1.1% above ✓</span></div>
+        <div class="trow"><span class="tlabel">SMA 200</span><span class="tval green">$152.02 — +50.2% above ✓</span></div>
+        <div class="trow"><span class="tlabel">Golden Cross</span><span class="tval"><span class="pill pill-green">CONFIRMED</span></span></div>
+        <div class="trow"><span class="tlabel">Signal</span><span class="tval green">BUY — Ideal pullback entry</span></div>
+      </div>
+      <div>
+        <div class="section-title" style="font-size:10px;border-bottom:none;margin-bottom:8px">MACD — Score: 2/3 (fresh crossover bonus)</div>
+        <div class="trow"><span class="tlabel">MACD Line</span><span class="tval">-0.060</span></div>
+        <div class="trow"><span class="tlabel">Signal Line</span><span class="tval">-1.046</span></div>
+        <div class="trow"><span class="tlabel">Histogram</span><span class="tval green">+0.986 (positive &amp; growing ✓)</span></div>
+        <div class="trow"><span class="tlabel">Bullish Crossover</span><span class="tval"><span class="pill pill-green">YES — 2 days ago</span></span></div>
+        <div class="trow"><span class="tlabel">Above Zero</span><span class="tval amber">Not yet — approaching</span></div>
+        <div class="trow"><span class="tlabel">Signal</span><span class="tval green">STRONG BUY — Fresh crossover</span></div>
+      </div>
+    </div>
+    <div class="grid2" style="margin-top:16px">
+      <div>
+        <div class="section-title" style="font-size:10px;border-bottom:none;margin-bottom:8px">RSI — Score: 3/3 ✓</div>
+        <div class="trow"><span class="tlabel">RSI (14)</span><span class="tval green">52.9 — Bullish zone ✓</span></div>
+        <div class="trow"><span class="tlabel">Not Overbought (&lt;70)</span><span class="tval"><span class="pill pill-green">PASS</span></span></div>
+        <div class="trow"><span class="tlabel">Above 50 (momentum)</span><span class="tval"><span class="pill pill-green">PASS</span></span></div>
+        <div class="trow"><span class="tlabel">Signal</span><span class="tval green">STRONG BUY — Ideal zone</span></div>
+      </div>
+      <div>
+        <div class="section-title" style="font-size:10px;border-bottom:none;margin-bottom:8px">VWMA &amp; Support/Resistance</div>
+        <div class="trow"><span class="tlabel">VWMA</span><span class="tval green">$224.34 — price above ✓</span></div>
+        <div class="trow"><span class="tlabel">Nearest Support</span><span class="tval">$213.61 (-6.5%)</span></div>
+        <div class="trow"><span class="tlabel">Nearest Resistance</span><span class="tval">$251.57 (+10.2%)</span></div>
+        <div class="trow"><span class="tlabel">VIX</span><span class="tval amber">26.78 — Elevated volatility</span></div>
+        <div class="trow"><span class="tlabel">Volume today vs avg</span><span class="tval green">2.3× average — elevated</span></div>
+      </div>
+    </div>
+    <div style="margin-top:14px;padding:10px 14px;background:var(--amber-bg);border-radius:6px;font-size:13px;color:#92400e">
+      <strong>Market context note:</strong> The <code>analyze_stock_full</code> tool flags SPY below its 50-day SMA in a "BEAR" reading — however, the base breakout tool confirms SPY is above its 50-week SMA in an UPTREND. The discrepancy reflects short-term vs. long-term context. The 50-week view (UPTREND) is more relevant for stage analysis and position decisions. VIX at 26.8 warrants slightly tighter risk management.
+    </div>
+  </div>
+
+  <!-- ═══ 5. ANNOTATED CHART ═══ -->
+  <div class="section">
+    <div class="section-title">5 · Annotated Base Chart (Schematic — ~20 Weekly Candles)</div>
+    <div class="chart-wrap">
+      <svg viewBox="0 0 860 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;font-family:-apple-system,sans-serif">
+        <!-- Background -->
+        <rect width="860" height="340" fill="#f8fafc"/>
+        <!-- Grid lines -->
+        <line x1="60" y1="20" x2="60" y2="260" stroke="#e2e8f0" stroke-width="1"/>
+        <line x1="60" y1="260" x2="820" y2="260" stroke="#e2e8f0" stroke-width="1"/>
+        <!-- Horizontal price guides -->
+        <line x1="60" y1="60"  x2="820" y2="60"  stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,4"/>
+        <line x1="60" y1="100" x2="820" y2="100" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,4"/>
+        <line x1="60" y1="140" x2="820" y2="140" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,4"/>
+        <line x1="60" y1="180" x2="820" y2="180" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,4"/>
+        <line x1="60" y1="220" x2="820" y2="220" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+        <!-- Price axis labels (approximate scale: $160=220, $200=180, $230=152, $250=118, $260=100) -->
+        <text x="52" y="64"  text-anchor="end" font-size="10" fill="#94a3b8">$258</text>
+        <text x="52" y="104" text-anchor="end" font-size="10" fill="#94a3b8">$248</text>
+        <text x="52" y="144" text-anchor="end" font-size="10" fill="#94a3b8">$232</text>
+        <text x="52" y="184" text-anchor="end" font-size="10" fill="#94a3b8">$214</text>
+        <text x="52" y="224" text-anchor="end" font-size="10" fill="#94a3b8">$195</text>
+
+        <!-- 30W SMA line (dashed amber) at ~$174 -> maps to ~240 -->
+        <line x1="60" y1="248" x2="820" y2="232" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6,3"/>
+        <text x="824" y="236" font-size="9" fill="#f59e0b" font-weight="600">30w SMA $174</text>
+
+        <!-- === CANDLES (weekly, schematic) === -->
+        <!-- Candle helper: x=left edge, open_y, close_y, high_y, low_y, color -->
+        <!-- Week 1 — up $185→$205 -->
+        <line x1="75"  y1="238" x2="75"  y2="204" stroke="#16a34a" stroke-width="1"/>
+        <rect x="68"  y="212" width="14" height="26" fill="#16a34a"/>
+        <!-- Week 2 — up $200→$218 -->
+        <line x1="113" y1="230" x2="113" y2="196" stroke="#16a34a" stroke-width="1"/>
+        <rect x="106" y="204" width="14" height="26" fill="#16a34a"/>
+        <!-- Week 3 — down $218→$208 -->
+        <line x1="151" y1="196" x2="151" y2="220" stroke="#dc2626" stroke-width="1"/>
+        <rect x="144" y="200" width="14" height="16" fill="#dc2626"/>
+        <!-- Week 4 — up $208→$225 -->
+        <line x1="189" y1="198" x2="189" y2="174" stroke="#16a34a" stroke-width="1"/>
+        <rect x="182" y="180" width="14" height="22" fill="#16a34a"/>
+        <!-- Week 5 — up $225→$238 -->
+        <line x1="227" y1="172" x2="227" y2="148" stroke="#16a34a" stroke-width="1"/>
+        <rect x="220" y="154" width="14" height="18" fill="#16a34a"/>
+        <!-- Week 6 — up $237→$244 (base HIGH week) -->
+        <line x1="265" y1="150" x2="265" y2="130" stroke="#16a34a" stroke-width="1"/>
+        <rect x="258" y="136" width="14" height="14" fill="#16a34a"/>
+        <text x="265" y="122" text-anchor="middle" font-size="9" fill="#0f172a" font-weight="600">BASE HIGH</text>
+        <text x="265" y="112" text-anchor="middle" font-size="8" fill="#64748b">$244.63</text>
+        <!-- Week 7 — down $244→$228 -->
+        <line x1="303" y1="128" x2="303" y2="162" stroke="#dc2626" stroke-width="1"/>
+        <rect x="296" y="132" width="14" height="28" fill="#dc2626"/>
+        <!-- Week 8 — down $228→$215 -->
+        <line x1="341" y1="158" x2="341" y2="188" stroke="#dc2626" stroke-width="1"/>
+        <rect x="334" y="162" width="14" height="22" fill="#dc2626"/>
+        <!-- Week 9 — down hard $215→$199 (BASE LOW) -->
+        <line x1="379" y1="182" x2="379" y2="216" stroke="#dc2626" stroke-width="1"/>
+        <rect x="372" y="186" width="14" height="26" fill="#dc2626"/>
+        <text x="379" y="232" text-anchor="middle" font-size="9" fill="#0f172a" font-weight="600">BASE LOW</text>
+        <text x="379" y="242" text-anchor="middle" font-size="8" fill="#64748b">$199.09</text>
+        <!-- Week 10 — up reversal $199→$215 (low vol) -->
+        <line x1="417" y1="204" x2="417" y2="178" stroke="#16a34a" stroke-width="1"/>
+        <rect x="410" y="182" width="14" height="22" fill="#16a34a" opacity="0.7"/>
+        <!-- Week 11 — tight/up $215→$222 -->
+        <line x1="455" y1="178" x2="455" y2="160" stroke="#16a34a" stroke-width="1"/>
+        <rect x="448" y="164" width="14" height="14" fill="#16a34a" opacity="0.7"/>
+        <!-- Week 12 — up to current $222→$228 (upside reversal) -->
+        <line x1="493" y1="168" x2="493" y2="148" stroke="#16a34a" stroke-width="1"/>
+        <rect x="486" y="152" width="14" height="16" fill="#16a34a"/>
+        <text x="493" y="140" text-anchor="middle" font-size="9" fill="#2563eb" font-weight="700">↑ UPSIDE REV</text>
+        <text x="493" y="130" text-anchor="middle" font-size="8" fill="#64748b">Mar 19</text>
+
+        <!-- Volume bars (below chart) -->
+        <!-- vol panel y: 265–300 -->
+        <rect x="68"  y="278" width="14" height="14" fill="#16a34a" opacity="0.5"/>
+        <rect x="106" y="272" width="14" height="20" fill="#16a34a" opacity="0.5"/>
+        <rect x="144" y="280" width="14" height="12" fill="#dc2626" opacity="0.5"/>
+        <rect x="182" y="276" width="14" height="16" fill="#16a34a" opacity="0.5"/>
+        <rect x="220" y="270" width="14" height="22" fill="#16a34a" opacity="0.5"/>
+        <rect x="258" y="265" width="14" height="27" fill="#16a34a" opacity="0.5"/>
+        <rect x="296" y="268" width="14" height="24" fill="#dc2626" opacity="0.5"/>
+        <rect x="334" y="272" width="14" height="20" fill="#dc2626" opacity="0.5"/>
+        <rect x="372" y="275" width="14" height="17" fill="#dc2626" opacity="0.5"/>
+        <rect x="410" y="284" width="14" height="8"  fill="#16a34a" opacity="0.4"/>
+        <rect x="448" y="283" width="14" height="9"  fill="#16a34a" opacity="0.4"/>
+        <rect x="486" y="269" width="14" height="23" fill="#16a34a" opacity="0.6"/>
+        <text x="62" y="292" font-size="9" fill="#94a3b8">VOL</text>
+
+        <!-- Key level lines -->
+        <!-- PIVOT $244.63 -->
+        <line x1="60" y1="130" x2="560" y2="130" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="8,4"/>
+        <text x="565" y="134" font-size="10" fill="#d97706" font-weight="700">PIVOT $244.63</text>
+
+        <!-- ENTRY 2 breakout $245.85 -->
+        <line x1="60" y1="126" x2="560" y2="126" stroke="#2563eb" stroke-width="1" stroke-dasharray="4,3"/>
+        <text x="565" y="130" font-size="9" fill="#2563eb">E2: $245.85</text>
+
+        <!-- ENTRY 1 trigger $235.14 -->
+        <line x1="460" y1="146" x2="820" y2="146" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="6,3"/>
+        <text x="565" y="142" font-size="10" fill="#16a34a" font-weight="700">E1 TRIGGER $235.14</text>
+
+        <!-- CURRENT PRICE $228.36 -->
+        <line x1="460" y1="152" x2="820" y2="152" stroke="#64748b" stroke-width="1" stroke-dasharray="3,3"/>
+        <text x="565" y="163" font-size="9" fill="#64748b">CURRENT $228.36</text>
+
+        <!-- STOP $226.96 -->
+        <line x1="460" y1="158" x2="820" y2="158" stroke="#dc2626" stroke-width="1" stroke-dasharray="4,3"/>
+        <text x="565" y="172" font-size="9" fill="#dc2626">E1 STOP $226.96</text>
+
+        <!-- Pattern label -->
+        <rect x="64" y="22" width="100" height="26" fill="#dbeafe" rx="4"/>
+        <text x="114" y="33" text-anchor="middle" font-size="10" fill="#1e40af" font-weight="700">VCP PATTERN</text>
+        <text x="114" y="44" text-anchor="middle" font-size="9" fill="#3b82f6">5 weeks · -18.6% depth</text>
+
+        <!-- RS mini panel label -->
+        <text x="640" y="300" font-size="9" fill="#94a3b8">RS LINE: AT 52-WEEK HIGH ↗</text>
+        <line x1="620" y1="295" x2="820" y2="288" stroke="#8b5cf6" stroke-width="2"/>
+
+        <!-- X-axis labels -->
+        <text x="75"  y="314" text-anchor="middle" font-size="9" fill="#94a3b8">Nov</text>
+        <text x="189" y="314" text-anchor="middle" font-size="9" fill="#94a3b8">Dec</text>
+        <text x="303" y="314" text-anchor="middle" font-size="9" fill="#94a3b8">Jan</text>
+        <text x="417" y="314" text-anchor="middle" font-size="9" fill="#94a3b8">Feb</text>
+        <text x="493" y="314" text-anchor="middle" font-size="9" fill="#94a3b8">Mar 19</text>
+      </svg>
+    </div>
+    <div style="font-size:11px;color:var(--muted);margin-top:8px;text-align:center">Schematic chart built from key levels returned by analysis tools. Not a live price feed. Candles are representative, not exact OHLC data.</div>
+  </div>
+
+  <!-- ═══ 6. TRADING SETUP ═══ -->
+  <div class="section">
+    <div class="section-title">6 · Trading Setup</div>
+
+    <!-- Entry 1 -->
+    <div class="entry-card" style="margin-bottom:16px;border:1px solid var(--green);border-radius:10px">
+      <div class="entry-header">
+        <div class="entry-title">── Entry 1 (Early / Priming) ──</div>
+        <span class="pill pill-amber">WATCHING</span>
+      </div>
+      <div class="entry-grid" style="margin-bottom:14px">
+        <div class="entry-stat"><div class="e-label">Trigger</div><div class="e-val" style="color:var(--green)">$235.14</div></div>
+        <div class="entry-stat"><div class="e-label">Stop Loss</div><div class="e-val" style="color:var(--red)">$226.96</div></div>
+        <div class="entry-stat"><div class="e-label">Risk %</div><div class="e-val" style="color:var(--amber)">3.5%</div></div>
+        <div class="entry-stat"><div class="e-label">Signal Type</div><div class="e-val" style="font-size:13px">Upside Reversal</div></div>
+        <div class="entry-stat"><div class="e-label">Signal Date</div><div class="e-val" style="font-size:13px">March 19, 2026</div></div>
+        <div class="entry-stat"><div class="e-label">Status</div><div class="e-val" style="font-size:13px;color:var(--amber)">Above trigger needed</div></div>
+      </div>
+      <div style="background:var(--bg);border-radius:6px;padding:10px 14px;font-size:12px;color:var(--muted)">
+        <strong>Position Sizing Example ($500 risk):</strong> 61 shares @ $235.14 = ~$14,367 position value | Hard stop: $217.50 (-7.5% from entry)
+      </div>
+    </div>
+
+    <!-- Entry 2 -->
+    <div class="entry-card" style="margin-bottom:16px;border:1px solid #2563eb;border-radius:10px;background:#f0f9ff">
+      <div class="entry-header">
+        <div class="entry-title">── Entry 2 (Breakout) ──</div>
+        <span class="pill pill-blue">WATCHING — ABOVE PIVOT</span>
+      </div>
+      <div class="entry-grid" style="margin-bottom:14px">
+        <div class="entry-stat"><div class="e-label">Trigger</div><div class="e-val" style="color:var(--blue)">$245.85</div></div>
+        <div class="entry-stat"><div class="e-label">Stop Loss</div><div class="e-val" style="color:var(--red)">$237.29</div></div>
+        <div class="entry-stat"><div class="e-label">Risk %</div><div class="e-val" style="color:var(--amber)">3.5%</div></div>
+        <div class="entry-stat"><div class="e-label">Vol Required</div><div class="e-val" style="font-size:13px">≥1.5× 50-day avg</div></div>
+        <div class="entry-stat"><div class="e-label">Pivot Level</div><div class="e-val" style="font-size:13px">$244.63</div></div>
+        <div class="entry-stat"><div class="e-label">% to Trigger</div><div class="e-val" style="font-size:13px;color:var(--blue)">+7.4% from current</div></div>
+      </div>
+      <div style="background:#dbeafe;border-radius:6px;padding:10px 14px;font-size:12px;color:#1e40af">
+        <strong>Position Sizing Example ($500 risk):</strong> 58 shares @ $245.85 = ~$14,359 position value | Hard stop from E2: $227.41 (-7.5% from entry)
+      </div>
+    </div>
+
+    <!-- Stop Levels -->
+    <div style="background:var(--bg);border-radius:8px;padding:16px 18px;margin-bottom:16px">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:12px">Stop Loss Reference Levels</div>
+      <div class="grid4">
+        <div class="entry-stat"><div class="e-label">EMA 10</div><div class="e-val" style="font-size:15px;color:var(--red)">$223.62</div><div class="sub" style="font-size:11px;color:var(--muted)">2.1% below current</div></div>
+        <div class="entry-stat"><div class="e-label">EMA 21</div><div class="e-val" style="font-size:15px;color:var(--red)">$223.69</div><div class="sub" style="font-size:11px;color:var(--muted)">2.1% below current</div></div>
+        <div class="entry-stat"><div class="e-label">SMA 50</div><div class="e-val" style="font-size:15px;color:var(--red)">$225.94</div><div class="sub" style="font-size:11px;color:var(--muted)">1.1% below current</div></div>
+        <div class="entry-stat"><div class="e-label">Primary Support</div><div class="e-val" style="font-size:15px;color:var(--amber)">$226.96</div><div class="sub" style="font-size:11px;color:var(--muted)">0.6% below current</div></div>
+      </div>
+      <div style="margin-top:10px;font-size:12px;color:var(--green)">Trend recommendation (if in position): <strong>HOLD</strong> — Trend is healthy, price above all key moving averages.</div>
+    </div>
+
+    <!-- Intuition -->
+    <div class="intuition">
+      <p><strong>What the price action is telling you:</strong> LRCX completed a sharp V-shaped correction from its base high of $244.63 (Feb 16) to $199.09 (Mar 2) — a clean -18.6% drawdown over 5 weeks that tested both conviction and liquidity. The stock then posted a notable upside reversal on March 19, closing near the high of its range at 94.3% of the day's bar — classic behaviour of a stock shaking out weak hands and finding institutional support before a potential relaunch toward the pivot.</p>
+      <p><strong>What the RS line at its 52-week high means:</strong> Despite the recent price pullback, LRCX's RS line is hovering near its 52-week high. This is one of the most powerful signals in stage analysis — it tells you that relative to the market, LRCX barely flinched. Institutions used the market weakness to add, not reduce. Stocks breaking out with RS already at highs tend to be the true leaders of the next move.</p>
+      <p><strong>Why the entry makes structural sense:</strong> Entry 1 at $235.14 sits roughly midway between current price and the pivot. A trigger here confirms that buyers are willing to pay up, validating the upside reversal day. The stop at $226.96 (primary support) is tight at 3.5% risk — not a wide guess, but the actual structural level where the thesis is invalidated. Entry 2 at $245.85 is the classic breakout entry: above the prior base high, ideally on 1.5× average volume, confirming institutional demand.</p>
+      <p><strong>What needs to happen for this to work:</strong> Price needs to hold above the cluster of moving averages (EMA10/21/SMA50 all near $223–$226) and build tightness over the next 1–3 weeks. Volume should dry up further on down days (currently at 57.5% — close to the 60% pass threshold). Then a gap-up or power day through $235 → $244 on heavy volume would be the cleanest trigger.</p>
+      <p><strong>What kills the trade:</strong> A close below $226.96 (primary support) or, worse, a break back below $213 (next structural support) would signal that the base is failing. Given earnings on April 22–29, a failed breakout attempt before the report carries additional risk of a gap-down. If holding through earnings, reduce size or hedge.</p>
+    </div>
+  </div>
+
+  <!-- ═══ 7. RISK FACTORS ═══ -->
+  <div class="section">
+    <div class="section-title">7 · Risk Factors &amp; Invalidation Conditions</div>
+    <ul class="risk-list">
+      <li><strong>Earnings binary event (April 22–29, 2026):</strong> Next report is ~5–6 weeks away. Q3 guidance calls for $5.7B revenue and EPS of $1.35. A miss or cautious WFE outlook could gap the stock down 10–15%, especially given the elevated P/E of ~48×.</li>
+      <li><strong>WFE cyclicality &amp; China exposure:</strong> Wafer Fab Equipment spending is notoriously cyclical. Management raised 2026 WFE outlook to $135B but cited clean-room capacity constraints. Any reversal in AI capex spend or renewed export control tightening on China (a material revenue contributor) could compress estimates rapidly.</li>
+      <li><strong>Base is only 5 weeks old — minimum length:</strong> A valid VCP base typically benefits from 6–10+ weeks of contraction. At 5 weeks, this base is at the theoretical minimum. A few more weeks of constructive action would significantly strengthen the setup quality.</li>
+      <li><strong>Volume dry-up incomplete:</strong> Volume dry-up at 57.5% sits just below the 60% passing threshold, and VCP swings show null values — the coil has not fully tightened. This is the setup's primary technical weakness. Watch for further volume contraction in coming days.</li>
+      <li><strong>Elevated VIX (26.8) &amp; market volatility:</strong> A VIX above 25 materially increases breakout failure rates. Even strong setups can be overwhelmed by broad market selling. Sizing conservatively (half position on E1, add on breakout confirmation) is prudent in this environment.</li>
+    </ul>
+    <div style="margin-top:16px;padding:12px 16px;background:var(--blue-bg);border-radius:8px;font-size:13px;color:#1e40af">
+      <strong>Overall thesis:</strong> LRCX is a high-quality Stage 2 leader with exceptional fundamentals, RS at 52-week highs, and a fresh upside reversal priming signal. The setup scores 9/11 — two points short of ACTIONABLE status primarily due to the base being only at minimum length and volume not fully dried up. The right move is to place it on active watch, set alerts at $235.14 (E1) and $245.85 (E2), and let the base mature for another 1–2 weeks before committing capital.
+    </div>
+  </div>
+
+  <div style="text-align:center;font-size:11px;color:#94a3b8;margin-top:30px;padding-top:16px;border-top:1px solid var(--border)">
+    Generated March 20, 2026 · Data from MCP stock tools, web research &amp; Anthropic AI synthesis · Not financial advice. For informational purposes only.
+  </div>
+
+</div>
+</body>
+</html>

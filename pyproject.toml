@@ -19,6 +19,8 @@ dependencies = [
     "xlsxwriter==3.1.9",
     "fastmcp",
     "tqdm",
+    "vectorbt>=0.28.4",
+    "tabulate>=0.10.0",
 ]
 
 [tool.hatch.build.targets.wheel]

@@ -13,6 +13,7 @@ try:
     from agents.combined_agent.combined import analyze_stock, analyze_multiple_stocks
     from agents.fundamental_analysis_agent.fundamental_analysis import FundamentalAnalysis
     from agents.technical_analysis_agent.technical_analysis import TechnicalAnalysis
+    from agents.base_breakout_strategy.advanced_base_breakout import AdvancedBaseBreakoutAnalyzer
 except ImportError as e:
     print(f"Error importing agents: {e}")
     sys.exit(1)
@@ -78,6 +79,33 @@ async def get_technical_analysis(ticker: str) -> str:
         
     result = await t_an.complete_technical_analysis(df)
     return json.dumps(result, indent=2, default=str)
+
+@mcp.tool()
+def get_base_breakout_analysis(ticker: str) -> str:
+    """
+    Perform an Advanced Base Breakout Strategy analysis for a single stock.
+    Returns a detailed JSON string with scores, technicals, and fundamental metrics.
+    
+    Args:
+        ticker: The stock ticker symbol.
+    """
+    analyzer = AdvancedBaseBreakoutAnalyzer()
+    result = analyzer.analyze(ticker)
+    return json.dumps(result, indent=2, default=str)
+
+@mcp.tool()
+def get_base_breakout_analysis_batch(tickers: List[str], max_workers: int = 5) -> str:
+    """
+    Perform Advanced Base Breakout Strategy analysis for multiple stocks in parallel.
+    Returns a JSON string containing a list of analysis results.
+    
+    Args:
+        tickers: List of stock ticker symbols.
+        max_workers: Maximum number of parallel threads (default: 5).
+    """
+    analyzer = AdvancedBaseBreakoutAnalyzer(max_workers=max_workers)
+    results = analyzer.analyze_batch(tickers)
+    return json.dumps(results, indent=2, default=str)
 
 if __name__ == "__main__":
     # Run the server using stdio transport
