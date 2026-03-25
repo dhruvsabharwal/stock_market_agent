@@ -135,6 +135,7 @@ class AdvancedBaseBreakoutAnalyzer:
 
                 info = t.info or {}
                 financials = t.quarterly_financials
+                annual_financials = t.income_stmt   # annual data for multi-year CAGR
 
             except Exception as e:
                 raise ValueError(f"YFinance Error for {ticker}: {str(e)}")
@@ -154,7 +155,7 @@ class AdvancedBaseBreakoutAnalyzer:
         stock_daily['EMA21']      = stock_daily['Close'].ewm(span=21, adjust=False).mean()
         stock_daily['SMA50']      = stock_daily['Close'].rolling(50).mean()
 
-        return stock_weekly, spy_weekly, stock_daily, info, financials
+        return stock_weekly, spy_weekly, stock_daily, info, financials, annual_financials
 
 # ──────────────────────────────────────────────────────────────────────────────
 # 3. Section Analysis Functions
@@ -179,7 +180,8 @@ class AdvancedBaseBreakoutAnalyzer:
                                "Reduce position sizing. Do not chase Entry 2 without exceptional volume."
         }
 
-    def _analyze_fundamentals(self, info: dict, financials: pd.DataFrame) -> tuple[dict, int]:
+    def _analyze_fundamentals(self, info: dict, financials: pd.DataFrame,
+                              annual_financials: pd.DataFrame) -> tuple[dict, int]:
         """Returns (result_dict, score_points)."""
         score = 0
         res = {
@@ -187,7 +189,8 @@ class AdvancedBaseBreakoutAnalyzer:
             "rev_growth_yoy":  None,
             "net_margin_pct":  None,
             "gross_margin_pct": None,
-            "eps_5yr_cagr":    None,
+            "eps_3yr_cagr":    None,   # computed from annual income_stmt, not info dict
+            "eps_3yr_cagr_years": None, # actual number of years used (2 or 3)
             "margin_pass":     False,
             "eps_pass":        False,
             "rev_pass":        False,
@@ -242,18 +245,40 @@ class AdvancedBaseBreakoutAnalyzer:
                     threshold = 15 if is_tech else 8
                     res['margin_pass'] = (margin is not None and margin >= threshold)
 
-            # 5yr EPS CAGR
-            eg = info.get('earningsGrowth')
-            if eg is not None:
-                cagr = safe_round(eg * 100, 1)
-                res['eps_5yr_cagr'] = cagr
-                if (res['eps_growth_yoy'] is not None and res['eps_growth_yoy'] < 0
-                        and cagr is not None and cagr >= 15):
-                    res['data_quality'] = "DISTORTED"
-                    res['distortion_note'] = (
-                        f"YoY EPS negative ({res['eps_growth_yoy']}%) but 5yr CAGR is "
-                        f"{cagr}% — likely distorted by one-off items. Use 5yr CAGR as primary signal."
-                    )
+            # True multi-year EPS CAGR from annual income statement.
+            # annual_financials columns are sorted most-recent-first.
+            # We prefer 3yr CAGR (needs indices 0 and 3), fall back to 2yr (indices 0 and 2).
+            # CAGR is undefined when the base year EPS is negative — leave as None in that case.
+            try:
+                if annual_financials is not None and not annual_financials.empty:
+                    for label in ['Diluted EPS', 'Basic EPS']:
+                        ann_rows = [i for i in annual_financials.index if label.lower() in i.lower()]
+                        if ann_rows:
+                            ann_eps = annual_financials.loc[ann_rows[0]].dropna()
+                            for years in (3, 2):
+                                if len(ann_eps) > years:
+                                    eps_now  = float(ann_eps.iloc[0])
+                                    eps_base = float(ann_eps.iloc[years])
+                                    # CAGR undefined if base is zero or negative
+                                    if eps_base > 0 and eps_now is not None:
+                                        cagr_raw = (eps_now / eps_base) ** (1.0 / years) - 1
+                                        cagr = safe_round(cagr_raw * 100, 1)
+                                        res['eps_3yr_cagr']       = cagr
+                                        res['eps_3yr_cagr_years'] = years
+                                    break
+                            break
+            except Exception:
+                pass  # CAGR stays None — not a fatal error
+
+            # Distortion detection: recent quarter looks bad but long-term trend is strong
+            if (res['eps_growth_yoy'] is not None and res['eps_growth_yoy'] < 0
+                    and res['eps_3yr_cagr'] is not None and res['eps_3yr_cagr'] >= 15):
+                res['data_quality'] = "DISTORTED"
+                res['distortion_note'] = (
+                    f"YoY EPS negative ({res['eps_growth_yoy']}%) but "
+                    f"{res['eps_3yr_cagr_years']}yr CAGR is {res['eps_3yr_cagr']}% "
+                    f"— likely distorted by one-off items. Use multi-year CAGR as primary signal."
+                )
 
         except Exception as e:
             res['data_quality'] = "MISSING"
@@ -370,29 +395,33 @@ class AdvancedBaseBreakoutAnalyzer:
         base_high_idx = None
 
         try:
-            wc = stock_weekly['Close']
-            lookback = min(54, len(wc))
-            
-            # Use max().item() or similar to ensure scalar
-            b_high_val = wc.iloc[-lookback:].max()
+            wh = stock_weekly['High']
+            wl = stock_weekly['Low']
+            lookback = min(54, len(wh))
+
+            # Bug 1 fix: use intraday High for base_high (true resistance ceiling)
+            b_high_val = wh.iloc[-lookback:].max()
             base_high  = float(b_high_val) if not isinstance(b_high_val, pd.Series) else float(b_high_val.iloc[0])
-            base_high_idx = wc.iloc[-lookback:].idxmax()
+            base_high_idx = wh.iloc[-lookback:].idxmax()
             if isinstance(base_high_idx, pd.Series):
                 base_high_idx = base_high_idx.iloc[0]
 
-            post = wc.loc[base_high_idx:]
-            if post.empty:
+            post_high = wh.loc[base_high_idx:]
+            post_low  = wl.loc[base_high_idx:]
+            if post_high.empty:
                 return res, score, None
 
-            b_low_val = post.min()
+            # Bug 1 fix: use intraday Low for base_low (deepest trough of the base)
+            b_low_val = post_low.min()
             base_low  = float(b_low_val) if not isinstance(b_low_val, pd.Series) else float(b_low_val.iloc[0])
             depth_pct = safe_pct(base_low, base_high)
-            length    = len(post)
+            length    = len(post_high)
 
             res['base_high']      = safe_round(base_high, 2)
             res['base_high_date'] = base_high_idx
             res['base_low']       = safe_round(base_low, 2)
-            res['base_low_date']  = post.idxmin()
+            base_low_date = post_low.idxmin()
+            res['base_low_date']  = base_low_date.iloc[0] if isinstance(base_low_date, pd.Series) else base_low_date
             res['depth_pct']      = depth_pct
             res['length_weeks']   = length
             res['pass_depth']     = depth_pct is not None and depth_pct >= -50
@@ -405,16 +434,21 @@ class AdvancedBaseBreakoutAnalyzer:
                 elif -35 <= depth_pct <= -10 and length >= 5:
                     res['pattern'] = "VCP"
 
-            n = len(post)
+            # Bug 2 fix: VCP swings use High max → Low min per segment (true range)
+            # Bug 4 fix: guard against None from safe_pct before multiplying by -1
+            n = len(post_high)
             if n >= 6:
-                segs = [post.iloc[:n//3], post.iloc[n//3:2*n//3], post.iloc[2*n//3:]]
+                seg_indices = [
+                    post_high.index[:n//3],
+                    post_high.index[n//3:2*n//3],
+                    post_high.index[2*n//3:]
+                ]
                 swings = []
-                for seg in segs:
-                    s_max = seg.max()
-                    s_min = seg.min()
-                    hi = float(s_max) if not isinstance(s_max, pd.Series) else float(s_max.iloc[0])
-                    lo = float(s_min) if not isinstance(s_min, pd.Series) else float(s_min.iloc[0])
-                    swings.append(safe_round(safe_pct(lo, hi) * -1, 1))
+                for idx in seg_indices:
+                    hi = float(wh.loc[idx].max())
+                    lo = float(wl.loc[idx].min())
+                    pct = safe_pct(lo, hi)
+                    swings.append(safe_round(pct * -1 if pct is not None else None, 1))
                 res['vcp_swings']      = swings
                 res['vcp_contracting'] = (None not in swings
                                           and swings[2] < swings[1] < swings[0])
@@ -571,7 +605,7 @@ class AdvancedBaseBreakoutAnalyzer:
         return res, score
 
     def _find_support_levels(self, stock_daily: pd.DataFrame, base_high_idx, current_price: float) -> dict:
-        res = {"primary_support": None}
+        res = {"all_levels": [], "primary_support": None}
         if base_high_idx is None:
             return res
         try:
@@ -587,6 +621,7 @@ class AdvancedBaseBreakoutAnalyzer:
 
             levels = sorted(seen)
             below = [s for s in levels if s < current_price]
+            res['all_levels']      = levels
             res['primary_support'] = max(below) if below else None
 
         except Exception:
@@ -819,38 +854,31 @@ class AdvancedBaseBreakoutAnalyzer:
         ticker = ticker.upper()
         try:
             # 1. Load Data
-            stock_weekly, spy_weekly, stock_daily, info, financials = self._load_data(ticker)
+            stock_weekly, spy_weekly, stock_daily, info, financials, annual_financials = self._load_data(ticker)
 
             # 2. Market Context
             mkt = self._market_context(spy_weekly)
 
             # 3. Fundamentals
-            fund, fs = self._analyze_fundamentals(info, financials)
+            fund, fs = self._analyze_fundamentals(info, financials, annual_financials)
             score = fs
 
             # 4. Technical Sections
             curr_price = float(stock_daily['Close'].iloc[-1])
-            
-            # Temporary breakout check for RS calculation logic
-            # Using tail(50) to find a recent base high as a pivot
-            p_max = stock_weekly.tail(50)['High'].max()
-            temp_pivot = float(p_max) if not isinstance(p_max, pd.Series) else float(p_max.iloc[0])
-            already_bo = curr_price > temp_pivot
 
-            rs, rss     = self._calculate_rs(stock_weekly, spy_weekly, temp_pivot, already_bo)
-            score      += rss
+            s2, s2s      = self._stage2_check(stock_weekly, stock_daily)
+            score       += s2s
 
-            s2, s2s     = self._stage2_check(stock_weekly, stock_daily)
-            score      += s2s
-
+            # Bug 3 fix: base_analysis runs first so pivot_price is the true base high
+            # already_bo is then computed once and passed consistently to all sections
             base, bs, bh = self._base_analysis(stock_weekly)
             score       += bs
 
             pivot_price = base['base_high']
-            
-            # Recalculate breakout status with actual base high
-            if pivot_price:
-                already_bo = curr_price > pivot_price
+            already_bo  = (pivot_price is not None and curr_price > pivot_price)
+
+            rs, rss      = self._calculate_rs(stock_weekly, spy_weekly, pivot_price, already_bo)
+            score       += rss
 
             vol, vs      = self._volume_analysis(stock_weekly, bh)
             score       += vs
