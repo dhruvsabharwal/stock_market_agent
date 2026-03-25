@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Coil — Seller Exhaustion Explainer</title>
+<style>
+  body {
+    margin: 0;
+    background: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 32px 16px;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #e5e3dc;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 720px;
+    width: 100%;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  h2 {
+    margin: 0 0 4px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #1a1a18;
+  }
+  p.sub {
+    margin: 0 0 20px;
+    font-size: 13px;
+    color: #73726c;
+  }
+  svg { display: block; width: 100%; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #1a1a18; }
+    .card { background: #242422; border-color: #3a3a38; }
+    h2 { color: #e8e6df; }
+    p.sub { color: #9c9a92; }
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>The Coil — How Seller Exhaustion Works</h2>
+  <p class="sub">Base breakout strategy · Three acts of accumulation before the launch</p>
+
+<svg viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Act labels -->
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" x="105" y="22" text-anchor="middle" fill="#73726c">Act 1 — shakeout</text>
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" x="310" y="22" text-anchor="middle" fill="#73726c">Act 2 — quiet accumulation</text>
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" x="570" y="22" text-anchor="middle" fill="#73726c">Act 3 — launch</text>
+
+  <!-- Dividers -->
+  <line x1="195" y1="16" x2="195" y2="340" stroke="#e5e3dc" stroke-width="0.5" stroke-dasharray="3 3"/>
+  <line x1="460" y1="16" x2="460" y2="340" stroke="#e5e3dc" stroke-width="0.5" stroke-dasharray="3 3"/>
+
+  <!-- Price line: prior uptrend -->
+  <polyline points="30,290 55,270 80,252 105,235 130,220 155,208 175,200" fill="none" stroke="#1D9E75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Drop (left wall) -->
+  <path d="M175,200 Q185,225 195,255 Q205,278 215,295" fill="none" stroke="#D85A30" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- VCP contracting swings -->
+  <path d="M215,295 Q230,270 248,258 Q262,250 278,255 Q292,262 305,275 Q315,285 320,290" fill="none" stroke="#378ADD" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M320,290 Q332,275 345,268 Q357,263 368,266 Q378,270 385,276 Q390,280 393,283" fill="none" stroke="#378ADD" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M393,283 Q400,276 408,272 Q415,270 422,271 Q428,273 432,276 Q435,278 437,280" fill="none" stroke="#378ADD" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M437,280 Q441,277 446,275 Q450,274 454,274 Q457,275 460,276" fill="none" stroke="#534AB7" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Breakout surge -->
+  <polyline points="460,276 478,258 498,235 520,210 545,182 570,155 600,125" fill="none" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Pivot line -->
+  <line x1="175" y1="200" x2="640" y2="200" stroke="#EF9F27" stroke-width="0.8" stroke-dasharray="5 3" opacity="0.7"/>
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" x="642" y="204" fill="#BA7517">Pivot</text>
+
+  <!-- Seller crowd (Act 1) -->
+  <circle cx="90"  cy="150" r="7" fill="#D85A30" opacity="0.9"/>
+  <circle cx="115" cy="145" r="7" fill="#D85A30" opacity="0.9"/>
+  <circle cx="140" cy="152" r="7" fill="#D85A30" opacity="0.9"/>
+  <circle cx="103" cy="162" r="7" fill="#D85A30" opacity="0.85"/>
+  <circle cx="128" cy="158" r="7" fill="#D85A30" opacity="0.85"/>
+  <circle cx="80"  cy="163" r="7" fill="#D85A30" opacity="0.8"/>
+  <circle cx="152" cy="160" r="7" fill="#D85A30" opacity="0.8"/>
+  <circle cx="90"  cy="173" r="5" fill="#D85A30" opacity="0.6"/>
+  <circle cx="115" cy="170" r="5" fill="#D85A30" opacity="0.6"/>
+  <circle cx="140" cy="172" r="5" fill="#D85A30" opacity="0.55"/>
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" x="116" y="190" text-anchor="middle" fill="#993C1D">many sellers</text>
+  <line x1="116" y1="193" x2="116" y2="205" stroke="#D85A30" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+  <!-- Institution box (Act 2) -->
+  <rect x="230" y="310" width="110" height="42" rx="8" fill="#EEF4FB" stroke="#0C447C" stroke-width="0.8"/>
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="500" x="285" y="328" text-anchor="middle" fill="#0C447C">Institution</text>
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" x="285" y="344" text-anchor="middle" fill="#185FA5">buying quietly</text>
+
+  <!-- Dwindling sellers -->
+  <circle cx="220" cy="270" r="5" fill="#D85A30" opacity="0.5"/>
+  <circle cx="215" cy="282" r="4" fill="#D85A30" opacity="0.35"/>
+  <circle cx="218" cy="294" r="3" fill="#D85A30" opacity="0.2"/>
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" x="210" y="268" text-anchor="end" fill="#73726c">weak sellers</text>
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" x="210" y="280" text-anchor="end" fill="#73726c">dwindling</text>
+  <line x1="222" y1="294" x2="228" y2="322" stroke="#D85A30" stroke-width="0.8" stroke-dasharray="2 2" marker-end="url(#arrow)"/>
+
+  <!-- VCP contraction brackets -->
+  <line x1="215" y1="308" x2="320" y2="308" stroke="#73726c" stroke-width="0.5"/>
+  <line x1="215" y1="305" x2="215" y2="311" stroke="#73726c" stroke-width="0.5"/>
+  <line x1="320" y1="305" x2="320" y2="311" stroke="#73726c" stroke-width="0.5"/>
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" x="268" y="320" text-anchor="middle" fill="#73726c">−18%</text>
+
+  <line x1="322" y1="308" x2="393" y2="308" stroke="#73726c" stroke-width="0.5"/>
+  <line x1="322" y1="305" x2="322" y2="311" stroke="#73726c" stroke-width="0.5"/>
+  <line x1="393" y1="305" x2="393" y2="311" stroke="#73726c" stroke-width="0.5"/>
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" x="358" y="320" text-anchor="middle" fill="#73726c">−9%</text>
+
+  <line x1="395" y1="308" x2="460" y2="308" stroke="#73726c" stroke-width="0.5"/>
+  <line x1="395" y1="305" x2="395" y2="311" stroke="#73726c" stroke-width="0.5"/>
+  <line x1="460" y1="305" x2="460" y2="311" stroke="#73726c" stroke-width="0.5"/>
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" x="428" y="320" text-anchor="middle" fill="#73726c">−3%</text>
+
+  <!-- Act 3 labels -->
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" x="530" y="245" text-anchor="middle" fill="#0F6E56">no sellers left</text>
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" x="530" y="258" text-anchor="middle" fill="#0F6E56">any buying = gap up</text>
+  <line x1="530" y1="262" x2="530" y2="218" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Volume bars -->
+  <!-- Act 1: panic vol -->
+  <rect x="155" y="365" width="8" height="28" rx="1" fill="#D85A30" opacity="0.55"/>
+  <rect x="167" y="362" width="8" height="31" rx="1" fill="#D85A30" opacity="0.6"/>
+  <rect x="179" y="358" width="8" height="35" rx="1" fill="#D85A30" opacity="0.65"/>
+  <!-- Act 2: drying up -->
+  <rect x="215" y="373" width="7" height="20" rx="1" fill="#378ADD" opacity="0.35"/>
+  <rect x="228" y="376" width="7" height="17" rx="1" fill="#378ADD" opacity="0.3"/>
+  <rect x="241" y="378" width="7" height="15" rx="1" fill="#378ADD" opacity="0.27"/>
+  <rect x="254" y="380" width="7" height="13" rx="1" fill="#378ADD" opacity="0.24"/>
+  <rect x="267" y="381" width="7" height="12" rx="1" fill="#378ADD" opacity="0.22"/>
+  <rect x="280" y="382" width="7" height="11" rx="1" fill="#378ADD" opacity="0.20"/>
+  <rect x="293" y="383" width="7" height="10" rx="1" fill="#378ADD" opacity="0.19"/>
+  <rect x="306" y="383" width="7" height="10" rx="1" fill="#378ADD" opacity="0.18"/>
+  <rect x="319" y="384" width="7" height="9"  rx="1" fill="#378ADD" opacity="0.17"/>
+  <rect x="332" y="384" width="7" height="8"  rx="1" fill="#378ADD" opacity="0.16"/>
+  <rect x="345" y="385" width="7" height="7"  rx="1" fill="#378ADD" opacity="0.15"/>
+  <rect x="358" y="385" width="7" height="7"  rx="1" fill="#378ADD" opacity="0.14"/>
+  <rect x="371" y="386" width="7" height="6"  rx="1" fill="#378ADD" opacity="0.13"/>
+  <rect x="384" y="386" width="7" height="5"  rx="1" fill="#378ADD" opacity="0.12"/>
+  <rect x="397" y="387" width="7" height="5"  rx="1" fill="#378ADD" opacity="0.11"/>
+  <rect x="410" y="387" width="7" height="4"  rx="1" fill="#534AB7" opacity="0.30"/>
+  <rect x="423" y="387" width="7" height="4"  rx="1" fill="#534AB7" opacity="0.28"/>
+  <rect x="436" y="388" width="7" height="3"  rx="1" fill="#534AB7" opacity="0.25"/>
+  <rect x="449" y="388" width="7" height="3"  rx="1" fill="#534AB7" opacity="0.22"/>
+  <!-- Act 3: demand flood -->
+  <rect x="466" y="358" width="9" height="35" rx="1" fill="#1D9E75" opacity="0.7"/>
+  <rect x="480" y="350" width="9" height="43" rx="1" fill="#1D9E75" opacity="0.8"/>
+  <rect x="494" y="345" width="9" height="48" rx="1" fill="#1D9E75" opacity="0.9"/>
+
+  <!-- Vol labels -->
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" x="172" y="402" text-anchor="middle" fill="#993C1D">panic selling</text>
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" x="338" y="402" text-anchor="middle" fill="#73726c">volume evaporates — no sellers left</text>
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" x="485" y="402" text-anchor="middle" fill="#0F6E56">demand flood</text>
+
+  <!-- Bottom caption -->
+  <text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" x="340" y="440" text-anchor="middle" fill="#73726c">The coil: each pullback smaller → less resistance → spring compressed tighter → any demand = explosive release</text>
+</svg>
+
+</div>
+</body>
+</html>

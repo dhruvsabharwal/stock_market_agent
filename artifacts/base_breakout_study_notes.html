@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Base Breakout Strategy — Complete Study Notes</title>
+<style>
+:root {
+  --bg: #fafaf8; --bg2: #f2f0ea; --bg3: #e8e6df;
+  --card: #ffffff; --border: #dedad0; --border2: #c8c4ba;
+  --text: #1a1a18; --text2: #4a4a44; --text3: #7a7a72;
+  --green: #0F6E56; --green-l: #E1F5EE; --green-m: #1D9E75;
+  --amber: #854F0B; --amber-l: #FAEEDA; --amber-m: #EF9F27;
+  --red: #A32D2D; --red-l: #FCEBEB; --red-m: #E24B4A;
+  --blue: #185FA5; --blue-l: #E6F1FB; --blue-m: #378ADD;
+  --purple: #3C3489; --purple-l: #EEEDFE; --purple-m: #7F77DD;
+  --teal: #0F6E56; --teal-l: #E1F5EE;
+  --shadow: 0 1px 3px rgba(0,0,0,.07), 0 0 0 1px rgba(0,0,0,.04);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; font-size: 15px; }
+
+/* Layout */
+.sidebar { position: fixed; top: 0; left: 0; width: 240px; height: 100vh; background: var(--card); border-right: 1px solid var(--border); overflow-y: auto; padding: 20px 0; z-index: 100; }
+.content { margin-left: 240px; max-width: 860px; padding: 40px 48px 80px; }
+@media(max-width:800px) { .sidebar{display:none;} .content{margin-left:0;padding:24px 20px 60px;} }
+
+/* Sidebar */
+.sidebar-title { font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--text3); padding: 0 20px 8px; }
+.sidebar a { display: block; padding: 5px 20px; font-size: 13px; color: var(--text2); text-decoration: none; border-left: 2px solid transparent; transition: all .1s; }
+.sidebar a:hover { color: var(--text); background: var(--bg2); }
+.sidebar a.active { color: var(--blue); border-left-color: var(--blue); background: var(--blue-l); font-weight: 500; }
+.sidebar .section-head { font-size: 10px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--text3); padding: 14px 20px 4px; }
+.sidebar-brand { padding: 0 20px 20px; border-bottom: 1px solid var(--border); margin-bottom: 12px; }
+.sidebar-brand .name { font-size: 14px; font-weight: 600; }
+.sidebar-brand .sub { font-size: 11px; color: var(--text3); }
+
+/* Typography */
+h1 { font-size: 28px; font-weight: 600; letter-spacing: -.02em; margin-bottom: 8px; }
+h2 { font-size: 20px; font-weight: 600; margin: 40px 0 16px; padding-top: 8px; border-top: 1px solid var(--border); letter-spacing: -.01em; }
+h2:first-child { border-top: none; margin-top: 0; }
+h3 { font-size: 15px; font-weight: 600; margin: 24px 0 10px; color: var(--text); }
+h4 { font-size: 13px; font-weight: 600; margin: 16px 0 8px; color: var(--text2); text-transform: uppercase; letter-spacing: .04em; }
+p { margin-bottom: 12px; color: var(--text2); }
+strong { color: var(--text); font-weight: 600; }
+code { font-family: 'SF Mono', Monaco, monospace; font-size: 12px; background: var(--bg2); padding: 1px 5px; border-radius: 3px; color: var(--purple); }
+
+/* Callout boxes */
+.callout { border-radius: 8px; padding: 14px 16px; margin: 16px 0; border-left: 3px solid; }
+.callout.green { background: var(--green-l); border-color: var(--green-m); }
+.callout.amber { background: var(--amber-l); border-color: var(--amber-m); }
+.callout.red { background: var(--red-l); border-color: var(--red-m); }
+.callout.blue { background: var(--blue-l); border-color: var(--blue-m); }
+.callout.purple { background: var(--purple-l); border-color: var(--purple-m); }
+.callout .label { font-size: 10px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; margin-bottom: 4px; }
+.callout.green .label { color: var(--green); }
+.callout.amber .label { color: var(--amber); }
+.callout.red .label { color: var(--red); }
+.callout.blue .label { color: var(--blue); }
+.callout.purple .label { color: var(--purple); }
+.callout p { margin: 0; font-size: 13px; line-height: 1.55; }
+.callout p + p { margin-top: 6px; }
+
+/* Math box */
+.math-box { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; margin: 14px 0; font-family: 'SF Mono', Monaco, monospace; font-size: 13px; line-height: 1.8; }
+.math-box .eq { color: var(--purple); font-weight: 600; }
+.math-box .comment { color: var(--text3); font-style: italic; font-family: inherit; }
+
+/* Bullet lists */
+.bullets { list-style: none; padding: 0; margin: 12px 0; }
+.bullets li { display: flex; gap: 10px; padding: 5px 0; font-size: 14px; color: var(--text2); border-bottom: 1px solid var(--bg3); align-items: flex-start; }
+.bullets li:last-child { border-bottom: none; }
+.bullets li .icon { flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; margin-top: 1px; }
+.bullets li.pass .icon { background: var(--green-l); color: var(--green); }
+.bullets li.info .icon { background: var(--blue-l); color: var(--blue); }
+.bullets li.warn .icon { background: var(--amber-l); color: var(--amber); }
+.bullets li.fail .icon { background: var(--red-l); color: var(--red); }
+
+/* Score/metric tables */
+.metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin: 14px 0; }
+.metric-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.metric-card .m-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--text3); margin-bottom: 4px; }
+.metric-card .m-val { font-size: 18px; font-weight: 600; }
+.metric-card .m-sub { font-size: 11px; color: var(--text3); margin-top: 2px; }
+.metric-card.g .m-val { color: var(--green); }
+.metric-card.a .m-val { color: var(--amber); }
+.metric-card.r .m-val { color: var(--red); }
+
+/* Threshold table */
+.thresh-table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13px; }
+.thresh-table th { text-align: left; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--text3); padding: 6px 10px; border-bottom: 1px solid var(--border); }
+.thresh-table td { padding: 8px 10px; border-bottom: 1px solid var(--bg3); vertical-align: top; }
+.thresh-table tr:last-child td { border-bottom: none; }
+.thresh-table .pass { color: var(--green); font-weight: 500; }
+.thresh-table .warn { color: var(--amber); font-weight: 500; }
+.thresh-table .fail { color: var(--red); }
+
+/* Charts */
+.chart-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin: 16px 0; box-shadow: var(--shadow); }
+.chart-label { font-size: 11px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 12px; }
+svg { display: block; width: 100%; }
+
+/* Stage diagram */
+.stage-row { display: flex; gap: 0; margin: 14px 0; overflow-x: auto; }
+.stage-box { flex: 1; min-width: 80px; padding: 12px 10px; text-align: center; border: 1px solid var(--border); font-size: 12px; }
+.stage-box:first-child { border-radius: 8px 0 0 8px; }
+.stage-box:last-child { border-radius: 0 8px 8px 0; }
+.stage-box .num { font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; opacity: .7; margin-bottom: 3px; }
+.stage-box .name { font-weight: 600; }
+.stage-box.s1 { background: var(--red-l); border-color: #f0b0b0; }
+.stage-box.s2 { background: var(--green-l); border-color: #a0d8c4; }
+.stage-box.s3 { background: var(--amber-l); border-color: #f0c870; }
+.stage-box.s4 { background: var(--bg3); }
+
+/* Score tracker */
+.score-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin: 16px 0; }
+.score-item { display: flex; align-items: center; gap: 10px; padding: 6px 0; border-bottom: 1px solid var(--bg3); font-size: 13px; }
+.score-item:last-child { border-bottom: none; }
+.score-item .n { width: 22px; height: 22px; border-radius: 50%; background: var(--bg2); font-size: 10px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--text3); }
+.score-item .name { flex: 1; }
+.score-item .thresh { color: var(--text3); font-size: 12px; }
+.score-item.pass .n { background: var(--green-l); color: var(--green); }
+
+/* Pattern cards */
+.pattern-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin: 14px 0; }
+.pattern-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+.pattern-card .pc-name { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+.pattern-card .pc-tag { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 2px 7px; border-radius: 20px; display: inline-block; margin-bottom: 8px; }
+.pattern-card .pc-tag.e { background: var(--green-l); color: var(--green); }
+.pattern-card .pc-tag.c { background: var(--red-l); color: var(--red); }
+.pattern-card .pc-body { font-size: 12px; color: var(--text2); line-height: 1.5; }
+.pattern-card .pc-rule { display: flex; justify-content: space-between; font-size: 11px; padding: 3px 0; border-top: 1px solid var(--bg3); margin-top: 6px; }
+.pattern-card .pc-rule .lbl { color: var(--text3); }
+.pattern-card .pc-rule .val.g { color: var(--green); font-weight: 500; }
+.pattern-card .pc-rule .val.r { color: var(--red); font-weight: 500; }
+
+/* Section divider */
+.chapter { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin: 32px 0 20px; display: flex; align-items: center; gap: 14px; }
+.chapter .ch-num { font-size: 28px; font-weight: 700; color: var(--border2); flex-shrink: 0; width: 44px; text-align: center; }
+.chapter .ch-title { font-size: 18px; font-weight: 600; }
+.chapter .ch-sub { font-size: 13px; color: var(--text3); margin-top: 2px; }
+
+/* Checklist */
+.checklist { background: var(--bg2); border-radius: 8px; padding: 14px 16px; margin: 12px 0; }
+.cl-item { display: flex; align-items: flex-start; gap: 8px; padding: 5px 0; font-size: 13px; border-bottom: 1px solid var(--border); }
+.cl-item:last-child { border-bottom: none; }
+.cl-box { width: 16px; height: 16px; border: 1.5px solid var(--border2); border-radius: 3px; flex-shrink: 0; margin-top: 1px; }
+.cl-text { color: var(--text2); line-height: 1.4; }
+.cl-text strong { color: var(--text); }
+
+/* Quote */
+.quote { border-left: 3px solid var(--border2); padding: 10px 16px; margin: 14px 0; font-style: italic; color: var(--text2); font-size: 14px; }
+.quote .attr { font-style: normal; font-size: 12px; color: var(--text3); margin-top: 4px; }
+
+/* Scroll progress */
+#progress { position: fixed; top: 0; left: 0; height: 3px; background: var(--blue-m); z-index: 999; transition: width .1s; }
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<!-- SIDEBAR -->
+<nav class="sidebar">
+  <div class="sidebar-brand">
+    <div class="name">Base Breakout Strategy</div>
+    <div class="sub">Complete Study Notes</div>
+  </div>
+  <div class="sidebar-title">Contents</div>
+  <a href="#philosophy">1. Philosophy</a>
+  <a href="#market-cycle">2. Market Cycle & Stage 2</a>
+  <a href="#tigers">3. TIGERS Framework</a>
+  <a href="#rs-line">4. True Relative Strength</a>
+  <a href="#base-patterns">5. Base Patterns</a>
+  <a href="#vcp">6. VCP — The Coil</a>
+  <a href="#volume">7. Volume Analysis</a>
+  <a href="#tightness">8. Tightness & Priming</a>
+  <a href="#entry-patterns">9. Entry Patterns</a>
+  <a href="#entry-exits">10. Entry & Stop System</a>
+  <a href="#scoring">11. The 11-Point Scorecard</a>
+  <a href="#workflow">12. Weekly Workflow</a>
+  <a href="#maths">13. All the Maths</a>
+  <a href="#checklists">14. Quick Checklists</a>
+  <a href="#intuitions">15. Key Intuitions</a>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="content">
+
+<!-- ══════════════════════════════════════════════════════ -->
+<h1>Base Breakout Strategy</h1>
+<p style="font-size:14px;color:var(--text3);">Complete Study Notes · Distilled from conversation · Includes charts, maths, and intuition</p>
+
+<div class="quote">
+  "I started to realise that stock movements were not completely haphazard. They would oscillate fairly consistently between a low and a high point. The area which enclosed this up-and-down movement represented the box."
+  <div class="attr">— Nicolas Darvas</div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="chapter" id="philosophy">
+  <div class="ch-num">1</div>
+  <div><div class="ch-title">Core Philosophy</div><div class="ch-sub">Why this strategy works and what it's really about</div></div>
+</div>
+
+<h3>The Core Idea</h3>
+<p>Stocks move in trends, interrupted by periods of consolidation. The strategy finds stocks that are:</p>
+<ul class="bullets">
+  <li class="pass"><div class="icon">✓</div><div>In a confirmed uptrend (Stage 2)</div></li>
+  <li class="pass"><div class="icon">✓</div><div>Digesting gains in a constructive base (not breaking down)</div></li>
+  <li class="pass"><div class="icon">✓</div><div>Being quietly accumulated by institutions (volume signature)</div></li>
+  <li class="pass"><div class="icon">✓</div><div>Coiling tighter and tighter (VCP contraction)</div></li>
+  <li class="pass"><div class="icon">✓</div><div>About to break out with a specific catalyst or just the exhaustion of selling</div></li>
+</ul>
+
+<h3>The Kell Price Cycle</h3>
+<p>Every trending stock goes through this lifecycle around its moving averages:</p>
+<div class="stage-row">
+  <div class="stage-box s2"><div class="num">Stage A</div><div class="name">Base Building</div></div>
+  <div class="stage-box s2"><div class="num">Stage B</div><div class="name">The Breakout</div></div>
+  <div class="stage-box s2"><div class="num">Stage C</div><div class="name">EMA Pullback</div></div>
+  <div class="stage-box s3"><div class="num">Stage D</div><div class="name">Wedge Drop</div></div>
+  <div class="stage-box s1"><div class="num">Stage E</div><div class="name">Climax Top</div></div>
+</div>
+
+<div class="callout green">
+  <div class="label">Where we play</div>
+  <p>We enter at Stage A/B — during the base and at the breakout. We exit when Stage D/E signals appear. We never chase a climax run.</p>
+</div>
+
+<h3>Two Entry Types</h3>
+<div class="metric-grid">
+  <div class="metric-card g"><div class="m-label">Entry 1 — Early</div><div class="m-val">Inside base</div><div class="m-sub">Lower risk, needs priming signal</div></div>
+  <div class="metric-card a"><div class="m-label">Entry 2 — Breakout</div><div class="m-val">Above pivot</div><div class="m-sub">Higher conviction, needs volume</div></div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="chapter" id="market-cycle">
+  <div class="ch-num">2</div>
+  <div><div class="ch-title">Market Cycle & Stage 2</div><div class="ch-sub">Only trade stocks in the right phase of their cycle</div></div>
+</div>
+
+<h3>The Four Stages of a Stock</h3>
+<div class="chart-wrap">
+  <div class="chart-label">Stage Analysis — price vs 30-week SMA</div>
+  <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+        <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round"/>
+      </marker>
+    </defs>
+    <!-- Stage zones -->
+    <rect x="30" y="20" width="120" height="180" rx="4" fill="#FAEEDA" opacity="0.5"/>
+    <rect x="160" y="20" width="150" height="180" rx="4" fill="#E1F5EE" opacity="0.6"/>
+    <rect x="320" y="20" width="120" height="180" rx="4" fill="#FAEEDA" opacity="0.5"/>
+    <rect x="450" y="20" width="160" height="180" rx="4" fill="#FCEBEB" opacity="0.5"/>
+    <!-- Stage labels -->
+    <text x="90" y="38" text-anchor="middle" font-size="11" font-weight="600" fill="#854F0B" font-family="sans-serif">Stage 1</text>
+    <text x="90" y="52" text-anchor="middle" font-size="10" fill="#854F0B" font-family="sans-serif">Basing</text>
+    <text x="235" y="38" text-anchor="middle" font-size="11" font-weight="600" fill="#0F6E56" font-family="sans-serif">Stage 2 ← WE PLAY HERE</text>
+    <text x="235" y="52" text-anchor="middle" font-size="10" fill="#0F6E56" font-family="sans-serif">Advancing</text>
+    <text x="380" y="38" text-anchor="middle" font-size="11" font-weight="600" fill="#854F0B" font-family="sans-serif">Stage 3</text>
+    <text x="380" y="52" text-anchor="middle" font-size="10" fill="#854F0B" font-family="sans-serif">Topping</text>
+    <text x="530" y="38" text-anchor="middle" font-size="11" font-weight="600" fill="#A32D2D" font-family="sans-serif">Stage 4</text>
+    <text x="530" y="52" text-anchor="middle" font-size="10" fill="#A32D2D" font-family="sans-serif">Declining</text>
+    <!-- Price line -->
+    <polyline points="35,160 60,155 90,150 120,148 148,148 165,135 195,115 225,95 260,75 305,65 315,70 325,80 345,95 360,110 375,120 385,130 410,148 440,155 460,160 490,170 530,185 580,195" fill="none" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- 30w SMA -->
+    <polyline points="35,162 60,158 90,155 120,152 148,150 170,145 200,135 230,120 265,100 305,80 320,82 340,90 360,103 380,115 400,128 430,142 460,155 490,165 530,178 580,190" fill="none" stroke="#EF9F27" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <!-- Labels -->
+    <text x="560" y="183" font-size="10" fill="#EF9F27" font-family="sans-serif">30w SMA</text>
+  </svg>
+</div>
+
+<h3>Stage 2 Requirements — Both Must Be True</h3>
+<div class="math-box">
+  <span class="eq">Current Price > 30-week SMA</span> <span class="comment">// price is above the average</span><br>
+  <span class="eq">30w SMA[today] > 30w SMA[4 weeks ago]</span> <span class="comment">// the average itself is rising</span>
+</div>
+
+<table class="thresh-table">
+  <tr><th>Check</th><th>Pass</th><th>Warning</th><th>Fail</th></tr>
+  <tr><td>Price vs 30w SMA</td><td class="pass">Above</td><td class="warn">Within 5%</td><td class="fail">Below</td></tr>
+  <tr><td>30w SMA direction</td><td class="pass">Rising</td><td class="warn">Flat</td><td class="fail">Falling</td></tr>
+  <tr><td>% above 52w low</td><td class="pass">≥ 30%</td><td class="warn">15–30%</td><td class="fail">< 15%</td></tr>
+  <tr><td>% from 52w high</td><td class="pass">≤ 15%</td><td class="warn">15–25%</td><td class="fail">> 25%</td></tr>
+</table>
+
+<div class="callout red">
+  <div class="label">Hard Rule</div>
+  <p>If the stock is below its 30-week SMA — full stop. Do not analyse further. Do not enter. The trend is not confirmed.</p>
+</div>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="chapter" id="tigers">
+  <div class="ch-num">3</div>
+  <div><div class="ch-title">The TIGERS Framework</div><div class="ch-sub">Fundamental screening before you touch the chart</div></div>
+</div>
+
+<h3>T-I-G-E-R-S</h3>
+<table class="thresh-table">
+  <tr><th>Letter</th><th>Stands For</th><th>What to Look For</th><th>Minimum Threshold</th></tr>
+  <tr><td><strong style="color:var(--blue)">T</strong></td><td>Theme</td><td>Strong macro or sector growth theme driving the business</td><td>Clear tailwind narrative</td></tr>
+  <tr><td><strong style="color:var(--blue)">I</strong></td><td>Innovation</td><td>Disruptive product, service, or business model</td><td>Differentiated moat</td></tr>
+  <tr><td><strong style="color:var(--blue)">G</strong></td><td>Growth</td><td>Accelerating EPS and revenue</td><td>EPS ≥ 25% YoY, Rev ≥ 20% YoY</td></tr>
+  <tr><td><strong style="color:var(--blue)">E</strong></td><td>Edges</td><td>Gap-ups on earnings, resilience during corrections</td><td>At least 1 gap-up in 12 months</td></tr>
+  <tr><td><strong style="color:var(--blue)">R</strong></td><td>Relative Strength</td><td>RS line at or near 52-week high vs SPY</td><td>RS line not declining</td></tr>
+  <tr><td><strong style="color:var(--blue)">S</strong></td><td>Setup</td><td>Forming a valid base pattern right now</td><td>5+ weeks, constructive shape</td></tr>
+</table>
+
+<h3>Growth Thresholds in Detail</h3>
+<div class="metric-grid">
+  <div class="metric-card g"><div class="m-label">EPS Growth YoY</div><div class="m-val">≥ 25%</div><div class="m-sub">Ideal: 50%+. Triple-digit = best</div></div>
+  <div class="metric-card g"><div class="m-label">Revenue Growth YoY</div><div class="m-val">≥ 20%</div><div class="m-sub">Accelerating QoQ is even better</div></div>
+  <div class="metric-card g"><div class="m-label">Net Margin</div><div class="m-val">≥ 15%</div><div class="m-sub">Tech/software. ≥ 8% for others</div></div>
+  <div class="metric-card a"><div class="m-label">ROE / ROCE</div><div class="m-val">≥ 20%</div><div class="m-sub">Capital efficiency</div></div>
+  <div class="metric-card a"><div class="m-label">FCF Conversion</div><div class="m-val">≥ 70%</div><div class="m-sub">FCF/Operating Cash Flow</div></div>
+  <div class="metric-card g"><div class="m-label">EPS Acceleration</div><div class="m-val">Rising</div><div class="m-sub">Most recent Q > prior Q growth rate</div></div>
+</div>
+
+<div class="callout amber">
+  <div class="label">Watch for EPS Distortion</div>
+  <p>If YoY EPS is negative but 5-year CAGR is strong (≥ 15%), the quarter may be distorted by a one-off item (e.g. investment gains/losses). Use 5yr CAGR as the primary signal and flag the distortion.</p>
+</div>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="chapter" id="rs-line">
+  <div class="ch-num">4</div>
+  <div><div class="ch-title">True Relative Strength</div><div class="ch-sub">The single most important technical indicator in this strategy</div></div>
+</div>
+
+<h3>What It Is (Not RSI)</h3>
+<div class="callout red">
+  <div class="label">Critical Distinction</div>
+  <p><strong>True RS Line ≠ RSI.</strong> The RSI (Relative Strength Index) is an oscillator measuring overbought/oversold. It is NOT used in this strategy. The True RS Line measures price outperformance vs the S&P 500 over time.</p>
+</div>
+
+<h3>The Calculation</h3>
+<div class="math-box">
+  <span class="comment">// RS Line = ratio of stock price to SPY price, at every point in time</span><br>
+  <span class="eq">RS_line[t] = Stock_Close[t] / SPY_Close[t]</span><br><br>
+  <span class="comment">// RS % change over lookback window</span><br>
+  <span class="eq">RS_4w  = (RS_line[-1] / RS_line[-4]  - 1) × 100</span><br>
+  <span class="eq">RS_13w = (RS_line[-1] / RS_line[-13] - 1) × 100</span><br>
+  <span class="eq">RS_26w = (RS_line[-1] / RS_line[-26] - 1) × 100</span><br>
+  <span class="eq">RS_52w = (RS_line[-1] / RS_line[-52] - 1) × 100</span><br><br>
+  <span class="comment">// Note: absolute value doesn't matter — only direction and relative change</span>
+</div>
+
+<h3>What the RS Line Tells You</h3>
+<table class="thresh-table">
+  <tr><th>RS Line Behaviour</th><th>Meaning</th><th>Action</th></tr>
+  <tr><td>Rising — at 52-week high</td><td class="pass">Institutions are accumulating aggressively</td><td class="pass">Strong buy candidate</td></tr>
+  <tr><td>Rising — not at high</td><td>Recovering outperformance</td><td>Watch closely</td></tr>
+  <tr><td>Flat during base</td><td class="warn">Holding ground vs market</td><td class="warn">Acceptable, monitor</td></tr>
+  <tr><td>Falling during base</td><td class="fail">Institutions rotating out</td><td class="fail">Avoid — distribution</td></tr>
+  <tr><td>At 52w high BEFORE breakout</td><td class="pass" style="font-weight:700">LEADING RS SIGNAL</td><td class="pass">Highest conviction entry</td></tr>
+</table>
+
+<h3>The Leading RS Signal Explained</h3>
+<div class="chart-wrap">
+  <div class="chart-label">Leading RS — RS line makes new high while price still consolidates</div>
+  <svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Price line: base (flat) then breakout -->
+    <text x="35" y="25" font-size="11" font-weight="600" fill="#5a5a54" font-family="sans-serif">Price</text>
+    <polyline points="60,80 100,78 140,82 180,79 220,81 260,80 300,79 340,80" fill="none" stroke="#378ADD" stroke-width="2" stroke-linecap="round"/>
+    <polyline points="340,80 370,60 400,42 430,28 460,18" fill="none" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="340" y1="15" x2="340" y2="185" stroke="#E2E0D8" stroke-width="1" stroke-dasharray="4 3"/>
+    <text x="342" y="190" font-size="10" fill="#854F0B" font-family="sans-serif">breakout</text>
+    <line x1="55" y1="80" x2="470" y2="80" stroke="#EF9F27" stroke-width="0.8" stroke-dasharray="4 3"/>
+    <text x="472" y="83" font-size="10" fill="#854F0B" font-family="sans-serif">pivot</text>
+    <!-- RS line: rises DURING base, before breakout -->
+    <text x="35" y="115" font-size="11" font-weight="600" fill="#5a5a54" font-family="sans-serif">RS</text>
+    <polyline points="60,155 100,150 140,145 180,140 220,135 260,128 300,122 340,116 370,110 400,106 430,103 460,100" fill="none" stroke="#1D9E75" stroke-width="2" stroke-linecap="round"/>
+    <!-- RS 52w high line -->
+    <line x1="55" y1="116" x2="470" y2="116" stroke="#534AB7" stroke-width="0.8" stroke-dasharray="3 2"/>
+    <text x="472" y="119" font-size="10" fill="#534AB7" font-family="sans-serif">52w RS high</text>
+    <!-- Leading signal marker -->
+    <circle cx="300" cy="122" r="5" fill="none" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="300" y="108" text-anchor="middle" font-size="9" font-weight="700" fill="#0F6E56" font-family="sans-serif">RS near high</text>
+    <text x="300" y="98" text-anchor="middle" font-size="9" fill="#0F6E56" font-family="sans-serif">while price flat</text>
+    <text x="300" y="88" text-anchor="middle" font-size="9" fill="#0F6E56" font-family="sans-serif">= LEADING SIGNAL</text>
+  </svg>
+</div>
+
+<div class="callout green">
+  <div class="label">Intuition</div>
+  <p>If the RS line is making new highs while the stock is still consolidating and hasn't broken out — institutions are buying the dips. They're more interested in the stock than in the broad market. When the base resolves, they're already positioned and will push it hard.</p>
+</div>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="chapter" id="base-patterns">
+  <div class="ch-num">5</div>
+  <div><div class="ch-title">Base Patterns</div><div class="ch-sub">The three main shapes to recognise</div></div>
+</div>
+
+<h3>Minimum Requirements for Any Base</h3>
+<ul class="bullets">
+  <li class="pass"><div class="icon">✓</div><div><strong>Prior uptrend:</strong> stock must be at least 30% above its 52-week low before the base started</div></li>
+  <li class="pass"><div class="icon">✓</div><div><strong>Minimum 5 weeks:</strong> shorter than this is just noise, not accumulation</div></li>
+  <li class="pass"><div class="icon">✓</div><div><strong>Above rising 30w SMA:</strong> Stage 2 must be confirmed</div></li>
+  <li class="fail"><div class="icon">✗</div><div><strong>Depth limit:</strong> never trade a base deeper than 50% (usually aim for ≤ 33%)</div></li>
+</ul>
+
+<h3>Cup with Handle</h3>
+<div class="chart-wrap">
+  <div class="chart-label">Cup with Handle — U-shaped base, slight downward drift handle</div>
+  <svg viewBox="0 0 620 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Pivot line -->
+    <line x1="55" y1="45" x2="590" y2="45" stroke="#EF9F27" stroke-width="1" stroke-dasharray="5 3"/>
+    <text x="592" y="48" font-size="10" fill="#854F0B" font-family="sans-serif">Pivot</text>
+    <!-- Cup shape -->
+    <path d="M60,45 Q120,120 200,145 Q280,160 360,145 Q430,125 470,75 Q480,55 485,45" fill="none" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Handle drift -->
+    <polyline points="485,45 505,52 525,50 545,48 560,46 572,44" fill="none" stroke="#378ADD" stroke-width="2" stroke-linecap="round"/>
+    <!-- Prior uptrend -->
+    <polyline points="30,90 40,78 55,65 60,45" fill="none" stroke="#1D9E75" stroke-width="2"/>
+    <!-- Labels -->
+    <text x="200" y="175" text-anchor="middle" font-size="11" fill="#5a5a54" font-family="sans-serif">Cup (7–54 weeks)</text>
+    <text x="200" y="188" text-anchor="middle" font-size="10" fill="#5a5a54" font-family="sans-serif">depth ≤ 33%</text>
+    <text x="530" y="38" text-anchor="middle" font-size="11" fill="#5a5a54" font-family="sans-serif">Handle</text>
+    <text x="530" y="50" text-anchor="middle" font-size="10" fill="#5a5a54" font-family="sans-serif">upper half</text>
+    <!-- Depth annotation -->
+    <line x1="48" y1="45" x2="48" y2="145" stroke="#888780" stroke-width="0.8"/>
+    <line x1="44" y1="45" x2="52" y2="45" stroke="#888780" stroke-width="0.8"/>
+    <line x1="44" y1="145" x2="52" y2="145" stroke="#888780" stroke-width="0.8"/>
+    <text x="44" y="100" text-anchor="end" font-size="10" fill="#888780" font-family="sans-serif">≤33%</text>
+    <!-- Breakout arrow -->
+    <path d="M572,44 L590,28" fill="none" stroke="#1D9E75" stroke-width="2" marker-end="url(#arr)"/>
+  </svg>
+</div>
+
+<table class="thresh-table">
+  <tr><th>Feature</th><th>Cup with Handle</th><th>Flat Base</th><th>VCP</th></tr>
+  <tr><td>Shape</td><td>U-shaped then drifting handle</td><td>Shallow sideways</td><td>Sequential contractions</td></tr>
+  <tr><td>Max depth</td><td class="pass">33%</td><td class="pass">15%</td><td class="pass">35% (first swing)</td></tr>
+  <tr><td>Min length</td><td>7 weeks</td><td>5 weeks</td><td>5 weeks</td></tr>
+  <tr><td>Volume signature</td><td>Heavy left, dries up handle</td><td>Progressively lower</td><td>Dries with each contraction</td></tr>
+  <tr><td>Pivot</td><td>Peak of handle</td><td>Recent high</td><td>Peak before tightest area</td></tr>
+</table>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="chapter" id="vcp">
+  <div class="ch-num">6</div>
+  <div><div class="ch-title">The VCP — Volatility Contraction Pattern</div><div class="ch-sub">The coil. The most powerful concept in the entire strategy.</div></div>
+</div>
+
+<h3>What It Is</h3>
+<p>A series of progressively smaller pullbacks from left to right inside the base. Each contraction is roughly 40–50% shallower than the prior. This signals seller exhaustion.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">VCP — Each swing smaller than the last (30% → 15% → 6%)</div>
+  <svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg">
+    <!-- Pivot line -->
+    <line x1="40" y1="50" x2="600" y2="50" stroke="#EF9F27" stroke-width="1" stroke-dasharray="5 3"/>
+    <text x="602" y="53" font-size="10" fill="#854F0B" font-family="sans-serif">Pivot</text>
+    <!-- Prior uptrend -->
+    <polyline points="30,130 45,115 55,100 65,88 75,75 85,62 95,52" fill="none" stroke="#1D9E75" stroke-width="2" stroke-linecap="round"/>
+    <!-- Swing 1: big drop (30%) -->
+    <path d="M95,52 Q120,90 150,115 Q175,130 200,120 Q220,110 235,90 Q245,72 250,57" fill="none" stroke="#378ADD" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- Swing 2: medium drop (15%) -->
+    <path d="M250,57 Q265,75 280,90 Q295,100 310,93 Q322,86 330,72 Q337,60 340,55" fill="none" stroke="#378ADD" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- Swing 3: small drop (6%) -->
+    <path d="M340,55 Q350,65 362,72 Q372,77 382,72 Q390,66 395,58 Q398,53 400,51" fill="none" stroke="#534AB7" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- Breakout -->
+    <polyline points="400,51 420,38 445,26 470,16" fill="none" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Contraction brackets -->
+    <line x1="95" y1="200" x2="250" y2="200" stroke="#D3D1C7" stroke-width="0.8"/>
+    <line x1="95" y1="197" x2="95" y2="203" stroke="#D3D1C7" stroke-width="0.8"/>
+    <line x1="250" y1="197" x2="250" y2="203" stroke="#D3D1C7" stroke-width="0.8"/>
+    <text x="172" y="215" text-anchor="middle" font-size="11" fill="#5a5a54" font-family="sans-serif">Swing 1: −30%</text>
+    <line x1="252" y1="200" x2="340" y2="200" stroke="#D3D1C7" stroke-width="0.8"/>
+    <line x1="252" y1="197" x2="252" y2="203" stroke="#D3D1C7" stroke-width="0.8"/>
+    <line x1="340" y1="197" x2="340" y2="203" stroke="#D3D1C7" stroke-width="0.8"/>
+    <text x="296" y="215" text-anchor="middle" font-size="11" fill="#5a5a54" font-family="sans-serif">Swing 2: −15%</text>
+    <line x1="342" y1="200" x2="400" y2="200" stroke="#D3D1C7" stroke-width="0.8"/>
+    <line x1="342" y1="197" x2="342" y2="203" stroke="#D3D1C7" stroke-width="0.8"/>
+    <line x1="400" y1="197" x2="400" y2="203" stroke="#D3D1C7" stroke-width="0.8"/>
+    <text x="371" y="215" text-anchor="middle" font-size="11" fill="#534AB7" font-family="sans-serif">Swing 3: −6%</text>
+    <text x="400" y="228" text-anchor="middle" font-size="9" fill="#0F6E56" font-family="sans-serif">↑ coiled</text>
+    <!-- Volume bars -->
+    <text x="40" y="165" font-size="10" fill="#9a9890" font-family="sans-serif">Vol</text>
+    <rect x="100" y="153" width="22" height="20" rx="1" fill="#D85A30" opacity="0.6"/>
+    <rect x="130" y="156" width="22" height="17" rx="1" fill="#D85A30" opacity="0.5"/>
+    <rect x="160" y="158" width="22" height="15" rx="1" fill="#D85A30" opacity="0.4"/>
+    <rect x="190" y="160" width="22" height="13" rx="1" fill="#1D9E75" opacity="0.35"/>
+    <rect x="220" y="161" width="22" height="12" rx="1" fill="#1D9E75" opacity="0.3"/>
+    <rect x="255" y="162" width="18" height="11" rx="1" fill="#D85A30" opacity="0.35"/>
+    <rect x="278" y="163" width="18" height="10" rx="1" fill="#1D9E75" opacity="0.3"/>
+    <rect x="302" y="164" width="18" height="9" rx="1" fill="#D85A30" opacity="0.25"/>
+    <rect x="323" y="164" width="15" height="9" rx="1" fill="#1D9E75" opacity="0.25"/>
+    <rect x="344" y="165" width="12" height="8" rx="1" fill="#534AB7" opacity="0.4"/>
+    <rect x="360" y="165" width="12" height="8" rx="1" fill="#534AB7" opacity="0.35"/>
+    <rect x="376" y="166" width="12" height="7" rx="1" fill="#534AB7" opacity="0.3"/>
+    <rect x="394" y="165" width="12" height="8" rx="1" fill="#1D9E75" opacity="0.4"/>
+  </svg>
+</div>
+
+<h3>The Seller Exhaustion Story — Three Acts</h3>
+<table class="thresh-table">
+  <tr><th>Act</th><th>What Happens</th><th>Who's Doing It</th><th>Volume Signal</th></tr>
+  <tr><td><strong>Act 1</strong><br>Shakeout</td><td>Big drop from the high. Looks scary.</td><td>Retail profit-takers, stop-loss triggers, weak hands</td><td>Heavy — panic selling</td></tr>
+  <tr><td><strong>Act 2</strong><br>Accumulation</td><td>Stock stabilises. Each pullback is smaller. Institution absorbs every dip.</td><td>Large institution building position quietly over weeks</td><td>Drying up — fewer sellers</td></tr>
+  <tr><td><strong>Act 3</strong><br>Launch</td><td>Almost no sellers left. Any buying = explosive move up.</td><td>Institution finished + new buyers arrive + stops triggered above pivot</td><td>Surges on breakout</td></tr>
+</table>
+
+<h3>VCP Maths — How to Measure</h3>
+<div class="math-box">
+  <span class="comment">// Split the base into thirds</span><br>
+  <span class="eq">Swing1 = (max(segment1) - min(segment1)) / max(segment1) × 100</span><br>
+  <span class="eq">Swing2 = (max(segment2) - min(segment2)) / max(segment2) × 100</span><br>
+  <span class="eq">Swing3 = (max(segment3) - min(segment3)) / max(segment3) × 100</span><br><br>
+  <span class="comment">// Pass condition</span><br>
+  <span class="eq">VCP contracting = Swing3 &lt; Swing2 &lt; Swing1</span><br><br>
+  <span class="comment">// Ideal ratio: each ~50% of prior</span><br>
+  <span class="comment">// e.g. 30% → 15% → 7% = textbook VCP</span>
+</div>
+
+<div class="callout purple">
+  <div class="label">Spring Metaphor</div>
+  <p>Think of the VCP as a spring being compressed. Each contraction tightens the spring further. By the time the third contraction forms at near-zero range and volume, the spring is fully compressed. Any buying pressure triggers the release — and the move is proportional to how tightly the spring was coiled.</p>
+</div>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="chapter" id="volume">
+  <div class="ch-num">7</div>
+  <div><div class="ch-title">Volume Analysis</div><div class="ch-sub">Volume is the X-ray that reveals what institutions are doing</div></div>
+</div>
+
+<h3>The Two Volume Checks</h3>
+
+<h4>Check 1 — Accumulation Ratio (weekly)</h4>
+<div class="math-box">
+  <span class="eq">Accumulation_Ratio = Avg_Volume(up weeks) / Avg_Volume(down weeks)</span><br><br>
+  <span class="comment">// Pass: ratio > 1.0 (more vol on green weeks)</span><br>
+  <span class="comment">// Strong: ratio > 1.3</span><br>
+  <span class="comment">// Warning: ratio &lt; 0.85 (distribution — institutions are selling into rallies)</span>
+</div>
+
+<h4>Check 2 — Right-Side Volume Dry-Up</h4>
+<div class="math-box">
+  <span class="eq">Left_Avg = mean(volume, first half of base)</span><br>
+  <span class="eq">Right_Avg = mean(volume, second half of base)</span><br>
+  <span class="eq">Vol_Dry = (Right_Avg / Left_Avg - 1) × 100</span><br><br>
+  <span class="comment">// Pass: Vol_Dry ≤ −20% (right side at least 20% quieter)</span><br>
+  <span class="comment">// Strong: ≤ −35%</span>
+</div>
+
+<h3>Volume on the Breakout Day</h3>
+<table class="thresh-table">
+  <tr><th>Volume vs 50-day Average</th><th>Signal</th><th>Action</th></tr>
+  <tr><td>≥ 2.0× ("elephant tracks")</td><td class="pass">Strong — institutional demand confirmed</td><td class="pass">Enter Entry 2 with confidence</td></tr>
+  <tr><td>1.5× – 2.0×</td><td class="pass">Acceptable — breakout valid</td><td>Enter Entry 2</td></tr>
+  <tr><td>1.0× – 1.5×</td><td class="warn">Weak — higher failure risk</td><td class="warn">Wait for retest or skip</td></tr>
+  <tr><td>< 1.0×</td><td class="fail">Low conviction — likely false breakout</td><td class="fail">Do not enter Entry 2</td></tr>
+</table>
+
+<div class="callout green">
+  <div class="label">Intuition: Why Volume Matters</div>
+  <p>A fund managing $5 billion cannot hide. When they buy, they move the market. High volume on up days = they're buying aggressively. Low volume on down days = they're not selling, just resting. The volume pattern is the institution's fingerprint on the chart.</p>
+</div>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="chapter" id="tightness">
+  <div class="ch-num">8</div>
+  <div><div class="ch-title">Tightness & Priming Patterns</div><div class="ch-sub">The final signal before entry — when the spring is maximally compressed</div></div>
+</div>
+
+<h3>Tight Area Definition</h3>
+<div class="math-box">
+  <span class="comment">// A "tight day" requires BOTH conditions:</span><br>
+  <span class="eq">daily_range_pct = (High - Low) / Close × 100 ≤ 1.5%</span><br>
+  <span class="eq">vol_vs_avg = Volume / 50d_avg_volume ≤ 0.5</span><br><br>
+  <span class="comment">// A "tight area" = 2+ consecutive tight days</span><br>
+  <span class="comment">// Best: right side of base, near pivot, decreasing range</span>
+</div>
+
+<h3>Macro Volatility Contraction (Daily)</h3>
+<div class="math-box">
+  <span class="eq">First30 = mean(daily_range_pct, days 1–30)</span><br>
+  <span class="eq">Last30  = mean(daily_range_pct, days 31–60)</span><br>
+  <span class="eq">Contraction = (Last30 / First30 - 1) × 100</span><br><br>
+  <span class="comment">// Pass: ≤ −20% (last 30 days measurably quieter)</span><br>
+  <span class="comment">// Strong: ≤ −35%</span><br>
+  <span class="comment">// WARNING: A positive value = expanding volatility = base deteriorating</span>
+</div>
+
+<h3>The Five Priming Patterns</h3>
+<div class="pattern-grid">
+  <div class="pattern-card">
+    <div class="pc-name">Inside Bar</div>
+    <div class="pc-tag e">Entry Signal</div>
+    <div class="pc-body">Today's high &lt; yesterday's high AND today's low &gt; yesterday's low. Complete containment. Vol &lt; 75% of average.</div>
+    <div class="pc-rule"><span class="lbl">Entry</span><span class="val g">Above inside bar high</span></div>
+    <div class="pc-rule"><span class="lbl">Stop</span><span class="val r">Below inside bar low</span></div>
+  </div>
+  <div class="pattern-card">
+    <div class="pc-name">Upside Reversal</div>
+    <div class="pc-tag e">Entry Signal</div>
+    <div class="pc-body">Drops ≥ 1% intraday from open, then closes in top 30% of day's range. Long lower wick = buyers absorbed all sellers.</div>
+    <div class="pc-rule"><span class="lbl">Entry</span><span class="val g">Above reversal day high</span></div>
+    <div class="pc-rule"><span class="lbl">Stop</span><span class="val r">Below reversal day low</span></div>
+  </div>
+  <div class="pattern-card">
+    <div class="pc-name">Tight Setup Day</div>
+    <div class="pc-tag e">Highest Quality</div>
+    <div class="pc-body">Single day: range ≤ 1.0%, volume ≤ 40% of avg, close within 2% of pivot. Spring at maximum compression right at resistance.</div>
+    <div class="pc-rule"><span class="lbl">Entry</span><span class="val g">Break above pivot</span></div>
+    <div class="pc-rule"><span class="lbl">Stop</span><span class="val r">Below tight day low</span></div>
+  </div>
+  <div class="pattern-card">
+    <div class="pc-name">Undercut & Reverse</div>
+    <div class="pc-tag e">Entry Signal</div>
+    <div class="pc-body">Breaks below key support (flushes weak hands), then snaps back above it. Bear trap. The final low of the base.</div>
+    <div class="pc-rule"><span class="lbl">Entry</span><span class="val g">Reclaim of support</span></div>
+    <div class="pc-rule"><span class="lbl">Stop</span><span class="val r">Below undercut low</span></div>
+  </div>
+  <div class="pattern-card">
+    <div class="pc-name">Pocket Pivot</div>
+    <div class="pc-tag e">Entry Signal</div>
+    <div class="pc-body">Up day inside base where volume exceeds highest down-day volume of prior 10 sessions. Big buyer stepped in before the breakout.</div>
+    <div class="pc-rule"><span class="lbl">Entry</span><span class="val g">Above pocket pivot high</span></div>
+    <div class="pc-rule"><span class="lbl">Stop</span><span class="val r">Below pocket pivot low</span></div>
+  </div>
+  <div class="pattern-card">
+    <div class="pc-name">EMA Bounce</div>
+    <div class="pc-tag c">Continuation</div>
+    <div class="pc-body">"Tennis ball" bounce from rising 10/21 EMA or SMA50. Price touches EMA on low volume and immediately recovers. Dynamic support holding.</div>
+    <div class="pc-rule"><span class="lbl">Entry</span><span class="val g">Close back above EMA</span></div>
+    <div class="pc-rule"><span class="lbl">Stop</span><span class="val r">Below EMA (2 closes = exit)</span></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="chapter" id="entry-patterns">
+  <div class="ch-num">9</div>
+  <div><div class="ch-title">Additional Entry Patterns</div><div class="ch-sub">Range breakouts, flags, and post-breakout retests</div></div>
+</div>
+
+<h3>High Tight Flag</h3>
+<div class="callout green">
+  <div class="label">The Most Powerful Pattern</div>
+  <p><strong>Flagpole:</strong> 25–50%+ surge in &lt; 10 weeks (often an earnings gap). <strong>Flag:</strong> 1–4 week tight consolidation &lt; 20% deep on drying volume. <strong>Breakout:</strong> above flag top on strong volume. Moves from HTF are fast and large.</p>
+</div>
+
+<h3>Post-Breakout Retest (Pullback Entry)</h3>
+<p>After a valid breakout, the stock pulls back to test the pivot or rising 21 EMA on declining volume. This is often the <em>best</em> risk/reward entry because:</p>
+<ul class="bullets">
+  <li class="pass"><div class="icon">✓</div><div>Stop can be placed just below the pivot — tighter than the original breakout entry</div></li>
+  <li class="pass"><div class="icon">✓</div><div>Volume declining on pullback = no distribution, just digestion</div></li>
+  <li class="pass"><div class="icon">✓</div><div>"Tennis ball" bounce off the level confirms support is real</div></li>
+</ul>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="chapter" id="entry-exits">
+  <div class="ch-num">10</div>
+  <div><div class="ch-title">Entry & Stop Loss System</div><div class="ch-sub">The complete two-entry framework with independent stops</div></div>
+</div>
+
+<h3>Entry 1 — Early Entry (Inside the Base)</h3>
+<div class="math-box">
+  <span class="comment">// Trigger = high of best priming signal</span><br>
+  <span class="eq">E1_trigger = high of inside bar / reversal / tight setup day</span><br>
+  <span class="eq">E1_stop    = primary support (structural floor of the base)</span><br>
+  <span class="eq">E1_risk    = (E1_trigger - E1_stop) / E1_trigger × 100</span><br><br>
+  <span class="comment">// Pass: risk ≤ 4.0%</span><br>
+  <span class="comment">// Invalid: risk &lt; 0.3% (stale signal, trigger ≈ stop)</span>
+</div>
+
+<h3>Entry 2 — Standard Breakout</h3>
+<div class="math-box">
+  <span class="comment">// 0.5% above pivot confirms the break is real, not a wick</span><br>
+  <span class="eq">E2_trigger = pivot × 1.005</span><br>
+  <span class="eq">E2_stop    = pivot × 0.97  (3% back inside base = failed breakout)</span><br>
+  <span class="eq">E2_risk    = (E2_trigger - E2_stop) / E2_trigger × 100  ≈ 3.5%</span><br><br>
+  <span class="comment">// Volume gate: only enter E2 if breakout vol ≥ 1.5× 50-day avg</span>
+</div>
+
+<h3>Position Sizing</h3>
+<div class="math-box">
+  <span class="comment">// Risk a fixed dollar amount per trade</span><br>
+  <span class="eq">Shares = Risk_$ / (Entry_price - Stop_price)</span><br>
+  <span class="eq">Position_Value = Shares × Entry_price</span><br><br>
+  <span class="comment">// Example: $500 risk, E1 at $235, stop at $227</span><br>
+  <span class="eq">Shares = 500 / (235 - 227) = 500 / 8 = 62 shares</span><br>
+  <span class="eq">Position = 62 × 235 = $14,570</span>
+</div>
+
+<h3>The Layered Stop Loss System</h3>
+<table class="thresh-table">
+  <tr><th>Condition</th><th>Action</th><th>Severity</th></tr>
+  <tr><td>1 close below EMA10</td><td>Watch closely — no action</td><td>🟡 Warning</td></tr>
+  <tr><td>2 consecutive closes below EMA10</td><td>Reduce 25–33%</td><td>🟠 Alert</td></tr>
+  <tr><td>2 closes below EMA10 on above-avg volume</td><td>Reduce 50%</td><td>🟠 Alert</td></tr>
+  <tr><td>1 close below EMA21</td><td class="warn">Reduce or exit — trend weakening</td><td>🔴 Action</td></tr>
+  <tr><td>1 close below EMA21 on above-avg volume</td><td class="fail">Exit majority</td><td>🔴 Action</td></tr>
+  <tr><td>Close below primary base support</td><td class="fail">Full exit — thesis broken</td><td>🔴 Exit</td></tr>
+  <tr><td>Close below SMA50</td><td class="fail">Full exit — Stage 2 broken</td><td>🔴 Exit</td></tr>
+  <tr><td>7.5% loss from actual entry price</td><td class="fail">Hard stop — full exit regardless</td><td>🔴 Hard Stop</td></tr>
+</table>
+
+<div class="callout amber">
+  <div class="label">Critical: Hard Stop Uses Actual Entry Price</div>
+  <p>The 7.5% hard stop is always calculated from <strong>the price you actually paid</strong> — E1 trigger or E2 trigger. Never from the pivot price alone. If you haven't entered yet, there is no stop to trigger.</p>
+</div>
+
+<h3>Climax Top — When to Exit a Winner</h3>
+<table class="thresh-table">
+  <tr><th>Signal</th><th>Threshold</th><th>Action</th></tr>
+  <tr><td>5-week price gain</td><td class="warn">> 25%</td><td rowspan="3" class="fail" style="vertical-align:middle">ALL THREE = Reduce / Full Exit</td></tr>
+  <tr><td>Last week's volume vs 10-week avg</td><td class="warn">> 2×</td></tr>
+  <tr><td>Weekly close position in week's range</td><td class="warn">Bottom 30%</td></tr>
+</table>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="chapter" id="scoring">
+  <div class="ch-num">11</div>
+  <div><div class="ch-title">The 11-Point Scorecard</div><div class="ch-sub">Every point that feeds the overall quality rating</div></div>
+</div>
+
+<div class="score-wrap">
+  <div class="score-item"><div class="n">1</div><div class="name">EPS growth ≥ 25% YoY</div><div class="thresh">Fundamentals</div></div>
+  <div class="score-item"><div class="n">2</div><div class="name">Revenue growth ≥ 20% YoY</div><div class="thresh">Fundamentals</div></div>
+  <div class="score-item"><div class="n">3</div><div class="name">RS line outperforming SPY on 13-week basis (positive)</div><div class="thresh">Relative Strength</div></div>
+  <div class="score-item"><div class="n">4</div><div class="name">Stock in Stage 2 (above rising 30-week SMA)</div><div class="thresh">Trend</div></div>
+  <div class="score-item"><div class="n">5</div><div class="name">Valid base pattern (correct depth and length)</div><div class="thresh">Base Analysis</div></div>
+  <div class="score-item"><div class="n">6</div><div class="name">VCP contraction confirmed (swing3 &lt; swing2 &lt; swing1)</div><div class="thresh">Base Quality</div></div>
+  <div class="score-item"><div class="n">7</div><div class="name">Volume accumulation (more vol on up weeks, ratio > 1.0)</div><div class="thresh">Volume</div></div>
+  <div class="score-item"><div class="n">8</div><div class="name">Volume dry-up on right side of base (≥ 20% lower)</div><div class="thresh">Volume</div></div>
+  <div class="score-item"><div class="n">9</div><div class="name">Tight area in last 30 days (2+ consecutive tight days)</div><div class="thresh">Tightness</div></div>
+  <div class="score-item"><div class="n">10</div><div class="name">Priming pattern present (inside bar, reversal, or tight setup)</div><div class="thresh">Entry Signal</div></div>
+  <div class="score-item"><div class="n">11</div><div class="name">Clean stop structure (primary support found, E1 risk ≤ 4%)</div><div class="thresh">Risk Management</div></div>
+</div>
+
+<table class="thresh-table">
+  <tr><th>Score</th><th>Quality Rating</th><th>What to Do</th></tr>
+  <tr><td><strong>10–11</strong></td><td class="pass" style="font-weight:700">🟢 ACTIONABLE</td><td>Enter on next priming signal. This is the highest conviction.</td></tr>
+  <tr><td><strong>7–9</strong></td><td class="warn">🟡 DEVELOPING</td><td>Watch closely. 1–2 conditions not yet met. Set alerts.</td></tr>
+  <tr><td><strong>5–6</strong></td><td style="color:var(--amber)">🟠 NOT READY</td><td>Base forming but needs more time. Check back in 2 weeks.</td></tr>
+  <tr><td><strong>0–4</strong></td><td class="fail">🔴 AVOID</td><td>Does not fit the strategy. Move on.</td></tr>
+</table>
+
+<div class="callout amber">
+  <div class="label">Market Context Override</div>
+  <p>If SPY is below its 50-week SMA — cap the maximum quality at DEVELOPING regardless of the individual stock score. Breakouts fail at much higher rates in a bear market. Reduce position sizing and do not chase Entry 2 without exceptional volume.</p>
+</div>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="chapter" id="workflow">
+  <div class="ch-num">12</div>
+  <div><div class="ch-title">Weekly Workflow</div><div class="ch-sub">The repeatable process from screen to watchlist</div></div>
+</div>
+
+<h3>Step 1 — Finviz Screener (every weekend)</h3>
+<p>Use Tier 2 filters for normal markets:</p>
+<div class="checklist">
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>Exchange:</strong> NASDAQ, NYSE</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>Market cap:</strong> ≥ $2B</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>Price:</strong> ≥ $15</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>Avg volume:</strong> ≥ 500k/day</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>EPS growth this year:</strong> ≥ 20%</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>Revenue growth QoQ:</strong> ≥ 10%</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>Net profit margin:</strong> ≥ 5%</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>52-week change:</strong> ≥ 10% (do NOT filter on SMA200)</div></div>
+</div>
+
+<h3>Step 2 — Batch Analyser</h3>
+<p>Run all screener results through the batch analysis. Post-filter results:</p>
+<div class="math-box">
+  <span class="eq">score ≥ 7</span><br>
+  <span class="eq">stage2.confirmed == True</span><br>
+  <span class="eq">rs_13w > 0</span><br>
+  <span class="eq">rs_52w > 15</span><br>
+  <span class="eq">base.depth_pct ≥ −35</span><br>
+  <span class="eq">base.length_weeks ≥ 5</span><br>
+  <span class="eq">entry1.risk_pct ≤ 4.0 AND > 0.3</span>
+</div>
+
+<h3>Step 3 — Manual Elimination</h3>
+<div class="checklist">
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text">Remove any stock with <strong>earnings within 2 weeks</strong></div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text">Remove any stock that <strong>IPO'd less than 1 year ago</strong></div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text">Remove any <strong>meme stocks</strong> (distorted volume)</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text">Check <strong>entry risk</strong> — if E1 risk > 4%, wait for a tighter setup</div></div>
+</div>
+
+<h3>Step 4 — Chart Review (remaining candidates)</h3>
+<div class="checklist">
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text">Weekly chart: confirm base shape, depth, volume drying up</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text">Daily chart: find tight areas, priming patterns, EMA structure</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text">RS line: is it at or near its high? Is it a leading signal?</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text">Check industry context — is the sector in favour?</div></div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="chapter" id="maths">
+  <div class="ch-num">13</div>
+  <div><div class="ch-title">All the Maths — Reference Sheet</div><div class="ch-sub">Every formula in one place</div></div>
+</div>
+
+<h3>Key Formulas</h3>
+<div class="math-box">
+  <span class="comment">// ── RELATIVE STRENGTH ─────────────────────────────────</span><br>
+  <span class="eq">RS_line[t] = Stock[t] / SPY[t]</span><br>
+  <span class="eq">RS_Nw = (RS[-1] / RS[-N] - 1) × 100</span><br><br>
+  <span class="comment">// ── BASE ANALYSIS ─────────────────────────────────────</span><br>
+  <span class="eq">Base_depth = (base_low / base_high - 1) × 100</span><br>
+  <span class="eq">VCP_swing = (seg_max - seg_min) / seg_max × 100</span><br><br>
+  <span class="comment">// ── VOLUME ────────────────────────────────────────────</span><br>
+  <span class="eq">Acc_ratio = mean_vol(up weeks) / mean_vol(down weeks)</span><br>
+  <span class="eq">Vol_dry   = (right_half_avg / left_half_avg - 1) × 100</span><br>
+  <span class="eq">Daily_range = (High - Low) / Close × 100</span><br>
+  <span class="eq">Vol_vs_avg  = Volume / SMA50_volume</span><br><br>
+  <span class="comment">// ── ENTRY & RISK ──────────────────────────────────────</span><br>
+  <span class="eq">E1_risk = (E1_trigger - E1_stop) / E1_trigger × 100</span><br>
+  <span class="eq">E2_trigger = pivot × 1.005</span><br>
+  <span class="eq">E2_stop    = pivot × 0.970</span><br>
+  <span class="eq">Shares = Risk_$ / (entry - stop)</span><br>
+  <span class="eq">Hard_stop = actual_entry × 0.925</span><br><br>
+  <span class="comment">// ── MOVING AVERAGES ───────────────────────────────────</span><br>
+  <span class="eq">SMA_N[t] = mean(Close[t-N+1 : t])</span><br>
+  <span class="eq">EMA_N[t] = Close[t] × k + EMA[t-1] × (1-k)  where k = 2/(N+1)</span><br><br>
+  <span class="comment">// ── VOLATILITY CONTRACTION (DAILY) ───────────────────</span><br>
+  <span class="eq">Contraction = (last30_avg_range / first30_avg_range - 1) × 100</span><br>
+  <span class="comment">// Must be negative (last 30 days quieter than first 30)</span>
+</div>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="chapter" id="checklists">
+  <div class="ch-num">14</div>
+  <div><div class="ch-title">Quick Reference Checklists</div><div class="ch-sub">Print these and use them during your chart review</div></div>
+</div>
+
+<h3>Pre-Trade Checklist — Do Not Enter Unless All Pass</h3>
+<div class="checklist">
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>Stage 2:</strong> Price above rising 30-week SMA ✓</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>Base:</strong> ≥ 5 weeks, depth ≤ 33%, constructive shape ✓</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>RS Line:</strong> Not declining (ideally at or near 52w high) ✓</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>Volume:</strong> Accumulation ratio > 1.0 OR vol drying on right side ✓</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>Tight area:</strong> At least one in last 30 days ✓</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>Priming pattern:</strong> Inside bar, reversal, or tight setup day present ✓</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>Risk:</strong> E1 or E2 risk ≤ 4% ✓</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>Earnings:</strong> Not within 2 weeks ✓</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text"><strong>Market:</strong> SPY above 50-week SMA (or accept lower conviction) ✓</div></div>
+</div>
+
+<h3>In-Trade Monitoring Checklist (weekly)</h3>
+<div class="checklist">
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text">Is price still above EMA10? If not: count consecutive closes below.</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text">Is price still above EMA21? Below on volume = reduce or exit.</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text">Is price still above SMA50? Below = Stage 2 breaking — exit.</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text">Is price still above primary support? Below 1% = full exit.</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text">Any climax top signals? (25% in 5 weeks + vol surge + weak close)</div></div>
+  <div class="cl-item"><div class="cl-box"></div><div class="cl-text">Am I 7.5% below my entry? Hard stop — exit immediately.</div></div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="chapter" id="intuitions">
+  <div class="ch-num">15</div>
+  <div><div class="ch-title">Key Intuitions to Memorise</div><div class="ch-sub">The mental models behind the rules — understand these and the rules make sense</div></div>
+</div>
+
+<div class="callout green">
+  <div class="label">The Coil</div>
+  <p>A base is a stock being digested by institutions. Each time it pulls back and recovers with less severity, it means fewer sellers remain. The tighter the final contraction, the more compressed the spring. Any new demand hits an empty order book and the price launches.</p>
+</div>
+
+<div class="callout blue">
+  <div class="label">Why Volume Drying Up = Bullish</div>
+  <p>If a stock was truly in trouble, sellers would be panicking out. Low volume means they're not — the people who wanted to sell have already sold. The base is quiet because the institution absorbed all the supply. Quiet = accumulation complete.</p>
+</div>
+
+<div class="callout purple">
+  <div class="label">The RS Line as the Smart Money Detector</div>
+  <p>Institutions rotate into the best stocks first, before the obvious breakout. If the RS line is rising while price is flat in a base, big money is quietly bidding it higher than the market. When the base resolves, they're already loaded and will push it hard. A leading RS signal is the clearest possible sign of institutional pre-positioning.</p>
+</div>
+
+<div class="callout amber">
+  <div class="label">Why the Stop Is Structural, Not Percentage-Based</div>
+  <p>A stop placed at a structurally meaningful level (below a tight area, below primary support, below the base low) means something specific: if that level breaks, the buyers who were defending it have stepped away. The thesis is wrong. A percentage stop (e.g. "3% below entry") is arbitrary — the market doesn't care about your entry price.</p>
+</div>
+
+<div class="callout green">
+  <div class="label">Why Weekly Charts for the Base, Daily for Entry</div>
+  <p>Weekly charts collapse five days of noise into one candle. You see the base shape — the VCP, the volume drying up — without being distracted by random daily wiggles. But entry timing requires the daily chart because priming patterns (inside bars, reversals) last one or two days and are invisible on the weekly.</p>
+</div>
+
+<div class="callout blue">
+  <div class="label">The Picks and Shovels Rotation</div>
+  <p>When a theme plays out (e.g. AI), the headline beneficiaries (NVDA, AMD) often run first and then consolidate. The upstream suppliers (chip equipment: LRCX, KLAC, AMAT) benefit from the same capex wave but lag by 3–6 months. Watch for this rotation — when the obvious names are basing, the less obvious upstream names may be setting up for their own run.</p>
+</div>
+
+<div class="callout amber">
+  <div class="label">The Two Questions Before Any Entry</div>
+  <p><strong>1. If I'm wrong, where do I get out and how much do I lose?</strong> — Define the stop before the entry. The risk must be ≤ 4%.<br><br><strong>2. What needs to happen for this trade to work?</strong> — The stock must break above the pivot on volume, hold the EMAs, and continue higher. If it can't clear the pivot on volume, the thesis fails.</p>
+</div>
+
+<div style="height: 60px;"></div>
+<div style="text-align:center; font-size:12px; color:var(--text3); padding: 20px 0; border-top: 1px solid var(--border);">
+  Base Breakout Strategy Study Notes · Generated from full conversation · For personal study use
+</div>
+
+</div>
+
+<script>
+// Scroll progress bar
+window.addEventListener('scroll', () => {
+  const total = document.body.scrollHeight - window.innerHeight;
+  const pct = total > 0 ? (window.scrollY / total) * 100 : 0;
+  document.getElementById('progress').style.width = pct + '%';
+});
+
+// Active sidebar link
+const links = document.querySelectorAll('.sidebar a');
+const sections = [...document.querySelectorAll('.chapter')].map(el => ({
+  id: el.id, top: el.offsetTop
+}));
+
+window.addEventListener('scroll', () => {
+  const y = window.scrollY + 80;
+  let active = sections[0]?.id;
+  for (const s of sections) { if (y >= s.top) active = s.id; }
+  links.forEach(l => {
+    l.classList.toggle('active', l.getAttribute('href') === '#' + active);
+  });
+});
+</script>
+</body>
+</html>
