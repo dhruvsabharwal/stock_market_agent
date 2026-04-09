@@ -338,7 +338,15 @@ class AdvancedBaseBreakoutAnalyzer:
 
         return res, score
 
-    def _stage2_check(self, stock_weekly: pd.DataFrame, stock_daily: pd.DataFrame) -> tuple[dict, int]:
+    def _stage2_check(self, stock_weekly: pd.DataFrame) -> tuple[dict, int]:
+        """
+        TIMEFRAME: Weekly data exclusively.
+
+        Guide says stage analysis is done on weekly charts using the 30-week SMA.
+        52-week high/low are computed from weekly High/Low (52 weekly bars) to stay
+        consistent — this avoids daily-vs-weekly discrepancies where 252 trading days
+        may not align with 52 calendar weeks.
+        """
         score = 0
         res = {
             "confirmed": False, "sma30w": None, "current_price": None,
@@ -354,31 +362,34 @@ class AdvancedBaseBreakoutAnalyzer:
             # Enforce scalar extraction to avoid FutureWarnings
             curr  = float(w['Close'].iloc[-1]) if not isinstance(w['Close'].iloc[-1], pd.Series) else float(w['Close'].iloc[-1].iloc[0])
             sma30 = float(w['SMA30w'].iloc[-1]) if not isinstance(w['SMA30w'].iloc[-1], pd.Series) else float(w['SMA30w'].iloc[-1].iloc[0])
-            
-            # Relative shift for rising check
-            if len(w) >= 5:
-                s_prev = w['SMA30w'].iloc[-5]
-                sma30_4w = float(s_prev) if not isinstance(s_prev, pd.Series) else float(s_prev.iloc[0])
+
+            # Rising check: compare last 4 weeks vs prior 4 weeks of SMA (more stable than iloc[-1] vs iloc[-5])
+            if len(w) >= 8:
+                sma30_prev = float(w['SMA30w'].iloc[-5]) if not isinstance(w['SMA30w'].iloc[-5], pd.Series) else float(w['SMA30w'].iloc[-5].iloc[0])
             else:
-                sma30_4w = None
+                sma30_prev = None
 
             res['current_price']     = safe_round(curr, 2)
             res['sma30w']            = safe_round(sma30, 2)
-            res['sma30w_rising']     = sma30_4w is not None and sma30 > sma30_4w
+            res['sma30w_rising']     = sma30_prev is not None and sma30 > sma30_prev
             res['pct_above_30w_sma'] = safe_pct(curr, sma30)
 
             above_sma = curr > sma30
             res['confirmed'] = above_sma and res['sma30w_rising']
 
-            high52 = stock_daily['High'].rolling(252, min_periods=50).max().iloc[-1]
-            low52  = stock_daily['Low'].rolling(252, min_periods=50).min().iloc[-1]
+            # 52-week high/low from WEEKLY data (52 bars), consistent with guide's weekly chart focus.
+            # Previously used stock_daily.rolling(252) which diverges from weekly analysis in
+            # gap-heavy or low-liquidity scenarios.
+            lookback52 = min(52, len(w))
+            high52 = float(w['High'].iloc[-lookback52:].max())
+            low52  = float(w['Low'].iloc[-lookback52:].min())
 
-            res['pct_from_52w_high']  = safe_pct(curr, float(high52))
-            res['pct_above_52w_low']  = safe_pct(curr, float(low52))
+            res['pct_from_52w_high']  = safe_pct(curr, high52)
+            res['pct_above_52w_low']  = safe_pct(curr, low52)
             res['prior_uptrend']      = (res['pct_above_52w_low'] is not None
                                          and res['pct_above_52w_low'] >= 30)
-            res['high_52w'] = safe_round(float(high52), 2)
-            res['low_52w']  = safe_round(float(low52), 2)
+            res['high_52w'] = safe_round(high52, 2)
+            res['low_52w']  = safe_round(low52, 2)
 
             if res['confirmed']:
                 score += 1
@@ -389,7 +400,14 @@ class AdvancedBaseBreakoutAnalyzer:
         return res, score
 
     def _base_analysis(self, stock_weekly: pd.DataFrame) -> tuple[dict, int, object]:
-        """Returns (result, score_points, base_high_idx)."""
+        """
+        TIMEFRAME: Weekly data exclusively.
+
+        Guide: base patterns (Cup with Handle, Flat Base, VCP) are identified on
+        weekly charts. The pivot (base_high) is the weekly intraday high — the
+        true resistance ceiling the stock must clear.
+        Returns (result, score_points, base_high_idx).
+        """
         score = 0
         res = {
             "pattern": "Unclear", "length_weeks": None, "depth_pct": None,
@@ -470,6 +488,13 @@ class AdvancedBaseBreakoutAnalyzer:
         return res, score, base_high_idx
 
     def _volume_analysis(self, stock_weekly: pd.DataFrame, base_high_idx) -> tuple[dict, int]:
+        """
+        TIMEFRAME: Weekly data exclusively.
+
+        Guide: volume patterns within the base are assessed on weekly charts.
+        Accumulation ratio (up-week vol vs down-week vol) and volume dry-up
+        (left-half vs right-half of the base) are both weekly-bar metrics.
+        """
         score = 0
         res = {
             "avg_vol_up_weeks": None, "avg_vol_down_weeks": None,
@@ -511,16 +536,34 @@ class AdvancedBaseBreakoutAnalyzer:
 
         return res, score
 
-    def _tight_area_detection(self, stock_daily: pd.DataFrame) -> tuple[dict, int]:
+    def _tight_area_detection(self, stock_daily: pd.DataFrame,
+                               stock_weekly: pd.DataFrame) -> tuple[dict, int]:
+        """
+        TIMEFRAME: Dual — daily for intraday coil detection, weekly for closing range.
+
+        Daily tight areas (≤1.5% range, ≤50% avg vol) detect short-term coiling
+        before an imminent entry — this is appropriately daily per the guide's
+        entry timing discussion.
+
+        Weekly closing range (guide: "weekly closing range of 40% or higher is a
+        sign of constructive action during a base") measures where the week's close
+        sits within the week's High-Low range. Consistently high weekly closing
+        ranges mean buyers are in control at end of week — a sign of accumulation.
+        """
         score = 0
         res = {
+            # Daily tight area signals
             "tight_area_count": 0, "last_tight_date": None,
             "first_30d_avg_range_pct": None, "last_30d_avg_range_pct": None,
             "volatility_contraction_pct": None, "volatility_contracting": False,
-            "tight_area_pass": False
+            "tight_area_pass": False,
+            # Weekly closing range signals (guide: ≥40% = constructive)
+            "weekly_closing_range_pct": None,   # avg over last 8 weeks of base
+            "weekly_closing_range_pass": False,  # avg ≥ 40%
         }
 
         try:
+            # ── Daily: intraday coil detection (last 60 trading days) ────────
             recent = stock_daily.tail(60).copy()
 
             tight_count, current_run = 0, 0
@@ -544,23 +587,46 @@ class AdvancedBaseBreakoutAnalyzer:
             last30  = safe_round(recent['range_pct'].iloc[30:].mean(), 2)
             contraction = safe_pct(last30, first30) if first30 else None
 
-            res['tight_area_count']             = tight_count
-            res['last_tight_date']              = last_tight_date
-            res['first_30d_avg_range_pct']      = first30
-            res['last_30d_avg_range_pct']       = last30
-            res['volatility_contraction_pct']   = contraction
-            res['volatility_contracting']       = contraction is not None and contraction <= -20
-            res['tight_area_pass']              = tight_count > 0
-
-            if res['tight_area_pass']:
-                score += 1
+            res['tight_area_count']           = tight_count
+            res['last_tight_date']            = last_tight_date
+            res['first_30d_avg_range_pct']    = first30
+            res['last_30d_avg_range_pct']     = last30
+            res['volatility_contraction_pct'] = contraction
+            res['volatility_contracting']     = contraction is not None and contraction <= -20
+            res['tight_area_pass']            = tight_count > 0
 
         except Exception:
             pass
 
+        try:
+            # ── Weekly: closing range over last 8 weeks ───────────────────────
+            # Guide: "weekly closing range of 40% or higher is a sign"
+            # Closing range = (Close - Low) / (High - Low) * 100
+            w8 = stock_weekly.tail(8).copy()
+            week_range = w8['High'] - w8['Low']
+            # Avoid divide-by-zero on any flat weeks
+            wcr = ((w8['Close'] - w8['Low']) / week_range.replace(0, np.nan) * 100).dropna()
+            if len(wcr) >= 4:
+                avg_wcr = safe_round(float(wcr.mean()), 1)
+                res['weekly_closing_range_pct']  = avg_wcr
+                res['weekly_closing_range_pass'] = avg_wcr is not None and avg_wcr >= 40
+        except Exception:
+            pass
+
+        # Score: pass either daily tight areas OR weekly closing range >= 40%
+        if res['tight_area_pass'] or res['weekly_closing_range_pass']:
+            score += 1
+
         return res, score
 
     def _priming_patterns(self, stock_daily: pd.DataFrame, pivot_price: float) -> tuple[dict, int]:
+        """
+        TIMEFRAME: Daily data exclusively.
+
+        Entry timing signals (inside bars, upside reversals, tight setup days)
+        require daily granularity — these are last-mile signals before a breakout
+        that are invisible on weekly charts.
+        """
         score = 0
         res = {"inside_bars": [], "upside_reversals": [], "tight_setup_days": [], "best_signal": None}
 
@@ -610,12 +676,27 @@ class AdvancedBaseBreakoutAnalyzer:
 
         return res, score
 
-    def _find_support_levels(self, stock_daily: pd.DataFrame, base_high_idx, current_price: float) -> dict:
+    def _find_support_levels(self, stock_daily: pd.DataFrame, base_high_idx,
+                             current_price: float) -> dict:
+        """
+        TIMEFRAME: Daily data within the base window.
+
+        `base_high_idx` is a WEEKLY timestamp (from _base_analysis). Daily data is
+        sliced from that date forward. We use `searchsorted` to find the first daily
+        bar on or after the weekly pivot date, avoiding KeyError when the exact weekly
+        date is not present in the daily index (e.g., different calendar alignment or
+        data gaps).
+        """
         res = {"all_levels": [], "primary_support": None}
         if base_high_idx is None:
             return res
         try:
-            base_daily = stock_daily.loc[base_high_idx:]
+            # Safely slice daily data starting from the weekly base_high date.
+            # .loc[date:] can silently include no rows if date is not in the index;
+            # using searchsorted ensures we start at the nearest bar >= the pivot date.
+            pivot_ts = pd.Timestamp(base_high_idx)
+            pos = stock_daily.index.searchsorted(pivot_ts)
+            base_daily = stock_daily.iloc[pos:]
             lows = base_daily['Low'].dropna()
             seen = set()
             for low in lows:
@@ -872,7 +953,7 @@ class AdvancedBaseBreakoutAnalyzer:
             # 4. Technical Sections
             curr_price = float(stock_daily['Close'].iloc[-1])
 
-            s2, s2s      = self._stage2_check(stock_weekly, stock_daily)
+            s2, s2s      = self._stage2_check(stock_weekly)
             score       += s2s
 
             # Bug 3 fix: base_analysis runs first so pivot_price is the true base high
@@ -889,7 +970,7 @@ class AdvancedBaseBreakoutAnalyzer:
             vol, vs      = self._volume_analysis(stock_weekly, bh)
             score       += vs
 
-            tight, ts    = self._tight_area_detection(stock_daily)
+            tight, ts    = self._tight_area_detection(stock_daily, stock_weekly)
             score       += ts
 
             prim, ps     = self._priming_patterns(stock_daily, pivot_price)
