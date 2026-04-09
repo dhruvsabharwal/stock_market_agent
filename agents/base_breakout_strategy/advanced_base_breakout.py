@@ -8,8 +8,8 @@ from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
 
-# Global lock for yfinance calls (known to be flaky in parallel threads)
-YF_LOCK = threading.Lock()
+# Semaphore to limit concurrent yfinance calls (avoids hammering the API while still allowing parallelism)
+YF_SEMAPHORE = threading.Semaphore(5)
 
 # ──────────────────────────────────────────────────────────────────────────────
 # 1. Utility & Sanitisation
@@ -82,6 +82,21 @@ class AdvancedBaseBreakoutAnalyzer:
     """
     def __init__(self, max_workers: int = 5):
         self.max_workers = max_workers
+        self._spy_cache: pd.DataFrame | None = None
+
+    def _fetch_spy(self) -> pd.DataFrame:
+        """Fetch SPY weekly data once and cache it for reuse across all tickers."""
+        if self._spy_cache is not None:
+            return self._spy_cache
+        spy = yf.download("SPY", period="3y", interval="1wk", progress=False, auto_adjust=True)
+        if not spy.empty:
+            if isinstance(spy.columns, pd.MultiIndex):
+                spy.columns = spy.columns.get_level_values(0)
+            if hasattr(spy.index, 'tz') and spy.index.tz is not None:
+                spy.index = spy.index.tz_localize(None)
+            spy = spy.dropna()
+        self._spy_cache = spy
+        return spy
 
 # ──────────────────────────────────────────────────────────────────────────────
 # 2. Data Loading
@@ -94,32 +109,23 @@ class AdvancedBaseBreakoutAnalyzer:
         Uses a global lock to prevent yfinance threading issues.
         """
         ticker = ticker.upper()
-        
-        with YF_LOCK:
+
+        # Use cached SPY data (fetched once for the whole batch)
+        spy_weekly = self._fetch_spy()
+
+        with YF_SEMAPHORE:
             try:
                 # Download stock weekly
-                stock_weekly = yf.download(ticker, period="3y", interval="1wk", 
+                stock_weekly = yf.download(ticker, period="3y", interval="1wk",
                                            progress=False, auto_adjust=True)
                 if not stock_weekly.empty:
                     # Flatten MultiIndex if present
                     if isinstance(stock_weekly.columns, pd.MultiIndex):
                         stock_weekly.columns = stock_weekly.columns.get_level_values(0)
-                    
+
                     if hasattr(stock_weekly.index, 'tz') and stock_weekly.index.tz is not None:
                         stock_weekly.index = stock_weekly.index.tz_localize(None)
                     stock_weekly = stock_weekly.dropna()
-
-                # Download SPY weekly
-                spy_weekly = yf.download("SPY", period="3y", interval="1wk", 
-                                         progress=False, auto_adjust=True)
-                if not spy_weekly.empty:
-                    # Flatten MultiIndex if present
-                    if isinstance(spy_weekly.columns, pd.MultiIndex):
-                        spy_weekly.columns = spy_weekly.columns.get_level_values(0)
-                        
-                    if hasattr(spy_weekly.index, 'tz') and spy_weekly.index.tz is not None:
-                        spy_weekly.index = spy_weekly.index.tz_localize(None)
-                    spy_weekly = spy_weekly.dropna()
 
                 # Ticker object for daily data and info
                 t = yf.Ticker(ticker)
@@ -128,7 +134,7 @@ class AdvancedBaseBreakoutAnalyzer:
                     # history() usually returns single-level for one ticker, but safety first
                     if isinstance(stock_daily.columns, pd.MultiIndex):
                         stock_daily.columns = stock_daily.columns.get_level_values(0)
-                        
+
                     if hasattr(stock_daily.index, 'tz') and stock_daily.index.tz is not None:
                         stock_daily.index = stock_daily.index.tz_localize(None)
                     stock_daily = stock_daily.dropna()
@@ -938,12 +944,22 @@ class AdvancedBaseBreakoutAnalyzer:
 
     def analyze_batch(self, tickers: list[str]) -> list[dict]:
         """Parallel analysis for a list of tickers using ThreadPoolExecutor."""
+        # Pre-fetch SPY once so all threads share the cached result
+        print("Pre-fetching SPY data...")
+        self._fetch_spy()
+        print("SPY data cached. Starting parallel analysis...")
+
         results = {}
+        completed = 0
+        total = len(tickers)
         with ThreadPoolExecutor(max_workers=self.max_workers) as ex:
             futures = {ex.submit(self.analyze, t.upper()): t.upper() for t in tickers}
             for future in as_completed(futures):
                 t = futures[future]
                 results[t] = future.result()
+                completed += 1
+                if completed % 10 == 0 or completed == total:
+                    print(f"  Progress: {completed}/{total} tickers done")
         return [results[t.upper()] for t in tickers]
 
     def analyze_batch_to_csv(self, tickers: list[str]) -> str:
