@@ -21,6 +21,9 @@ dependencies = [
     "tqdm",
     "vectorbt>=0.28.4",
     "tabulate>=0.10.0",
+    "pdfplumber>=0.11.9",
+    "pytesseract>=0.3.13",
+    "pdf2image>=1.17.0",
 ]
 
 [tool.hatch.build.targets.wheel]
