@@ -33,10 +33,13 @@ from __future__ import annotations
 
 import math
 from dataclasses import dataclass, field, asdict
-from typing import Optional
+from typing import TYPE_CHECKING, Optional
 
 import numpy as np
 import pandas as pd
+
+if TYPE_CHECKING:
+    from stage_analysis import StageAnalysis
 
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
@@ -202,6 +205,31 @@ class SellInWeakness:
 
 
 @dataclass
+class SellOnStage3:
+    """Exit signal produced when the stock's weekly stage transitions to Stage 3.
+
+    Works for any entry stage — the trigger is purely the weekly stage machine
+    emitting a Stage 3 segment.  Because the weekly bar closes at the end of
+    that week, the sell executes at the OPEN of the first available trading day
+    on or after ``stage3_week_date``.
+
+    If the stop loss hits before the S3 transition week arrives, the stop wins
+    (whichever fires first is used — same ordering as SellInWeakness vs stop).
+    """
+
+    stage3_week_date: pd.Timestamp   # first weekly bar whose state == 3
+    sell_date: pd.Timestamp          # first daily open on or after stage3_week_date
+    sell_price: float                # open price on sell_date
+
+    def to_dict(self) -> dict:
+        d = asdict(self)
+        for k, v in d.items():
+            if isinstance(v, pd.Timestamp):
+                d[k] = v.strftime("%Y-%m-%d")
+        return d
+
+
+@dataclass
 class StopLoss:
     """Initial stop loss for a trade.
 
@@ -283,7 +311,7 @@ class RangeExpansionTrade:
                 d[k] = v.strftime("%Y-%m-%d")
         if isinstance(self.buy, Buy):
             d["buy"] = self.buy.to_dict()
-        if isinstance(self.sell, (SellInWeakness, StopLossHit)):
+        if isinstance(self.sell, (SellInWeakness, SellOnStage3, StopLossHit)):
             d["sell"] = self.sell.to_dict()
         return d
 
@@ -311,6 +339,158 @@ class RangeExpansion:
             if isinstance(v, pd.Timestamp):
                 d[k] = v.strftime("%Y-%m-%d")
         return d
+
+
+@dataclass
+class MomentumResult:
+    """How far a stock ran up from a given date before pulling back by drawdown_pct.
+
+    Tracks the running high of the *close* from the entry date forward.
+    The run ends when the close drops >= drawdown_pct% below that running high.
+    If the data ends before that happens, still_running=True and peak figures
+    reflect the actual high reached so far.
+    """
+    entry_date: pd.Timestamp
+    entry_price: float              # close on entry_date (reference for all returns)
+
+    peak_date: pd.Timestamp         # date of the highest close reached
+    peak_price: float               # highest close reached after entry
+    peak_return_pct: float          # (peak_price - entry_price) / entry_price * 100
+
+    days_to_peak: int               # trading days from entry to peak
+
+    exit_date: Optional[pd.Timestamp]  # date the drawdown_pct triggered; None if still_running
+    exit_price: Optional[float]        # close on exit_date
+
+    total_return_pct: float         # (exit_price or last_close - entry_price) / entry_price * 100
+    days_held: int                  # trading days from entry to exit (or end of data)
+
+    drawdown_trigger_pct: float     # the x% parameter passed in
+    still_running: bool             # True if data ended before drawdown hit
+
+    def to_dict(self) -> dict:
+        d = asdict(self)
+        for k, v in d.items():
+            if isinstance(v, pd.Timestamp):
+                d[k] = v.strftime("%Y-%m-%d") if v is not None else None
+        return d
+
+
+class MomentumMeasure:
+    """Measure how far price ran from any given date before pulling back x%.
+
+    Parameters
+    ----------
+    daily : pd.DataFrame
+        Daily OHLCV with a DatetimeIndex, sorted ascending.
+        Must have a 'Close' column.
+
+    Usage
+    -----
+        mm = MomentumMeasure(daily)
+        result = mm.measure("2023-03-06", drawdown_pct=4.0)
+        print(result.peak_return_pct, result.days_to_peak, result.still_running)
+    """
+
+    def __init__(self, daily: pd.DataFrame):
+        daily = daily.sort_index()
+        # Flatten MultiIndex columns (e.g. yfinance ("Close","AAPL") → "Close")
+        if isinstance(daily.columns, pd.MultiIndex):
+            daily = daily.copy()
+            daily.columns = daily.columns.get_level_values(0)
+        self.daily = daily
+
+    def measure(
+        self,
+        date,
+        drawdown_pct: float = 4.0,
+    ) -> Optional[MomentumResult]:
+        """Measure momentum from `date` forward.
+
+        Parameters
+        ----------
+        date : str, date, or Timestamp
+            The expansion date (day the breakout was seen).  Entry price is
+            the open of the *next* trading day — same convention as the trade
+            buy price.
+        drawdown_pct : float
+            How far (%) the close must fall from the running peak to end the run.
+            e.g. 4.0 means the run ends when close <= peak * (1 - 0.04).
+
+        Returns
+        -------
+        MomentumResult, or None if `date` is beyond the available data.
+        """
+        ts = pd.Timestamp(date)
+        idx = self.daily.index
+
+        # Find the expansion day, then step to the NEXT trading day for entry
+        # (expansion seen on day X → enter at open of day X+1)
+        exp_future = idx[idx >= ts]
+        if len(exp_future) == 0:
+            return None
+        exp_loc = idx.get_loc(exp_future[0])
+        entry_loc = exp_loc + 1          # next trading day
+        if entry_loc >= len(idx):
+            return None                  # no next day in data
+        entry_ts = idx[entry_loc]
+
+        closes = self.daily["Close"].iloc[entry_loc:]
+        opens  = self.daily["Open"].iloc[entry_loc:]
+        if len(closes) == 0:
+            return None
+
+        entry_price = float(opens.iloc[0])   # open of the day after expansion
+        threshold   = 1.0 - drawdown_pct / 100.0
+
+        running_high       = entry_price
+        running_high_date  = closes.index[0]
+        running_high_loc   = 0   # offset within closes
+
+        exit_date  = None
+        exit_price = None
+        exit_loc   = len(closes) - 1   # default: last bar
+
+        for i, (dt, c) in enumerate(closes.items()):
+            c = float(c)
+            if c > running_high:
+                running_high      = c
+                running_high_date = dt
+                running_high_loc  = i
+            # Drawdown check applies from day 1:
+            # - stock drops x% from entry immediately → exit at -x% (loss limit)
+            # - stock goes up then drops x% from peak → trailing stop exit
+            if c <= running_high * threshold:
+                exit_date  = dt
+                exit_price = c
+                exit_loc   = i
+                break
+
+        still_running  = exit_date is None
+        last_close     = float(closes.iloc[exit_loc])
+        last_date      = closes.index[exit_loc]
+
+        peak_return  = (running_high - entry_price) / entry_price * 100
+        total_return = (last_close   - entry_price) / entry_price * 100
+
+        # Trading days: count rows in the slice, not calendar days
+        days_to_peak = running_high_loc                      # rows from entry to peak
+        days_held    = exit_loc                              # rows from entry to exit
+
+        return MomentumResult(
+            entry_date          = entry_ts,
+            entry_price         = round(entry_price, 4),
+            peak_date           = running_high_date,
+            peak_price          = round(running_high, 4),
+            peak_return_pct     = round(peak_return, 2),
+            days_to_peak        = days_to_peak,
+            exit_date           = exit_date,
+            exit_price          = round(exit_price, 4) if exit_price is not None else None,
+            total_return_pct    = round(total_return, 2),
+            days_held           = days_held,
+            drawdown_trigger_pct= drawdown_pct,
+            still_running       = still_running,
+        )
 
 
 @dataclass
@@ -1823,6 +2003,129 @@ def build_range_expansion_trade(
                         "d2_date": daily.index[k],
                         "d2_close": round(c_today, 2),
                     }
+
+        k += 1
+
+    return trade
+
+
+def build_range_expansion_trade_sell_on_stage3(
+    expansion_date: pd.Timestamp,
+    daily: pd.DataFrame,
+    stage_analysis: "StageAnalysis",
+    stop_type: str = "expansion_open",
+    stop_buffer_pct: float = 0.02,
+    stop_constant_pct: float = 0.03,
+    max_loss_pct: float = 0.04,
+) -> Optional[RangeExpansionTrade]:
+    """Build a paper trade that exits the first week the stock enters Stage 3.
+
+    Works for any entry stage — the exit trigger is purely the stock's weekly
+    stage transitioning to 3, regardless of what stage it was in at entry.
+    Entry is identical to ``build_range_expansion_trade`` (open of day after
+    expansion_date).
+
+    Exit logic (whichever fires first):
+      - **Stage 3 sell**: walk forward on daily bars; at the open of each day
+        look up the weekly stage via ``stage_analysis.state_at(date)``.  The
+        first day where state == 3 triggers a sell at that day's open (the
+        first trading day of the Stage 3 week).
+      - **Stop loss**: intraday Low ≤ stop_price → fill at ``min(Open, stop_price)``.
+      - If neither fires before daily data ends, ``sell`` stays None (trade open).
+
+    ``stage_analysis`` must cover at least the trade's duration.
+    """
+    if expansion_date not in daily.index:
+        return None
+
+    exp_loc = daily.index.get_loc(expansion_date)
+    if isinstance(exp_loc, slice):
+        exp_loc = exp_loc.start
+
+    buy_loc = exp_loc + 1
+    n = len(daily)
+    if buy_loc >= n:
+        return None
+
+    buy_date = daily.index[buy_loc]
+    buy_price = _to_scalar(daily["Open"].iloc[buy_loc])
+
+    stop_loss = build_stop_loss(
+        expansion_date=expansion_date,
+        daily=daily,
+        buy_price=buy_price,
+        stop_type=stop_type,
+        buffer_pct=stop_buffer_pct,
+        constant_pct=stop_constant_pct,
+        max_loss_pct=max_loss_pct,
+    )
+    if stop_loss is None:
+        const_stop = buy_price * (1 - stop_constant_pct)
+        max_loss_stop = buy_price * (1 - max_loss_pct)
+        capped = max_loss_stop > const_stop
+        final = max(const_stop, max_loss_stop)
+        stop_loss = StopLoss(
+            stop_type="constant_pct",
+            reference_price=round(buy_price, 2),
+            stop_price=round(final, 2),
+            buffer_pct=stop_buffer_pct,
+            constant_pct=stop_constant_pct,
+            max_loss_pct=max_loss_pct,
+            capped_by_max_loss=capped,
+        )
+
+    buy = Buy(date=buy_date, price=round(buy_price, 2), stop_loss=stop_loss)
+    trade = RangeExpansionTrade(
+        buy=buy,
+        sell=None,
+        sell_reason=None,
+        return_pct=None,
+        days_held=None,
+        ma_type="n/a",                  # MA not used in this strategy
+        allow_rising_close_exception=False,
+    )
+
+    stop_price = stop_loss.stop_price
+    opens = daily["Open"].values
+    lows = daily["Low"].values
+
+    def _finalize(sell_loc: int, sell_price: float, sell_obj, reason: str) -> None:
+        trade.sell = sell_obj
+        trade.sell_reason = reason
+        if buy_price > 0:
+            trade.return_pct = round((sell_price / buy_price - 1) * 100, 2)
+        trade.days_held = sell_loc - buy_loc
+
+    k = buy_loc
+    while k < n:
+        day_date = daily.index[k]
+        day_open = _to_scalar(opens[k])
+        day_low = _to_scalar(lows[k])
+
+        # 1. Check weekly stage at the open of this day — sell if S3 has started.
+        seg = stage_analysis.state_at(day_date)
+        if seg is not None and seg.state == 3:
+            sell_obj = SellOnStage3(
+                stage3_week_date=seg.start_date,
+                sell_date=day_date,
+                sell_price=round(day_open, 2),
+            )
+            _finalize(k, day_open, sell_obj, "stage3")
+            return trade
+
+        # 2. Intraday stop check.
+        if day_low <= stop_price:
+            gap_down = day_open <= stop_price
+            fill = min(day_open, stop_price)
+            sell_obj = StopLossHit(
+                hit_date=day_date,
+                sell_date=day_date,
+                sell_price=round(fill, 2),
+                stop_price=round(stop_price, 2),
+                gap_down=gap_down,
+            )
+            _finalize(k, fill, sell_obj, "stop_loss")
+            return trade
 
         k += 1
 
