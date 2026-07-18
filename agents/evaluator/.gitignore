@@ -1,0 +1,6 @@
+# Generated / large artifacts — do not commit
+data/cache/
+data/fundamentals_cache/
+data/revenue_cache/
+eval/results/
+probabilities/db/
