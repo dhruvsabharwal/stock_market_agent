@@ -208,3 +208,14 @@ __marimo__/
 
 # Notes
 NOTES.md
+# evaluator run outputs (large)
+agents/evaluator/runs/
+# evaluator data caches (large, regenerable via data/ingest.py — never commit)
+agents/evaluator/data/cache/
+agents/evaluator/data/rs_cache/
+agents/evaluator/data/revenue_cache/
+agents/evaluator/data/fundamentals_cache/
+# evaluator scratch outputs
+agents/evaluator/shop_led.csv
+# macOS junk
+.DS_Store
