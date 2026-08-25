@@ -661,6 +661,167 @@ ingredient, not the recipe. The recipe = the PORTFOLIO SIMULATOR** (sizing,
 concentration, pyramiding, regime exposure, leader selection, monthly compounding →
 measure CAGR / maxDD / Sharpe). That is THE next build; every thread now points to it.
 
+## 5g. Session 4c — exit decision, trade visualizer, prev-weekly-state test
+
+**Default exit = `StopAndWeaknessExit` (user's call, for now).** Swing8 has the
+higher per-trade mean (1.20 vs 0.52) but it earns it by **holding through weekly
+downtrends** (a single trade can ride 2019→2021 with no swing-low break) — a
+drawdown the user won't hold. The weakness exit rolls out when momentum breaks
+(≈ "don't hold the downtrend") and re-enters on the next breakout (the scan counts
+re-entries as separate trades). Per-trade mean ≠ portfolio truth: the weakness
+exit's higher win rate + faster turnover + shallower drawdown may compound better
+in a concentrated book. **Swing vs weakness is a PORTFOLIO-sim question** (turnover /
+compounding / maxDD), not a per-trade one — revisit there. Reactive day-3 kill was
+net-negative on both bases (§5f/G-analog); ScaleOut giveback cap clipped the tail.
+
+**`weekly_prev_trend_state` hypothesis — REFUTED.** "A weekly base that came from a
+downtrend has worse success" is not supported: `basing←downtrend` (holdout n=11.6k,
+win 23.2%, mean +0.72, mom 40.3%) ≈ `basing←uptrend` (n=4.4k, win 23.6%, +0.39,
+40.1%). Nearly identical win/mom; the mean gap flips train↔holdout (noise). If
+anything the bottoming base (from downtrend) is slightly better on holdout mean —
+consistent with fresh Stage-2 launches starting out of a downtrend base. Caveat:
+`prev` is only the immediately-prior distinct state (not weeks-since); a finer
+"weeks since downtrend ended" cut is untested.
+
+**Trade visualizer — `eval/viz.py`** (new): `plot_trade` (one trade, normalized to
+% from entry: path + peak/MFE + exit + swing-trail), `plot_trades` (overlay any
+subset, normalized), `plot_ticker` (every trade on the ACTUAL price chart, log,
+with weekly-regime shading + weekly-10-EMA + a volume panel). Renders inline via
+IPython PNG bytes (backend-agnostic) or `out='x.png'` to file. NB Antigravity IDE
+doesn't render inline images → use `out=` or JupyterLab.
+
+## 5h. Session 4d — the STAGE-2 GATE (Weinstein "only trade in Stage 2") + the
+##      potential reframe + the trade visualizer
+
+**The reframe: judge on POTENTIAL (peak), not win>0.** A "win" (return>0) counts a
++0.1% scratch; the user wants MASSIVE moves. Metric switched to the exit-independent
+peak: `mom_win`=peak>4%, and the tail `>30/50/100%`. On TSLA this is stark — Stage-1
+2015-2019 setups: mean peak 9.6%, **0% reached +100%, 4% reached +50%**; the 2019-2021
+launch: mean peak **113%, 19% reached +100%, 24% >+50%, max +1383%**. Same stock/
+detector — **12× the potential. The Stage-1 vs Stage-2 difference is the TAIL (big-move
+rate), not the win rate** (both ~26-43% peak>8%).
+
+**Long saga: can we AVOID Stage-1 dead zones? First the negatives.** Tested many
+"meaningful resistance" definitions, all judged on potential, holdout: `resist_lookback`
+(bars since price was last this high) — the ONE modest signal: in-range pop (<25 bars,
+~52% of setups) mean peak 5.2%/win 18% vs fresh high (>25) ~10%/27%; **robust across
+uptrend AND basing** (a good base-break makes a *new* high → kept; a stall under the
+recent high → cut). But the elaborate structural versions (2yr-ceiling, swings-capped,
+bars-held, 200-SMA-slope-flat, blue-sky) ALL **fail to separate the tail** (weak/noisy,
+holdout). **THE key proof:** TSLA broke to a **new ALL-TIME HIGH in June 2017** (perfect
+"resistance broken") → peaked +0.6%, lost −4%; the *same* signal in 2019 → +1383%.
+Identical setup, opposite outcome → resistance-clearing CANNOT predict. And **TSLA
+2014-2019 was NOT a dead zone at all** — it went $10→$22 (**2.2×**), made **38 new
+52-week highs**, 200-day MA **+63% (~10%/yr)**. The "flat dead zone" is an OPTICAL
+ILLUSION from the 2020 17× compressing the log chart. So Stage-1 avoidance can't be a
+*predictive* filter (the launch breakout is indistinguishable from the failures — the
+momentum ceiling, one more time).
+
+**BUT as a DISCIPLINE rule it IS definable (user's explicit choice).** "Never trade in
+Stage 1 — only participate after the long-term ceiling breaks (Stage 2), accepting I'll
+miss the occasional early launch." Iterated with the user (visually, on TSLA) to the
+final **STAGE-2 = REJECTED-CEILING rule** (matches their discretionary 13-yr TSLA read):
+> **Skip** a setup if price is under a *governing high* (3-yr max) that has **REJECTED a
+> rally** — a swing high (±10-bar pivot) that got within ~15% of the high and was **then
+> FOLLOWED BY a daily downtrend** (a real reversal via the Kell daily `trend_state`, NOT
+> just a pause/swing-high). **Trade** when making new highs, OR pulling back from a high
+> that has not yet failed (rally paused, no downtrend). Self-sizing, no arbitrary clock.
+
+Reproduces the user's reading: skip 2015-17 (<$19.41), skip 2018-19 (<$26), trade the
+2020 launch + June-2020 recovery + pullbacks, skip 2022-24 (<2021 high), trade 2025+.
+The daily-downtrend refinement was crucial (April-30-2020 was a swing high but the trend
+never went down → not a failed rally → June-2020 stays tradeable). **DECISION: the
+strategy will only trade in Stage 2.** Planned future additions (user): layer weekly-
+uptrend + higher-highs on top. **⚠ NOT yet universe-validated or baked into the build —
+it lives only in `viz.py` (`_stage2`) as a per-bar rule; next step is to test it
+universe-wide (does the discipline earn its keep on mean AND tail, train/holdout) and,
+if kept, wire it into a provider.**
+
+**Stage-2 mechanics (precise, as implemented in `viz._stage2`).** Ceiling = **rolling
+3-yr max high** (`lookback=756`, tunable). Stage 2 = **TRUE if EITHER** (a) close ≥ the
+rolling 3-yr high (new high, cleared the ceiling), **OR** (b) below it but the high has
+**0 failed rallies** yet (fresh pullback). Stage 2 = **FALSE** only once a rally has
+failed at the ceiling (≥1 swing high within `near=15%` of it, then a daily downtrend) —
+then you must break the high to re-enter. So it is NOT "the 3-yr high must always be
+broken"; a fresh pullback under an *unproven* high is fine. **Far-below-ceiling is
+handled correctly** (NVDA-verified): a topping stock leaves failed rallies *near its
+high on the way down* which stick as resistance, so a stock 200% below its 3-yr high
+(e.g. NVDA 2022 low) reads NOT Stage 2, its whole recovery *under* the old high reads
+"wk-uptrend but no Stage 2" (yellow), and it flips green only when it breaks the high.
+Known **edge case** (rare): if the 3-yr high was set with NO near failed rally (fast
+gap-down crash / one-day spike), a deep-below stock can wrongly read Stage 2. Known
+**limitation**: single 3-yr ceiling (no intermediate-resistance stack) — the "clears a
+nearer resistance = succeeded rally → Stage 2 earlier" refinement is unbuilt.
+
+**Trade visualizer — `eval/viz.py` (much expanded).** `plot_trade` (one trade,
+normalized), `plot_trades` (overlay), and **`plot_ticker`** (every trade on the real
+log-price chart) now with: **Stage-2 × weekly 4-color background** (green=St2+wk-uptrend,
+light-green=St2+wk-base, **light-red=St2+wk-downtrend** = "allowed but weekly rolling
+over", light-yellow=wk-uptrend-but-no-St2, white=skip), a **volume panel**, **exhaustion-
+STAGE markers** (Kell ①②③ = `exh_since_downtrend` per leg, now placed at each extension's
+PEAK — visibly ①→②→③ into TSLA's Feb-2020 blow-off top), readable price ticks (both
+sides), dates under both panels. Renders inline via IPython PNG or `out=`. Helpers:
+`_stage2`, `_exh_stages`, `_weekly_regime`. **⚠ Exhaustion-stage OPEN ISSUE:** the count
+resets on EVERY daily downtrend (any normal pullback), so a big sustained advance
+fragments into repeated ①'s (TSLA 2020-21 reads ①→②→reset→①→reset→① instead of Kell's
+①→②→③→④). To align with Kell, reset on a DURABLE break (weekly downtrend / sustained
+daily downtrend), not every daily wiggle — same "confirmed-downtrend reset" open item
+as the stage counts. User accepted the peak-positioning fix; reset alignment deferred.
+
+## 5i. Session 5 — meaningful-resistance ("stuck") gate, 2LYNCH base features,
+##      broad-index weekly regime (dataset rebuilt → 240 cols)
+
+Three feature families added and baked into `setups_all_wk1035` (114,586 setups ×
+**240 cols**). All are RECORDED features (no gating) — evaluate first.
+
+- **Meaningful-resistance / Stage-1 "stuck below resistance"** — `strategy/resistance.py`
+  (`MeaningfulResistance`). **NOT** a Stage-2 definition (Kell's weekly uptrend still
+  owns Stage 2); this flags the *dead zone* — price stuck under a repeatedly-tested
+  overhead resistance. **Swing-high driven, no trend-state dependency** (a rejected
+  rally fails *below* a high so it reads `basing`, not `uptrend` — using ±`pivot_window`
+  confirmed swing highs catches every rally-and-fail). Swing highs within `band_pct`
+  (12%) are ONE **zone** (symmetric — 25.8 & 26.0 are the same level); the zone price
+  tracks its highest test. Formation doesn't count; each *subsequent* retest swing high
+  = a rejection; `>= min_rejections` (2) = "significant". **Cleared** = a daily close
+  above the zone by more than `clear_buffer_pct` (3%) — a marginal poke is a test, not
+  a break (fixes double-top fragmentation). Knobs (flat on `StageRangeStrategy`,
+  `resistance_*`): `pivot_window=10`, `band_pct=12`, `min_rejections=2`,
+  `clear_buffer_pct=3`, `recency_window_days=None`, `max_dist_pct=None`. Emits:
+  `stuck_under_resistance_{6_mo,1_yr,2_yr}` (windowed via `stuck_at(close, bars)`),
+  `broke_above_resistance_{6_mo,1_yr,2_yr}` (breakout *above* a meaningful resistance =
+  escaped the dead zone), `stuck_below_resistance` + `resistance_dist_pct` /
+  `resistance_test_count` / `resistance_level_count` / `significant_resistance_count` /
+  `next_resistance_dist_pct`. Finding: **stuck is not a strong per-trade edge** —
+  pk8/tail differences ~1pp and flip train↔holdout; the one consistent effect is
+  pure-trapped modestly caps pk30 (~1pp). On TSLA the keep/drop split looks strong but
+  is tiny-n (illustration, not edge). ⚠ The daily `_stage2` in `viz.py` is the OLD
+  rejected-ceiling rule; the new detector is `_stuck_below_resistance`.
+- **2LYNCH base features** (Bonde's checklist) — added in `strategy/range_strategy.py`
+  (flow to all setups): `up_days_in_a_row` (consec up-days ending AT the breakout — "2"),
+  `day_before_range_pct` / `day_before_body_pct` (pre-breakout day tightness — "N"),
+  `range_down_days_gt4` (# >4% down days in the box — "C" cleanliness),
+  `prior_move_linearity` (Kaufman efficiency ratio of the `linearity_window`=30 bars
+  BEFORE the box; ~1 straight, ~0 choppy — "L") + `prior_move_net_pct` (signed net %,
+  direction). We already had Y (`exh_since_downtrend`/stage-0), C-tightness, H
+  (`expansion_closing_range`). Finding: full 6-condition 2LYNCH gate passes ~3.3% of
+  liquid setups and lifts win/pk8 ~1–2pp, stable but tiny (momentum ceiling holds).
+- **Broad-index weekly regime** — `strategy/index_regime.py` (`IndexRegime`) + a monitor
+  `eval/regime.py` (`regime.snapshot()`). Runs the SAME weekly Kell cycle used per stock
+  (`WeeklyKellContext`, same weekly config) on **SPY / IWM / IJR / IJH**, point-in-time
+  as of the signal bar (cached per (symbol,config) at module scope). Emits
+  `{spy,iwm,ijr,ijh}_weekly_state` (uptrend/basing/downtrend) + `_risk_on` (uptrend|basing
+  = the sticky, non-flip-flopping read; downtrend=risk-off). ⚠ Fetch the ETFs first:
+  `store.get('IWM'/'IJR'/'IJH')` (SPY already cached). Weekly machine is on WEEKLY bars
+  (not daily); the week-to-week wiggle is only uptrend↔basing — collapse to `risk_on`.
+
+**Viz (`eval/viz.py plot_ticker`) extras** (session 5): dead-zone red shading with
+`_stuck_below_resistance`, meaningful-resistance level lines, `exclude_stuck=True`
+(drop trades whose signal bar is in the dead zone + print KEEP/DROP stats),
+`label_trades=True` (MM/DD at each entry + printed trade table), and `win8` (realized
+return >8%) on the stats line. All `resistance_*` knobs are `plot_ticker` args.
+**Bug fixed:** an `end`-variable shadow in the resistance-line loop leaked trades past
+the window — renamed the loop vars (don't re-introduce).
+
 ## 6. Bugs fixed (don't re-introduce)
 
 - **Stop-above-entry (gap-up-fade)**: `expansion_open` stop could land ABOVE the
@@ -716,6 +877,15 @@ measure CAGR / maxDD / Sharpe). That is THE next build; every thread now points 
   (`base`|`wk1035` builds), **`FEATURE_AUDIT.md`** (column inventory / terminology).
   Datasets: `runs/setups_all.{parquet,csv}` (20/5/5) + `runs/setups_all_wk1035.*`
   (10/3/5), both 214 cols / 114,586 setups, row-aligned.
+- **Session-4b/c/d code** (§5f/§5g/§5h): `engine/exits.py` — `ScaleOutSwingTrailExit`
+  (swing-trail + %-giveback cap + sell-into-strength scale-out; the giveback cap
+  clips the tail, net-negative) and `ReactiveDay3Exit` (2-red-closes kill on any base
+  exit; net-negative — patience wins). **`eval/viz.py`** — the trade visualizer
+  (`plot_trade`/`plot_trades`/`plot_ticker` + `_stage2`/`_exh_stages`/`_weekly_regime`;
+  Stage-2×weekly shading, volume, exhaustion-stage ①②③, price ticks, dates). Exit
+  A/B datasets in `runs/`: `setups_all_wk1035_{swing8,pure_swing5,scaleout,trail5gb,
+  day3_swing8,day3_weakness}` (row-aligned, only the exit differs). **The Stage-2
+  rejected-ceiling rule lives in `viz._stage2` only — not yet a strategy provider.**
 
 ---
 
@@ -737,14 +907,26 @@ measure CAGR / maxDD / Sharpe). That is THE next build; every thread now points 
   the entry question to ground: **the momentum move is UNPREDICTABLE (4 ways; AUC
   0.54 holdout, ~43% mom ceiling), even TSLA/NVDA had ~base-level per-breakout win
   rates (edge is 100% tail).** **User concluded: we can't predict winning breakouts.**
+- ✅ Session 4b/c/d (§5f/§5g/§5h): the **exit is a monotone win-rate↔expectancy dial**
+  — `pure SwingLowTrailExit(8)` best (3× default) but **user adopts `StopAndWeaknessExit`
+  as the DEFAULT** (won't hold through downtrends; swing-vs-weakness is a portfolio-sim
+  question). Reactive day-3 kill & giveback caps both net-negative (clip the tail).
+  Batting screen → 32% holdout; **10-EMA extension** (weekly, sharpest failure filter);
+  the **`prev_trend_state` "downtrend→basing = worse" hypothesis REFUTED**. Built the
+  **trade visualizer** and the **STAGE-2 rejected-ceiling gate** (matches the user's
+  discretionary TSLA read; **DECISION: only trade Stage 2**) — §5h.
 
-**The entry question is CLOSED.** Entry = a bounded consistency lever (≤~43% win),
-downside-only. All remaining upside is the exit + portfolio. Forward path:
+**The entry-PREDICTION question is CLOSED** (can't pick winning breakouts). Entry =
+a bounded consistency lever + a REGIME GATE (Stage 2). Upside = exit + portfolio.
+Forward path:
 
+0. **Validate + bake in the STAGE-2 gate** (§5h) — run `viz._stage2` universe-wide,
+   test whether "only trade Stage 2" earns its keep (mean AND tail, train/holdout); if
+   yes, wire it into a strategy provider. Then layer weekly-uptrend + higher-highs.
 1. **Flip the weekly default to 10/3/5** in `StageRangeStrategy` (validated §5e.C),
    and consider a build with `min_days≥6` (3-day bases drag the book, §5e.D). Also
    still outstanding: a `min_dollar_volume=500_000` build (use `vol>500k` as the base
-   filter for now via `trend_eval`).
+   filter for now via `trend_eval`). Exit default = `StopAndWeaknessExit` (§5g).
 2. **THE MAIN FRONTIER — PORTFOLIO SIMULATION** (not more entry work). This is where
    every thread now points. Build: position sizing + concentration + **pyramiding**
    into the leaders, a **patient exit** riding the tail (swing_trail_8 baseline; test

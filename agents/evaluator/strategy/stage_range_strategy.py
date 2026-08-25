@@ -27,6 +27,7 @@ from ..data.fundamentals import EpsHistory, RevenueHistory
 from ..engine.records import Bar
 from .base import StrategyContext
 from .higher_timeframe import HigherTimeframeExtension
+from .index_regime import IndexRegime
 from .kell import KellCycle
 from .ma_stack import MovingAverageStack
 from .trend_state import TrendState
@@ -34,6 +35,7 @@ from .weekly_kell import WeeklyKellContext
 from .momentum import MarketRegime, MarketReturns, RelativeStrength, TrailingReturns
 from .overhead import OverheadSupply
 from .range_strategy import RangeBreakoutStrategy
+from .resistance import MeaningfulResistance
 from .stage2 import Stage2TrendTemplate
 
 
@@ -66,6 +68,14 @@ class StageRangeStrategy(RangeBreakoutStrategy):
         # ── overhead supply knobs ────────────────────────────────────────────
         overhead_windows_months=(6, 12, 24),
         overhead_swing_window: int = 10,
+        # ── meaningful-resistance / Stage-1 "stuck below resistance" knobs ────
+        resistance_pivot_window: int = 10,      # ±bars for a confirmed swing high
+        resistance_band_pct: float = 12.0,      # swing highs within this % = same zone
+        resistance_min_rejections: int = 2,     # >= this = a "significant" resistance
+        resistance_clear_buffer_pct: float = 3.0,  # close must exceed a zone by this % to "break" it
+        resistance_recency_window_days=None,    # only count retests within this many trailing bars (~252=1yr); None=all-time
+        resistance_stuck_windows: Optional[dict] = None,  # {label: bars} -> stuck_under_resistance_{label}; default 6mo/1yr/2yr
+        resistance_max_dist_pct=None,           # optional guard: ignore ceilings farther than this % above (off by default)
         # ── moving-average stack (price above each MA? + coil) ───────────────
         ma_ema_periods=(10, 20),
         ma_sma_periods=(50, 200),
@@ -135,6 +145,19 @@ class StageRangeStrategy(RangeBreakoutStrategy):
             windows_months=overhead_windows_months,
             swing_window=overhead_swing_window, buffer_bars=buffer_bars,
         )
+        # Stage-1 dead-zone flag — stuck below a meaningful (repeatedly-tested)
+        # resistance. NOT a Stage-2 definition (Kell's uptrend handles that).
+        self._resistance = MeaningfulResistance(
+            pivot_window=resistance_pivot_window,
+            band_pct=resistance_band_pct,
+            min_rejections=resistance_min_rejections,
+            clear_buffer_pct=resistance_clear_buffer_pct,
+            recency_window_days=resistance_recency_window_days,
+            max_dist_pct=resistance_max_dist_pct,
+        )
+        # trailing-window "stuck under resistance" flags (bars). ~21 bars/month.
+        self._stuck_windows = resistance_stuck_windows or {
+            "6_mo": 126, "1_yr": 252, "2_yr": 504}
         self._ma_stack = MovingAverageStack(
             ema_periods=ma_ema_periods, sma_periods=ma_sma_periods,
             coil_ema_periods=coil_ema_periods, coil_sma_periods=coil_sma_periods,
@@ -150,6 +173,11 @@ class StageRangeStrategy(RangeBreakoutStrategy):
             ext_ref_ema=weekly_ext_ref_ema or ext_ref_ema,
             trend_slope_window=weekly_trend_slope_window,
             trend_pivot_window=weekly_trend_pivot_window)
+        # broad-market index regime (SPY/IWM/IJR/IJH) via the SAME weekly cycle
+        self._index_regime = IndexRegime(
+            ext_ref_ema=weekly_ext_ref_ema or ext_ref_ema,
+            slope_window=weekly_trend_slope_window,
+            pivot_window=weekly_trend_pivot_window)
         self._stock_ret = TrailingReturns(months=return_months, days=return_days)
         self._mkt_ret = MarketReturns(
             benchmark=market_benchmark, months=return_months, days=return_days,
@@ -170,6 +198,8 @@ class StageRangeStrategy(RangeBreakoutStrategy):
         self._ticker = ctx.ticker
         self._tt.update(bar)
         self._kell.update(bar)
+        # Stage-1 stuck-below-resistance detector (swing-high driven; no trend dep).
+        self._resistance.update(bar)
         self._overhead.update(bar)
         self._ma_stack.update(bar)
         self._htf.update(bar)
@@ -211,11 +241,16 @@ class StageRangeStrategy(RangeBreakoutStrategy):
             rev_g.report_date.strftime("%Y-%m-%d") if rev_g else None
         )
         feats.update(self._kell.features(bar))       # Kell cycle features
+        feats.update(self._resistance.features(bar)) # Stage-1 stuck-below-resistance
+        for _lbl, _win in self._stuck_windows.items():  # windowed stuck / broke-above flags
+            feats[f"stuck_under_resistance_{_lbl}"] = self._resistance.stuck_at(bar.close, _win)
+            feats[f"broke_above_resistance_{_lbl}"] = self._resistance.broke_above(bar.close, _win)
         feats.update(self._overhead.features(bar))   # overhead supply features
         feats.update(self._ma_stack.features(bar))   # price above each MA?
         feats.update(self._htf.features(bar))        # weekly/monthly 10-EMA extension (Kell)
         feats.update(self._trend.features(bar))      # base-in-uptrend vs decline gate
         feats.update(self._weekly_kell.features(bar)) # WEEKLY Kell trend context
+        feats.update(self._index_regime.features(bar)) # broad-index weekly regime (SPY/IWM/IJR/IJH)
         stock_ret = self._stock_ret.features(bar)
         mkt_ret = self._mkt_ret.features(bar)
         feats.update(stock_ret)                      # stock trailing returns

@@ -344,6 +344,40 @@ class ScaleOutSwingTrailExit(ExitRule):
         return ExitResult(sell_idx, buy_price * (1 + blended), reason, peak, trough, d2p, tbp)
 
 
+class ReactiveDay3Exit(ExitRule):
+    """A REACTIVE 'no-follow-through' kill layered on any base exit (§5f).
+
+    If the first ``kill_days`` bars (entry day = d1, then d2, …) ALL close below
+    entry, the setup has told us it isn't following through → exit at the NEXT
+    open. (§5f: two red closes flag ~50% of losers but only ~10% of >8% winners
+    — 13.5:1 — because winners get greener while losers stay red.) If the base
+    exit (its −4% stop / swing-trail / weakness sell) already fires at or before
+    that bar, the base wins; otherwise the base exit governs the trade untouched.
+    Swap ``base_exit`` to react on top of ANY sell (swing-trail, stop+weakness…).
+    """
+
+    name = "reactive_day3"
+
+    def __init__(self, *, base_exit: ExitRule, kill_days: int = 2):
+        self.base = base_exit
+        self.kill_days = kill_days
+
+    def simulate(self, pd_, buy_idx, buy_price, setup) -> ExitResult:
+        base_res = self.base.simulate(pd_, buy_idx, buy_price, setup)
+        c, o, l, n = pd_.close, pd_.open, pd_.low, len(pd_)
+        kill_idx = buy_idx + self.kill_days                     # exit at this bar's open
+        if kill_idx >= n:
+            return base_res
+        if (all(c[buy_idx + j] < buy_price for j in range(self.kill_days))
+                and base_res.sell_idx > kill_idx):
+            seg_c = c[buy_idx:kill_idx + 1]
+            d2p = int(np.argmax(seg_c))
+            return ExitResult(kill_idx, float(o[kill_idx]), "reactive_kill",
+                              float(seg_c.max()), float(l[buy_idx:kill_idx + 1].min()),
+                              d2p, float(l[buy_idx:buy_idx + d2p + 1].min()))
+        return base_res
+
+
 class ReactiveMomentumExit(ExitRule):
     """React to failed follow-through instead of waiting for the full stop.
 

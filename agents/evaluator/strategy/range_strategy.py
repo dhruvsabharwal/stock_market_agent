@@ -61,6 +61,7 @@ class RangeBreakoutStrategy(Strategy):
         max_loss_pct: float = 0.04,
         tight_pcts=(1.0, 2.0),
         range_recent_days: int = 3,
+        linearity_window: int = 30,
         min_dollar_volume: Optional[float] = None,
         dollar_volume_window: int = 20,
         vol_avg_window: int = 50,
@@ -83,6 +84,7 @@ class RangeBreakoutStrategy(Strategy):
         )
         self.tight_pcts = list(tight_pcts)
         self.range_recent_days = range_recent_days
+        self.linearity_window = linearity_window
         self.box_pct = box_pct
         self.min_days = min_days
         self.expansion_pct = expansion_pct
@@ -128,6 +130,16 @@ class RangeBreakoutStrategy(Strategy):
         self._below_prev: Optional[bool] = None        # was prior close below MA
         self._exit_queued: bool = False
         self._was_in_position: bool = False
+        # ── 2LYNCH-style base features: consecutive up-days into the breakout, the
+        #    day-before bar's tightness, and base cleanliness (>4% down days). All
+        #    causal — updated at the end of each bar, so at a breakout they hold the
+        #    PRIOR bars' values.
+        self._recent_daychg: deque[float] = deque(maxlen=12)  # raw day-over-day %, last bars
+        self._last_range_pct: Optional[float] = None          # prior bar (high-low)/low %
+        self._last_body_pct: Optional[float] = None           # prior bar |close-open|/open %
+        # closes buffer for prior-move linearity (efficiency ratio of the advance
+        # into the base); big enough for a long base + the linearity window.
+        self._closes: deque[float] = deque(maxlen=linearity_window + 260)
 
     # ── price-mode helpers ───────────────────────────────────────────────────
     def _upper(self, b: Bar) -> float:
@@ -228,6 +240,13 @@ class RangeBreakoutStrategy(Strategy):
         self._below_prev = self._below_weakness_ma(close)
         self._prev_close = close
         self._was_in_position = ctx.in_position
+        # record this bar's day-change + tightness for the NEXT bar's breakout snapshot
+        self._recent_daychg.append(day_chg)
+        self._last_range_pct = (round((bar.high - bar.low) / bar.low * 100, 2)
+                                if bar.low > 0 else None)
+        self._last_body_pct = (round(abs(bar.close - bar.open) / bar.open * 100, 2)
+                               if bar.open > 0 else None)
+        self._closes.append(close)
 
     # ── helpers ────────────────────────────────────────────────────────────--
     def _enter(self, bar, ctx, day_chg, box_high, box_low, box_len) -> None:
@@ -264,6 +283,18 @@ class RangeBreakoutStrategy(Strategy):
             # biggest single-day move inside the box (day-over-day %); down is negative
             "range_max_up_day_pct": round(max(self._win_daychg), 2) if self._win_daychg else None,
             "range_max_down_day_pct": round(min(self._win_daychg), 2) if self._win_daychg else None,
+            # 2LYNCH: consecutive up-days ending AT the breakout (1 = only the
+            # breakout day is up; higher = extended into the move, Bonde's "2").
+            "up_days_in_a_row": self._up_days_run(),
+            # 2LYNCH "N": the day BEFORE the breakout — narrow/quiet is better.
+            "day_before_range_pct": self._last_range_pct,
+            "day_before_body_pct": self._last_body_pct,
+            # 2LYNCH "C" cleanliness: # of >4% down days inside the box (Bonde: <=1).
+            "range_down_days_gt4": sum(1 for dc in self._win_daychg if dc < -4.0),
+            # 2LYNCH "L": linearity of the advance INTO the base — Kaufman efficiency
+            # ratio (|net move| / total path, 0=choppy, 1=straight) + its net % move
+            # (sign = direction). Measured over the window just before the box.
+            **self._linearity_features(box_len),
             # same metrics over just the LAST N days of the box (common tail read)
             **self._recent_range_features(),
             "price_mode": self.price_mode,
@@ -314,6 +345,39 @@ class RangeBreakoutStrategy(Strategy):
     def _extra_features(self, bar: Bar) -> dict:
         """Extra entry-time features to record on the trade. Default: none."""
         return {}
+
+    def _linearity_features(self, box_len: int) -> dict:
+        """Kaufman efficiency ratio of the advance in the ``linearity_window`` bars
+        ENDING just before the box (i.e. the run-up into the consolidation). ~1 =
+        smooth/straight, ~0 = choppy. Also the net % move over that window (sign =
+        up/down). None until there's enough pre-box history."""
+        W = self.linearity_window
+        closes = list(self._closes)                 # up to the prior bar
+        end = len(closes) - box_len                  # exclusive end = box start
+        out = {"prior_move_linearity": None, "prior_move_net_pct": None}
+        if end <= 1:
+            return out
+        w = closes[max(0, end - W):end]
+        if len(w) < 10 or w[0] <= 0:
+            return out
+        path = sum(abs(w[i] - w[i - 1]) for i in range(1, len(w)))
+        if path <= 0:
+            return out
+        out["prior_move_linearity"] = round(abs(w[-1] - w[0]) / path, 3)
+        out["prior_move_net_pct"] = round((w[-1] / w[0] - 1) * 100, 2)
+        return out
+
+    def _up_days_run(self) -> int:
+        """Consecutive up-close days ending at (and including) the breakout bar.
+        The breakout bar is an up day by construction (day_chg >= expansion_pct);
+        we then walk back through the raw recent day-changes while they're > 0."""
+        run = 1
+        for dc in reversed(self._recent_daychg):
+            if dc is not None and dc > 0:
+                run += 1
+            else:
+                break
+        return run
 
     @staticmethod
     def _box_height(uppers, lowers) -> Optional[float]:
