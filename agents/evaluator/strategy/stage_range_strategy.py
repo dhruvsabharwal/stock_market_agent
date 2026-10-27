@@ -37,6 +37,10 @@ from .overhead import OverheadSupply
 from .range_strategy import RangeBreakoutStrategy
 from .resistance import MeaningfulResistance
 from .stage2 import Stage2TrendTemplate
+from .volatility import Volatility
+from .vars import VolAdjRelativeStrength
+from .vcp import VCPFootprint
+from .tightness_score import VCPTightnessScore
 
 
 class StageRangeStrategy(RangeBreakoutStrategy):
@@ -96,6 +100,19 @@ class StageRangeStrategy(RangeBreakoutStrategy):
         return_days=(),
         market_benchmark: str = "SPY",
         regime_index: str = "QQQ",
+        # ── per-stock volatility (Jeff Sun's R risk-unit: ADR%/ATR%) ─────────
+        adr_window: int = 20,
+        atr_window: int = 14,
+        vol_ext_sma: int = 50,
+        vol_contraction_lookback: int = 40,
+        vcp_pivot_window: int = 5,
+        vcp_lookback: int = 120,
+        vcp_max_legs: int = 4,
+        tight_score_window: int = 5,
+        tight_score_baseline: int = 50,
+        tight_score_long_window: int = 15,
+        tight_score_long_vol_window: int = 50,
+        tight_score_long_baseline: int = 200,
         # ── gate + fundamentals ──────────────────────────────────────────────
         min_criteria: int = 0,
         record_eps: bool = True,
@@ -184,6 +201,27 @@ class StageRangeStrategy(RangeBreakoutStrategy):
         )
         self._regime = MarketRegime(index=regime_index, months=return_months)
         self._rs = RelativeStrength(months=return_months)
+        # per-stock volatility (ADR%/ATR%) — the risk unit for the R mechanism
+        self._vol = Volatility(adr_window=adr_window, atr_window=atr_window,
+                               ext_sma=vol_ext_sma,
+                               contraction_lookback=vol_contraction_lookback)
+        self._vcp = VCPFootprint(pivot_window=vcp_pivot_window,
+                                 lookback=vcp_lookback, max_legs=vcp_max_legs)
+        self._tight_score = VCPTightnessScore(tight_window=tight_score_window,
+                                              baseline_window=tight_score_baseline)
+        # LONG-horizon pair: same mechanism, scaled to weeks/months instead of days
+        # (a multi-week base contraction, e.g. NVDA Jun-Oct 2024, needs a longer
+        # window+baseline than the short version's 5d/50d can see). A SEPARATE
+        # Volatility instance provides a genuinely longer ADR%/ATR% yardstick
+        # (not reused from the short one) so the ratio stays meaningfully
+        # non-circular at this scale too.
+        self._vol_long = Volatility(adr_window=tight_score_long_vol_window,
+                                    atr_window=tight_score_long_vol_window)
+        self._tight_score_long = VCPTightnessScore(tight_window=tight_score_long_window,
+                                                    baseline_window=tight_score_long_baseline,
+                                                    key_suffix="_long")
+        # VARS — volatility-adjusted RS vs SPY (all) + the resolved group benchmark
+        self._vars = VolAdjRelativeStrength(months=return_months, atr_window=atr_window)
         self.warmup_bars = max(self.warmup_bars,
                                int(max(return_months, default=0) * 22) + 40,
                                max(return_days, default=0) + 5)
@@ -202,6 +240,11 @@ class StageRangeStrategy(RangeBreakoutStrategy):
         self._resistance.update(bar)
         self._overhead.update(bar)
         self._ma_stack.update(bar)
+        self._vol.update(bar)
+        self._vol_long.update(bar)
+        self._vcp.update(bar)
+        self._tight_score.update(bar)
+        self._tight_score_long.update(bar)
         self._htf.update(bar)
         self._trend.update(bar)
         self._weekly_kell.update(bar)
@@ -247,6 +290,17 @@ class StageRangeStrategy(RangeBreakoutStrategy):
             feats[f"broke_above_resistance_{_lbl}"] = self._resistance.broke_above(bar.close, _win)
         feats.update(self._overhead.features(bar))   # overhead supply features
         feats.update(self._ma_stack.features(bar))   # price above each MA?
+        feats.update(self._vol.features(bar, box_len=getattr(self, "_box_len", None)))  # ADR%/ATR% + ext + contraction
+        feats.update(self._vcp.features(bar))        # VCP contraction footprint (pivot legs)
+        feats.update(self._tight_score.features(bar, adr_pct=feats.get("adr_pct"),
+                                                atr_pct=feats.get("atr_pct")))  # joshdm_94-style tightness percentile
+        # LONG-horizon pair: _vol_long's own dict is NOT merged into feats (it shares
+        # key names like "adr_pct" with the short Volatility -- merging would silently
+        # overwrite the short-horizon values). Only its adr_pct/atr_pct feed the long
+        # tightness score, whose own keys carry the "_long" suffix so nothing collides.
+        vol_long_feats = self._vol_long.features(bar)
+        feats.update(self._tight_score_long.features(bar, adr_pct=vol_long_feats.get("adr_pct"),
+                                                      atr_pct=vol_long_feats.get("atr_pct")))
         feats.update(self._htf.features(bar))        # weekly/monthly 10-EMA extension (Kell)
         feats.update(self._trend.features(bar))      # base-in-uptrend vs decline gate
         feats.update(self._weekly_kell.features(bar)) # WEEKLY Kell trend context
@@ -262,4 +316,7 @@ class StageRangeStrategy(RangeBreakoutStrategy):
         for m in self._stock_ret.months:
             s, k = stock_ret.get(f"ret_{m}m"), mkt_ret.get(f"mkt_ret_{m}m")
             feats[f"rs_vs_spy_{m}m"] = round(s - k, 2) if (s is not None and k is not None) else None
+        # VARS: volatility-adjusted RS (return / ATR% each side), vs SPY + group benchmark.
+        feats.update(self._vars.features(bar, stock_ret, feats.get("atr_pct"),
+                                         self._ticker or ""))
         return feats

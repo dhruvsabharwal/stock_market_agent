@@ -37,7 +37,9 @@ def main(which: str = "base") -> None:
     name, cfg = BUILDS[which]
     tickers = [t for t in store.cached_tickers() if t in set(store.us_universe())]
     print(f"building '{name}' over {len(tickers)} cached US tickers; cfg={cfg}")
-    screen.build_dataset(tickers, strat_kwargs=cfg, name=name)
+    # with_opening_range joins the entry-day hourly OR metrics (NaN pre-2023, where
+    # no hourly cache exists — only ~3yr is available); harmless if none ingested.
+    screen.build_dataset(tickers, strat_kwargs=cfg, name=name, with_opening_range=True)
 
 
 if __name__ == "__main__":

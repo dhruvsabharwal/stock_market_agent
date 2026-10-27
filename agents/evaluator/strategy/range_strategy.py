@@ -250,6 +250,7 @@ class RangeBreakoutStrategy(Strategy):
 
     # ── helpers ────────────────────────────────────────────────────────────--
     def _enter(self, bar, ctx, day_chg, box_high, box_low, box_len) -> None:
+        self._box_len = box_len          # exposed for _extra_features (box-relative contraction)
         d_range = bar.high - bar.low
         closing_range = (bar.close - bar.low) / d_range * 100 if d_range > 0 else 50.0
         exp = RangeExpansion(
@@ -299,6 +300,9 @@ class RangeBreakoutStrategy(Strategy):
             **self._recent_range_features(),
             "price_mode": self.price_mode,
             "expansion_move_pct": exp.day_chg_pct,
+            "expansion_box_move_pct": exp.move_pct,   # close vs box_high (box-relative, not day-over-day)
+            "box_high": round(box_high, 4) if box_high else None,   # raw ref level (not a "clean" feature)
+            "box_low": round(box_low, 4) if box_low else None,
             "expansion_closing_range": exp.closing_range_pct,
             "strong_close": exp.strong_close,
             # tight days inside the box (body + range variants, per threshold)

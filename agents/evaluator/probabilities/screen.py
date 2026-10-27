@@ -41,12 +41,15 @@ def build_dataset(
     tickers=None, *, strat_kwargs=None, start=None, end=None,
     notional: float = 1000.0, strategy_cls=StageRangeStrategy, exit_rule=None,
     name=None, save: bool = True, verbose: bool = True,
+    with_opening_range: bool = False,
 ) -> pd.DataFrame:
     """Run ``run_scan`` over each ticker and pool every setup into one frame.
 
     Always saves the result to ``runs/<name>.{parquet,csv}`` (``save=True``); if
     ``name`` is omitted it is auto-generated from the exit rule + a timestamp, so
     every run is captured. ``exit_rule`` selects the sell (default = live sell).
+    ``with_opening_range`` left-joins the entry-day opening-range metrics (hourly
+    cache; NaN where uncovered — only ~3yr exists) — see ``eval.opening_range``.
     """
     tickers = tickers or store.cached_tickers()
     frames = []
@@ -59,6 +62,9 @@ def build_dataset(
         if trades:
             frames.append(metrics.ledger_df(trades))
     out = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
+    if with_opening_range and len(out):
+        from ..eval.opening_range import attach_opening_range
+        out = attach_opening_range(out)
     if save and len(out):
         RUNS_DIR.mkdir(parents=True, exist_ok=True)
         if name is None:

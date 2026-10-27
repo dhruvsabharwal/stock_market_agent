@@ -90,10 +90,12 @@ class StopAndWeaknessExit(ExitRule):
     name = "stop_weakness"
 
     def __init__(self, *, ma_type: str = "21ema",
-                 allow_rising_close_exception: bool = True, max_loss_pct: float = 0.04):
+                 allow_rising_close_exception: bool = True, max_loss_pct: float = 0.04,
+                 use_weakness: bool = True):
         self.ma_type = ma_type
         self.allow_veto = allow_rising_close_exception
         self.max_loss_pct = max_loss_pct
+        self.use_weakness = use_weakness
 
     def _stop(self, buy_price: float, setup: dict) -> Optional[float]:
         levels = []
@@ -109,8 +111,23 @@ class StopAndWeaknessExit(ExitRule):
         levels = [s for s in levels if s < buy_price]
         return max(levels) if levels else None
 
+    def _stop_price(self, pd_, buy_idx: int, buy_price: float, setup: dict) -> Optional[float]:
+        """The initial stop level. Default = the setup stop capped by ``max_loss_pct``.
+        ATR subclasses override this to size the stop off the stock's own volatility."""
+        return self._stop(buy_price, setup)
+
+    def _atr_at_entry(self, pd_, buy_idx: int) -> Optional[float]:
+        """ATR (dollars) as of the SIGNAL bar (buy_idx-1) — leak-free: the entry
+        bar's own range isn't fully known at the open when we fill."""
+        i = max(buy_idx - 1, 0)
+        a = pd_.atr(getattr(self, "atr_window", 14))
+        if i >= len(a):
+            return None
+        v = a[i]
+        return float(v) if v == v else None      # NaN guard
+
     def simulate(self, pd_, buy_idx, buy_price, setup) -> ExitResult:
-        stop = self._stop(buy_price, setup)
+        stop = self._stop_price(pd_, buy_idx, buy_price, setup)
         below = pd_.below_ma(self.ma_type)
         o, l, c, n = pd_.open, pd_.low, pd_.close, len(pd_)
         peak, trough, d2p, tbp, pending = c[buy_idx], l[buy_idx], 0, l[buy_idx], False
@@ -125,11 +142,135 @@ class StopAndWeaknessExit(ExitRule):
                 trough = l[k]
             if c[k] > peak:
                 peak, d2p, tbp = c[k], dh, trough
-            if k > buy_idx and below[k - 1] and below[k]:
+            if self.use_weakness and k > buy_idx and below[k - 1] and below[k]:
                 if not (self.allow_veto and c[k] > c[k - 1]):
                     pending = True
             k += 1
         return ExitResult(n - 1, float(c[n - 1]), "end_of_data", peak, trough, d2p, tbp)
+
+
+class AtrStopExit(StopAndWeaknessExit):
+    """Stop sized off the stock's OWN volatility: entry − ``k_atr`` × ATR (ATR as
+    of the signal bar). The direct answer to "is a flat % stop wrong?" — on a wild
+    name a fixed 4% is fractions of an ATR (noise-tight); here every stop is the
+    same NUMBER OF ATRs regardless of the stock. Keeps the sell-in-weakness leg by
+    default (set ``use_weakness=False`` for a pure ATR stop). No flat % cap."""
+
+    name = "atr_stop"
+
+    def __init__(self, *, k_atr: float = 1.0, atr_window: int = 14, **kw):
+        kw.setdefault("max_loss_pct", None)      # ATR defines the risk, not a flat %
+        super().__init__(**kw)
+        self.k_atr = k_atr
+        self.atr_window = atr_window
+
+    def _stop_price(self, pd_, buy_idx, buy_price, setup):
+        atr = self._atr_at_entry(pd_, buy_idx)
+        if atr is None or atr <= 0:
+            return self._stop(buy_price, setup)  # fallback (e.g. warm-up) to setup stop
+        stop = buy_price - self.k_atr * atr
+        return stop if stop < buy_price else None
+
+
+class StructuralAtrExit(StopAndWeaknessExit):
+    """Structural stop, ATR-capped: use the setup's structural stop level (its
+    **swing-low / box reference** from ``build_stop_loss``), but never risk more than
+    ``k_cap`` × ATR — a loose structural stop is tightened to the ATR floor, a tighter
+    one is kept. Replaces the flat 4% cap with a per-stock ATR cap. Keeps the weakness leg.
+
+    NOTE — this is NOT Jeff Sun's "LoD" (Low of Day at execution): the daily backtest
+    has no intraday history, so the structural level here is the daily swing-low, not
+    the intraday low. His true LoD (the first-hour low) is ``or_low`` in the
+    ``eval.opening_range`` layer — for the future intraday Re-ORH buy/sell, not here."""
+
+    name = "structural_atr"
+
+    def __init__(self, *, k_cap: float = 2.0, atr_window: int = 14, **kw):
+        kw.setdefault("max_loss_pct", None)      # the ATR cap replaces the flat cap
+        super().__init__(**kw)
+        self.k_cap = k_cap
+        self.atr_window = atr_window
+
+    def _stop_price(self, pd_, buy_idx, buy_price, setup):
+        structural = self._stop(buy_price, setup)         # setup level (no flat cap)
+        atr = self._atr_at_entry(pd_, buy_idx)
+        atr_floor = (buy_price - self.k_cap * atr) if (atr and atr > 0) else None
+        cands = [s for s in (structural, atr_floor) if s is not None and s < buy_price]
+        return max(cands) if cands else None              # the tighter (higher) of the two
+
+
+class ThreeStopExit(StopAndWeaknessExit):
+    """Jeff Sun's 3-Stop: split the position into ``n_tranches`` equal pieces and
+    stagger their stops evenly from entry down to the final stop (default = 1×ATR).
+
+    As price falls, each level sells one tranche — so a full failure realises the
+    BLENDED loss (levels at −1/3, −2/3, −1 ATR → −0.67R), not the full −1R. The
+    surviving tranches ride the winner and exit together on weakness (same leg as
+    the other exits), so this isolates the loss-management effect vs ``AtrStopExit``.
+
+    Returns a synthetic size-weighted ``sell_price`` so the downstream return math is
+    unchanged (same trick as ``ScaleOutSwingTrailExit``). Peak/MAE span the full hold.
+
+    NOT modelled here (portfolio-level): the re-entry / inverse-pyramid "scale back
+    in on a re-ORH" and the T+3 breakeven consolidation — those belong in the
+    portfolio simulator, not a per-trade exit."""
+
+    name = "three_stop"
+
+    def __init__(self, *, k_atr: float = 1.0, n_tranches: int = 3,
+                 atr_window: int = 14, **kw):
+        kw.setdefault("max_loss_pct", None)      # ATR defines the final stop
+        super().__init__(**kw)
+        self.k_atr = k_atr
+        self.n = n_tranches
+        self.atr_window = atr_window
+
+    def _final_stop(self, pd_, buy_idx, buy_price, setup):
+        atr = self._atr_at_entry(pd_, buy_idx)
+        if atr and atr > 0:
+            s = buy_price - self.k_atr * atr
+            return s if s < buy_price else None
+        return self._stop(buy_price, setup)      # fallback (warm-up): the setup stop
+
+    def simulate(self, pd_, buy_idx, buy_price, setup) -> ExitResult:
+        final_stop = self._final_stop(pd_, buy_idx, buy_price, setup)
+        # tranche stop levels, shallowest first: entry − (i/n)·risk, i = 1..n
+        if final_stop is not None:
+            risk = buy_price - final_stop
+            levels = [buy_price - (i / self.n) * risk for i in range(1, self.n + 1)]
+        else:
+            levels = []
+        w = 1.0 / self.n
+        below = pd_.below_ma(self.ma_type)
+        o, l, c, n = pd_.open, pd_.low, pd_.close, len(pd_)
+        peak, trough, d2p, tbp = c[buy_idx], l[buy_idx], 0, l[buy_idx]
+        held, ti, realized = self.n, 0, 0.0      # tranches left, next level, blended return frac
+        pending = False
+        k = buy_idx
+        while k < n:
+            if pending and held > 0:             # weakness: remaining tranches at next open
+                realized += held * w * (float(o[k]) / buy_price - 1)
+                return ExitResult(k, buy_price * (1 + realized), "weakness",
+                                  peak, trough, d2p, tbp)
+            while ti < self.n and held > 0 and levels and l[k] <= levels[ti]:
+                fill = min(float(o[k]), levels[ti])   # gap-downs fill at the open
+                realized += w * (fill / buy_price - 1)
+                held -= 1
+                ti += 1
+            if held == 0:
+                return ExitResult(k, buy_price * (1 + realized), "three_stop",
+                                  peak, trough, d2p, tbp)
+            if l[k] < trough:
+                trough = l[k]
+            if c[k] > peak:
+                peak, d2p, tbp = c[k], k - buy_idx, trough
+            if self.use_weakness and k > buy_idx and below[k - 1] and below[k]:
+                if not (self.allow_veto and c[k] > c[k - 1]):
+                    pending = True
+            k += 1
+        realized += held * w * (float(c[n - 1]) / buy_price - 1)   # any survivors at last close
+        return ExitResult(n - 1, buy_price * (1 + realized), "end_of_data",
+                          peak, trough, d2p, tbp)
 
 
 class TrailingStopExit(ExitRule):
@@ -498,5 +639,71 @@ class ReactiveMomentumExit(ExitRule):
                 if deterioration >= self.weak_min and not rising:
                     pending, pending_reason = True, "weakness"
 
+            k += 1
+        return ExitResult(n - 1, float(c[n - 1]), "end_of_data", peak, trough, d2p, tbp)
+
+
+class LodStopExit(StopAndWeaknessExit):
+    """`StopAndWeaknessExit` with the stop taken from the ENTRY DAY'S LOW.
+
+    For intraday entries (`IntradayBoxBreakStrategy`): the setup carries
+    ``lod_stop`` = the session low established BEFORE the entry hour, which is
+    the level that was actually known when the fill happened.
+
+    Two things differ from the parent, both about the entry bar:
+      * the stop is ``lod_stop`` (optionally capped at ``k_atr`` ATRs and/or
+        ``max_loss_pct``), not the setup's daily criteria price;
+      * on the entry bar the stop is checked against ``entry_day_post_low`` (the
+        low AFTER the fill), not the full session low — the pre-entry low is
+        where the stop IS, so checking it would stop every trade out instantly.
+
+    The sell-in-weakness leg (2 consecutive closes below the MA -> next open) is
+    the parent's, unchanged.
+    """
+
+    name = "lod_stop"
+
+    def __init__(self, *, k_atr: Optional[float] = None, atr_window: int = 14,
+                 max_loss_pct: Optional[float] = None, **kw):
+        super().__init__(max_loss_pct=max_loss_pct, **kw)
+        self.k_atr = k_atr
+        self.atr_window = atr_window
+
+    def _stop_price(self, pd_, buy_idx: int, buy_price: float, setup: dict):
+        lod = setup.get("lod_stop")
+        levels = [float(lod)] if lod is not None else []
+        if self.k_atr is not None:
+            atr = self._atr_at_entry(pd_, buy_idx)
+            if atr is not None:
+                levels.append(buy_price - self.k_atr * atr)   # cap a runaway LoD
+        if self.max_loss_pct is not None:
+            levels.append(buy_price * (1 - self.max_loss_pct))
+        levels = [s for s in levels if s < buy_price]
+        return max(levels) if levels else None          # tightest surviving stop
+
+    def simulate(self, pd_, buy_idx, buy_price, setup) -> ExitResult:
+        stop = self._stop_price(pd_, buy_idx, buy_price, setup)
+        below = pd_.below_ma(self.ma_type)
+        o, l, c, n = pd_.open, pd_.low, pd_.close, len(pd_)
+        # entry bar: only the post-fill part of the session can hit the stop
+        post = setup.get("entry_day_post_low")
+        entry_low = float(post) if post is not None else float(l[buy_idx])
+        peak, trough, d2p, tbp, pending = c[buy_idx], entry_low, 0, entry_low, False
+        k = buy_idx
+        while k < n:
+            if pending:
+                return ExitResult(k, float(o[k]), "weakness", peak, trough, d2p, tbp)
+            low_k = entry_low if k == buy_idx else float(l[k])
+            if stop is not None and low_k <= stop:
+                fill = stop if k == buy_idx else min(float(o[k]), stop)
+                return ExitResult(k, fill, "stop_loss", peak, trough, d2p, tbp)
+            dh = k - buy_idx
+            if low_k < trough:
+                trough = low_k
+            if c[k] > peak:
+                peak, d2p, tbp = c[k], dh, trough
+            if self.use_weakness and k > buy_idx and below[k - 1] and below[k]:
+                if not (self.allow_veto and c[k] > c[k - 1]):
+                    pending = True
             k += 1
         return ExitResult(n - 1, float(c[n - 1]), "end_of_data", peak, trough, d2p, tbp)

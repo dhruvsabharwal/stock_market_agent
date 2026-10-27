@@ -219,3 +219,7 @@ agents/evaluator/data/fundamentals_cache/
 agents/evaluator/shop_led.csv
 # macOS junk
 .DS_Store
+agents/base_breakout_strategy/test.csv
+agents/evaluator/anuj_notes.md
+agents/evaluator/data/sector_cache/
+artifacts

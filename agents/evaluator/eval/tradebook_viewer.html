@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trade Book Viewer</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#f6f4ef;
+  --surface:#ffffff;
+  --surface-2:#efece3;
+  --ink:#211f1a;
+  --muted:#726f66;
+  --line:#ddd8cc;
+  --accent:#2f6f6b;
+  --win:#1f7a4d;
+  --loss:#a5402c;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15181a; --surface:#1c2023; --surface-2:#23282b; --ink:#eeece5;
+    --muted:#9b988e; --line:#33383b; --accent:#5fb3ac; --win:#4fbf83; --loss:#e0725a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15181a; --surface:#1c2023; --surface-2:#23282b; --ink:#eeece5;
+  --muted:#9b988e; --line:#33383b; --accent:#5fb3ac; --win:#4fbf83; --loss:#e0725a;
+}
+html{background:var(--bg);}
+*{box-sizing:border-box;}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,sans-serif;
+  padding:28px 32px 60px; margin:0;
+}
+h1{
+  font-family:"Fraunces",Georgia,serif; font-weight:600; font-size:26px;
+  letter-spacing:-0.01em; margin:0 0 4px; text-wrap:balance;
+}
+.subtitle{ color:var(--muted); font-size:13.5px; margin:0 0 20px; max-width:70ch; line-height:1.5; }
+code{font-family:"IBM Plex Mono",monospace; background:var(--surface-2); padding:1px 5px; border-radius:4px; font-size:0.92em;}
+
+/* ── loader ── */
+#loader{
+  background:var(--surface); border:1.5px dashed var(--line); border-radius:12px;
+  padding:26px; text-align:center; margin-bottom:22px; transition:border-color .15s, background .15s;
+}
+#loader.drag{ border-color:var(--accent); background:var(--surface-2); }
+#loader p{ color:var(--muted); font-size:13px; margin:0 0 12px; }
+#loader .schema{ font-size:11.5px; color:var(--muted); margin-top:12px; line-height:1.6; }
+.btnrow{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+button.pill{
+  background:var(--accent); color:#fff; border:none; border-radius:99px;
+  padding:9px 18px; font-family:"IBM Plex Sans",sans-serif; font-size:13px; font-weight:500;
+  cursor:pointer;
+}
+button.pill.ghost{ background:var(--surface-2); color:var(--ink); border:1px solid var(--line); }
+#fileInput{ display:none; }
+#errBox{ color:var(--loss); font-size:12.5px; margin-top:10px; display:none; }
+.featurePathRow{ margin-top:16px; padding-top:14px; border-top:1px solid var(--line); text-align:left; }
+.featurePathRow label{ display:block; font-size:11.5px; color:var(--muted); margin-bottom:6px; line-height:1.5; }
+.featurePathRow input{
+  width:100%; background:var(--surface-2); border:1px solid var(--line); border-radius:7px;
+  padding:8px 11px; font-family:"IBM Plex Mono",monospace; font-size:12.5px; color:var(--ink);
+}
+.featurePathRow input:focus{ outline:2px solid var(--accent); outline-offset:1px; }
+
+#app{ display:none; }
+
+.tiles{ display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:10px; margin-bottom:22px; }
+.tile{ background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:12px 14px; }
+.tile .label{ font-size:10.5px; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted); margin-bottom:6px; }
+.tile .value{ font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; font-size:19px; font-weight:500; }
+.tile .value.win{color:var(--win);} .tile .value.loss{color:var(--loss);}
+
+.panel{ background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:16px 18px 18px; margin-bottom:20px; }
+.panel h2{ font-family:"Fraunces",Georgia,serif; font-size:16px; font-weight:600; margin:0 0 3px; }
+.panel .desc{ color:var(--muted); font-size:12.5px; margin:0 0 14px; }
+
+.controls{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:14px; }
+.controls input[type="text"]{
+  background:var(--surface-2); border:1px solid var(--line); border-radius:7px;
+  padding:7px 11px; font-family:"IBM Plex Mono",monospace; font-size:13px; color:var(--ink); width:160px;
+}
+.controls input[type="text"]:focus{ outline:2px solid var(--accent); outline-offset:1px; }
+.seg{ display:flex; border:1px solid var(--line); border-radius:7px; overflow:hidden; }
+.seg button{
+  background:var(--surface-2); border:none; color:var(--muted); font-family:"IBM Plex Sans",sans-serif;
+  font-size:12.5px; padding:7px 13px; cursor:pointer; border-right:1px solid var(--line);
+}
+.seg button:last-child{ border-right:none; }
+.seg button.active{ background:var(--accent); color:#fff; }
+.legend{ margin-left:auto; display:flex; gap:14px; font-size:11.5px; color:var(--muted); align-items:center; }
+.legend .sw{ display:inline-block; width:11px; height:11px; border-radius:3px; margin-right:5px; vertical-align:-1px; }
+.count-note{ font-size:12px; color:var(--muted); margin-bottom:10px; }
+.changeBtn{ margin-left:8px; }
+
+#chartWrap{
+  overflow-x:auto; overflow-y:auto; max-height:560px;
+  border:1px solid var(--line); border-radius:8px; background:var(--surface); position:relative;
+}
+#chartWrap::-webkit-scrollbar{ width:10px; height:10px; }
+#chartWrap::-webkit-scrollbar-thumb{ background:var(--line); border-radius:5px; }
+svg text{ font-family:"IBM Plex Mono",monospace; fill:var(--ink); }
+.axis-label{ fill:var(--muted); font-size:10px; }
+.grid-line{ stroke:var(--line); stroke-width:1; }
+.row-tick{ fill:var(--ink); font-size:9.5px; }
+.bar{ cursor:pointer; stroke:none; }
+.bar:hover{ stroke:var(--ink); stroke-width:1; }
+
+#tooltip{
+  position:fixed; pointer-events:none; background:var(--ink); color:var(--bg);
+  font-family:"IBM Plex Mono",monospace; font-size:12px; padding:9px 12px; border-radius:8px;
+  line-height:1.55; box-shadow:0 6px 20px rgba(0,0,0,0.25); opacity:0; transition:opacity .08s;
+  z-index:50; white-space:nowrap;
+}
+#tooltip b{ font-family:"IBM Plex Sans",sans-serif; font-weight:600; }
+
+table{ border-collapse:collapse; width:100%; font-size:12.5px; }
+thead th{
+  text-align:left; font-size:10.5px; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted);
+  border-bottom:1px solid var(--line); padding:8px 10px; position:sticky; top:0; background:var(--surface);
+}
+tbody td{
+  padding:7px 10px; border-bottom:1px solid var(--line);
+  font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+tbody tr:hover{ background:var(--surface-2); }
+.ticker-cell{ font-family:"IBM Plex Sans",sans-serif; font-weight:600; }
+#tableWrap{ max-height:420px; overflow:auto; border:1px solid var(--line); border-radius:8px; }
+.ret-pos{ color:var(--win); font-weight:500; }
+.ret-neg{ color:var(--loss); }
+.reason-pill{
+  font-family:"IBM Plex Sans",sans-serif; font-size:10.5px; padding:2px 8px;
+  border-radius:99px; background:var(--surface-2); color:var(--muted);
+}
+footer{ color:var(--muted); font-size:11.5px; margin-top:6px; line-height:1.6; }
+
+.controls select{
+  background:var(--surface-2); border:1px solid var(--line); border-radius:7px;
+  padding:7px 10px; font-family:"IBM Plex Sans",sans-serif; font-size:12.5px; color:var(--ink);
+}
+.controls select:focus{ outline:2px solid var(--accent); outline-offset:1px; }
+.clickable-row{ cursor:pointer; }
+.ticker-cell{ text-decoration:none; }
+.ticker-link{ cursor:pointer; border-bottom:1px dotted var(--muted); }
+.ticker-link:hover{ color:var(--accent); border-bottom-color:var(--accent); }
+
+/* ── chart-command modal ── */
+#modalOverlay{
+  position:fixed; inset:0; background:rgba(0,0,0,0.45); display:none;
+  align-items:center; justify-content:center; z-index:100; padding:20px;
+}
+#modalOverlay.open{ display:flex; }
+#modalBox{
+  background:var(--surface); border:1px solid var(--line); border-radius:12px;
+  padding:22px 24px; max-width:920px; width:100%; max-height:88vh; overflow-y:auto;
+  box-shadow:0 20px 60px rgba(0,0,0,0.3);
+}
+#modalBox h3{
+  font-family:"Fraunces",Georgia,serif; font-size:18px; font-weight:600; margin:0 0 4px;
+}
+#modalBox .modalSub{ color:var(--muted); font-size:12.5px; margin:0 0 14px; }
+#modalBox pre{
+  background:var(--surface-2); border:1px solid var(--line); border-radius:8px;
+  padding:12px 14px; font-family:"IBM Plex Mono",monospace; font-size:12.5px;
+  overflow-x:auto; white-space:pre-wrap; word-break:break-word; margin:0 0 14px;
+}
+#modalBox .modalBtns{ display:flex; gap:10px; justify-content:flex-end; }
+#modalBox .stats{ font-size:12.5px; color:var(--muted); margin-bottom:14px; line-height:1.7; }
+#modalBox .stats b{ color:var(--ink); font-family:"IBM Plex Mono",monospace; font-weight:500; }
+
+#chartImgWrap{
+  border:1px solid var(--line); border-radius:8px; background:var(--surface-2);
+  margin-bottom:14px; min-height:120px; display:flex; align-items:center; justify-content:center;
+  overflow:hidden;
+}
+#chartImg{ display:none; width:100%; height:auto; }
+#chartImgStatus{ color:var(--muted); font-size:12.5px; padding:24px; text-align:center; }
+.pulse{ animation:pulse 1.2s ease-in-out infinite; }
+@keyframes pulse{ 0%,100%{opacity:.5;} 50%{opacity:1;} }
+#cmdToggle{
+  background:none; border:none; color:var(--accent); font-family:"IBM Plex Sans",sans-serif;
+  font-size:12px; cursor:pointer; padding:0; margin-bottom:8px; text-decoration:underline;
+}
+#cmdSection{ display:none; }
+.modalPathRow{ margin-bottom:12px; }
+.modalPathRow label{ display:block; font-size:11.5px; color:var(--muted); margin-bottom:5px; }
+.modalPathRow input{
+  width:100%; background:var(--surface-2); border:1px solid var(--line); border-radius:7px;
+  padding:7px 10px; font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--ink);
+}
+.modalPathRow input:focus{ outline:2px solid var(--accent); outline-offset:1px; }
+</style>
+</head>
+<body>
+
+<h1>Trade Book Viewer</h1>
+<p class="subtitle">
+  Drop in any trade-ledger CSV to see it as a position timeline and log. Runs entirely in this browser tab — nothing is uploaded anywhere.
+</p>
+
+<div id="loader">
+  <p>Drag a CSV here, or</p>
+  <div class="btnrow">
+    <button class="pill" id="pickBtn">Choose CSV file…</button>
+  </div>
+  <input type="file" id="fileInput" accept=".csv">
+  <div class="schema">
+    Required columns: <code>ticker</code>, <code>entry_date</code>, <code>exit_date</code>, <code>return_pct</code>.
+    Optional (used if present): <code>dollar_size</code>, <code>pnl_dollars</code>, <code>entry_price</code>, <code>exit_price</code>, <code>exit_reason</code>, <code>days_held</code>.
+    Column names are matched case-insensitively; a few common aliases (<code>symbol</code>→ticker, <code>size</code>→dollar_size, <code>pnl</code>→pnl_dollars) are recognized too.
+  </div>
+  <div id="errBox"></div>
+
+  <div class="featurePathRow">
+    <label for="featurePath">Optional: feature/ledger file for live charts. Leave blank — <code>chart_server.py</code> already defaults to the file <code>build_trade_book.py</code> uses.</label>
+    <input type="text" id="featurePath" placeholder="agents/evaluator/runs/setups_intraday_clear2_d4.parquet">
+  </div>
+</div>
+
+<div id="app">
+  <div class="tiles" id="tiles"></div>
+
+  <div class="panel">
+    <h2>Position timeline</h2>
+    <p class="desc">Each bar is one trade, entry → exit. Bar length is the holding period; color and saturation track the return. Click a bar (or a ticker in the log below) for the <code>viz.plot_ticker(...)</code> command to view its chart.</p>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search ticker…">
+      <div class="seg" id="filterSeg">
+        <button data-f="all" class="active">All</button>
+        <button data-f="win">Winners</button>
+        <button data-f="loss">Losers</button>
+      </div>
+      <select id="periodGranularity">
+        <option value="all">All time</option>
+        <option value="year">By year</option>
+        <option value="quarter">By quarter</option>
+        <option value="month">By month</option>
+      </select>
+      <select id="periodValue" style="display:none;"></select>
+      <div class="legend">
+        <span><span class="sw" style="background:var(--loss)"></span>loss</span>
+        <span><span class="sw" style="background:var(--win)"></span>win</span>
+      </div>
+      <button class="pill ghost changeBtn" id="changeBtn">Load a different file</button>
+    </div>
+    <div class="count-note" id="countNote"></div>
+    <div id="chartWrap"><svg id="chart"></svg></div>
+  </div>
+
+  <div class="panel">
+    <h2>Trade log</h2>
+    <p class="desc">Same trades as a table — sorted by entry date, filtered by the search/toggle above.</p>
+    <div id="tableWrap">
+      <table>
+        <thead><tr>
+          <th>Ticker</th><th>Entry</th><th>Exit</th><th>Days</th>
+          <th>Entry $</th><th>Exit $</th><th>Size $</th><th>Return %</th><th>P&amp;L $</th><th>Exit reason</th>
+        </tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer id="fileNote"></footer>
+</div>
+
+<div id="tooltip"></div>
+
+<div id="modalOverlay">
+  <div id="modalBox">
+    <h3 id="modalTitle">SHOP</h3>
+    <p class="modalSub" id="modalSub">Live from <code id="serverUrlLabel"></code> — start the chart server for this.</p>
+    <div class="stats" id="modalStats"></div>
+
+    <div class="modalPathRow">
+      <label for="modalFeaturePath">Optional override — leave blank to use the server's default feature file (Enter reloads)</label>
+      <input type="text" id="modalFeaturePath" placeholder="agents/evaluator/runs/setups_intraday_clear2_d4.parquet">
+    </div>
+
+    <div id="chartImgWrap">
+      <img id="chartImg" alt="trade chart">
+      <div id="chartImgStatus" class="pulse">loading chart…</div>
+    </div>
+
+    <button id="cmdToggle" type="button">Show the notebook command instead</button>
+    <div id="cmdSection">
+      <p class="modalSub">Paste this into the notebook where <code>viz</code> and <code>inv</code> are already loaded.</p>
+      <pre id="modalCmd"></pre>
+    </div>
+
+    <div class="modalBtns">
+      <button class="pill ghost" id="modalClose">Close</button>
+      <button class="pill" id="modalCopy">Copy command</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const ALIASES = {
+  ticker: ['ticker','symbol'],
+  entry_date: ['entry_date','entrydate','entry'],
+  exit_date: ['exit_date','exitdate','exit'],
+  return_pct: ['return_pct','return','returnpct','pnl_pct','pnlpct'],
+  dollar_size: ['dollar_size','size','position_size','dollarsize','notional'],
+  pnl_dollars: ['pnl_dollars','pnl','pnl_$','pnldollars'],
+  entry_price: ['entry_price','entryprice'],
+  exit_price: ['exit_price','exitprice'],
+  exit_reason: ['exit_reason','reason','exitreason'],
+  days_held: ['days_held','daysheld','days'],
+  risk_pct: ['stop_dist_pct','risk_pct','r_pct','stop_pct','stopdistpct'],
+  equity_after: ['equity_after','equity','eq'],
+};
+
+let DATA = [];
+let currentFilter = 'all';
+let currentSearch = '';
+let currentGranularity = 'all';
+let currentPeriod = 'all';
+const svgNS = "http://www.w3.org/2000/svg";
+const tooltip = document.getElementById('tooltip');
+
+function quarterOf(m){ return Math.floor(m/3) + 1; }
+function periodKey(dateStr, granularity){
+  const d = new Date(dateStr);
+  const y = d.getFullYear(), m = d.getMonth();
+  if (granularity === 'year') return `${y}`;
+  if (granularity === 'quarter') return `${y}-Q${quarterOf(m)}`;
+  if (granularity === 'month') return `${y}-${String(m+1).padStart(2,'0')}`;
+  return 'all';
+}
+function periodLabel(key, granularity){
+  if (granularity !== 'month') return key;
+  const [y, m] = key.split('-');
+  const names = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return `${names[parseInt(m)-1]} ${y}`;
+}
+function populatePeriods(){
+  const sel = document.getElementById('periodValue');
+  if (currentGranularity === 'all'){ sel.style.display = 'none'; return; }
+  const keys = [...new Set(DATA.map(d => periodKey(d.e, currentGranularity)))].sort();
+  sel.innerHTML = keys.map(k => `<option value="${k}">${periodLabel(k, currentGranularity)}</option>`).join('');
+  sel.style.display = '';
+  currentPeriod = keys[0];
+  sel.value = currentPeriod;
+}
+
+function findCol(headers, names){
+  const lower = headers.map(h => h.trim().toLowerCase());
+  for (const n of names){
+    const idx = lower.indexOf(n);
+    if (idx !== -1) return headers[idx];
+  }
+  return null;
+}
+
+function normalizeRows(rawRows, headers){
+  const colMap = {};
+  for (const key in ALIASES) colMap[key] = findCol(headers, ALIASES[key]);
+  if (!colMap.ticker || !colMap.entry_date || !colMap.exit_date || !colMap.return_pct){
+    throw new Error('Missing one of the required columns: ticker, entry_date, exit_date, return_pct.');
+  }
+  return rawRows.filter(r => r[colMap.ticker] && r[colMap.entry_date] && r[colMap.exit_date]).map(r => {
+    const t = String(r[colMap.ticker]).trim();
+    const e = String(r[colMap.entry_date]).trim().slice(0,10);
+    const x = String(r[colMap.exit_date]).trim().slice(0,10);
+    const rp = parseFloat(r[colMap.return_pct]);
+    const d = colMap.dollar_size ? parseFloat(r[colMap.dollar_size]) : NaN;
+    let p = colMap.pnl_dollars ? parseFloat(r[colMap.pnl_dollars]) : NaN;
+    if (isNaN(p) && !isNaN(d)) p = d * rp / 100;
+    const ep = colMap.entry_price ? parseFloat(r[colMap.entry_price]) : null;
+    const xp = colMap.exit_price ? parseFloat(r[colMap.exit_price]) : null;
+    const reason = colMap.exit_reason ? String(r[colMap.exit_reason] ?? '').trim() : '';
+    let days = colMap.days_held ? parseInt(r[colMap.days_held]) : NaN;
+    if (isNaN(days)) days = Math.round((new Date(x) - new Date(e)) / 86400000);
+    const risk = colMap.risk_pct ? parseFloat(r[colMap.risk_pct]) : NaN;
+    const rMult = (!isNaN(risk) && risk > 0) ? rp / risk : null;
+    const eqRaw = colMap.equity_after ? parseFloat(r[colMap.equity_after]) : NaN;
+    return { t, e, x, r: Math.round(rp*100)/100, d: isNaN(d) ? 0 : d,
+             p: isNaN(p) ? 0 : Math.round(p*100)/100, ep, xp, reason, days,
+             risk: isNaN(risk) ? null : risk, rMult: rMult != null ? Math.round(rMult*1000)/1000 : null,
+             eq: isNaN(eqRaw) ? null : eqRaw };
+  }).filter(r => !isNaN(r.r) && r.e && r.x).sort((a,b) => a.e.localeCompare(b.e));
+}
+
+function loadCsvText(text, filename){
+  const errBox = document.getElementById('errBox');
+  errBox.style.display = 'none';
+  Papa.parse(text, {
+    header: true, skipEmptyLines: true,
+    complete: (res) => {
+      try{
+        if (!res.meta.fields || !res.meta.fields.length) throw new Error('No columns found in this file.');
+        DATA = normalizeRows(res.data, res.meta.fields);
+        if (!DATA.length) throw new Error('Parsed the file but found zero valid trade rows.');
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('app').style.display = 'block';
+        document.getElementById('fileNote').textContent = `Loaded ${DATA.length} trades from ${filename}.`;
+        currentGranularity = 'all'; currentPeriod = 'all';
+        document.getElementById('periodGranularity').value = 'all';
+        document.getElementById('periodValue').style.display = 'none';
+        render();
+      } catch(err){
+        errBox.textContent = err.message;
+        errBox.style.display = 'block';
+      }
+    },
+    error: (err) => { errBox.textContent = 'CSV parse error: ' + err.message; errBox.style.display = 'block'; }
+  });
+}
+
+const featurePathInput = document.getElementById('featurePath');
+try{ featurePathInput.value = localStorage.getItem('tbv_feature_path') || ''; }catch(e){}
+featurePathInput.addEventListener('change', () => {
+  try{ localStorage.setItem('tbv_feature_path', featurePathInput.value.trim()); }catch(e){}
+});
+
+const pickBtn = document.getElementById('pickBtn');
+const fileInput = document.getElementById('fileInput');
+const loader = document.getElementById('loader');
+pickBtn.addEventListener('click', () => fileInput.click());
+fileInput.addEventListener('change', (e) => {
+  const f = e.target.files[0];
+  if (f) f.text().then(txt => loadCsvText(txt, f.name));
+});
+['dragover','dragenter'].forEach(ev => loader.addEventListener(ev, (e) => { e.preventDefault(); loader.classList.add('drag'); }));
+['dragleave','drop'].forEach(ev => loader.addEventListener(ev, (e) => { e.preventDefault(); loader.classList.remove('drag'); }));
+loader.addEventListener('drop', (e) => {
+  const f = e.dataTransfer.files[0];
+  if (f) f.text().then(txt => loadCsvText(txt, f.name));
+});
+document.getElementById('changeBtn').addEventListener('click', () => {
+  document.getElementById('app').style.display = 'none';
+  document.getElementById('loader').style.display = 'block';
+});
+
+function colorFor(r){
+  const t = Math.min(Math.abs(r)/30, 1);
+  const winHex = getComputedStyle(document.documentElement).getPropertyValue('--win').trim();
+  const lossHex = getComputedStyle(document.documentElement).getPropertyValue('--loss').trim();
+  return r >= 0 ? mix('#e2f1e7', winHex, 0.35+0.65*t) : mix('#f6e6e1', lossHex, 0.35+0.65*t);
+}
+function mix(hexA, hexB, t){
+  const a = hexToRgb(hexA), b = hexToRgb(hexB);
+  return `rgb(${Math.round(a.r+(b.r-a.r)*t)},${Math.round(a.g+(b.g-a.g)*t)},${Math.round(a.b+(b.b-a.b)*t)})`;
+}
+function hexToRgb(hex){ hex = hex.replace('#',''); return { r:parseInt(hex.slice(0,2),16), g:parseInt(hex.slice(2,4),16), b:parseInt(hex.slice(4,6),16) }; }
+
+function filteredData(){
+  return DATA.filter(d => {
+    if (currentFilter === 'win' && d.r <= 0) return false;
+    if (currentFilter === 'loss' && d.r > 0) return false;
+    if (currentSearch && !d.t.toLowerCase().includes(currentSearch)) return false;
+    if (currentGranularity !== 'all' && periodKey(d.e, currentGranularity) !== currentPeriod) return false;
+    return true;
+  });
+}
+
+function render(){
+  const rows = filteredData();
+  const n = rows.length;
+  const wins = rows.filter(d => d.r > 0).length;
+  const totalPnl = rows.reduce((s,d)=>s+d.p, 0);
+  const hasSizing = rows.some(d => d.d > 0);
+  const hasRisk = rows.some(d => d.rMult != null);
+  const avgReturn = n ? avg(rows.map(d=>d.r)) : 0;
+
+  let rTiles = '';
+  if (hasRisk){
+    const rRows = rows.filter(d => d.rMult != null);
+    const winR = rRows.filter(d => d.r > 0).map(d => d.rMult);
+    const loseR = rRows.filter(d => d.r <= 0).map(d => d.rMult);
+    const expectancyR = avg(rRows.map(d => d.rMult));
+    rTiles = `
+    <div class="tile"><div class="label">Expectancy (R)</div><div class="value ${expectancyR>=0?'win':'loss'}">${expectancyR>=0?'+':''}${expectancyR.toFixed(2)}R</div></div>
+    <div class="tile"><div class="label">Avg winner (R)</div><div class="value win">${winR.length ? '+'+avg(winR).toFixed(2)+'R' : '—'}</div></div>
+    <div class="tile"><div class="label">Avg loser (R)</div><div class="value loss">${loseR.length ? avg(loseR).toFixed(2)+'R' : '—'}</div></div>`;
+  }
+
+  let cagrTile = '';
+  const eqRows = rows.filter(d => d.eq != null);
+  if (eqRows.length){
+    const startEq = eqRows[0].eq - eqRows[0].p;   // equity right before this window's first trade
+    const endEq = eqRows[eqRows.length-1].eq;
+    const years = (new Date(rows[rows.length-1].x) - new Date(rows[0].e)) / (365.25*86400000);
+    if (startEq > 0 && years > 0){
+      const totalRet = (endEq/startEq - 1) * 100;
+      const cagr = (Math.pow(endEq/startEq, 1/years) - 1) * 100;
+      cagrTile = `
+    <div class="tile"><div class="label">Total return</div><div class="value ${totalRet>=0?'win':'loss'}">${totalRet>=0?'+':''}${totalRet.toFixed(1)}%</div></div>
+    <div class="tile"><div class="label">CAGR</div><div class="value ${cagr>=0?'win':'loss'}">${cagr>=0?'+':''}${cagr.toFixed(1)}%</div></div>`;
+    }
+  }
+
+  document.getElementById('tiles').innerHTML = n ? `
+    <div class="tile"><div class="label">Trades</div><div class="value">${n}</div></div>
+    <div class="tile"><div class="label">Win rate</div><div class="value">${(100*wins/n).toFixed(1)}%</div></div>
+    <div class="tile"><div class="label">Avg return</div><div class="value ${avgReturn>=0?'win':'loss'}">${avgReturn>=0?'+':''}${avgReturn.toFixed(2)}%</div></div>
+    ${hasSizing ? `<div class="tile"><div class="label">Total P&amp;L</div><div class="value ${totalPnl>=0?'win':'loss'}">${totalPnl>=0?'+':''}$${totalPnl.toFixed(0)}</div></div>` : ''}
+    ${cagrTile}
+    ${rTiles}
+    <div class="tile"><div class="label">Date range</div><div class="value" style="font-size:14px">${rows[0].e} → ${rows[rows.length-1].x}</div></div>
+  ` : `<div class="tile"><div class="label">Trades</div><div class="value">0</div></div>`;
+
+  document.getElementById('countNote').textContent = `Showing ${n} of ${DATA.length} trades`;
+  renderChart(rows);
+  renderTable(rows);
+}
+function avg(arr){ return arr.length ? arr.reduce((s,v)=>s+v,0)/arr.length : 0; }
+
+function periodBounds(){
+  // when a period is selected, zoom the timeline to that period's own span
+  // (padded a few days each side); otherwise span the full loaded dataset.
+  if (currentGranularity === 'all' || currentPeriod === 'all'){
+    return {
+      min: new Date(DATA[0].e),
+      max: new Date(Math.max(...DATA.map(d => new Date(d.x))) + 30*86400000),
+      monthly: false,
+    };
+  }
+  let min, max;
+  if (currentGranularity === 'year'){
+    const y = parseInt(currentPeriod);
+    min = new Date(`${y}-01-01`); max = new Date(`${y+1}-01-01`);
+  } else if (currentGranularity === 'quarter'){
+    const [y, q] = currentPeriod.split('-Q').map(Number);
+    const startMonth = (q-1)*3;
+    min = new Date(y, startMonth, 1); max = new Date(y, startMonth+3, 1);
+  } else { // month
+    const [y, m] = currentPeriod.split('-').map(Number);
+    min = new Date(y, m-1, 1); max = new Date(y, m, 1);
+  }
+  min = new Date(min.getTime() - 3*86400000);
+  max = new Date(max.getTime() + 3*86400000);
+  return { min, max, monthly: true };
+}
+
+function renderChart(rows){
+  const svg = document.getElementById('chart');
+  svg.innerHTML = '';
+  const rowH = 13, leftPad = 62, rightPad = 20, topPad = 30, bottomPad = 6;
+  const { min: minDate, max: maxDate, monthly } = periodBounds();
+  const totalDays = Math.max((maxDate - minDate) / 86400000, 1);
+  const width = 1180;
+  const plotW = width - leftPad - rightPad;
+  const height = Math.max(rows.length, 1) * rowH + topPad + bottomPad;
+  svg.setAttribute('width', width);
+  svg.setAttribute('height', height);
+  svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+
+  const xOf = (dateStr) => leftPad + ((new Date(dateStr) - minDate) / 86400000 / totalDays) * plotW;
+  const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  const drawTick = (dateObj, label) => {
+    const x = xOf(dateObj.toISOString().slice(0,10));
+    const gl = document.createElementNS(svgNS, 'line');
+    gl.setAttribute('x1', x); gl.setAttribute('x2', x);
+    gl.setAttribute('y1', topPad-6); gl.setAttribute('y2', height-bottomPad);
+    gl.setAttribute('class', 'grid-line');
+    svg.appendChild(gl);
+    const lbl = document.createElementNS(svgNS, 'text');
+    lbl.setAttribute('x', x+4); lbl.setAttribute('y', topPad-12);
+    lbl.setAttribute('class', 'axis-label');
+    lbl.textContent = label;
+    svg.appendChild(lbl);
+  };
+
+  if (monthly){
+    let cursor = new Date(minDate.getFullYear(), minDate.getMonth(), 1);
+    while (cursor <= maxDate){
+      if (cursor >= minDate) drawTick(cursor, `${monthNames[cursor.getMonth()]} '${String(cursor.getFullYear()).slice(2)}`);
+      cursor = new Date(cursor.getFullYear(), cursor.getMonth()+1, 1);
+    }
+  } else {
+    const startYear = minDate.getFullYear(), endYear = maxDate.getFullYear();
+    for (let y = startYear; y <= endYear; y++){
+      const d = new Date(`${y}-01-01`);
+      if (d < minDate || d > maxDate) continue;
+      drawTick(d, y);
+    }
+  }
+
+  rows.forEach((d, i) => {
+    const y = topPad + i * rowH;
+    const x1 = xOf(d.e);
+    const x2 = Math.max(xOf(d.x), x1 + 2);
+    const rect = document.createElementNS(svgNS, 'rect');
+    rect.setAttribute('x', x1); rect.setAttribute('y', y);
+    rect.setAttribute('width', x2 - x1); rect.setAttribute('height', rowH - 3);
+    rect.setAttribute('rx', 2); rect.setAttribute('fill', colorFor(d.r));
+    rect.setAttribute('class', 'bar');
+    rect.addEventListener('mousemove', (ev) => showTip(ev, d));
+    rect.addEventListener('mouseleave', hideTip);
+    rect.addEventListener('click', () => openChartModal(d));
+    svg.appendChild(rect);
+
+    const label = document.createElementNS(svgNS, 'text');
+    label.setAttribute('x', leftPad - 6); label.setAttribute('y', y + rowH - 5);
+    label.setAttribute('text-anchor', 'end'); label.setAttribute('class', 'row-tick');
+    label.style.cursor = 'pointer';
+    label.textContent = d.t;
+    label.addEventListener('click', () => openChartModal(d));
+    svg.appendChild(label);
+  });
+}
+
+function showTip(ev, d){
+  const priceLine = (d.ep!=null && d.xp!=null) ? `Entry ${d.e} @ $${d.ep}<br>Exit ${d.x} @ $${d.xp}<br>` : `Entry ${d.e} → Exit ${d.x}<br>`;
+  const sizeLine = d.d ? `Size $${d.d.toFixed(0)} · P&amp;L ${d.p>=0?'+':''}$${d.p.toFixed(0)}<br>` : '';
+  const reasonLine = d.reason ? `Exit: ${d.reason}` : '';
+  tooltip.innerHTML = `<b>${d.t}</b><br>${priceLine}Return: <span style="color:${d.r>=0?'#7fd4a8':'#f0a08c'}">${d.r>0?'+':''}${d.r}%</span> (${d.days}d)<br>${sizeLine}${reasonLine}`;
+  tooltip.style.left = (ev.clientX + 14) + 'px';
+  tooltip.style.top = (ev.clientY + 14) + 'px';
+  tooltip.style.opacity = 1;
+}
+function hideTip(){ tooltip.style.opacity = 0; }
+
+function renderTable(rows){
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = rows.map((d, i) => `
+    <tr>
+      <td class="ticker-cell"><span class="ticker-link" data-idx="${i}">${d.t}</span></td>
+      <td>${d.e}</td>
+      <td>${d.x}</td>
+      <td>${d.days}</td>
+      <td>${d.ep ?? '—'}</td>
+      <td>${d.xp ?? '—'}</td>
+      <td>${d.d ? '$'+d.d.toFixed(0) : '—'}</td>
+      <td class="${d.r>=0?'ret-pos':'ret-neg'}">${d.r>0?'+':''}${d.r}%</td>
+      <td class="${d.p>=0?'ret-pos':'ret-neg'}">${d.p ? (d.p>=0?'+':'')+'$'+d.p.toFixed(0) : '—'}</td>
+      <td>${d.reason ? `<span class="reason-pill">${d.reason}</span>` : '—'}</td>
+    </tr>
+  `).join('');
+  tbody.querySelectorAll('.ticker-link').forEach(el => {
+    el.addEventListener('click', () => openChartModal(rows[parseInt(el.dataset.idx)]));
+  });
+}
+
+document.getElementById('search').addEventListener('input', (e) => { currentSearch = e.target.value.trim().toLowerCase(); render(); });
+document.querySelectorAll('#filterSeg button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#filterSeg button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    currentFilter = btn.dataset.f;
+    render();
+  });
+});
+document.getElementById('periodGranularity').addEventListener('change', (e) => {
+  currentGranularity = e.target.value;
+  populatePeriods();
+  render();
+});
+document.getElementById('periodValue').addEventListener('change', (e) => {
+  currentPeriod = e.target.value;
+  render();
+});
+
+/* ── chart modal: live image from a local chart_server.py, with a notebook-command fallback ── */
+const CHART_SERVER = 'http://127.0.0.1:8765';
+const modalOverlay = document.getElementById('modalOverlay');
+document.getElementById('serverUrlLabel').textContent = CHART_SERVER;
+
+function pad(n){ return String(n).padStart(2,'0'); }
+function addDays(dateStr, n){
+  const d = new Date(dateStr);
+  d.setDate(d.getDate() + n);
+  return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+}
+
+let currentChartTrade = null;
+function loadChart(){
+  const d = currentChartTrade;
+  if (!d) return;
+  const start = addDays(d.e, -90);
+  const end = addDays(d.x, 30);
+  const img = document.getElementById('chartImg');
+  const status = document.getElementById('chartImgStatus');
+  const cmdSection = document.getElementById('cmdSection');
+  const cmdToggle = document.getElementById('cmdToggle');
+  img.style.display = 'none';
+  cmdSection.style.display = 'none';
+  cmdToggle.textContent = 'Show the notebook command instead';
+  status.style.display = 'block';
+  status.textContent = 'loading chart…';
+  status.classList.add('pulse');
+
+  const sourcePath = document.getElementById('modalFeaturePath').value.trim();
+  const sourceParam = sourcePath ? `&source=${encodeURIComponent(sourcePath)}` : '';
+  const url = `${CHART_SERVER}/chart?ticker=${encodeURIComponent(d.t)}&start=${start}&end=${end}&recency_window_days=252&label_trades=true${sourceParam}&_=${Date.now()}`;
+  img.onload = () => { status.style.display = 'none'; img.style.display = 'block'; };
+  img.onerror = async () => {
+    status.classList.remove('pulse');
+    cmdSection.style.display = 'block';
+    // an <img> error hides the reason; ask the server directly so the message is specific
+    try{
+      const r = await fetch(url);
+      const msg = (await r.text()).slice(0, 300);
+      status.textContent = `Chart server replied ${r.status}: ${msg}`;
+    } catch(err){
+      status.textContent = `Chart server not reachable at ${CHART_SERVER}. Start it with: .venv/bin/python -m agents.evaluator.eval.chart_server — or use the notebook command below.`;
+    }
+  };
+  img.src = url;
+}
+document.getElementById('modalFeaturePath').addEventListener('keydown', (e) => {
+  if (e.key !== 'Enter') return;
+  const v = e.target.value.trim();
+  document.getElementById('featurePath').value = v;
+  try{ localStorage.setItem('tbv_feature_path', v); }catch(err){}
+  loadChart();
+});
+function openChartModal(d){
+  const start = addDays(d.e, -90);
+  const end = addDays(d.x, 30);
+  document.getElementById('modalTitle').textContent = d.t;
+  const sizeLine = d.d ? `Size <b>$${d.d.toFixed(0)}</b> · P&amp;L <b>${d.p>=0?'+':''}$${d.p.toFixed(0)}</b><br>` : '';
+  document.getElementById('modalStats').innerHTML =
+    `Entry <b>${d.e}</b>${d.ep!=null?` @ $${d.ep}`:''} → Exit <b>${d.x}</b>${d.xp!=null?` @ $${d.xp}`:''} (${d.days}d)<br>` +
+    `Return <b style="color:${d.r>=0?'var(--win)':'var(--loss)'}">${d.r>0?'+':''}${d.r}%</b><br>${sizeLine}`;
+  const cmd = `viz.plot_ticker('${d.t}', inv, start='${start}', end='${end}', recency_window_days=252, label_trades=True)`;
+  document.getElementById('modalCmd').textContent = cmd;
+
+  currentChartTrade = d;
+  document.getElementById('modalFeaturePath').value = document.getElementById('featurePath').value.trim();
+  loadChart();
+  modalOverlay.classList.add('open');
+}
+document.getElementById('cmdToggle').addEventListener('click', () => {
+  const cmdSection = document.getElementById('cmdSection');
+  const open = cmdSection.style.display === 'block';
+  cmdSection.style.display = open ? 'none' : 'block';
+  document.getElementById('cmdToggle').textContent = open ? 'Show the notebook command instead' : 'Hide the notebook command';
+});
+document.getElementById('modalClose').addEventListener('click', () => modalOverlay.classList.remove('open'));
+modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) modalOverlay.classList.remove('open'); });
+document.getElementById('modalCopy').addEventListener('click', async (e) => {
+  const cmd = document.getElementById('modalCmd').textContent;
+  const btn = e.target;
+  try{
+    await navigator.clipboard.writeText(cmd);
+    btn.textContent = 'Copied!';
+  } catch(err){
+    // clipboard API may be blocked on file:// origins — fall back to manual select
+    const range = document.createRange();
+    range.selectNodeContents(document.getElementById('modalCmd'));
+    const sel = window.getSelection();
+    sel.removeAllRanges(); sel.addRange(range);
+    btn.textContent = 'Selected — press ⌘/Ctrl+C';
+  }
+  setTimeout(() => { btn.textContent = 'Copy command'; }, 1600);
+});
+</script>
+</body>
+</html>

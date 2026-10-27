@@ -15,6 +15,13 @@ Revenue (SEC EDGAR XBRL — free, no key; deep quarterly history, filing-dated):
     .venv/bin/python -m agents.evaluator.data.ingest --revenue-only            # revenue pass, all
     .venv/bin/python -m agents.evaluator.data.ingest --revenue-only --limit 200  # cap fetches/run
 
+Sector/industry (for VARS group benchmarks) and hourly intraday (~3yr, for the
+opening-range metrics) are opt-in add-ons or standalone passes:
+    .venv/bin/python -m agents.evaluator.data.ingest --sectors        # daily+eps, then sectors
+    .venv/bin/python -m agents.evaluator.data.ingest --intraday       # daily+eps, then hourly
+    .venv/bin/python -m agents.evaluator.data.ingest --intraday-only  # ONLY hourly (skip daily/eps)
+    .venv/bin/python -m agents.evaluator.data.ingest --sectors-only   # ONLY sector/industry
+
 Resume-safe: already-cached items are skipped unless --force is given. The
 revenue pass prioritises tickers by setup count (most-analytically-valuable
 first). SEC has no daily cap (just ~10 req/s fair-use), so the whole universe
@@ -181,6 +188,22 @@ def main(argv: list[str]) -> None:
         if res["failed"]:
             print("Failed:", ", ".join(res["failed"][:40]))
         return
+
+    # Sector/industry pass (for VARS group benchmarks) — standalone or add-on.
+    if "--sectors-only" in argv or "--sectors" in argv:
+        from . import sectors
+        print(f"Sector/industry pass for {len(tickers)} tickers ...")
+        sectors.ingest(tickers)
+        if "--sectors-only" in argv:
+            return
+
+    # Hourly intraday pass (for opening-range metrics) — standalone or add-on.
+    if "--intraday-only" in argv or "--intraday" in argv:
+        from . import intraday
+        print(f"Hourly intraday pass (~3yr) for {len(tickers)} tickers ...")
+        intraday.ingest(tickers)
+        if "--intraday-only" in argv:
+            return
 
     print(f"Ingesting {len(tickers)} tickers (force={force}, eps={with_eps}) "
           f"+ benchmarks {BENCHMARKS} ...")
