@@ -450,3 +450,221 @@ def plot_trades(trades, *, n=100, max_days=80, out=None, color_by="outcome"):
         fig.savefig(out, dpi=110); plt.close(fig); print(f"saved {out}")
     else:
         _show(fig)
+
+
+def _candles(ax, px, *, body_w=0.6):
+    """Hollow candlesticks (white=up, black=down, black outline — legible over
+    any background shading) on ``ax`` for the OHLC frame ``px``."""
+    import matplotlib.dates as mdates
+    xs = mdates.date2num(px.index.to_pydatetime())
+    for x, (_, row) in zip(xs, px.iterrows()):
+        up = row["Close"] >= row["Open"]
+        ax.vlines(x, row["Low"], row["High"], color="#1f2320", lw=1, zorder=2)
+        y0, h = min(row["Open"], row["Close"]), abs(row["Close"] - row["Open"])
+        ax.add_patch(plt.Rectangle((x - body_w / 2, y0), body_w, max(h, 0.05),
+                                   facecolor=("white" if up else "#1f2320"),
+                                   edgecolor="#1f2320", lw=0.8, zorder=2))
+    ax.xaxis_date()
+
+
+def plot_vcp_legs(ticker, *, start=None, end=None, pivot_window=5, lookback=120,
+                  max_legs=4, min_contracting_run=2, show_tight_short=True,
+                  tight_threshold=80.0, min_tight_days=3, show_vars=True,
+                  vars_months=6, out=None):
+    """VCP footprint, drawn on the actual candlestick chart. SCANS EVERY DAY in
+    [start, end] and draws EVERY DISTINCT qualifying episode found (not just
+    whichever one happens to be live on the last day) — a wide range like a full
+    year will typically show several separate basing episodes, each its own red
+    line + dots, each H->L leg labeled with its % depth. Only the legs that
+    actually COUNT toward ``vcp_contracting_run`` for that episode are drawn — an
+    earlier leg that broke the trailing streak is dropped entirely, not dimmed.
+
+    A dangling swing high with no confirmed low yet is NEVER drawn — it isn't
+    part of any completed leg the calculation actually uses, so showing it would
+    misrepresent the structure (e.g. implying a base is 'still coiling' up to a
+    point that in reality is well after the base already resolved/broke out).
+
+        from agents.evaluator.eval import viz
+        viz.plot_vcp_legs('NVDA', start='2024-01-01', end='2026-01-01')  # every episode in 2 years
+        viz.plot_vcp_legs('NVDA')                    # full cached history, latest snapshot
+
+    ``start``/``end`` bound the CHART's display window AND the episode scan (an
+    episode anchored before ``start`` is simply not scanned into view — widen
+    ``start`` to see it). The underlying pivot/leg computation always uses the
+    ticker's FULL history up to ``end`` for correct warm-up, regardless of ``start``.
+    The green 'live range' band, if shown, reflects the state as of ``end`` only.
+    Title reports the VCP state as of ``end`` (default = last cached bar).
+
+    ``show_tight_short`` (default True) additionally shades the background green
+    wherever the SHORT-term ATR-based tightness score (``vcp_tight_swing_atr`` —
+    5-day swing spread ÷ 14-day ATR%, ranked against its own trailing 50-day
+    history; see ``strategy.tightness_score.VCPTightnessScore``) is >=
+    ``tight_threshold`` (default 80) — i.e. only the genuinely-tight days, not
+    the full red-to-green gradient, to keep this combined chart readable. Since
+    it's a fresh daily percentile (5-day window), a single day can flash above
+    threshold and drop right back — a real but fleeting reading, not sustained
+    compression. ``min_tight_days`` (default 3) drops any run shorter than that,
+    so only genuinely sustained tight stretches get shaded.
+
+    ``show_vars`` (default True) adds a thin VARS sub-panel BELOW the main chart
+    (its own axis, not another price-panel overlay, to keep the candlesticks
+    readable) — vol-adjusted RS vs SPY (solid) and vs the resolved group
+    benchmark (dashed), at ``vars_months`` horizon (default 6). The light green
+    band marks the validated 'sweet spot' (0 to +15 — moderately, not extremely,
+    ahead — the band that showed the real win-rate edge; see the R/VARS work)."""
+    from ..strategy.vcp import VCPFootprint
+    from ..strategy.volatility import Volatility
+    from ..strategy.tightness_score import VCPTightnessScore
+    from ..strategy.momentum import TrailingReturns
+    from ..strategy.vars import VolAdjRelativeStrength
+    from ..engine.records import Bar
+    import matplotlib.dates as mdates
+
+    px_full = store.load(ticker)
+    end_ts = pd.Timestamp(end) if end else px_full.index[-1]
+    df = px_full[px_full.index <= end_ts]
+    if df.empty:
+        raise ValueError(f"no cached bars for {ticker!r} on/before {end_ts.date()}")
+    start_ts = pd.Timestamp(start) if start else end_ts - pd.Timedelta(days=180)
+    dates = df.index
+
+    vcp = VCPFootprint(pivot_window=pivot_window, lookback=lookback, max_legs=max_legs,
+                       min_contracting_run=min_contracting_run)
+    vol = Volatility()                       # short-term defaults: adr_window=20, atr_window=14
+    ts = VCPTightnessScore()                 # short-term defaults: tight_window=5, baseline_window=50
+    ret = TrailingReturns(months=(vars_months,))
+    vars_p = VolAdjRelativeStrength(months=(vars_months,))
+    tight_scores = {}                        # date -> vcp_tight_swing_atr, for the shading pass below
+    vars_scores = {}                         # date -> (vars_spy, vars_group), for the VARS sub-panel
+    vars_bench = None
+    # SCAN every day through `end` (not just a single end-of-range snapshot) so
+    # EVERY distinct qualifying episode inside [start, end] gets collected, not
+    # just whichever one happens to be live on the final day.
+    episodes, cur_start_key, final_feat = [], None, None
+    for date, r in df.iterrows():
+        bar = Bar.from_row(date, r)
+        vcp.update(bar)
+        vol.update(bar); ts.update(bar); ret.update(bar)
+        feat = vcp.features(bar)
+        vf = vol.features(bar) if (show_tight_short or show_vars) else {}
+        if show_tight_short:
+            tf = ts.features(bar, adr_pct=vf.get("adr_pct"), atr_pct=vf.get("atr_pct"))
+            tight_scores[date] = tf.get("vcp_tight_swing_atr")
+        if show_vars:
+            rf = ret.features(bar)
+            vsf = vars_p.features(bar, rf, vf.get("atr_pct"), ticker)
+            vars_scores[date] = (vsf.get(f"vars_spy_{vars_months}m"), vsf.get(f"vars_{vars_months}m"))
+            vars_bench = vsf.get("rs_benchmark", vars_bench)
+        if date >= start_ts:
+            final_feat = feat
+            run = feat.get("vcp_contracting_run") or 0
+            if run >= min_contracting_run:
+                counted = vcp._last_legs[-run:]        # [(h_idx, h, l_idx, l), ...]
+                start_key = counted[0][:2]              # (h_idx, h) of this run's first leg
+                if start_key == cur_start_key and episodes:
+                    episodes[-1] = counted              # same episode growing -> keep the fuller version
+                else:
+                    episodes.append(counted)            # a genuinely new episode
+                    cur_start_key = start_key
+            else:
+                cur_start_key = None                    # streak broken; next qualifying run is a NEW episode
+
+    w = px_full[(px_full.index >= start_ts) & (px_full.index <= end_ts)]
+
+    if show_vars:
+        fig, (ax, axv) = plt.subplots(2, 1, figsize=(15, 8.5), sharex=True, layout="constrained",
+                                      gridspec_kw=dict(height_ratios=[3, 1], hspace=.08))
+    else:
+        fig, ax = plt.subplots(figsize=(15, 7), layout="constrained"); axv = None
+
+    if show_tight_short:
+        # green shading wherever the SHORT-term ATR tightness score clears the
+        # threshold AND has stayed there for >= min_tight_days consecutive days
+        # (a single-day flash is real but not sustained compression — dropped).
+        # Edges extend to the midpoint between trading days so weekends/holidays
+        # don't leave white gaps in the shading.
+        xs = mdates.date2num(w.index.to_pydatetime())
+        edges = ([xs[0] - (xs[1] - xs[0]) / 2] + [(xs[i] + xs[i + 1]) / 2 for i in range(len(xs) - 1)]
+                 + [xs[-1] + (xs[-1] - xs[-2]) / 2])
+        qualifies = [(tight_scores.get(d) is not None and tight_scores[d] >= tight_threshold)
+                    for d in w.index]
+        any_tight = False
+        i = 0
+        n = len(qualifies)
+        while i < n:
+            if qualifies[i]:
+                j = i
+                while j < n and qualifies[j]:
+                    j += 1
+                if (j - i) >= min_tight_days:           # run length in trading days
+                    ax.axvspan(edges[i], edges[j], color="#2e9e4f", alpha=0.30, lw=0, zorder=0)
+                    any_tight = True
+                i = j
+            else:
+                i += 1
+        if any_tight:
+            from matplotlib.patches import Patch
+            tight_leg = ax.legend(handles=[Patch(color="#2e9e4f", alpha=0.30,
+                        label=f"short-term ATR tightness >= {tight_threshold:.0f}, "
+                              f"{min_tight_days}+ consecutive days")],
+                        loc="upper left", fontsize=9)
+            ax.add_artist(tight_leg)   # preserved separately; the VCP-episode legend below replaces the "current" one
+
+    _candles(ax, w)
+
+    for legs in episodes:
+        seq = []          # alternating (date, price, kind) walk for this one episode
+        for h_idx, h, l_idx, l in legs:
+            seq.append((dates[h_idx - 1], h, "H"))
+            seq.append((dates[l_idx - 1], l, "L"))
+        seq_x = [mdates.date2num(d) for d, p, k in seq]
+        seq_y = [p for d, p, k in seq]
+        ax.plot(seq_x, seq_y, color="#a8321c", lw=2, marker="o", markersize=6, zorder=4)
+        for d, p, k in seq:
+            ax.annotate(f"{d.strftime('%b %d')}\n${p:.0f}", (mdates.date2num(d), p),
+                       textcoords="offset points", xytext=(0, 10 if k == "H" else -22),
+                       fontsize=8, ha="center", color="#a8321c")
+        for (h_idx, h, l_idx, l) in legs:               # % depth at each leg's midpoint
+            hd, ld = dates[h_idx - 1], dates[l_idx - 1]
+            mid_x = mdates.date2num(hd) + (mdates.date2num(ld) - mdates.date2num(hd)) / 2
+            mid_y = (h + l) / 2
+            depth = (h - l) / h * 100.0
+            ax.annotate(f"-{depth:.1f}%", (mid_x, mid_y), fontsize=9, fontweight="bold",
+                       ha="center", va="center", color="#a8321c",
+                       bbox=dict(boxstyle="round,pad=0.2", fc="white", ec="#a8321c", alpha=.85))
+    if episodes:
+        ax.plot([], [], color="#a8321c", lw=2, marker="o", markersize=6,
+               label=f"VCP leg sequences ({len(episodes)} episode(s), counted legs only)")
+
+    feat = final_feat or {}
+    if feat.get("vcp_in_range") and feat.get("vcp_last_leg_high"):
+        lo, hi = feat["vcp_last_leg_low"], feat["vcp_last_leg_high"]
+        ax.axhspan(lo, hi, color="#2e9e4f", alpha=0.08, zorder=0,
+                  label=f"live range as of {end_ts.date()} ({lo:.0f}-{hi:.0f})")
+
+    ax.set_xlim(mdates.date2num(start_ts), mdates.date2num(end_ts))
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %d %Y'))
+    ax.set_title(f"{ticker} VCP legs, {start_ts.date()} to {end_ts.date()}  —  "
+                f"{len(episodes)} episode(s)  |  as of {end_ts.date()}: "
+                f"contracting={feat.get('vcp_contracting')}  "
+                f"in_range={feat.get('vcp_in_range')}")
+    ax.set_ylabel("price ($)"); ax.grid(alpha=.2)
+    if episodes or feat.get("vcp_in_range"):
+        ax.legend(loc="lower left", fontsize=9)
+
+    if axv is not None:
+        vd = w.index
+        spy_y = [vars_scores.get(d, (None, None))[0] for d in vd]
+        grp_y = [vars_scores.get(d, (None, None))[1] for d in vd]
+        axv.axhspan(0, 15, color="#2e9e4f", alpha=0.08, zorder=0)
+        axv.axhline(0, color="#888", lw=1, ls=":")
+        axv.plot(vd, spy_y, color="#3b6ea5", lw=1.4, label=f"VARS vs SPY ({vars_months}m)")
+        bench_label = f"VARS vs {vars_bench} ({vars_months}m)" if vars_bench else f"VARS vs group ({vars_months}m)"
+        axv.plot(vd, grp_y, color="#a8321c", lw=1.4, ls="--", label=bench_label)
+        axv.set_ylabel("VARS"); axv.grid(alpha=.2)
+        axv.legend(loc="upper left", fontsize=8)
+        ax.set_xlabel("")
+    if out:
+        fig.savefig(out, dpi=110); plt.close(fig); print(f"saved {out}")
+    else:
+        _show(fig)

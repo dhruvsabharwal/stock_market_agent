@@ -84,6 +84,47 @@ def by_feature(
     ).sort_values("n", ascending=False)
 
 
+def add_r_metrics(
+    df: pd.DataFrame,
+    *,
+    k_atr: float = 1.0,
+    flat_stop_pct: float = 4.0,
+    vol_col: str = "atr_pct",
+) -> pd.DataFrame:
+    """Re-express each trade's outcome in the stock's own volatility unit (R).
+
+    Jeff Sun's whole R framework rests on risk being a *per-stock* number, not a
+    flat %. Given ``atr_pct`` (or ``adr_pct``) recorded at the signal bar, this
+    adds, without mutating the input:
+
+      * ``risk_pct``        — the R risk unit = ``k_atr * vol_col`` (a k-ATR stop, in %).
+      * ``r_multiple``      — realised return in R = ``return_pct / risk_pct``.
+      * ``ret_in_atr``      — realised return in raw ATR units (k=1 view).
+      * ``peak_in_atr`` / ``mae_in_atr`` — MFE / MAE in ATR units (exit-independent shape).
+      * ``flat_stop_in_atr``— how many ATRs the flat ``flat_stop_pct`` stop sits at
+        (= ``flat_stop_pct / vol_col``). This is the key diagnostic: it shows the
+        flat 4% stop is 0.5 ATR on a wild name and 4 ATR on a calm one — i.e. the
+        same "4%" is wildly different *risk* stock to stock.
+
+    Rows with a missing/zero ``vol_col`` get NaN (can't form an R for them)."""
+    out = df.copy()
+    if vol_col not in out.columns:
+        raise KeyError(f"{vol_col!r} not in ledger — rebuild with the Volatility provider")
+    vol = pd.to_numeric(out[vol_col], errors="coerce")
+    vol = vol.where(vol > 0)                      # 0 / negative -> NaN (no R)
+    ret = pd.to_numeric(out["return_pct"], errors="coerce")
+
+    out["risk_pct"] = (k_atr * vol).round(3)
+    out["r_multiple"] = (ret / (k_atr * vol)).round(3)
+    out["ret_in_atr"] = (ret / vol).round(3)
+    if "peak_return_pct" in out:
+        out["peak_in_atr"] = (pd.to_numeric(out["peak_return_pct"], errors="coerce") / vol).round(3)
+    if "mae_pct" in out:
+        out["mae_in_atr"] = (pd.to_numeric(out["mae_pct"], errors="coerce") / vol).round(3)
+    out["flat_stop_in_atr"] = (flat_stop_pct / vol).round(3)
+    return out
+
+
 def max_drawdown(equity: pd.Series) -> float:
     """Worst peak-to-trough decline of the equity curve, in percent (negative)."""
     eq = equity.astype(float)
